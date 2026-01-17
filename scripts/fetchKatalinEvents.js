@@ -31,8 +31,8 @@ function parseEvents(html) {
         const contentLink = item.querySelector("a.item__content");
         const link = contentLink?.href ?? null;
 
-        // Date is in the first span of the div inside a.item__content
-        const dateSpan = contentLink?.querySelector("div span:first-child");
+        // Date is in the span with class .info__date inside the div inside a.item__content
+        const dateSpan = contentLink?.querySelector(".info__date");
         const dateText = dateSpan?.textContent?.trim() ?? null;
 
         if (!title || !link) return;

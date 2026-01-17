@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './index.css'
 import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents } from './utils/api'
-import { mergeAndDedupeEvents, calculateBearing } from './utils/dedupe'
+import { mergeAndDedupeEvents, calculateBearing, calculateDistance } from './utils/dedupe'
 
 const useCompass = () => {
   const [heading, setHeading] = useState(0)
@@ -138,7 +138,13 @@ function App() {
     return Object.values(venues).sort((a, b) => a.distanceKm - b.distanceKm)
   }
 
-  const venues = groupEventsByVenue(events)
+  const venues = groupEventsByVenue(events).map(venue => {
+    if (userLocation) {
+      const dist = calculateDistance(userLocation.lat, userLocation.lon, venue.latitude, venue.longitude);
+      return { ...venue, distanceKm: dist };
+    }
+    return venue;
+  }).sort((a, b) => a.distanceKm - b.distanceKm);
 
   return (
     <div className="app">

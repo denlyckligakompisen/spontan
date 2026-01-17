@@ -1,6 +1,38 @@
 const TICKETMASTER_API_KEY = 'A6phaEl6yiPa994i8qCanQA6HNjiy9Co';
 const SONGKICK_API_KEY = 'YOUR_SONGKICK_API_KEY'; // Placeholder
 
+const parseSwedishDate = (dateStr) => {
+    if (!dateStr) return null;
+
+    // Format: "Lördag 17 januari" or "Lördag 17 jan"
+    const months = {
+        'januari': 0, 'februari': 1, 'mars': 2, 'april': 3, 'maj': 4, 'juni': 5,
+        'juli': 6, 'augusti': 7, 'september': 8, 'oktober': 9, 'november': 10, 'december': 11,
+        'jan': 0, 'feb': 1, 'mar': 2, 'apr': 3, 'maj': 4, 'jun': 5,
+        'jul': 6, 'aug': 7, 'sep': 8, 'okt': 9, 'nov': 10, 'dec': 11
+    };
+
+    const parts = dateStr.toLowerCase().split(/\s+/);
+    // Expected parts: [weekday, day, month]
+    if (parts.length < 3) return null;
+
+    const day = parseInt(parts[1], 10);
+    const month = months[parts[2]];
+
+    if (isNaN(day) || month === undefined) return null;
+
+    const now = new Date();
+    let year = now.getFullYear();
+
+    // If month is earlier than current month, it's likely next year
+    if (month < now.getMonth()) {
+        year++;
+    }
+
+    const date = new Date(year, month, day, 20, 0, 0); // Default to 20:00
+    return date.toISOString();
+};
+
 /**
  * Rounds coordinates to approximately 11km (1 decimal place).
  * This satisfies the "geo-cell (~10-20km)" requirement.
@@ -159,7 +191,7 @@ export const fetchKatalinEvents = async () => {
             country: "Sweden",
             latitude: event.latitude || 59.8586,
             longitude: event.longitude || 17.6389,
-            startDate: event.date && event.date.includes(':') ? event.date : `${event.date}T20:00:00Z`,
+            startDate: parseSwedishDate(event.date) || (event.date && event.date.includes(':') ? event.date : `${event.date}T20:00:00Z`),
             url: event.url
         }));
     } catch (err) {
