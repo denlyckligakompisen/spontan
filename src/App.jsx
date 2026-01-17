@@ -1,6 +1,36 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './index.css'
-import { calculateDistance } from './utils/geo'
+import { calculateDistance, calculateBearing } from './utils/geo'
+
+const ArrowIcon = ({ bearing, heading }) => {
+  // Rotate arrow based on bearing minus user's heading
+  const rotation = heading !== null ? bearing - heading : bearing
+
+  return (
+    <div
+      className="direction-arrow"
+      style={{ transform: `rotate(${rotation}deg)` }}
+      aria-label={`Direction: ${Math.round(rotation)} degrees`}
+    >
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 2L4 22L12 18L20 22L12 2Z"
+          fill="currentColor"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </div>
+  )
+}
 
 function App() {
   const [venues, setVenues] = useState([])
@@ -9,14 +39,19 @@ function App() {
   const [userLocation, setUserLocation] = useState(null)
   const locationRef = useRef(null)
 
-  const fetchConcerts = async (lat, lon) => {
+  // Compass state
+  const [heading, setHeading] = useState(null)
+  const [needsPermission, setNeedsPermission] = useState(false)
+
+  const API_KEY = 'A6phaEl6yiPa994i8qCanQA6HNjiy9Co'
+
+  const fetchEvents = async (lat, lon) => {
     try {
       setLoading(true)
-      // Using Visit Sweden Open Data API (Truly Open, No Key)
-      const query = encodeURIComponent('public:true AND rdfType:http\\:Reference/schema.org/Event AND (musik OR konsert OR music OR MusicEvent)')
-      const url = `https://data.visitsweden.com/store/search?type=solr&query=public:true%20AND%20rdfType:http%5C%3A%2F%2Fschema.org%2FEvent%20AND%20(musik%20OR%20konsert%20OR%20music%20OR%20MusicEvent)&limit=50`
+      // Search for all events nearby using geoPoint (Ticketmaster Discovery API)
+      const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${API_KEY}&latlong=${lat},${lon}&radius=100&unit=km&size=50&sort=distance,asc`
 
-      console.log('Fetching from Visit Sweden API:', url)
+      console.log('Fetching all events from Ticketmaster:', url)
       const response = await fetch(url)
 
       if (!response.ok) {
@@ -25,78 +60,39 @@ function App() {
 
       const data = await response.json()
 
-      if (!data.resource || !data.resource.children) {
+      if (!data._embedded || !data._embedded.events) {
         setVenues([])
         setLoading(false)
         return
       }
 
-      // Collect all metadata into a single map and identify event IDs
-      const allMetadata = {}
-      const eventIds = []
+      const events = data._embedded.events
 
-      data.resource.children.forEach(child => {
-        if (child.metadata) {
-          Object.assign(allMetadata, child.metadata)
-
-          // Find the main event ID in this child's metadata
-          const id = Object.keys(child.metadata).find(k => {
-            const types = child.metadata[k]['http://www.w3.org/1999/02/22-rdf-syntax-ns#type']
-            return types?.some(t => t.value === 'http://schema.org/Event')
-          })
-
-          if (id) eventIds.push(id)
-        }
-      })
-
-      // Map to group events by venue (geo coordinates)
+      // Group events by venue
       const venueMap = new Map()
 
-      eventIds.forEach(id => {
-        const item = allMetadata[id]
-        if (!item) return
+      events.forEach(event => {
+        const venue = event._embedded?.venues?.[0]
+        if (!venue) return
 
-        const name = item['http://schema.org/name']?.[0]?.value
-        const startDate = item['http://schema.org/startDate']?.[0]?.value
-        if (!name || !startDate) return
-
-        // Try to find coordinates in the event node OR a referenced geo node
-        let vLat = parseFloat(item['http://schema.org/latitude']?.[0]?.value)
-        let vLon = parseFloat(item['http://schema.org/longitude']?.[0]?.value)
-        let geoRef = item['http://schema.org/geo']?.[0]?.value
-        let vName = 'Konsertlokal'
-
-        if (isNaN(vLat) || isNaN(vLon)) {
-          if (geoRef && allMetadata[geoRef]) {
-            const geo = allMetadata[geoRef]
-            vLat = parseFloat(geo['http://schema.org/latitude']?.[0]?.value)
-            vLon = parseFloat(geo['http://schema.org/longitude']?.[0]?.value)
-            vName = geo['http://schema.org/name']?.[0]?.value || vName
-          }
-        }
-
-        if (isNaN(vLat) || isNaN(vLon)) return
-
-        const distance = calculateDistance(lat, lon, vLat, vLon)
-        const venueKey = `${vLat.toFixed(4)},${vLon.toFixed(4)}`
-
-        if (!venueMap.has(venueKey)) {
-          venueMap.set(venueKey, {
-            id: venueKey,
-            name: vName,
-            lat: vLat,
-            lon: vLon,
-            distance: distance,
-            concerts: []
+        if (!venueMap.has(venue.id)) {
+          venueMap.set(venue.id, {
+            id: venue.id,
+            name: venue.name,
+            lat: parseFloat(venue.location.latitude),
+            lon: parseFloat(venue.location.longitude),
+            distance: calculateDistance(lat, lon, parseFloat(venue.location.latitude), parseFloat(venue.location.longitude)),
+            bearing: calculateBearing(lat, lon, parseFloat(venue.location.latitude), parseFloat(venue.location.longitude)),
+            events: []
           })
         }
 
-        const venueData = venueMap.get(venueKey)
-        venueData.concerts.push({
-          id: id,
-          name: name,
-          date: startDate.split('T')[0],
-          time: startDate.split('T')[1]?.substring(0, 5) || ''
+        const venueData = venueMap.get(venue.id)
+        venueData.events.push({
+          id: event.id,
+          name: event.name,
+          date: event.dates.start.localDate,
+          time: event.dates.start.localTime || ''
         })
       })
 
@@ -105,10 +101,10 @@ function App() {
         .sort((a, b) => a.distance - b.distance)
         .slice(0, 3) // Top 3 closest venues
 
-      // Apply concert limits: 5 for nearest, 3 for others
+      // Apply event limits: 5 for nearest, 3 for others
       const venuesWithLimits = sortedVenues.map((v, idx) => ({
         ...v,
-        concerts: v.concerts
+        events: v.events
           .sort((a, b) => new Date(a.date) - new Date(b.date))
           .slice(0, idx === 0 ? 5 : 3)
       }))
@@ -116,9 +112,61 @@ function App() {
       setVenues(venuesWithLimits)
       setLoading(false)
     } catch (err) {
-      console.error('Error fetching concerts:', err)
-      setError('Misslyckades att hämta konserter')
+      console.error('Error fetching events:', err)
+      setError('Misslyckades att hämta evenemang')
       setLoading(false)
+    }
+  }
+
+  // Handle Compass Logic
+  useEffect(() => {
+    const handleOrientation = (event) => {
+      let compass = null
+
+      // iOS
+      if (event.webkitCompassHeading) {
+        compass = event.webkitCompassHeading
+      }
+      // Android / Standard
+      else if (event.alpha) {
+        compass = 360 - event.alpha
+      }
+
+      if (compass !== null) {
+        setHeading(compass)
+      }
+    }
+
+    // specific check for iOS 13+ permission requirement
+    if (typeof DeviceOrientationEvent !== 'undefined' &&
+      typeof DeviceOrientationEvent.requestPermission === 'function') {
+      setNeedsPermission(true)
+    } else {
+      window.addEventListener('deviceorientation', handleOrientation)
+    }
+
+    return () => {
+      window.removeEventListener('deviceorientation', handleOrientation)
+    }
+  }, [])
+
+  const requestCompassAccess = async () => {
+    try {
+      if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+        const response = await DeviceOrientationEvent.requestPermission()
+        if (response === 'granted') {
+          setNeedsPermission(false)
+          window.addEventListener('deviceorientation', (event) => {
+            if (event.webkitCompassHeading) {
+              setHeading(event.webkitCompassHeading)
+            }
+          })
+        } else {
+          alert('Permission denied')
+        }
+      }
+    } catch (e) {
+      console.error(e)
     }
   }
 
@@ -136,7 +184,7 @@ function App() {
 
         if (!locationRef.current) {
           locationRef.current = { lat: latitude, lon: longitude }
-          fetchConcerts(latitude, longitude)
+          fetchEvents(latitude, longitude)
         }
       },
       (err) => {
@@ -149,7 +197,7 @@ function App() {
 
     const interval = setInterval(() => {
       if (locationRef.current) {
-        fetchConcerts(locationRef.current.lat, locationRef.current.lon)
+        fetchEvents(locationRef.current.lat, locationRef.current.lon)
       }
     }, 600000) // Refresh every 10 min
 
@@ -158,6 +206,21 @@ function App() {
       clearInterval(interval)
     }
   }, [])
+
+  // Local Recalculation Effect
+  useEffect(() => {
+    if (userLocation && venues.length > 0) {
+      setVenues(prevVenues => prevVenues.map(venue => {
+        const newDist = calculateDistance(userLocation.lat, userLocation.lon, venue.lat, venue.lon)
+        const newBearing = calculateBearing(userLocation.lat, userLocation.lon, venue.lat, venue.lon)
+        return {
+          ...venue,
+          distance: newDist,
+          bearing: newBearing
+        }
+      }))
+    }
+  }, [userLocation])
 
   const formatDate = (dateStr) => {
     const d = new Date(dateStr)
@@ -175,7 +238,7 @@ function App() {
                 <div className="venue-header">
                   <div className="skeleton skeleton-header" style={{ width: '50%' }}></div>
                 </div>
-                <div className="concert-list">
+                <div className="event-list">
                   {[...Array(i === 0 ? 5 : 3)].map((_, j) => (
                     <div key={j} className="skeleton-row">
                       <div className="skeleton" style={{ width: '40%', height: '1em' }}></div>
@@ -190,23 +253,29 @@ function App() {
           <div className="error">{error}</div>
         ) : (
           <div className="content-container">
+            {needsPermission && (
+              <button className="compass-btn" onClick={requestCompassAccess}>
+                ge tillgång till kompass
+              </button>
+            )}
             {venues.length === 0 ? (
-              <div className="no-concerts" style={{ textAlign: 'center', marginTop: '2rem' }}>
-                Inga konserter hittades i närheten.
+              <div className="no-events" style={{ textAlign: 'center', marginTop: '2rem' }}>
+                Inga evenemang hittades i närheten.
               </div>
             ) : (
-              venues.map((venue, idx) => (
+              venues.map((venue) => (
                 <div key={venue.id} className="venue-item">
                   <div className="venue-header">
                     <span className="venue-name">
                       {venue.name} <span className="venue-dist">({(venue.distance / 1000).toFixed(1)} km)</span>
                     </span>
+                    <ArrowIcon bearing={venue.bearing} heading={heading} />
                   </div>
-                  <div className="concert-list">
-                    {venue.concerts.map(concert => (
-                      <div key={concert.id} className="concert-item">
-                        <span className="concert-title">{concert.name}</span>
-                        <span className="concert-date">{formatDate(concert.date)}</span>
+                  <div className="event-list">
+                    {venue.events.map(event => (
+                      <div key={event.id} className="event-item">
+                        <span className="event-title">{event.name}</span>
+                        <span className="event-date">{formatDate(event.date)}</span>
                       </div>
                     ))}
                   </div>

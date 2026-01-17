@@ -78,7 +78,7 @@ body {
   margin-left: 0.5rem;
 }
 
-.concert-list {
+.event-list {
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -86,7 +86,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.concert-item {
+.event-item {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -95,11 +95,11 @@ body {
   border-bottom: 1px solid #222;
 }
 
-.concert-item:last-child {
+.event-item:last-child {
   border-bottom: none;
 }
 
-.concert-title {
+.event-title {
   font-weight: 700;
   color: #fff;
   margin-right: 0.8rem;
@@ -109,7 +109,7 @@ body {
   flex: 1;
 }
 
-.concert-date {
+.event-date {
   font-weight: 400;
   color: #bbb;
   white-space: nowrap;
@@ -117,13 +117,14 @@ body {
   margin-left: 1rem;
 }
 
-.no-concerts {
+.no-events {
   color: #888;
   font-style: italic;
   margin: 1rem 0;
 }
 
-.loading, .error {
+.loading,
+.error {
   text-align: center;
   margin-top: 2rem;
   font-size: 1.2em;
@@ -137,8 +138,13 @@ body {
 
 /* Skeleton Loading */
 @keyframes shimmer {
-  0% { background-position: -468px 0; }
-  100% { background-position: 468px 0; }
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
 }
 
 .skeleton {
@@ -168,4 +174,34 @@ body {
 .skeleton-text {
   height: 1em;
   background: #222;
+}
+
+.direction-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: transform 0.2s ease-out;
+  width: 24px;
+  height: 24px;
+}
+
+.compass-btn {
+  background: #111;
+  color: #888;
+  border: 1px solid #222;
+  padding: 0.8rem 1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  text-transform: lowercase;
+}
+
+.compass-btn:hover {
+  background: #181818;
+  color: #fff;
+  border-color: #333;
 }
