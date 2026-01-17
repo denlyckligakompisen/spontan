@@ -1,7 +1,7 @@
 import fs from "fs";
 import fetch from "node-fetch";
 
-const CACHE_PATH = "src/data/venue-cache.json";
+const CACHE_PATH = "public/data/venue-cache.json";
 
 // Load cache
 let cache = {};
@@ -17,8 +17,8 @@ if (fs.existsSync(CACHE_PATH)) {
  * Saves cache to file.
  */
 function saveCache() {
-    if (!fs.existsSync("src/data")) {
-        fs.mkdirSync("src/data", { recursive: true });
+    if (!fs.existsSync("public/data")) {
+        fs.mkdirSync("public/data", { recursive: true });
     }
     fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
 }

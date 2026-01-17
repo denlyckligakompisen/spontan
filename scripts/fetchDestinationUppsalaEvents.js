@@ -99,6 +99,11 @@ async function run() {
             console.log("No new events found, stopping.");
             break;
         }
+
+        if (page < MAX_PAGES) {
+            console.log("Waiting 2s...");
+            await sleep(2000);
+        }
     }
 
     // Geocode unique venues
@@ -120,9 +125,9 @@ async function run() {
         }
     });
 
-    fs.mkdirSync("src/data", { recursive: true });
+    fs.mkdirSync("public/data", { recursive: true });
     fs.writeFileSync(
-        "src/data/destination-uppsala-events.json",
+        "public/data/destination-uppsala-events.json",
         JSON.stringify(events, null, 2)
     );
 

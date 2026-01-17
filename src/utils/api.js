@@ -1,10 +1,36 @@
 const TICKETMASTER_API_KEY = 'A6phaEl6yiPa994i8qCanQA6HNjiy9Co';
 const SONGKICK_API_KEY = 'YOUR_SONGKICK_API_KEY'; // Placeholder
 
+export const fetchUKKEvents = async () => {
+    try {
+        const response = await fetch('/data/ukk-events.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        return (data || [])
+            .filter(event => event.date && event.date.trim() !== '')
+            .map(event => ({
+                id: `ukk-${event.title}-${event.date}`,
+                source: "ukk",
+                name: event.title,
+                artist: event.title,
+                venue: event.venue,
+                city: "Uppsala",
+                country: "Sweden",
+                latitude: event.latitude || 59.8601,
+                longitude: event.longitude || 17.6433,
+                startDate: parseSwedishDate(event.date) || (event.date && event.date.includes(':') ? event.date : `${event.date}T20:00:00Z`),
+                url: event.url
+            }));
+    } catch (err) {
+        console.error("UKK local data read failed:", err);
+        return [];
+    }
+};
+
 const parseSwedishDate = (dateStr) => {
     if (!dateStr) return null;
 
-    // Format: "Lördag 17 januari" or "Lördag 17 jan"
+    // Format: "Lördag 17 januari", "17 jan", etc.
     const months = {
         'januari': 0, 'februari': 1, 'mars': 2, 'april': 3, 'maj': 4, 'juni': 5,
         'juli': 6, 'augusti': 7, 'september': 8, 'oktober': 9, 'november': 10, 'december': 11,
@@ -12,24 +38,30 @@ const parseSwedishDate = (dateStr) => {
         'jul': 6, 'aug': 7, 'sep': 8, 'okt': 9, 'nov': 10, 'dec': 11
     };
 
-    const parts = dateStr.toLowerCase().split(/\s+/);
-    // Expected parts: [weekday, day, month]
-    if (parts.length < 3) return null;
+    const parts = dateStr.toLowerCase().trim().split(/\s+/);
+    if (parts.length < 2) return null;
 
-    const day = parseInt(parts[1], 10);
-    const month = months[parts[2]];
+    let day, month;
+    if (parts.length >= 3 && isNaN(parseInt(parts[0], 10))) {
+        // Has weekday: [weekday, day, month]
+        day = parseInt(parts[1], 10);
+        month = months[parts[2]];
+    } else {
+        // No weekday: [day, month]
+        day = parseInt(parts[0], 10);
+        month = months[parts[1]];
+    }
 
     if (isNaN(day) || month === undefined) return null;
 
     const now = new Date();
     let year = now.getFullYear();
 
-    // If month is earlier than current month, it's likely next year
     if (month < now.getMonth()) {
         year++;
     }
 
-    const date = new Date(year, month, day, 20, 0, 0); // Default to 20:00
+    const date = new Date(year, month, day, 20, 0, 0);
     return date.toISOString();
 };
 
@@ -175,25 +207,27 @@ export const fetchSongkickEvents = async (metroId) => {
     }
 };
 
-import katalinData from '../data/katalin-events.json';
-import destinationUppsalaData from '../data/destination-uppsala-events.json';
 
 export const fetchKatalinEvents = async () => {
     try {
-        // Use the imported data directly
-        return (katalinData || []).map(event => ({
-            id: `katalin-${event.title}-${event.date}`,
-            source: "katalin",
-            name: event.title,
-            artist: event.title,
-            venue: "Katalin",
-            city: "Uppsala",
-            country: "Sweden",
-            latitude: event.latitude || 59.8586,
-            longitude: event.longitude || 17.6389,
-            startDate: parseSwedishDate(event.date) || (event.date && event.date.includes(':') ? event.date : `${event.date}T20:00:00Z`),
-            url: event.url
-        }));
+        const response = await fetch('/data/katalin-events.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        return (data || [])
+            .filter(event => event.date && event.date.trim() !== '')
+            .map(event => ({
+                id: `katalin-${event.title}-${event.date}`,
+                source: "katalin",
+                name: event.title,
+                artist: event.title,
+                venue: "Katalin",
+                city: "Uppsala",
+                country: "Sweden",
+                latitude: event.latitude || 59.8586,
+                longitude: event.longitude || 17.6389,
+                startDate: parseSwedishDate(event.date) || (event.date && event.date.includes(':') ? event.date : `${event.date}T20:00:00Z`),
+                url: event.url
+            }));
     } catch (err) {
         console.error("Katalin local data read failed:", err);
         return [];
@@ -202,7 +236,10 @@ export const fetchKatalinEvents = async () => {
 
 export const fetchDestinationUppsalaEvents = async () => {
     try {
-        return (destinationUppsalaData || [])
+        const response = await fetch('/data/destination-uppsala-events.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        return (data || [])
             .filter(event => event.date && event.date.trim() !== "")
             .map(event => ({
                 id: `uppsala-${event.title}-${event.date}`,
@@ -214,7 +251,7 @@ export const fetchDestinationUppsalaEvents = async () => {
                 country: "Sweden",
                 latitude: event.latitude || 59.8586,
                 longitude: event.longitude || 17.6389,
-                startDate: event.date && event.date.includes(':') ? event.date : `${event.date}T20:00:00Z`,
+                startDate: parseSwedishDate(event.date) || (event.date && event.date.includes(':') ? event.date : `${event.date}T20:00:00Z`),
                 url: event.url
             }));
     } catch (err) {

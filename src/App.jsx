@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './index.css'
-import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents } from './utils/api'
+import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents } from './utils/api'
 import { mergeAndDedupeEvents, calculateBearing, calculateDistance } from './utils/dedupe'
 
 const useCompass = () => {
@@ -47,6 +47,7 @@ function App() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [userLocation, setUserLocation] = useState(null)
+  const [expandedVenues, setExpandedVenues] = useState(new Set())
   const locationRef = useRef(null)
 
   const fetchAllEvents = async (lat, lon) => {
@@ -57,13 +58,15 @@ function App() {
       const katalinPromise = fetchKatalinEvents()
       const uppsalaPromise = fetchDestinationUppsalaEvents()
 
-      const [tmEvents, katalinEvents, uppsalaEvents] = await Promise.all([
+      const ukkPromise = fetchUKKEvents()
+      const [tmEvents, katalinEvents, uppsalaEvents, ukkEvents] = await Promise.all([
         tmPromise,
         katalinPromise,
-        uppsalaPromise
+        uppsalaPromise,
+        ukkPromise
       ])
 
-      const merged = mergeAndDedupeEvents(tmEvents, [...katalinEvents, ...uppsalaEvents], lat, lon)
+      const merged = mergeAndDedupeEvents(tmEvents, [...katalinEvents, ...uppsalaEvents, ...ukkEvents], lat, lon)
 
       setEvents(merged)
       setLoading(false)
@@ -146,13 +149,21 @@ function App() {
     return venue;
   }).sort((a, b) => a.distanceKm - b.distanceKm);
 
+  const toggleVenue = (vKey) => {
+    setExpandedVenues(prev => {
+      const next = new Set(prev)
+      if (next.has(vKey)) {
+        next.delete(vKey)
+      } else {
+        next.add(vKey)
+      }
+      return next
+    })
+  }
+
   return (
     <div className="app">
       <div className="card">
-        <header className="app-header-compact">
-          <h1>nära dig</h1>
-        </header>
-
         {loading && events.length === 0 ? (
           <div className="content-container">
             {[...Array(3)].map((_, i) => (
@@ -175,13 +186,18 @@ function App() {
               </div>
             ) : (
               venues.map((venue, index) => {
+                const vKey = `${venue.name}-${venue.city}`
                 const bearing = userLocation ? calculateBearing(userLocation.lat, userLocation.lon, venue.latitude, venue.longitude) : 0
-                // Logic: 5 for nearest (index 0), 3 for 2nd/3rd (index 1, 2)
-                const limit = index === 0 ? 5 : (index < 3 ? 3 : 3); // Showing 3 for others too to keep it useful
+                const isExpanded = expandedVenues.has(vKey)
+                const limit = isExpanded ? 10 : 3
 
                 return (
-                  <div key={`${venue.name}-${venue.city}`} className="venue-group">
-                    <div className="venue-header-row">
+                  <div key={vKey} className="venue-group">
+                    <div
+                      className="venue-header-row"
+                      onClick={() => toggleVenue(vKey)}
+                      style={{ cursor: 'pointer' }}
+                    >
                       <div className="venue-title-container">
                         <h2 className="venue-name">{venue.name}</h2>
                         <DistanceLabel distance={venue.distanceKm} />

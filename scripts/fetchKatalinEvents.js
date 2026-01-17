@@ -7,6 +7,8 @@ const BASE_URL = "https://www.katalin.com/events/";
 const MAX_TABS = 10;
 const events = [];
 
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
 async function fetchPage(url) {
     const res = await fetch(url, {
         headers: {
@@ -62,6 +64,11 @@ async function run() {
             console.log("No new events found, stopping.");
             break;
         }
+
+        if (tab < MAX_TABS) {
+            console.log("Waiting 2s...");
+            await sleep(2000);
+        }
     }
 
     // Geocode Katalin venue
@@ -75,9 +82,9 @@ async function run() {
         }
     });
 
-    fs.mkdirSync("src/data", { recursive: true });
+    fs.mkdirSync("public/data", { recursive: true });
     fs.writeFileSync(
-        "src/data/katalin-events.json",
+        "public/data/katalin-events.json",
         JSON.stringify(events, null, 2)
     );
 
