@@ -206,11 +206,6 @@ function App() {
           </div>
         )}
       </div>
-      {userLocation && (
-        <div className="debug-location">
-          {userLocation.lat.toFixed(4)}, {userLocation.lon.toFixed(4)}
-        </div>
-      )}
     </div>
   )
 }

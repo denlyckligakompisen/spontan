@@ -8,13 +8,13 @@ const SONGKICK_API_KEY = 'YOUR_SONGKICK_API_KEY'; // Placeholder
  * will be used for the actual API query as requested.
  */
 export const getGeoCell = (lat, lon) => {
-    return `${lat.toFixed(1)},${lon.toFixed(1)}`;
+    return `${lat.toFixed(6)},${lon.toFixed(6)}`;
 };
 
 /**
- * Round to 2 decimals as requested for Ticketmaster prompt.
+ * Round to 6 decimals for higher precision distance calculation.
  */
-const roundTo2Decimals = (num) => Math.round(num * 100) / 100;
+const roundTo6Decimals = (num) => Math.round(num * 1000000) / 1000000;
 
 const CACHE_KEY_PREFIX = 'spontan_cache_';
 const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours
@@ -43,8 +43,8 @@ export const fetchTicketmasterEvents = async (lat, lon) => {
     const cached = getCachedData(cacheKey);
     if (cached) return cached;
 
-    const roundedLat = roundTo2Decimals(lat);
-    const roundedLon = roundTo2Decimals(lon);
+    const roundedLat = roundTo6Decimals(lat);
+    const roundedLon = roundTo6Decimals(lon);
 
     const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${TICKETMASTER_API_KEY}&geoPoint=${roundedLat},${roundedLon}&radius=50&unit=km&classificationName=music&countryCode=SE&size=100&sort=date,asc`;
 
