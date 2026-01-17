@@ -1,6 +1,7 @@
 import fs from "fs";
 import fetch from "node-fetch";
 import { JSDOM } from "jsdom";
+import { geocodeVenue } from "./geocoder.js";
 
 const BASE_URL = "https://destinationuppsala.se/event-kategori/konsert/";
 const MAX_PAGES = 5;
@@ -99,6 +100,25 @@ async function run() {
             break;
         }
     }
+
+    // Geocode unique venues
+    const uniqueVenues = [...new Set(events.map(e => e.venue))];
+    const venueMap = {};
+
+    for (const venue of uniqueVenues) {
+        const coords = await geocodeVenue(venue, "Uppsala");
+        if (coords) {
+            venueMap[venue] = coords;
+        }
+    }
+
+    // Attach coordinates to events
+    events.forEach(event => {
+        if (venueMap[event.venue]) {
+            event.latitude = venueMap[event.venue].lat;
+            event.longitude = venueMap[event.venue].lon;
+        }
+    });
 
     fs.mkdirSync("src/data", { recursive: true });
     fs.writeFileSync(

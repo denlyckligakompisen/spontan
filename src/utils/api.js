@@ -157,8 +157,8 @@ export const fetchKatalinEvents = async () => {
             venue: "Katalin",
             city: "Uppsala",
             country: "Sweden",
-            latitude: 59.8586,
-            longitude: 17.6389,
+            latitude: event.latitude || 59.8586,
+            longitude: event.longitude || 17.6389,
             startDate: event.date && event.date.includes(':') ? event.date : `${event.date}T20:00:00Z`,
             url: event.url
         }));
@@ -180,8 +180,8 @@ export const fetchDestinationUppsalaEvents = async () => {
                 venue: event.venue || "Uppsala",
                 city: "Uppsala",
                 country: "Sweden",
-                latitude: 59.8586,
-                longitude: 17.6389,
+                latitude: event.latitude || 59.8586,
+                longitude: event.longitude || 17.6389,
                 startDate: event.date && event.date.includes(':') ? event.date : `${event.date}T20:00:00Z`,
                 url: event.url
             }));

@@ -1,6 +1,7 @@
 import fs from "fs";
 import fetch from "node-fetch";
 import { JSDOM } from "jsdom";
+import { geocodeVenue } from "./geocoder.js";
 
 const BASE_URL = "https://www.katalin.com/events/";
 const MAX_TABS = 10;
@@ -62,6 +63,17 @@ async function run() {
             break;
         }
     }
+
+    // Geocode Katalin venue
+    const coords = await geocodeVenue("Katalin", "Uppsala");
+
+    // Add coordinates to all events
+    events.forEach(event => {
+        if (coords) {
+            event.latitude = coords.lat;
+            event.longitude = coords.lon;
+        }
+    });
 
     fs.mkdirSync("src/data", { recursive: true });
     fs.writeFileSync(
