@@ -2,9 +2,6 @@ import React, { useState, useEffect, useRef } from 'react'
 import './index.css'
 import { calculateDistance } from './utils/geo'
 
-// Ticketmaster API Key (Placeholder - User should ideally provide their own)
-const API_KEY = 'NfL66uAtGAbqW4bI0Ab09qGq9A' // Demokey or similar if possible
-
 function App() {
   const [venues, setVenues] = useState([])
   const [loading, setLoading] = useState(true)
@@ -15,44 +12,91 @@ function App() {
   const fetchConcerts = async (lat, lon) => {
     try {
       setLoading(true)
-      // Search for events nearby using geoPoint (Ticketmaster Discovery API)
-      const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${API_KEY}&latlong=${lat},${lon}&radius=100&unit=km&classificationName=music&size=50&sort=distance,asc`
+      // Using Visit Sweden Open Data API (Truly Open, No Key)
+      const query = encodeURIComponent('public:true AND rdfType:http\\:Reference/schema.org/Event AND (musik OR konsert OR music OR MusicEvent)')
+      const url = `https://data.visitsweden.com/store/search?type=solr&query=public:true%20AND%20rdfType:http%5C%3A%2F%2Fschema.org%2FEvent%20AND%20(musik%20OR%20konsert%20OR%20music%20OR%20MusicEvent)&limit=50`
 
+      console.log('Fetching from Visit Sweden API:', url)
       const response = await fetch(url)
+
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status}`)
+      }
+
       const data = await response.json()
 
-      if (!data._embedded || !data._embedded.events) {
+      if (!data.resource || !data.resource.children) {
         setVenues([])
         setLoading(false)
         return
       }
 
-      const events = data._embedded.events
+      // Collect all metadata into a single map and identify event IDs
+      const allMetadata = {}
+      const eventIds = []
 
-      // Group events by venue
+      data.resource.children.forEach(child => {
+        if (child.metadata) {
+          Object.assign(allMetadata, child.metadata)
+
+          // Find the main event ID in this child's metadata
+          const id = Object.keys(child.metadata).find(k => {
+            const types = child.metadata[k]['http://www.w3.org/1999/02/22-rdf-syntax-ns#type']
+            return types?.some(t => t.value === 'http://schema.org/Event')
+          })
+
+          if (id) eventIds.push(id)
+        }
+      })
+
+      // Map to group events by venue (geo coordinates)
       const venueMap = new Map()
 
-      events.forEach(event => {
-        const venue = event._embedded.venues[0]
-        if (!venue) return
+      eventIds.forEach(id => {
+        const item = allMetadata[id]
+        if (!item) return
 
-        if (!venueMap.has(venue.id)) {
-          venueMap.set(venue.id, {
-            id: venue.id,
-            name: venue.name,
-            lat: parseFloat(venue.location.latitude),
-            lon: parseFloat(venue.location.longitude),
-            distance: calculateDistance(lat, lon, parseFloat(venue.location.latitude), parseFloat(venue.location.longitude)),
+        const name = item['http://schema.org/name']?.[0]?.value
+        const startDate = item['http://schema.org/startDate']?.[0]?.value
+        if (!name || !startDate) return
+
+        // Try to find coordinates in the event node OR a referenced geo node
+        let vLat = parseFloat(item['http://schema.org/latitude']?.[0]?.value)
+        let vLon = parseFloat(item['http://schema.org/longitude']?.[0]?.value)
+        let geoRef = item['http://schema.org/geo']?.[0]?.value
+        let vName = 'Konsertlokal'
+
+        if (isNaN(vLat) || isNaN(vLon)) {
+          if (geoRef && allMetadata[geoRef]) {
+            const geo = allMetadata[geoRef]
+            vLat = parseFloat(geo['http://schema.org/latitude']?.[0]?.value)
+            vLon = parseFloat(geo['http://schema.org/longitude']?.[0]?.value)
+            vName = geo['http://schema.org/name']?.[0]?.value || vName
+          }
+        }
+
+        if (isNaN(vLat) || isNaN(vLon)) return
+
+        const distance = calculateDistance(lat, lon, vLat, vLon)
+        const venueKey = `${vLat.toFixed(4)},${vLon.toFixed(4)}`
+
+        if (!venueMap.has(venueKey)) {
+          venueMap.set(venueKey, {
+            id: venueKey,
+            name: vName,
+            lat: vLat,
+            lon: vLon,
+            distance: distance,
             concerts: []
           })
         }
 
-        const venueData = venueMap.get(venue.id)
+        const venueData = venueMap.get(venueKey)
         venueData.concerts.push({
-          id: event.id,
-          name: event.name,
-          date: event.dates.start.localDate,
-          time: event.dates.start.localTime || ''
+          id: id,
+          name: name,
+          date: startDate.split('T')[0],
+          time: startDate.split('T')[1]?.substring(0, 5) || ''
         })
       })
 
@@ -64,21 +108,23 @@ function App() {
       // Apply concert limits: 5 for nearest, 3 for others
       const venuesWithLimits = sortedVenues.map((v, idx) => ({
         ...v,
-        concerts: v.concerts.slice(0, idx === 0 ? 5 : 3)
+        concerts: v.concerts
+          .sort((a, b) => new Date(a.date) - new Date(b.date))
+          .slice(0, idx === 0 ? 5 : 3)
       }))
 
       setVenues(venuesWithLimits)
       setLoading(false)
     } catch (err) {
       console.error('Error fetching concerts:', err)
-      setError('Failed to fetch concerts')
+      setError('Misslyckades att hämta konserter')
       setLoading(false)
     }
   }
 
   useEffect(() => {
     if (!navigator.geolocation) {
-      setError('Geolocation not supported')
+      setError('Stöder inte platsinfo')
       setLoading(false)
       return
     }
@@ -88,7 +134,6 @@ function App() {
         const { latitude, longitude } = position.coords
         setUserLocation({ lat: latitude, lon: longitude })
 
-        // Initial fetch or update if moved significantly (simplified here)
         if (!locationRef.current) {
           locationRef.current = { lat: latitude, lon: longitude }
           fetchConcerts(latitude, longitude)
@@ -96,18 +141,17 @@ function App() {
       },
       (err) => {
         console.error('Geolocation error:', err)
-        setError('Location access denied')
+        setError('Platsåtkomst nekad')
         setLoading(false)
       },
       { enableHighAccuracy: true, timeout: 5000, maximumAge: 0 }
     )
 
-    // Refresh every 5 minutes
     const interval = setInterval(() => {
       if (locationRef.current) {
         fetchConcerts(locationRef.current.lat, locationRef.current.lon)
       }
-    }, 300000)
+    }, 600000) // Refresh every 10 min
 
     return () => {
       navigator.geolocation.clearWatch(watchId)
@@ -142,13 +186,13 @@ function App() {
               </div>
             ))}
           </div>
-        ) : error ? (
+        ) : error && venues.length === 0 ? (
           <div className="error">{error}</div>
         ) : (
           <div className="content-container">
             {venues.length === 0 ? (
               <div className="no-concerts" style={{ textAlign: 'center', marginTop: '2rem' }}>
-                No concerts found nearby.
+                Inga konserter hittades i närheten.
               </div>
             ) : (
               venues.map((venue, idx) => (
