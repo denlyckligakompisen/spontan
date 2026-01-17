@@ -71,3 +71,20 @@ export const mergeAndDedupeEvents = (tmEvents, katalinEvents, userLat, userLon) 
             return new Date(a.startDate) - new Date(b.startDate);
         });
 };
+
+/**
+ * Calculates the initial bearing from point 1 to point 2.
+ */
+export const calculateBearing = (lat1, lon1, lat2, lon2) => {
+    if (!lat1 || !lon1 || !lat2 || !lon2) return 0;
+    const φ1 = lat1 * Math.PI / 180;
+    const φ2 = lat2 * Math.PI / 180;
+    const Δλ = (lon2 - lon1) * Math.PI / 180;
+
+    const y = Math.sin(Δλ) * Math.cos(φ2);
+    const x = Math.cos(φ1) * Math.sin(φ2) -
+        Math.sin(φ1) * Math.cos(φ2) * Math.cos(Δλ);
+
+    let θ = Math.atan2(y, x);
+    return (θ * 180 / Math.PI + 360) % 360;
+};

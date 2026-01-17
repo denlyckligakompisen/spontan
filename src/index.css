@@ -22,15 +22,15 @@ body {
   min-height: 100vh;
   background-color: #000000;
   color: white;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
 
 #root {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   width: 100%;
 }
 
@@ -38,78 +38,77 @@ body {
   width: 100%;
 }
 
-.card {
-  background: transparent;
-  width: 100%;
-}
-
-.app-header-compact {
-  text-align: left;
-  margin-bottom: 2rem;
-}
-
-.app-header-compact h1 {
-  font-size: 0.8rem;
-  text-transform: lowercase;
-  color: #666;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  margin: 0;
-}
-
-.content-container {
-  width: 100%;
-}
-
-.date-group {
+.venue-group {
   margin-bottom: 2.5rem;
 }
 
-.date-header {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #888;
-  margin-bottom: 1rem;
-  text-transform: capitalize;
-}
-
-.event-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-.event-row {
+.venue-header-row {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding-bottom: 0.5rem;
+  align-items: center;
+  margin-bottom: 1.2rem;
 }
 
-.event-info {
+.venue-title-container {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.venue-name {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #eee;
+  margin: 0;
+}
+
+.distance-label {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 300;
+}
+
+.direction-arrow {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 1;
+}
+
+.event-list-venue {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
-  flex: 1;
 }
 
-.event-artist {
-  font-size: 1.1rem;
-  font-weight: 700;
+.event-row-venue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0.5rem;
+  border-top: 1px solid #1a1a1a;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin: 0 -0.5rem;
+}
+
+.event-row-venue:hover {
+  background-color: #111;
+}
+
+.event-artist-venue {
+  font-size: 1rem;
   color: #fff;
-}
-
-.event-venue-city {
-  font-size: 0.85rem;
-  color: #666;
-}
-
-.distance-badge {
-  font-size: 0.8rem;
-  color: #444;
+  font-weight: 700;
+  flex: 1;
+  padding-right: 1rem;
   white-space: nowrap;
-  margin-left: 1rem;
-  padding-top: 0.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-date-text {
+  font-size: 0.9rem;
+  color: #666;
+  white-space: nowrap;
 }
 
 .no-events {
@@ -128,8 +127,13 @@ body {
 
 /* Skeleton Loading */
 @keyframes shimmer {
-  0% { background-position: -468px 0; }
-  100% { background-position: 468px 0; }
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
 }
 
 .skeleton {

@@ -1,10 +1,45 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './index.css'
 import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents } from './utils/api'
-import { mergeAndDedupeEvents } from './utils/dedupe'
+import { mergeAndDedupeEvents, calculateBearing } from './utils/dedupe'
 
-const DistanceBadge = ({ distance }) => (
-  <span className="distance-badge">📍 {distance.toFixed(1)} km</span>
+const useCompass = () => {
+  const [heading, setHeading] = useState(0)
+
+  useEffect(() => {
+    const handler = (e) => {
+      if (e.webkitCompassHeading) {
+        setHeading(e.webkitCompassHeading)
+      } else if (e.alpha !== null) {
+        setHeading(360 - e.alpha)
+      }
+    }
+
+    window.addEventListener('deviceorientation', handler, true)
+    return () => window.removeEventListener('deviceorientation', handler, true)
+  }, [])
+
+  return heading
+}
+
+const DirectionArrow = ({ bearing }) => {
+  const heading = useCompass()
+  const rotation = (bearing - heading + 360) % 360
+
+  return (
+    <div
+      className="direction-arrow"
+      style={{ transform: `rotate(${rotation}deg)` }}
+    >
+      ▲
+    </div>
+  )
+}
+
+const DistanceLabel = ({ distance }) => (
+  <span className="distance-label">
+    ({distance.toLocaleString('sv-SE', { minimumFractionDigits: 1, maximumFractionDigits: 1 })} km)
+  </span>
 )
 
 function App() {
@@ -30,10 +65,7 @@ function App() {
 
       const merged = mergeAndDedupeEvents(tmEvents, [...katalinEvents, ...uppsalaEvents], lat, lon)
 
-      // Filter by 50km
-      const filtered = merged.filter(e => e.distanceKm <= 50)
-
-      setEvents(filtered)
+      setEvents(merged)
       setLoading(false)
     } catch (err) {
       console.error('Error fetching events:', err)
@@ -71,7 +103,7 @@ function App() {
       if (locationRef.current) {
         fetchAllEvents(locationRef.current.lat, locationRef.current.lon)
       }
-    }, 600000) // 10 min refresh
+    }, 600000)
 
     return () => {
       navigator.geolocation.clearWatch(watchId)
@@ -81,27 +113,38 @@ function App() {
 
   const formatDate = (dateStr) => {
     const d = new Date(dateStr)
-    return d.toLocaleDateString('sv-SE', { weekday: 'long', day: 'numeric', month: 'long' })
+    const day = d.getDate()
+    const month = d.toLocaleDateString('sv-SE', { month: 'short' }).replace('.', '')
+    return `${day} ${month}`
   }
 
-  const groupEventsByDate = (eventList) => {
-    const groups = {}
+  const groupEventsByVenue = (eventList) => {
+    const venues = {}
     eventList.forEach(event => {
-      const date = event.startDate.split('T')[0]
-      if (!groups[date]) groups[date] = []
-      groups[date].push(event)
+      const vKey = `${event.venue}-${event.city}`
+      if (!venues[vKey]) {
+        venues[vKey] = {
+          name: event.venue,
+          city: event.city,
+          distanceKm: event.distanceKm,
+          latitude: event.latitude,
+          longitude: event.longitude,
+          events: []
+        }
+      }
+      venues[vKey].events.push(event)
     })
-    return groups
+
+    return Object.values(venues).sort((a, b) => a.distanceKm - b.distanceKm)
   }
 
-  const groupedEvents = groupEventsByDate(events)
-  const sortedDates = Object.keys(groupedEvents).sort()
+  const venues = groupEventsByVenue(events)
 
   return (
     <div className="app">
       <div className="card">
         <header className="app-header-compact">
-          <h1>nära dig (inom 50 km)</h1>
+          <h1>nära dig</h1>
         </header>
 
         {loading && events.length === 0 ? (
@@ -120,27 +163,45 @@ function App() {
           <div className="error">{error}</div>
         ) : (
           <div className="content-container">
-            {events.length === 0 ? (
+            {venues.length === 0 ? (
               <div className="no-events">
-                Inga evenemang hittades inom 50 km.
+                Inga evenemang hittades.
               </div>
             ) : (
-              sortedDates.map(date => (
-                <div key={date} className="date-group">
-                  <h2 className="date-header">{formatDate(date)}</h2>
-                  <div className="event-list">
-                    {groupedEvents[date].map(event => (
-                      <div key={`${event.source}-${event.id}`} className="event-row">
-                        <div className="event-info">
-                          <span className="event-artist">{event.artist || event.name}</span>
-                          <span className="event-venue-city">{event.venue}, {event.city}</span>
-                        </div>
-                        <DistanceBadge distance={event.distanceKm} />
+              venues.map((venue, index) => {
+                const bearing = userLocation ? calculateBearing(userLocation.lat, userLocation.lon, venue.latitude, venue.longitude) : 0
+                // Logic: 5 for nearest (index 0), 3 for 2nd/3rd (index 1, 2)
+                const limit = index === 0 ? 5 : (index < 3 ? 3 : 3); // Showing 3 for others too to keep it useful
+
+                return (
+                  <div key={`${venue.name}-${venue.city}`} className="venue-group">
+                    <div className="venue-header-row">
+                      <div className="venue-title-container">
+                        <h2 className="venue-name">{venue.name}</h2>
+                        <DistanceLabel distance={venue.distanceKm} />
                       </div>
-                    ))}
+                      <DirectionArrow bearing={bearing} />
+                    </div>
+                    <div className="event-list-venue">
+                      {venue.events
+                        .sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
+                        .slice(0, limit)
+                        .map(event => (
+                          <a
+                            key={`${event.source}-${event.id}`}
+                            href={event.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="event-row-venue"
+                          >
+                            <span className="event-artist-venue">{event.artist || event.name}</span>
+                            <span className="event-date-text">{formatDate(event.startDate)}</span>
+                          </a>
+                        ))}
+                    </div>
                   </div>
-                </div>
-              ))
+                )
+              })
             )}
           </div>
         )}
