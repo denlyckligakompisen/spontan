@@ -22,16 +22,15 @@ body {
   min-height: 100vh;
   background-color: #000000;
   color: white;
-  padding-top: 1rem;
+  padding-top: 2rem;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
 
 #root {
-  max-width: 1280px;
+  max-width: 600px;
   margin: 0 auto;
-  padding: 0 1rem;
-  text-align: center;
+  padding: 0 1.5rem;
   width: 100%;
 }
 
@@ -41,167 +40,130 @@ body {
 
 .card {
   background: transparent;
-  padding: 0;
-  max-width: 400px;
-  margin: 0 auto;
-  position: relative;
-  display: flex;
-  flex-direction: column;
   width: 100%;
+}
+
+.app-header-compact {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.app-header-compact h1 {
+  font-size: 0.8rem;
+  text-transform: lowercase;
+  color: #666;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 0;
 }
 
 .content-container {
   width: 100%;
-  text-align: left;
 }
 
-.venue-item {
-  margin-top: 1.5rem;
+.date-group {
+  margin-bottom: 2.5rem;
 }
 
-.venue-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 0.5rem;
-}
-
-.venue-name {
-  font-size: 1.3em;
-  color: #ccc;
-  font-weight: 300;
-}
-
-.venue-dist {
-  font-size: 0.8em;
-  color: #666;
-  margin-left: 0.5rem;
+.date-header {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #888;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
 }
 
 .event-list {
   display: flex;
   flex-direction: column;
-  gap: 0;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  gap: 1.2rem;
 }
 
-.event-item {
+.event-row {
   display: flex;
-  align-items: baseline;
   justify-content: space-between;
-  font-size: 1rem;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #222;
+  align-items: flex-start;
+  padding-bottom: 0.5rem;
 }
 
-.event-item:last-child {
-  border-bottom: none;
-}
-
-.event-title {
-  font-weight: 700;
-  color: #fff;
-  margin-right: 0.8rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
   flex: 1;
 }
 
-.event-date {
-  font-weight: 400;
-  color: #bbb;
+.event-artist {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.event-venue-city {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.distance-badge {
+  font-size: 0.8rem;
+  color: #444;
   white-space: nowrap;
-  text-align: right;
   margin-left: 1rem;
+  padding-top: 0.2rem;
 }
 
 .no-events {
-  color: #888;
+  color: #444;
   font-style: italic;
-  margin: 1rem 0;
-}
-
-.loading,
-.error {
+  margin-top: 4rem;
   text-align: center;
-  margin-top: 2rem;
-  font-size: 1.2em;
-  opacity: 0.7;
 }
 
 .error {
   color: #ff6b6b;
-  opacity: 1;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 /* Skeleton Loading */
 @keyframes shimmer {
-  0% {
-    background-position: -468px 0;
-  }
-
-  100% {
-    background-position: 468px 0;
-  }
+  0% { background-position: -468px 0; }
+  100% { background-position: 468px 0; }
 }
 
 .skeleton {
-  background: #222;
-  background-image: linear-gradient(to right, #222 0%, #333 20%, #222 40%, #222 100%);
+  background: #111;
+  background-image: linear-gradient(to right, #111 0%, #222 20%, #111 40%, #111 100%);
   background-repeat: no-repeat;
   background-size: 800px 104px;
   display: inline-block;
-  position: relative;
-  animation: shimmer 1s linear infinite;
-  border-radius: 4px;
+  animation: shimmer 1.5s linear infinite;
+  border-radius: 2px;
+}
+
+.skeleton-group {
+  margin-bottom: 2rem;
 }
 
 .skeleton-header {
-  height: 1.5em;
-  width: 60%;
-  margin-bottom: 1rem;
+  height: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .skeleton-row {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #222;
+  margin-bottom: 0.5rem;
 }
 
-.skeleton-text {
-  height: 1em;
-  background: #222;
-}
-
-.direction-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  transition: transform 0.2s ease-out;
-  width: 24px;
-  height: 24px;
-}
-
-.compass-btn {
-  background: #111;
-  color: #888;
-  border: 1px solid #222;
-  padding: 0.8rem 1rem;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-bottom: 1.5rem;
-  width: 100%;
-  text-transform: lowercase;
-}
-
-.compass-btn:hover {
-  background: #181818;
-  color: #fff;
-  border-color: #333;
+.debug-location {
+  position: fixed;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  font-size: 0.6rem;
+  color: #222;
+  text-align: center;
+  pointer-events: none;
 }

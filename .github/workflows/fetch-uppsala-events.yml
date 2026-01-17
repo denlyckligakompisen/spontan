@@ -1,0 +1,33 @@
+name: Fetch Uppsala Events
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 5 * * *" # daily at 05:00 UTC
+
+jobs:
+  fetch-events:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Fetch events
+        run: node scripts/fetchDestinationUppsalaEvents.js
+
+      - name: Commit updated JSON
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add src/data/destination-uppsala-events.json
+          git commit -m "Update Uppsala events" || echo "No changes"
+          git push
