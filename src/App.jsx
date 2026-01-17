@@ -48,10 +48,11 @@ function App() {
   const fetchEvents = async (lat, lon) => {
     try {
       setLoading(true)
-      // Search for all events nearby using geoPoint (Ticketmaster Discovery API)
-      const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${API_KEY}&latlong=${lat},${lon}&radius=100&unit=km&size=50&sort=distance,asc`
+      // Use geoPoint instead of deprecated latlong. Increase radius to 200km.
+      const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${API_KEY}&geoPoint=${lat},${lon}&radius=200&unit=km&size=100&sort=distance,asc&countryCode=SE`
 
-      console.log('Fetching all events from Ticketmaster:', url)
+      console.log(`fetching events for: ${lat}, ${lon}`)
+      console.log('full api url:', url)
       const response = await fetch(url)
 
       if (!response.ok) {
@@ -285,6 +286,11 @@ function App() {
           </div>
         )}
       </div>
+      {userLocation && (
+        <div style={{ fontSize: '0.6rem', color: '#333', marginTop: '1rem', textAlign: 'center' }}>
+          {userLocation.lat.toFixed(4)}, {userLocation.lon.toFixed(4)}
+        </div>
+      )}
     </div>
   )
 }
