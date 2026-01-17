@@ -1,0 +1,80 @@
+﻿
+> konsert@0.0.0 build
+> vite build
+
+node.exe : [vite] 
+failed to load config 
+from C:\Users\Fredrik\.
+gemini\antigravity\scra
+tch\konsert\vite.config
+.js:
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Users\Fredrik\AppDa
+ta\Roamin ...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: ([vite] failed   
+  t...vite.config.j    
+s::String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+TypeError: Cannot add 
+property env, object 
+is not extensible
+    at 
+Object.resolveConfig (C
+:\Users\Fredrik\.gemini
+\antigravity\scratch\ko
+nsert\node_modules\vite
+\dist\node\config.js:97
+:20)
+    at resolveOptions (
+C:\Users\Fredrik\.gemin
+i\antigravity\scratch\k
+onsert\node_modules\vit
+e\dist\node\cli.js:98:3
+9)
+    at CAC.<anonymous> 
+(C:\Users\Fredrik\.gemi
+ni\antigravity\scratch\
+konsert\node_modules\vi
+te\dist\node\cli.js:61:
+27)
+    at 
+CAC.runMatchedCommand (
+C:\Users\Fredrik\.gemin
+i\antigravity\scratch\k
+onsert\node_modules\cac
+\dist\index.js:614:34)
+    at CAC.parse (C:\Us
+ers\Fredrik\.gemini\ant
+igravity\scratch\konser
+t\node_modules\cac\dist
+\index.js:541:12)
+    at 
+Object.<anonymous> (C:\
+Users\Fredrik\.gemini\a
+ntigravity\scratch\kons
+ert\node_modules\vite\d
+ist\node\cli.js:77:5)
+    at Module._compile 
+(node:internal/modules/
+cjs/loader:1761:14)
+    at Object..js (node
+:internal/modules/cjs/l
+oader:1893:10)
+    at Module.load (nod
+e:internal/modules/cjs/
+loader:1481:32)
+    at Module._load (no
+de:internal/modules/cjs
+/loader:1300:12)

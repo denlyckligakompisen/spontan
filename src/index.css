@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #000000;
+  color: white;
+  padding-top: 1rem;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.app {
+  width: 100%;
+}
+
+.card {
+  background: transparent;
+  padding: 0;
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content-container {
+  width: 100%;
+  text-align: left;
+}
+
+.venue-item {
+  margin-top: 1.5rem;
+}
+
+.venue-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+
+.venue-name {
+  font-size: 1.3em;
+  color: #ccc;
+  font-weight: 300;
+}
+
+.venue-dist {
+  font-size: 0.8em;
+  color: #666;
+  margin-left: 0.5rem;
+}
+
+.concert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.concert-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #222;
+}
+
+.concert-item:last-child {
+  border-bottom: none;
+}
+
+.concert-title {
+  font-weight: 700;
+  color: #fff;
+  margin-right: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.concert-date {
+  font-weight: 400;
+  color: #bbb;
+  white-space: nowrap;
+  text-align: right;
+  margin-left: 1rem;
+}
+
+.no-concerts {
+  color: #888;
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+.loading, .error {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.2em;
+  opacity: 0.7;
+}
+
+.error {
+  color: #ff6b6b;
+  opacity: 1;
+}
+
+/* Skeleton Loading */
+@keyframes shimmer {
+  0% { background-position: -468px 0; }
+  100% { background-position: 468px 0; }
+}
+
+.skeleton {
+  background: #222;
+  background-image: linear-gradient(to right, #222 0%, #333 20%, #222 40%, #222 100%);
+  background-repeat: no-repeat;
+  background-size: 800px 104px;
+  display: inline-block;
+  position: relative;
+  animation: shimmer 1s linear infinite;
+  border-radius: 4px;
+}
+
+.skeleton-header {
+  height: 1.5em;
+  width: 60%;
+  margin-bottom: 1rem;
+}
+
+.skeleton-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #222;
+}
+
+.skeleton-text {
+  height: 1em;
+  background: #222;
+}
