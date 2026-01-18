@@ -98,6 +98,19 @@ body {
   border-bottom: 2px solid #fff;
 }
 
+.month-group {
+  margin-bottom: 3rem;
+}
+
+.month-header {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #333;
+}
+
 .venue-group {
   margin-bottom: 2.5rem;
 }
@@ -160,10 +173,23 @@ body {
   font-size: 1rem;
   color: #fff;
   font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-info-stack {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   min-width: 0;
-  /* Important for flex shrink */
   padding-right: 0.75rem;
+}
+
+.event-venue-subtext {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.2rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

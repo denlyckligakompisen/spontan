@@ -129,6 +129,7 @@ function App() {
   }, [events, view]);
 
   const venues = useMemo(() => {
+    if (view !== 'idag') return []
     const groups = []
 
     filteredEvents.forEach(event => {
@@ -166,7 +167,26 @@ function App() {
         : (venue.events[0]?.distanceKm || 999)
       return { ...venue, distanceKm: dist }
     }).sort((a, b) => a.distanceKm - b.distanceKm)
-  }, [filteredEvents, userLocation])
+  }, [filteredEvents, userLocation, view])
+
+  const monthGroups = useMemo(() => {
+    if (view !== 'alla') return []
+
+    const groups = {}
+    filteredEvents.forEach(event => {
+      const date = new Date(event.startDate)
+      const monthYear = date.toLocaleDateString('sv-SE', { month: 'long', year: 'numeric' })
+      if (!groups[monthYear]) {
+        groups[monthYear] = []
+      }
+      groups[monthYear].push(event)
+    })
+
+    return Object.entries(groups).map(([month, events]) => ({
+      month: month.charAt(0).toUpperCase() + month.slice(1),
+      events: events.sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
+    })).sort((a, b) => new Date(a.events[0].startDate) - new Date(b.events[0].startDate))
+  }, [filteredEvents, view])
 
   const toggleVenue = (vKey) => {
     setExpandedVenues(prev => {
@@ -220,48 +240,71 @@ function App() {
             <div className="error">{error}</div>
           ) : (
             <div className="content-container">
-              {venues.length === 0 ? (
-                <div className="no-events">
-                  Inga evenemang hittades.
-                </div>
-              ) : (
-                venues.map((venue, index) => {
-                  const vKey = `${venue.name}-${venue.city}`
-                  const isExpanded = expandedVenues.has(vKey)
-                  const limit = isExpanded ? venue.events.length : 3
+              {view === 'idag' ? (
+                venues.length === 0 ? (
+                  <div className="no-events">Idag är det tomt.</div>
+                ) : (
+                  venues.map((venue) => {
+                    const vKey = `${venue.name}-${venue.city}`
+                    const isExpanded = expandedVenues.has(vKey)
+                    const limit = isExpanded ? venue.events.length : 3
 
-                  return (
-                    <div key={vKey} className="venue-group">
-                      <div
-                        className="venue-header-row"
-                        onClick={() => toggleVenue(vKey)}
-                        style={{ cursor: 'pointer' }}
-                      >
-                        <div className="venue-title-container">
-                          <h2 className="venue-name">{venue.name}</h2>
-                          <DistanceLabel distance={venue.distanceKm} />
+                    return (
+                      <div key={vKey} className="venue-group">
+                        <div
+                          className="venue-header-row"
+                          onClick={() => toggleVenue(vKey)}
+                          style={{ cursor: 'pointer' }}
+                        >
+                          <div className="venue-title-container">
+                            <h2 className="venue-name">{venue.name}</h2>
+                            <DistanceLabel distance={venue.distanceKm} />
+                          </div>
+                        </div>
+                        <div className="event-list-venue">
+                          {venue.events
+                            .sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
+                            .slice(0, limit)
+                            .map(event => (
+                              <a
+                                key={`${event.source}-${event.id}`}
+                                href={event.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="event-row-venue"
+                              >
+                                <span className="event-artist-venue">{event.artist || event.name}</span>
+                                <span className="event-date-text">{formatDate(event.startDate)}</span>
+                              </a>
+                            ))}
                         </div>
                       </div>
-                      <div className="event-list-venue">
-                        {venue.events
-                          .sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
-                          .slice(0, limit)
-                          .map(event => (
-                            <a
-                              key={`${event.source}-${event.id}`}
-                              href={event.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="event-row-venue"
-                            >
-                              <span className="event-artist-venue">{event.artist || event.name}</span>
-                              <span className="event-date-text">{formatDate(event.startDate)}</span>
-                            </a>
-                          ))}
-                      </div>
+                    )
+                  })
+                )
+              ) : (
+                monthGroups.map((group) => (
+                  <div key={group.month} className="month-group">
+                    <h2 className="month-header">{group.month}</h2>
+                    <div className="event-list-venue">
+                      {group.events.map(event => (
+                        <a
+                          key={`${event.source}-${event.id}`}
+                          href={event.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="event-row-venue stacked"
+                        >
+                          <div className="event-info-stack">
+                            <span className="event-artist-venue">{event.artist || event.name}</span>
+                            <span className="event-venue-subtext">{event.venue}</span>
+                          </div>
+                          <span className="event-date-text">{formatDate(event.startDate)}</span>
+                        </a>
+                      ))}
                     </div>
-                  )
-                })
+                  </div>
+                ))
               )}
             </div>
           )}
