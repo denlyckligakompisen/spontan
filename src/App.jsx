@@ -49,6 +49,7 @@ function App() {
   const [view, setView] = useState('idag') // 'idag' or 'kommande'
   const [isScrolled, setIsScrolled] = useState(false)
   const [highlightIds, setHighlightIds] = useState(new Set())
+  const [currentMonth, setCurrentMonth] = useState('')
   const locationRef = useRef(null)
 
   const openDirections = (venueName, city) => {
@@ -259,6 +260,54 @@ function App() {
     })).sort((a, b) => new Date(a.events[0].startDate) - new Date(b.events[0].startDate))
   }, [filteredEvents, userLocation, view])
 
+  // Track current visible month for sticky header
+  useEffect(() => {
+    if (view !== 'kommande' || monthGroups.length === 0) return
+
+    // Set initial month
+    if (!currentMonth && monthGroups.length > 0) {
+      setCurrentMonth(monthGroups[0].month)
+    }
+
+    // Wait for DOM to render, then create observers
+    const timeoutId = setTimeout(() => {
+      const observers = []
+
+      // Observe ALL events to find the topmost visible one
+      monthGroups.forEach((group) => {
+        group.events.forEach((event) => {
+          const eventId = `${event.source}-${event.id}`
+          const element = document.getElementById(eventId)
+
+          if (element) {
+            const observer = new IntersectionObserver(
+              ([entry]) => {
+                if (entry.isIntersecting && entry.boundingClientRect.top < 200) {
+                  // This event is visible near the top, update to its month
+                  setCurrentMonth(group.month)
+                }
+              },
+              {
+                rootMargin: '-120px 0px -90% 0px',
+                threshold: 0
+              }
+            )
+            observer.observe(element)
+            observers.push(observer)
+          }
+        })
+      })
+
+      return () => {
+        observers.forEach(observer => observer.disconnect())
+      }
+    }, 100)
+
+    return () => {
+      clearTimeout(timeoutId)
+    }
+  }, [view, monthGroups])
+
   const handleNextWeekend = () => {
     // 1. Switch to 'kommande' view first
     setView('kommande')
@@ -429,29 +478,27 @@ function App() {
                   })
                 )
               ) : (
-                monthGroups.map((group) => (
-                  <div key={group.month} className="month-group">
-                    <MonthHeader month={group.month} />
-                    <div className="event-list-venue">
-                      {group.events.map(event => (
-                        <a
-                          id={`${event.source}-${event.id}`}
-                          key={`${event.source}-${event.id}`}
-                          href={event.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className={`event-row-venue stacked ${highlightIds.has(`${event.source}-${event.id}`) ? 'highlighted' : ''}`}
-                        >
-                          <div className="event-info-stack">
-                            <span className="event-artist-venue">{event.artist || event.name}</span>
-                            <span className="event-venue-subtext">{event.venue}</span>
-                          </div>
-                          <span className="event-date-text">{formatDate(event.startDate)}</span>
-                        </a>
-                      ))}
-                    </div>
+                <>
+                  <MonthHeader month={currentMonth || (monthGroups.length > 0 ? monthGroups[0].month : '')} />
+                  <div className="event-list-venue">
+                    {monthGroups.flatMap(group => group.events).map(event => (
+                      <a
+                        id={`${event.source}-${event.id}`}
+                        key={`${event.source}-${event.id}`}
+                        href={event.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`event-row-venue stacked ${highlightIds.has(`${event.source}-${event.id}`) ? 'highlighted' : ''}`}
+                      >
+                        <div className="event-info-stack">
+                          <span className="event-artist-venue">{event.artist || event.name}</span>
+                          <span className="event-venue-subtext">{event.venue}</span>
+                        </div>
+                        <span className="event-date-text">{formatDate(event.startDate)}</span>
+                      </a>
+                    ))}
                   </div>
-                ))
+                </>
               )}
             </div>
           )}
