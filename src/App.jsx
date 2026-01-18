@@ -296,7 +296,7 @@ function App() {
       setTimeout(() => {
         const element = document.getElementById(firstEventId)
         if (element) {
-          const topOffset = 150 // Adjust for sticky headers (app header + month header)
+          const topOffset = 175 // Adjust for sticky headers (app header + month header + padding)
           const elementPosition = element.getBoundingClientRect().top
           const offsetPosition = elementPosition + window.pageYOffset - topOffset
 
