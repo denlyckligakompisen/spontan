@@ -60,6 +60,15 @@ const DistanceLabel = ({ distance }) => (
   </span>
 )
 
+const normalizeVenueName = (name) => {
+  if (!name) return ''
+  return name.toLowerCase()
+    .replace(/\b(ip|arena|stadion|konsert & kongress|konserthus|teater|scen|klubb)\b/g, '')
+    .replace(/[^\w\såäö]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
 function App() {
   const [events, setEvents] = useState([])
   const [loading, setLoading] = useState(true)
@@ -143,22 +152,38 @@ function App() {
   }
 
   const venues = useMemo(() => {
-    const grouped = {}
+    const groups = []
+
     events.forEach(event => {
-      const vKey = `${event.venue}-${event.city}`
-      if (!grouped[vKey]) {
-        grouped[vKey] = {
+      const normalized = normalizeVenueName(event.venue)
+
+      // Find an existing group by distance OR name
+      let group = groups.find(g => {
+        const dist = calculateDistance(event.latitude, event.longitude, g.latitude, g.longitude)
+        if (dist < 0.2) return true // 200m proximity
+
+        return normalizeVenueName(g.name) === normalized && g.city === event.city
+      })
+
+      if (!group) {
+        group = {
           name: event.venue,
           city: event.city,
           latitude: event.latitude,
           longitude: event.longitude,
           events: []
         }
+        groups.push(group)
+      } else {
+        // Update to pick the "best" name (shortest)
+        if (event.venue.length < group.name.length) {
+          group.name = event.venue
+        }
       }
-      grouped[vKey].events.push(event)
+      group.events.push(event)
     })
 
-    return Object.values(grouped).map(venue => {
+    return groups.map(venue => {
       const dist = userLocation
         ? calculateDistance(userLocation.lat, userLocation.lon, venue.latitude, venue.longitude)
         : (venue.events[0]?.distanceKm || 999)
