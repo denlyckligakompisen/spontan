@@ -1,10 +1,27 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef, useMemo } from 'react'
 import './index.css'
 import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents } from './utils/api'
 import { mergeAndDedupeEvents, calculateBearing, calculateDistance } from './utils/dedupe'
 
 const useCompass = () => {
   const [heading, setHeading] = useState(0)
+  const [isPermitted, setIsPermitted] = useState(false)
+
+  const requestPermission = async () => {
+    if (typeof DeviceOrientationEvent !== 'undefined' &&
+      typeof DeviceOrientationEvent.requestPermission === 'function') {
+      try {
+        const permission = await DeviceOrientationEvent.requestPermission()
+        if (permission === 'granted') {
+          setIsPermitted(true)
+        }
+      } catch (err) {
+        console.error('Compass permission error:', err)
+      }
+    } else {
+      setIsPermitted(true)
+    }
+  }
 
   useEffect(() => {
     const handler = (e) => {
@@ -15,15 +32,16 @@ const useCompass = () => {
       }
     }
 
-    window.addEventListener('deviceorientation', handler, true)
+    if (isPermitted) {
+      window.addEventListener('deviceorientation', handler, true)
+    }
     return () => window.removeEventListener('deviceorientation', handler, true)
-  }, [])
+  }, [isPermitted])
 
-  return heading
+  return { heading, requestPermission, isPermitted }
 }
 
-const DirectionArrow = ({ bearing }) => {
-  const heading = useCompass()
+const DirectionArrow = ({ bearing, heading }) => {
   const rotation = (bearing - heading + 360) % 360
 
   return (
@@ -48,6 +66,7 @@ function App() {
   const [error, setError] = useState(null)
   const [userLocation, setUserLocation] = useState(null)
   const [expandedVenues, setExpandedVenues] = useState(new Set())
+  const { heading, requestPermission, isPermitted } = useCompass()
   const locationRef = useRef(null)
 
   const fetchAllEvents = async (lat, lon) => {
@@ -99,7 +118,7 @@ function App() {
         setError('Platsåtkomst nekad')
         setLoading(false)
       },
-      { enableHighAccuracy: false, timeout: 5000, maximumAge: 0 }
+      { enableHighAccuracy: true, timeout: 5000, maximumAge: 0 }
     )
 
     const interval = setInterval(() => {
@@ -121,35 +140,32 @@ function App() {
     return `${day} ${month}`
   }
 
-  const groupEventsByVenue = (eventList) => {
-    const venues = {}
-    eventList.forEach(event => {
+  const venues = useMemo(() => {
+    const grouped = {}
+    events.forEach(event => {
       const vKey = `${event.venue}-${event.city}`
-      if (!venues[vKey]) {
-        venues[vKey] = {
+      if (!grouped[vKey]) {
+        grouped[vKey] = {
           name: event.venue,
           city: event.city,
-          distanceKm: event.distanceKm,
           latitude: event.latitude,
           longitude: event.longitude,
           events: []
         }
       }
-      venues[vKey].events.push(event)
+      grouped[vKey].events.push(event)
     })
 
-    return Object.values(venues).sort((a, b) => a.distanceKm - b.distanceKm)
-  }
-
-  const venues = groupEventsByVenue(events).map(venue => {
-    if (userLocation) {
-      const dist = calculateDistance(userLocation.lat, userLocation.lon, venue.latitude, venue.longitude);
-      return { ...venue, distanceKm: dist };
-    }
-    return venue;
-  }).sort((a, b) => a.distanceKm - b.distanceKm);
+    return Object.values(grouped).map(venue => {
+      const dist = userLocation
+        ? calculateDistance(userLocation.lat, userLocation.lon, venue.latitude, venue.longitude)
+        : (venue.events[0]?.distanceKm || 999)
+      return { ...venue, distanceKm: dist }
+    }).sort((a, b) => a.distanceKm - b.distanceKm)
+  }, [events, userLocation])
 
   const toggleVenue = (vKey) => {
+    if (!isPermitted) requestPermission()
     setExpandedVenues(prev => {
       const next = new Set(prev)
       if (next.has(vKey)) {
@@ -202,7 +218,7 @@ function App() {
                         <h2 className="venue-name">{venue.name}</h2>
                         <DistanceLabel distance={venue.distanceKm} />
                       </div>
-                      <DirectionArrow bearing={bearing} />
+                      {index < 3 && <DirectionArrow bearing={bearing} heading={heading} />}
                     </div>
                     <div className="event-list-venue">
                       {venue.events
