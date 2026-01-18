@@ -113,6 +113,16 @@ function App() {
 
   const formatDate = (dateStr) => {
     const d = new Date(dateStr)
+    const now = new Date()
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
+    const tomorrow = new Date(today)
+    tomorrow.setDate(tomorrow.getDate() + 1)
+
+    const eventDate = new Date(d.getFullYear(), d.getMonth(), d.getDate())
+
+    if (eventDate.getTime() === today.getTime()) return 'idag'
+    if (eventDate.getTime() === tomorrow.getTime()) return 'imorgon'
+
     const day = d.getDate()
     const month = d.toLocaleDateString('sv-SE', { month: 'short' }).replace('.', '')
     return `${day} ${month}`
@@ -232,6 +242,7 @@ function App() {
             >
               alla
             </button>
+            <div className={`view-toggle-underline ${view}`} />
           </div>
         </header>
 
