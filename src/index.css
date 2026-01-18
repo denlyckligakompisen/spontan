@@ -42,8 +42,36 @@ body {
   font-size: 2rem;
   font-weight: 500;
   color: #fff;
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
   text-align: center;
+}
+
+.view-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 2px solid transparent;
+}
+
+.toggle-btn:hover {
+  color: #999;
+}
+
+.toggle-btn.active {
+  color: #fff;
+  border-bottom: 2px solid #fff;
 }
 
 .venue-group {

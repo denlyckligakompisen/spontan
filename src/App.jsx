@@ -26,6 +26,7 @@ function App() {
   const [error, setError] = useState(null)
   const [userLocation, setUserLocation] = useState(null)
   const [expandedVenues, setExpandedVenues] = useState(new Set())
+  const [view, setView] = useState('idag') // 'idag' or 'alla'
   const locationRef = useRef(null)
 
   const fetchAllEvents = async (lat, lon) => {
@@ -101,10 +102,27 @@ function App() {
     return `${day} ${month}`
   }
 
+  const filteredEvents = useMemo(() => {
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+
+    return events.filter(event => {
+      const eventDate = new Date(event.startDate);
+      if (view === 'idag') {
+        return eventDate >= today && eventDate < tomorrow;
+      } else {
+        // 'alla' view - show everything from today onwards
+        return eventDate >= today;
+      }
+    });
+  }, [events, view]);
+
   const venues = useMemo(() => {
     const groups = []
 
-    events.forEach(event => {
+    filteredEvents.forEach(event => {
       const normalized = normalizeVenueName(event.venue)
 
       // Find an existing group by distance OR name
@@ -139,7 +157,7 @@ function App() {
         : (venue.events[0]?.distanceKm || 999)
       return { ...venue, distanceKm: dist }
     }).sort((a, b) => a.distanceKm - b.distanceKm)
-  }, [events, userLocation])
+  }, [filteredEvents, userLocation])
 
   const toggleVenue = (vKey) => {
     setExpandedVenues(prev => {
@@ -158,6 +176,22 @@ function App() {
       <Intro />
       <div className="app">
         <h1 className="app-title">spontan.</h1>
+
+        <div className="view-toggle">
+          <button
+            className={`toggle-btn ${view === 'idag' ? 'active' : ''}`}
+            onClick={() => setView('idag')}
+          >
+            idag
+          </button>
+          <button
+            className={`toggle-btn ${view === 'alla' ? 'active' : ''}`}
+            onClick={() => setView('alla')}
+          >
+            alla
+          </button>
+        </div>
+
         <div className="card">
           {loading && events.length === 0 ? (
             <div className="content-container">
