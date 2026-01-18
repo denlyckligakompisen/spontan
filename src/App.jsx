@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react'
 import './index.css'
-import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents } from './utils/api'
+import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents } from './utils/api'
 import { mergeAndDedupeEvents, calculateBearing, calculateDistance } from './utils/dedupe'
 
 const useCompass = () => {
@@ -78,14 +78,16 @@ function App() {
       const uppsalaPromise = fetchDestinationUppsalaEvents()
 
       const ukkPromise = fetchUKKEvents()
-      const [tmEvents, katalinEvents, uppsalaEvents, ukkEvents] = await Promise.all([
+      const hejaPromise = fetchHejaUppsalaEvents()
+      const [tmEvents, katalinEvents, uppsalaEvents, ukkEvents, hejaEvents] = await Promise.all([
         tmPromise,
         katalinPromise,
         uppsalaPromise,
-        ukkPromise
+        ukkPromise,
+        hejaPromise
       ])
 
-      const merged = mergeAndDedupeEvents(tmEvents, [...katalinEvents, ...uppsalaEvents, ...ukkEvents], lat, lon)
+      const merged = mergeAndDedupeEvents(tmEvents, [...katalinEvents, ...uppsalaEvents, ...ukkEvents, ...hejaEvents], lat, lon)
 
       setEvents(merged)
       setLoading(false)

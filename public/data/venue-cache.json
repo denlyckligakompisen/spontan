@@ -54,5 +54,65 @@
   "Studenternas IP, Uppsala, Sweden": {
     "lat": 59.8486572,
     "lon": 17.6463313
+  },
+  "Bror Hjorths Hus, Norbyvägen 26, Uppsala, Sweden": {
+    "lat": 59.8492776,
+    "lon": 17.6198763
+  },
+  "Kulturoasen, Uppsala, Sweden": {
+    "lat": 59.8381131,
+    "lon": 17.5763292
+  },
+  "Usif Arena, Uppsala, Sweden": {
+    "lat": 59.8308084,
+    "lon": 17.6338784
+  },
+  "Domkyrkan, Uppsala, Sweden": {
+    "lat": 59.8992756,
+    "lon": 17.6317491
+  },
+  "Studenternas, Uppsala, Sweden": {
+    "lat": 59.8486572,
+    "lon": 17.6463313
+  },
+  "Fyrishov A, Uppsala, Sweden": {
+    "lat": 59.8707312,
+    "lon": 17.6223964
+  },
+  "IFU Arena, Uppsala, Sweden": {
+    "lat": 59.8823663,
+    "lon": 17.6574412
+  },
+  "Storgatan 23 c, Uppsala, Uppsala, Sweden": {
+    "lat": 59.8640705,
+    "lon": 17.6391728
+  },
+  "Helga Trefaldighets kyrka, Uppsala, Sweden": {
+    "lat": 59.8568972,
+    "lon": 17.6326507
+  },
+  "Uppsala slott, Uppsala, Sweden": {
+    "lat": 59.8537412,
+    "lon": 17.6354398
+  },
+  "Reginateatern, Uppsala, Sweden": {
+    "lat": 59.8569052,
+    "lon": 17.6361266
+  },
+  "Saluhallen, Uppsala, Sweden": {
+    "lat": 59.8591456,
+    "lon": 17.6333785
+  },
+  "Hotel Villa Anna, Uppsala, Sweden": {
+    "lat": 59.8568546,
+    "lon": 17.6314882
+  },
+  "The Bishops Arms, Uppsala, Sweden": {
+    "lat": 59.8571014,
+    "lon": 17.6480034
+  },
+  "Fyrisgården, Svartbäcksgatan 58, Uppsala, Uppsala, Sweden": {
+    "lat": 59.8679487,
+    "lon": 17.625517
   }
 }

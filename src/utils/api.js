@@ -259,3 +259,29 @@ export const fetchDestinationUppsalaEvents = async () => {
         return [];
     }
 };
+
+export const fetchHejaUppsalaEvents = async () => {
+    try {
+        const response = await fetch('/data/heja-uppsala-events.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        return (data || [])
+            .filter(event => event.date && event.date.trim() !== "")
+            .map(event => ({
+                id: `heja-${event.title}-${event.date}`,
+                source: "hejauppsala",
+                name: event.title,
+                artist: event.title,
+                venue: event.venue || "Uppsala",
+                city: "Uppsala",
+                country: "Sweden",
+                latitude: event.latitude || 59.8586,
+                longitude: event.longitude || 17.6389,
+                startDate: parseSwedishDate(event.date) || (event.date && event.date.includes(':') ? event.date : `${event.date}T20:00:00Z`),
+                url: event.url
+            }));
+    } catch (err) {
+        console.error("Heja Uppsala local data read failed:", err);
+        return [];
+    }
+};
