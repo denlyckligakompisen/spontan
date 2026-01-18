@@ -20,14 +20,35 @@ const normalizeVenueName = (name) => {
     .trim()
 }
 
+const MonthHeader = ({ month }) => {
+  const [isSticky, setIsSticky] = useState(false)
+  const ref = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([e]) => setIsSticky(e.intersectionRatio < 1),
+      { threshold: [1], rootMargin: '-95px 0px 0px 0px' } // Matches header height approx
+    )
+    if (ref.current) observer.observe(ref.current)
+    return () => observer.disconnect()
+  }, [])
+
+  return (
+    <h2 ref={ref} className={`month-header ${isSticky ? 'is-sticky' : ''}`}>
+      {month}
+    </h2>
+  )
+}
+
 function App() {
   const [events, setEvents] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [userLocation, setUserLocation] = useState(null)
   const [expandedVenues, setExpandedVenues] = useState(new Set())
-  const [view, setView] = useState('idag') // 'idag' or 'alla'
+  const [view, setView] = useState('idag') // 'idag' or 'kommande'
   const [isScrolled, setIsScrolled] = useState(false)
+  const [highlightIds, setHighlightIds] = useState(new Set())
   const locationRef = useRef(null)
 
   const openDirections = (venueName, city) => {
@@ -128,6 +149,23 @@ function App() {
     return `${day} ${month}`
   }
 
+  const formatTime = (dateStr) => {
+    const d = new Date(dateStr)
+    if (isNaN(d.getTime())) return ''
+    return d.toLocaleTimeString('sv-SE', { hour: '2-digit', minute: '2-digit' })
+  }
+
+  const isLive = (dateStr) => {
+    const now = new Date()
+    const start = new Date(dateStr)
+    if (isNaN(start.getTime())) return false
+    const diffMs = start - now
+    const diffMins = diffMs / (1000 * 60)
+
+    // Live/Starting soon if starting within 60 mins OR started within the last 3 hours
+    return diffMins > -180 && diffMins < 60
+  }
+
   const filteredEvents = useMemo(() => {
     const now = new Date();
     const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
@@ -135,11 +173,22 @@ function App() {
     tomorrow.setDate(tomorrow.getDate() + 1);
 
     return events.filter(event => {
+      // First, check if the event has already ended
+      if (event.endDate) {
+        const endDate = new Date(event.endDate);
+        if (endDate < now) return false; // Event has ended
+      } else {
+        // If no endDate, check if startDate has passed
+        const startDate = new Date(event.startDate);
+        if (startDate < now) return false; // Event has started and no end time, so hide it
+      }
+
+      // Then apply view-specific filtering
       const eventDate = new Date(event.startDate);
       if (view === 'idag') {
         return eventDate >= today && eventDate < tomorrow;
       } else {
-        // 'alla' view - show everything from today onwards, but exclude bio as per request
+        // 'kommande' view - show everything from today onwards, but exclude bio as per request
         return eventDate >= today && event.source !== 'nordiskbio';
       }
     });
@@ -187,7 +236,7 @@ function App() {
   }, [filteredEvents, userLocation, view])
 
   const monthGroups = useMemo(() => {
-    if (view !== 'alla') return []
+    if (view !== 'kommande') return []
 
     const groups = {}
     filteredEvents.forEach(event => {
@@ -205,10 +254,63 @@ function App() {
     })
 
     return Object.entries(groups).map(([month, events]) => ({
-      month: month.charAt(0).toUpperCase() + month.slice(1),
+      month: month.toUpperCase(),
       events: events.sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
     })).sort((a, b) => new Date(a.events[0].startDate) - new Date(b.events[0].startDate))
   }, [filteredEvents, userLocation, view])
+
+  const handleNextWeekend = () => {
+    // 1. Switch to 'kommande' view first
+    setView('kommande')
+
+    // 2. Identify next weekend start (Friday 18:00) and end (Sunday 23:59)
+    const now = new Date()
+    const weekendStart = new Date(now)
+    const day = now.getDay()
+    let daysUntilFriday = (5 - day + 7) % 7
+    if (day === 5 && now.getHours() >= 18) daysUntilFriday = 7
+    weekendStart.setDate(now.getDate() + daysUntilFriday)
+    weekendStart.setHours(18, 0, 0, 0)
+
+    const weekendEnd = new Date(weekendStart)
+    weekendEnd.setDate(weekendStart.getDate() + 2) // Sunday
+    weekendEnd.setHours(23, 59, 59, 999)
+
+    // 3. Find all events within the weekend range
+    const weekendEvents = events
+      .filter(e => {
+        const eventDate = new Date(e.startDate)
+        return eventDate >= weekendStart && eventDate <= weekendEnd
+      })
+      .sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
+
+    if (weekendEvents.length > 0) {
+      // Highlight all weekend events
+      const ids = new Set(weekendEvents.map(e => `${e.source}-${e.id}`))
+      setHighlightIds(ids)
+
+      // Scroll to the first weekend event
+      const firstEventId = `${weekendEvents[0].source}-${weekendEvents[0].id}`
+
+      // We need to wait for the view to switch and elements to render
+      setTimeout(() => {
+        const element = document.getElementById(firstEventId)
+        if (element) {
+          const topOffset = 150 // Adjust for sticky headers (app header + month header)
+          const elementPosition = element.getBoundingClientRect().top
+          const offsetPosition = elementPosition + window.pageYOffset - topOffset
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          })
+
+          // Clear highlights after 3 seconds
+          setTimeout(() => setHighlightIds(new Set()), 3000)
+        }
+      }, 100)
+    }
+  }
 
   const toggleVenue = (vKey) => {
     setExpandedVenues(prev => {
@@ -236,11 +338,19 @@ function App() {
             >
               idag
             </button>
+            <span className="separator">·</span>
             <button
-              className={`toggle-btn ${view === 'alla' ? 'active' : ''}`}
-              onClick={() => setView('alla')}
+              className={`toggle-btn ${view === 'kommande' ? 'active' : ''}`}
+              onClick={() => setView('kommande')}
             >
-              alla
+              kommande
+            </button>
+            <span className="separator">·</span>
+            <button
+              className="toggle-btn"
+              onClick={handleNextWeekend}
+            >
+              nästa helg
             </button>
             <div className={`view-toggle-underline ${view}`} />
           </div>
@@ -265,7 +375,7 @@ function App() {
             <div className="content-container">
               {view === 'idag' ? (
                 venues.length === 0 ? (
-                  <div className="no-events">Idag är det tomt.</div>
+                  <div className="no-events">Slut för idag – inga fler events</div>
                 ) : (
                   venues.map((venue) => {
                     const vKey = `${venue.name}-${venue.city}`
@@ -299,13 +409,18 @@ function App() {
                             .slice(0, limit)
                             .map(event => (
                               <a
+                                id={`${event.source}-${event.id}`}
                                 key={`${event.source}-${event.id}`}
                                 href={event.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="event-row-venue"
+                                className={`event-row-venue ${highlightIds.has(`${event.source}-${event.id}`) ? 'highlighted' : ''}`}
                               >
                                 <span className="event-artist-venue">{event.artist || event.name}</span>
+                                <div className="event-meta-right">
+                                  {isLive(event.startDate) && <span className="pulse-dot" />}
+                                  <span className="event-time">{formatTime(event.startDate)}</span>
+                                </div>
                               </a>
                             ))}
                         </div>
@@ -316,15 +431,16 @@ function App() {
               ) : (
                 monthGroups.map((group) => (
                   <div key={group.month} className="month-group">
-                    <h2 className="month-header">{group.month}</h2>
+                    <MonthHeader month={group.month} />
                     <div className="event-list-venue">
                       {group.events.map(event => (
                         <a
+                          id={`${event.source}-${event.id}`}
                           key={`${event.source}-${event.id}`}
                           href={event.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="event-row-venue stacked"
+                          className={`event-row-venue stacked ${highlightIds.has(`${event.source}-${event.id}`) ? 'highlighted' : ''}`}
                         >
                           <div className="event-info-stack">
                             <span className="event-artist-venue">{event.artist || event.name}</span>

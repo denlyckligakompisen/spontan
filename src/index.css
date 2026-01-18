@@ -74,8 +74,16 @@ body {
 .view-toggle {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  align-items: center;
+  gap: 0.8rem;
   position: relative;
+}
+
+.separator {
+  color: #333;
+  font-size: 1rem;
+  pointer-events: none;
+  user-select: none;
 }
 
 .toggle-btn {
@@ -102,19 +110,21 @@ body {
   bottom: 0;
   height: 2px;
   background-color: #fff;
-  transition: transform 140ms ease-out;
-  width: 2.5rem;
+  transition: transform 140ms ease-out, width 140ms ease-out;
   left: 50%;
-  margin-left: -1.25rem;
   pointer-events: none;
 }
 
 .view-toggle-underline.idag {
-  transform: translateX(-1.8rem);
+  width: 2.5rem;
+  margin-left: -1.25rem;
+  transform: translateX(-6.5rem);
 }
 
-.view-toggle-underline.alla {
-  transform: translateX(1.9rem);
+.view-toggle-underline.kommande {
+  width: 5.2rem;
+  margin-left: -2.6rem;
+  transform: translateX(-1.5rem);
 }
 
 .month-group {
@@ -122,12 +132,25 @@ body {
 }
 
 .month-header {
-  font-size: 1.4rem;
+  position: sticky;
+  top: 94px;
+  /* Align with scrolled header bottom */
+  font-size: 0.82rem;
   font-weight: 500;
-  color: #fff;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #333;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 2.5rem 0 1rem 0;
+  background-color: #000;
+  z-index: 10;
+  margin: 0;
+  transition: opacity 0.4s ease, color 0.4s ease;
+  opacity: 0.65;
+}
+
+.month-header.is-sticky {
+  opacity: 1;
+  color: #888;
 }
 
 .venue-group {
@@ -187,6 +210,20 @@ body {
   width: 100%;
 }
 
+.event-row-venue.highlighted {
+  animation: flash-highlight 2s ease-out;
+}
+
+@keyframes flash-highlight {
+  0% {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
 .event-row-venue:last-child {
   border-bottom: none;
 }
@@ -228,6 +265,43 @@ body {
   color: #666;
   white-space: nowrap;
   letter-spacing: 0.03em;
+}
+
+.event-meta-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.event-time {
+  font-size: 0.85rem;
+  color: #777;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.pulse-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #ff3b30;
+  border-radius: 50%;
+  box-shadow: 0 0 0 rgba(255, 59, 48, 0.4);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 59, 48, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 59, 48, 0);
+  }
 }
 
 .no-events {
