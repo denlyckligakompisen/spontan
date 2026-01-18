@@ -157,6 +157,7 @@ function App() {
     <>
       <Intro />
       <div className="app">
+        <h1 className="app-title">spontan.</h1>
         <div className="card">
           {loading && events.length === 0 ? (
             <div className="content-container">

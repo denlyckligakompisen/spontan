@@ -38,6 +38,14 @@ body {
   width: 100%;
 }
 
+.app-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
 .venue-group {
   margin-bottom: 2.5rem;
 }
@@ -171,8 +179,6 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  animation: fadeOut 300ms ease-out forwards;
-  animation-delay: 700ms;
 }
 
 .intro span {
@@ -180,17 +186,45 @@ body {
   font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 500;
   color: #fff;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.intro.floating {
+  background: transparent;
+  pointer-events: none;
+  transition: background 0.4s ease-out;
+}
+
+.intro.floating span {
+  font-size: 2rem;
+  transform: translateY(-40vh);
+  /* Adjust based on title position */
+  opacity: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .intro {
-    animation: none;
+
+  .intro span,
+  .intro.floating span {
+    transition: none;
+    transform: none;
   }
 }
 
-@keyframes fadeOut {
+.app-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 2rem 0;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 0.4s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeIn {
   to {
-    opacity: 0;
-    transform: scale(0.96);
+    opacity: 1;
   }
 }

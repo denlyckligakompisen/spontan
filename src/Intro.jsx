@@ -2,25 +2,33 @@ import { useEffect, useState } from "react";
 
 export default function Intro() {
     const [hidden, setHidden] = useState(false);
+    const [isFloating, setIsFloating] = useState(false);
 
     useEffect(() => {
         const prefersReducedMotion = window.matchMedia(
             "(prefers-reduced-motion: reduce)"
         ).matches;
 
-        // Total duration: 700ms delay + 300ms fade = 1000ms
-        const timeout = setTimeout(
-            () => setHidden(true),
-            prefersReducedMotion ? 0 : 1000
-        );
+        // Start floating after a short hold
+        const floatTimeout = setTimeout(() => {
+            setIsFloating(true);
+        }, prefersReducedMotion ? 0 : 400);
 
-        return () => clearTimeout(timeout);
+        // Unmount after floating animation
+        const hideTimeout = setTimeout(() => {
+            setHidden(true);
+        }, prefersReducedMotion ? 0 : 1000);
+
+        return () => {
+            clearTimeout(floatTimeout);
+            clearTimeout(hideTimeout);
+        };
     }, []);
 
     if (hidden) return null;
 
     return (
-        <div className="intro">
+        <div className={`intro ${isFloating ? 'floating' : ''}`}>
             <span>spontan.</span>
         </div>
     );
