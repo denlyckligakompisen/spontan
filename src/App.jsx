@@ -7,7 +7,7 @@ import { mergeAndDedupeEvents, calculateDistance } from './utils/dedupe'
 
 const DistanceLabel = ({ distance }) => (
   <span className="distance-label">
-    ({distance.toLocaleString('sv-SE', { minimumFractionDigits: 1, maximumFractionDigits: 1 })} km)
+    {distance !== Infinity ? `(${distance.toLocaleString('sv-SE', { minimumFractionDigits: 1, maximumFractionDigits: 1 })} km)` : '(...) km'}
   </span>
 )
 
@@ -171,7 +171,7 @@ function App() {
     return groups.map(venue => {
       const dist = userLocation
         ? calculateDistance(userLocation.lat, userLocation.lon, venue.latitude, venue.longitude)
-        : (venue.events[0]?.distanceKm || 999)
+        : Infinity
       return { ...venue, distanceKm: dist }
     }).sort((a, b) => a.distanceKm - b.distanceKm)
   }, [filteredEvents, userLocation, view])
@@ -186,14 +186,19 @@ function App() {
       if (!groups[monthYear]) {
         groups[monthYear] = []
       }
-      groups[monthYear].push(event)
+
+      const dist = userLocation
+        ? calculateDistance(userLocation.lat, userLocation.lon, event.latitude, event.longitude)
+        : Infinity
+
+      groups[monthYear].push({ ...event, distanceKm: dist })
     })
 
     return Object.entries(groups).map(([month, events]) => ({
       month: month.charAt(0).toUpperCase() + month.slice(1),
       events: events.sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
     })).sort((a, b) => new Date(a.events[0].startDate) - new Date(b.events[0].startDate))
-  }, [filteredEvents, view])
+  }, [filteredEvents, userLocation, view])
 
   const toggleVenue = (vKey) => {
     setExpandedVenues(prev => {
