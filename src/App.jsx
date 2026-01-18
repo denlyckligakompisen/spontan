@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react'
 import './index.css'
 import Intro from './Intro'
-import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents } from './utils/api'
+import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents, fetchNordiskBio } from './utils/api'
 import { mergeAndDedupeEvents, calculateDistance } from './utils/dedupe'
 
 
@@ -45,15 +45,17 @@ function App() {
 
       const ukkPromise = fetchUKKEvents()
       const hejaPromise = fetchHejaUppsalaEvents()
-      const [tmEvents, katalinEvents, uppsalaEvents, ukkEvents, hejaEvents] = await Promise.all([
+      const nfbPromise = fetchNordiskBio()
+      const [tmEvents, katalinEvents, uppsalaEvents, ukkEvents, hejaEvents, nfbEvents] = await Promise.all([
         tmPromise,
         katalinPromise,
         uppsalaPromise,
         ukkPromise,
-        hejaPromise
+        hejaPromise,
+        nfbPromise
       ])
 
-      const merged = mergeAndDedupeEvents(tmEvents, [...katalinEvents, ...uppsalaEvents, ...ukkEvents, ...hejaEvents], lat, lon)
+      const merged = mergeAndDedupeEvents(tmEvents, [...katalinEvents, ...uppsalaEvents, ...ukkEvents, ...hejaEvents, ...nfbEvents], lat, lon)
 
       setEvents(merged)
       setLoading(false)
@@ -127,8 +129,8 @@ function App() {
       if (view === 'idag') {
         return eventDate >= today && eventDate < tomorrow;
       } else {
-        // 'alla' view - show everything from today onwards
-        return eventDate >= today;
+        // 'alla' view - show everything from today onwards, but exclude bio as per request
+        return eventDate >= today && event.source !== 'nordiskbio';
       }
     });
   }, [events, view]);
@@ -288,7 +290,6 @@ function App() {
                                 className="event-row-venue"
                               >
                                 <span className="event-artist-venue">{event.artist || event.name}</span>
-                                <span className="event-date-text">{formatDate(event.startDate)}</span>
                               </a>
                             ))}
                         </div>

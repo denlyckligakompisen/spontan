@@ -285,3 +285,32 @@ export const fetchHejaUppsalaEvents = async () => {
         return [];
     }
 };
+export const fetchNordiskBio = async () => {
+    try {
+        const response = await fetch('/data/nordisk-bio.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+
+        const events = [];
+        for (const date in data.dateCounts) {
+            const count = data.dateCounts[date];
+            events.push({
+                id: `nfb-${date}`,
+                source: "nordiskbio",
+                name: `${count} filmer visas`,
+                artist: `${count} filmer visas`,
+                venue: data.venue,
+                city: data.city,
+                country: "Sweden",
+                latitude: data.latitude,
+                longitude: data.longitude,
+                startDate: `${date}T12:00:00Z`,
+                url: `https://www.nfbio.se/?city=uppsala#days:${date}`
+            });
+        }
+        return events;
+    } catch (err) {
+        console.error("Nordisk Bio local data read failed:", err);
+        return [];
+    }
+};
