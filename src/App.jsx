@@ -27,6 +27,7 @@ function App() {
   const [userLocation, setUserLocation] = useState(null)
   const [expandedVenues, setExpandedVenues] = useState(new Set())
   const [view, setView] = useState('idag') // 'idag' or 'alla'
+  const [isScrolled, setIsScrolled] = useState(false)
   const locationRef = useRef(null)
 
   const fetchAllEvents = async (lat, lon) => {
@@ -93,6 +94,14 @@ function App() {
       navigator.geolocation.clearWatch(watchId)
       clearInterval(interval)
     }
+  }, [])
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   const formatDate = (dateStr) => {
@@ -175,22 +184,24 @@ function App() {
     <>
       <Intro />
       <div className="app">
-        <h1 className="app-title">spontan.</h1>
+        <header className={`app-header ${isScrolled ? 'scrolled' : ''}`}>
+          <h1 className="app-title">spontan.</h1>
 
-        <div className="view-toggle">
-          <button
-            className={`toggle-btn ${view === 'idag' ? 'active' : ''}`}
-            onClick={() => setView('idag')}
-          >
-            idag
-          </button>
-          <button
-            className={`toggle-btn ${view === 'alla' ? 'active' : ''}`}
-            onClick={() => setView('alla')}
-          >
-            alla
-          </button>
-        </div>
+          <div className="view-toggle">
+            <button
+              className={`toggle-btn ${view === 'idag' ? 'active' : ''}`}
+              onClick={() => setView('idag')}
+            >
+              idag
+            </button>
+            <button
+              className={`toggle-btn ${view === 'alla' ? 'active' : ''}`}
+              onClick={() => setView('alla')}
+            >
+              alla
+            </button>
+          </div>
+        </header>
 
         <div className="card">
           {loading && events.length === 0 ? (

@@ -1,8 +1,9 @@
 html,
 body {
   margin: 0;
-  overflow-x: hidden;
-  width: 100%;
+  padding: 0;
+  background-color: #000000;
+  color: #fff;
 }
 
 :root {
@@ -25,16 +26,10 @@ body {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   min-height: 100vh;
-  background-color: #000000;
-  color: white;
-  padding: 1.5rem 0;
   font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
@@ -48,19 +43,38 @@ body {
   width: 100%;
 }
 
-.app-title {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #fff;
-  margin: 0 0 1rem 0;
-  text-align: center;
+
+.app-header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1000;
+  padding: 1.5rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.app-header.scrolled {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #1a1a1a;
+  gap: 0.25rem;
+}
+
+.app-header.scrolled .app-title {
+  font-size: 1.3rem;
+  opacity: 1;
+  transform: none;
 }
 
 .view-toggle {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 2rem;
 }
 
 .toggle-btn {
@@ -256,11 +270,12 @@ body {
   font-size: 2rem;
   font-weight: 500;
   color: #fff;
-  margin: 0 0 2rem 0;
+  margin: 0;
   text-align: center;
   opacity: 0;
   animation: fadeIn 0.4s ease-out forwards;
   animation-delay: 0.6s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes fadeIn {
