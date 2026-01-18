@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react'
 import './index.css'
+import Intro from './Intro'
 import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents } from './utils/api'
 import { mergeAndDedupeEvents, calculateDistance } from './utils/dedupe'
 
@@ -153,71 +154,74 @@ function App() {
   }
 
   return (
-    <div className="app">
-      <div className="card">
-        {loading && events.length === 0 ? (
-          <div className="content-container">
-            {[...Array(3)].map((_, i) => (
-              <div key={i} className="skeleton-group">
-                <div className="skeleton skeleton-header" style={{ width: '40%' }}></div>
-                <div className="skeleton-row">
-                  <div className="skeleton" style={{ width: '60%', height: '1.2rem' }}></div>
-                  <div className="skeleton" style={{ width: '20%', height: '1rem' }}></div>
+    <>
+      <Intro />
+      <div className="app">
+        <div className="card">
+          {loading && events.length === 0 ? (
+            <div className="content-container">
+              {[...Array(3)].map((_, i) => (
+                <div key={i} className="skeleton-group">
+                  <div className="skeleton skeleton-header" style={{ width: '40%' }}></div>
+                  <div className="skeleton-row">
+                    <div className="skeleton" style={{ width: '60%', height: '1.2rem' }}></div>
+                    <div className="skeleton" style={{ width: '20%', height: '1rem' }}></div>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        ) : error && events.length === 0 ? (
-          <div className="error">{error}</div>
-        ) : (
-          <div className="content-container">
-            {venues.length === 0 ? (
-              <div className="no-events">
-                Inga evenemang hittades.
-              </div>
-            ) : (
-              venues.map((venue, index) => {
-                const vKey = `${venue.name}-${venue.city}`
-                const isExpanded = expandedVenues.has(vKey)
-                const limit = isExpanded ? venue.events.length : 3
+              ))}
+            </div>
+          ) : error && events.length === 0 ? (
+            <div className="error">{error}</div>
+          ) : (
+            <div className="content-container">
+              {venues.length === 0 ? (
+                <div className="no-events">
+                  Inga evenemang hittades.
+                </div>
+              ) : (
+                venues.map((venue, index) => {
+                  const vKey = `${venue.name}-${venue.city}`
+                  const isExpanded = expandedVenues.has(vKey)
+                  const limit = isExpanded ? venue.events.length : 3
 
-                return (
-                  <div key={vKey} className="venue-group">
-                    <div
-                      className="venue-header-row"
-                      onClick={() => toggleVenue(vKey)}
-                      style={{ cursor: 'pointer' }}
-                    >
-                      <div className="venue-title-container">
-                        <h2 className="venue-name">{venue.name}</h2>
-                        <DistanceLabel distance={venue.distanceKm} />
+                  return (
+                    <div key={vKey} className="venue-group">
+                      <div
+                        className="venue-header-row"
+                        onClick={() => toggleVenue(vKey)}
+                        style={{ cursor: 'pointer' }}
+                      >
+                        <div className="venue-title-container">
+                          <h2 className="venue-name">{venue.name}</h2>
+                          <DistanceLabel distance={venue.distanceKm} />
+                        </div>
+                      </div>
+                      <div className="event-list-venue">
+                        {venue.events
+                          .sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
+                          .slice(0, limit)
+                          .map(event => (
+                            <a
+                              key={`${event.source}-${event.id}`}
+                              href={event.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="event-row-venue"
+                            >
+                              <span className="event-artist-venue">{event.artist || event.name}</span>
+                              <span className="event-date-text">{formatDate(event.startDate)}</span>
+                            </a>
+                          ))}
                       </div>
                     </div>
-                    <div className="event-list-venue">
-                      {venue.events
-                        .sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
-                        .slice(0, limit)
-                        .map(event => (
-                          <a
-                            key={`${event.source}-${event.id}`}
-                            href={event.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="event-row-venue"
-                          >
-                            <span className="event-artist-venue">{event.artist || event.name}</span>
-                            <span className="event-date-text">{formatDate(event.startDate)}</span>
-                          </a>
-                        ))}
-                    </div>
-                  </div>
-                )
-              })
-            )}
-          </div>
-        )}
+                  )
+                })
+              )}
+            </div>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

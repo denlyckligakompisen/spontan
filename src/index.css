@@ -162,3 +162,35 @@ body {
   justify-content: space-between;
   margin-bottom: 0.5rem;
 }
+
+.intro {
+  position: fixed;
+  inset: 0;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeOut 300ms ease-out forwards;
+  animation-delay: 700ms;
+}
+
+.intro span {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 500;
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro {
+    animation: none;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+}
