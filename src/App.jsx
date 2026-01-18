@@ -179,7 +179,7 @@ function App() {
               venues.map((venue, index) => {
                 const vKey = `${venue.name}-${venue.city}`
                 const isExpanded = expandedVenues.has(vKey)
-                const limit = isExpanded ? 10 : 3
+                const limit = isExpanded ? venue.events.length : 3
 
                 return (
                   <div key={vKey} className="venue-group">
