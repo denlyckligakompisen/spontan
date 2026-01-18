@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+html,
+body {
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -10,6 +15,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -18,20 +30,18 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  min-width: 320px;
   min-height: 100vh;
   background-color: #000000;
   color: white;
-  padding-top: 1.5rem;
-  box-sizing: border-box;
+  padding: 1.5rem 0;
   font-family: 'Inter', sans-serif;
 }
 
 #root {
   max-width: 500px;
-  margin: 0 auto;
-  padding: 0 1rem;
   width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
 }
 
 .app {
@@ -121,11 +131,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 0.5rem;
+  padding: 0.8rem 0.25rem;
   border-top: 1px solid #1a1a1a;
   text-decoration: none;
   transition: background-color 0.2s;
-  margin: 0 -0.5rem;
+  width: 100%;
 }
 
 .event-row-venue:hover {
@@ -137,7 +147,9 @@ body {
   color: #fff;
   font-weight: 700;
   flex: 1;
-  padding-right: 1rem;
+  min-width: 0;
+  /* Important for flex shrink */
+  padding-right: 0.75rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
