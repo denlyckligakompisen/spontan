@@ -30,6 +30,11 @@ function App() {
   const [isScrolled, setIsScrolled] = useState(false)
   const locationRef = useRef(null)
 
+  const openDirections = (venueName, city) => {
+    const url = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(venueName + ', ' + city)}`
+    window.open(url, '_blank')
+  }
+
   const fetchAllEvents = async (lat, lon) => {
     try {
       setLoading(true)
@@ -257,7 +262,16 @@ function App() {
                           style={{ cursor: 'pointer' }}
                         >
                           <div className="venue-title-container">
-                            <h2 className="venue-name">{venue.name}</h2>
+                            <h2
+                              className="venue-name interactive"
+                              onClick={(e) => {
+                                e.stopPropagation()
+                                openDirections(venue.name, venue.city)
+                              }}
+                              title="Öppna vägbeskrivning"
+                            >
+                              {venue.name}
+                            </h2>
                             <DistanceLabel distance={venue.distanceKm} />
                           </div>
                         </div>
