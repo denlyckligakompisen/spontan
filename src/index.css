@@ -75,11 +75,6 @@ body {
   font-weight: 300;
 }
 
-.direction-arrow {
-  font-size: 1.5rem;
-  color: #fff;
-  line-height: 1;
-}
 
 .event-list-venue {
   display: flex;
