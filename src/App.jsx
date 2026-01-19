@@ -189,8 +189,8 @@ function App() {
       if (view === 'idag') {
         return eventDate >= today && eventDate < tomorrow;
       } else {
-        // 'kommande' view - show everything from today onwards, but exclude bio as per request
-        return eventDate >= today && event.source !== 'nordiskbio';
+        // 'kommande' view - show everything from tomorrow onwards, but exclude bio as per request
+        return eventDate >= tomorrow && event.source !== 'nordiskbio';
       }
     });
   }, [events, view]);
@@ -228,6 +228,7 @@ function App() {
       group.events.push(event)
     })
 
+    // Calculate distance from current device position to each venue
     return groups.map(venue => {
       const dist = userLocation
         ? calculateDistance(userLocation.lat, userLocation.lon, venue.latitude, venue.longitude)

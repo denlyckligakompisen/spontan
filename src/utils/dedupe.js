@@ -1,17 +1,19 @@
 /**
- * Haversine formula to calculate distance between two points in km.
+ * Calculate Euclidean distance between two points in km.
+ * Treats the Earth as flat (acceptable for short distances).
+ * Uses approximate conversion: 1 degree latitude ≈ 111 km
  */
 export const calculateDistance = (lat1, lon1, lat2, lon2) => {
     if (!lat1 || !lon1 || !lat2 || !lon2) return Infinity;
-    const R = 6371; // Radius of the Earth in km
-    const dLat = (lat2 - lat1) * Math.PI / 180;
-    const dLon = (lon2 - lon1) * Math.PI / 180;
-    const a =
-        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-        Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
-        Math.sin(dLon / 2) * Math.sin(dLon / 2);
-    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    return R * c;
+
+    // 1 degree latitude is approx 111 km
+    // 1 degree longitude is approx 111 km * cos(latitude)
+    const R = 111;
+    const dLat = (lat2 - lat1) * R;
+    const avgLat = (lat1 + lat2) / 2;
+    const dLon = (lon2 - lon1) * R * Math.cos(avgLat * Math.PI / 180);
+
+    return Math.sqrt(dLat * dLat + dLon * dLon);
 };
 
 /**
@@ -71,4 +73,3 @@ export const mergeAndDedupeEvents = (tmEvents, katalinEvents, userLat, userLon) 
             return new Date(a.startDate) - new Date(b.startDate);
         });
 };
-
