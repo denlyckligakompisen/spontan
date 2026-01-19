@@ -314,3 +314,33 @@ export const fetchNordiskBio = async () => {
         return [];
     }
 };
+
+export const fetchFyrisbiografen = async () => {
+    try {
+        const response = await fetch('/data/fyrisbiografen.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+
+        const events = [];
+        for (const date in data.dateCounts) {
+            const count = data.dateCounts[date];
+            events.push({
+                id: `fyris-${date}`,
+                source: "fyrisbiografen",
+                name: `${count} filmer visas`,
+                artist: `${count} filmer visas`,
+                venue: data.venue,
+                city: data.city,
+                country: "Sweden",
+                latitude: data.latitude,
+                longitude: data.longitude,
+                startDate: `${date}T12:00:00Z`,
+                url: `https://fyrisbiografen.se/kalendarium`
+            });
+        }
+        return events;
+    } catch (err) {
+        console.error("Fyrisbiografen local data read failed:", err);
+        return [];
+    }
+};

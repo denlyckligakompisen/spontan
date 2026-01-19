@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react'
 import './index.css'
 import Intro from './Intro'
-import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents, fetchNordiskBio } from './utils/api'
+import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents, fetchNordiskBio, fetchFyrisbiografen } from './utils/api'
 import { mergeAndDedupeEvents, calculateDistance } from './utils/dedupe'
 
 
@@ -68,16 +68,18 @@ function App() {
       const ukkPromise = fetchUKKEvents()
       const hejaPromise = fetchHejaUppsalaEvents()
       const nfbPromise = fetchNordiskBio()
-      const [tmEvents, katalinEvents, uppsalaEvents, ukkEvents, hejaEvents, nfbEvents] = await Promise.all([
+      const fyrisPromise = fetchFyrisbiografen()
+      const [tmEvents, katalinEvents, uppsalaEvents, ukkEvents, hejaEvents, nfbEvents, fyrisEvents] = await Promise.all([
         tmPromise,
         katalinPromise,
         uppsalaPromise,
         ukkPromise,
         hejaPromise,
-        nfbPromise
+        nfbPromise,
+        fyrisPromise
       ])
 
-      const merged = mergeAndDedupeEvents(tmEvents, [...katalinEvents, ...uppsalaEvents, ...ukkEvents, ...hejaEvents, ...nfbEvents], lat, lon)
+      const merged = mergeAndDedupeEvents(tmEvents, [...katalinEvents, ...uppsalaEvents, ...ukkEvents, ...hejaEvents, ...nfbEvents, ...fyrisEvents], lat, lon)
 
       setEvents(merged)
       setLoading(false)
