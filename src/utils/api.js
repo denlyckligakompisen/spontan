@@ -210,7 +210,7 @@ export const fetchSongkickEvents = async (metroId) => {
 
 export const fetchKatalinEvents = async () => {
     try {
-        const response = await fetch('/data/katalin-events.json');
+        const response = await fetch(`/data/katalin-events.json?t=${Date.now()}`);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
         return (data || [])
@@ -236,7 +236,7 @@ export const fetchKatalinEvents = async () => {
 
 export const fetchDestinationUppsalaEvents = async () => {
     try {
-        const response = await fetch('/data/destination-uppsala-events.json');
+        const response = await fetch(`/data/destination-uppsala-events.json?t=${Date.now()}`);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
         return (data || [])
@@ -262,7 +262,7 @@ export const fetchDestinationUppsalaEvents = async () => {
 
 export const fetchHejaUppsalaEvents = async () => {
     try {
-        const response = await fetch('/data/heja-uppsala-events.json');
+        const response = await fetch(`/data/heja-uppsala-events.json?t=${Date.now()}`);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
         return (data || [])
@@ -287,7 +287,7 @@ export const fetchHejaUppsalaEvents = async () => {
 };
 export const fetchNordiskBio = async () => {
     try {
-        const response = await fetch('/data/nordisk-bio.json');
+        const response = await fetch(`/data/nordisk-bio.json?t=${Date.now()}`);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
 
@@ -317,7 +317,7 @@ export const fetchNordiskBio = async () => {
 
 export const fetchFyrisbiografen = async () => {
     try {
-        const response = await fetch('/data/fyrisbiografen.json');
+        const response = await fetch(`/data/fyrisbiografen.json?t=${Date.now()}`);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
 

@@ -49,7 +49,7 @@ function App() {
   const [view, setView] = useState('idag') // 'idag' or 'kommande'
   const [isScrolled, setIsScrolled] = useState(false)
   const [highlightIds, setHighlightIds] = useState(new Set())
-  const [currentMonth, setCurrentMonth] = useState('')
+
   const locationRef = useRef(null)
 
   const openDirections = (venueName, city) => {
@@ -158,10 +158,17 @@ function App() {
     return d.toLocaleTimeString('sv-SE', { hour: '2-digit', minute: '2-digit' })
   }
 
-  const isLive = (dateStr) => {
+  const isLive = (startDate, endDate) => {
     const now = new Date()
-    const start = new Date(dateStr)
+    const start = new Date(startDate)
     if (isNaN(start.getTime())) return false
+
+    // If we have an end date, check if we are strictly within the range
+    if (endDate) {
+      const end = new Date(endDate)
+      return now >= start && now <= end
+    }
+
     const diffMs = start - now
     const diffMins = diffMs / (1000 * 60)
 
@@ -186,16 +193,22 @@ function App() {
         if (startDate < now) return false; // Event has started and no end time, so hide it
       }
 
+      // 5km Radius Filter
+      if (userLocation && event.latitude && event.longitude) {
+        const dist = calculateDistance(userLocation.lat, userLocation.lon, event.latitude, event.longitude)
+        if (dist > 5.0) return false
+      }
+
       // Then apply view-specific filtering
       const eventDate = new Date(event.startDate);
       if (view === 'idag') {
         return eventDate >= today && eventDate < tomorrow;
       } else {
-        // 'kommande' view - show everything from tomorrow onwards, but exclude bio as per request
-        return eventDate >= tomorrow && event.source !== 'nordiskbio';
+        // 'kommande' view - show everything from tomorrow onwards
+        return eventDate >= tomorrow;
       }
     });
-  }, [events, view]);
+  }, [events, view, userLocation]);
 
   const venues = useMemo(() => {
     if (view !== 'idag') return []
@@ -259,57 +272,27 @@ function App() {
 
     return Object.entries(groups).map(([month, events]) => ({
       month: month.toUpperCase(),
-      events: events.sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
+      events: events.sort((a, b) => {
+        // 1. Date (asc)
+        const dateA = new Date(a.startDate).getTime()
+        const dateB = new Date(b.startDate).getTime()
+        if (dateA !== dateB) return dateA - dateB
+
+        // 2. Venue (asc)
+        const venueA = (a.venue || '').toLowerCase()
+        const venueB = (b.venue || '').toLowerCase()
+        if (venueA < venueB) return -1
+        if (venueA > venueB) return 1
+
+        // 3. Name (asc)
+        const nameA = (a.artist || a.name || '').toLowerCase()
+        const nameB = (b.artist || b.name || '').toLowerCase()
+        return nameA.localeCompare(nameB)
+      })
     })).sort((a, b) => new Date(a.events[0].startDate) - new Date(b.events[0].startDate))
   }, [filteredEvents, userLocation, view])
 
-  // Track current visible month for sticky header
-  useEffect(() => {
-    if (view !== 'kommande' || monthGroups.length === 0) return
 
-    // Set initial month
-    if (!currentMonth && monthGroups.length > 0) {
-      setCurrentMonth(monthGroups[0].month)
-    }
-
-    // Wait for DOM to render, then create observers
-    const timeoutId = setTimeout(() => {
-      const observers = []
-
-      // Observe ALL events to find the topmost visible one
-      monthGroups.forEach((group) => {
-        group.events.forEach((event) => {
-          const eventId = `${event.source}-${event.id}`
-          const element = document.getElementById(eventId)
-
-          if (element) {
-            const observer = new IntersectionObserver(
-              ([entry]) => {
-                if (entry.isIntersecting && entry.boundingClientRect.top < 200) {
-                  // This event is visible near the top, update to its month
-                  setCurrentMonth(group.month)
-                }
-              },
-              {
-                rootMargin: '-120px 0px -90% 0px',
-                threshold: 0
-              }
-            )
-            observer.observe(element)
-            observers.push(observer)
-          }
-        })
-      })
-
-      return () => {
-        observers.forEach(observer => observer.disconnect())
-      }
-    }, 100)
-
-    return () => {
-      clearTimeout(timeoutId)
-    }
-  }, [view, monthGroups])
 
   const handleNextWeekend = () => {
     // 1. Switch to 'kommande' view first
@@ -386,14 +369,20 @@ function App() {
           <div className="view-toggle">
             <button
               className={`toggle-btn ${view === 'idag' ? 'active' : ''}`}
-              onClick={() => setView('idag')}
+              onClick={() => {
+                if (view === 'idag') window.scrollTo({ top: 0, behavior: 'smooth' })
+                else setView('idag')
+              }}
             >
               idag
             </button>
             <span className="separator">·</span>
             <button
               className={`toggle-btn ${view === 'kommande' ? 'active' : ''}`}
-              onClick={() => setView('kommande')}
+              onClick={() => {
+                if (view === 'kommande') window.scrollTo({ top: 0, behavior: 'smooth' })
+                else setView('kommande')
+              }}
             >
               kommande
             </button>
@@ -407,6 +396,7 @@ function App() {
             <div className={`view-toggle-underline ${view}`} />
           </div>
         </header>
+
 
         <div className="card">
           {loading && events.length === 0 ? (
@@ -470,8 +460,12 @@ function App() {
                               >
                                 <span className="event-artist-venue">{event.artist || event.name}</span>
                                 <div className="event-meta-right">
-                                  {isLive(event.startDate) && <span className="pulse-dot" />}
-                                  <span className="event-time">{formatTime(event.startDate)}</span>
+                                  {!['nordiskbio', 'fyrisbiografen'].includes(event.source) && (
+                                    <>
+                                      {isLive(event.startDate, event.endDate) && <span className="pulse-dot" />}
+                                      <span className="event-time">{formatTime(event.startDate)}</span>
+                                    </>
+                                  )}
                                 </div>
                               </a>
                             ))}
@@ -482,23 +476,31 @@ function App() {
                 )
               ) : (
                 <>
-                  <MonthHeader month={currentMonth || (monthGroups.length > 0 ? monthGroups[0].month : '')} />
                   <div className="event-list-venue">
-                    {monthGroups.flatMap(group => group.events).map(event => (
-                      <a
-                        id={`${event.source}-${event.id}`}
-                        key={`${event.source}-${event.id}`}
-                        href={event.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`event-row-venue stacked ${highlightIds.has(`${event.source}-${event.id}`) ? 'highlighted' : ''}`}
-                      >
-                        <div className="event-info-stack">
-                          <span className="event-artist-venue">{event.artist || event.name}</span>
-                          <span className="event-venue-subtext">{event.venue}</span>
-                        </div>
-                        <span className="event-date-text">{formatDate(event.startDate)}</span>
-                      </a>
+                    {monthGroups.map(group => (
+                      <React.Fragment key={group.month}>
+                        <MonthHeader month={group.month} />
+                        {group.events.map(event => (
+                          <a
+                            id={`${event.source}-${event.id}`}
+                            key={`${event.source}-${event.id}`}
+                            href={event.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`event-row-venue stacked ${highlightIds.has(`${event.source}-${event.id}`) ? 'highlighted' : ''}`}
+                          >
+                            <div className="event-info-stack">
+                              <span className="event-artist-venue">{event.artist || event.name}</span>
+                              <span className="event-venue-subtext">{event.venue}</span>
+                            </div>
+                            <div className="event-meta-right">
+                              <span className="event-date-text">
+                                {new Date(event.startDate).toLocaleDateString('sv-SE', { day: 'numeric', month: 'short' }).replace('.', '')}
+                              </span>
+                            </div>
+                          </a>
+                        ))}
+                      </React.Fragment>
                     ))}
                   </div>
                 </>

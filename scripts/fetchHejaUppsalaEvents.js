@@ -32,33 +32,53 @@ async function fetchPage(url, retries = 3) {
     }
 }
 
+async function fetchEventDetails(url) {
+    if (!url) return null;
+    const html = await fetchPage(url);
+    if (!html) return null;
+
+    // Regex based finding of time
+    // Patterns: "Öppet 09.00-16.00", "Kl. 19:00", "19.00"
+    // We prioritize "Öppet" as per user report
+
+    // Look for "Öppet" followed by time
+    const oppetMatch = html.match(/Öppet\s*(\d{1,2}[:.]\d{2}(?:\s*-\s*\d{1,2}[:.]\d{2})?)/i);
+    if (oppetMatch) return `Öppet ${oppetMatch[1]}`;
+
+    // Look for "Kl/Kl." followed by time
+    const klMatch = html.match(/Kl\.?\s*(\d{1,2}[:.]\d{2})/i);
+    if (klMatch) return `Kl. ${klMatch[1]}`;
+
+    // Look for generic time range just in text? Risky.
+    // e.g. "09.00-16.00"
+    const rangeMatch = html.match(/(\d{1,2}[:.]\d{2}\s*-\s*\d{1,2}[:.]\d{2})/);
+    if (rangeMatch) return rangeMatch[1];
+
+    return null;
+}
+
 function parseEvents(html) {
     const dom = new JSDOM(html);
     const document = dom.window.document;
-
-    // The containers are items in the grid
     const items = document.querySelectorAll(".o-grid__item.o-gutter__item");
 
     items.forEach(item => {
-        // Find title
         const titleLink = item.querySelector("a.c-ui-link--delta-brand");
         const titleText = titleLink?.querySelector("p")?.textContent?.trim() || titleLink?.textContent?.trim();
         const link = titleLink?.href ?? null;
 
         if (!titleText || !link) return;
 
-        // Find date
         const dateBlock = item.querySelector(".u-index-1");
         let dateResult = "";
         if (dateBlock) {
             const parts = Array.from(dateBlock.childNodes).map(node => {
-                if (node.nodeType === 3) return node.textContent.trim(); // text node (e.g. "-")
+                if (node.nodeType === 3) return node.textContent.trim();
                 return node.textContent.trim();
             }).filter(t => t !== "");
-            dateResult = parts.join(" "); // e.g. "13 nov - 18 jan" or "18 jan"
+            dateResult = parts.join(" ");
         }
 
-        // Find venue
         const venueItem = item.querySelector("ul.o-breadcrumbs li:last-child");
         const venue = venueItem?.textContent?.trim() || "Uppsala";
 
@@ -74,6 +94,7 @@ function parseEvents(html) {
 }
 
 async function run() {
+    // 1. Fetch List Pages
     for (let page = 1; page <= MAX_PAGES; page++) {
         const url = page === 1 ? BASE_URL : `${BASE_URL}page/${page}/`;
         const html = await fetchPage(url);
@@ -87,13 +108,11 @@ async function run() {
             break;
         }
 
-        console.log(`Page ${page}: Found ${events.length - before} events.`);
-        if (page < MAX_PAGES) {
-            await sleep(2000);
-        }
+        console.log(`Page ${page}: Found ${events.length - before} total events so far.`);
+        if (page < MAX_PAGES) await sleep(2000);
     }
 
-    // Deduplicate by URL
+    // 2. Deduplicate
     const uniqueEvents = [];
     const seenUrls = new Set();
     for (const event of events) {
@@ -102,8 +121,28 @@ async function run() {
             uniqueEvents.push(event);
         }
     }
+    console.log(`Unique events: ${uniqueEvents.length}`);
 
-    // Geocode venues
+    // 3. Fetch Details for missing times
+    for (const event of uniqueEvents) {
+        // Check if date string has time (HH:MM or HH.MM)
+        const hasTime = /(\d{1,2}[:.]\d{2})/.test(event.date);
+
+        if (!hasTime) {
+            console.log(`Fetching details for: ${event.title}...`);
+            await sleep(1000); // polite delay
+            const extraTime = await fetchEventDetails(event.url);
+
+            if (extraTime) {
+                console.log(`-> Found time: ${extraTime}`);
+                event.date = `${event.date} ${extraTime}`;
+            } else {
+                console.log(`-> No time found in details.`);
+            }
+        }
+    }
+
+    // 4. Geocode
     const uniqueVenues = [...new Set(uniqueEvents.map(e => e.venue))];
     const venueMap = {};
     for (const venue of uniqueVenues) {
@@ -113,7 +152,6 @@ async function run() {
         }
     }
 
-    // Attach coordinates
     uniqueEvents.forEach(event => {
         if (venueMap[event.venue]) {
             event.latitude = venueMap[event.venue].lat;
