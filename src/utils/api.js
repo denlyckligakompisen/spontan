@@ -1,5 +1,5 @@
 const TICKETMASTER_API_KEY = 'A6phaEl6yiPa994i8qCanQA6HNjiy9Co';
-const SONGKICK_API_KEY = 'YOUR_SONGKICK_API_KEY'; // Placeholder
+
 
 export const fetchUKKEvents = async () => {
     try {
@@ -147,65 +147,7 @@ const setPermanentCachedData = (key, data) => {
     localStorage.setItem(CACHE_KEY_PREFIX + 'perm_' + key, data);
 };
 
-export const fetchSongkickMetroId = async (lat, lon) => {
-    const cell = getGeoCell(lat, lon);
-    const cacheKey = `sk_metro_${cell}`;
-    const cachedId = getPermanentCachedData(cacheKey);
-    if (cachedId) return cachedId;
 
-    const geoUrl = `https://api.songkick.com/api/3.0/search/locations.json?location=geo:${lat},${lon}&apikey=${SONGKICK_API_KEY}`;
-
-    try {
-        const response = await fetch(geoUrl);
-        if (!response.ok) throw new Error(`Songkick Location API error: ${response.status}`);
-        const data = await response.json();
-
-        const metroId = data.resultsPage.results.location?.[0]?.metroArea?.id;
-        if (metroId) {
-            setPermanentCachedData(cacheKey, metroId.toString());
-            return metroId.toString();
-        }
-        return null;
-    } catch (error) {
-        console.error("Songkick metro lookup failed:", error);
-        return null;
-    }
-};
-
-export const fetchSongkickEvents = async (metroId) => {
-    if (!metroId) return [];
-    const cacheKey = `sk_events_${metroId}`;
-    const cached = getCachedData(cacheKey);
-    if (cached) return cached;
-
-    const url = `https://api.songkick.com/api/3.0/metro_areas/${metroId}/calendar.json?apikey=${SONGKICK_API_KEY}`;
-
-    try {
-        const response = await fetch(url);
-        if (!response.ok) throw new Error(`Songkick Calendar API error: ${response.status}`);
-        const data = await response.json();
-
-        const events = (data.resultsPage.results.event || []).map(event => ({
-            id: event.id.toString(),
-            source: "songkick",
-            name: event.displayName,
-            artist: event.performance?.[0]?.artist?.displayName || null,
-            venue: event.venue.displayName,
-            city: event.venue.metroArea?.displayName || "Unknown City",
-            country: event.venue.metroArea?.country?.displayName || "Sweden",
-            latitude: event.venue.lat,
-            longitude: event.venue.lng,
-            startDate: event.start.datetime || `${event.start.date}T${event.start.time || '00:00:00'}Z`,
-            url: event.uri
-        }));
-
-        setCachedData(cacheKey, events);
-        return events;
-    } catch (error) {
-        console.error("Songkick fetch failed:", error);
-        return [];
-    }
-};
 
 
 export const fetchKatalinEvents = async () => {
