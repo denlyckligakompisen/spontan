@@ -49,6 +49,7 @@ function App() {
   const [view, setView] = useState('idag') // 'idag' or 'kommande'
   const [isScrolled, setIsScrolled] = useState(false)
   const [highlightIds, setHighlightIds] = useState(new Set())
+  const [debugLocation, setDebugLocation] = useState(import.meta.env.DEV ? 'sthlm' : 'real')
 
   const locationRef = useRef(null)
 
@@ -91,41 +92,68 @@ function App() {
   }
 
   useEffect(() => {
-    if (!navigator.geolocation) {
-      setError('Stöder inte platsinfo')
-      setLoading(false)
-      return
-    }
+    let watchId;
+    let interval;
 
-    const watchId = navigator.geolocation.watchPosition(
-      (position) => {
-        const { latitude, longitude } = position.coords
-        setUserLocation({ lat: latitude, lon: longitude })
+    const startFetching = (lat, lon) => {
+      setUserLocation({ lat, lon });
+      locationRef.current = { lat, lon };
+      fetchAllEvents(lat, lon);
+    };
 
-        if (!locationRef.current) {
-          locationRef.current = { lat: latitude, lon: longitude }
-          fetchAllEvents(latitude, longitude)
-        }
-      },
-      (err) => {
-        console.error('Geolocation error:', err)
-        setError('Platsåtkomst nekad')
-        setLoading(false)
-      },
-      { enableHighAccuracy: true, timeout: 5000, maximumAge: 0 }
-    )
+    // Dev Override Logic
+    if (import.meta.env.DEV && debugLocation !== 'real') {
+      const locs = {
+        sthlm: { lat: 59.3293, lon: 18.0686 },
+        solna: { lat: 59.3689, lon: 18.0083 },
+        uppsala: { lat: 59.8586, lon: 17.6389 }
+      };
+      const target = locs[debugLocation];
+      if (target) {
+        startFetching(target.lat, target.lon);
 
-    const interval = setInterval(() => {
-      if (locationRef.current) {
-        fetchAllEvents(locationRef.current.lat, locationRef.current.lon)
+        interval = setInterval(() => {
+          fetchAllEvents(target.lat, target.lon);
+        }, 600000);
       }
-    }, 600000)
+    } else {
+      // Real Location Logic
+      if (!navigator.geolocation) {
+        setError('Stöder inte platsinfo')
+        setLoading(false)
+        return
+      }
+
+      watchId = navigator.geolocation.watchPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords
+          setUserLocation({ lat: latitude, lon: longitude })
+
+          if (!locationRef.current) {
+            locationRef.current = { lat: latitude, lon: longitude }
+            fetchAllEvents(latitude, longitude)
+          }
+        },
+        (err) => {
+          console.error('Geolocation error:', err)
+          setError('Kunde inte hämta plats')
+          setLoading(false)
+        },
+        { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+      )
+
+      interval = setInterval(() => {
+        if (locationRef.current) {
+          fetchAllEvents(locationRef.current.lat, locationRef.current.lon)
+        }
+      }, 600000)
+    }
 
     return () => {
-      navigator.geolocation.clearWatch(watchId)
-      clearInterval(interval)
+      if (watchId) navigator.geolocation.clearWatch(watchId)
+      if (interval) clearInterval(interval)
     }
-  }, [])
+  }, [debugLocation])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -493,6 +521,7 @@ function App() {
                               <span className="event-artist-venue">{event.artist || event.name}</span>
                               <span className="event-venue-subtext">{event.venue}</span>
                             </div>
+
                             <div className="event-meta-right">
                               <span className="event-date-text">
                                 {new Date(event.startDate).toLocaleDateString('sv-SE', { day: 'numeric', month: 'short' }).replace('.', '')}
@@ -509,6 +538,36 @@ function App() {
           )}
         </div>
       </div>
+      {import.meta.env.DEV && (
+        <div style={{
+          position: 'fixed',
+          bottom: '20px',
+          right: '20px',
+          background: 'rgba(0,0,0,0.8)',
+          padding: '10px',
+          borderRadius: '8px',
+          zIndex: 9999,
+          border: '1px solid #333'
+        }}>
+          <select
+            value={debugLocation}
+            onChange={(e) => setDebugLocation(e.target.value)}
+            style={{
+              background: '#222',
+              color: '#fff',
+              border: '1px solid #444',
+              padding: '5px',
+              borderRadius: '4px',
+              fontSize: '12px'
+            }}
+          >
+            <option value="real">📍 Real Position</option>
+            <option value="sthlm">🇸🇪 Stockholm (Mock)</option>
+            <option value="solna">🏟️ Solna (Mock)</option>
+            <option value="uppsala">🏰 Uppsala (Mock)</option>
+          </select>
+        </div>
+      )}
     </>
   )
 }
