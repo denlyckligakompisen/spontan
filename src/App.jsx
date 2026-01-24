@@ -295,14 +295,15 @@ function App() {
         const dayB = new Date(dB.getFullYear(), dB.getMonth(), dB.getDate()).getTime()
         if (dayA !== dayB) return dayA - dayB
 
-        // 2. Sort by Venue (A-Z)
+        // 2. Sort by Time
+        const timeA = dA.getTime()
+        const timeB = dB.getTime()
+        if (timeA !== timeB) return timeA - timeB
+
+        // 3. Sort by Venue (A-Z)
         const vA = (a.venue || '').toLowerCase()
         const vB = (b.venue || '').toLowerCase()
-        if (vA < vB) return -1
-        if (vA > vB) return 1
-
-        // 3. Sort by Time
-        return dA.getTime() - dB.getTime()
+        return vA.localeCompare(vB)
       })
     })).sort((a, b) => new Date(a.events[0].startDate) - new Date(b.events[0].startDate))
 
