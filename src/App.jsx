@@ -482,7 +482,6 @@ function App() {
                   <h2 className="info-title">Information hämtas från</h2>
 
                   <div className="info-section">
-                    <h3 className="info-subtitle">Sverige</h3>
                     <ul className="sources-list">
                       <li>Ticketmaster (Sverige)</li>
                     </ul>
