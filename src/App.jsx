@@ -1,15 +1,9 @@
-import React, { useState, useEffect, useRef, useMemo } from 'react'
+import React, { useState, useEffect, useMemo, useRef } from 'react'
 import './index.css'
 import Intro from './Intro'
 import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents, fetchNordiskBio, fetchFyrisbiografen } from './utils/api'
 import { mergeAndDedupeEvents, calculateDistance } from './utils/dedupe'
 
-
-const DistanceLabel = ({ distance }) => (
-  <span className="distance-label">
-    {distance !== Infinity ? `(${distance.toLocaleString('sv-SE', { minimumFractionDigits: 1, maximumFractionDigits: 1 })} km)` : '(...) km'}
-  </span>
-)
 
 const normalizeVenueName = (name) => {
   if (!name) return ''
@@ -44,23 +38,22 @@ function App() {
   const [events, setEvents] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
-  const [userLocation, setUserLocation] = useState(null)
   const [expandedVenues, setExpandedVenues] = useState(new Set())
   const [view, setView] = useState('idag') // 'idag', 'helg', 'planera'
   const [isScrolled, setIsScrolled] = useState(false)
   const [highlightIds, setHighlightIds] = useState(new Set())
-  const [debugLocation, setDebugLocation] = useState(import.meta.env.DEV ? 'sthlm' : 'real')
-
-  const locationRef = useRef(null)
 
   const openDirections = (venueName, city) => {
     const url = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(venueName + ', ' + city)}`
     window.open(url, '_blank')
   }
 
-  const fetchAllEvents = async (lat, lon) => {
+  const fetchAllEvents = async () => {
     try {
       setLoading(true)
+      // Hardcoded Uppsala coordinates
+      const lat = 59.8586
+      const lon = 17.6389
 
       const tmPromise = fetchTicketmasterEvents(lat, lon)
       const katalinPromise = fetchKatalinEvents()
@@ -92,68 +85,10 @@ function App() {
   }
 
   useEffect(() => {
-    let watchId;
-    let interval;
-
-    const startFetching = (lat, lon) => {
-      setUserLocation({ lat, lon });
-      locationRef.current = { lat, lon };
-      fetchAllEvents(lat, lon);
-    };
-
-    // Dev Override Logic
-    if (import.meta.env.DEV && debugLocation !== 'real') {
-      const locs = {
-        sthlm: { lat: 59.3293, lon: 18.0686 },
-        solna: { lat: 59.3689, lon: 18.0083 },
-        uppsala: { lat: 59.8586, lon: 17.6389 }
-      };
-      const target = locs[debugLocation];
-      if (target) {
-        startFetching(target.lat, target.lon);
-
-        interval = setInterval(() => {
-          fetchAllEvents(target.lat, target.lon);
-        }, 600000);
-      }
-    } else {
-      // Real Location Logic
-      if (!navigator.geolocation) {
-        setError('Stöder inte platsinfo')
-        setLoading(false)
-        return
-      }
-
-      watchId = navigator.geolocation.watchPosition(
-        (position) => {
-          const { latitude, longitude } = position.coords
-          setUserLocation({ lat: latitude, lon: longitude })
-
-          if (!locationRef.current) {
-            locationRef.current = { lat: latitude, lon: longitude }
-            fetchAllEvents(latitude, longitude)
-          }
-        },
-        (err) => {
-          console.error('Geolocation error:', err)
-          setError('Kunde inte hämta plats')
-          setLoading(false)
-        },
-        { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
-      )
-
-      interval = setInterval(() => {
-        if (locationRef.current) {
-          fetchAllEvents(locationRef.current.lat, locationRef.current.lon)
-        }
-      }, 600000)
-    }
-
-    return () => {
-      if (watchId) navigator.geolocation.clearWatch(watchId)
-      if (interval) clearInterval(interval)
-    }
-  }, [debugLocation])
+    fetchAllEvents()
+    const interval = setInterval(fetchAllEvents, 600000)
+    return () => clearInterval(interval)
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -183,7 +118,9 @@ function App() {
   const formatTime = (dateStr) => {
     const d = new Date(dateStr)
     if (isNaN(d.getTime())) return ''
-    return d.toLocaleTimeString('sv-SE', { hour: '2-digit', minute: '2-digit' })
+    const time = d.toLocaleTimeString('sv-SE', { hour: '2-digit', minute: '2-digit' })
+    if (time === '00:00') return ''
+    return time
   }
 
   const isLive = (startDate, endDate) => {
@@ -212,19 +149,16 @@ function App() {
 
     return events.filter(event => {
       // First, check if the event has already ended
-      if (event.endDate) {
-        const endDate = new Date(event.endDate);
-        if (endDate < now) return false; // Event has ended
-      } else {
-        // If no endDate, check if startDate has passed
-        const startDate = new Date(event.startDate);
-        if (startDate < now) return false; // Event has started and no end time, so hide it
-      }
-
-      // 5km Radius Filter
-      if (userLocation && event.latitude && event.longitude) {
-        const dist = calculateDistance(userLocation.lat, userLocation.lon, event.latitude, event.longitude)
-        if (dist > 5.0) return false
+      // BUT: If view is 'idag', we want to show completed events too
+      if (view !== 'idag') {
+        if (event.endDate) {
+          const endDate = new Date(event.endDate);
+          if (endDate < now) return false; // Event has ended
+        } else {
+          // If no endDate, check if startDate has passed
+          const startDate = new Date(event.startDate);
+          if (startDate < now) return false; // Event has started and no end time, so hide it
+        }
       }
 
       // Then apply view-specific filtering
@@ -254,7 +188,7 @@ function App() {
         return eventDate >= tomorrow;
       }
     });
-  }, [events, view, userLocation]);
+  }, [events, view]);
 
   const venues = useMemo(() => {
     if (view !== 'idag') return []
@@ -266,9 +200,15 @@ function App() {
       // Find an existing group by distance OR name
       let group = groups.find(g => {
         const dist = calculateDistance(event.latitude, event.longitude, g.latitude, g.longitude)
-        if (dist < 0.2) return true // 200m proximity
 
-        return normalizeVenueName(g.name) === normalized && g.city === event.city
+        // Exact name match (normalized) always groups
+        if (normalizeVenueName(g.name) === normalized && g.city === event.city) return true
+
+        // Proximity match: only if very close (< 100m) AND not a totally different named venue avoiding "Bio" vs "Katalin" mixups
+        // But simply reducing radius to 0.05 (50m) is safer for city venues.
+        if (dist < 0.1) return true
+
+        return false
       })
 
       if (!group) {
@@ -289,14 +229,11 @@ function App() {
       group.events.push(event)
     })
 
-    // Calculate distance from current device position to each venue
-    return groups.map(venue => {
-      const dist = userLocation
-        ? calculateDistance(userLocation.lat, userLocation.lon, venue.latitude, venue.longitude)
-        : Infinity
-      return { ...venue, distanceKm: dist }
-    }).sort((a, b) => a.distanceKm - b.distanceKm)
-  }, [filteredEvents, userLocation, view])
+    // Sort by name A-Z
+    return groups.sort((a, b) => {
+      return (a.name || '').localeCompare(b.name || '')
+    })
+  }, [filteredEvents, view])
 
   const monthGroups = useMemo(() => {
     if (view === 'idag') return []
@@ -304,6 +241,8 @@ function App() {
     const groups = {}
     filteredEvents.forEach(event => {
       const date = new Date(event.startDate)
+      if (isNaN(date.getTime())) return // Skip invalid dates
+
       let groupKey
 
       if (view === 'helg') {
@@ -318,11 +257,7 @@ function App() {
         groups[groupKey] = []
       }
 
-      const dist = userLocation
-        ? calculateDistance(userLocation.lat, userLocation.lon, event.latitude, event.longitude)
-        : Infinity
-
-      groups[groupKey].push({ ...event, distanceKm: dist })
+      groups[groupKey].push({ ...event })
     })
 
     return Object.entries(groups).map(([groupName, events]) => ({
@@ -344,8 +279,12 @@ function App() {
         const nameB = (b.artist || b.name || '').toLowerCase()
         return nameA.localeCompare(nameB)
       })
-    })).sort((a, b) => new Date(a.events[0].startDate) - new Date(b.events[0].startDate))
-  }, [filteredEvents, userLocation, view])
+    })).sort((a, b) => {
+      const dateA = a.events[0] ? new Date(a.events[0].startDate) : new Date(0)
+      const dateB = b.events[0] ? new Date(b.events[0].startDate) : new Date(0)
+      return dateA - dateB
+    })
+  }, [filteredEvents, view])
 
   const toggleVenue = (vKey) => {
     setExpandedVenues(prev => {
@@ -445,7 +384,6 @@ function App() {
                             >
                               {venue.name}
                             </h2>
-                            <DistanceLabel distance={venue.distanceKm} />
                           </div>
                         </div>
                         <div className="event-list-venue">
@@ -526,36 +464,6 @@ function App() {
           )}
         </div>
       </div>
-      {import.meta.env.DEV && (
-        <div style={{
-          position: 'fixed',
-          bottom: '20px',
-          right: '20px',
-          background: 'rgba(0,0,0,0.8)',
-          padding: '10px',
-          borderRadius: '8px',
-          zIndex: 9999,
-          border: '1px solid #333'
-        }}>
-          <select
-            value={debugLocation}
-            onChange={(e) => setDebugLocation(e.target.value)}
-            style={{
-              background: '#222',
-              color: '#fff',
-              border: '1px solid #444',
-              padding: '5px',
-              borderRadius: '4px',
-              fontSize: '12px'
-            }}
-          >
-            <option value="real">📍 Real Position</option>
-            <option value="sthlm">🇸🇪 Stockholm (Mock)</option>
-            <option value="solna">🏟️ Solna (Mock)</option>
-            <option value="uppsala">🏰 Uppsala (Mock)</option>
-          </select>
-        </div>
-      )}
     </>
   )
 }

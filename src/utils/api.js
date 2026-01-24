@@ -18,7 +18,7 @@ export const fetchUKKEvents = async () => {
                 country: "Sweden",
                 latitude: event.latitude || 59.8601,
                 longitude: event.longitude || 17.6433,
-                startDate: parseSwedishDate(event.date) || (event.date && event.date.includes(':') ? event.date : `${event.date}T20:00:00Z`),
+                startDate: parseSwedishDate(event.date) || (event.date && event.date.includes(':') ? event.date : `${event.date}T00:00:00`),
                 url: event.url
             }));
     } catch (err) {
@@ -30,7 +30,7 @@ export const fetchUKKEvents = async () => {
 const parseSwedishDate = (dateStr) => {
     if (!dateStr) return null;
 
-    // Format: "Lördag 17 januari", "17 jan", etc.
+    // Format: "Lördag 17 januari", "17 jan", "17 jan 19:00", etc.
     const months = {
         'januari': 0, 'februari': 1, 'mars': 2, 'april': 3, 'maj': 4, 'juni': 5,
         'juli': 6, 'augusti': 7, 'september': 8, 'oktober': 9, 'november': 10, 'december': 11,
@@ -38,16 +38,30 @@ const parseSwedishDate = (dateStr) => {
         'jul': 6, 'aug': 7, 'sep': 8, 'okt': 9, 'nov': 10, 'dec': 11
     };
 
-    const parts = dateStr.toLowerCase().trim().split(/\s+/);
+    const cleanStr = dateStr.toLowerCase().trim();
+    const parts = cleanStr.split(/\s+/);
     if (parts.length < 2) return null;
 
     let day, month;
+    let timeHours = 0; // Default to 00:00 (Midnight) to signify "No Time"
+    let timeMinutes = 0;
+
+    // Try to find time in parts (e.g. 19:00 or 19.00)
+    const timePart = parts.find(p => p.match(/^\d{1,2}[:.]\d{2}$/));
+    if (timePart) {
+        const [h, m] = timePart.replace('.', ':').split(':').map(Number);
+        if (!isNaN(h) && !isNaN(m)) {
+            timeHours = h;
+            timeMinutes = m;
+        }
+    }
+
     if (parts.length >= 3 && isNaN(parseInt(parts[0], 10))) {
-        // Has weekday: [weekday, day, month]
+        // Has weekday: [weekday, day, month, ...]
         day = parseInt(parts[1], 10);
         month = months[parts[2]];
     } else {
-        // No weekday: [day, month]
+        // No weekday: [day, month, ...]
         day = parseInt(parts[0], 10);
         month = months[parts[1]];
     }
@@ -57,11 +71,26 @@ const parseSwedishDate = (dateStr) => {
     const now = new Date();
     let year = now.getFullYear();
 
-    if (month < now.getMonth()) {
+    // improving year logic: if date is more than 1 month in the past, assume it's next year
+    // (Simple heuristic, can be improved)
+    const dateThisYear = new Date(year, month, day);
+    if (dateThisYear < new Date(now.getFullYear(), now.getMonth() - 1, 1)) {
         year++;
     }
 
-    const date = new Date(year, month, day, 20, 0, 0);
+    const date = new Date(year, month, day, timeHours, timeMinutes, 0);
+    // Adjust for timezone offset if necessary, but toISOString() returns UTC.
+    // If we want "Local Time" preserved as UTC (so '19:00' stays '19:00'), we should construct it carefully.
+    // However, the app renders `new Date(isoString)`, which converts UTC to Local.
+    // So if we want the App to show 19:00, and we are in Sweden (UTC+1/+2),
+    // We should create the date as if it is Local Time, then output the ISO string.
+    // Or, we can just treat the inputs as local and subtract the offset.
+    // Simplest: Create as local, let toISOString() convert to UTC.
+    // new Date(y, m, d, h, m) creates a Local Date object.
+    // toISOString() converts that to UTC.
+    // Example: 19:00 Local -> 18:00 UTC (Winter)
+    // App: new Date("...18:00Z") -> 19:00 Local. Correct.
+
     return date.toISOString();
 };
 
@@ -167,7 +196,7 @@ export const fetchKatalinEvents = async () => {
                 country: "Sweden",
                 latitude: event.latitude || 59.8586,
                 longitude: event.longitude || 17.6389,
-                startDate: parseSwedishDate(event.date) || (event.date && event.date.includes(':') ? event.date : `${event.date}T20:00:00Z`),
+                startDate: parseSwedishDate(event.date) || (event.date && event.date.includes(':') ? event.date : `${event.date}T00:00:00`),
                 url: event.url
             }));
     } catch (err) {
@@ -193,7 +222,7 @@ export const fetchDestinationUppsalaEvents = async () => {
                 country: "Sweden",
                 latitude: event.latitude || 59.8586,
                 longitude: event.longitude || 17.6389,
-                startDate: parseSwedishDate(event.date) || (event.date && event.date.includes(':') ? event.date : `${event.date}T20:00:00Z`),
+                startDate: parseSwedishDate(event.date) || (event.date && event.date.includes(':') ? event.date : `${event.date}T00:00:00`),
                 url: event.url
             }));
     } catch (err) {
@@ -219,7 +248,7 @@ export const fetchHejaUppsalaEvents = async () => {
                 country: "Sweden",
                 latitude: event.latitude || 59.8586,
                 longitude: event.longitude || 17.6389,
-                startDate: parseSwedishDate(event.date) || (event.date && event.date.includes(':') ? event.date : `${event.date}T20:00:00Z`),
+                startDate: parseSwedishDate(event.date) || (event.date && event.date.includes(':') ? event.date : `${event.date}T00:00:00`),
                 url: event.url
             }));
     } catch (err) {
@@ -236,11 +265,12 @@ export const fetchNordiskBio = async () => {
         const events = [];
         for (const date in data.dateCounts) {
             const count = data.dateCounts[date];
+            const name = count === 1 ? `${count} film visas` : `${count} filmer visas`;
             events.push({
                 id: `nfb-${date}`,
                 source: "nordiskbio",
-                name: `${count} filmer visas`,
-                artist: `${count} filmer visas`,
+                name: name,
+                artist: name,
                 venue: data.venue,
                 city: data.city,
                 country: "Sweden",
@@ -266,11 +296,12 @@ export const fetchFyrisbiografen = async () => {
         const events = [];
         for (const date in data.dateCounts) {
             const count = data.dateCounts[date];
+            const name = count === 1 ? `${count} film visas` : `${count} filmer visas`;
             events.push({
                 id: `fyris-${date}`,
                 source: "fyrisbiografen",
-                name: `${count} filmer visas`,
-                artist: `${count} filmer visas`,
+                name: name,
+                artist: name,
                 venue: data.venue,
                 city: data.city,
                 country: "Sweden",
