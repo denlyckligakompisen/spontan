@@ -194,11 +194,12 @@ function App() {
           const d = new Date();
           const day = d.getDay();
           let daysUntilFriday = (5 - day + 7) % 7;
-          if (day === 5 && d.getHours() >= 18) daysUntilFriday = 7;
+          if (day === 5 && d.getHours() >= 17) daysUntilFriday = 7;
+          if (day === 6 || day === 0) daysUntilFriday = (5 - day + 7) % 7; // Sunday is 0, Saturday is 6. Logic holds.
 
           const weekendStart = new Date(d);
           weekendStart.setDate(d.getDate() + daysUntilFriday);
-          weekendStart.setHours(18, 0, 0, 0);
+          weekendStart.setHours(17, 0, 0, 0);
 
           const weekendEnd = new Date(weekendStart);
           weekendEnd.setDate(weekendStart.getDate() + 2); // Sunday
