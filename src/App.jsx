@@ -285,7 +285,13 @@ function App() {
       <Intro />
       <div className="app">
         <header className={`app-header ${isScrolled ? 'scrolled' : ''}`}>
-          <h1 className="app-title">spontan.</h1>
+          <h1
+            className="app-title"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            style={{ cursor: 'pointer' }}
+          >
+            spontan.
+          </h1>
 
           <div className="view-toggle">
             {views.map((v, i) => (
