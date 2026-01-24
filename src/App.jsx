@@ -262,7 +262,7 @@ function App() {
             >
               idag
             </button>
-            <span className="separator">·</span>
+
             <button
               className={`toggle-btn ${view === 'helg' ? 'active' : ''}`}
               onClick={() => {
@@ -272,7 +272,7 @@ function App() {
             >
               nästa helg
             </button>
-            <span className="separator">·</span>
+
             <button
               className={`toggle-btn ${view === 'kommande' ? 'active' : ''}`}
               onClick={() => {
@@ -282,7 +282,7 @@ function App() {
             >
               kommande
             </button>
-            <span className="separator">·</span>
+
             <button
               className={`toggle-btn ${view === 'info' ? 'active' : ''}`}
               onClick={() => {
@@ -357,6 +357,7 @@ function App() {
                             className={`event-row-venue stacked ${highlightIds.has(`${event.source}-${event.id}`) ? 'highlighted' : ''}`}
                           >
                             <div className="event-info-stack">
+                              {event.category && <span className="event-category">{event.category}</span>}
                               <span className="event-artist-venue">{event.artist || event.name}</span>
                               <span className="event-venue-subtext">{event.venue}</span>
                             </div>

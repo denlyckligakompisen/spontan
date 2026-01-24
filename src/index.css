@@ -81,38 +81,54 @@ body {
   transform: none;
 }
 
+
 .view-toggle {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.8rem;
+  gap: 2rem;
   position: relative;
+  border-bottom: 1px solid #222;
+  padding-bottom: 0px;
+  width: 100%;
+  max-width: 400px;
+  /* Constrain width for better spacing appearance */
 }
 
-.separator {
-  color: #333;
-  font-size: 1rem;
-  pointer-events: none;
-  user-select: none;
-}
+/* Removed separator class */
 
 .toggle-btn {
   background: none;
   border: none;
-  color: #777;
-  font-size: 1rem;
+  color: #666;
+  font-size: 0.95rem;
   font-family: inherit;
   cursor: pointer;
-  padding: 0.5rem 0;
-  transition: color 0.2s;
+  padding: 0.5rem 0.5rem 0.8rem 0.5rem;
+  transition: all 0.2s ease;
+  position: relative;
+  font-weight: 400;
 }
 
 .toggle-btn:hover {
-  color: #999;
+  color: #888;
 }
 
 .toggle-btn.active {
   color: #fff;
+  /* White */
+  font-weight: 500;
+}
+
+.toggle-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  /* White */
 }
 
 
@@ -242,8 +258,13 @@ body {
   padding: 0.6rem 0.25rem;
   border-bottom: 1px solid #1a1a1a;
   text-decoration: none;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
+}
+
+.event-row-venue:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.03);
 }
 
 .event-row-venue.highlighted {
@@ -275,8 +296,13 @@ body {
   transition: transform 0.2s ease-out;
 }
 
+/* Removed specific hover transform for artist since whole row moves now,
+   but we can keep it if we want extra movement, or remove it to be cleaner.
+   Let's keep it subtle or remove it. 
+   Actually, let's remove the individual text shift to focus on the row lift 
+   and the time nudge as requested. */
 .event-row-venue:hover .event-artist-venue {
-  transform: translateX(-3px);
+  transform: none;
 }
 
 .event-info-stack {
@@ -301,6 +327,12 @@ body {
   color: #666;
   white-space: nowrap;
   letter-spacing: 0.03em;
+  transition: transform 0.2s ease-out, color 0.2s ease;
+}
+
+.event-row-venue:hover .event-date-text {
+  transform: translateX(-5px);
+  color: #888;
 }
 
 .date-stacked {
@@ -470,4 +502,12 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.event-category {
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }

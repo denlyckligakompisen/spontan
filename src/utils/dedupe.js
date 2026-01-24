@@ -1,3 +1,5 @@
+import { assignCategory } from './category';
+
 /**
  * Calculate Euclidean distance between two points in km.
  * Treats the Earth as flat (acceptable for short distances).
@@ -61,6 +63,13 @@ export const mergeAndDedupeEvents = (tmEvents, katalinEvents, userLat, userLon) 
             }
         } else {
             result.push({ ...event });
+        }
+    });
+
+    // Assign categories
+    result.forEach(event => {
+        if (!event.category) {
+            event.category = assignCategory(event);
         }
     });
 
