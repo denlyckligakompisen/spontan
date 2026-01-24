@@ -199,19 +199,30 @@ function App() {
       events: events.sort((a, b) => {
         const dA = new Date(a.startDate)
         const dB = new Date(b.startDate)
+
+        // Always sort by day first (so we don't mix days)
         const dayA = new Date(dA.getFullYear(), dA.getMonth(), dA.getDate()).getTime()
         const dayB = new Date(dB.getFullYear(), dB.getMonth(), dB.getDate()).getTime()
         if (dayA !== dayB) return dayA - dayB
+
+        const venueCompare = (a.venue || '').toLowerCase().localeCompare((b.venue || '').toLowerCase())
+
+        // 1. Kommande: Date -> Venue (ignore specific time for sorting order)
+        if (view === 'kommande') {
+          return venueCompare
+        }
+
+        // 2. Others (Idag / Helg): Priority for hidden times + Time -> Venue
         const timeA = dA.getTime()
         const timeB = dB.getTime()
 
-        // 2. Priority for events with hidden times (Cinemas & Merged)
+        // Priority for events with hidden times (Cinemas & Merged)
         const hideA = a.isMerged || ['nordiskbio', 'fyrisbiografen'].includes(a.source)
         const hideB = b.isMerged || ['nordiskbio', 'fyrisbiografen'].includes(b.source)
         if (hideA !== hideB) return hideA ? -1 : 1
 
         if (timeA !== timeB) return timeA - timeB
-        return (a.venue || '').toLowerCase().localeCompare((b.venue || '').toLowerCase())
+        return venueCompare
       })
     })).sort((a, b) => new Date(a.events[0].startDate) - new Date(b.events[0].startDate))
 
@@ -302,7 +313,7 @@ function App() {
             <div className="content-container">
               {view === 'info' ? (
                 <div className="info-page">
-                  <h2 className="info-title">Information hämtas från</h2>
+                  <h2 className="info-title">Informationen hämtas från</h2>
                   <div className="info-section">
                     <ul className="sources-list">
                       <li>Ticketmaster (Sverige)</li>
@@ -329,7 +340,7 @@ function App() {
                   ) : (
                     monthGroups.map(group => (
                       <React.Fragment key={group.month}>
-                        <MonthHeader month={group.month} />
+                        {view !== 'idag' && <MonthHeader month={group.month} />}
                         {group.events.map(event => (
                           <a
                             id={`${event.source}-${event.id}`}

@@ -41,11 +41,12 @@ const parseSwedishDate = (dateStr) => {
     // Use regex to find time: "19:00", "19.00", "Kl. 19.00", "Kl: 19:00"
     let timeHours = 0;
     let timeMinutes = 0;
-    const timeRegex = /(?:kl[:.]?\s*)(\d{1,2})[:.](\d{2})|(\d{1,2})[:.](\d{2})/i;
+    // Updated Regex to capture "kl. 19:00" where "kl." might be present
+    const timeRegex = /(?:kl\.?|kl|kl:|kl\.)?\s*(\d{1,2})[:.](\d{2})/i;
     const timeMatch = cleanStr.match(timeRegex);
     if (timeMatch) {
-        const h = timeMatch[1] || timeMatch[3];
-        const m = timeMatch[2] || timeMatch[4];
+        const h = timeMatch[1];
+        const m = timeMatch[2];
         timeHours = parseInt(h, 10);
         timeMinutes = parseInt(m, 10);
     }

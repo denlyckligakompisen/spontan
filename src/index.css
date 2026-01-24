@@ -45,12 +45,16 @@ body {
 
 .app {
   width: 100%;
+  padding-top: 160px;
+  /* Space for fixed header */
 }
 
 
 .app-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  /* Align to viewport left */
   background-color: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -59,6 +63,8 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  /* Center logo and menu */
   gap: 1rem;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -448,7 +454,8 @@ body {
 
 .app-title {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
+  letter-spacing: -2px;
   color: #fff;
   margin: 0;
   text-align: center;
