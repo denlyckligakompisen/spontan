@@ -45,7 +45,7 @@ body {
 
 .app {
   width: 100%;
-  padding-top: 160px;
+  padding-top: 240px;
   /* Space for fixed header */
 }
 
@@ -112,6 +112,45 @@ body {
   font-weight: 400;
 }
 
+.category-filters {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0 1rem 0.75rem 1rem;
+  background-color: #000;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.category-filters::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-pill {
+  background: #111;
+  border: 1px solid #222;
+  color: #888;
+  padding: 0.35rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.filter-pill:hover {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.filter-pill.active {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+  font-weight: 500;
+}
+
 .toggle-btn:hover {
   color: #888;
 }
@@ -141,16 +180,39 @@ body {
   text-align: center;
 }
 
+.sources-toggle {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+  font-family: inherit;
+  margin: 0;
+}
+
+.sources-toggle:hover {
+  color: #888;
+}
+
 .footer-sources {
   font-size: 0.8rem;
   color: #444;
   max-width: 600px;
-  margin: 0.5rem auto 0;
-  line-height: 1.5;
+  margin: 1rem auto 0;
+  line-height: 1.6;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.footer-sources span {
+  display: block;
 }
 
 .info-stats {
-  margin-bottom: 0.5rem;
+  margin: 0;
   font-size: 0.85rem;
   color: #666;
 }
@@ -207,8 +269,8 @@ body {
 
 .month-header {
   position: sticky;
-  top: 94px;
-  /* Align with scrolled header bottom */
+  top: 175px;
+  /* Align with header bottom */
   font-size: 0.82rem;
   font-weight: 500;
   color: #666;
@@ -369,6 +431,13 @@ body {
   margin-top: -2px;
 }
 
+.time-stacked {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1;
+}
+
 .date-day {
   font-size: 1.1rem;
   font-weight: 600;
@@ -380,6 +449,12 @@ body {
   text-transform: uppercase;
   color: #666;
   margin-top: 1px;
+}
+
+.event-time-end {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 2px;
 }
 
 .event-meta-right {

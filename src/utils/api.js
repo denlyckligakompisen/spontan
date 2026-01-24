@@ -53,7 +53,6 @@ const parseSwedishDate = (dateStr) => {
     let endDateRange = null;
 
     if (timeMatches.length > 0) {
-        // Find the FIRST "kl" match for start
         let startMatchIdx = -1;
         for (let i = 0; i < timeMatches.length; i++) {
             if (timeMatches[i][0].toLowerCase().includes('kl')) {
@@ -64,18 +63,19 @@ const parseSwedishDate = (dateStr) => {
         if (startMatchIdx === -1) startMatchIdx = 0;
 
         const startMatch = timeMatches[startMatchIdx];
-        const hInt = parseInt(startMatch[1], 10);
-        const fullMatch = startMatch[0].trim();
-        const isSuspicious = (hInt < 7 && !fullMatch.toLowerCase().includes('kl') && !fullMatch.includes(':')) ||
-            (fullMatch === '1.33' || fullMatch === '0.25' || fullMatch === '2.10');
+        timeHours = parseInt(startMatch[1], 10);
+        timeMinutes = parseInt(startMatch[2], 10);
 
-        if (!isSuspicious) {
-            timeHours = hInt;
-            timeMinutes = parseInt(startMatch[2], 10);
+        // Improved end time logic: 
+        // 1. Check if there's a second time match
+        // 2. Check if the text between matches contains a range separator (- or –)
+        if (timeMatches.length > startMatchIdx + 1) {
+            const endMatch = timeMatches[startMatchIdx + 1];
+            const startPos = startMatch.index + startMatch[0].length;
+            const endPos = endMatch.index;
+            const separatorText = cleanStr.substring(startPos, endPos);
 
-            // Check for end time (second match)
-            if (timeMatches.length > startMatchIdx + 1) {
-                const endMatch = timeMatches[startMatchIdx + 1];
+            if (separatorText.match(/[-–—]/)) {
                 endDateRange = { h: parseInt(endMatch[1], 10), m: parseInt(endMatch[2], 10) };
             }
         }
@@ -83,21 +83,20 @@ const parseSwedishDate = (dateStr) => {
 
     const parts = cleanStr.split(/\s+/);
 
-    // Range logic: "29 nov - 25 jan". We want the segment AFTER the hyphen if it exists.
-    let searchParts = parts;
-    const hyphenIndex = parts.lastIndexOf('-');
-    if (hyphenIndex !== -1 && hyphenIndex < parts.length - 1) {
-        searchParts = parts.slice(hyphenIndex + 1);
-    }
+    // Range logic: "31 jan - 1 feb 10:00 – 16:00"
+    // For many sources, we want the START date if it's currently relevant,
+    // but the fallback logic currently takes the LAST date (parts.slice(hyphenIndex + 1)).
+    // Let's improve this to find the first valid date in the string.
 
     let day, month;
-    // Find first occurrence of [day, monthName] in searchParts
-    for (let i = 0; i < searchParts.length - 1; i++) {
-        const d = parseInt(searchParts[i], 10);
-        const m = months[searchParts[i + 1]];
+    for (let i = 0; i < parts.length - 1; i++) {
+        const d = parseInt(parts[i], 10);
+        const m = months[parts[i + 1]];
         if (!isNaN(d) && m !== undefined) {
             day = d;
             month = m;
+            // If this date is today or in the future, we take it as the start.
+            // Otherwise we keep searching (might be a long range).
             break;
         }
     }

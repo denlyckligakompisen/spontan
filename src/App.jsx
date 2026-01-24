@@ -12,7 +12,7 @@ const MonthHeader = ({ month }) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([e]) => setIsSticky(e.intersectionRatio < 1),
-      { threshold: [1], rootMargin: '-95px 0px 0px 0px' } // Matches header height approx
+      { threshold: [1], rootMargin: '-176px 0px 0px 0px' } // Matches header height approx
     )
     if (ref.current) observer.observe(ref.current)
     return () => observer.disconnect()
@@ -34,6 +34,8 @@ function App() {
   const [highlightIds, setHighlightIds] = useState(new Set())
   const [visibleCount, setVisibleCount] = useState(25)
   const [indicatorStyle, setIndicatorStyle] = useState({ opacity: 0 })
+  const [showSources, setShowSources] = useState(false)
+  const [activeCategory, setActiveCategory] = useState('alla')
   const loaderRef = useRef(null)
   const buttonsRef = useRef([])
 
@@ -157,7 +159,24 @@ function App() {
     tomorrow.setDate(tomorrow.getDate() + 1);
 
     return events.filter(event => {
-      // First, check if the event has already ended (except for 'idag' view)
+      // First, check category filter
+      if (activeCategory !== 'alla') {
+        if (activeCategory === 'saknar kategori') {
+          if (event.category && event.category.trim() !== '') return false;
+        } else {
+          const catMap = {
+            'musik': '🎵',
+            'sport': '⚽',
+            'teater': '🎭',
+            'film': '🎬'
+          };
+          const targetEmoji = catMap[activeCategory];
+          if (targetEmoji && event.category !== targetEmoji) return false;
+          if (!targetEmoji && event.category) return false; // Safety
+        }
+      }
+
+      // Then, check if the event has already ended (except for 'idag' view)
       if (view !== 'idag') {
         if (event.endDate) {
           const endDate = new Date(event.endDate);
@@ -195,7 +214,7 @@ function App() {
       }
       return false;
     });
-  }, [events, view]);
+  }, [events, view, activeCategory]);
 
   const monthGroups = useMemo(() => {
     const groups = {}
@@ -291,6 +310,18 @@ function App() {
               }}
             />
           </div>
+
+          <div className="category-filters">
+            {['alla', 'film', 'musik', 'sport', 'teater', 'saknar kategori'].map(cat => (
+              <button
+                key={cat}
+                className={`filter-pill ${activeCategory === cat ? 'active' : ''}`}
+                onClick={() => setActiveCategory(activeCategory === cat ? 'alla' : cat)}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
         </header>
 
 
@@ -314,7 +345,7 @@ function App() {
               <div className="event-list-venue">
                 {monthGroups.length === 0 ? (
                   <div className="no-events">
-                    {view === 'idag' ? 'Slut för idag – inga fler events' : 'Inga kommande konserter hittades'}
+                    {"här var det tomt :("}
                   </div>
                 ) : (
                   monthGroups.map(group => (
@@ -334,7 +365,6 @@ function App() {
                           >
                             <div className="event-info-stack">
                               <span className="event-artist-venue">
-                                {event.category && <span style={{ marginRight: '0.4rem', fontSize: '0.9em' }}>{event.category}</span>}
                                 {event.artist || event.name}
                               </span>
                               <span className="event-venue-subtext">{event.venue}</span>
@@ -346,10 +376,18 @@ function App() {
                                   const live = isLive(event.startDate, event.endDate)
                                   const shouldHideTime = ['nordiskbio', 'fyrisbiografen'].includes(event.source)
                                   if (view === 'idag' || view === 'helg') {
+                                    const startTime = formatTime(event.startDate)
+                                    const endTime = event.endDate ? formatTime(event.endDate) : null
+
                                     return (
                                       <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                                         {live && <span className="live-pulse" title="Börjar snart/Pågår"></span>}
-                                        {shouldHideTime ? '' : formatTime(event.startDate)}
+                                        {shouldHideTime ? '' : (
+                                          <div className={endTime ? "time-stacked" : ""}>
+                                            <span>{startTime}</span>
+                                            {endTime && <span className="event-time-end">-{endTime}</span>}
+                                          </div>
+                                        )}
                                       </div>
                                     )
                                   }
@@ -382,15 +420,29 @@ function App() {
           <footer className="app-footer">
             <div className="info-page">
               <p className="info-stats">
-                {(() => {
-                  const cities = [...new Set(events.map(e => e.city || 'Uppsala'))].sort();
-                  const cityLabel = cities.length === 1 ? 'stad' : 'städer';
-                  return `visar ${events.length} events i ${cities.length} ${cityLabel} (${cities.join(', ')}) och uppdateras dagligen med information från`;
+                {events.length} events i Uppsala · uppdaterades {(() => {
+                  const timestamps = events.map(e => e.fetched_at).filter(Boolean);
+                  const latest = timestamps.length === 0 ? new Date() : new Date(Math.max(...timestamps.map(t => new Date(t))));
+                  const today = new Date();
+                  const yesterday = new Date();
+                  yesterday.setDate(today.getDate() - 1);
+
+                  if (latest.toDateString() === today.toDateString()) return 'idag';
+                  if (latest.toDateString() === yesterday.toDateString()) return 'igår';
+                  return latest.toLocaleDateString('sv-SE', { day: 'numeric', month: 'short' });
                 })()}
               </p>
-              <div className="footer-sources">
-                <span>Ticketmaster, Destination Uppsala, Fyrisbiografen, Heja Uppsala, Katalin, Nordisk Bio, UKK, Uppsala Stadsteater</span>
-              </div>
+              <button
+                className="sources-toggle"
+                onClick={() => setShowSources(!showSources)}
+              >
+                {showSources ? 'Dölj källor' : 'Visa källor →'}
+              </button>
+              {showSources && (
+                <div className="footer-sources expandable">
+                  <span>Ticketmaster, Destination Uppsala, Fyrisbiografen, Heja Uppsala, Katalin, Nordisk Bio, UKK, Uppsala Stadsteater</span>
+                </div>
+              )}
             </div>
           </footer>
         </div>

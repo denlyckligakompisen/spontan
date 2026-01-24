@@ -4,7 +4,7 @@ import { JSDOM } from "jsdom";
 import { geocodeVenue } from "./geocoder.js";
 
 const BASE_URL = "https://hejauppsala.com/kalender/";
-const MAX_PAGES = 5;
+const MAX_PAGES = 15;
 const events = [];
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -40,42 +40,39 @@ async function fetchEventDetails(url) {
     const dom = new JSDOM(html);
     const doc = dom.window.document;
 
-    // 1. Look for headings or any text containing "När och var?"
+    // 1. Look for the "När och var?" block specifically
     const allElements = doc.querySelectorAll('h1, h2, h3, h4, h5, h6, b, strong, p, div');
     const narElement = Array.from(allElements).find(el => {
         const text = el.textContent.toLowerCase();
-        return text.includes('när och var') && text.length < 100; // avoid finding huge containers
+        return text.includes('när och var') && text.length < 100;
     });
 
     if (narElement) {
-        // Look in the element itself or its parent
-        const textToSearch = (narElement.textContent + " " + narElement.parentElement.textContent);
-        const timeMatch = textToSearch.match(/(\d{1,2}[:.]\d{2})/);
-        if (timeMatch) return timeMatch[1];
+        // The time is usually in the immediate next sibling or parent's text
+        const container = narElement.parentElement;
+        const textToSearch = container.textContent;
+        // Match things like "10:00 – 16:00" or "Kl 11.00 - 14.00"
+        const rangeMatch = textToSearch.match(/(\d{1,2}[:.]\d{2})\s*[-–]\s*(\d{1,2}[:.]\d{2})/);
+        if (rangeMatch) return rangeMatch[0];
+
+        const singleMatch = textToSearch.match(/(\d{1,2}[:.]\d{2})/);
+        if (singleMatch) return singleMatch[0];
     }
 
-    // 2. Generic fallback on visible text (body text)
+    // 2. Generic fallback on visible text
     const bodyText = doc.body.textContent;
+    // Match "10:00 - 16:00" or similar
+    const rangeMatch = bodyText.match(/kl\.?\s*(\d{1,2}[:.]\d{2})\s*[-–]\s*(\d{1,2}[:.]\d{2})/i);
+    if (rangeMatch) return rangeMatch[0];
 
-    // Prioritize "Kl. HH:mm"
-    const klMatch = bodyText.match(/Kl\.?\s*(\d{1,2}[:.]\d{2})/i);
-    if (klMatch) return klMatch[1];
-
-    // Then "Öppet HH:mm"
-    const oppetMatch = bodyText.match(/Öppet\s*(\d{1,2}[:.]\d{2})/i);
-    if (oppetMatch) return oppetMatch[1];
-
-    // Finally any HH:mm that looks like a time (between 00:00 and 23:59)
-    const allTimes = bodyText.matchAll(/(\d{1,2})[:.](\d{2})/g);
-    for (const match of allTimes) {
-        const h = parseInt(match[1], 10);
-        const m = parseInt(match[2], 10);
-        if (h >= 0 && h < 24 && m >= 0 && m < 60) {
-            // Avoid common version-like numbers if they are single digits at start
-            if (match[0] === "1.33") continue;
-            return match[0];
-        }
+    // Added: Match hour-only ranges like "10-17" and convert to colons
+    const hourRangeMatch = bodyText.match(/kl\.?\s*(\d{1,2})\s*[-–]\s*(\d{1,2})(?!\d)/i);
+    if (hourRangeMatch) {
+        return `${hourRangeMatch[1]}:00 - ${hourRangeMatch[2]}:00`;
     }
+
+    const klMatch = bodyText.match(/kl\.?\s*(\d{1,2}[:.]\d{2})/i);
+    if (klMatch) return klMatch[0];
 
     return null;
 }
