@@ -479,7 +479,7 @@ function App() {
                 )
               ) : view === 'info' ? (
                 <div className="info-page">
-                  <h2 className="info-title">Information hämtas från</h2>
+                  <h2 className="info-title">Informationen hämtas från</h2>
 
                   <div className="info-section">
                     <ul className="sources-list">
