@@ -204,6 +204,12 @@ function App() {
         if (dayA !== dayB) return dayA - dayB
         const timeA = dA.getTime()
         const timeB = dB.getTime()
+
+        // 2. Priority for events with hidden times (Cinemas & Merged)
+        const hideA = a.isMerged || ['nordiskbio', 'fyrisbiografen'].includes(a.source)
+        const hideB = b.isMerged || ['nordiskbio', 'fyrisbiografen'].includes(b.source)
+        if (hideA !== hideB) return hideA ? -1 : 1
+
         if (timeA !== timeB) return timeA - timeB
         return (a.venue || '').toLowerCase().localeCompare((b.venue || '').toLowerCase())
       })
@@ -340,20 +346,22 @@ function App() {
 
                             <div className="event-meta-right">
                               <span className="event-date-text">
-                                {view === 'idag' || view === 'helg'
-                                  ? formatTime(event.startDate)
-                                  : (() => {
-                                    const d = new Date(event.startDate)
-                                    const day = d.getDate()
-                                    const month = d.toLocaleDateString('sv-SE', { month: 'short' }).replace('.', '')
-                                    return (
-                                      <div className="date-stacked">
-                                        <span className="date-day">{day}</span>
-                                        <span className="date-month">{month}</span>
-                                      </div>
-                                    )
-                                  })()
-                                }
+                                {(() => {
+                                  const shouldHideTime = event.isMerged || ['nordiskbio', 'fyrisbiografen'].includes(event.source)
+                                  if (view === 'idag' || view === 'helg') {
+                                    return shouldHideTime ? '' : formatTime(event.startDate)
+                                  }
+
+                                  const d = new Date(event.startDate)
+                                  const day = d.getDate()
+                                  const month = d.toLocaleDateString('sv-SE', { month: 'short' }).replace('.', '')
+                                  return (
+                                    <div className="date-stacked">
+                                      <span className="date-day">{day}</span>
+                                      <span className="date-month">{month}</span>
+                                    </div>
+                                  )
+                                })()}
                               </span>
                             </div>
                           </a>
