@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react'
 import './index.css'
 import Intro from './Intro'
-import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents, fetchNordiskBio, fetchFyrisbiografen } from './utils/api'
+import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents, fetchNordiskBio, fetchFyrisbiografen, fetchUppsalaStadsteaterEvents } from './utils/api'
 import { mergeAndDedupeEvents } from './utils/dedupe'
 
 
@@ -74,17 +74,19 @@ function App() {
       const hejaPromise = fetchHejaUppsalaEvents()
       const nfbPromise = fetchNordiskBio()
       const fyrisPromise = fetchFyrisbiografen()
-      const [tmEvents, katalinEvents, uppsalaEvents, ukkEvents, hejaEvents, nfbEvents, fyrisEvents] = await Promise.all([
+      const ustPromise = fetchUppsalaStadsteaterEvents()
+      const [tmEvents, katalinEvents, uppsalaEvents, ukkEvents, hejaEvents, nfbEvents, fyrisEvents, ustEvents] = await Promise.all([
         tmPromise,
         katalinPromise,
         uppsalaPromise,
         ukkPromise,
         hejaPromise,
         nfbPromise,
-        fyrisPromise
+        fyrisPromise,
+        ustPromise
       ])
 
-      const merged = mergeAndDedupeEvents(tmEvents, [...katalinEvents, ...uppsalaEvents, ...ukkEvents, ...hejaEvents, ...nfbEvents, ...fyrisEvents], lat, lon)
+      const merged = mergeAndDedupeEvents(tmEvents, [...katalinEvents, ...uppsalaEvents, ...ukkEvents, ...hejaEvents, ...nfbEvents, ...fyrisEvents, ...ustEvents], lat, lon)
 
       setEvents(merged)
       setLoading(false)
@@ -313,6 +315,9 @@ function App() {
             <div className="content-container">
               {view === 'info' ? (
                 <div className="info-page">
+                  <p className="info-stats" style={{ textAlign: 'center', marginBottom: '3rem', color: '#888', fontSize: '0.9rem' }}>
+                    spontan visar {events.length} events i {new Set(events.map(e => e.city || 'Uppsala')).size} städer och uppdateras varje dag
+                  </p>
                   <h2 className="info-title">Informationen hämtas från</h2>
                   <div className="info-section">
                     <ul className="sources-list">
@@ -328,6 +333,7 @@ function App() {
                       <li>Katalin</li>
                       <li>Nordisk Bio</li>
                       <li>Uppsala Konsert & Kongress (UKK)</li>
+                      <li>Uppsala Stadsteater</li>
                     </ul>
                   </div>
                 </div>
@@ -340,7 +346,7 @@ function App() {
                   ) : (
                     monthGroups.map(group => (
                       <React.Fragment key={group.month}>
-                        {view !== 'idag' && <MonthHeader month={group.month} />}
+                        <MonthHeader month={group.month} />
                         {group.events.map(event => (
                           <a
                             id={`${event.source}-${event.id}`}
@@ -388,7 +394,7 @@ function App() {
             </div>
           )}
         </div>
-      </div>
+      </div >
     </>
   )
 }

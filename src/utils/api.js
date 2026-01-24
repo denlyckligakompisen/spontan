@@ -309,3 +309,28 @@ export const fetchFyrisbiografen = async () => {
         return [];
     }
 };
+
+export const fetchUppsalaStadsteaterEvents = async () => {
+    try {
+        const response = await fetch(`/data/uppsala-stadsteater-events.json?t=${Date.now()}`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        return (data || [])
+            .map(event => ({
+                id: `ust-${event.title}-${event.date}`,
+                source: "uppsalastadsteater",
+                name: event.title,
+                artist: event.title,
+                venue: event.venue,
+                city: "Uppsala",
+                country: "Sweden",
+                latitude: 59.8586, // Stadsteater approx location
+                longitude: 17.6389,
+                startDate: event.date, // Already in ISO format from scraper
+                url: event.url
+            }));
+    } catch (err) {
+        console.error("Uppsala Stadsteater local data read failed:", err);
+        return [];
+    }
+};

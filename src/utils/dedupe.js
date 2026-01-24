@@ -48,7 +48,7 @@ export const mergeAndDedupeEvents = (tmEvents, katalinEvents, userLat, userLon) 
 
             const venueMatch = distBetweenVenues < 1;
 
-            return artistMatch && venueMatch && timeDiff <= 1;
+            return artistMatch && venueMatch && timeDiff <= 0.1;
         });
 
         if (duplicateIndex !== -1) {
