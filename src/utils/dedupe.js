@@ -56,6 +56,7 @@ export const mergeAndDedupeEvents = (tmEvents, katalinEvents, userLat, userLon) 
         if (duplicateIndex !== -1) {
             const existing = result[duplicateIndex];
             existing.isMerged = true;
+            existing.endDate = existing.endDate || event.endDate;
             // Merge logic: prefer Ticketmaster coordinates
             if (event.source === 'ticketmaster') {
                 existing.latitude = event.latitude || existing.latitude;

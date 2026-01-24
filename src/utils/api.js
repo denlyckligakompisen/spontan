@@ -8,19 +8,24 @@ export const fetchUKKEvents = async () => {
         const data = await response.json();
         return (data || [])
             .filter(event => event.date && event.date.trim() !== '')
-            .map(event => ({
-                id: `ukk-${event.title}-${event.date}`,
-                source: "ukk",
-                name: event.title,
-                artist: event.title,
-                venue: event.venue,
-                city: "Uppsala",
-                country: "Sweden",
-                latitude: event.latitude || 59.8601,
-                longitude: event.longitude || 17.6433,
-                startDate: parseSwedishDate(event.date) || (event.date && event.date.includes(':') ? event.date : `${event.date}T00:00:00`),
-                url: event.url
-            }));
+            .map(event => {
+                const parsed = parseSwedishDate(event.date);
+                const fallbackDate = (event.date && event.date.includes(':') ? event.date : `${event.date}T00:00:00`);
+                return {
+                    id: `ukk-${event.title}-${event.date}`,
+                    source: "ukk",
+                    name: event.title,
+                    artist: event.title,
+                    venue: event.venue,
+                    city: "Uppsala",
+                    country: "Sweden",
+                    latitude: event.latitude || 59.8601,
+                    longitude: event.longitude || 17.6433,
+                    startDate: parsed ? parsed.startDate.toISOString() : fallbackDate,
+                    endDate: parsed?.endDate ? parsed.endDate.toISOString() : null,
+                    url: event.url
+                };
+            });
     } catch (err) {
         console.error("UKK local data read failed:", err);
         return [];
@@ -42,13 +47,38 @@ const parseSwedishDate = (dateStr) => {
     let timeHours = 0;
     let timeMinutes = 0;
     // Updated Regex to capture "kl. 19:00" where "kl." might be present
-    const timeRegex = /(?:kl\.?|kl|kl:|kl\.)?\s*(\d{1,2})[:.](\d{2})/i;
-    const timeMatch = cleanStr.match(timeRegex);
-    if (timeMatch) {
-        const h = timeMatch[1];
-        const m = timeMatch[2];
-        timeHours = parseInt(h, 10);
-        timeMinutes = parseInt(m, 10);
+    const timeRegex = /(?:kl\.?|kl|kl:|kl\.)?\s*(\d{1,2})[:.](\d{2})/gi;
+    const timeMatches = Array.from(cleanStr.matchAll(timeRegex));
+    let startDateRange = null;
+    let endDateRange = null;
+
+    if (timeMatches.length > 0) {
+        // Find the FIRST "kl" match for start
+        let startMatchIdx = -1;
+        for (let i = 0; i < timeMatches.length; i++) {
+            if (timeMatches[i][0].toLowerCase().includes('kl')) {
+                startMatchIdx = i;
+                break;
+            }
+        }
+        if (startMatchIdx === -1) startMatchIdx = 0;
+
+        const startMatch = timeMatches[startMatchIdx];
+        const hInt = parseInt(startMatch[1], 10);
+        const fullMatch = startMatch[0].trim();
+        const isSuspicious = (hInt < 7 && !fullMatch.toLowerCase().includes('kl') && !fullMatch.includes(':')) ||
+            (fullMatch === '1.33' || fullMatch === '0.25' || fullMatch === '2.10');
+
+        if (!isSuspicious) {
+            timeHours = hInt;
+            timeMinutes = parseInt(startMatch[2], 10);
+
+            // Check for end time (second match)
+            if (timeMatches.length > startMatchIdx + 1) {
+                const endMatch = timeMatches[startMatchIdx + 1];
+                endDateRange = { h: parseInt(endMatch[1], 10), m: parseInt(endMatch[2], 10) };
+            }
+        }
     }
 
     const parts = cleanStr.split(/\s+/);
@@ -82,8 +112,17 @@ const parseSwedishDate = (dateStr) => {
         year++;
     }
 
-    const date = new Date(year, month, day, timeHours, timeMinutes, 0);
-    return date.toISOString();
+    const finalDate = new Date(year, month, day);
+    finalDate.setHours(timeHours, timeMinutes, 0, 0);
+
+    let endResult = null;
+    if (endDateRange) {
+        endResult = new Date(finalDate);
+        endResult.setHours(endDateRange.h, endDateRange.m, 0, 0);
+        if (endResult < finalDate) endResult.setDate(endResult.getDate() + 1);
+    }
+
+    return { startDate: finalDate, endDate: endResult };
 };
 
 /**
@@ -110,7 +149,6 @@ const getCachedData = (key) => {
     const { data, timestamp } = JSON.parse(cached);
     if (Date.now() - timestamp > CACHE_DURATION) {
         localStorage.removeItem(CACHE_KEY_PREFIX + key);
-        return null;
     }
     return data;
 };
@@ -149,6 +187,7 @@ export const fetchTicketmasterEvents = async (lat, lon) => {
             latitude: parseFloat(event._embedded?.venues?.[0]?.location?.latitude),
             longitude: parseFloat(event._embedded?.venues?.[0]?.location?.longitude),
             startDate: event.dates.start.dateTime || `${event.dates.start.localDate}T${event.dates.start.localTime || '00:00:00'}Z`,
+            endDate: event.dates.end?.dateTime || null,
             url: event.url
         }));
 
@@ -178,19 +217,24 @@ export const fetchKatalinEvents = async () => {
         const data = await response.json();
         return (data || [])
             .filter(event => event.date && event.date.trim() !== '')
-            .map(event => ({
-                id: `katalin-${event.title}-${event.date}`,
-                source: "katalin",
-                name: event.title,
-                artist: event.title,
-                venue: "Katalin",
-                city: "Uppsala",
-                country: "Sweden",
-                latitude: event.latitude || 59.8586,
-                longitude: event.longitude || 17.6389,
-                startDate: parseSwedishDate(event.date) || (event.date && event.date.includes(':') ? event.date : `${event.date}T00:00:00`),
-                url: event.url
-            }));
+            .map(event => {
+                const parsed = parseSwedishDate(event.date);
+                const fallbackDate = (event.date && event.date.includes(':') ? event.date : `${event.date}T00:00:00`);
+                return {
+                    id: `katalin-${event.title}-${event.date}`,
+                    source: "katalin",
+                    name: event.title,
+                    artist: event.title,
+                    venue: "Katalin",
+                    city: "Uppsala",
+                    country: "Sweden",
+                    latitude: event.latitude || 59.8586,
+                    longitude: event.longitude || 17.6389,
+                    startDate: parsed ? parsed.startDate.toISOString() : fallbackDate,
+                    endDate: parsed?.endDate ? parsed.endDate.toISOString() : null,
+                    url: event.url
+                };
+            });
     } catch (err) {
         console.error("Katalin local data read failed:", err);
         return [];
@@ -204,19 +248,24 @@ export const fetchDestinationUppsalaEvents = async () => {
         const data = await response.json();
         return (data || [])
             .filter(event => event.date && event.date.trim() !== "")
-            .map(event => ({
-                id: `uppsala-${event.title}-${event.date}`,
-                source: "destinationuppsala",
-                name: event.title,
-                artist: event.title,
-                venue: event.venue || "Uppsala",
-                city: "Uppsala",
-                country: "Sweden",
-                latitude: event.latitude || 59.8586,
-                longitude: event.longitude || 17.6389,
-                startDate: parseSwedishDate(event.date) || (event.date && event.date.includes(':') ? event.date : `${event.date}T00:00:00`),
-                url: event.url
-            }));
+            .map(event => {
+                const parsed = parseSwedishDate(event.date);
+                const fallbackDate = (event.date && event.date.includes(':') ? event.date : `${event.date}T00:00:00`);
+                return {
+                    id: `uppsala-${event.title}-${event.date}`,
+                    source: "destinationuppsala",
+                    name: event.title,
+                    artist: event.title,
+                    venue: event.venue || "Uppsala",
+                    city: "Uppsala",
+                    country: "Sweden",
+                    latitude: event.latitude || 59.8586,
+                    longitude: event.longitude || 17.6389,
+                    startDate: parsed ? parsed.startDate.toISOString() : fallbackDate,
+                    endDate: parsed?.endDate ? parsed.endDate.toISOString() : null,
+                    url: event.url
+                };
+            });
     } catch (err) {
         console.error("Destination Uppsala local data read failed:", err);
         return [];
@@ -230,19 +279,24 @@ export const fetchHejaUppsalaEvents = async () => {
         const data = await response.json();
         return (data || [])
             .filter(event => event.date && event.date.trim() !== "")
-            .map(event => ({
-                id: `heja-${event.title}-${event.date}`,
-                source: "hejauppsala",
-                name: event.title,
-                artist: event.title,
-                venue: event.venue || "Uppsala",
-                city: "Uppsala",
-                country: "Sweden",
-                latitude: event.latitude || 59.8586,
-                longitude: event.longitude || 17.6389,
-                startDate: parseSwedishDate(event.date) || (event.date && event.date.includes(':') ? event.date : `${event.date}T00:00:00`),
-                url: event.url
-            }));
+            .map(event => {
+                const parsed = parseSwedishDate(event.date);
+                const fallbackDate = (event.date && event.date.includes(':') ? event.date : `${event.date}T00:00:00`);
+                return {
+                    id: `heja-${event.title}-${event.date}`,
+                    source: "hejauppsala",
+                    name: event.title,
+                    artist: event.title,
+                    venue: event.venue || "Uppsala",
+                    city: "Uppsala",
+                    country: "Sweden",
+                    latitude: event.latitude || 59.8586,
+                    longitude: event.longitude || 17.6389,
+                    startDate: parsed ? parsed.startDate.toISOString() : fallbackDate,
+                    endDate: parsed?.endDate ? parsed.endDate.toISOString() : null,
+                    url: event.url
+                };
+            });
     } catch (err) {
         console.error("Heja Uppsala local data read failed:", err);
         return [];
@@ -269,6 +323,7 @@ export const fetchNordiskBio = async () => {
                 latitude: data.latitude,
                 longitude: data.longitude,
                 startDate: `${date}T12:00:00Z`,
+                endDate: null,
                 url: `https://www.nfbio.se/?city=uppsala#days:${date}`
             });
         }
@@ -300,6 +355,7 @@ export const fetchFyrisbiografen = async () => {
                 latitude: data.latitude,
                 longitude: data.longitude,
                 startDate: `${date}T12:00:00Z`,
+                endDate: null,
                 url: `https://fyrisbiografen.se/kalendarium`
             });
         }
@@ -327,6 +383,7 @@ export const fetchUppsalaStadsteaterEvents = async () => {
                 latitude: 59.8586, // Stadsteater approx location
                 longitude: 17.6389,
                 startDate: event.date, // Already in ISO format from scraper
+                endDate: null,
                 url: event.url
             }));
     } catch (err) {

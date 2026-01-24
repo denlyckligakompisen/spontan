@@ -40,15 +40,17 @@ async function fetchEventDetails(url) {
     const dom = new JSDOM(html);
     const doc = dom.window.document;
 
-    // 1. Look for headings "När och var?"
-    const headings = Array.from(doc.querySelectorAll('h1, h2, h3, h4, h5, h6, b, strong'));
-    const narHeading = headings.find(h => h.textContent.toLowerCase().includes('när och var'));
+    // 1. Look for headings or any text containing "När och var?"
+    const allElements = doc.querySelectorAll('h1, h2, h3, h4, h5, h6, b, strong, p, div');
+    const narElement = Array.from(allElements).find(el => {
+        const text = el.textContent.toLowerCase();
+        return text.includes('när och var') && text.length < 100; // avoid finding huge containers
+    });
 
-    if (narHeading) {
-        // Look in parent or next siblings for time
-        const container = narHeading.parentElement;
-        const text = container.textContent;
-        const timeMatch = text.match(/(\d{1,2}[:.]\d{2})/);
+    if (narElement) {
+        // Look in the element itself or its parent
+        const textToSearch = (narElement.textContent + " " + narElement.parentElement.textContent);
+        const timeMatch = textToSearch.match(/(\d{1,2}[:.]\d{2})/);
         if (timeMatch) return timeMatch[1];
     }
 
@@ -98,6 +100,12 @@ function parseEvents(html) {
                 return node.textContent.trim();
             }).filter(t => t !== "");
             dateResult = parts.join(" ");
+            // Strip common junk like "1.33" or "0.25" or any standalone small number following a space
+            dateResult = dateResult.replace(/\b(1\.33|0\.25|2\.10)\b/g, "").trim();
+            // Broader fix: if there's a number like "1.33" that isn't preceded by "Kl" or "Kl.", remove it
+            if (!dateResult.toLowerCase().includes("kl")) {
+                dateResult = dateResult.replace(/\s\d{1,2}[.:]\d{2}$/, "").trim();
+            }
         }
 
         const venueItem = item.querySelector("ul.o-breadcrumbs li:last-child");

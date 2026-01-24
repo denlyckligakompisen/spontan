@@ -29,11 +29,27 @@ function App() {
   const [events, setEvents] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
-  const [view, setView] = useState('idag') // 'idag', 'helg', 'kommande', 'info'
+  const [view, setView] = useState('idag') // 'idag', 'helg', 'kommande'
   const [isScrolled, setIsScrolled] = useState(false)
   const [highlightIds, setHighlightIds] = useState(new Set())
   const [visibleCount, setVisibleCount] = useState(25)
+  const [indicatorStyle, setIndicatorStyle] = useState({ opacity: 0 })
   const loaderRef = useRef(null)
+  const buttonsRef = useRef([])
+
+  const views = ['idag', 'helg', 'kommande']
+
+  useEffect(() => {
+    const activeIdx = views.indexOf(view)
+    const activeBtn = buttonsRef.current[activeIdx]
+    if (activeBtn) {
+      setIndicatorStyle({
+        left: activeBtn.offsetLeft,
+        width: activeBtn.offsetWidth,
+        opacity: 1
+      })
+    }
+  }, [view, events]) // Also update if events load which might change layout
 
   const loadMore = () => setVisibleCount(prev => prev + 25)
 
@@ -218,9 +234,9 @@ function App() {
         const timeA = dA.getTime()
         const timeB = dB.getTime()
 
-        // Priority for events with hidden times (Cinemas & Merged)
-        const hideA = a.isMerged || ['nordiskbio', 'fyrisbiografen'].includes(a.source)
-        const hideB = b.isMerged || ['nordiskbio', 'fyrisbiografen'].includes(b.source)
+        // Priority for events with hidden times (Cinemas)
+        const hideA = ['nordiskbio', 'fyrisbiografen'].includes(a.source)
+        const hideB = ['nordiskbio', 'fyrisbiografen'].includes(b.source)
         if (hideA !== hideB) return hideA ? -1 : 1
 
         if (timeA !== timeB) return timeA - timeB
@@ -253,45 +269,27 @@ function App() {
           <h1 className="app-title">spontan.</h1>
 
           <div className="view-toggle">
-            <button
-              className={`toggle-btn ${view === 'idag' ? 'active' : ''}`}
-              onClick={() => {
-                if (view === 'idag') window.scrollTo({ top: 0, behavior: 'smooth' })
-                else setView('idag')
+            {views.map((v, i) => (
+              <button
+                key={v}
+                ref={el => buttonsRef.current[i] = el}
+                className={`toggle-btn ${view === v ? 'active' : ''}`}
+                onClick={() => {
+                  if (view === v) window.scrollTo({ top: 0, behavior: 'smooth' })
+                  else setView(v)
+                }}
+              >
+                {v === 'idag' ? 'idag' : v === 'helg' ? 'nästa helg' : v === 'kommande' ? 'kommande' : 'info'}
+              </button>
+            ))}
+            <div
+              className="active-indicator"
+              style={{
+                left: indicatorStyle.left,
+                width: indicatorStyle.width,
+                opacity: indicatorStyle.opacity
               }}
-            >
-              idag
-            </button>
-
-            <button
-              className={`toggle-btn ${view === 'helg' ? 'active' : ''}`}
-              onClick={() => {
-                if (view === 'helg') window.scrollTo({ top: 0, behavior: 'smooth' })
-                else setView('helg')
-              }}
-            >
-              nästa helg
-            </button>
-
-            <button
-              className={`toggle-btn ${view === 'kommande' ? 'active' : ''}`}
-              onClick={() => {
-                if (view === 'kommande') window.scrollTo({ top: 0, behavior: 'smooth' })
-                else setView('kommande')
-              }}
-            >
-              kommande
-            </button>
-
-            <button
-              className={`toggle-btn ${view === 'info' ? 'active' : ''}`}
-              onClick={() => {
-                if (view === 'info') window.scrollTo({ top: 0, behavior: 'smooth' })
-                else setView('info')
-              }}
-            >
-              info
-            </button>
+            />
           </div>
         </header>
 
@@ -313,89 +311,86 @@ function App() {
             <div className="error">{error}</div>
           ) : (
             <div className="content-container">
-              {view === 'info' ? (
-                <div className="info-page">
-                  <p className="info-stats" style={{ textAlign: 'center', marginBottom: '3rem', color: '#888', fontSize: '0.9rem' }}>
-                    spontan visar {events.length} events i {new Set(events.map(e => e.city || 'Uppsala')).size} städer och uppdateras varje dag
-                  </p>
-                  <h2 className="info-title">Informationen hämtas från</h2>
-                  <div className="info-section">
-                    <ul className="sources-list">
-                      <li>Ticketmaster (Sverige)</li>
-                    </ul>
+              <div className="event-list-venue">
+                {monthGroups.length === 0 ? (
+                  <div className="no-events">
+                    {view === 'idag' ? 'Slut för idag – inga fler events' : 'Inga kommande konserter hittades'}
                   </div>
-                  <div className="info-section">
-                    <h3 className="info-subtitle">Uppsala</h3>
-                    <ul className="sources-list">
-                      <li>Destination Uppsala</li>
-                      <li>Fyrisbiografen</li>
-                      <li>Heja Uppsala</li>
-                      <li>Katalin</li>
-                      <li>Nordisk Bio</li>
-                      <li>Uppsala Konsert & Kongress (UKK)</li>
-                      <li>Uppsala Stadsteater</li>
-                    </ul>
-                  </div>
-                </div>
-              ) : (
-                <div className="event-list-venue">
-                  {monthGroups.length === 0 ? (
-                    <div className="no-events">
-                      {view === 'idag' ? 'Slut för idag – inga fler events' : 'Inga kommande konserter hittades'}
-                    </div>
-                  ) : (
-                    monthGroups.map(group => (
-                      <React.Fragment key={group.month}>
-                        <MonthHeader month={group.month} />
-                        {group.events.map(event => (
-                          <a
-                            id={`${event.source}-${event.id}`}
-                            key={`${event.source}-${event.id}`}
-                            href={event.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={`event-row-venue stacked ${highlightIds.has(`${event.source}-${event.id}`) ? 'highlighted' : ''}`}
-                          >
-                            <div className="event-info-stack">
-                              {event.category && <span className="event-category">{event.category}</span>}
-                              <span className="event-artist-venue">{event.artist || event.name}</span>
-                              <span className="event-venue-subtext">{event.venue}</span>
-                            </div>
+                ) : (
+                  monthGroups.map(group => (
+                    <React.Fragment key={group.month}>
+                      <MonthHeader month={group.month} />
+                      {group.events.map(event => (
+                        <a
+                          id={`${event.source}-${event.id}`}
+                          key={`${event.source}-${event.id}`}
+                          href={event.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`event-row-venue stacked ${highlightIds.has(`${event.source}-${event.id}`) ? 'highlighted' : ''}`}
+                        >
+                          <div className="event-info-stack">
+                            <span className="event-artist-venue">
+                              {event.category && <span style={{ marginRight: '0.4rem', fontSize: '0.9em' }}>{event.category}</span>}
+                              {event.artist || event.name}
+                            </span>
+                            <span className="event-venue-subtext">{event.venue}</span>
+                          </div>
 
-                            <div className="event-meta-right">
-                              <span className="event-date-text">
-                                {(() => {
-                                  const shouldHideTime = event.isMerged || ['nordiskbio', 'fyrisbiografen'].includes(event.source)
-                                  if (view === 'idag' || view === 'helg') {
-                                    return shouldHideTime ? '' : formatTime(event.startDate)
-                                  }
-
-                                  const d = new Date(event.startDate)
-                                  const day = d.getDate()
-                                  const month = d.toLocaleDateString('sv-SE', { month: 'short' }).replace('.', '')
+                          <div className="event-meta-right">
+                            <span className="event-date-text">
+                              {(() => {
+                                const live = isLive(event.startDate, event.endDate)
+                                const shouldHideTime = ['nordiskbio', 'fyrisbiografen'].includes(event.source)
+                                if (view === 'idag' || view === 'helg') {
                                   return (
-                                    <div className="date-stacked">
-                                      <span className="date-day">{day}</span>
-                                      <span className="date-month">{month}</span>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                      {live && <span className="live-pulse" title="Börjar snart/Pågår"></span>}
+                                      {shouldHideTime ? '' : formatTime(event.startDate)}
                                     </div>
                                   )
-                                })()}
-                              </span>
-                            </div>
-                          </a>
-                        ))}
-                      </React.Fragment>
-                    ))
-                  )}
-                  {view === 'kommande' && filteredEvents.length > visibleCount && (
-                    <div ref={loaderRef} style={{ height: '20px', margin: '20px 0' }} />
-                  )}
-                </div>
-              )}
+                                }
+
+                                const d = new Date(event.startDate)
+                                const day = d.getDate()
+                                const month = d.toLocaleDateString('sv-SE', { month: 'short' }).replace('.', '')
+                                return (
+                                  <div className="date-stacked">
+                                    <span className="date-day">{day}</span>
+                                    <span className="date-month">{month}</span>
+                                  </div>
+                                )
+                              })()}
+                            </span>
+                          </div>
+                        </a>
+                      ))}
+                    </React.Fragment>
+                  ))
+                )}
+                {view === 'kommande' && filteredEvents.length > visibleCount && (
+                  <div ref={loaderRef} style={{ height: '20px', margin: '20px 0' }} />
+                )}
+              </div>
             </div>
           )}
+
+          <footer className="app-footer">
+            <div className="info-page">
+              <p className="info-stats">
+                {(() => {
+                  const cities = [...new Set(events.map(e => e.city || 'Uppsala'))].sort();
+                  const cityLabel = cities.length === 1 ? 'stad' : 'städer';
+                  return `visar ${events.length} events i ${cities.length} ${cityLabel} (${cities.join(', ')}) och uppdateras dagligen med information från`;
+                })()}
+              </p>
+              <div className="footer-sources">
+                <span>Ticketmaster, Destination Uppsala, Fyrisbiografen, Heja Uppsala, Katalin, Nordisk Bio, UKK, Uppsala Stadsteater</span>
+              </div>
+            </div>
+          </footer>
         </div>
-      </div >
+      </div>
     </>
   )
 }
