@@ -2,17 +2,8 @@ import React, { useState, useEffect, useMemo, useRef } from 'react'
 import './index.css'
 import Intro from './Intro'
 import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents, fetchNordiskBio, fetchFyrisbiografen } from './utils/api'
-import { mergeAndDedupeEvents, calculateDistance } from './utils/dedupe'
+import { mergeAndDedupeEvents } from './utils/dedupe'
 
-
-const normalizeVenueName = (name) => {
-  if (!name) return ''
-  return name.toLowerCase()
-    .replace(/\b(ip|arena|stadion|konsert & kongress|konserthus|teater|scen|klubb)\b/g, '')
-    .replace(/[^\w\såäö]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
-}
 
 const MonthHeader = ({ month }) => {
   const [isSticky, setIsSticky] = useState(false)
@@ -38,7 +29,6 @@ function App() {
   const [events, setEvents] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
-  const [expandedVenues, setExpandedVenues] = useState(new Set())
   const [view, setView] = useState('idag') // 'idag', 'helg', 'kommande', 'info'
   const [isScrolled, setIsScrolled] = useState(false)
   const [highlightIds, setHighlightIds] = useState(new Set())
@@ -73,7 +63,6 @@ function App() {
   const fetchAllEvents = async () => {
     try {
       setLoading(true)
-      // Hardcoded Uppsala coordinates
       const lat = 59.8586
       const lon = 17.6389
 
@@ -120,23 +109,6 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const formatDate = (dateStr) => {
-    const d = new Date(dateStr)
-    const now = new Date()
-    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
-    const tomorrow = new Date(today)
-    tomorrow.setDate(tomorrow.getDate() + 1)
-
-    const eventDate = new Date(d.getFullYear(), d.getMonth(), d.getDate())
-
-    if (eventDate.getTime() === today.getTime()) return 'idag'
-    if (eventDate.getTime() === tomorrow.getTime()) return 'imorgon'
-
-    const day = d.getDate()
-    const month = d.toLocaleDateString('sv-SE', { month: 'short' }).replace('.', '')
-    return `${day} ${month}`
-  }
-
   const formatTime = (dateStr) => {
     const d = new Date(dateStr)
     if (isNaN(d.getTime())) return ''
@@ -150,16 +122,13 @@ function App() {
     const start = new Date(startDate)
     if (isNaN(start.getTime())) return false
 
-    // Ongoing: strictly between start and end time
     if (endDate) {
       const end = new Date(endDate)
       if (now >= start && now <= end) return true
     }
 
-    // Starting soon: less than one hour until start
     const diffMs = start - now
     const diffMins = diffMs / (1000 * 60)
-
     return diffMins > 0 && diffMins < 60
   }
 
@@ -170,39 +139,35 @@ function App() {
     tomorrow.setDate(tomorrow.getDate() + 1);
 
     return events.filter(event => {
-      // First, check if the event has already ended
-      // BUT: If view is 'idag', we want to show completed events too
+      // First, check if the event has already ended (except for 'idag' view)
       if (view !== 'idag') {
         if (event.endDate) {
           const endDate = new Date(event.endDate);
-          if (endDate < now) return false; // Event has ended
+          if (endDate < now) return false;
         } else {
-          // If no endDate, check if startDate has passed
           const startDate = new Date(event.startDate);
-          if (startDate < now) return false; // Event has started and no end time, so hide it
+          if (startDate < now) return false;
         }
       }
 
-      // Then apply view-specific filtering
       const eventDate = new Date(event.startDate);
 
       if (view === 'idag') {
         return eventDate >= today && eventDate < tomorrow;
       } else if (view === 'helg' || view === 'kommande') {
         if (view === 'helg') {
-          // Next weekend logic
           const d = new Date();
           const day = d.getDay();
           let daysUntilFriday = (5 - day + 7) % 7;
           if (day === 5 && d.getHours() >= 17) daysUntilFriday = 7;
-          if (day === 6 || day === 0) daysUntilFriday = (5 - day + 7) % 7; // Sunday is 0, Saturday is 6. Logic holds.
+          if (day === 6 || day === 0) daysUntilFriday = (5 - day + 7) % 7;
 
           const weekendStart = new Date(d);
           weekendStart.setDate(d.getDate() + daysUntilFriday);
           weekendStart.setHours(17, 0, 0, 0);
 
           const weekendEnd = new Date(weekendStart);
-          weekendEnd.setDate(weekendStart.getDate() + 2); // Sunday
+          weekendEnd.setDate(weekendStart.getDate() + 2);
           weekendEnd.setHours(23, 59, 59, 999);
 
           return eventDate >= weekendStart && eventDate <= weekendEnd;
@@ -210,78 +175,22 @@ function App() {
           return eventDate >= tomorrow;
         }
       }
-
-      return false; // For 'info' or other views, don't show events in this filter
+      return false;
     });
   }, [events, view]);
 
-  const venues = useMemo(() => {
-    if (view !== 'idag') return []
-    const groups = []
-
-    filteredEvents.forEach(event => {
-      const normalized = normalizeVenueName(event.venue)
-
-      // Find an existing group by distance OR name
-      let group = groups.find(g => {
-        const dist = calculateDistance(event.latitude, event.longitude, g.latitude, g.longitude)
-
-        // Exact name match (normalized) always groups
-        if (normalizeVenueName(g.name) === normalized && g.city === event.city) return true
-
-        // Proximity match: only if very close (< 100m) AND not a totally different named venue avoiding "Bio" vs "Katalin" mixups
-        // But simply reducing radius to 0.05 (50m) is safer for city venues.
-        if (dist < 0.1) return true
-
-        return false
-      })
-
-      if (!group) {
-        group = {
-          name: event.venue,
-          city: event.city,
-          latitude: event.latitude,
-          longitude: event.longitude,
-          events: []
-        }
-        groups.push(group)
-      } else {
-        // Update to pick the "best" name (shortest)
-        if (event.venue.length < group.name.length) {
-          group.name = event.venue
-        }
-      }
-      group.events.push(event)
-    })
-
-    // Sort by name A-Z
-    return groups.sort((a, b) => {
-      return (a.name || '').localeCompare(b.name || '')
-    })
-  }, [filteredEvents, view])
-
   const monthGroups = useMemo(() => {
-    if (view === 'idag') return []
-
     const groups = {}
     filteredEvents.forEach(event => {
       const date = new Date(event.startDate)
-      if (isNaN(date.getTime())) return // Skip invalid dates
+      if (isNaN(date.getTime())) return
 
       let groupKey
+      if (view === 'idag') groupKey = 'IDAG'
+      else if (view === 'helg') groupKey = date.toLocaleDateString('sv-SE', { weekday: 'long' })
+      else groupKey = date.toLocaleDateString('sv-SE', { month: 'long', year: 'numeric' })
 
-      if (view === 'helg') {
-        // Group by Day Name (e.g., "FREDAG", "LÖRDAG")
-        groupKey = date.toLocaleDateString('sv-SE', { weekday: 'long' })
-      } else {
-        // Group by Month Year
-        groupKey = date.toLocaleDateString('sv-SE', { month: 'long', year: 'numeric' })
-      }
-
-      if (!groups[groupKey]) {
-        groups[groupKey] = []
-      }
-
+      if (!groups[groupKey]) groups[groupKey] = []
       groups[groupKey].push({ ...event })
     })
 
@@ -290,25 +199,16 @@ function App() {
       events: events.sort((a, b) => {
         const dA = new Date(a.startDate)
         const dB = new Date(b.startDate)
-
-        // 1. Sort by Day
         const dayA = new Date(dA.getFullYear(), dA.getMonth(), dA.getDate()).getTime()
         const dayB = new Date(dB.getFullYear(), dB.getMonth(), dB.getDate()).getTime()
         if (dayA !== dayB) return dayA - dayB
-
-        // 2. Sort by Time
         const timeA = dA.getTime()
         const timeB = dB.getTime()
         if (timeA !== timeB) return timeA - timeB
-
-        // 3. Sort by Venue (A-Z)
-        const vA = (a.venue || '').toLowerCase()
-        const vB = (b.venue || '').toLowerCase()
-        return vA.localeCompare(vB)
+        return (a.venue || '').toLowerCase().localeCompare((b.venue || '').toLowerCase())
       })
     })).sort((a, b) => new Date(a.events[0].startDate) - new Date(b.events[0].startDate))
 
-    // Infinite Scroll Slicing
     let totalAdded = 0
     const slicedGroups = []
     for (const group of allGroups) {
@@ -318,27 +218,13 @@ function App() {
         slicedGroups.push(group)
         totalAdded += group.events.length
       } else {
-        slicedGroups.push({
-          ...group,
-          events: group.events.slice(0, remaining)
-        })
+        slicedGroups.push({ ...group, events: group.events.slice(0, remaining) })
         totalAdded += remaining
       }
     }
     return slicedGroups
   }, [filteredEvents, view, visibleCount])
 
-  const toggleVenue = (vKey) => {
-    setExpandedVenues(prev => {
-      const next = new Set(prev)
-      if (next.has(vKey)) {
-        next.delete(vKey)
-      } else {
-        next.add(vKey)
-      }
-      return next
-    })
-  }
 
   return (
     <>
@@ -408,85 +294,14 @@ function App() {
             <div className="error">{error}</div>
           ) : (
             <div className="content-container">
-              {view === 'idag' ? (
-                venues.length === 0 ? (
-                  <div className="no-events">Slut för idag – inga fler events</div>
-                ) : (
-                  venues.map((venue) => {
-                    const vKey = `${venue.name}-${venue.city}`
-                    const isExpanded = expandedVenues.has(vKey)
-                    const limit = isExpanded ? venue.events.length : 3
-
-                    return (
-                      <div key={vKey} className="venue-group">
-                        <div
-                          className="venue-header-row"
-                          onClick={() => toggleVenue(vKey)}
-                          style={{ cursor: 'pointer' }}
-                        >
-                          <div className="venue-title-container">
-                            <h2
-                              className="venue-name interactive"
-                              onClick={(e) => {
-                                e.stopPropagation()
-                                openDirections(venue.name, venue.city)
-                              }}
-                              title="Öppna vägbeskrivning"
-                            >
-                              {venue.name}
-                            </h2>
-                          </div>
-                        </div>
-                        <div className="event-list-venue">
-                          {venue.events
-                            .sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
-                            .slice(0, limit)
-                            .map(event => (
-                              <a
-                                id={`${event.source}-${event.id}`}
-                                key={`${event.source}-${event.id}`}
-                                href={event.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={`event-row-venue ${highlightIds.has(`${event.source}-${event.id}`) ? 'highlighted' : ''}`}
-                              >
-                                <span className="event-artist-venue">{event.artist || event.name}</span>
-                                <div className="event-meta-right">
-                                  {!['nordiskbio', 'fyrisbiografen'].includes(event.source) && (
-                                    <>
-                                      {isLive(event.startDate, event.endDate) && <span className="pulse-dot" />}
-                                      <span className="event-time">{formatTime(event.startDate)}</span>
-                                    </>
-                                  )}
-                                </div>
-                              </a>
-                            ))}
-                          {venue.events.length > 3 && (
-                            <button
-                              className="expand-btn"
-                              onClick={(e) => {
-                                e.stopPropagation()
-                                toggleVenue(vKey)
-                              }}
-                            >
-                              {isExpanded ? 'Visa färre' : `Visa ${venue.events.length - 3} till...`}
-                            </button>
-                          )}
-                        </div>
-                      </div>
-                    )
-                  })
-                )
-              ) : view === 'info' ? (
+              {view === 'info' ? (
                 <div className="info-page">
-                  <h2 className="info-title">Informationen hämtas från</h2>
-
+                  <h2 className="info-title">Information hämtas från</h2>
                   <div className="info-section">
                     <ul className="sources-list">
                       <li>Ticketmaster (Sverige)</li>
                     </ul>
                   </div>
-
                   <div className="info-section">
                     <h3 className="info-subtitle">Uppsala</h3>
                     <ul className="sources-list">
@@ -502,7 +317,9 @@ function App() {
               ) : (
                 <div className="event-list-venue">
                   {monthGroups.length === 0 ? (
-                    <div className="no-events">Inga kommande konserter hittades</div>
+                    <div className="no-events">
+                      {view === 'idag' ? 'Slut för idag – inga fler events' : 'Inga kommande konserter hittades'}
+                    </div>
                   ) : (
                     monthGroups.map(group => (
                       <React.Fragment key={group.month}>
@@ -523,7 +340,7 @@ function App() {
 
                             <div className="event-meta-right">
                               <span className="event-date-text">
-                                {view === 'helg'
+                                {view === 'idag' || view === 'helg'
                                   ? formatTime(event.startDate)
                                   : (() => {
                                     const d = new Date(event.startDate)
@@ -552,7 +369,7 @@ function App() {
             </div>
           )}
         </div>
-      </div >
+      </div>
     </>
   )
 }
