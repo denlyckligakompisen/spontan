@@ -320,51 +320,55 @@ function App() {
                   monthGroups.map(group => (
                     <React.Fragment key={group.month}>
                       <MonthHeader month={group.month} />
-                      {group.events.map(event => (
-                        <a
-                          id={`${event.source}-${event.id}`}
-                          key={`${event.source}-${event.id}`}
-                          href={event.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className={`event-row-venue stacked ${highlightIds.has(`${event.source}-${event.id}`) ? 'highlighted' : ''}`}
-                        >
-                          <div className="event-info-stack">
-                            <span className="event-artist-venue">
-                              {event.category && <span style={{ marginRight: '0.4rem', fontSize: '0.9em' }}>{event.category}</span>}
-                              {event.artist || event.name}
-                            </span>
-                            <span className="event-venue-subtext">{event.venue}</span>
-                          </div>
+                      {group.events.map((event, index) => {
+                        const isLastOfLastDay = index === group.events.length - 1 ||
+                          new Date(event.startDate).toDateString() !== new Date(group.events[index + 1].startDate).toDateString();
+                        return (
+                          <a
+                            id={`${event.source}-${event.id}`}
+                            key={`${event.source}-${event.id}`}
+                            href={event.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`event-row-venue stacked ${highlightIds.has(`${event.source}-${event.id}`) ? 'highlighted' : ''} ${isLastOfLastDay ? 'no-border' : ''}`}
+                          >
+                            <div className="event-info-stack">
+                              <span className="event-artist-venue">
+                                {event.category && <span style={{ marginRight: '0.4rem', fontSize: '0.9em' }}>{event.category}</span>}
+                                {event.artist || event.name}
+                              </span>
+                              <span className="event-venue-subtext">{event.venue}</span>
+                            </div>
 
-                          <div className="event-meta-right">
-                            <span className="event-date-text">
-                              {(() => {
-                                const live = isLive(event.startDate, event.endDate)
-                                const shouldHideTime = ['nordiskbio', 'fyrisbiografen'].includes(event.source)
-                                if (view === 'idag' || view === 'helg') {
+                            <div className="event-meta-right">
+                              <span className="event-date-text">
+                                {(() => {
+                                  const live = isLive(event.startDate, event.endDate)
+                                  const shouldHideTime = ['nordiskbio', 'fyrisbiografen'].includes(event.source)
+                                  if (view === 'idag' || view === 'helg') {
+                                    return (
+                                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                        {live && <span className="live-pulse" title="Börjar snart/Pågår"></span>}
+                                        {shouldHideTime ? '' : formatTime(event.startDate)}
+                                      </div>
+                                    )
+                                  }
+
+                                  const d = new Date(event.startDate)
+                                  const day = d.getDate()
+                                  const month = d.toLocaleDateString('sv-SE', { month: 'short' }).replace('.', '')
                                   return (
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                                      {live && <span className="live-pulse" title="Börjar snart/Pågår"></span>}
-                                      {shouldHideTime ? '' : formatTime(event.startDate)}
+                                    <div className="date-stacked">
+                                      <span className="date-day">{day}</span>
+                                      <span className="date-month">{month}</span>
                                     </div>
                                   )
-                                }
-
-                                const d = new Date(event.startDate)
-                                const day = d.getDate()
-                                const month = d.toLocaleDateString('sv-SE', { month: 'short' }).replace('.', '')
-                                return (
-                                  <div className="date-stacked">
-                                    <span className="date-day">{day}</span>
-                                    <span className="date-month">{month}</span>
-                                  </div>
-                                )
-                              })()}
-                            </span>
-                          </div>
-                        </a>
-                      ))}
+                                })()}
+                              </span>
+                            </div>
+                          </a>
+                        )
+                      })}
                     </React.Fragment>
                   ))
                 )}
@@ -390,7 +394,7 @@ function App() {
             </div>
           </footer>
         </div>
-      </div>
+      </div >
     </>
   )
 }
