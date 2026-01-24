@@ -116,15 +116,21 @@ body {
 }
 
 .view-toggle-underline.idag {
-  width: 2.5rem;
-  margin-left: -1.25rem;
-  transform: translateX(-6.5rem);
+  width: 2.4rem;
+  margin-left: -1.2rem;
+  transform: translateX(-6.8rem);
 }
 
-.view-toggle-underline.kommande {
-  width: 5.2rem;
-  margin-left: -2.6rem;
-  transform: translateX(-1.5rem);
+.view-toggle-underline.helg {
+  width: 5.6rem;
+  margin-left: -2.8rem;
+  transform: translateX(-0.5rem);
+}
+
+.view-toggle-underline.planera {
+  width: 4.0rem;
+  margin-left: -2.0rem;
+  transform: translateX(5.8rem);
 }
 
 
@@ -262,6 +268,27 @@ body {
   color: #666;
   white-space: nowrap;
   letter-spacing: 0.03em;
+}
+
+.date-stacked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  margin-top: -2px;
+}
+
+.date-day {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ddd;
+}
+
+.date-month {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #666;
+  margin-top: 1px;
 }
 
 .event-meta-right {

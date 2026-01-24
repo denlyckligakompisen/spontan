@@ -46,7 +46,7 @@ function App() {
   const [error, setError] = useState(null)
   const [userLocation, setUserLocation] = useState(null)
   const [expandedVenues, setExpandedVenues] = useState(new Set())
-  const [view, setView] = useState('idag') // 'idag' or 'kommande'
+  const [view, setView] = useState('idag') // 'idag', 'helg', 'planera'
   const [isScrolled, setIsScrolled] = useState(false)
   const [highlightIds, setHighlightIds] = useState(new Set())
   const [debugLocation, setDebugLocation] = useState(import.meta.env.DEV ? 'sthlm' : 'real')
@@ -229,10 +229,28 @@ function App() {
 
       // Then apply view-specific filtering
       const eventDate = new Date(event.startDate);
+
       if (view === 'idag') {
         return eventDate >= today && eventDate < tomorrow;
-      } else {
-        // 'kommande' view - show everything from tomorrow onwards
+      } else if (view === 'helg') {
+        // Next weekend logic
+        // Identify next weekend start (Friday 18:00) and end (Sunday 23:59)
+        const d = new Date();
+        const day = d.getDay();
+        let daysUntilFriday = (5 - day + 7) % 7;
+        if (day === 5 && d.getHours() >= 18) daysUntilFriday = 7;
+
+        const weekendStart = new Date(d);
+        weekendStart.setDate(d.getDate() + daysUntilFriday);
+        weekendStart.setHours(18, 0, 0, 0);
+
+        const weekendEnd = new Date(weekendStart);
+        weekendEnd.setDate(weekendStart.getDate() + 2); // Sunday
+        weekendEnd.setHours(23, 59, 59, 999);
+
+        return eventDate >= weekendStart && eventDate <= weekendEnd;
+      } else { // 'planera'
+        // 'planera' view - show everything from tomorrow onwards
         return eventDate >= tomorrow;
       }
     });
@@ -281,25 +299,34 @@ function App() {
   }, [filteredEvents, userLocation, view])
 
   const monthGroups = useMemo(() => {
-    if (view !== 'kommande') return []
+    if (view === 'idag') return []
 
     const groups = {}
     filteredEvents.forEach(event => {
       const date = new Date(event.startDate)
-      const monthYear = date.toLocaleDateString('sv-SE', { month: 'long', year: 'numeric' })
-      if (!groups[monthYear]) {
-        groups[monthYear] = []
+      let groupKey
+
+      if (view === 'helg') {
+        // Group by Day Name (e.g., "FREDAG", "LÖRDAG")
+        groupKey = date.toLocaleDateString('sv-SE', { weekday: 'long' })
+      } else {
+        // Group by Month Year
+        groupKey = date.toLocaleDateString('sv-SE', { month: 'long', year: 'numeric' })
+      }
+
+      if (!groups[groupKey]) {
+        groups[groupKey] = []
       }
 
       const dist = userLocation
         ? calculateDistance(userLocation.lat, userLocation.lon, event.latitude, event.longitude)
         : Infinity
 
-      groups[monthYear].push({ ...event, distanceKm: dist })
+      groups[groupKey].push({ ...event, distanceKm: dist })
     })
 
-    return Object.entries(groups).map(([month, events]) => ({
-      month: month.toUpperCase(),
+    return Object.entries(groups).map(([groupName, events]) => ({
+      month: groupName.toUpperCase(),
       events: events.sort((a, b) => {
         // 1. Date (asc)
         const dateA = new Date(a.startDate).getTime()
@@ -319,61 +346,6 @@ function App() {
       })
     })).sort((a, b) => new Date(a.events[0].startDate) - new Date(b.events[0].startDate))
   }, [filteredEvents, userLocation, view])
-
-
-
-  const handleNextWeekend = () => {
-    // 1. Switch to 'kommande' view first
-    setView('kommande')
-
-    // 2. Identify next weekend start (Friday 18:00) and end (Sunday 23:59)
-    const now = new Date()
-    const weekendStart = new Date(now)
-    const day = now.getDay()
-    let daysUntilFriday = (5 - day + 7) % 7
-    if (day === 5 && now.getHours() >= 18) daysUntilFriday = 7
-    weekendStart.setDate(now.getDate() + daysUntilFriday)
-    weekendStart.setHours(18, 0, 0, 0)
-
-    const weekendEnd = new Date(weekendStart)
-    weekendEnd.setDate(weekendStart.getDate() + 2) // Sunday
-    weekendEnd.setHours(23, 59, 59, 999)
-
-    // 3. Find all events within the weekend range
-    const weekendEvents = events
-      .filter(e => {
-        const eventDate = new Date(e.startDate)
-        return eventDate >= weekendStart && eventDate <= weekendEnd
-      })
-      .sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
-
-    if (weekendEvents.length > 0) {
-      // Highlight all weekend events
-      const ids = new Set(weekendEvents.map(e => `${e.source}-${e.id}`))
-      setHighlightIds(ids)
-
-      // Scroll to the first weekend event
-      const firstEventId = `${weekendEvents[0].source}-${weekendEvents[0].id}`
-
-      // We need to wait for the view to switch and elements to render
-      setTimeout(() => {
-        const element = document.getElementById(firstEventId)
-        if (element) {
-          const topOffset = 175 // Adjust for sticky headers (app header + month header + padding)
-          const elementPosition = element.getBoundingClientRect().top
-          const offsetPosition = elementPosition + window.pageYOffset - topOffset
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          })
-
-          // Clear highlights after 3 seconds
-          setTimeout(() => setHighlightIds(new Set()), 3000)
-        }
-      }, 100)
-    }
-  }
 
   const toggleVenue = (vKey) => {
     setExpandedVenues(prev => {
@@ -406,20 +378,23 @@ function App() {
             </button>
             <span className="separator">·</span>
             <button
-              className={`toggle-btn ${view === 'kommande' ? 'active' : ''}`}
+              className={`toggle-btn ${view === 'helg' ? 'active' : ''}`}
               onClick={() => {
-                if (view === 'kommande') window.scrollTo({ top: 0, behavior: 'smooth' })
-                else setView('kommande')
+                if (view === 'helg') window.scrollTo({ top: 0, behavior: 'smooth' })
+                else setView('helg')
               }}
             >
-              kommande
+              nästa helg
             </button>
             <span className="separator">·</span>
             <button
-              className="toggle-btn"
-              onClick={handleNextWeekend}
+              className={`toggle-btn ${view === 'planera' ? 'active' : ''}`}
+              onClick={() => {
+                if (view === 'planera') window.scrollTo({ top: 0, behavior: 'smooth' })
+                else setView('planera')
+              }}
             >
-              nästa helg
+              planera
             </button>
             <div className={`view-toggle-underline ${view}`} />
           </div>
@@ -524,7 +499,20 @@ function App() {
 
                             <div className="event-meta-right">
                               <span className="event-date-text">
-                                {new Date(event.startDate).toLocaleDateString('sv-SE', { day: 'numeric', month: 'short' }).replace('.', '')}
+                                {view === 'helg'
+                                  ? formatTime(event.startDate)
+                                  : (() => {
+                                    const d = new Date(event.startDate)
+                                    const day = d.getDate()
+                                    const month = d.toLocaleDateString('sv-SE', { month: 'short' }).replace('.', '')
+                                    return (
+                                      <div className="date-stacked">
+                                        <span className="date-day">{day}</span>
+                                        <span className="date-month">{month}</span>
+                                      </div>
+                                    )
+                                  })()
+                                }
                               </span>
                             </div>
                           </a>
