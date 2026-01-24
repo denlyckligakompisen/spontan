@@ -39,9 +39,31 @@ function App() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [expandedVenues, setExpandedVenues] = useState(new Set())
-  const [view, setView] = useState('idag') // 'idag', 'helg', 'planera'
+  const [view, setView] = useState('idag') // 'idag', 'helg', 'kommande', 'info'
   const [isScrolled, setIsScrolled] = useState(false)
   const [highlightIds, setHighlightIds] = useState(new Set())
+  const [visibleCount, setVisibleCount] = useState(25)
+  const loaderRef = useRef(null)
+
+  const loadMore = () => setVisibleCount(prev => prev + 25)
+
+  useEffect(() => {
+    setVisibleCount(25)
+  }, [view])
+
+  useEffect(() => {
+    if (view === 'info' || view === 'idag' || !loaderRef.current) return
+
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) {
+        loadMore()
+      }
+    }, { threshold: 1.0 })
+
+    observer.observe(loaderRef.current)
+    return () => observer.disconnect()
+  }, [view])
+
 
   const openDirections = (venueName, city) => {
     const url = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(venueName + ', ' + city)}`
@@ -128,17 +150,16 @@ function App() {
     const start = new Date(startDate)
     if (isNaN(start.getTime())) return false
 
-    // Check if active (within start and end time)
+    // Ongoing: strictly between start and end time
     if (endDate) {
       const end = new Date(endDate)
       if (now >= start && now <= end) return true
     }
 
-    // Check if less than one hour until start
+    // Starting soon: less than one hour until start
     const diffMs = start - now
     const diffMins = diffMs / (1000 * 60)
 
-    // "Until start" implies future, so diffMins > 0
     return diffMins > 0 && diffMins < 60
   }
 
@@ -167,27 +188,29 @@ function App() {
 
       if (view === 'idag') {
         return eventDate >= today && eventDate < tomorrow;
-      } else if (view === 'helg') {
-        // Next weekend logic
-        // Identify next weekend start (Friday 18:00) and end (Sunday 23:59)
-        const d = new Date();
-        const day = d.getDay();
-        let daysUntilFriday = (5 - day + 7) % 7;
-        if (day === 5 && d.getHours() >= 18) daysUntilFriday = 7;
+      } else if (view === 'helg' || view === 'kommande') {
+        if (view === 'helg') {
+          // Next weekend logic
+          const d = new Date();
+          const day = d.getDay();
+          let daysUntilFriday = (5 - day + 7) % 7;
+          if (day === 5 && d.getHours() >= 18) daysUntilFriday = 7;
 
-        const weekendStart = new Date(d);
-        weekendStart.setDate(d.getDate() + daysUntilFriday);
-        weekendStart.setHours(18, 0, 0, 0);
+          const weekendStart = new Date(d);
+          weekendStart.setDate(d.getDate() + daysUntilFriday);
+          weekendStart.setHours(18, 0, 0, 0);
 
-        const weekendEnd = new Date(weekendStart);
-        weekendEnd.setDate(weekendStart.getDate() + 2); // Sunday
-        weekendEnd.setHours(23, 59, 59, 999);
+          const weekendEnd = new Date(weekendStart);
+          weekendEnd.setDate(weekendStart.getDate() + 2); // Sunday
+          weekendEnd.setHours(23, 59, 59, 999);
 
-        return eventDate >= weekendStart && eventDate <= weekendEnd;
-      } else { // 'planera'
-        // 'planera' view - show everything from tomorrow onwards
-        return eventDate >= tomorrow;
+          return eventDate >= weekendStart && eventDate <= weekendEnd;
+        } else { // 'kommande'
+          return eventDate >= tomorrow;
+        }
       }
+
+      return false; // For 'info' or other views, don't show events in this filter
     });
   }, [events, view]);
 
@@ -261,31 +284,47 @@ function App() {
       groups[groupKey].push({ ...event })
     })
 
-    return Object.entries(groups).map(([groupName, events]) => ({
+    const allGroups = Object.entries(groups).map(([groupName, events]) => ({
       month: groupName.toUpperCase(),
       events: events.sort((a, b) => {
-        // 1. Date (asc)
-        const dateA = new Date(a.startDate).getTime()
-        const dateB = new Date(b.startDate).getTime()
-        if (dateA !== dateB) return dateA - dateB
+        const dA = new Date(a.startDate)
+        const dB = new Date(b.startDate)
 
-        // 2. Venue (asc)
-        const venueA = (a.venue || '').toLowerCase()
-        const venueB = (b.venue || '').toLowerCase()
-        if (venueA < venueB) return -1
-        if (venueA > venueB) return 1
+        // 1. Sort by Day
+        const dayA = new Date(dA.getFullYear(), dA.getMonth(), dA.getDate()).getTime()
+        const dayB = new Date(dB.getFullYear(), dB.getMonth(), dB.getDate()).getTime()
+        if (dayA !== dayB) return dayA - dayB
 
-        // 3. Name (asc)
-        const nameA = (a.artist || a.name || '').toLowerCase()
-        const nameB = (b.artist || b.name || '').toLowerCase()
-        return nameA.localeCompare(nameB)
+        // 2. Sort by Venue (A-Z)
+        const vA = (a.venue || '').toLowerCase()
+        const vB = (b.venue || '').toLowerCase()
+        if (vA < vB) return -1
+        if (vA > vB) return 1
+
+        // 3. Sort by Time
+        return dA.getTime() - dB.getTime()
       })
-    })).sort((a, b) => {
-      const dateA = a.events[0] ? new Date(a.events[0].startDate) : new Date(0)
-      const dateB = b.events[0] ? new Date(b.events[0].startDate) : new Date(0)
-      return dateA - dateB
-    })
-  }, [filteredEvents, view])
+    })).sort((a, b) => new Date(a.events[0].startDate) - new Date(b.events[0].startDate))
+
+    // Infinite Scroll Slicing
+    let totalAdded = 0
+    const slicedGroups = []
+    for (const group of allGroups) {
+      if (totalAdded >= visibleCount) break
+      const remaining = visibleCount - totalAdded
+      if (group.events.length <= remaining) {
+        slicedGroups.push(group)
+        totalAdded += group.events.length
+      } else {
+        slicedGroups.push({
+          ...group,
+          events: group.events.slice(0, remaining)
+        })
+        totalAdded += remaining
+      }
+    }
+    return slicedGroups
+  }, [filteredEvents, view, visibleCount])
 
   const toggleVenue = (vKey) => {
     setExpandedVenues(prev => {
@@ -328,15 +367,24 @@ function App() {
             </button>
             <span className="separator">·</span>
             <button
-              className={`toggle-btn ${view === 'planera' ? 'active' : ''}`}
+              className={`toggle-btn ${view === 'kommande' ? 'active' : ''}`}
               onClick={() => {
-                if (view === 'planera') window.scrollTo({ top: 0, behavior: 'smooth' })
-                else setView('planera')
+                if (view === 'kommande') window.scrollTo({ top: 0, behavior: 'smooth' })
+                else setView('kommande')
               }}
             >
-              planera
+              kommande
             </button>
-            <div className={`view-toggle-underline ${view}`} />
+            <span className="separator">·</span>
+            <button
+              className={`toggle-btn ${view === 'info' ? 'active' : ''}`}
+              onClick={() => {
+                if (view === 'info') window.scrollTo({ top: 0, behavior: 'smooth' })
+                else setView('info')
+              }}
+            >
+              info
+            </button>
           </div>
         </header>
 
@@ -411,15 +459,51 @@ function App() {
                                 </div>
                               </a>
                             ))}
+                          {venue.events.length > 3 && (
+                            <button
+                              className="expand-btn"
+                              onClick={(e) => {
+                                e.stopPropagation()
+                                toggleVenue(vKey)
+                              }}
+                            >
+                              {isExpanded ? 'Visa färre' : `Visa ${venue.events.length - 3} till...`}
+                            </button>
+                          )}
                         </div>
                       </div>
                     )
                   })
                 )
+              ) : view === 'info' ? (
+                <div className="info-page">
+                  <h2 className="info-title">Information hämtas från</h2>
+
+                  <div className="info-section">
+                    <h3 className="info-subtitle">Sverige</h3>
+                    <ul className="sources-list">
+                      <li>Ticketmaster (Sverige)</li>
+                    </ul>
+                  </div>
+
+                  <div className="info-section">
+                    <h3 className="info-subtitle">Uppsala</h3>
+                    <ul className="sources-list">
+                      <li>Destination Uppsala</li>
+                      <li>Fyrisbiografen</li>
+                      <li>Heja Uppsala</li>
+                      <li>Katalin</li>
+                      <li>Nordisk Bio</li>
+                      <li>Uppsala Konsert & Kongress (UKK)</li>
+                    </ul>
+                  </div>
+                </div>
               ) : (
-                <>
-                  <div className="event-list-venue">
-                    {monthGroups.map(group => (
+                <div className="event-list-venue">
+                  {monthGroups.length === 0 ? (
+                    <div className="no-events">Inga kommande konserter hittades</div>
+                  ) : (
+                    monthGroups.map(group => (
                       <React.Fragment key={group.month}>
                         <MonthHeader month={group.month} />
                         {group.events.map(event => (
@@ -457,14 +541,17 @@ function App() {
                           </a>
                         ))}
                       </React.Fragment>
-                    ))}
-                  </div>
-                </>
+                    ))
+                  )}
+                  {view === 'kommande' && filteredEvents.length > visibleCount && (
+                    <div ref={loaderRef} style={{ height: '20px', margin: '20px 0' }} />
+                  )}
+                </div>
               )}
             </div>
           )}
         </div>
-      </div>
+      </div >
     </>
   )
 }

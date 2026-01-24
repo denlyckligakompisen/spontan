@@ -37,22 +37,43 @@ async function fetchEventDetails(url) {
     const html = await fetchPage(url);
     if (!html) return null;
 
-    // Regex based finding of time
-    // Patterns: "Öppet 09.00-16.00", "Kl. 19:00", "19.00"
-    // We prioritize "Öppet" as per user report
+    const dom = new JSDOM(html);
+    const doc = dom.window.document;
 
-    // Look for "Öppet" followed by time
-    const oppetMatch = html.match(/Öppet\s*(\d{1,2}[:.]\d{2}(?:\s*-\s*\d{1,2}[:.]\d{2})?)/i);
-    if (oppetMatch) return `Öppet ${oppetMatch[1]}`;
+    // 1. Look for headings "När och var?"
+    const headings = Array.from(doc.querySelectorAll('h1, h2, h3, h4, h5, h6, b, strong'));
+    const narHeading = headings.find(h => h.textContent.toLowerCase().includes('när och var'));
 
-    // Look for "Kl/Kl." followed by time
-    const klMatch = html.match(/Kl\.?\s*(\d{1,2}[:.]\d{2})/i);
-    if (klMatch) return `Kl. ${klMatch[1]}`;
+    if (narHeading) {
+        // Look in parent or next siblings for time
+        const container = narHeading.parentElement;
+        const text = container.textContent;
+        const timeMatch = text.match(/(\d{1,2}[:.]\d{2})/);
+        if (timeMatch) return timeMatch[1];
+    }
 
-    // Look for generic time range just in text? Risky.
-    // e.g. "09.00-16.00"
-    const rangeMatch = html.match(/(\d{1,2}[:.]\d{2}\s*-\s*\d{1,2}[:.]\d{2})/);
-    if (rangeMatch) return rangeMatch[1];
+    // 2. Generic fallback on visible text (body text)
+    const bodyText = doc.body.textContent;
+
+    // Prioritize "Kl. HH:mm"
+    const klMatch = bodyText.match(/Kl\.?\s*(\d{1,2}[:.]\d{2})/i);
+    if (klMatch) return klMatch[1];
+
+    // Then "Öppet HH:mm"
+    const oppetMatch = bodyText.match(/Öppet\s*(\d{1,2}[:.]\d{2})/i);
+    if (oppetMatch) return oppetMatch[1];
+
+    // Finally any HH:mm that looks like a time (between 00:00 and 23:59)
+    const allTimes = bodyText.matchAll(/(\d{1,2})[:.](\d{2})/g);
+    for (const match of allTimes) {
+        const h = parseInt(match[1], 10);
+        const m = parseInt(match[2], 10);
+        if (h >= 0 && h < 24 && m >= 0 && m < 60) {
+            // Avoid common version-like numbers if they are single digits at start
+            if (match[0] === "1.33") continue;
+            return match[0];
+        }
+    }
 
     return null;
 }
@@ -125,8 +146,11 @@ async function run() {
 
     // 3. Fetch Details for missing times
     for (const event of uniqueEvents) {
-        // Check if date string has time (HH:MM or HH.MM)
-        const hasTime = /(\d{1,2}[:.]\d{2})/.test(event.date);
+        // Check if date string has a "real" time (HH:MM or HH.MM)
+        // Ignoring false positives like 0.25, 1.33
+        const suspiciousTimes = ["1.33", "0.25", "2.10"];
+        const hasTime = /(\d{1,2}[:.]\d{2})/.test(event.date) &&
+            !suspiciousTimes.some(st => event.date.includes(st));
 
         if (!hasTime) {
             console.log(`Fetching details for: ${event.title}...`);
@@ -135,7 +159,11 @@ async function run() {
 
             if (extraTime) {
                 console.log(`-> Found time: ${extraTime}`);
-                event.date = `${event.date} ${extraTime}`;
+                // Clear any suspicious time before adding new one
+                suspiciousTimes.forEach(st => {
+                    if (event.date.includes(st)) event.date = event.date.split(st)[0].trim();
+                });
+                event.date = `${event.date} ${extraTime}`.trim();
             } else {
                 console.log(`-> No time found in details.`);
             }

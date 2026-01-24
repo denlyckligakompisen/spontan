@@ -105,32 +105,55 @@ body {
   color: #fff;
 }
 
-.view-toggle-underline {
-  position: absolute;
-  bottom: 0;
-  height: 2px;
-  background-color: #fff;
-  transition: transform 140ms ease-out, width 140ms ease-out;
-  left: 50%;
-  pointer-events: none;
+
+
+.info-page {
+  padding: 2rem 1rem;
+  color: #ccc;
+  line-height: 1.8;
 }
 
-.view-toggle-underline.idag {
-  width: 2.4rem;
-  margin-left: -1.2rem;
-  transform: translateX(-6.8rem);
+.info-title {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
 }
 
-.view-toggle-underline.helg {
-  width: 5.6rem;
-  margin-left: -2.8rem;
-  transform: translateX(-0.5rem);
+.info-section {
+  margin-bottom: 2rem;
 }
 
-.view-toggle-underline.planera {
-  width: 4.0rem;
-  margin-left: -2.0rem;
-  transform: translateX(5.8rem);
+.info-subtitle {
+  color: #888;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.5rem;
+}
+
+.sources-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.sources-list li {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.sources-list li:last-child {
+  border-bottom: none;
+}
+
+.info-footer {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 2rem;
 }
 
 
