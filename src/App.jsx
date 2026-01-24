@@ -128,17 +128,18 @@ function App() {
     const start = new Date(startDate)
     if (isNaN(start.getTime())) return false
 
-    // If we have an end date, check if we are strictly within the range
+    // Check if active (within start and end time)
     if (endDate) {
       const end = new Date(endDate)
-      return now >= start && now <= end
+      if (now >= start && now <= end) return true
     }
 
+    // Check if less than one hour until start
     const diffMs = start - now
     const diffMins = diffMs / (1000 * 60)
 
-    // Live/Starting soon if starting within 60 mins OR started within the last 3 hours
-    return diffMins > -180 && diffMins < 60
+    // "Until start" implies future, so diffMins > 0
+    return diffMins > 0 && diffMins < 60
   }
 
   const filteredEvents = useMemo(() => {
