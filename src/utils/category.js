@@ -19,7 +19,7 @@ export const assignCategory = (event) => {
 
     // 3. Sport
     const sportKeywords = [
-        'sirius', 'storvreta', 'almtuna', 'uppsala basket', 'fotboll', 'ishockey',
+        'sirius', 'storvreta', 'almtuna', 'uppsala basket', 'basket', 'fotboll', 'ishockey',
         'bandy', 'innebandy', 'dalkurd', 'ifk uppsala', 'tennis', 'badminton',
         'bois', 'skirö'
     ];
@@ -29,21 +29,31 @@ export const assignCategory = (event) => {
 
     // 4. Musik
     // Ticketmaster (fetched as music), Katalin (Jazz/Pub), KB (if exists)
-    if (source === 'ticketmaster' || source === 'katalin') {
+    if (source === 'ticketmaster' || source === 'katalin' || source === 'destinationuppsala') {
         return '🎵';
     }
 
+    // workshop/class detection
+    const workshopKeywords = ['prova', 'kurs', 'lektion', 'workshop', 'träning', 'dansklass', 'dance class'];
+    const isWorkshop = workshopKeywords.some(kw => title.includes(kw));
+
     // fallback for UKK and others if it feels like music
-    const musicKeywords = ['konsert', 'jazz', 'blues', 'symfoni', 'kör', 'opera', 'låtar', 'livemusik', 'domkyrkan', 'lördagsmusik', 'rock',
-        'pop', 'kören', 'stämma', 'recital', 'piano', 'violin', 'cello', 'gitarr', 'singer', 'klubb', 'orlando!', 'soul', 'rongedal', 'poste restante'
+    const musicKeywords = ['konsert', 'jazz', 'blues', 'symfoni', 'kör', 'opera', 'låtar', 'livemusik', 'domkyrkan', 'lördagsmusik', 'rock', 'kammarorkester',
+        'pop', 'ukk', 'kören', 'stämma', 'recital', 'piano', 'violin', 'cello', 'gitarr', 'singer', 'klubb', 'orlando!', 'soul', 'rongedal', 'poste restante'
     ];
-    const musicVenues = ['katalin', 'grand', 'kulturoasen'];
-    if (source === 'ukk' || musicKeywords.some(kw => title.includes(kw) || artist.includes(kw)) || musicVenues.some(v => venue.includes(v))) {
+    const musicVenues = ['katalin', 'grand', 'kulturoasen', 'jazzbaren', 'fyrishov'];
+
+    const hasMusicKeyword = musicKeywords.some(kw => {
+        if (kw === 'pop') return title.match(/\bpop\b/i); // Specific check for pop
+        return title.includes(kw) || artist.includes(kw);
+    });
+
+    if (!isWorkshop && (hasMusicKeyword || musicVenues.some(v => venue.includes(v)))) {
         return '🎵';
     }
 
     // Exclusions
-    if (title.includes('skivmässa')) {
+    if (title.includes('skivmässa') || title.includes('mässa')) {
         return null;
     }
 

@@ -9,15 +9,39 @@ const events = [];
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-async function fetchPage(url) {
-    const res = await fetch(url, {
-        headers: {
-            "User-Agent": "Mozilla/5.0 (compatible; EventBot/1.0)"
-        }
-    });
+async function fetchPage(url, retries = 3) {
+    for (let i = 0; i < retries; i++) {
+        try {
+            const res = await fetch(url, {
+                headers: {
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                }
+            });
 
-    if (!res.ok) return null;
-    return await res.text();
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            return await res.text();
+        } catch (err) {
+            console.error(`Attempt ${i + 1} failed for ${url}:`, err.message);
+            if (i === retries - 1) return null;
+            await sleep(2000 * (i + 1));
+        }
+    }
+}
+
+async function fetchEventTime(url) {
+    if (!url) return null;
+    const html = await fetchPage(url);
+    if (!html) return null;
+
+    const dom = new JSDOM(html);
+    const doc = dom.window.document;
+
+    // Look for "På scen: XX.XX"
+    const bodyText = doc.body.textContent;
+    const scenMatch = bodyText.match(/På\s+scen:\s*(\d{1,2})[:.](\d{2})/i);
+    if (scenMatch) return `${scenMatch[1]}:${scenMatch[2]}`;
+
+    return null;
 }
 
 function parseEvents(html) {
@@ -69,6 +93,24 @@ async function run() {
             console.log("Waiting 2s...");
             await sleep(2000);
         }
+    }
+
+    // 2. Fetch specific times for events
+    for (const event of events) {
+        console.log(`Fetching time for: ${event.title}...`);
+        const detailedTime = await fetchEventTime(event.url);
+        if (detailedTime) {
+            console.log(`-> Found På scen: ${detailedTime}`);
+            // If the original date string has a time, replace it or append
+            // Katalin dateText is usually "Onsdag 25 mars 20.00"
+            if (event.date.includes(':') || event.date.match(/\d{2}\.\d{2}/)) {
+                // Try to swap the time part
+                event.date = event.date.replace(/\d{1,2}[:.]\d{2}/, detailedTime);
+            } else {
+                event.date = `${event.date} ${detailedTime}`;
+            }
+        }
+        await sleep(1000);
     }
 
     // Geocode Katalin venue

@@ -161,7 +161,7 @@ function App() {
     return events.filter(event => {
       // First, check category filter
       if (activeCategory !== 'alla') {
-        if (activeCategory === 'saknar kategori') {
+        if (activeCategory === 'övrigt') {
           if (event.category && event.category.trim() !== '') return false;
         } else {
           const catMap = {
@@ -318,7 +318,7 @@ function App() {
           </div>
 
           <div className="category-filters">
-            {['alla', 'film', 'musik', 'sport', 'teater', 'saknar kategori'].map(cat => (
+            {['alla', 'film', 'musik', 'sport', 'teater', 'övrigt'].map(cat => (
               <button
                 key={cat}
                 className={`filter-pill ${activeCategory === cat ? 'active' : ''}`}
@@ -426,7 +426,7 @@ function App() {
           <footer className="app-footer">
             <div className="info-page">
               <p className="info-stats">
-                {events.length} events i Uppsala · uppdaterades {(() => {
+                uppdaterades {(() => {
                   const timestamps = events.map(e => e.fetched_at).filter(Boolean);
                   const latest = timestamps.length === 0 ? new Date() : new Date(Math.max(...timestamps.map(t => new Date(t))));
                   const today = new Date();
@@ -446,7 +446,7 @@ function App() {
               </button>
               {showSources && (
                 <div className="footer-sources expandable">
-                  <span>Ticketmaster, Destination Uppsala, Fyrisbiografen, Heja Uppsala, Katalin, Nordisk Bio, UKK, Uppsala Stadsteater</span>
+                  <span>Ticketmaster<br />Uppsala: Destination Uppsala, Fyrisbiografen, Heja Uppsala, Katalin, Nordisk Bio, UKK, Uppsala Stadsteater</span>
                 </div>
               )}
             </div>
