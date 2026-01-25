@@ -142,5 +142,13 @@
   "Bangårdsgatan 13, Uppsala, Sweden": {
     "lat": 59.8578314,
     "lon": 17.6441103
+  },
+  "Svandammshallarna, Uppsala, Sweden": {
+    "lat": 59.8534915,
+    "lon": 17.6402205
+  },
+  "Uppsala friidrottsarena, Uppsala, Sweden": {
+    "lat": 59.8815426,
+    "lon": 17.6625386
   }
 }
