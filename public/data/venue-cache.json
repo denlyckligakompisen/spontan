@@ -166,5 +166,21 @@
   "Stadsbibliotek, Uppsala, Sweden": {
     "lat": 59.8607168,
     "lon": 17.6357693
+  },
+  "Slottsbiografen, Uppsala, Sweden": {
+    "lat": 59.8562412,
+    "lon": 17.6344116
+  },
+  "Hammarskogs herrgård, Uppsala, Sweden": {
+    "lat": 59.7694006,
+    "lon": 17.5618651
+  },
+  "Biotopia, Uppsala, Sweden": {
+    "lat": 59.8600499,
+    "lon": 17.6223067
+  },
+  "Dalbyviken, Uppsala, Sweden": {
+    "lat": 59.7601361,
+    "lon": 17.5812397
   }
 }
