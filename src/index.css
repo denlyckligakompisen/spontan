@@ -131,13 +131,12 @@ body {
   color: #999;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  padding: 16px 0 1rem 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  padding: 6px 0;
+  background-color: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 10;
   margin: 0;
-  opacity: 1;
 }
 
 .month-header.is-sticky {
@@ -205,7 +204,7 @@ body {
 .app-footer {
   margin-top: 4rem;
   padding: 3rem 1rem;
-  color: #666;
+  color: #999;
   text-align: center;
 }
 
@@ -242,7 +241,7 @@ body {
 .info-stats {
   margin: 0;
   font-size: 0.85rem;
-  color: #666;
+  color: #999;
 }
 
 .info-page {
@@ -295,7 +294,7 @@ body {
 
 .info-footer {
   font-size: 0.85rem;
-  color: #666;
+  color: #999;
   font-style: italic;
   margin-top: 2rem;
 }
@@ -304,7 +303,7 @@ body {
 
 
 .venue-group {
-  margin-bottom: 3.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .venue-header-row {
@@ -353,7 +352,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 0.25rem;
+  padding: 0.6rem 0.25rem;
   border-bottom: 1px solid #1a1a1a;
   text-decoration: none;
   transition: background-color 0.2s, transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -412,7 +411,7 @@ body {
 
 .event-venue-subtext {
   font-size: 0.8rem;
-  color: #666;
+  color: #999;
   margin-top: 0.2rem;
   white-space: nowrap;
   overflow: hidden;
@@ -421,7 +420,7 @@ body {
 
 .event-date-text {
   font-size: 0.8rem;
-  color: #666;
+  color: #999;
   white-space: nowrap;
   letter-spacing: 0.03em;
   transition: transform 0.2s ease-out, color 0.2s ease;
@@ -456,13 +455,13 @@ body {
 .date-month {
   font-size: 0.75rem;
   text-transform: uppercase;
-  color: #666;
+  color: #999;
   margin-top: 1px;
 }
 
 .event-time-end {
   font-size: 0.8rem;
-  color: #666;
+  color: #999;
   margin-top: 2px;
 }
 
@@ -649,10 +648,10 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-top: 1px solid #222;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -686,16 +685,18 @@ body {
   color: #ffffff;
 }
 
-.nav-item.active::before {
-  content: '';
+.nav-indicator {
   position: absolute;
   top: -1px;
-  /* Overlap the container border */
   left: 0;
-  width: 100%;
+  width: 25%;
+  /* 4 items, so each is 25% */
   height: 2px;
   background-color: #ffffff;
   box-shadow: 0 1px 4px rgba(255, 255, 255, 0.2);
+  transform: translateX(calc(var(--scroll-progress) * 100%));
+  z-index: 1001;
+  pointer-events: none;
 }
 
 .nav-item:active {

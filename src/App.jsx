@@ -17,6 +17,7 @@ function App() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [view, setView] = useState('idag') // 'idag', 'helg', 'kommande', 'info'
+  const [scrollProgress, setScrollProgress] = useState(0)
   const [isHeaderScrolled, setIsHeaderScrolled] = useState(false)
 
   const [highlightIds, setHighlightIds] = useState(new Set())
@@ -70,6 +71,21 @@ function App() {
       })
     }
   }
+
+  useEffect(() => {
+    const container = scrollContainerRef.current
+    if (!container) return
+
+    const handleScroll = () => {
+      const { scrollLeft, clientWidth } = container
+      if (clientWidth > 0) {
+        setScrollProgress(scrollLeft / clientWidth)
+      }
+    }
+
+    container.addEventListener('scroll', handleScroll, { passive: true })
+    return () => container.removeEventListener('scroll', handleScroll)
+  }, [])
 
   // Handle header minimized state - observe scroll Y of the ACTIVE view
   useEffect(() => {
@@ -465,14 +481,20 @@ function App() {
 
 
   const hasFilters = view !== 'idag' && view !== 'info'
-  const headerExpanded = hasFilters ? '160px' : '105px'
-  const stickyTop = hasFilters ? '105px' : '65px'
+  const headerScrolledHeight = hasFilters ? '110px' : '70px'
+  const headerExpandedHeight = hasFilters ? '160px' : '105px'
+  const headerExpanded = headerExpandedHeight
+  const stickyTop = isHeaderScrolled ? headerScrolledHeight : headerExpandedHeight
 
   return (
     <>
       <Intro />
       <div
-        style={{ '--header-expanded': headerExpanded, '--sticky-top': stickyTop }}
+        style={{
+          '--header-expanded': headerExpanded,
+          '--sticky-top': stickyTop,
+          '--scroll-progress': scrollProgress
+        }}
         className="app"
       >
         <header className={`app-header ${isHeaderScrolled ? 'scrolled' : ''}`}>
@@ -530,6 +552,7 @@ function App() {
         </div>
 
         <nav className="bottom-nav">
+          <div className="nav-indicator" />
           <button
             className={`nav-item ${view === 'idag' ? 'active' : ''}`}
             onClick={() => scrollToView('idag')}
