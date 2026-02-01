@@ -1,19 +1,10 @@
 [
   {
-    "title": "Soul Pack",
-    "date": "Lördag 31 januari 20:00",
-    "url": "https://www.katalin.com/events/soul-pack-6/",
-    "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:13.888Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
     "title": "Jazzlunch med HEMKÄRT",
     "date": "Tisdag 3 februari 12:00",
     "url": "https://www.katalin.com/events/jazzlunch-med-hemkart-3/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:13.889Z",
+    "fetched_at": "2026-02-01T05:16:43.213Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -22,7 +13,7 @@
     "date": "Tisdag 3 februari 20:00",
     "url": "https://www.katalin.com/events/kim-richey-klubb-uffe/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:13.889Z",
+    "fetched_at": "2026-02-01T05:16:43.214Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -31,7 +22,7 @@
     "date": "Tisdag 3 februari 20:00",
     "url": "https://www.katalin.com/events/toni-holgerson/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:13.890Z",
+    "fetched_at": "2026-02-01T05:16:43.215Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -40,7 +31,7 @@
     "date": "Onsdag 4 februari 20:00",
     "url": "https://www.katalin.com/events/miriam-aida-loving-the-alien/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:13.891Z",
+    "fetched_at": "2026-02-01T05:16:43.215Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -49,7 +40,7 @@
     "date": "Torsdag 5 februari 20:00",
     "url": "https://www.katalin.com/events/max-schultz-andre-ferrari-och-bengan-jansson/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:13.891Z",
+    "fetched_at": "2026-02-01T05:16:43.216Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -58,16 +49,7 @@
     "date": "Torsdag 5 februari 20:00",
     "url": "https://www.katalin.com/events/jens-lekman/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:13.892Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "FRANK SINATRA – Livet och musiken – Eventet flyttades från 15/10",
-    "date": "Fredag 6 februari 20:00",
-    "url": "https://www.katalin.com/events/frank-sinatra-livet-och-musiken/",
-    "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:13.893Z",
+    "fetched_at": "2026-02-01T05:16:43.217Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -76,7 +58,16 @@
     "date": "Fredag 6 februari 20:00",
     "url": "https://www.katalin.com/events/thomas-jarvheden-mog/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:13.893Z",
+    "fetched_at": "2026-02-01T05:16:43.218Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
+  },
+  {
+    "title": "FRANK SINATRA – Livet och musiken – Eventet flyttades från 15/10",
+    "date": "Fredag 6 februari 20:00",
+    "url": "https://www.katalin.com/events/frank-sinatra-livet-och-musiken/",
+    "source": "katalin.com",
+    "fetched_at": "2026-02-01T05:16:43.219Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -85,7 +76,7 @@
     "date": "Lördag 7 februari 20:00",
     "url": "https://www.katalin.com/events/the-blues-uppsala-jonatan-stenson/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:13.894Z",
+    "fetched_at": "2026-02-01T05:16:43.219Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -94,7 +85,7 @@
     "date": "Lördag 7 februari 20:00",
     "url": "https://www.katalin.com/events/rockgalan-pa-katalin-5-ar/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:13.895Z",
+    "fetched_at": "2026-02-01T05:16:43.220Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -103,7 +94,7 @@
     "date": "Tisdag 10 februari 12:00",
     "url": "https://www.katalin.com/events/jazzlunch-med-fellows-med-laura/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:13.895Z",
+    "fetched_at": "2026-02-01T05:16:43.220Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -112,7 +103,7 @@
     "date": "Onsdag 11 februari 20:00",
     "url": "https://www.katalin.com/events/lugn-och-riedel-s-riedel-sjunger-k-lund/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:13.896Z",
+    "fetched_at": "2026-02-01T05:16:43.221Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -121,7 +112,7 @@
     "date": "Onsdag 11 februari 17:00",
     "url": "https://www.katalin.com/events/arets-uppsalabo-2025-prisutdelningen/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:13.896Z",
+    "fetched_at": "2026-02-01T05:16:43.221Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -130,7 +121,7 @@
     "date": "Torsdag 12 februari 20:00",
     "url": "https://www.katalin.com/events/oslipat-kristoffer-appelquist-och-elin-almen-2/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:13.897Z",
+    "fetched_at": "2026-02-01T05:16:43.222Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -139,7 +130,7 @@
     "date": "Torsdag 12 februari 20:00",
     "url": "https://www.katalin.com/events/gustav-lundgren-quartet-feat-jorge-rossy-katalins-jazzbar/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:16.705Z",
+    "fetched_at": "2026-02-01T05:16:43.223Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -148,7 +139,7 @@
     "date": "Tisdag 17 februari 20:00",
     "url": "https://www.katalin.com/events/thomas-lindroth-fran-good-morning-blues/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:16.706Z",
+    "fetched_at": "2026-02-01T05:16:45.842Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -157,7 +148,7 @@
     "date": "Tisdag 17 februari 12:00",
     "url": "https://www.katalin.com/events/jazzlunch-med-claes-janson/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:16.706Z",
+    "fetched_at": "2026-02-01T05:16:45.843Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -166,16 +157,7 @@
     "date": "Onsdag 18 februari 20:00",
     "url": "https://www.katalin.com/events/gamla-grubblerier-en-komisk-kabare-om-att-aldras-2/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:16.706Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Sahara Hotnights",
-    "date": "Torsdag 19 februari 20:00",
-    "url": "https://www.katalin.com/events/sahara-hotnights-3/",
-    "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:16.706Z",
+    "fetched_at": "2026-02-01T05:16:45.843Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -184,7 +166,16 @@
     "date": "Torsdag 19 februari 20:00",
     "url": "https://www.katalin.com/events/fredrik-lindborg-konsert-och-jamsession/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:16.707Z",
+    "fetched_at": "2026-02-01T05:16:45.843Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
+  },
+  {
+    "title": "Sahara Hotnights",
+    "date": "Torsdag 19 februari 20:00",
+    "url": "https://www.katalin.com/events/sahara-hotnights-3/",
+    "source": "katalin.com",
+    "fetched_at": "2026-02-01T05:16:45.844Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -193,7 +184,7 @@
     "date": "Fredag 20 februari 20:00",
     "url": "https://www.katalin.com/events/thilini-guldbrand-sjunger-cornelis/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:16.707Z",
+    "fetched_at": "2026-02-01T05:16:45.844Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -202,7 +193,7 @@
     "date": "Fredag 20 februari 20:00",
     "url": "https://www.katalin.com/events/linnea-henriksson-3/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:16.707Z",
+    "fetched_at": "2026-02-01T05:16:45.844Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -211,7 +202,7 @@
     "date": "Lördag 21 februari 20:00",
     "url": "https://www.katalin.com/events/hannes-junestav-group-feat-dina-grundberg/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:16.708Z",
+    "fetched_at": "2026-02-01T05:16:45.845Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -220,7 +211,7 @@
     "date": "Lördag 21 februari 20:00",
     "url": "https://www.katalin.com/events/dewolff-nl-2/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:16.708Z",
+    "fetched_at": "2026-02-01T05:16:45.845Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -229,7 +220,7 @@
     "date": "Tisdag 24 februari 12:00",
     "url": "https://www.katalin.com/events/jazzlunch-med-swiing-is-the-thing/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:16.709Z",
+    "fetched_at": "2026-02-01T05:16:45.846Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -238,7 +229,7 @@
     "date": "Tisdag 24 februari 20:00",
     "url": "https://www.katalin.com/events/parea-moter-aspa-anogiati-fran-modal-till-rebetik/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:16.709Z",
+    "fetched_at": "2026-02-01T05:16:45.846Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -247,7 +238,7 @@
     "date": "Onsdag 25 februari 20:00",
     "url": "https://www.katalin.com/events/the-gardiner-werre-hogman-adami-peterson-jazz-heri/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:16.710Z",
+    "fetched_at": "2026-02-01T05:16:45.847Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -256,7 +247,7 @@
     "date": "Onsdag 25 februari 12:00",
     "url": "https://www.katalin.com/events/onsdagslunch-pa-katalin-gast-filip-jers/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:16.710Z",
+    "fetched_at": "2026-02-01T05:16:45.847Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -265,16 +256,7 @@
     "date": "Torsdag 26 februari 20:00",
     "url": "https://www.katalin.com/events/v-jeans-rodtjut-traskor-2/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:16.711Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Brööl! – tillbaka på Katalins jazzbar",
-    "date": "Lördag 28 februari 20:00",
-    "url": "https://www.katalin.com/events/brool-tillbaka-pa-katalins-jazzbar/",
-    "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:19.686Z",
+    "fetched_at": "2026-02-01T05:16:45.848Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -283,7 +265,16 @@
     "date": "Lördag 28 februari 20:00",
     "url": "https://www.katalin.com/events/mikkey-dee-friends-plays-motorhead/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:19.687Z",
+    "fetched_at": "2026-02-01T05:16:45.848Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
+  },
+  {
+    "title": "Brööl! – tillbaka på Katalins jazzbar",
+    "date": "Lördag 28 februari 20:00",
+    "url": "https://www.katalin.com/events/brool-tillbaka-pa-katalins-jazzbar/",
+    "source": "katalin.com",
+    "fetched_at": "2026-02-01T05:16:48.644Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -292,7 +283,7 @@
     "date": "Tisdag 3 mars 20:00",
     "url": "https://www.katalin.com/events/fats-waller-experience-katalins-jazzbar/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:19.687Z",
+    "fetched_at": "2026-02-01T05:16:48.644Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -301,7 +292,7 @@
     "date": "Tisdag 3 mars 12:00",
     "url": "https://www.katalin.com/events/jazzlunch-med-cajsa-frinds/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:19.687Z",
+    "fetched_at": "2026-02-01T05:16:48.645Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -310,7 +301,7 @@
     "date": "Onsdag 4 mars 20:00",
     "url": "https://www.katalin.com/events/jailhouse-rock/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:19.688Z",
+    "fetched_at": "2026-02-01T05:16:48.645Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -319,16 +310,7 @@
     "date": "Torsdag 5 mars 20:00",
     "url": "https://www.katalin.com/events/alf-carlsson-pa-katalins-jazzbar/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:19.688Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Kasino",
-    "date": "Fredag 6 mars 20:00",
-    "url": "https://www.katalin.com/events/kasino/",
-    "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:19.689Z",
+    "fetched_at": "2026-02-01T05:16:48.646Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -337,7 +319,16 @@
     "date": "Fredag 6 mars 20:00",
     "url": "https://www.katalin.com/events/stiko-tillbaka-pa-katalin/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:19.689Z",
+    "fetched_at": "2026-02-01T05:16:48.646Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
+  },
+  {
+    "title": "Kasino",
+    "date": "Fredag 6 mars 20:00",
+    "url": "https://www.katalin.com/events/kasino/",
+    "source": "katalin.com",
+    "fetched_at": "2026-02-01T05:16:48.646Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -346,7 +337,7 @@
     "date": "Lördag 7 mars 20:00",
     "url": "https://www.katalin.com/events/toner-och-trams-the-krogshow-edition/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:19.689Z",
+    "fetched_at": "2026-02-01T05:16:48.647Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -355,7 +346,7 @@
     "date": "Onsdag 11 mars 20:00",
     "url": "https://www.katalin.com/events/oslipat-nisse-hallberg-och-fritte-fritzson/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:19.690Z",
+    "fetched_at": "2026-02-01T05:16:48.647Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -364,7 +355,7 @@
     "date": "Torsdag 12 mars 20:00",
     "url": "https://www.katalin.com/events/thomas-di-leva-karleken-ar-kung/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:19.690Z",
+    "fetched_at": "2026-02-01T05:16:48.648Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -373,7 +364,7 @@
     "date": "Fredag 13 mars 20:00",
     "url": "https://www.katalin.com/events/soul-picnic-rockford-2/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:19.691Z",
+    "fetched_at": "2026-02-01T05:16:48.648Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -382,7 +373,7 @@
     "date": "Lördag 14 mars 20:00",
     "url": "https://www.katalin.com/events/tobias-sten-jazzbaren/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:19.691Z",
+    "fetched_at": "2026-02-01T05:16:48.649Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -391,7 +382,7 @@
     "date": "Lördag 14 mars 20:00",
     "url": "https://www.katalin.com/events/thorbjorn-risager-the-black-tornado-dk-2/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:19.691Z",
+    "fetched_at": "2026-02-01T05:16:48.649Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -400,7 +391,7 @@
     "date": "Tisdag 17 mars 20:00",
     "url": "https://www.katalin.com/events/just-in-time-a-tony-bennett-tribute-jazzbaren-2/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:19.692Z",
+    "fetched_at": "2026-02-01T05:16:48.650Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -409,7 +400,7 @@
     "date": "Tisdag 17 mars 12:00",
     "url": "https://www.katalin.com/events/jazzlunch-i-nagra-legenders-spar/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:22.626Z",
+    "fetched_at": "2026-02-01T05:16:48.650Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -418,7 +409,7 @@
     "date": "Onsdag 18 mars 20:00",
     "url": "https://www.katalin.com/events/lisas-pa-katalins-jazzbar/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:22.626Z",
+    "fetched_at": "2026-02-01T05:16:51.523Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -427,7 +418,7 @@
     "date": "Onsdag 18 mars 20:00",
     "url": "https://www.katalin.com/events/letz-zep-uk/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:22.627Z",
+    "fetched_at": "2026-02-01T05:16:51.523Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -436,7 +427,7 @@
     "date": "Torsdag 19 mars 20:00",
     "url": "https://www.katalin.com/events/huggorm/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:22.627Z",
+    "fetched_at": "2026-02-01T05:16:51.524Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -445,7 +436,7 @@
     "date": "Torsdag 19 mars 20:00",
     "url": "https://www.katalin.com/events/markus-ahlberg-konsert-och-jamsession/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:22.627Z",
+    "fetched_at": "2026-02-01T05:16:51.525Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -454,7 +445,7 @@
     "date": "Fredag 20 mars 20:00",
     "url": "https://www.katalin.com/events/the-baboon-show-2/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:22.628Z",
+    "fetched_at": "2026-02-01T05:16:51.525Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -463,7 +454,7 @@
     "date": "Lördag 21 mars 20:00",
     "url": "https://www.katalin.com/events/hannes-aitman/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:22.628Z",
+    "fetched_at": "2026-02-01T05:16:51.526Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -472,7 +463,7 @@
     "date": "Tisdag 24 mars 20:00",
     "url": "https://www.katalin.com/events/ellas-kapell-pa-katalins-jazzbar/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:22.628Z",
+    "fetched_at": "2026-02-01T05:16:51.526Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -481,7 +472,7 @@
     "date": "Onsdag 25 mars 12:00",
     "url": "https://www.katalin.com/events/onsdagslunch-pa-katalin-gast-amanda-ginsburg/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:22.629Z",
+    "fetched_at": "2026-02-01T05:16:51.527Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -490,7 +481,7 @@
     "date": "Torsdag 26 mars 20:00",
     "url": "https://www.katalin.com/events/grievous-angels-aroir-i-jazzbaren-4/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:22.629Z",
+    "fetched_at": "2026-02-01T05:16:51.527Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -499,7 +490,7 @@
     "date": "Torsdag 26 mars 20:00",
     "url": "https://www.katalin.com/events/uppsala-storband-med-clas-yngstrom-pierre-sward-2/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:22.630Z",
+    "fetched_at": "2026-02-01T05:16:51.527Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -508,7 +499,7 @@
     "date": "Fredag 27 mars 18:00",
     "url": "https://www.katalin.com/events/bjorn-rosenstrom-5/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:22.630Z",
+    "fetched_at": "2026-02-01T05:16:51.528Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -517,7 +508,7 @@
     "date": "Lördag 28 mars 20:00",
     "url": "https://www.katalin.com/events/ellen-andersson-tillbaka-i-jazzbaren/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:22.630Z",
+    "fetched_at": "2026-02-01T05:16:51.528Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -526,7 +517,7 @@
     "date": "Lördag 28 mars 20:00",
     "url": "https://www.katalin.com/events/buzzcocks-uk/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:22.631Z",
+    "fetched_at": "2026-02-01T05:16:51.528Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -535,7 +526,7 @@
     "date": "Onsdag 1 april 20:00",
     "url": "https://www.katalin.com/events/15639/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:22.638Z",
+    "fetched_at": "2026-02-01T05:16:51.529Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -544,7 +535,7 @@
     "date": "Torsdag 2 april 20:00",
     "url": "https://www.katalin.com/events/bullet-s-o-r-m/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:25.631Z",
+    "fetched_at": "2026-02-01T05:16:51.529Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -553,7 +544,7 @@
     "date": "Lördag 4 april 20:00",
     "url": "https://www.katalin.com/events/victor-rydstrom-quintet-feat-robert-nordmark/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:25.631Z",
+    "fetched_at": "2026-02-01T05:16:54.539Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -562,7 +553,7 @@
     "date": "Tisdag 7 april 20:00",
     "url": "https://www.katalin.com/events/joe-nolan-klubb-uffe/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:25.631Z",
+    "fetched_at": "2026-02-01T05:16:54.540Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -571,7 +562,7 @@
     "date": "Torsdag 9 april 20:00",
     "url": "https://www.katalin.com/events/claes-janson-andreas-hellkvist/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:25.631Z",
+    "fetched_at": "2026-02-01T05:16:54.540Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -580,7 +571,7 @@
     "date": "Fredag 10 april 20:00",
     "url": "https://www.katalin.com/events/nanna-carling-swingband/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:25.631Z",
+    "fetched_at": "2026-02-01T05:16:54.540Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -589,7 +580,7 @@
     "date": "Fredag 10 april 20:00",
     "url": "https://www.katalin.com/events/simon-gardenfors-anton-magnusson-festar/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:25.632Z",
+    "fetched_at": "2026-02-01T05:16:54.541Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -598,7 +589,7 @@
     "date": "Lördag 11 april 20:00",
     "url": "https://www.katalin.com/events/magic-iii-pa-katalins-jazzbar/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:25.632Z",
+    "fetched_at": "2026-02-01T05:16:54.541Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -607,7 +598,7 @@
     "date": "Lördag 11 april 20:00",
     "url": "https://www.katalin.com/events/beatles-complete-uk/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:25.632Z",
+    "fetched_at": "2026-02-01T05:16:54.547Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -616,7 +607,7 @@
     "date": "Tisdag 14 april 20:00",
     "url": "https://www.katalin.com/events/amanda-bergman-3/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:25.632Z",
+    "fetched_at": "2026-02-01T05:16:54.547Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -625,7 +616,7 @@
     "date": "Onsdag 15 april 20:00",
     "url": "https://www.katalin.com/events/henrik-nyblom-kluven/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:25.633Z",
+    "fetched_at": "2026-02-01T05:16:54.547Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -634,7 +625,7 @@
     "date": "Torsdag 16 april 20:00",
     "url": "https://www.katalin.com/events/danko-jones-can-4/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:25.633Z",
+    "fetched_at": "2026-02-01T05:16:54.548Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -643,7 +634,7 @@
     "date": "Lördag 18 april 20:00",
     "url": "https://www.katalin.com/events/the-blues-uppsala-blue-benders-2/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:25.633Z",
+    "fetched_at": "2026-02-01T05:16:54.548Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -652,7 +643,7 @@
     "date": "Tisdag 21 april 20:00",
     "url": "https://www.katalin.com/events/steven-seagulls-fin/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:25.634Z",
+    "fetched_at": "2026-02-01T05:16:54.549Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -661,7 +652,7 @@
     "date": "Tisdag 21 april 20:00",
     "url": "https://www.katalin.com/events/the-mallet-brothers-klubb-uffe/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:25.638Z",
+    "fetched_at": "2026-02-01T05:16:54.549Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -670,7 +661,7 @@
     "date": "Fredag 24 april 20:00",
     "url": "https://www.katalin.com/events/tennessee-tears-ashes-embers/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:25.638Z",
+    "fetched_at": "2026-02-01T05:16:54.549Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -679,7 +670,7 @@
     "date": "Lördag 25 april 20:00",
     "url": "https://www.katalin.com/events/harriet-nauer-jazzbaren-2/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:28.599Z",
+    "fetched_at": "2026-02-01T05:16:54.550Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -688,7 +679,7 @@
     "date": "Lördag 25 april 20:00",
     "url": "https://www.katalin.com/events/flash-world-queen-tribute-band-uk-2/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:28.599Z",
+    "fetched_at": "2026-02-01T05:16:59.223Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -697,7 +688,7 @@
     "date": "Tisdag 28 april 20:00",
     "url": "https://www.katalin.com/events/mariel-buckley-klubb-uffe-2/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:28.599Z",
+    "fetched_at": "2026-02-01T05:16:59.223Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -706,7 +697,7 @@
     "date": "Onsdag 29 april 12:00",
     "url": "https://www.katalin.com/events/onsdagslunch-pa-katalin-gast-rigmor-gustafsson/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:28.600Z",
+    "fetched_at": "2026-02-01T05:16:59.223Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -715,7 +706,7 @@
     "date": "Onsdag 29 april 20:00",
     "url": "https://www.katalin.com/events/ale-moller-pa-katalins-jazzbar/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:28.600Z",
+    "fetched_at": "2026-02-01T05:16:59.223Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -724,7 +715,7 @@
     "date": "Fredag 1 maj 20:00",
     "url": "https://www.katalin.com/events/lars-demian-david-tallroth-7/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:28.600Z",
+    "fetched_at": "2026-02-01T05:16:59.223Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -733,7 +724,7 @@
     "date": "Lördag 2 maj 20:00",
     "url": "https://www.katalin.com/events/the-toy-dolls/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:28.600Z",
+    "fetched_at": "2026-02-01T05:16:59.224Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -742,7 +733,7 @@
     "date": "Torsdag 7 maj 20:00",
     "url": "https://www.katalin.com/events/jonas-knutsson-konsert-och-jamsession/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:28.601Z",
+    "fetched_at": "2026-02-01T05:16:59.224Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -751,7 +742,7 @@
     "date": "Torsdag 7 maj 20:00",
     "url": "https://www.katalin.com/events/ato-karlsson-kort-sagt/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:28.601Z",
+    "fetched_at": "2026-02-01T05:16:59.224Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -760,7 +751,7 @@
     "date": "Lördag 9 maj 20:00",
     "url": "https://www.katalin.com/events/korslagda-kukar-2/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:28.602Z",
+    "fetched_at": "2026-02-01T05:16:59.225Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -769,7 +760,7 @@
     "date": "Lördag 16 maj 20:00",
     "url": "https://www.katalin.com/events/cherrie/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:28.602Z",
+    "fetched_at": "2026-02-01T05:16:59.225Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -778,7 +769,7 @@
     "date": "Torsdag 21 maj 20:00",
     "url": "https://www.katalin.com/events/john-holm-det-finns-sa-manga-landsvagar/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:28.602Z",
+    "fetched_at": "2026-02-01T05:16:59.226Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -787,7 +778,7 @@
     "date": "Fredag 22 maj 20:00",
     "url": "https://www.katalin.com/events/souls-of-better-men-5/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:28.603Z",
+    "fetched_at": "2026-02-01T05:16:59.226Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -796,7 +787,7 @@
     "date": "Lördag 23 maj 20:00",
     "url": "https://www.katalin.com/events/dead-by-april/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:28.603Z",
+    "fetched_at": "2026-02-01T05:16:59.226Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -805,7 +796,7 @@
     "date": "Tisdag 26 maj 20:00",
     "url": "https://www.katalin.com/events/cordovas-klubb-uffe-2/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:28.603Z",
+    "fetched_at": "2026-02-01T05:16:59.227Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -814,7 +805,7 @@
     "date": "Onsdag 27 maj 12:00",
     "url": "https://www.katalin.com/events/onsdagslunch-pa-katalin-gast-isabella-lundgren/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:32.626Z",
+    "fetched_at": "2026-02-01T05:16:59.227Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -823,7 +814,7 @@
     "date": "Fredag 18 september 20:00",
     "url": "https://www.katalin.com/events/eddie-the-hot-rods-uk/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:32.627Z",
+    "fetched_at": "2026-02-01T05:17:02.321Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -832,7 +823,7 @@
     "date": "Torsdag 24 september 20:00",
     "url": "https://www.katalin.com/events/the-undertones-50th-anniversary-tour/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:32.631Z",
+    "fetched_at": "2026-02-01T05:17:02.321Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -841,7 +832,7 @@
     "date": "Lördag 26 september 20:00",
     "url": "https://www.katalin.com/events/joulin-younis-katalins-jazzbar/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:32.631Z",
+    "fetched_at": "2026-02-01T05:17:02.322Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -850,7 +841,7 @@
     "date": "Lördag 31 oktober 20:00",
     "url": "https://www.katalin.com/events/marky-ramones-blitzkrieg-us/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:32.631Z",
+    "fetched_at": "2026-02-01T05:17:02.322Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -859,7 +850,7 @@
     "date": "Fredag 20 november 20:00",
     "url": "https://www.katalin.com/events/hardline/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:32.632Z",
+    "fetched_at": "2026-02-01T05:17:02.323Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -868,7 +859,7 @@
     "date": "Torsdag 17 december 20:00",
     "url": "https://www.katalin.com/events/the-crown/",
     "source": "katalin.com",
-    "fetched_at": "2026-01-31T04:48:32.634Z",
+    "fetched_at": "2026-02-01T05:17:02.323Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   }
