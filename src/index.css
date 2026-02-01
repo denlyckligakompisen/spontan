@@ -11,7 +11,7 @@ body {
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.5;
   font-weight: 400;
   color-scheme: dark;
@@ -31,7 +31,7 @@ body {
 
 body {
   min-height: 100vh;
-  font-family: 'Inter', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -45,8 +45,10 @@ body {
 
 .app {
   width: 100%;
-  padding-top: 240px;
-  /* Space for fixed header */
+  padding-top: 140px;
+  /* Reduced from 240px due to no top view toggle */
+  padding-bottom: calc(80px + env(safe-area-inset-bottom));
+  /* Add space for bottom nav */
 }
 
 
@@ -54,24 +56,22 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  /* Align to viewport left */
   background-color: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   z-index: 1000;
-  padding: 1.5rem 0;
+  padding: 2rem 0 1.5rem 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Center logo and menu */
-  gap: 1rem;
+  gap: 1.5rem;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .app-header.scrolled {
-  padding: 0.75rem 0;
-  gap: 0.25rem;
+  padding: 1rem 0;
+  gap: 0.5rem;
 }
 
 .app-header.scrolled .app-title {
@@ -81,46 +81,15 @@ body {
 }
 
 
-.view-toggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 8px;
-  background-color: #000;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  max-width: 400px;
-  /* Constrain width for better spacing appearance */
-  /* Removed border-bottom */
-}
-
-/* Removed separator class */
-
-.toggle-btn {
-  background: none;
-  border: none;
-  color: #666;
-  font-size: 0.95rem;
-  font-family: inherit;
-  cursor: pointer;
-  padding: 0.5rem 0.5rem 0.8rem 0.5rem;
-  transition: all 0.2s ease;
-  position: relative;
-  font-weight: 400;
-}
-
 .category-filters {
   display: flex;
   justify-content: center;
   gap: 0.6rem;
-  padding: 0 1rem 0.75rem 1rem;
-  background-color: #000;
+  padding: 0 1rem;
   overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  max-width: 100%;
 }
 
 .category-filters::-webkit-scrollbar {
@@ -151,31 +120,10 @@ body {
   font-weight: 500;
 }
 
-.toggle-btn:hover {
-  color: #888;
-}
-
-.toggle-btn.active {
-  color: #fff;
-  /* White */
-  font-weight: 500;
-}
-
-.active-indicator {
-  position: absolute;
-  bottom: 0.6rem;
-  height: 2px;
-  background-color: #fff;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  pointer-events: none;
-}
-
-
 
 .app-footer {
   margin-top: 4rem;
   padding: 3rem 1rem;
-  /* border-top removed */
   color: #666;
   text-align: center;
 }
@@ -221,6 +169,12 @@ body {
   padding: 2rem 1rem;
   color: #ccc;
   line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  min-height: 50vh;
+  justify-content: center;
 }
 
 .info-title {
@@ -269,8 +223,8 @@ body {
 
 .month-header {
   position: sticky;
-  top: 175px;
-  /* Align with header bottom */
+  top: 130px;
+  /* Updated from 175px */
   font-size: 0.82rem;
   font-weight: 500;
   color: #666;
@@ -339,7 +293,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem 0.25rem;
+  padding: 0.8rem 0.25rem;
   border-bottom: 1px solid #1a1a1a;
   text-decoration: none;
   transition: background-color 0.2s, transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -384,11 +338,6 @@ body {
   transition: transform 0.2s ease-out;
 }
 
-/* Removed specific hover transform for artist since whole row moves now,
-   but we can keep it if we want extra movement, or remove it to be cleaner.
-   Let's keep it subtle or remove it. 
-   Actually, let's remove the individual text shift to focus on the row lift 
-   and the time nudge as requested. */
 .event-row-venue:hover .event-artist-venue {
   transform: none;
 }
@@ -555,7 +504,7 @@ body {
 }
 
 .intro span {
-  font-family: 'Inter', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
   letter-spacing: -2px;
@@ -631,4 +580,50 @@ body {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(255, 59, 48, 0);
   }
+}
+
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid #222;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: env(safe-area-inset-bottom);
+  height: calc(3.5rem + env(safe-area-inset-bottom));
+  z-index: 1000;
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  color: #666;
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 100%;
+  transition: color 0.2s ease;
+}
+
+.nav-item span {
+  font-weight: 500;
+}
+
+.nav-item.active {
+  color: #ffffff;
+}
+
+.nav-item:active {
+  transform: scale(0.95);
 }

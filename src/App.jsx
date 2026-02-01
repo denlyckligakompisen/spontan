@@ -3,6 +3,7 @@ import './index.css'
 import Intro from './Intro'
 import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents, fetchNordiskBio, fetchFyrisbiografen, fetchUppsalaStadsteaterEvents } from './utils/api'
 import { mergeAndDedupeEvents } from './utils/dedupe'
+import { Calendar, Coffee, CalendarRange, Info } from 'lucide-react'
 
 
 const MonthHeader = ({ month }) => {
@@ -12,7 +13,7 @@ const MonthHeader = ({ month }) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([e]) => setIsSticky(e.intersectionRatio < 1),
-      { threshold: [1], rootMargin: '-176px 0px 0px 0px' } // Matches header height approx
+      { threshold: [1], rootMargin: '-100px 0px 0px 0px' } // Adjusted for smaller header
     )
     if (ref.current) observer.observe(ref.current)
     return () => observer.disconnect()
@@ -29,34 +30,26 @@ function App() {
   const [events, setEvents] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
-  const [view, setView] = useState('idag') // 'idag', 'helg', 'kommande'
+  const [view, setView] = useState('idag') // 'idag', 'helg', 'kommande', 'info'
   const [isScrolled, setIsScrolled] = useState(false)
   const [highlightIds, setHighlightIds] = useState(new Set())
   const [visibleCount, setVisibleCount] = useState(25)
-  const [indicatorStyle, setIndicatorStyle] = useState({ opacity: 0 })
   const [showSources, setShowSources] = useState(false)
   const [activeCategory, setActiveCategory] = useState('alla')
   const loaderRef = useRef(null)
-  const buttonsRef = useRef([])
 
-  const views = ['idag', 'helg', 'kommande']
+  // Swipe state
+  const touchStart = useRef(null)
+  const touchEnd = useRef(null)
+  const minSwipeDistance = 50
 
-  useEffect(() => {
-    const activeIdx = views.indexOf(view)
-    const activeBtn = buttonsRef.current[activeIdx]
-    if (activeBtn) {
-      setIndicatorStyle({
-        left: activeBtn.offsetLeft,
-        width: activeBtn.offsetWidth,
-        opacity: 1
-      })
-    }
-  }, [view, events]) // Also update if events load which might change layout
+  const views = ['idag', 'helg', 'kommande', 'info']
 
   const loadMore = () => setVisibleCount(prev => prev + 25)
 
   useEffect(() => {
     setVisibleCount(25)
+    window.scrollTo({ top: 0, behavior: 'instant' })
   }, [view])
 
   useEffect(() => {
@@ -280,10 +273,71 @@ function App() {
   }, [filteredEvents, view, visibleCount])
 
 
+  // Swipe Logic
+  const onTouchStart = (e) => {
+    touchEnd.current = null
+    touchStart.current = e.targetTouches[0].clientX
+  }
+
+  const onTouchMove = (e) => {
+    touchEnd.current = e.targetTouches[0].clientX
+  }
+
+  const onTouchEnd = () => {
+    if (!touchStart.current || !touchEnd.current) return
+    const distance = touchStart.current - touchEnd.current
+    const isLeftSwipe = distance > minSwipeDistance
+    const isRightSwipe = distance < -minSwipeDistance
+
+    const currentIndex = views.indexOf(view)
+
+    if (isLeftSwipe && currentIndex < views.length - 1) {
+      setView(views[currentIndex + 1])
+    }
+    if (isRightSwipe && currentIndex > 0) {
+      setView(views[currentIndex - 1])
+    }
+  }
+
+  const renderInfoView = () => (
+    <div className="info-page">
+      <p className="info-stats">
+        uppdaterades {(() => {
+          const timestamps = events.map(e => e.fetched_at).filter(Boolean);
+          const latest = timestamps.length === 0 ? new Date() : new Date(Math.max(...timestamps.map(t => new Date(t))));
+          const today = new Date();
+          const yesterday = new Date();
+          yesterday.setDate(today.getDate() - 1);
+
+          if (latest.toDateString() === today.toDateString()) return 'idag';
+          if (latest.toDateString() === yesterday.toDateString()) return 'igår';
+          return latest.toLocaleDateString('sv-SE', { day: 'numeric', month: 'short' });
+        })()}
+      </p>
+      <button
+        className="sources-toggle"
+        onClick={() => setShowSources(!showSources)}
+      >
+        {showSources ? 'Dölj källor' : 'Visa källor →'}
+      </button>
+      {showSources && (
+        <div className="footer-sources expandable">
+          <span>Ticketmaster<br />Uppsala: Destination Uppsala, Fyrisbiografen, Heja Uppsala, Katalin, Nordisk Bio, UKK, Uppsala Stadsteater</span>
+        </div>
+      )}
+    </div>
+  )
+
+
   return (
     <>
       <Intro />
-      <div className="app">
+      <div
+        className="app"
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+      >
         <header className={`app-header ${isScrolled ? 'scrolled' : ''}`}>
           <h1
             className="app-title"
@@ -292,30 +346,6 @@ function App() {
           >
             spontan.
           </h1>
-
-          <div className="view-toggle">
-            {views.map((v, i) => (
-              <button
-                key={v}
-                ref={el => buttonsRef.current[i] = el}
-                className={`toggle-btn ${view === v ? 'active' : ''}`}
-                onClick={() => {
-                  if (view === v) window.scrollTo({ top: 0, behavior: 'smooth' })
-                  else setView(v)
-                }}
-              >
-                {v === 'idag' ? 'idag' : v === 'helg' ? 'nästa helg' : v === 'kommande' ? 'kommande' : 'info'}
-              </button>
-            ))}
-            <div
-              className="active-indicator"
-              style={{
-                left: indicatorStyle.left,
-                width: indicatorStyle.width,
-                opacity: indicatorStyle.opacity
-              }}
-            />
-          </div>
 
           <div className="category-filters">
             {['alla', 'film', 'musik', 'sport', 'teater', 'övrigt'].map(cat => (
@@ -330,128 +360,136 @@ function App() {
           </div>
         </header>
 
-
         <div className="card">
-          {loading && events.length === 0 ? (
-            <div className="content-container">
-              {[...Array(3)].map((_, i) => (
-                <div key={i} className="skeleton-group">
-                  <div className="skeleton skeleton-header" style={{ width: '40%' }}></div>
-                  <div className="skeleton-row">
-                    <div className="skeleton" style={{ width: '60%', height: '1.2rem' }}></div>
-                    <div className="skeleton" style={{ width: '20%', height: '1rem' }}></div>
-                  </div>
+          {view === 'info' ? renderInfoView() : (
+            <>
+              {loading && events.length === 0 ? (
+                <div className="content-container">
+                  {[...Array(3)].map((_, i) => (
+                    <div key={i} className="skeleton-group">
+                      <div className="skeleton skeleton-header" style={{ width: '40%' }}></div>
+                      <div className="skeleton-row">
+                        <div className="skeleton" style={{ width: '60%', height: '1.2rem' }}></div>
+                        <div className="skeleton" style={{ width: '20%', height: '1rem' }}></div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-          ) : error && events.length === 0 ? (
-            <div className="error">{error}</div>
-          ) : (
-            <div className="content-container">
-              <div className="event-list-venue">
-                {monthGroups.length === 0 ? (
-                  <div className="no-events">
-                    {"här var det tomt :("}
-                  </div>
-                ) : (
-                  monthGroups.map(group => (
-                    <React.Fragment key={group.month}>
-                      <MonthHeader month={group.month} />
-                      {group.events.map((event, index) => {
-                        const isLastOfLastDay = index === group.events.length - 1 ||
-                          new Date(event.startDate).toDateString() !== new Date(group.events[index + 1].startDate).toDateString();
-                        return (
-                          <a
-                            id={`${event.source}-${event.id}`}
-                            key={`${event.source}-${event.id}`}
-                            href={event.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={`event-row-venue stacked ${highlightIds.has(`${event.source}-${event.id}`) ? 'highlighted' : ''} ${isLastOfLastDay ? 'no-border' : ''}`}
-                          >
-                            <div className="event-info-stack">
-                              <span className="event-artist-venue">
-                                {event.artist || event.name}
-                              </span>
-                              <span className="event-venue-subtext">{event.venue}</span>
-                            </div>
+              ) : error && events.length === 0 ? (
+                <div className="error">{error}</div>
+              ) : (
+                <div className="content-container">
+                  <div className="event-list-venue">
+                    {monthGroups.length === 0 ? (
+                      <div className="no-events">
+                        {"här var det tomt :("}
+                      </div>
+                    ) : (
+                      monthGroups.map(group => (
+                        <React.Fragment key={group.month}>
+                          <MonthHeader month={group.month} />
+                          {group.events.map((event, index) => {
+                            const isLastOfLastDay = index === group.events.length - 1 ||
+                              new Date(event.startDate).toDateString() !== new Date(group.events[index + 1].startDate).toDateString();
+                            return (
+                              <a
+                                id={`${event.source}-${event.id}`}
+                                key={`${event.source}-${event.id}`}
+                                href={event.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`event-row-venue stacked ${highlightIds.has(`${event.source}-${event.id}`) ? 'highlighted' : ''} ${isLastOfLastDay ? 'no-border' : ''}`}
+                              >
+                                <div className="event-info-stack">
+                                  <span className="event-artist-venue">
+                                    {event.artist || event.name}
+                                  </span>
+                                  <span className="event-venue-subtext">{event.venue}</span>
+                                </div>
 
-                            <div className="event-meta-right">
-                              <span className="event-date-text">
-                                {(() => {
-                                  const live = isLive(event.startDate, event.endDate)
-                                  const shouldHideTime = ['nordiskbio', 'fyrisbiografen'].includes(event.source)
-                                  if (view === 'idag' || view === 'helg') {
-                                    const startTime = formatTime(event.startDate)
-                                    const endTime = event.endDate ? formatTime(event.endDate) : null
+                                <div className="event-meta-right">
+                                  <span className="event-date-text">
+                                    {(() => {
+                                      const live = isLive(event.startDate, event.endDate)
+                                      const shouldHideTime = ['nordiskbio', 'fyrisbiografen'].includes(event.source)
+                                      if (view === 'idag' || view === 'helg') {
+                                        const startTime = formatTime(event.startDate)
+                                        const endTime = event.endDate ? formatTime(event.endDate) : null
 
-                                    return (
-                                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                                        {live && <span className="live-pulse" title="Börjar snart/Pågår"></span>}
-                                        {shouldHideTime ? '' : (
-                                          <div className={endTime ? "time-stacked" : ""}>
-                                            <span>{startTime}</span>
-                                            {endTime && <span className="event-time-end">-{endTime}</span>}
+                                        return (
+                                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                            {live && <span className="live-pulse" title="Börjar snart/Pågår"></span>}
+                                            {shouldHideTime ? '' : (
+                                              <div className={endTime ? "time-stacked" : ""}>
+                                                <span>{startTime}</span>
+                                                {endTime && <span className="event-time-end">-{endTime}</span>}
+                                              </div>
+                                            )}
                                           </div>
-                                        )}
-                                      </div>
-                                    )
-                                  }
+                                        )
+                                      }
 
-                                  const d = new Date(event.startDate)
-                                  const day = d.getDate()
-                                  const month = d.toLocaleDateString('sv-SE', { month: 'short' }).replace('.', '')
-                                  return (
-                                    <div className="date-stacked">
-                                      <span className="date-day">{day}</span>
-                                      <span className="date-month">{month}</span>
-                                    </div>
-                                  )
-                                })()}
-                              </span>
-                            </div>
-                          </a>
-                        )
-                      })}
-                    </React.Fragment>
-                  ))
-                )}
-                {view === 'kommande' && filteredEvents.length > visibleCount && (
-                  <div ref={loaderRef} style={{ height: '20px', margin: '20px 0' }} />
-                )}
-              </div>
-            </div>
-          )}
-
-          <footer className="app-footer">
-            <div className="info-page">
-              <p className="info-stats">
-                uppdaterades {(() => {
-                  const timestamps = events.map(e => e.fetched_at).filter(Boolean);
-                  const latest = timestamps.length === 0 ? new Date() : new Date(Math.max(...timestamps.map(t => new Date(t))));
-                  const today = new Date();
-                  const yesterday = new Date();
-                  yesterday.setDate(today.getDate() - 1);
-
-                  if (latest.toDateString() === today.toDateString()) return 'idag';
-                  if (latest.toDateString() === yesterday.toDateString()) return 'igår';
-                  return latest.toLocaleDateString('sv-SE', { day: 'numeric', month: 'short' });
-                })()}
-              </p>
-              <button
-                className="sources-toggle"
-                onClick={() => setShowSources(!showSources)}
-              >
-                {showSources ? 'Dölj källor' : 'Visa källor →'}
-              </button>
-              {showSources && (
-                <div className="footer-sources expandable">
-                  <span>Ticketmaster<br />Uppsala: Destination Uppsala, Fyrisbiografen, Heja Uppsala, Katalin, Nordisk Bio, UKK, Uppsala Stadsteater</span>
+                                      const d = new Date(event.startDate)
+                                      const day = d.getDate()
+                                      const month = d.toLocaleDateString('sv-SE', { month: 'short' }).replace('.', '')
+                                      return (
+                                        <div className="date-stacked">
+                                          <span className="date-day">{day}</span>
+                                          <span className="date-month">{month}</span>
+                                        </div>
+                                      )
+                                    })()}
+                                  </span>
+                                </div>
+                              </a>
+                            )
+                          })}
+                        </React.Fragment>
+                      ))
+                    )}
+                    {view === 'kommande' && filteredEvents.length > visibleCount && (
+                      <div ref={loaderRef} style={{ height: '20px', margin: '20px 0' }} />
+                    )}
+                  </div>
                 </div>
               )}
-            </div>
-          </footer>
+            </>
+          )}
         </div>
+
+        <nav className="bottom-nav">
+          <button
+            className={`nav-item ${view === 'idag' ? 'active' : ''}`}
+            onClick={() => setView('idag')}
+          >
+            <Coffee size={24} strokeWidth={view === 'idag' ? 2.5 : 2} />
+            <span>Idag</span>
+          </button>
+
+          <button
+            className={`nav-item ${view === 'helg' ? 'active' : ''}`}
+            onClick={() => setView('helg')}
+          >
+            <Calendar size={24} strokeWidth={view === 'helg' ? 2.5 : 2} />
+            <span>Nästa helg</span>
+          </button>
+
+          <button
+            className={`nav-item ${view === 'kommande' ? 'active' : ''}`}
+            onClick={() => setView('kommande')}
+          >
+            <CalendarRange size={24} strokeWidth={view === 'kommande' ? 2.5 : 2} />
+            <span>Kommande</span>
+          </button>
+
+          <button
+            className={`nav-item ${view === 'info' ? 'active' : ''}`}
+            onClick={() => setView('info')}
+          >
+            <Info size={24} strokeWidth={view === 'info' ? 2.5 : 2} />
+            <span>Info</span>
+          </button>
+        </nav>
       </div >
     </>
   )
