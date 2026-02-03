@@ -125,7 +125,7 @@ body {
 /* Month header correction for the new context */
 .month-header {
   position: sticky;
-  top: var(--sticky-top, 65px);
+  top: 0;
   font-size: 0.82rem;
   font-weight: 500;
   color: #999;

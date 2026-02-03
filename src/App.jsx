@@ -480,7 +480,7 @@ function App() {
   )
 
 
-  const hasFilters = view !== 'idag' && view !== 'info'
+  const hasFilters = view !== 'info'
   const headerScrolledHeight = hasFilters ? '110px' : '70px'
   const headerExpandedHeight = hasFilters ? '160px' : '105px'
   const headerExpanded = headerExpandedHeight
@@ -506,7 +506,7 @@ function App() {
             spontan.
           </h1>
 
-          {view !== 'idag' && view !== 'info' && (
+          {view !== 'info' && (
             <div className="category-filters">
               {['alla', 'film', 'musik', 'sport', 'teater', 'övrigt'].map(cat => (
                 <button
