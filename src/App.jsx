@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react'
 import './index.css'
 import Intro from './Intro'
-import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents, fetchNordiskBio, fetchFyrisbiografen, fetchUppsalaStadsteaterEvents } from './utils/api'
+import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents, fetchNordiskBio, fetchFyrisbiografen, fetchUppsalaStadsteaterEvents, fetchTicksterEvents, fetchFilmstadenEvents } from './utils/api'
 import { mergeAndDedupeEvents } from './utils/dedupe'
 import { Calendar, Coffee, CalendarRange, Info } from 'lucide-react'
 
@@ -19,6 +19,8 @@ function App() {
   const [view, setView] = useState('idag') // 'idag', 'helg', 'kommande', 'info'
   const [scrollProgress, setScrollProgress] = useState(0)
   const [isHeaderScrolled, setIsHeaderScrolled] = useState(false)
+
+  const [searchQuery, setSearchQuery] = useState('')
 
   const [highlightIds, setHighlightIds] = useState(new Set())
   const [visibleCount, setVisibleCount] = useState(25)
@@ -147,7 +149,10 @@ function App() {
       const nfbPromise = fetchNordiskBio()
       const fyrisPromise = fetchFyrisbiografen()
       const ustPromise = fetchUppsalaStadsteaterEvents()
-      const [tmEvents, katalinEvents, uppsalaEvents, ukkEvents, hejaEvents, nfbEvents, fyrisEvents, ustEvents] = await Promise.all([
+      const ticksterPromise = fetchTicksterEvents()
+      const filmstadenPromise = fetchFilmstadenEvents()
+
+      const results = await Promise.allSettled([
         tmPromise,
         katalinPromise,
         uppsalaPromise,
@@ -155,10 +160,26 @@ function App() {
         hejaPromise,
         nfbPromise,
         fyrisPromise,
-        ustPromise
+        ustPromise,
+        ticksterPromise,
+        filmstadenPromise
       ])
 
-      const merged = mergeAndDedupeEvents(tmEvents, [...katalinEvents, ...uppsalaEvents, ...ukkEvents, ...hejaEvents, ...nfbEvents, ...fyrisEvents, ...ustEvents], lat, lon)
+      const [tmEvents, katalinEvents, uppsalaEvents, ukkEvents, hejaEvents, nfbEvents, fyrisEvents, ustEvents, ticksterEvents, filmstadenEvents] = results.map(r => r.status === 'fulfilled' && Array.isArray(r.value) ? r.value : [])
+
+      const otherEvents = [
+        ...katalinEvents,
+        ...uppsalaEvents,
+        ...ukkEvents,
+        ...hejaEvents,
+        ...nfbEvents,
+        ...fyrisEvents,
+        ...ustEvents,
+        ...ticksterEvents,
+        ...filmstadenEvents
+      ]
+
+      const merged = mergeAndDedupeEvents(tmEvents || [], otherEvents, lat, lon)
 
       setEvents(merged)
       setLoading(false)
@@ -206,6 +227,17 @@ function App() {
     tomorrow.setDate(tomorrow.getDate() + 1);
 
     return events.filter(event => {
+      // Search Filter
+      if (searchQuery.trim()) {
+        const q = searchQuery.toLowerCase().trim();
+        const matches = (
+          (event.name && event.name.toLowerCase().includes(q)) ||
+          (event.artist && event.artist.toLowerCase().includes(q)) ||
+          (event.venue && event.venue.toLowerCase().includes(q))
+        );
+        if (!matches) return false;
+      }
+
       // Common Category Filter (applies to all views)
       if (activeCategory !== 'alla') {
         if (activeCategory === 'övrigt') {
@@ -233,7 +265,7 @@ function App() {
         // Or just check start date? If start date is way in past, hide it.
         // For now, let's strictly check start date for safety if no end date exists,
         // but for ongoing events (like today) we might want to keep them if they started recently.
-        // Let's rely on standard logic: if it's 'idag', we show it if it matches the day, 
+        // The design is: if it's 'idag', we show it if it matches the day, 
         // BUT user asked "hide activities that is in the past".
         // If an event started at 10:00 and it's now 14:00, and we don't know when it ends, it's ambiguous.
         // Most events have endDate. If not, let's keep it visible for the day.
@@ -276,9 +308,9 @@ function App() {
   };
 
   // Memoized data for each view
-  const eventsIdag = useMemo(() => getFilteredEventsForView('idag'), [events, activeCategory]);
-  const eventsHelg = useMemo(() => getFilteredEventsForView('helg'), [events, activeCategory]);
-  const eventsKommande = useMemo(() => getFilteredEventsForView('kommande'), [events, activeCategory]);
+  const eventsIdag = useMemo(() => getFilteredEventsForView('idag'), [events, activeCategory, searchQuery]);
+  const eventsHelg = useMemo(() => getFilteredEventsForView('helg'), [events, activeCategory, searchQuery]);
+  const eventsKommande = useMemo(() => getFilteredEventsForView('kommande'), [events, activeCategory, searchQuery]);
 
   const groupEvents = (filteredEvents, viewType) => {
     const groups = {}
@@ -451,30 +483,25 @@ function App() {
 
   const renderInfoView = () => (
     <div className="info-page">
-      <p className="info-stats">
-        uppdaterades {(() => {
-          const timestamps = events.map(e => e.fetched_at).filter(Boolean);
-          const latest = timestamps.length === 0 ? new Date() : new Date(Math.max(...timestamps.map(t => new Date(t))));
-          const today = new Date();
-          const yesterday = new Date();
-          yesterday.setDate(today.getDate() - 1);
 
-          if (latest.toDateString() === today.toDateString()) return 'idag';
-          if (latest.toDateString() === yesterday.toDateString()) return 'igår';
-          return latest.toLocaleDateString('sv-SE', { day: 'numeric', month: 'short' });
-        })()}
-      </p>
 
       <div className="footer-sources">
         <p style={{ marginBottom: '0.5rem', fontWeight: 500, color: '#666' }}>Källor</p>
-        <span>Ticketmaster</span>
-        <span>Destination Uppsala</span>
-        <span>Fyrisbiografen</span>
-        <span>Heja Uppsala</span>
-        <span>Katalin</span>
-        <span>Nordisk Bio</span>
-        <span>UKK</span>
-        <span>Uppsala Stadsteater</span>
+        {[...new Set(events.map(e => e.source))].sort().map(source => {
+          const names = {
+            'ticketmaster': 'Ticketmaster',
+            'destinationuppsala': 'Destination Uppsala',
+            'fyrisbiografen': 'Fyrisbiografen',
+            'hejauppsala': 'Heja Uppsala',
+            'katalin': 'Katalin',
+            'nordiskbio': 'Nordisk Bio',
+            'ukk': 'UKK',
+            'uppsalastadsteater': 'Uppsala Stadsteater',
+            'tickster': 'Tickster',
+            'filmstaden': 'Filmstaden'
+          }
+          return <span key={source}>{names[source] || source}</span>
+        })}
       </div>
     </div>
   )
@@ -482,7 +509,8 @@ function App() {
 
   const hasFilters = view !== 'info'
   const headerScrolledHeight = hasFilters ? '110px' : '70px'
-  const headerExpandedHeight = hasFilters ? '160px' : '105px'
+  // Increased height to accommodate search bar (approx +50px)
+  const headerExpandedHeight = hasFilters ? '230px' : '105px'
   const headerExpanded = headerExpandedHeight
   const stickyTop = isHeaderScrolled ? headerScrolledHeight : headerExpandedHeight
 
@@ -507,16 +535,27 @@ function App() {
           </h1>
 
           {view !== 'info' && (
-            <div className="category-filters">
-              {['alla', 'film', 'musik', 'sport', 'teater', 'övrigt'].map(cat => (
-                <button
-                  key={cat}
-                  className={`filter-pill ${activeCategory === cat ? 'active' : ''}`}
-                  onClick={() => setActiveCategory(activeCategory === cat ? 'alla' : cat)}
-                >
-                  {cat}
-                </button>
-              ))}
+            <div className="filter-search-container">
+              <div className="category-filters">
+                {['alla', 'film', 'musik', 'sport', 'teater', 'övrigt'].map(cat => (
+                  <button
+                    key={cat}
+                    className={`filter-pill ${activeCategory === cat ? 'active' : ''}`}
+                    onClick={() => setActiveCategory(activeCategory === cat ? 'alla' : cat)}
+                  >
+                    {cat}
+                  </button>
+                ))}
+              </div>
+              <div className="search-container">
+                <input
+                  type="text"
+                  placeholder="Sök event, plats..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="search-input"
+                />
+              </div>
             </div>
           )}
         </header>
@@ -525,7 +564,14 @@ function App() {
           {/* Idag View */}
           <section className="view-section" ref={el => viewRefs.current[0] = el}>
             <div className="scroll-content">
-              {renderEventList(groupsIdag, 'idag', eventsIdag, "här var det tomt! kom tillbaka imorgon :)")}
+              {renderEventList(
+                groupsIdag,
+                'idag',
+                eventsIdag,
+                activeCategory === 'alla'
+                  ? "här var det tomt! kom tillbaka imorgon :)"
+                  : "här var det tomt! välj ett annat filter"
+              )}
             </div>
           </section>
 
@@ -582,7 +628,7 @@ function App() {
             onClick={() => scrollToView('info')}
           >
             <Info size={24} strokeWidth={view === 'info' ? 2.5 : 2} />
-            <span>Info</span>
+            <span>Mer</span>
           </button>
         </nav>
       </div >

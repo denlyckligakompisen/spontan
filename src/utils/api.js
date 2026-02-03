@@ -390,3 +390,55 @@ export const fetchUppsalaStadsteaterEvents = async () => {
         return [];
     }
 };
+
+export const fetchTicksterEvents = async () => {
+    try {
+        const response = await fetch(`/data/tickster-events.json?t=${Date.now()}`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        return (data || [])
+            .map(event => ({
+                id: `tickster-${event.title}-${event.date}`,
+                source: "tickster",
+                name: event.title,
+                artist: event.title,
+                venue: (event.venue || "").replace(/[\n\r]+/g, " ").replace(/\s+/g, " ").replace(/ i Uppsala$/i, "").trim(),
+                city: "Uppsala",
+                country: "Sweden",
+                latitude: event.latitude || 59.8586,
+                longitude: event.longitude || 17.6389,
+                startDate: event.date,
+                endDate: null,
+                url: event.url
+            }));
+    } catch (err) {
+        console.error("Tickster local data read failed:", err);
+        return [];
+    }
+};
+
+export const fetchFilmstadenEvents = async () => {
+    try {
+        const response = await fetch(`/data/filmstaden-events.json?t=${Date.now()}`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        return (data || [])
+            .map(event => ({
+                id: `filmstaden-${event.title}-${event.date}`,
+                source: "filmstaden",
+                name: event.title,
+                artist: event.title, // Film title as artist
+                venue: event.venue,
+                city: "Uppsala",
+                country: "Sweden",
+                latitude: event.latitude || 59.8586,
+                longitude: event.longitude || 17.6389,
+                startDate: event.date,
+                endDate: null,
+                url: event.url
+            }));
+    } catch (err) {
+        console.error("Filmstaden local data read failed:", err);
+        return [];
+    }
+};
