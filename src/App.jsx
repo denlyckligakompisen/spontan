@@ -3,7 +3,7 @@ import './index.css'
 import Intro from './Intro'
 import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents, fetchNordiskBio, fetchFyrisbiografen, fetchUppsalaStadsteaterEvents, fetchTicksterEvents, fetchFilmstadenEvents } from './utils/api'
 import { mergeAndDedupeEvents } from './utils/dedupe'
-import { Calendar, Coffee, CalendarRange, Info } from 'lucide-react'
+import { Calendar, Coffee, CalendarRange, Info, Ticket } from 'lucide-react'
 
 
 const MonthHeader = ({ month }) => (
@@ -431,7 +431,14 @@ function App() {
                       <span className="event-artist-venue">
                         {event.artist || event.name}
                       </span>
-                      <span className="event-venue-subtext">{event.venue}</span>
+                      <span className="event-venue-subtext">
+                        {event.venue}
+                        {event.source === 'tickster' && (
+                          <span style={{ display: 'inline-flex', alignItems: 'center', marginLeft: '6px', color: '#666' }}>
+                            <Ticket size={14} />
+                          </span>
+                        )}
+                      </span>
                     </div>
 
                     <div className="event-meta-right">
