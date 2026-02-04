@@ -3,7 +3,7 @@ import './index.css'
 import Intro from './Intro'
 import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents, fetchNordiskBio, fetchFyrisbiografen, fetchUppsalaStadsteaterEvents, fetchTicksterEvents } from './utils/api'
 import { mergeAndDedupeEvents } from './utils/dedupe'
-import { Calendar, Coffee, CalendarRange, Info, Ticket, RotateCcw } from 'lucide-react'
+import { Calendar, Coffee, CalendarRange, Info, RotateCcw } from 'lucide-react'
 
 
 const MonthHeader = ({ month }) => (
@@ -623,11 +623,6 @@ function App() {
                           </span>
                           <span className="event-venue-subtext">
                             {event.venue}
-                            {event.source === 'tickster' && (
-                              <span style={{ display: 'inline-flex', alignItems: 'center', marginLeft: '6px', color: '#666' }}>
-                                <Ticket size={14} />
-                              </span>
-                            )}
                           </span>
                         </div>
 
@@ -694,20 +689,21 @@ function App() {
 
       <div className="footer-sources">
         <p style={{ marginBottom: '0.5rem', fontWeight: 500, color: '#666' }}>Källor</p>
-        {[...new Set(events.map(e => e.source))].sort().map(source => {
-          const names = {
-            'ticketmaster': 'Ticketmaster',
-            'destinationuppsala': 'Destination Uppsala',
-            'fyrisbiografen': 'Fyrisbiografen',
-            'hejauppsala': 'Heja Uppsala',
-            'katalin': 'Katalin',
-            'nordiskbio': 'Nordisk Bio',
-            'ukk': 'UKK',
-            'uppsalastadsteater': 'Uppsala Stadsteater',
-            'tickster': 'Tickster'
-          }
-          return <span key={source}>{names[source] || source}</span>
-        })}
+        {[...new Set(events.map(e => e.source))]
+          .filter(s => s !== 'ticketmaster' && s !== 'tickster')
+          .sort()
+          .map(source => {
+            const names = {
+              'destinationuppsala': 'Destination Uppsala',
+              'fyrisbiografen': 'Fyrisbiografen',
+              'hejauppsala': 'Heja Uppsala',
+              'katalin': 'Katalin',
+              'nordiskbio': 'Nordisk Bio',
+              'ukk': 'UKK',
+              'uppsalastadsteater': 'Uppsala Stadsteater'
+            }
+            return <span key={source}>{names[source] || source}</span>
+          })}
       </div>
     </div>
   )
