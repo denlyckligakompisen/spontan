@@ -237,8 +237,8 @@ function App() {
     tomorrow.setDate(tomorrow.getDate() + 1);
 
     return events.filter(event => {
-      // "cinemas should not be listed on kommande view"
-      if (viewType === 'kommande' && ['fyrisbiografen', 'nordiskbio'].includes(event.source)) {
+      // "cinemas should not be listed on kommande or helg view"
+      if ((viewType === 'kommande' || viewType === 'helg') && ['fyrisbiografen', 'nordiskbio'].includes(event.source)) {
         return false;
       }
 
