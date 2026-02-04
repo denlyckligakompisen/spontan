@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react'
 import './index.css'
 import Intro from './Intro'
-import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents, fetchNordiskBio, fetchFyrisbiografen, fetchUppsalaStadsteaterEvents, fetchTicksterEvents, fetchFilmstadenEvents } from './utils/api'
+import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents, fetchNordiskBio, fetchFyrisbiografen, fetchUppsalaStadsteaterEvents, fetchTicksterEvents } from './utils/api'
 import { mergeAndDedupeEvents } from './utils/dedupe'
 import { Calendar, Coffee, CalendarRange, Info, Ticket, RotateCcw } from 'lucide-react'
 
@@ -162,7 +162,7 @@ function App() {
       const fyrisPromise = fetchFyrisbiografen()
       const ustPromise = fetchUppsalaStadsteaterEvents()
       const ticksterPromise = fetchTicksterEvents()
-      const filmstadenPromise = fetchFilmstadenEvents()
+
 
       const results = await Promise.allSettled([
         tmPromise,
@@ -173,11 +173,10 @@ function App() {
         nfbPromise,
         fyrisPromise,
         ustPromise,
-        ticksterPromise,
-        filmstadenPromise
+        ticksterPromise
       ])
 
-      const [tmEvents, katalinEvents, uppsalaEvents, ukkEvents, hejaEvents, nfbEvents, fyrisEvents, ustEvents, ticksterEvents, filmstadenEvents] = results.map(r => r.status === 'fulfilled' && Array.isArray(r.value) ? r.value : [])
+      const [tmEvents, katalinEvents, uppsalaEvents, ukkEvents, hejaEvents, nfbEvents, fyrisEvents, ustEvents, ticksterEvents] = results.map(r => r.status === 'fulfilled' && Array.isArray(r.value) ? r.value : [])
 
       const otherEvents = [
         ...katalinEvents,
@@ -187,8 +186,7 @@ function App() {
         ...nfbEvents,
         ...fyrisEvents,
         ...ustEvents,
-        ...ticksterEvents,
-        ...filmstadenEvents
+        ...ticksterEvents
       ]
 
       const merged = mergeAndDedupeEvents(tmEvents || [], otherEvents, lat, lon)
@@ -357,8 +355,8 @@ function App() {
 
         const timeA = dA.getTime()
         const timeB = dB.getTime()
-        const hideA = ['nordiskbio', 'fyrisbiografen', 'filmstaden'].includes(a.source)
-        const hideB = ['nordiskbio', 'fyrisbiografen', 'filmstaden'].includes(b.source)
+        const hideA = ['nordiskbio', 'fyrisbiografen'].includes(a.source)
+        const hideB = ['nordiskbio', 'fyrisbiografen'].includes(b.source)
         if (hideA !== hideB) return hideA ? -1 : 1
 
         // If both are cinemas, group by venue first so they don't get split by time
@@ -444,7 +442,7 @@ function App() {
             const processedItems = []
             let currentBundle = null
 
-            const isBundleable = (e) => ['filmstaden', 'nordiskbio', 'fyrisbiografen'].includes(e.source)
+            const isBundleable = (e) => ['nordiskbio', 'fyrisbiografen'].includes(e.source)
 
             group.events.forEach(event => {
               if (isBundleable(event)) {
@@ -494,7 +492,7 @@ function App() {
                     const count = item.events.length
                     const repEvent = item.events[0] // Representative event for visual style
                     // Unique ID for the row
-                    // Specific logic for bundles on "idag" view (Filmstaden, Nordisk Bio, Fyrisbiografen)
+                    // Specific logic for bundles on "idag" view (Nordisk Bio, Fyrisbiografen)
                     // Always expanded, non-collapsible, indented list style
                     const isIdagView = viewType === 'idag';
                     const isFyris = item.source === 'fyrisbiografen';
@@ -611,7 +609,7 @@ function App() {
                       >
                         <div className="event-info-stack">
                           <span className="event-artist-venue">
-                            {(viewType === 'helg' && ['filmstaden', 'nordiskbio', 'fyrisbiografen'].includes(event.source))
+                            {(viewType === 'helg' && ['nordiskbio', 'fyrisbiografen'].includes(event.source))
                               ? "filmvisningar"
                               : (event.artist || event.name)}
                           </span>
@@ -629,7 +627,7 @@ function App() {
                           <span className="event-date-text">
                             {(() => {
                               const live = isLive(event.startDate, event.endDate)
-                              const shouldHideTime = ['nordiskbio', 'fyrisbiografen', 'filmstaden'].includes(event.source)
+                              const shouldHideTime = ['nordiskbio', 'fyrisbiografen'].includes(event.source)
                               if (viewType === 'idag' || viewType === 'helg') {
                                 const startTime = formatTime(event.startDate)
                                 const endTime = event.endDate ? formatTime(event.endDate) : null
@@ -698,8 +696,7 @@ function App() {
             'nordiskbio': 'Nordisk Bio',
             'ukk': 'UKK',
             'uppsalastadsteater': 'Uppsala Stadsteater',
-            'tickster': 'Tickster',
-            'filmstaden': 'Filmstaden'
+            'tickster': 'Tickster'
           }
           return <span key={source}>{names[source] || source}</span>
         })}
