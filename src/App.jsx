@@ -360,14 +360,17 @@ function App() {
 
         const timeA = dA.getTime()
         const timeB = dB.getTime()
-        const hideA = ['nordiskbio', 'fyrisbiografen'].includes(a.source)
-        const hideB = ['nordiskbio', 'fyrisbiografen'].includes(b.source)
-        if (hideA !== hideB) return hideA ? -1 : 1
+        const isCinemaA = ['nordiskbio', 'fyrisbiografen'].includes(a.source)
+        const isCinemaB = ['nordiskbio', 'fyrisbiografen'].includes(b.source)
 
-        // If both are cinemas, group by venue first so they don't get split by time
-        if (hideA && hideB) {
-          if (venueCompare !== 0) return venueCompare
-          return timeA - timeB
+        // Special bundling sort (group by venue first) ONLY for views that bundle (helg)
+        // For 'idag', we want them unbundled and sorted chronologically
+        if (viewType === 'helg') {
+          if (isCinemaA !== isCinemaB) return isCinemaA ? -1 : 1
+          if (isCinemaA && isCinemaB) {
+            if (venueCompare !== 0) return venueCompare
+            return timeA - timeB
+          }
         }
 
         if (timeA !== timeB) return timeA - timeB
@@ -447,7 +450,7 @@ function App() {
             const processedItems = []
             let currentBundle = null
 
-            const isBundleable = (e) => ['nordiskbio', 'fyrisbiografen'].includes(e.source)
+            const isBundleable = (e) => viewType !== 'idag' && ['nordiskbio', 'fyrisbiografen'].includes(e.source)
 
             group.events.forEach(event => {
               if (isBundleable(event)) {
@@ -632,7 +635,7 @@ function App() {
                           <span className="event-date-text">
                             {(() => {
                               const live = isLive(event.startDate, event.endDate)
-                              const shouldHideTime = ['nordiskbio', 'fyrisbiografen'].includes(event.source)
+                              const shouldHideTime = viewType !== 'idag' && ['nordiskbio', 'fyrisbiografen'].includes(event.source)
                               if (viewType === 'idag' || viewType === 'helg') {
                                 const startTime = formatTime(event.startDate)
                                 const endTime = event.endDate ? formatTime(event.endDate) : null
