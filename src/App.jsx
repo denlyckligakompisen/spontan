@@ -635,7 +635,7 @@ function App() {
             onClick={() => scrollToView('info')}
           >
             <Info size={24} strokeWidth={view === 'info' ? 2.5 : 2} />
-            <span>Mer</span>
+            <span>Info</span>
           </button>
         </nav>
       </div >
