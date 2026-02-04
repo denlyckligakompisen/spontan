@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './index.css';
 import Intro from './Intro';
 import Header from './components/Header';
+import Navbar from './components/Navbar';
 import EventList from './components/EventList';
 import Footer from './components/Footer';
 import { useEvents } from './hooks/useEvents';
@@ -17,6 +18,8 @@ function App() {
   const [activeCategory, setActiveCategory] = useState('alla');
   const [expandedGroups, setExpandedGroups] = useState(new Set());
   const [highlightIds] = useState(new Set());
+  // Use a 'now' ticker to force re-renders every minute for live status
+  const [nowTick, setNowTick] = useState(Date.now());
 
   const scrollContainerRef = useRef(null);
   const viewRefs = useRef([]);
@@ -34,6 +37,12 @@ function App() {
     eventsKommande,
     events
   } = useEvents(activeCategory, searchQuery, visibleCount);
+
+  // Update 'now' every 60 seconds to refresh live status/pulsing dots
+  useEffect(() => {
+    const interval = setInterval(() => setNowTick(Date.now()), 60000);
+    return () => clearInterval(interval);
+  }, []);
 
   // Initial loadMore logic for infinite scroll
   const loadMore = () => setVisibleCount(prev => prev + 25);
@@ -181,6 +190,8 @@ function App() {
             </div>
           </section>
         </div>
+
+        <Navbar view={view} scrollToView={scrollToView} />
       </div>
     </>
   );

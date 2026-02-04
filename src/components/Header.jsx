@@ -24,7 +24,7 @@ const Header = ({
             {hasFilters && (
                 <div className="filter-search-container">
                     <div className="category-filters">
-                        {['alla', 'film', 'musik', 'sport', 'teater', 'övrigt'].map(cat => (
+                        {['alla', 'musik', 'sport', 'teater', 'övrigt'].map(cat => (
                             <button
                                 key={cat}
                                 className={`filter-pill ${activeCategory === cat ? 'active' : ''}`}

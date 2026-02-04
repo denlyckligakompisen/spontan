@@ -18,6 +18,75 @@ const fetchLocalData = async (filename, source, mapper) => {
     }
 };
 
+/**
+ * Rounds coordinates to approximately 11km (1 decimal place).
+ */
+export const getGeoCell = (lat, lon) => `${lat.toFixed(6)},${lon.toFixed(6)}`;
+
+/**
+ * Round to 6 decimals for higher precision distance calculation.
+ */
+const roundTo6Decimals = (num) => Math.round(num * 1000000) / 1000000;
+
+const CACHE_KEY_PREFIX = 'spontan_cache_';
+const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours
+
+const getCachedData = (key) => {
+    const cached = localStorage.getItem(CACHE_KEY_PREFIX + key);
+    if (!cached) return null;
+    const { data, timestamp } = JSON.parse(cached);
+    if (Date.now() - timestamp > CACHE_DURATION) {
+        localStorage.removeItem(CACHE_KEY_PREFIX + key);
+        return null;
+    }
+    return data;
+};
+
+const setCachedData = (key, data) => {
+    localStorage.setItem(CACHE_KEY_PREFIX + key, JSON.stringify({
+        data,
+        timestamp: Date.now()
+    }));
+};
+
+export const fetchTicketmasterEvents = async (lat, lon) => {
+    const cell = getGeoCell(lat, lon);
+    const cacheKey = `tm_${cell}`;
+    const cached = getCachedData(cacheKey);
+    if (cached) return cached;
+
+    const roundedLat = roundTo6Decimals(lat);
+    const roundedLon = roundTo6Decimals(lon);
+    const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${TICKETMASTER_API_KEY}&geoPoint=${roundedLat},${roundedLon}&radius=50&unit=km&classificationName=music&countryCode=SE&size=100&sort=date,asc`;
+
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`Ticketmaster API error: ${response.status}`);
+        const data = await response.json();
+
+        const events = (data._embedded?.events || []).map(event => ({
+            id: event.id,
+            source: "ticketmaster",
+            name: event.name,
+            artist: event._embedded?.attractions?.[0]?.name || null,
+            venue: event._embedded?.venues?.[0]?.name || "Unknown Venue",
+            city: event._embedded?.venues?.[0]?.city?.name || "Unknown City",
+            country: event._embedded?.venues?.[0]?.country?.name || "SE",
+            latitude: parseFloat(event._embedded?.venues?.[0]?.location?.latitude),
+            longitude: parseFloat(event._embedded?.venues?.[0]?.location?.longitude),
+            startDate: event.dates.start.dateTime || `${event.dates.start.localDate}T${event.dates.start.localTime || '00:00:00'}Z`,
+            endDate: event.dates.end?.dateTime || null,
+            url: event.url
+        }));
+
+        setCachedData(cacheKey, events);
+        return events;
+    } catch (error) {
+        console.error("Ticketmaster fetch failed:", error);
+        return [];
+    }
+};
+
 export const fetchUKKEvents = () =>
     fetchLocalData('ukk-events.json', 'UKK', (event) => {
         const parsed = parseSwedishDate(event.date);

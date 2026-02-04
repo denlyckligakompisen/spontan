@@ -101,11 +101,11 @@ export const groupEvents = (filteredEvents, viewType, visibleCount = Infinity) =
             const isCinemaA = ['nordiskbio', 'fyrisbiografen'].includes(a.source);
             const isCinemaB = ['nordiskbio', 'fyrisbiografen'].includes(b.source);
 
-            if (viewType === 'helg') {
+            if (viewType === 'helg' || viewType === 'idag') {
                 if (isCinemaA !== isCinemaB) return isCinemaA ? -1 : 1;
                 if (isCinemaA && isCinemaB) {
-                    if (venueCompare !== 0) return venueCompare;
-                    return timeA - timeB;
+                    if (timeA !== timeB) return timeA - timeB;
+                    return venueCompare;
                 }
             }
 
@@ -141,21 +141,22 @@ export const processItemsForBundling = (groupEvents, viewType) => {
     const processedItems = [];
     let currentBundle = null;
 
-    const isBundleable = (e) => viewType !== 'idag' && ['nordiskbio', 'fyrisbiografen'].includes(e.source);
+    const isBundleable = (e) => ['nordiskbio', 'fyrisbiografen'].includes(e.source);
 
     groupEvents.forEach(event => {
         if (isBundleable(event)) {
-            const bundleKey = `${event.source}-${new Date(event.startDate).toDateString()}`;
+            // Unified key for all cinema sources on the same day
+            const bundleKey = `movies-${new Date(event.startDate).toDateString()}`;
 
-            if (currentBundle && currentBundle.key === bundleKey) {
+            if (currentBundle && currentBundle.key.startsWith(bundleKey)) {
                 currentBundle.events.push(event);
             } else {
                 if (currentBundle) processedItems.push(currentBundle);
                 currentBundle = {
                     type: 'bundle',
-                    key: bundleKey,
-                    source: event.source,
-                    venue: event.venue,
+                    key: `${bundleKey}-${event.id}`,
+                    source: 'cinema', // Use a generic source for the bundle
+                    venue: 'Biograf',
                     date: event.startDate,
                     events: [event]
                 };

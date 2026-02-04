@@ -14,9 +14,9 @@ const EventBundle = ({
     const repEvent = item.events[0];
     const isIdagView = viewType === 'idag';
     const isFyris = item.source === 'fyrisbiografen';
-    const effectiveIsExpanded = isExpanded || isIdagView;
+    const effectiveIsExpanded = isExpanded || (isIdagView && count === 1); // Allow expansion even on Idag
 
-    const disablePreClick = viewType === 'kommande' || item.events[0].source === 'nordiskbio' || isIdagView;
+    const disablePreClick = viewType === 'kommande';
 
     return (
         <div className="bundle-container">
@@ -31,14 +31,9 @@ const EventBundle = ({
             >
                 <div className="event-info-stack">
                     <span className="event-artist-venue">
-                        {isFyris
-                            ? <>{count} filmer <span style={{ fontWeight: 'normal', opacity: 0.8 }}>på Fyrisbiografen</span></>
-                            : isIdagView
-                                ? <>{count} filmvisningar <span style={{ fontWeight: 'normal', opacity: 0.8 }}>på {repEvent.venue}</span></>
-                                : `${count} filmvisningar`
-                        }
+                        {count} filmvisningar
                     </span>
-                    {!isFyris && !isIdagView && (
+                    {!isIdagView && (
                         <span className="event-venue-subtext">
                             {repEvent.venue}
                         </span>
