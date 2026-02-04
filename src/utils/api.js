@@ -422,21 +422,33 @@ export const fetchFilmstadenEvents = async () => {
         const response = await fetch(`/data/filmstaden-events.json?t=${Date.now()}`);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
-        return (data || [])
-            .map(event => ({
-                id: `filmstaden-${event.title}-${event.date}`,
+
+        return (data || []).map((event, index) => {
+            // Create a unique ID. Using index as fallback if title/date collisions occur, 
+            // but title+date should be fairly unique.
+            const dateStr = event.date || "";
+            const safeTitle = (event.title || "film").replace(/\s+/g, '-').toLowerCase();
+
+            return {
+                id: `filmstaden-${safeTitle}-${dateStr}-${index}`,
                 source: "filmstaden",
-                name: event.title,
-                artist: event.title, // Film title as artist
-                venue: event.venue,
+                name: event.title || "Film",
+                artist: "Filmstaden", // Or keep as title? Original used "filmer visas" as artist/name.
+                // Keeping 'artist' as 'Filmstaden' or the movie title? 
+                // The App.jsx logic for "filmer visas" relied on source='filmstaden'. 
+                // We'll let App.jsx handle the display logic.
+                // Let's set artist to the movie title effectively so we have the data.
+                artist: event.title,
+                venue: "Filmstaden",
                 city: "Uppsala",
                 country: "Sweden",
-                latitude: event.latitude || 59.8586,
-                longitude: event.longitude || 17.6389,
-                startDate: event.date,
+                latitude: 59.8586,
+                longitude: 17.6389,
+                startDate: dateStr,
                 endDate: null,
                 url: event.url
-            }));
+            };
+        });
     } catch (err) {
         console.error("Filmstaden local data read failed:", err);
         return [];

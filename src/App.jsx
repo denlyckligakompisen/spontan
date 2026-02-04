@@ -345,8 +345,8 @@ function App() {
 
         const timeA = dA.getTime()
         const timeB = dB.getTime()
-        const hideA = ['nordiskbio', 'fyrisbiografen'].includes(a.source)
-        const hideB = ['nordiskbio', 'fyrisbiografen'].includes(b.source)
+        const hideA = ['nordiskbio', 'fyrisbiografen', 'filmstaden'].includes(a.source)
+        const hideB = ['nordiskbio', 'fyrisbiografen', 'filmstaden'].includes(b.source)
         if (hideA !== hideB) return hideA ? -1 : 1
 
         if (timeA !== timeB) return timeA - timeB
@@ -402,9 +402,13 @@ function App() {
     }
 
     if (groups.length === 0) {
+      const message = searchQuery.trim()
+        ? "här var det tomt! testa sök efter något annat :)"
+        : (emptyMessage || "här var det tomt :(");
+
       return (
         <div className="content-container">
-          <div className="no-events">{emptyMessage || "här var det tomt :("}</div>
+          <div className="no-events">{message}</div>
         </div>
       )
     }
@@ -429,7 +433,9 @@ function App() {
                   >
                     <div className="event-info-stack">
                       <span className="event-artist-venue">
-                        {event.artist || event.name}
+                        {(viewType === 'helg' && event.source === 'filmstaden')
+                          ? "filmer visas"
+                          : (event.artist || event.name)}
                       </span>
                       <span className="event-venue-subtext">
                         {event.venue}
@@ -445,7 +451,7 @@ function App() {
                       <span className="event-date-text">
                         {(() => {
                           const live = isLive(event.startDate, event.endDate)
-                          const shouldHideTime = ['nordiskbio', 'fyrisbiografen'].includes(event.source)
+                          const shouldHideTime = ['nordiskbio', 'fyrisbiografen', 'filmstaden'].includes(event.source)
                           if (viewType === 'idag' || viewType === 'helg') {
                             const startTime = formatTime(event.startDate)
                             const endTime = event.endDate ? formatTime(event.endDate) : null
@@ -577,7 +583,7 @@ function App() {
                 eventsIdag,
                 activeCategory === 'alla'
                   ? "här var det tomt! kom tillbaka imorgon :)"
-                  : "här var det tomt! välj ett annat filter"
+                  : "här var det tomt! test välj ett annat filter :)"
               )}
             </div>
           </section>

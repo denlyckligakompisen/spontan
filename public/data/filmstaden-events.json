@@ -1,1 +1,20 @@
-[]
+[
+    {
+        "title": "Moana 2",
+        "venue": "Filmstaden Uppsala",
+        "date": "2026-02-04T18:00:00",
+        "url": "https://www.filmstaden.se/film/NCG488663/moana-2"
+    },
+    {
+        "title": "Mufasa: The Lion King",
+        "venue": "Filmstaden Uppsala",
+        "date": "2026-02-04T19:00:00",
+        "url": "https://www.filmstaden.se/film/NCG898313/mufasa-lejonkungen"
+    },
+    {
+        "title": "Sonic the Hedgehog 3",
+        "venue": "Filmstaden Uppsala",
+        "date": "2026-02-05T15:00:00",
+        "url": "https://www.filmstaden.se/film/NCG546312/sonic-the-hedgehog-3"
+    }
+]
