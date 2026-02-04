@@ -361,6 +361,12 @@ function App() {
         const hideB = ['nordiskbio', 'fyrisbiografen', 'filmstaden'].includes(b.source)
         if (hideA !== hideB) return hideA ? -1 : 1
 
+        // If both are cinemas, group by venue first so they don't get split by time
+        if (hideA && hideB) {
+          if (venueCompare !== 0) return venueCompare
+          return timeA - timeB
+        }
+
         if (timeA !== timeB) return timeA - timeB
         return venueCompare
       })
@@ -505,7 +511,7 @@ function App() {
                         >
                           <div className="event-info-stack">
                             <span className="event-artist-venue">
-                              {count} filmer visas
+                              {count} filmvisningar
                             </span>
                             <span className="event-venue-subtext">
                               {repEvent.venue}
@@ -570,8 +576,8 @@ function App() {
                       >
                         <div className="event-info-stack">
                           <span className="event-artist-venue">
-                            {(viewType === 'helg' && event.source === 'filmstaden')
-                              ? "filmer visas"
+                            {(viewType === 'helg' && ['filmstaden', 'nordiskbio', 'fyrisbiografen'].includes(event.source))
+                              ? "filmvisningar"
                               : (event.artist || event.name)}
                           </span>
                           <span className="event-venue-subtext">
