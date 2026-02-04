@@ -62,11 +62,12 @@ async function fetchMovies() {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
             }
         });
-        const html = await response.text();
+        const htmlBuffer = await response.arrayBuffer();
+        const html = new TextDecoder('utf-8').decode(htmlBuffer); // Ensure UTF-8
         const dom = new JSDOM(html);
         const doc = dom.window.document;
 
-        // Select all columns that look like large calendar columns
+        // Select all columns that look like large calendar columns (left/right columns)
         // This catches 'column_calendar_large' blocks
         // The structure seems to be: 
         // <div class="column_calendar_large">
@@ -76,7 +77,10 @@ async function fetchMovies() {
         //   </div>
         // </div>
 
-        const dayColumns = Array.from(doc.querySelectorAll('.column_calendar_large'));
+        const dayColumns = Array.from(doc.querySelectorAll('div[class^="column_calendar_large"]')).filter(el => {
+            // Ensure we don't pick up sub-elements like column_calendar_contents_large
+            return el.classList.contains('column_calendar_large') || el.classList.contains('column_calendar_large_right');
+        });
         const allEvents = [];
 
         dayColumns.forEach(col => {
