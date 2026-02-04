@@ -3,7 +3,7 @@ import './index.css'
 import Intro from './Intro'
 import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents, fetchNordiskBio, fetchFyrisbiografen, fetchUppsalaStadsteaterEvents, fetchTicksterEvents, fetchFilmstadenEvents } from './utils/api'
 import { mergeAndDedupeEvents } from './utils/dedupe'
-import { Calendar, Coffee, CalendarRange, Info, Ticket } from 'lucide-react'
+import { Calendar, Coffee, CalendarRange, Info, Ticket, RotateCcw } from 'lucide-react'
 
 
 const MonthHeader = ({ month }) => (
@@ -534,6 +534,15 @@ function App() {
                           <div className="bundle-content" style={{ paddingLeft: '1rem', borderBottom: '1px solid #eee' }}>
                             {item.events.map((subEvent, subIndex) => {
                               const startTime = formatTime(subEvent.startDate)
+                              const endTime = subEvent.endDate ? formatTime(subEvent.endDate) : null
+
+                              const now = new Date()
+                              const isPast = subEvent.endDate
+                                ? new Date(subEvent.endDate) < now
+                                : new Date(subEvent.startDate) < now
+
+                              const live = isLive(subEvent.startDate, subEvent.endDate)
+
                               return (
                                 <a
                                   key={subEvent.id}
@@ -549,7 +558,18 @@ function App() {
                                     </span>
                                   </div>
                                   <div className="event-meta-right">
-                                    <span className="event-date-text">{startTime}</span>
+                                    <span className="event-date-text">
+                                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                        {isPast && (
+                                          <RotateCcw size={14} style={{ opacity: 0.5 }} />
+                                        )}
+                                        {live && <span className="live-pulse" title="Börjar snart/Pågår"></span>}
+                                        <div className={endTime ? "time-stacked" : ""} style={{ opacity: isPast ? 0.6 : 1 }}>
+                                          <span style={{ textDecoration: isPast ? 'line-through' : 'none' }}>{startTime}</span>
+                                          {endTime && <span className="event-time-end">-{endTime}</span>}
+                                        </div>
+                                      </div>
+                                    </span>
                                   </div>
                                 </a>
                               )
@@ -599,6 +619,11 @@ function App() {
                                 const startTime = formatTime(event.startDate)
                                 const endTime = event.endDate ? formatTime(event.endDate) : null
 
+                                const now = new Date()
+                                const isPast = event.endDate
+                                  ? new Date(event.endDate) < now
+                                  : new Date(event.startDate) < now
+
                                 return (
                                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                                     {live && <span className="live-pulse" title="Börjar snart/Pågår"></span>}
@@ -606,6 +631,9 @@ function App() {
                                       <div className={endTime ? "time-stacked" : ""}>
                                         <span>{startTime}</span>
                                         {endTime && <span className="event-time-end">-{endTime}</span>}
+                                        {isPast && (
+                                          <RotateCcw size={14} style={{ opacity: 0.5 }} />
+                                        )}
                                       </div>
                                     )}
                                   </div>
