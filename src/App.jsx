@@ -494,43 +494,58 @@ function App() {
                     const count = item.events.length
                     const repEvent = item.events[0] // Representative event for visual style
                     // Unique ID for the row
-                    const rowId = `bundle-${item.key}`
+                    // Specific logic for bundles on "idag" view (Filmstaden, Nordisk Bio, Fyrisbiografen)
+                    // Always expanded, non-collapsible, indented list style
+                    const isIdagView = viewType === 'idag';
+                    const isFyris = item.source === 'fyrisbiografen';
+                    const effectiveIsExpanded = isExpanded || isIdagView;
 
-                    const isLastOfLastDay = index === processedItems.length - 1; // Simplified border logic for bundle header
+                    // Disable click toggle if on 'idag' view or for specific cases
+                    const disablePreClick = viewType === 'kommande' || item.events[0].source === 'nordiskbio' || isIdagView;
+
+                    const isLastOfLastDay = index === processedItems.length - 1;
 
                     return (
                       <div key={item.key} className="bundle-container">
                         {/* Bundle Header - "Accordion Toggle" */}
                         <div
-                          className={`event-row-venue stacked ${isLastOfLastDay && !isExpanded ? 'no-border' : ''}`}
+                          className={`event-row-venue stacked ${isLastOfLastDay && !effectiveIsExpanded ? 'no-border' : ''}`}
                           onClick={(e) => {
-                            e.preventDefault(); // Prevent navigating if it was an <a> tag
+                            if (disablePreClick) return;
+                            e.preventDefault();
                             toggleGroup(item.key);
                           }}
-                          style={{ cursor: 'pointer' }}
+                          style={{ cursor: disablePreClick ? 'default' : 'pointer' }}
                         >
                           <div className="event-info-stack">
                             <span className="event-artist-venue">
-                              {count} filmvisningar
+                              {isFyris
+                                ? <>{count} filmer <span style={{ fontWeight: 'normal', opacity: 0.8 }}>på Fyrisbiografen</span></>
+                                : isIdagView
+                                  ? <>{count} filmvisningar <span style={{ fontWeight: 'normal', opacity: 0.8 }}>på {repEvent.venue}</span></>
+                                  : `${count} filmvisningar`
+                              }
                             </span>
-                            <span className="event-venue-subtext">
-                              {repEvent.venue}
-                            </span>
+                            {!isFyris && !isIdagView && (
+                              <span className="event-venue-subtext">
+                                {repEvent.venue}
+                              </span>
+                            )}
                           </div>
 
                           <div className="event-meta-right">
-                            <div className="chevron-icon" style={{
-                              transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)',
-                              transition: 'transform 0.2s ease',
-                              opacity: 0.5
-                            }}>
-                              ▼
-                            </div>
+                            {(!disablePreClick) && (
+                              <div className="chevron-icon" style={{
+                                transform: effectiveIsExpanded ? 'rotate(180deg)' : 'rotate(0deg)',
+                                transition: 'transform 0.2s ease',
+                                opacity: 0.5
+                              }}>
+                                ▼
+                              </div>
+                            )}
                           </div>
-                        </div>
-
-                        {/* Expanded Content */}
-                        {isExpanded && (
+                        </div>{/* Expanded Content */}
+                        {effectiveIsExpanded && (
                           <div className="bundle-content" style={{ paddingLeft: '1rem', borderBottom: '1px solid #eee' }}>
                             {item.events.map((subEvent, subIndex) => {
                               const startTime = formatTime(subEvent.startDate)
