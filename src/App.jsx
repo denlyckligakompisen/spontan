@@ -26,6 +26,7 @@ function App() {
   const [visibleCount, setVisibleCount] = useState(25)
   const [showSources, setShowSources] = useState(false)
   const [activeCategory, setActiveCategory] = useState('alla')
+  const [expandedGroups, setExpandedGroups] = useState(new Set()) // Track expanded venues per day
 
   const scrollContainerRef = useRef(null)
 
@@ -132,6 +133,17 @@ function App() {
   const openDirections = (venueName, city) => {
     const url = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(venueName + ', ' + city)}`
     window.open(url, '_blank')
+  }
+  const toggleGroup = (groupId) => {
+    setExpandedGroups(prev => {
+      const next = new Set(prev)
+      if (next.has(groupId)) {
+        next.delete(groupId)
+      } else {
+        next.add(groupId)
+      }
+      return next
+    })
   }
 
   const fetchAllEvents = async () => {
@@ -416,76 +428,203 @@ function App() {
     return (
       <div className="content-container">
         <div className="event-list-venue">
-          {groups.map(group => (
-            <React.Fragment key={group.month}>
-              {viewType !== 'idag' && <MonthHeader month={group.month} />}
-              {group.events.map((event, index) => {
-                const isLastOfLastDay = index === group.events.length - 1 ||
-                  new Date(event.startDate).toDateString() !== new Date(group.events[index + 1].startDate).toDateString();
-                return (
-                  <a
-                    id={`${event.source}-${event.id}`}
-                    key={`${event.source}-${event.id}`}
-                    href={event.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`event-row-venue stacked ${highlightIds.has(`${event.source}-${event.id}`) ? 'highlighted' : ''} ${isLastOfLastDay ? 'no-border' : ''}`}
-                  >
-                    <div className="event-info-stack">
-                      <span className="event-artist-venue">
-                        {(viewType === 'helg' && event.source === 'filmstaden')
-                          ? "filmer visas"
-                          : (event.artist || event.name)}
-                      </span>
-                      <span className="event-venue-subtext">
-                        {event.venue}
-                        {event.source === 'tickster' && (
-                          <span style={{ display: 'inline-flex', alignItems: 'center', marginLeft: '6px', color: '#666' }}>
-                            <Ticket size={14} />
-                          </span>
-                        )}
-                      </span>
-                    </div>
+          {groups.map(group => {
+            // Pre-process events to bundle multiple Filmstaden events into single "group items"
+            // We want to group by (date + venue) effectively, but here we are inside a "Month/Day" group already.
+            // But 'viewType' dictates the grouping granularity.
+            // Actually, simply iterating and checking "is this overlapping with previous" is tricky in map.
+            // Let's reduce the group.events list into a list of "Items" where an Item is either a single event or a Bundle.
 
-                    <div className="event-meta-right">
-                      <span className="event-date-text">
-                        {(() => {
-                          const live = isLive(event.startDate, event.endDate)
-                          const shouldHideTime = ['nordiskbio', 'fyrisbiografen', 'filmstaden'].includes(event.source)
-                          if (viewType === 'idag' || viewType === 'helg') {
-                            const startTime = formatTime(event.startDate)
-                            const endTime = event.endDate ? formatTime(event.endDate) : null
+            const processedItems = []
+            let currentBundle = null
 
-                            return (
-                              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                                {live && <span className="live-pulse" title="Börjar snart/Pågår"></span>}
-                                {shouldHideTime ? '' : (
-                                  <div className={endTime ? "time-stacked" : ""}>
-                                    <span>{startTime}</span>
-                                    {endTime && <span className="event-time-end">-{endTime}</span>}
-                                  </div>
-                                )}
-                              </div>
-                            )
-                          }
+            const isBundleable = (e) => ['filmstaden', 'nordiskbio', 'fyrisbiografen'].includes(e.source)
 
-                          const d = new Date(event.startDate)
-                          const day = d.getDate()
-                          const month = d.toLocaleDateString('sv-SE', { month: 'short' }).replace('.', '')
-                          return (
-                            <div className="date-stacked">
-                              <span className="date-day">{day}</span>
-                              <span className="date-month">{month}</span>
+            group.events.forEach(event => {
+              if (isBundleable(event)) {
+                // Determine bundle key (e.g. "filmstaden-2026-02-04")
+                // We assume events are sorted by time, so same-day events for same venue are likely adjacent 
+                // IF sorted by venue/source secondary.
+                // Our sort logic in groupEvents handles this: sort by Date -> Venue.
+                // So Filmstaden events for same day should be contiguous.
+
+                const bundleKey = `${event.source}-${new Date(event.startDate).toDateString()}`
+
+                if (currentBundle && currentBundle.key === bundleKey) {
+                  currentBundle.events.push(event)
+                } else {
+                  // Push old bundle if exists
+                  if (currentBundle) processedItems.push(currentBundle)
+                  // Start new bundle
+                  currentBundle = {
+                    type: 'bundle',
+                    key: bundleKey,
+                    source: event.source,
+                    venue: event.venue,
+                    date: event.startDate,
+                    events: [event]
+                  }
+                }
+              } else {
+                // If we have an open bundle, close it
+                if (currentBundle) {
+                  processedItems.push(currentBundle)
+                  currentBundle = null
+                }
+                // Push regular event
+                processedItems.push({ type: 'single', event })
+              }
+            })
+            // Push final bundle
+            if (currentBundle) processedItems.push(currentBundle)
+
+
+            return (
+              <React.Fragment key={group.month}>
+                {viewType !== 'idag' && <MonthHeader month={group.month} />}
+                {processedItems.map((item, index) => {
+                  if (item.type === 'bundle') {
+                    const isExpanded = expandedGroups.has(item.key)
+                    const count = item.events.length
+                    const repEvent = item.events[0] // Representative event for visual style
+                    // Unique ID for the row
+                    const rowId = `bundle-${item.key}`
+
+                    const isLastOfLastDay = index === processedItems.length - 1; // Simplified border logic for bundle header
+
+                    return (
+                      <div key={item.key} className="bundle-container">
+                        {/* Bundle Header - "Accordion Toggle" */}
+                        <div
+                          className={`event-row-venue stacked ${isLastOfLastDay && !isExpanded ? 'no-border' : ''}`}
+                          onClick={(e) => {
+                            e.preventDefault(); // Prevent navigating if it was an <a> tag
+                            toggleGroup(item.key);
+                          }}
+                          style={{ cursor: 'pointer' }}
+                        >
+                          <div className="event-info-stack">
+                            <span className="event-artist-venue">
+                              {count} filmer visas
+                            </span>
+                            <span className="event-venue-subtext">
+                              {repEvent.venue}
+                            </span>
+                          </div>
+
+                          <div className="event-meta-right">
+                            <div className="chevron-icon" style={{
+                              transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)',
+                              transition: 'transform 0.2s ease',
+                              opacity: 0.5
+                            }}>
+                              ▼
                             </div>
-                          )
-                        })()}
-                      </span>
-                    </div>
-                  </a>
-                )
-              })}
-            </React.Fragment>
-          ))}
+                          </div>
+                        </div>
+
+                        {/* Expanded Content */}
+                        {isExpanded && (
+                          <div className="bundle-content" style={{ paddingLeft: '1rem', borderBottom: '1px solid #eee' }}>
+                            {item.events.map((subEvent, subIndex) => {
+                              const startTime = formatTime(subEvent.startDate)
+                              return (
+                                <a
+                                  key={subEvent.id}
+                                  href={subEvent.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="event-row-venue compact"
+                                  style={{ borderBottom: subIndex === item.events.length - 1 ? 'none' : '1px solid #f0f0f0', padding: '0.8rem 0' }}
+                                >
+                                  <div className="event-info-stack">
+                                    <span className="event-artist-venue" style={{ fontSize: '0.95rem' }}>
+                                      {subEvent.name}
+                                    </span>
+                                  </div>
+                                  <div className="event-meta-right">
+                                    <span className="event-date-text">{startTime}</span>
+                                  </div>
+                                </a>
+                              )
+                            })}
+                          </div>
+                        )}
+                      </div>
+                    )
+                  } else {
+                    // Single Event Rendering
+                    const event = item.event
+                    const isLastOfLastDay = index === processedItems.length - 1 ||
+                      (processedItems[index + 1].type === 'single' &&
+                        new Date(event.startDate).toDateString() !== new Date(processedItems[index + 1].event.startDate).toDateString());
+
+                    return (
+                      <a
+                        id={`${event.source}-${event.id}`}
+                        key={`${event.source}-${event.id}`}
+                        href={event.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`event-row-venue stacked ${highlightIds.has(`${event.source}-${event.id}`) ? 'highlighted' : ''} ${isLastOfLastDay ? 'no-border' : ''}`}
+                      >
+                        <div className="event-info-stack">
+                          <span className="event-artist-venue">
+                            {(viewType === 'helg' && event.source === 'filmstaden')
+                              ? "filmer visas"
+                              : (event.artist || event.name)}
+                          </span>
+                          <span className="event-venue-subtext">
+                            {event.venue}
+                            {event.source === 'tickster' && (
+                              <span style={{ display: 'inline-flex', alignItems: 'center', marginLeft: '6px', color: '#666' }}>
+                                <Ticket size={14} />
+                              </span>
+                            )}
+                          </span>
+                        </div>
+
+                        <div className="event-meta-right">
+                          <span className="event-date-text">
+                            {(() => {
+                              const live = isLive(event.startDate, event.endDate)
+                              const shouldHideTime = ['nordiskbio', 'fyrisbiografen', 'filmstaden'].includes(event.source)
+                              if (viewType === 'idag' || viewType === 'helg') {
+                                const startTime = formatTime(event.startDate)
+                                const endTime = event.endDate ? formatTime(event.endDate) : null
+
+                                return (
+                                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                    {live && <span className="live-pulse" title="Börjar snart/Pågår"></span>}
+                                    {shouldHideTime ? '' : (
+                                      <div className={endTime ? "time-stacked" : ""}>
+                                        <span>{startTime}</span>
+                                        {endTime && <span className="event-time-end">-{endTime}</span>}
+                                      </div>
+                                    )}
+                                  </div>
+                                )
+                              }
+
+                              const d = new Date(event.startDate)
+                              const day = d.getDate()
+                              const month = d.toLocaleDateString('sv-SE', { month: 'short' }).replace('.', '')
+                              return (
+                                <div className="date-stacked">
+                                  <span className="date-day">{day}</span>
+                                  <span className="date-month">{month}</span>
+                                </div>
+                              )
+                            })()}
+                          </span>
+                        </div>
+                      </a>
+                    )
+                  }
+                })}
+              </React.Fragment>
+            )
+          })}
           {viewType === 'kommande' && eventsList.length > visibleCount && (
             <div ref={loaderRefKommande} style={{ height: '20px', margin: '20px 0' }} />
           )}

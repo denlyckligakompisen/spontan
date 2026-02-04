@@ -307,26 +307,24 @@ export const fetchNordiskBio = async () => {
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
 
-        const events = [];
-        for (const date in data.dateCounts) {
-            const count = data.dateCounts[date];
-            const name = count === 1 ? `${count} film` : `${count} filmer`;
-            events.push({
-                id: `nfb-${date}`,
+        return (data || []).map((event, index) => {
+            const dateStr = event.date || "";
+            const safeTitle = (event.title || "film").replace(/\s+/g, '-').toLowerCase();
+            return {
+                id: `nfb-${safeTitle}-${dateStr}-${index}`,
                 source: "nordiskbio",
-                name: name,
-                artist: name,
-                venue: data.venue,
-                city: data.city,
+                name: event.title || "Bio",
+                artist: event.title,
+                venue: "Nordisk Film Bio",
+                city: "Uppsala",
                 country: "Sweden",
-                latitude: data.latitude,
-                longitude: data.longitude,
-                startDate: `${date}T12:00:00Z`,
+                latitude: 59.8586,
+                longitude: 17.6446,
+                startDate: dateStr,
                 endDate: null,
-                url: `https://www.nfbio.se/?city=uppsala#days:${date}`
-            });
-        }
-        return events;
+                url: event.url
+            };
+        });
     } catch (err) {
         console.error("Nordisk Bio local data read failed:", err);
         return [];
@@ -339,26 +337,24 @@ export const fetchFyrisbiografen = async () => {
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
 
-        const events = [];
-        for (const date in data.dateCounts) {
-            const count = data.dateCounts[date];
-            const name = count === 1 ? `${count} film` : `${count} filmer`;
-            events.push({
-                id: `fyris-${date}`,
+        return (data || []).map((event, index) => {
+            const dateStr = event.date || "";
+            const safeTitle = (event.title || "film").replace(/\s+/g, '-').toLowerCase();
+            return {
+                id: `fyris-${safeTitle}-${dateStr}-${index}`,
                 source: "fyrisbiografen",
-                name: name,
-                artist: name,
-                venue: data.venue,
-                city: data.city,
+                name: event.title || "Bio",
+                artist: event.title,
+                venue: "Fyrisbiografen",
+                city: "Uppsala",
                 country: "Sweden",
-                latitude: data.latitude,
-                longitude: data.longitude,
-                startDate: `${date}T12:00:00Z`,
+                latitude: 59.8568,
+                longitude: 17.6325,
+                startDate: dateStr,
                 endDate: null,
-                url: `https://fyrisbiografen.se/kalendarium`
-            });
-        }
-        return events;
+                url: event.url
+            };
+        });
     } catch (err) {
         console.error("Fyrisbiografen local data read failed:", err);
         return [];

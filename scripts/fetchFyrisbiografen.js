@@ -67,50 +67,59 @@ async function fetchMovies() {
         const doc = dom.window.document;
 
         // Select all columns that look like large calendar columns
-        // This catches 'column_calendar_large', 'column_calendar_large_right', etc.
-        let columns = Array.from(doc.querySelectorAll('[class*="column_calendar_large"]'));
+        // This catches 'column_calendar_large' blocks
+        // The structure seems to be: 
+        // <div class="column_calendar_large">
+        //   <div class="column_calendar_day_large">i dag</div>
+        //   <div class="column_calendar_contents_large">
+        //      <div class="calendar_row_large">...</div>
+        //   </div>
+        // </div>
 
-        if (columns.length === 0) {
-            // Fallback if class names change
-            const rows = doc.querySelectorAll('.calendar_row_large');
-            const parents = new Set();
-            rows.forEach(r => parents.add(r.parentElement));
-            columns = Array.from(parents);
-        }
+        const dayColumns = Array.from(doc.querySelectorAll('.column_calendar_large'));
+        const allEvents = [];
 
-        const dateCounts = {};
+        dayColumns.forEach(col => {
+            // Find date header
+            const header = col.querySelector('.column_calendar_day_large');
+            if (!header) return;
 
-        columns.forEach(col => {
-            let dateText = '';
-            // Try to find any header inside
-            const header = col.querySelector('.date_header_large, h2, h3, .date, .day');
+            const dateText = header.textContent.trim();
+            const dateStr = parseDate(dateText);
 
-            if (header) {
-                dateText = header.textContent.trim();
-            } else {
-                dateText = col.textContent.trim().split('\n')[0];
-            }
+            if (!dateStr) return;
 
-            const date = parseDate(dateText);
+            // Find rows
+            const rows = col.querySelectorAll('.calendar_row_large');
 
-            if (date) {
-                const rowCount = col.querySelectorAll('.calendar_row_large').length;
-                if (rowCount > 0) {
-                    dateCounts[date] = rowCount;
+            rows.forEach(row => {
+                const timeEl = row.querySelector('.column_time_large strong');
+                const titleLink = row.querySelector('.calendar_media_large a');
+
+                if (timeEl && titleLink) {
+                    const time = timeEl.textContent.trim(); // "13:00"
+                    const title = titleLink.textContent.trim();
+                    let href = titleLink.getAttribute('href');
+
+                    if (href && !href.startsWith('http')) {
+                        href = `https://fyrisbiografen.se/${href.replace(/^\//, '')}`;
+                    }
+
+                    // Create DateTime
+                    const fullDate = `${dateStr}T${time}:00`;
+
+                    allEvents.push({
+                        title: title,
+                        venue: 'Fyrisbiografen',
+                        date: fullDate,
+                        url: href || 'https://fyrisbiografen.se/kalendarium'
+                    });
                 }
-            }
+            });
         });
 
-        const result = {
-            venue: 'Fyrisbiografen',
-            city: 'Uppsala',
-            latitude: 59.8568,
-            longitude: 17.6325,
-            dateCounts
-        };
-
-        fs.writeFileSync(OUTPUT_FILE, JSON.stringify(result, null, 2));
-        console.log(`Successfully saved counts for ${Object.keys(dateCounts).length} dates to ${OUTPUT_FILE}`);
+        fs.writeFileSync(OUTPUT_FILE, JSON.stringify(allEvents, null, 2));
+        console.log(`Successfully saved ${allEvents.length} events to ${OUTPUT_FILE}`);
 
     } catch (err) {
         console.error('Error fetching/parsing Fyrisbiografen:', err);
