@@ -572,13 +572,13 @@ function App() {
                                   </div>
                                   <div className="event-meta-right">
                                     <span className="event-date-text">
-                                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
                                         {isPast && (
                                           <RotateCcw size={14} style={{ opacity: 0.5 }} />
                                         )}
                                         {live && <span className="live-pulse" title="Börjar snart/Pågår"></span>}
-                                        <div className={endTime ? "time-stacked" : ""} style={{ opacity: isPast ? 0.6 : 1 }}>
-                                          <span style={{ textDecoration: isPast ? 'line-through' : 'none' }}>{startTime}</span>
+                                        <div className={endTime ? "time-stacked" : ""} style={{ opacity: isPast ? 0.6 : 1, textDecoration: isPast ? 'line-through' : 'none' }}>
+                                          <span>{startTime}</span>
                                           {endTime && <span className="event-time-end">-{endTime}</span>}
                                         </div>
                                       </div>
@@ -638,15 +638,15 @@ function App() {
                                   : new Date(event.startDate) < now
 
                                 return (
-                                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                                    {isPast && (
+                                      <RotateCcw size={14} style={{ opacity: 0.5 }} />
+                                    )}
                                     {live && <span className="live-pulse" title="Börjar snart/Pågår"></span>}
                                     {shouldHideTime ? '' : (
-                                      <div className={endTime ? "time-stacked" : ""}>
+                                      <div className={endTime ? "time-stacked" : ""} style={{ opacity: isPast ? 0.6 : 1, textDecoration: isPast ? 'line-through' : 'none' }}>
                                         <span>{startTime}</span>
                                         {endTime && <span className="event-time-end">-{endTime}</span>}
-                                        {isPast && (
-                                          <RotateCcw size={14} style={{ opacity: 0.5 }} />
-                                        )}
                                       </div>
                                     )}
                                   </div>
@@ -748,7 +748,7 @@ function App() {
               <div className="search-container">
                 <input
                   type="text"
-                  placeholder="Sök event, plats..."
+                  placeholder="Filtrera event, plats..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="search-input"
