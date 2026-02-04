@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react'
 import './index.css'
 import Intro from './Intro'
-import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents, fetchFyrisbiografen, fetchUppsalaStadsteaterEvents, fetchTicksterEvents } from './utils/api'
+import { fetchTicketmasterEvents, fetchKatalinEvents, fetchDestinationUppsalaEvents, fetchUKKEvents, fetchHejaUppsalaEvents, fetchNordiskBio, fetchFyrisbiografen, fetchUppsalaStadsteaterEvents, fetchTicksterEvents } from './utils/api'
 import { mergeAndDedupeEvents } from './utils/dedupe'
 import { Calendar, Coffee, CalendarRange, Info, Ticket, RotateCcw } from 'lucide-react'
 
@@ -158,6 +158,7 @@ function App() {
 
       const ukkPromise = fetchUKKEvents()
       const hejaPromise = fetchHejaUppsalaEvents()
+      const nfbPromise = fetchNordiskBio()
       const fyrisPromise = fetchFyrisbiografen()
       const ustPromise = fetchUppsalaStadsteaterEvents()
       const ticksterPromise = fetchTicksterEvents()
@@ -169,18 +170,20 @@ function App() {
         uppsalaPromise,
         ukkPromise,
         hejaPromise,
+        nfbPromise,
         fyrisPromise,
         ustPromise,
         ticksterPromise
       ])
 
-      const [tmEvents, katalinEvents, uppsalaEvents, ukkEvents, hejaEvents, fyrisEvents, ustEvents, ticksterEvents] = results.map(r => r.status === 'fulfilled' && Array.isArray(r.value) ? r.value : [])
+      const [tmEvents, katalinEvents, uppsalaEvents, ukkEvents, hejaEvents, nfbEvents, fyrisEvents, ustEvents, ticksterEvents] = results.map(r => r.status === 'fulfilled' && Array.isArray(r.value) ? r.value : [])
 
       const otherEvents = [
         ...katalinEvents,
         ...uppsalaEvents,
         ...ukkEvents,
         ...hejaEvents,
+        ...nfbEvents,
         ...fyrisEvents,
         ...ustEvents,
         ...ticksterEvents
@@ -234,6 +237,11 @@ function App() {
     tomorrow.setDate(tomorrow.getDate() + 1);
 
     return events.filter(event => {
+      // "cinemas should not be listed on kommande view"
+      if (viewType === 'kommande' && ['fyrisbiografen', 'nordiskbio'].includes(event.source)) {
+        return false;
+      }
+
       // Search Filter
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase().trim();
@@ -352,8 +360,8 @@ function App() {
 
         const timeA = dA.getTime()
         const timeB = dB.getTime()
-        const hideA = ['fyrisbiografen'].includes(a.source)
-        const hideB = ['fyrisbiografen'].includes(b.source)
+        const hideA = ['nordiskbio', 'fyrisbiografen'].includes(a.source)
+        const hideB = ['nordiskbio', 'fyrisbiografen'].includes(b.source)
         if (hideA !== hideB) return hideA ? -1 : 1
 
         // If both are cinemas, group by venue first so they don't get split by time
@@ -439,7 +447,7 @@ function App() {
             const processedItems = []
             let currentBundle = null
 
-            const isBundleable = (e) => ['fyrisbiografen'].includes(e.source)
+            const isBundleable = (e) => ['nordiskbio', 'fyrisbiografen'].includes(e.source)
 
             group.events.forEach(event => {
               if (isBundleable(event)) {
@@ -489,14 +497,14 @@ function App() {
                     const count = item.events.length
                     const repEvent = item.events[0] // Representative event for visual style
                     // Unique ID for the row
-                    // Specific logic for bundles on "idag" view (Fyrisbiografen)
+                    // Specific logic for bundles on "idag" view (Nordisk Bio, Fyrisbiografen)
                     // Always expanded, non-collapsible, indented list style
                     const isIdagView = viewType === 'idag';
                     const isFyris = item.source === 'fyrisbiografen';
                     const effectiveIsExpanded = isExpanded || isIdagView;
 
                     // Disable click toggle if on 'idag' view or for specific cases
-                    const disablePreClick = viewType === 'kommande' || isIdagView;
+                    const disablePreClick = viewType === 'kommande' || item.events[0].source === 'nordiskbio' || isIdagView;
 
                     const isLastOfLastDay = index === processedItems.length - 1;
 
@@ -606,7 +614,7 @@ function App() {
                       >
                         <div className="event-info-stack">
                           <span className="event-artist-venue">
-                            {(viewType === 'helg' && ['fyrisbiografen'].includes(event.source))
+                            {(viewType === 'helg' && ['nordiskbio', 'fyrisbiografen'].includes(event.source))
                               ? "filmvisningar"
                               : (event.artist || event.name)}
                           </span>
@@ -624,7 +632,7 @@ function App() {
                           <span className="event-date-text">
                             {(() => {
                               const live = isLive(event.startDate, event.endDate)
-                              const shouldHideTime = ['fyrisbiografen'].includes(event.source)
+                              const shouldHideTime = ['nordiskbio', 'fyrisbiografen'].includes(event.source)
                               if (viewType === 'idag' || viewType === 'helg') {
                                 const startTime = formatTime(event.startDate)
                                 const endTime = event.endDate ? formatTime(event.endDate) : null
@@ -690,6 +698,7 @@ function App() {
             'fyrisbiografen': 'Fyrisbiografen',
             'hejauppsala': 'Heja Uppsala',
             'katalin': 'Katalin',
+            'nordiskbio': 'Nordisk Bio',
             'ukk': 'UKK',
             'uppsalastadsteater': 'Uppsala Stadsteater',
             'tickster': 'Tickster'

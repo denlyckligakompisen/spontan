@@ -6,7 +6,7 @@ export const assignCategory = (event) => {
     const venue = (event.venue || '').toLowerCase();
 
     // 1. Film
-    if (source === 'fyrisbiografen') {
+    if (source === 'nordiskbio' || source === 'fyrisbiografen') {
         return '🎬';
     }
 

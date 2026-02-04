@@ -302,6 +302,36 @@ export const fetchHejaUppsalaEvents = async () => {
     }
 };
 
+export const fetchNordiskBio = async () => {
+    try {
+        const response = await fetch(`/data/nordisk-bio.json?t=${Date.now()}`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+
+        return (data || []).map((event, index) => {
+            const dateStr = event.date || "";
+            return {
+                id: event.id || `nfb-${event.title}-${dateStr}-${index}`,
+                source: "nordiskbio",
+                name: event.title || "Bio",
+                artist: event.title,
+                venue: "Nordisk Film Bio",
+                city: "Uppsala",
+                country: "Sweden",
+                latitude: 59.8586,
+                longitude: 17.6446,
+                startDate: dateStr,
+                endDate: null,
+                url: event.url
+            };
+        });
+    } catch (err) {
+        console.error("Nordisk Bio local data read failed:", err);
+        return [];
+    }
+};
+
+
 
 export const fetchFyrisbiografen = async () => {
     try {
