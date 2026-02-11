@@ -1,41 +1,5 @@
 [
   {
-    "title": "The Secret Agent",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-10T14:40:00",
-    "url": "https://fyrisbiografen.se/the-secret-agent"
-  },
-  {
-    "title": "Eagles of the Republic",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-10T14:50:00",
-    "url": "https://fyrisbiografen.se/eagles-of-the-republic"
-  },
-  {
-    "title": "Hind Rajab - rösten från Gaza",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-10T17:30:00",
-    "url": "https://fyrisbiografen.se/hind-rajab-rosten-fran-gaza"
-  },
-  {
-    "title": "Daaaaaalí!",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-10T18:00:00",
-    "url": "https://fyrisbiografen.se/daaaaaalí"
-  },
-  {
-    "title": "Die My Love",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-10T19:45:00",
-    "url": "https://fyrisbiografen.se/die-my-love"
-  },
-  {
-    "title": "Rental Family",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-10T20:15:00",
-    "url": "https://fyrisbiografen.se/rental-family"
-  },
-  {
     "title": "Rental Family",
     "venue": "Fyrisbiografen",
     "date": "2026-02-11T13:00:00",
@@ -132,6 +96,18 @@
     "url": "https://fyrisbiografen.se/mastaren-och-margarita"
   },
   {
+    "title": "Eagles of the Republic",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-13T15:00:00",
+    "url": "https://fyrisbiografen.se/eagles-of-the-republic"
+  },
+  {
+    "title": "Hind Rajab - rösten från Gaza",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-13T15:30:00",
+    "url": "https://fyrisbiografen.se/hind-rajab-rosten-fran-gaza"
+  },
+  {
     "title": "Mother",
     "venue": "Fyrisbiografen",
     "date": "2026-02-13T17:30:00",
@@ -142,6 +118,12 @@
     "venue": "Fyrisbiografen",
     "date": "2026-02-13T17:40:00",
     "url": "https://fyrisbiografen.se/iloveruss"
+  },
+  {
+    "title": "The Secret Agent",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-13T19:40:00",
+    "url": "https://fyrisbiografen.se/the-secret-agent"
   },
   {
     "title": "Pillion",
@@ -162,10 +144,22 @@
     "url": "https://fyrisbiografen.se/lek-med-alfons-aberg"
   },
   {
+    "title": "Den blå färden",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-14T14:20:00",
+    "url": "https://fyrisbiografen.se/den-bla-farden"
+  },
+  {
     "title": "In the Mood for Love",
     "venue": "Fyrisbiografen",
     "date": "2026-02-14T15:15:00",
     "url": "https://fyrisbiografen.se/in-the-mood-for-love"
+  },
+  {
+    "title": "Rental Family",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-14T16:15:00",
+    "url": "https://fyrisbiografen.se/rental-family"
   },
   {
     "title": "Pillion",
@@ -174,10 +168,22 @@
     "url": "https://fyrisbiografen.se/pillion"
   },
   {
+    "title": "ILOVERUSS",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-14T18:30:00",
+    "url": "https://fyrisbiografen.se/iloveruss"
+  },
+  {
     "title": "Wuthering Heights",
     "venue": "Fyrisbiografen",
     "date": "2026-02-14T19:50:00",
     "url": "https://fyrisbiografen.se/wuthering-heights"
+  },
+  {
+    "title": "Die My Love",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-14T20:20:00",
+    "url": "https://fyrisbiografen.se/die-my-love"
   },
   {
     "title": "TOMMY TASS får en ny vän",
@@ -192,6 +198,42 @@
     "url": "https://fyrisbiografen.se/handbok-for-superhjaltar"
   },
   {
+    "title": "Mother",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-15T14:30:00",
+    "url": "https://fyrisbiografen.se/mother"
+  },
+  {
+    "title": "Hind Rajab - rösten från Gaza",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-15T15:15:00",
+    "url": "https://fyrisbiografen.se/hind-rajab-rosten-fran-gaza"
+  },
+  {
+    "title": "The Secret Agent",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-15T16:40:00",
+    "url": "https://fyrisbiografen.se/the-secret-agent"
+  },
+  {
+    "title": "Kattriket",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-15T17:15:00",
+    "url": "https://fyrisbiografen.se/kattriket"
+  },
+  {
+    "title": "Sound of Falling",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-15T19:40:00",
+    "url": "https://fyrisbiografen.se/sound-of-falling"
+  },
+  {
+    "title": "Marty Supreme",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-15T19:50:00",
+    "url": "https://fyrisbiografen.se/marty-supreme"
+  },
+  {
     "title": "Space Cadet",
     "venue": "Fyrisbiografen",
     "date": "2026-02-16T13:00:00",
@@ -204,10 +246,40 @@
     "url": "https://fyrisbiografen.se/bamse-och-havets-hemlighet"
   },
   {
+    "title": "Sentimental Value",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-16T14:50:00",
+    "url": "https://fyrisbiografen.se/sentimental-value"
+  },
+  {
+    "title": "Eagles of the Republic",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-16T15:00:00",
+    "url": "https://fyrisbiografen.se/eagles-of-the-republic"
+  },
+  {
     "title": "Hind Rajab - rösten från Gaza",
     "venue": "Fyrisbiografen",
     "date": "2026-02-16T17:30:00",
     "url": "https://fyrisbiografen.se/hind-rajab-rosten-fran-gaza"
+  },
+  {
+    "title": "Mother",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-16T17:40:00",
+    "url": "https://fyrisbiografen.se/mother"
+  },
+  {
+    "title": "Marty Supreme",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-16T19:30:00",
+    "url": "https://fyrisbiografen.se/marty-supreme"
+  },
+  {
+    "title": "Wuthering Heights",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-16T19:50:00",
+    "url": "https://fyrisbiografen.se/wuthering-heights"
   },
   {
     "title": "TOMMY TASS får en ny vän",
@@ -222,6 +294,42 @@
     "url": "https://fyrisbiografen.se/lek-med-alfons-aberg"
   },
   {
+    "title": "Marty Supreme",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-17T14:20:00",
+    "url": "https://fyrisbiografen.se/marty-supreme"
+  },
+  {
+    "title": "Sound of Falling",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-17T14:30:00",
+    "url": "https://fyrisbiografen.se/sound-of-falling"
+  },
+  {
+    "title": "Kattriket",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-17T17:15:00",
+    "url": "https://fyrisbiografen.se/kattriket"
+  },
+  {
+    "title": "Rental Family",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-17T17:30:00",
+    "url": "https://fyrisbiografen.se/rental-family"
+  },
+  {
+    "title": "No Other Choice",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-17T19:40:00",
+    "url": "https://fyrisbiografen.se/no-other-choice"
+  },
+  {
+    "title": "Wuthering Heights",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-17T19:50:00",
+    "url": "https://fyrisbiografen.se/wuthering-heights"
+  },
+  {
     "title": "Handbok för superhjältar",
     "venue": "Fyrisbiografen",
     "date": "2026-02-18T13:00:00",
@@ -232,6 +340,42 @@
     "venue": "Fyrisbiografen",
     "date": "2026-02-18T13:15:00",
     "url": "https://fyrisbiografen.se/bamse-och-havets-hemlighet"
+  },
+  {
+    "title": "Det var bara en olycka",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-18T14:50:00",
+    "url": "https://fyrisbiografen.se/det-var-bara-en-olycka"
+  },
+  {
+    "title": "Mother",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-18T15:00:00",
+    "url": "https://fyrisbiografen.se/mother"
+  },
+  {
+    "title": "Mästaren och Margarita",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-18T17:00:00",
+    "url": "https://fyrisbiografen.se/mastaren-och-margarita"
+  },
+  {
+    "title": "The Secret Agent",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-18T17:10:00",
+    "url": "https://fyrisbiografen.se/the-secret-agent"
+  },
+  {
+    "title": "Die My Love",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-18T20:10:00",
+    "url": "https://fyrisbiografen.se/die-my-love"
+  },
+  {
+    "title": "Pillion",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-18T20:20:00",
+    "url": "https://fyrisbiografen.se/pillion"
   },
   {
     "title": "Space Cadet",
@@ -246,6 +390,42 @@
     "url": "https://fyrisbiografen.se/tommy-tass-far-en-ny-van"
   },
   {
+    "title": "The Secret Agent",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-19T14:45:00",
+    "url": "https://fyrisbiografen.se/the-secret-agent"
+  },
+  {
+    "title": "Den blå färden",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-19T15:00:00",
+    "url": "https://fyrisbiografen.se/den-bla-farden"
+  },
+  {
+    "title": "Sentimental Value",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-19T17:00:00",
+    "url": "https://fyrisbiografen.se/sentimental-value"
+  },
+  {
+    "title": "Pillion",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-19T17:50:00",
+    "url": "https://fyrisbiografen.se/pillion"
+  },
+  {
+    "title": "Marty Supreme",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-19T19:45:00",
+    "url": "https://fyrisbiografen.se/marty-supreme"
+  },
+  {
+    "title": "ILOVERUSS",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-19T20:10:00",
+    "url": "https://fyrisbiografen.se/iloveruss"
+  },
+  {
     "title": "Nausicaä från Vindarnas dal (Jap. tal)",
     "venue": "Fyrisbiografen",
     "date": "2026-02-20T13:00:00",
@@ -256,6 +436,12 @@
     "venue": "Fyrisbiografen",
     "date": "2026-02-20T13:15:00",
     "url": "https://fyrisbiografen.se/handbok-for-superhjaltar"
+  },
+  {
+    "title": "Yalla Parkour",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-20T17:30:00",
+    "url": "https://fyrisbiografen.se/yalla-parkour"
   },
   {
     "title": "Amrum",
@@ -298,6 +484,12 @@
     "venue": "Fyrisbiografen",
     "date": "2026-02-27T20:00:00",
     "url": "https://fyrisbiografen.se/hamnet"
+  },
+  {
+    "title": "Flickorna",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-08T15:15:00",
+    "url": "https://fyrisbiografen.se/flickorna"
   },
   {
     "title": "Katanga: De dansande skorpionerna",
