@@ -1,53 +1,5 @@
 [
   {
-    "title": "Rental Family",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-11T13:00:00",
-    "url": "https://fyrisbiografen.se/rental-family"
-  },
-  {
-    "title": "Daaaaaalí!",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-11T13:20:00",
-    "url": "https://fyrisbiografen.se/daaaaaalí"
-  },
-  {
-    "title": "Den blå färden",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-11T15:10:00",
-    "url": "https://fyrisbiografen.se/den-bla-farden"
-  },
-  {
-    "title": "Hind Rajab - rösten från Gaza",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-11T15:20:00",
-    "url": "https://fyrisbiografen.se/hind-rajab-rosten-fran-gaza"
-  },
-  {
-    "title": "Det var bara en olycka",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-11T17:10:00",
-    "url": "https://fyrisbiografen.se/det-var-bara-en-olycka"
-  },
-  {
-    "title": "Kattriket",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-11T17:20:00",
-    "url": "https://fyrisbiografen.se/kattriket"
-  },
-  {
-    "title": "Marty Supreme",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-11T19:30:00",
-    "url": "https://fyrisbiografen.se/marty-supreme"
-  },
-  {
-    "title": "Sound of Falling",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-11T19:45:00",
-    "url": "https://fyrisbiografen.se/sound-of-falling"
-  },
-  {
     "title": "Sound of Falling",
     "venue": "Fyrisbiografen",
     "date": "2026-02-12T13:00:00",
@@ -474,6 +426,18 @@
     "url": "https://fyrisbiografen.se/bamse-och-havets-hemlighet"
   },
   {
+    "title": "Pillion",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-22T17:15:00",
+    "url": "https://fyrisbiografen.se/pillion"
+  },
+  {
+    "title": "100 liter guld",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-24T17:45:00",
+    "url": "https://fyrisbiografen.se/100-liter-guld"
+  },
+  {
     "title": "Le Roi et l'Oiseau (Fågeln och tyrannen)",
     "venue": "Fyrisbiografen",
     "date": "2026-02-26T17:45:00",
@@ -496,5 +460,11 @@
     "venue": "Fyrisbiografen",
     "date": "2026-03-15T17:00:00",
     "url": "https://fyrisbiografen.se/katanga--de-dansande-skorpionerna"
+  },
+  {
+    "title": "Stålsystrar - som sista dagen",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-17T17:45:00",
+    "url": "https://fyrisbiografen.se/stalsystrar-som-sista-dagen"
   }
 ]
