@@ -226,5 +226,13 @@
   "Akademihotellet, Uppsala, Sweden": {
     "lat": 59.8563784,
     "lon": 17.6306558
+  },
+  "Hospitalsträdgården, Ulleråker, Uppsala, Uppsala, Sweden": {
+    "lat": 59.8356635,
+    "lon": 17.6559026
+  },
+  "Hammarskogs Herrgård, Uppsala, Sweden": {
+    "lat": 59.7694006,
+    "lon": 17.5618651
   }
 }
