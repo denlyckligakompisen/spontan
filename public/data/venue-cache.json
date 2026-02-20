@@ -242,5 +242,13 @@
   "Restaurang Borgen, Uppsala, Sweden": {
     "lat": 59.860488,
     "lon": 17.631642
+  },
+  "Krusenberg Herrgård, Uppsala, Sweden": {
+    "lat": 59.7352142,
+    "lon": 17.6450423
+  },
+  "Stationen, Uppsala, Sweden": {
+    "lat": 59.8586998,
+    "lon": 17.6459474
   }
 }

@@ -1,53 +1,5 @@
 [
   {
-    "title": "Space Cadet",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-19T13:00:00",
-    "url": "https://fyrisbiografen.se/space-cadet"
-  },
-  {
-    "title": "TOMMY TASS får en ny vän",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-19T13:15:00",
-    "url": "https://fyrisbiografen.se/tommy-tass-far-en-ny-van"
-  },
-  {
-    "title": "The Secret Agent",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-19T14:45:00",
-    "url": "https://fyrisbiografen.se/the-secret-agent"
-  },
-  {
-    "title": "Den blå färden",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-19T15:00:00",
-    "url": "https://fyrisbiografen.se/den-bla-farden"
-  },
-  {
-    "title": "Sentimental Value",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-19T17:00:00",
-    "url": "https://fyrisbiografen.se/sentimental-value"
-  },
-  {
-    "title": "Pillion",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-19T17:50:00",
-    "url": "https://fyrisbiografen.se/pillion"
-  },
-  {
-    "title": "Marty Supreme",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-19T19:45:00",
-    "url": "https://fyrisbiografen.se/marty-supreme"
-  },
-  {
-    "title": "ILOVERUSS",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-19T20:10:00",
-    "url": "https://fyrisbiografen.se/iloveruss"
-  },
-  {
     "title": "Nausicaä från Vindarnas dal (Jap. tal)",
     "venue": "Fyrisbiografen",
     "date": "2026-02-20T13:00:00",
@@ -360,6 +312,24 @@
     "url": "https://fyrisbiografen.se/hamnet"
   },
   {
+    "title": "Sirât",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-06T17:30:00",
+    "url": "https://fyrisbiografen.se/sirât"
+  },
+  {
+    "title": "Unga mödrar",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-06T17:45:00",
+    "url": "https://fyrisbiografen.se/unga-modrar"
+  },
+  {
+    "title": "Operation bäver",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-07T13:00:00",
+    "url": "https://fyrisbiografen.se/operation-baver"
+  },
+  {
     "title": "Flickorna",
     "venue": "Fyrisbiografen",
     "date": "2026-03-08T15:15:00",
@@ -370,6 +340,12 @@
     "venue": "Fyrisbiografen",
     "date": "2026-03-08T17:45:00",
     "url": "https://fyrisbiografen.se/aktivister"
+  },
+  {
+    "title": "The Bride!",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-08T19:40:00",
+    "url": "https://fyrisbiografen.se/the-bride"
   },
   {
     "title": "Katanga: De dansande skorpionerna",
