@@ -250,5 +250,13 @@
   "Stationen, Uppsala, Sweden": {
     "lat": 59.8586998,
     "lon": 17.6459474
+  },
+  "Bangårdsgatan 13, Uppsala, Uppsala, Sweden": {
+    "lat": 59.8578314,
+    "lon": 17.6441103
+  },
+  "Linnéträdgården, Uppsala, Sweden": {
+    "lat": 59.862382,
+    "lon": 17.6341591
   }
 }
