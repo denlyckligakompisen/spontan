@@ -1,41 +1,5 @@
 [
   {
-    "title": "Mästaren och Margarita",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-24T14:50:00",
-    "url": "https://fyrisbiografen.se/mastaren-och-margarita"
-  },
-  {
-    "title": "Eagles of the Republic",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-24T15:00:00",
-    "url": "https://fyrisbiografen.se/eagles-of-the-republic"
-  },
-  {
-    "title": "100 liter guld",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-24T17:45:00",
-    "url": "https://fyrisbiografen.se/100-liter-guld"
-  },
-  {
-    "title": "ILOVERUSS",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-24T18:00:00",
-    "url": "https://fyrisbiografen.se/iloveruss"
-  },
-  {
-    "title": "Pillion",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-24T19:45:00",
-    "url": "https://fyrisbiografen.se/pillion"
-  },
-  {
-    "title": "Hind Rajab - rösten från Gaza",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-24T20:00:00",
-    "url": "https://fyrisbiografen.se/hind-rajab-rosten-fran-gaza"
-  },
-  {
     "title": "ILOVERUSS",
     "venue": "Fyrisbiografen",
     "date": "2026-02-25T13:00:00",
@@ -132,16 +96,298 @@
     "url": "https://fyrisbiografen.se/yalla-parkour"
   },
   {
+    "title": "Mother",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-27T15:30:00",
+    "url": "https://fyrisbiografen.se/mother"
+  },
+  {
+    "title": "Den blå färden",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-27T16:00:00",
+    "url": "https://fyrisbiografen.se/den-bla-farden"
+  },
+  {
     "title": "VÄRN",
     "venue": "Fyrisbiografen",
     "date": "2026-02-27T17:45:00",
     "url": "https://fyrisbiografen.se/varn"
   },
   {
+    "title": "Amrum",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-27T18:00:00",
+    "url": "https://fyrisbiografen.se/amrum"
+  },
+  {
+    "title": "The Secret Agent",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-27T19:40:00",
+    "url": "https://fyrisbiografen.se/the-secret-agent"
+  },
+  {
     "title": "Hamnet",
     "venue": "Fyrisbiografen",
     "date": "2026-02-27T20:00:00",
     "url": "https://fyrisbiografen.se/hamnet"
+  },
+  {
+    "title": "Handbok för superhjältar",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-28T13:00:00",
+    "url": "https://fyrisbiografen.se/handbok-for-superhjaltar"
+  },
+  {
+    "title": "Lek med Alfons Åberg",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-28T13:15:00",
+    "url": "https://fyrisbiografen.se/lek-med-alfons-aberg"
+  },
+  {
+    "title": "Space Cadet",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-28T14:20:00",
+    "url": "https://fyrisbiografen.se/space-cadet"
+  },
+  {
+    "title": "Amrum",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-28T15:00:00",
+    "url": "https://fyrisbiografen.se/amrum"
+  },
+  {
+    "title": "Den blå färden",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-28T16:20:00",
+    "url": "https://fyrisbiografen.se/den-bla-farden"
+  },
+  {
+    "title": "Hamnet",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-28T17:10:00",
+    "url": "https://fyrisbiografen.se/hamnet"
+  },
+  {
+    "title": "VÄRN",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-28T18:15:00",
+    "url": "https://fyrisbiografen.se/varn"
+  },
+  {
+    "title": "Marty Supreme",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-28T19:50:00",
+    "url": "https://fyrisbiografen.se/marty-supreme"
+  },
+  {
+    "title": "Pillion",
+    "venue": "Fyrisbiografen",
+    "date": "2026-02-28T20:10:00",
+    "url": "https://fyrisbiografen.se/pillion"
+  },
+  {
+    "title": "Bamse och havets hemlighet",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-01T13:00:00",
+    "url": "https://fyrisbiografen.se/bamse-och-havets-hemlighet"
+  },
+  {
+    "title": "TOMMY TASS får en ny vän",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-01T13:15:00",
+    "url": "https://fyrisbiografen.se/tommy-tass-far-en-ny-van"
+  },
+  {
+    "title": "Mästaren och Margarita",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-01T14:40:00",
+    "url": "https://fyrisbiografen.se/mastaren-och-margarita"
+  },
+  {
+    "title": "The Secret Agent",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-01T14:50:00",
+    "url": "https://fyrisbiografen.se/the-secret-agent"
+  },
+  {
+    "title": "Rental Family",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-01T17:45:00",
+    "url": "https://fyrisbiografen.se/rental-family"
+  },
+  {
+    "title": "Mother",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-01T18:00:00",
+    "url": "https://fyrisbiografen.se/mother"
+  },
+  {
+    "title": "Wuthering Heights",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-01T20:00:00",
+    "url": "https://fyrisbiografen.se/wuthering-heights"
+  },
+  {
+    "title": "Hind Rajab - rösten från Gaza",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-01T20:10:00",
+    "url": "https://fyrisbiografen.se/hind-rajab-rosten-fran-gaza"
+  },
+  {
+    "title": "Amrum",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-02T17:30:00",
+    "url": "https://fyrisbiografen.se/amrum"
+  },
+  {
+    "title": "VÄRN",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-02T17:45:00",
+    "url": "https://fyrisbiografen.se/varn"
+  },
+  {
+    "title": "Hamnet",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-02T19:30:00",
+    "url": "https://fyrisbiografen.se/hamnet"
+  },
+  {
+    "title": "Yalla Parkour",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-02T19:40:00",
+    "url": "https://fyrisbiografen.se/yalla-parkour"
+  },
+  {
+    "title": "Sentimental Value",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-03T15:00:00",
+    "url": "https://fyrisbiografen.se/sentimental-value"
+  },
+  {
+    "title": "Hamnet",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-03T15:15:00",
+    "url": "https://fyrisbiografen.se/hamnet"
+  },
+  {
+    "title": "Amrum",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-03T17:40:00",
+    "url": "https://fyrisbiografen.se/amrum"
+  },
+  {
+    "title": "Pillion",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-03T17:50:00",
+    "url": "https://fyrisbiografen.se/pillion"
+  },
+  {
+    "title": "The Secret Agent",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-03T19:40:00",
+    "url": "https://fyrisbiografen.se/the-secret-agent"
+  },
+  {
+    "title": "VÄRN",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-03T20:00:00",
+    "url": "https://fyrisbiografen.se/varn"
+  },
+  {
+    "title": "Amrum",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-04T13:10:00",
+    "url": "https://fyrisbiografen.se/amrum"
+  },
+  {
+    "title": "Mother",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-04T13:30:00",
+    "url": "https://fyrisbiografen.se/mother"
+  },
+  {
+    "title": "Den blå färden",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-04T15:10:00",
+    "url": "https://fyrisbiografen.se/den-bla-farden"
+  },
+  {
+    "title": "VÄRN",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-04T15:40:00",
+    "url": "https://fyrisbiografen.se/varn"
+  },
+  {
+    "title": "Hamnet",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-04T17:10:00",
+    "url": "https://fyrisbiografen.se/hamnet"
+  },
+  {
+    "title": "Hind Rajab - rösten från Gaza",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-04T17:40:00",
+    "url": "https://fyrisbiografen.se/hind-rajab-rosten-fran-gaza"
+  },
+  {
+    "title": "Die My Love",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-04T19:40:00",
+    "url": "https://fyrisbiografen.se/die-my-love"
+  },
+  {
+    "title": "Wuthering Heights",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-04T19:50:00",
+    "url": "https://fyrisbiografen.se/wuthering-heights"
+  },
+  {
+    "title": "Hamnet",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-05T13:00:00",
+    "url": "https://fyrisbiografen.se/hamnet"
+  },
+  {
+    "title": "VÄRN",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-05T13:10:00",
+    "url": "https://fyrisbiografen.se/varn"
+  },
+  {
+    "title": "Amrum",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-05T15:00:00",
+    "url": "https://fyrisbiografen.se/amrum"
+  },
+  {
+    "title": "Yalla Parkour",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-05T15:30:00",
+    "url": "https://fyrisbiografen.se/yalla-parkour"
+  },
+  {
+    "title": "Sentimental Value",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-05T17:10:00",
+    "url": "https://fyrisbiografen.se/sentimental-value"
+  },
+  {
+    "title": "ILOVERUSS",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-05T17:30:00",
+    "url": "https://fyrisbiografen.se/iloveruss"
+  },
+  {
+    "title": "Pillion",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-05T19:30:00",
+    "url": "https://fyrisbiografen.se/pillion"
+  },
+  {
+    "title": "Marty Supreme",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-05T19:50:00",
+    "url": "https://fyrisbiografen.se/marty-supreme"
   },
   {
     "title": "Sirât",
@@ -178,6 +424,18 @@
     "venue": "Fyrisbiografen",
     "date": "2026-03-08T19:40:00",
     "url": "https://fyrisbiografen.se/the-bride"
+  },
+  {
+    "title": "Romería",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-13T17:30:00",
+    "url": "https://fyrisbiografen.se/romería"
+  },
+  {
+    "title": "Begynnelser",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-13T17:40:00",
+    "url": "https://fyrisbiografen.se/begynnelser"
   },
   {
     "title": "Katanga: De dansande skorpionerna",
