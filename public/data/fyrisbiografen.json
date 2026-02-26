@@ -1,53 +1,5 @@
 [
   {
-    "title": "ILOVERUSS",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-25T13:00:00",
-    "url": "https://fyrisbiografen.se/iloveruss"
-  },
-  {
-    "title": "Kattriket",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-25T13:10:00",
-    "url": "https://fyrisbiografen.se/kattriket"
-  },
-  {
-    "title": "Amrum",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-25T15:00:00",
-    "url": "https://fyrisbiografen.se/amrum"
-  },
-  {
-    "title": "Den blå färden",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-25T15:30:00",
-    "url": "https://fyrisbiografen.se/den-bla-farden"
-  },
-  {
-    "title": "Sentimental Value",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-25T17:10:00",
-    "url": "https://fyrisbiografen.se/sentimental-value"
-  },
-  {
-    "title": "Mother",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-25T17:30:00",
-    "url": "https://fyrisbiografen.se/mother"
-  },
-  {
-    "title": "The Secret Agent",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-25T19:40:00",
-    "url": "https://fyrisbiografen.se/the-secret-agent"
-  },
-  {
-    "title": "Marty Supreme",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-25T19:50:00",
-    "url": "https://fyrisbiografen.se/marty-supreme"
-  },
-  {
     "title": "Den blå färden",
     "venue": "Fyrisbiografen",
     "date": "2026-02-26T13:00:00",
@@ -424,6 +376,12 @@
     "venue": "Fyrisbiografen",
     "date": "2026-03-08T19:40:00",
     "url": "https://fyrisbiografen.se/the-bride"
+  },
+  {
+    "title": "VÄRN",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-10T17:15:00",
+    "url": "https://fyrisbiografen.se/varn"
   },
   {
     "title": "Romería",
