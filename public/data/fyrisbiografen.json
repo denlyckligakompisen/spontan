@@ -1,41 +1,5 @@
 [
   {
-    "title": "Mother",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-27T15:30:00",
-    "url": "https://fyrisbiografen.se/mother"
-  },
-  {
-    "title": "Den blå färden",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-27T16:00:00",
-    "url": "https://fyrisbiografen.se/den-bla-farden"
-  },
-  {
-    "title": "VÄRN",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-27T17:45:00",
-    "url": "https://fyrisbiografen.se/varn"
-  },
-  {
-    "title": "Amrum",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-27T18:00:00",
-    "url": "https://fyrisbiografen.se/amrum"
-  },
-  {
-    "title": "The Secret Agent",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-27T19:40:00",
-    "url": "https://fyrisbiografen.se/the-secret-agent"
-  },
-  {
-    "title": "Hamnet",
-    "venue": "Fyrisbiografen",
-    "date": "2026-02-27T20:00:00",
-    "url": "https://fyrisbiografen.se/hamnet"
-  },
-  {
     "title": "Handbok för superhjältar",
     "venue": "Fyrisbiografen",
     "date": "2026-02-28T13:00:00",
@@ -312,10 +276,34 @@
     "url": "https://fyrisbiografen.se/operation-baver"
   },
   {
+    "title": "Handbok för superhjältar",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-08T13:00:00",
+    "url": "https://fyrisbiografen.se/handbok-for-superhjaltar"
+  },
+  {
+    "title": "Operation bäver",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-08T13:15:00",
+    "url": "https://fyrisbiografen.se/operation-baver"
+  },
+  {
     "title": "Flickorna",
     "venue": "Fyrisbiografen",
     "date": "2026-03-08T15:15:00",
     "url": "https://fyrisbiografen.se/flickorna"
+  },
+  {
+    "title": "Hind Rajab - rösten från Gaza",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-08T15:30:00",
+    "url": "https://fyrisbiografen.se/hind-rajab-rosten-fran-gaza"
+  },
+  {
+    "title": "Unga mödrar",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-08T17:30:00",
+    "url": "https://fyrisbiografen.se/unga-modrar"
   },
   {
     "title": "Aktivister",
@@ -328,6 +316,12 @@
     "venue": "Fyrisbiografen",
     "date": "2026-03-08T19:40:00",
     "url": "https://fyrisbiografen.se/the-bride"
+  },
+  {
+    "title": "Wuthering Heights",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-08T19:50:00",
+    "url": "https://fyrisbiografen.se/wuthering-heights"
   },
   {
     "title": "VÄRN",
