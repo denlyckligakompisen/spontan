@@ -9,15 +9,15 @@ export default function Intro() {
             "(prefers-reduced-motion: reduce)"
         ).matches;
 
-        // Start floating after a short hold
+        // Start floating immediately
         const floatTimeout = setTimeout(() => {
             setIsFloating(true);
-        }, prefersReducedMotion ? 0 : 100);
+        }, 0);
 
-        // Unmount after floating animation
+        // Unmount after floating animation (match the 300ms CSS transition)
         const hideTimeout = setTimeout(() => {
             setHidden(true);
-        }, prefersReducedMotion ? 0 : 500);
+        }, 350);
 
         return () => {
             clearTimeout(floatTimeout);

@@ -28,42 +28,63 @@ export const calculateDistance = (lat1, lon1, lat2, lon2) => {
  * - Prefer Songkick artist data
  * - Prefer Ticketmaster coordinates
  */
-export const mergeAndDedupeEvents = (tmEvents, katalinEvents, userLat, userLon) => {
-    const merged = [...tmEvents, ...katalinEvents];
+export const mergeAndDedupeEvents = (tmEvents, otherEvents, userLat, userLon) => {
+    const merged = [...tmEvents, ...otherEvents];
     const result = [];
 
-    merged.forEach(event => {
-        const eventDate = new Date(event.startDate);
+    // Group by simple date string to avoid O(n^2) over the whole list
+    const dateBuckets = {};
 
-        const duplicateIndex = result.findIndex(existing => {
+    merged.forEach(event => {
+        if (!event.startDate) {
+            result.push({ ...event });
+            return;
+        }
+
+        const eventDate = new Date(event.startDate);
+        if (isNaN(eventDate.getTime())) {
+            result.push({ ...event });
+            return;
+        }
+        const dayKey = eventDate.toISOString().split('T')[0];
+
+        if (!dateBuckets[dayKey]) dateBuckets[dayKey] = [];
+        const bucket = dateBuckets[dayKey];
+
+        const duplicateIndex = bucket.findIndex(existing => {
+            // Quick time check first (within ~2.4 hours)
             const existingDate = new Date(existing.startDate);
             const timeDiff = Math.abs(eventDate - existingDate) / (1000 * 60 * 60 * 24);
+            if (timeDiff > 0.1) return false;
 
+            // Artist check
             const artistMatch = event.artist && existing.artist &&
                 (event.artist.toLowerCase().includes(existing.artist.toLowerCase()) ||
                     existing.artist.toLowerCase().includes(event.artist.toLowerCase()));
 
+            if (!artistMatch) return false;
+
+            // Expensive distance check only if artist matches
             const distBetweenVenues = calculateDistance(
                 event.latitude, event.longitude,
                 existing.latitude, existing.longitude
             );
 
-            const venueMatch = distBetweenVenues < 1;
-
-            return artistMatch && venueMatch && timeDiff <= 0.1;
+            return distBetweenVenues < 1;
         });
 
         if (duplicateIndex !== -1) {
-            const existing = result[duplicateIndex];
+            const existing = bucket[duplicateIndex];
             existing.isMerged = true;
             existing.endDate = existing.endDate || event.endDate;
-            // Merge logic: prefer Ticketmaster coordinates
             if (event.source === 'ticketmaster') {
                 existing.latitude = event.latitude || existing.latitude;
                 existing.longitude = event.longitude || existing.longitude;
             }
         } else {
-            result.push({ ...event });
+            const newEvent = { ...event };
+            bucket.push(newEvent);
+            result.push(newEvent);
         }
     });
 
