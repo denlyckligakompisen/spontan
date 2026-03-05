@@ -1,5 +1,4 @@
 import React from 'react';
-import { RotateCcw } from 'lucide-react';
 import { formatTime, isLive } from '../utils/dateUtils';
 
 const EventBundle = ({
@@ -70,10 +69,6 @@ const EventBundle = ({
                     {item.events.map((subEvent, subIndex) => {
                         const startTime = formatTime(subEvent.startDate);
                         const endTime = subEvent.endDate ? formatTime(subEvent.endDate) : null;
-                        const now = new Date();
-                        const isPast = subEvent.endDate
-                            ? new Date(subEvent.endDate) < now
-                            : new Date(subEvent.startDate) < now;
                         const live = isLive(subEvent.startDate, subEvent.endDate);
 
                         return (
@@ -93,11 +88,8 @@ const EventBundle = ({
                                 <div className="event-meta-right">
                                     <span className="event-date-text">
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                                            {isPast && (
-                                                <RotateCcw size={14} style={{ opacity: 0.5 }} />
-                                            )}
                                             {live && <span className="live-pulse" title="Börjar snart/Pågår"></span>}
-                                            <div className={endTime ? "time-stacked" : ""} style={{ opacity: isPast ? 0.6 : 1, textDecoration: isPast ? 'line-through' : 'none' }}>
+                                            <div className={endTime ? "time-stacked" : ""}>
                                                 <span>{startTime}</span>
                                                 {endTime && <span className="event-time-end">-{endTime}</span>}
                                             </div>
