@@ -234,4 +234,21 @@ export const fetchTicksterEvents = () =>
         url: event.url
     }));
 
+export const fetchMeetupEvents = () =>
+    fetchLocalData('meetup-events.json', 'Meetup', (event) => ({
+        id: `meetup-${event.url}`,
+        source: "meetup",
+        name: event.title,
+        artist: event.title,
+        venue: event.venue || "Uppsala",
+        city: "Uppsala",
+        country: "Sweden",
+        latitude: event.latitude || 59.8600,
+        longitude: event.longitude || 17.6400,
+        startDate: event.startDate,
+        endDate: null,
+        url: event.url
+    }));
+
+
 

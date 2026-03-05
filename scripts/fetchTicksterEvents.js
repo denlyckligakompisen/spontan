@@ -35,26 +35,37 @@ async function fetchEventDetails(url) {
         const dom = new JSDOM(text);
         const doc = dom.window.document;
 
-        // Try to find Venue and Time
+        // Strategy 1: Schema.org Metadata (Highly reliable)
+        const startDateMeta = doc.querySelector('meta[itemprop="startDate"], [itemprop="startDate"]');
+        let time = null;
         let venue = null;
-        const bodyText = doc.body.textContent;
 
-        // Strategy 1: Look for "Plats:" or "Lokal:"
-        const metaItems = Array.from(doc.querySelectorAll("li, div, p, span"));
-        for (const el of metaItems) {
-            const txt = el.textContent.trim();
-            if (txt.startsWith("Plats:")) {
-                venue = txt.replace("Plats:", "").trim();
-                break;
+        if (startDateMeta) {
+            const fullDate = startDateMeta.getAttribute('content');
+            if (fullDate && fullDate.includes('T')) {
+                time = fullDate.split('T')[1].substring(0, 5); // HH:MM
             }
-            if (txt.startsWith("Lokal:")) {
-                venue = txt.replace("Lokal:", "").trim();
-                break;
-            }
-            // Often just "Plats" in a label and value next to it
         }
 
-        // Strategy 2: Look for fa-map-marker icon container
+        const venueNameEl = doc.querySelector('[itemprop="location"] [itemprop="name"], [itemprop="address"] [itemprop="name"]');
+        if (venueNameEl) {
+            venue = venueNameEl.textContent.trim();
+        }
+
+        // Strategy 2: Look for "Plats:" or "Lokal:" if not found
+        if (!venue) {
+            const metaItems = Array.from(doc.querySelectorAll("li, div, p, span"));
+            for (const el of metaItems) {
+                const txt = el.textContent.trim();
+                const lowerTxt = txt.toLowerCase();
+                if (lowerTxt.startsWith("plats:") || lowerTxt.startsWith("lokal:")) {
+                    venue = txt.split(":")[1].trim();
+                    break;
+                }
+            }
+        }
+
+        // Strategy 3: Look for icons
         if (!venue) {
             const icon = doc.querySelector(".fa-map-marker-alt, .fa-map-marker, .icon-location-pin");
             if (icon && icon.parentElement) {
@@ -62,32 +73,17 @@ async function fetchEventDetails(url) {
             }
         }
 
-        // Strategy 3: Common Tickster header structure
-        if (!venue) {
-            // Sometimes it's in a .hero-location or similar
-            const locEl = doc.querySelector(".event-header-location, .hero-location, [itemprop='location']");
-            if (locEl) venue = locEl.textContent.trim();
-        }
-
         // Clean up venue
         if (venue) {
-            venue = venue.replace(/ i Uppsala$/i, "").replace(/, Uppsala$/i, "").trim();
+            venue = venue.replace(/ i Uppsala$/i, "").replace(/, Uppsala$/i, "").replace(/\s+/g, " ").trim();
         }
 
-        // Fallback: Check if venue is in the header or sub-header
-        if (!venue) {
-            // Often getting venue from the list item is safer if detail fails
-        }
-
-        // Time
-        let time = null;
-        // Look for time pattern in the whole text if not found in specific element
-        const timeMatch = bodyText.match(/(\d{1,2}[:.]\d{2})/);
-        if (timeMatch) {
-            // This is risky, might catch random numbers. 
-            // Better to rely on "Kl", "Tid", "Öppnar"
-            const explicitTime = bodyText.match(/(?:kl\.?|Tid:|Öppnar)\s*(\d{1,2}[:.]\d{2})/i);
-            if (explicitTime) time = explicitTime[1];
+        // Fallback for Time if not found in meta
+        if (!time) {
+            const explicitTime = bodyText.match(/(?:kl\.?|Tid:|Öppnar|Startar|Start)\s*(\d{1,2}[:.]\d{2})/i);
+            if (explicitTime) {
+                time = explicitTime[1].replace('.', ':');
+            }
         }
 
         return { venue, time };

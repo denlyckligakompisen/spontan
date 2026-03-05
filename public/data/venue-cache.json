@@ -266,5 +266,41 @@
   "Gottsunda kyrka, Uppsala, Sweden": {
     "lat": 59.8092791,
     "lon": 17.6280083
+  },
+  "Bröd & Salt, Uppsala, Sweden": {
+    "lat": 59.8578928,
+    "lon": 17.6398158
+  },
+  "O'Neill's, Uppsala, Sweden": {
+    "lat": 59.8572528,
+    "lon": 17.6435434
+  },
+  "Munkgatan 3, Uppsala, Sweden": {
+    "lat": 59.8546305,
+    "lon": 17.6394577
+  },
+  "Magasin X, Uppsala, Sweden": {
+    "lat": 59.8487686,
+    "lon": 17.6524889
+  },
+  "Kafferummet Storken, Uppsala, Sweden": {
+    "lat": 59.8582004,
+    "lon": 17.6389802
+  },
+  "Edith Södergrans gata 7, Uppsala, Sweden": {
+    "lat": 59.8836959,
+    "lon": 17.663896
+  },
+  "Uppsala Brygghus, Uppsala, Sweden": {
+    "lat": 59.8543878,
+    "lon": 17.6630254
+  },
+  "Flustret Uppsala, Uppsala, Sweden": {
+    "lat": 59.853961,
+    "lon": 17.6410724
+  },
+  "Uppsala Friidrottsarena, Uppsala, Sweden": {
+    "lat": 59.8815426,
+    "lon": 17.6625386
   }
 }

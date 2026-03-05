@@ -8,7 +8,8 @@ import {
     fetchNordiskBio,
     fetchFyrisbiografen,
     fetchUppsalaStadsteaterEvents,
-    fetchTicksterEvents
+    fetchTicksterEvents,
+    fetchMeetupEvents
 } from '../utils/api';
 import { mergeAndDedupeEvents } from '../utils/dedupe';
 import { getFilteredEventsForView, groupEvents } from '../utils/eventUtils';
@@ -38,7 +39,8 @@ export const useEvents = (activeCategory, searchQuery, visibleCount, now) => {
                 fetchNordiskBio(),
                 fetchFyrisbiografen(),
                 fetchUppsalaStadsteaterEvents(),
-                fetchTicksterEvents()
+                fetchTicksterEvents(),
+                fetchMeetupEvents()
             ]);
 
             const fulfilledEvents = results.map(r =>
