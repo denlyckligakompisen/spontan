@@ -6,15 +6,21 @@ const EventBundle = ({
     item,
     viewType,
     expandedGroups,
+    collapsedGroups,
     toggleGroup,
-    isLastOfLastDay
+    toggleCollapse,
+    isLastOfLastDay,
+    onlyMovies
 }) => {
     const isExpanded = expandedGroups.has(item.key);
+    const isCollapsed = collapsedGroups.has(item.key);
     const count = item.events.length;
     const repEvent = item.events[0];
     const isIdagView = viewType === 'idag';
     const isFyris = item.source === 'fyrisbiografen';
-    const effectiveIsExpanded = isExpanded || (isIdagView && count === 1); // Allow expansion even on Idag
+
+    // It's expanded if manually expanded OR (it's only movies AND not manually collapsed)
+    const effectiveIsExpanded = isExpanded || (onlyMovies && !isCollapsed) || (isIdagView && count === 1 && !isCollapsed);
 
     const disablePreClick = viewType === 'kommande';
 
@@ -25,7 +31,13 @@ const EventBundle = ({
                 onClick={(e) => {
                     if (disablePreClick) return;
                     e.preventDefault();
-                    toggleGroup(item.key);
+                    if (effectiveIsExpanded && !isExpanded) {
+                        // If it's expanded because of onlyMovies/Idag rule, we use toggleCollapse to hide it
+                        toggleCollapse(item.key);
+                    } else {
+                        // Otherwise use the normal toggle
+                        toggleGroup(item.key);
+                    }
                 }}
                 style={{ cursor: disablePreClick ? 'default' : 'pointer' }}
             >

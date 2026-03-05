@@ -17,6 +17,7 @@ function App() {
   const [visibleCount, setVisibleCount] = useState(25);
   const [activeCategory, setActiveCategory] = useState('alla');
   const [expandedGroups, setExpandedGroups] = useState(new Set());
+  const [collapsedGroups, setCollapsedGroups] = useState(new Set());
   const [highlightIds] = useState(new Set());
   // Use a 'now' ticker to force re-renders every minute for live status
   const [nowTick, setNowTick] = useState(Date.now());
@@ -36,7 +37,7 @@ function App() {
     eventsHelg,
     eventsKommande,
     events
-  } = useEvents(activeCategory, searchQuery, visibleCount);
+  } = useEvents(activeCategory, searchQuery, visibleCount, nowTick);
 
   // Update 'now' every 60 seconds to refresh live status/pulsing dots
   useEffect(() => {
@@ -105,6 +106,27 @@ function App() {
       else next.add(groupId);
       return next;
     });
+    // Remove from collapsed if we are manually toggling
+    setCollapsedGroups(prev => {
+      const next = new Set(prev);
+      next.delete(groupId);
+      return next;
+    });
+  };
+
+  const toggleCollapse = (groupId) => {
+    setCollapsedGroups(prev => {
+      const next = new Set(prev);
+      if (next.has(groupId)) next.delete(groupId);
+      else next.add(groupId);
+      return next;
+    });
+    // Ensure it's not in expanded if we are collapsing
+    setExpandedGroups(prev => {
+      const next = new Set(prev);
+      next.delete(groupId);
+      return next;
+    });
   };
 
   const hasFilters = view !== 'info';
@@ -146,7 +168,9 @@ function App() {
                 searchQuery={searchQuery}
                 highlightIds={highlightIds}
                 expandedGroups={expandedGroups}
+                collapsedGroups={collapsedGroups}
                 toggleGroup={toggleGroup}
+                toggleCollapse={toggleCollapse}
               />
             </div>
           </section>
@@ -162,7 +186,9 @@ function App() {
                 searchQuery={searchQuery}
                 highlightIds={highlightIds}
                 expandedGroups={expandedGroups}
+                collapsedGroups={collapsedGroups}
                 toggleGroup={toggleGroup}
+                toggleCollapse={toggleCollapse}
               />
             </div>
           </section>
@@ -178,7 +204,9 @@ function App() {
                 searchQuery={searchQuery}
                 highlightIds={highlightIds}
                 expandedGroups={expandedGroups}
+                collapsedGroups={collapsedGroups}
                 toggleGroup={toggleGroup}
+                toggleCollapse={toggleCollapse}
                 loaderRef={loaderRefKommande}
               />
             </div>

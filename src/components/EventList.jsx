@@ -14,7 +14,9 @@ const EventList = ({
     searchQuery,
     highlightIds,
     expandedGroups,
+    collapsedGroups,
     toggleGroup,
+    toggleCollapse,
     loaderRef
 }) => {
     if (loading && eventsList.length === 0) {
@@ -54,6 +56,7 @@ const EventList = ({
             <div className="event-list-venue">
                 {groups.map(group => {
                     const processedItems = processItemsForBundling(group.events, viewType);
+                    const onlyMovies = processedItems.every(item => item.type === 'bundle');
 
                     return (
                         <React.Fragment key={group.month}>
@@ -68,8 +71,11 @@ const EventList = ({
                                             item={item}
                                             viewType={viewType}
                                             expandedGroups={expandedGroups}
+                                            collapsedGroups={collapsedGroups}
                                             toggleGroup={toggleGroup}
+                                            toggleCollapse={toggleCollapse}
                                             isLastOfLastDay={isLastOfLastDay}
+                                            onlyMovies={onlyMovies}
                                         />
                                     );
                                 } else {

@@ -4,13 +4,16 @@ import { formatTime, isLive, getWeekendRange } from './dateUtils';
  * Filters events based on viewType, searchQuery, and activeCategory.
  * Handles past event hiding and specific source exclusions.
  */
-export const getFilteredEventsForView = (events, viewType, searchQuery, activeCategory) => {
-    const now = new Date();
+export const getFilteredEventsForView = (events, viewType, searchQuery, activeCategory, nowParam) => {
+    const now = nowParam ? new Date(nowParam) : new Date();
     const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
     const tomorrow = new Date(today);
     tomorrow.setDate(tomorrow.getDate() + 1);
 
     return events.filter(event => {
+        const eventDate = new Date(event.startDate);
+        if (isNaN(eventDate.getTime())) return false;
+
         // Source exclusions
         if ((viewType === 'kommande' || viewType === 'helg') && ['fyrisbiografen', 'nordiskbio'].includes(event.source)) {
             return false;
@@ -47,12 +50,17 @@ export const getFilteredEventsForView = (events, viewType, searchQuery, activeCa
         // Hide past events
         if (event.endDate) {
             if (new Date(event.endDate) < now) return false;
-        } else if (viewType === 'idag') {
-            // Strict check for Today view even without end date (ambiguous but following request)
-            // Note: If no end date, we generally keep it for the day.
+        } else {
+            // Hide if start time has passed
+            // Special case: 00:00 usually means date-only/time unknown, keep for the whole day
+            const isTimeSpecified = eventDate.getHours() !== 0 || eventDate.getMinutes() !== 0;
+            if (isTimeSpecified) {
+                if (eventDate < now) return false;
+            } else {
+                if (eventDate < today) return false;
+            }
         }
 
-        const eventDate = new Date(event.startDate);
         if (viewType === 'idag') {
             return eventDate >= today && eventDate < tomorrow;
         } else if (viewType === 'helg') {

@@ -20,7 +20,7 @@ const REFRESH_INTERVAL = 600000; // 10 minutes
 /**
  * Custom hook to manage event data, filtering, and grouping.
  */
-export const useEvents = (activeCategory, searchQuery, visibleCount) => {
+export const useEvents = (activeCategory, searchQuery, visibleCount, now) => {
     const [events, setEvents] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -69,16 +69,16 @@ export const useEvents = (activeCategory, searchQuery, visibleCount) => {
 
     // Memoize filtered and grouped events
     const eventsIdag = useMemo(() =>
-        getFilteredEventsForView(events, 'idag', searchQuery, activeCategory),
-        [events, activeCategory, searchQuery]
+        getFilteredEventsForView(events, 'idag', searchQuery, activeCategory, now),
+        [events, activeCategory, searchQuery, now]
     );
     const eventsHelg = useMemo(() =>
-        getFilteredEventsForView(events, 'helg', searchQuery, activeCategory),
-        [events, activeCategory, searchQuery]
+        getFilteredEventsForView(events, 'helg', searchQuery, activeCategory, now),
+        [events, activeCategory, searchQuery, now]
     );
     const eventsKommande = useMemo(() =>
-        getFilteredEventsForView(events, 'kommande', searchQuery, activeCategory),
-        [events, activeCategory, searchQuery]
+        getFilteredEventsForView(events, 'kommande', searchQuery, activeCategory, now),
+        [events, activeCategory, searchQuery, now]
     );
 
     const groupsIdag = useMemo(() => groupEvents(eventsIdag, 'idag'), [eventsIdag]);

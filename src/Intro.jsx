@@ -12,12 +12,12 @@ export default function Intro() {
         // Start floating after a short hold
         const floatTimeout = setTimeout(() => {
             setIsFloating(true);
-        }, prefersReducedMotion ? 0 : 400);
+        }, prefersReducedMotion ? 0 : 100);
 
         // Unmount after floating animation
         const hideTimeout = setTimeout(() => {
             setHidden(true);
-        }, prefersReducedMotion ? 0 : 1000);
+        }, prefersReducedMotion ? 0 : 500);
 
         return () => {
             clearTimeout(floatTimeout);
