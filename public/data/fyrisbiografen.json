@@ -1,53 +1,5 @@
 [
   {
-    "title": "Hamnet",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-05T13:00:00",
-    "url": "https://fyrisbiografen.se/hamnet"
-  },
-  {
-    "title": "VÄRN",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-05T13:10:00",
-    "url": "https://fyrisbiografen.se/varn"
-  },
-  {
-    "title": "Amrum",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-05T15:00:00",
-    "url": "https://fyrisbiografen.se/amrum"
-  },
-  {
-    "title": "Yalla Parkour",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-05T15:30:00",
-    "url": "https://fyrisbiografen.se/yalla-parkour"
-  },
-  {
-    "title": "Sentimental Value",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-05T17:10:00",
-    "url": "https://fyrisbiografen.se/sentimental-value"
-  },
-  {
-    "title": "ILOVERUSS",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-05T17:30:00",
-    "url": "https://fyrisbiografen.se/iloveruss"
-  },
-  {
-    "title": "Pillion",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-05T19:30:00",
-    "url": "https://fyrisbiografen.se/pillion"
-  },
-  {
-    "title": "Marty Supreme",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-05T19:50:00",
-    "url": "https://fyrisbiografen.se/marty-supreme"
-  },
-  {
     "title": "Den blå färden",
     "venue": "Fyrisbiografen",
     "date": "2026-03-06T15:30:00",
@@ -376,5 +328,11 @@
     "venue": "Fyrisbiografen",
     "date": "2026-03-20T20:00:00",
     "url": "https://fyrisbiografen.se/mecenaten"
+  },
+  {
+    "title": "Celtic Utopia",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-25T19:30:00",
+    "url": "https://fyrisbiografen.se/celtic-utopia"
   }
 ]
