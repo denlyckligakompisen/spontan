@@ -5,7 +5,7 @@
     "venue": "Uppsala Konstmuseum",
     "url": "https://destinationuppsala.se/event/art-night-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.043Z",
+    "fetched_at": "2026-03-14T01:09:26.001Z",
     "latitude": 59.8532485,
     "longitude": 17.6351548
   },
@@ -15,27 +15,17 @@
     "venue": "Uppsala Konstmuseum",
     "url": "https://destinationuppsala.se/event/art-night-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.044Z",
+    "fetched_at": "2026-03-14T01:09:26.002Z",
     "latitude": 59.8532485,
     "longitude": 17.6351548
   },
   {
-    "title": "MARILYN",
-    "date": "13 mars 2026 kl. 12:15 (lunchkonsert) och 19:00 (kvällskonsert)Var: UKK – Sal B, UppsalaArrangör: Uppsala Konsert & KongressWebbsida: www.ukk.se/program/marilyn",
+    "title": "Hemvärnets Musikkår Uppsala – Flygvapnet 100 år",
+    "date": "14 mars kl. 14:00Var: Uppsala Konsert & Kongress, Sal BArrangör: FörsvarsmaktenWebbsida: https://ukk.se/hemvarnets-musikkar-uppsala-flygvapnet-100-ar/",
     "venue": "Uppsala Konsert & Kongress",
-    "url": "https://destinationuppsala.se/event/marilyn/",
+    "url": "https://destinationuppsala.se/event/hemvarnets-musikkar-uppsala-flygvapnet-100-ar/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.045Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
-  },
-  {
-    "title": "MARILYN",
-    "date": "13 mars 2026 kl. 12:15 (lunchkonsert) och 19:00 (kvällskonsert)Var: UKK – Sal B, UppsalaArrangör: Uppsala Konsert & KongressWebbsida: www.ukk.se/program/marilyn",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://destinationuppsala.se/event/marilyn/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.046Z",
+    "fetched_at": "2026-03-14T01:09:26.004Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -45,17 +35,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/hemvarnets-musikkar-uppsala-flygvapnet-100-ar/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.056Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
-  },
-  {
-    "title": "Hemvärnets Musikkår Uppsala – Flygvapnet 100 år",
-    "date": "14 mars kl. 14:00Var: Uppsala Konsert & Kongress, Sal BArrangör: FörsvarsmaktenWebbsida: https://ukk.se/hemvarnets-musikkar-uppsala-flygvapnet-100-ar/",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://destinationuppsala.se/event/hemvarnets-musikkar-uppsala-flygvapnet-100-ar/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.057Z",
+    "fetched_at": "2026-03-14T01:09:26.005Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -65,7 +45,7 @@
     "venue": "Frälsningsarmén Uppsala",
     "url": "https://destinationuppsala.se/event/samuel-ljungblahd-moter-sandviken-big-band/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.057Z"
+    "fetched_at": "2026-03-14T01:09:26.006Z"
   },
   {
     "title": "Samuel Ljungblahd möter Sandviken Big Band",
@@ -73,7 +53,7 @@
     "venue": "Frälsningsarmén Uppsala",
     "url": "https://destinationuppsala.se/event/samuel-ljungblahd-moter-sandviken-big-band/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.058Z"
+    "fetched_at": "2026-03-14T01:09:26.015Z"
   },
   {
     "title": "Framåt mars…ch!",
@@ -81,7 +61,7 @@
     "venue": "Gottsunda kyrka",
     "url": "https://destinationuppsala.se/event/framat-mars-ch/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.059Z",
+    "fetched_at": "2026-03-14T01:09:26.016Z",
     "latitude": 59.8092791,
     "longitude": 17.6280083
   },
@@ -91,7 +71,7 @@
     "venue": "Gottsunda kyrka",
     "url": "https://destinationuppsala.se/event/framat-mars-ch/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.059Z",
+    "fetched_at": "2026-03-14T01:09:26.017Z",
     "latitude": 59.8092791,
     "longitude": 17.6280083
   },
@@ -101,7 +81,7 @@
     "venue": "Kulturoasen",
     "url": "https://destinationuppsala.se/event/depeche-modes-violator-live-the-new-dress-feat-emmon/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.060Z",
+    "fetched_at": "2026-03-14T01:09:26.017Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
   },
@@ -111,29 +91,9 @@
     "venue": "Kulturoasen",
     "url": "https://destinationuppsala.se/event/depeche-modes-violator-live-the-new-dress-feat-emmon/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.061Z",
+    "fetched_at": "2026-03-14T01:09:26.018Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
-  },
-  {
-    "title": "Prime Orchestra – Rock Sympho Show",
-    "date": "Söndag 15 mars 2026, kl. 19:00Var: Uppsala Konsert & Kongress – Stora salenArrangör: Kiart SverigeWebbsida: https://www.ukk.se/program/prime-orchestra-rock-sympho-show/",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://destinationuppsala.se/event/prime-orchestra-rock-sympho-show/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.062Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
-  },
-  {
-    "title": "Prime Orchestra – Rock Sympho Show",
-    "date": "Söndag 15 mars 2026, kl. 19:00Var: Uppsala Konsert & Kongress – Stora salenArrangör: Kiart SverigeWebbsida: https://www.ukk.se/program/prime-orchestra-rock-sympho-show/",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://destinationuppsala.se/event/prime-orchestra-rock-sympho-show/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.062Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
   },
   {
     "title": "En resa i rymden",
@@ -141,7 +101,7 @@
     "venue": "Uppsala",
     "url": "https://destinationuppsala.se/event/en-resa-i-rymden/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.063Z",
+    "fetched_at": "2026-03-14T01:09:26.019Z",
     "latitude": 59.8586126,
     "longitude": 17.6387436
   },
@@ -151,17 +111,27 @@
     "venue": "Uppsala",
     "url": "https://destinationuppsala.se/event/en-resa-i-rymden/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.063Z",
+    "fetched_at": "2026-03-14T01:09:26.019Z",
     "latitude": 59.8586126,
     "longitude": 17.6387436
   },
   {
-    "title": "Smash Into Pieces – Live i Uppsala",
-    "date": "18 mars, kl. 18.00Var: UKK, Sal D (ståplats), UppsalaArrangör: Kaliber LiveWebbsida: ukk.se",
+    "title": "Prime Orchestra – Rock Sympho Show",
+    "date": "Söndag 15 mars 2026, kl. 19:00Var: Uppsala Konsert & Kongress – Stora salenArrangör: Kiart SverigeWebbsida: https://www.ukk.se/program/prime-orchestra-rock-sympho-show/",
     "venue": "Uppsala Konsert & Kongress",
-    "url": "https://destinationuppsala.se/event/smash-into-pieces-live-i-uppsala/",
+    "url": "https://destinationuppsala.se/event/prime-orchestra-rock-sympho-show/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.064Z",
+    "fetched_at": "2026-03-14T01:09:26.020Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Prime Orchestra – Rock Sympho Show",
+    "date": "Söndag 15 mars 2026, kl. 19:00Var: Uppsala Konsert & Kongress – Stora salenArrangör: Kiart SverigeWebbsida: https://www.ukk.se/program/prime-orchestra-rock-sympho-show/",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://destinationuppsala.se/event/prime-orchestra-rock-sympho-show/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:26.021Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -171,7 +141,17 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/smash-into-pieces-live-i-uppsala/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.064Z",
+    "fetched_at": "2026-03-14T01:09:26.021Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Smash Into Pieces – Live i Uppsala",
+    "date": "18 mars, kl. 18.00Var: UKK, Sal D (ståplats), UppsalaArrangör: Kaliber LiveWebbsida: ukk.se",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://destinationuppsala.se/event/smash-into-pieces-live-i-uppsala/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:26.022Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -181,7 +161,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/uppsala-kammarorkester-gastspel-med-norrkopings-symfoniorkester/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.065Z",
+    "fetched_at": "2026-03-14T01:09:26.022Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -191,63 +171,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/uppsala-kammarorkester-gastspel-med-norrkopings-symfoniorkester/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.065Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
-  },
-  {
-    "title": "Newroz – Årets fest 2026",
-    "date": "21 mars 2026, kl. 20:00Var: Uppsala Konsert & Kongress, Sal DArrangör: Steranova i samarbete med Uppsala Konsert & KongressWebbsida: https://ukk.se/newroz-2026/",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://destinationuppsala.se/event/newroz-arets-fest-2026/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.066Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
-  },
-  {
-    "title": "Newroz – Årets fest 2026",
-    "date": "21 mars 2026, kl. 20:00Var: Uppsala Konsert & Kongress, Sal DArrangör: Steranova i samarbete med Uppsala Konsert & KongressWebbsida: https://ukk.se/newroz-2026/",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://destinationuppsala.se/event/newroz-arets-fest-2026/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.066Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
-  },
-  {
-    "title": "Svenska Rocklegender på Tensta Bygdegård",
-    "date": "21 mars 2026, kl. 19.00–22.00Var: Tensta Bygdegård, 743 93Arrangör: Kulturhjältarna i samarbete med Studiefrämjandet UppsalaWebbsida: https://www.facebook.com/events/1862562034685149",
-    "venue": "Tensta bygdegård",
-    "url": "https://destinationuppsala.se/event/svenska-rocklegender-pa-tensta-bygdegard/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.067Z"
-  },
-  {
-    "title": "Svenska Rocklegender på Tensta Bygdegård",
-    "date": "21 mars 2026, kl. 19.00–22.00Var: Tensta Bygdegård, 743 93Arrangör: Kulturhjältarna i samarbete med Studiefrämjandet UppsalaWebbsida: https://www.facebook.com/events/1862562034685149",
-    "venue": "Tensta bygdegård",
-    "url": "https://destinationuppsala.se/event/svenska-rocklegender-pa-tensta-bygdegard/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.067Z"
-  },
-  {
-    "title": "The Ukulele Orchestra of Great Britain 2026",
-    "date": "21 mars 2026, kl. 19:00Var: Uppsala Konsert & Kongress, Stora salenArrangör: Programbolaget & Kesselofski and FiskeWebbsida: www.ukk.se/program/the-ukulele-orchestra-of-great-britain-2026",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://destinationuppsala.se/event/the-ukulele-orchestra-of-great-britain-2026/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.068Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
-  },
-  {
-    "title": "The Ukulele Orchestra of Great Britain 2026",
-    "date": "21 mars 2026, kl. 19:00Var: Uppsala Konsert & Kongress, Stora salenArrangör: Programbolaget & Kesselofski and FiskeWebbsida: www.ukk.se/program/the-ukulele-orchestra-of-great-britain-2026",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://destinationuppsala.se/event/the-ukulele-orchestra-of-great-britain-2026/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.068Z",
+    "fetched_at": "2026-03-14T01:09:26.023Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -257,7 +181,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/ebba-forsberg-amen-amen-amen/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.069Z",
+    "fetched_at": "2026-03-14T01:09:26.023Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -267,7 +191,63 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/ebba-forsberg-amen-amen-amen/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.069Z",
+    "fetched_at": "2026-03-14T01:09:26.024Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Newroz – Årets fest 2026",
+    "date": "21 mars 2026, kl. 20:00Var: Uppsala Konsert & Kongress, Sal DArrangör: Steranova i samarbete med Uppsala Konsert & KongressWebbsida: https://ukk.se/newroz-2026/",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://destinationuppsala.se/event/newroz-arets-fest-2026/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:26.024Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Newroz – Årets fest 2026",
+    "date": "21 mars 2026, kl. 20:00Var: Uppsala Konsert & Kongress, Sal DArrangör: Steranova i samarbete med Uppsala Konsert & KongressWebbsida: https://ukk.se/newroz-2026/",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://destinationuppsala.se/event/newroz-arets-fest-2026/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:26.025Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Svenska Rocklegender på Tensta Bygdegård",
+    "date": "21 mars 2026, kl. 19.00–22.00Var: Tensta Bygdegård, 743 93Arrangör: Kulturhjältarna i samarbete med Studiefrämjandet UppsalaWebbsida: https://www.facebook.com/events/1862562034685149",
+    "venue": "Tensta bygdegård",
+    "url": "https://destinationuppsala.se/event/svenska-rocklegender-pa-tensta-bygdegard/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:26.025Z"
+  },
+  {
+    "title": "Svenska Rocklegender på Tensta Bygdegård",
+    "date": "21 mars 2026, kl. 19.00–22.00Var: Tensta Bygdegård, 743 93Arrangör: Kulturhjältarna i samarbete med Studiefrämjandet UppsalaWebbsida: https://www.facebook.com/events/1862562034685149",
+    "venue": "Tensta bygdegård",
+    "url": "https://destinationuppsala.se/event/svenska-rocklegender-pa-tensta-bygdegard/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:26.026Z"
+  },
+  {
+    "title": "The Ukulele Orchestra of Great Britain 2026",
+    "date": "21 mars 2026, kl. 19:00Var: Uppsala Konsert & Kongress, Stora salenArrangör: Programbolaget & Kesselofski and FiskeWebbsida: www.ukk.se/program/the-ukulele-orchestra-of-great-britain-2026",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://destinationuppsala.se/event/the-ukulele-orchestra-of-great-britain-2026/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:26.026Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "The Ukulele Orchestra of Great Britain 2026",
+    "date": "21 mars 2026, kl. 19:00Var: Uppsala Konsert & Kongress, Stora salenArrangör: Programbolaget & Kesselofski and FiskeWebbsida: www.ukk.se/program/the-ukulele-orchestra-of-great-britain-2026",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://destinationuppsala.se/event/the-ukulele-orchestra-of-great-britain-2026/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:26.027Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -277,7 +257,7 @@
     "venue": "Kulturoasen",
     "url": "https://destinationuppsala.se/event/markus-berjlund-vackra-tvivlares-band/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.070Z",
+    "fetched_at": "2026-03-14T01:09:26.027Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
   },
@@ -287,7 +267,7 @@
     "venue": "Kulturoasen",
     "url": "https://destinationuppsala.se/event/markus-berjlund-vackra-tvivlares-band/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.070Z",
+    "fetched_at": "2026-03-14T01:09:26.028Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
   },
@@ -297,7 +277,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/gold-tribute-abba-gardestad-vi/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.071Z",
+    "fetched_at": "2026-03-14T01:09:26.028Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -307,7 +287,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/gold-tribute-abba-gardestad-vi/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:52.072Z",
+    "fetched_at": "2026-03-14T01:09:26.028Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -317,7 +297,7 @@
     "venue": "Uppsala Stadsteater",
     "url": "https://destinationuppsala.se/event/bonnie-clyde/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.200Z",
+    "fetched_at": "2026-03-14T01:09:26.029Z",
     "latitude": 59.8589349,
     "longitude": 17.6429753
   },
@@ -327,7 +307,7 @@
     "venue": "Uppsala Stadsteater",
     "url": "https://destinationuppsala.se/event/bonnie-clyde/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.200Z",
+    "fetched_at": "2026-03-14T01:09:26.029Z",
     "latitude": 59.8589349,
     "longitude": 17.6429753
   },
@@ -337,7 +317,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/poste-restante-masterverk/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.201Z",
+    "fetched_at": "2026-03-14T01:09:30.834Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -347,7 +327,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/poste-restante-masterverk/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.202Z",
+    "fetched_at": "2026-03-14T01:09:30.835Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -357,7 +337,7 @@
     "venue": "Kulturoasen",
     "url": "https://destinationuppsala.se/event/vasen-spelar-vagor/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.202Z",
+    "fetched_at": "2026-03-14T01:09:30.835Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
   },
@@ -367,7 +347,7 @@
     "venue": "Kulturoasen",
     "url": "https://destinationuppsala.se/event/vasen-spelar-vagor/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.203Z",
+    "fetched_at": "2026-03-14T01:09:30.836Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
   },
@@ -377,7 +357,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/jesus-christ-superstar-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.204Z",
+    "fetched_at": "2026-03-14T01:09:30.836Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -387,7 +367,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/jesus-christ-superstar-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.204Z",
+    "fetched_at": "2026-03-14T01:09:30.837Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -397,7 +377,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/arne-alligator-djungeltrumman-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.205Z",
+    "fetched_at": "2026-03-14T01:09:30.837Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -407,7 +387,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/arne-alligator-djungeltrumman-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.205Z",
+    "fetched_at": "2026-03-14T01:09:30.838Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -417,7 +397,7 @@
     "venue": "Slottsbiografen",
     "url": "https://destinationuppsala.se/event/stumfilm-med-levande-musik-2-2/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.206Z",
+    "fetched_at": "2026-03-14T01:09:30.838Z",
     "latitude": 59.8562412,
     "longitude": 17.6344116
   },
@@ -427,7 +407,7 @@
     "venue": "Slottsbiografen",
     "url": "https://destinationuppsala.se/event/stumfilm-med-levande-musik-2-2/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.207Z",
+    "fetched_at": "2026-03-14T01:09:30.839Z",
     "latitude": 59.8562412,
     "longitude": 17.6344116
   },
@@ -437,7 +417,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/en-jakla-massa-schlager/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.207Z",
+    "fetched_at": "2026-03-14T01:09:30.840Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -447,7 +427,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/en-jakla-massa-schlager/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.207Z",
+    "fetched_at": "2026-03-14T01:09:30.840Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -457,7 +437,7 @@
     "venue": "Kulturoasen",
     "url": "https://destinationuppsala.se/event/stenhagens-manskor/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.208Z",
+    "fetched_at": "2026-03-14T01:09:30.841Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
   },
@@ -467,29 +447,9 @@
     "venue": "Kulturoasen",
     "url": "https://destinationuppsala.se/event/stenhagens-manskor/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.208Z",
+    "fetched_at": "2026-03-14T01:09:30.841Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
-  },
-  {
-    "title": "Konsert: Anna Järvinen",
-    "date": "16 april, kl. 19:00–20:00Var: Uppsala konstmuseum, VasasalenArrangör: Uppsala konstmuseumWebbsida: https://konstmuseum.uppsala.se/kalendarium/konsert-anna-jarvinen/",
-    "venue": "Uppsala Konstmuseum",
-    "url": "https://destinationuppsala.se/event/konsert-anna-jarvinen/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.209Z",
-    "latitude": 59.8532485,
-    "longitude": 17.6351548
-  },
-  {
-    "title": "Konsert: Anna Järvinen",
-    "date": "16 april, kl. 19:00–20:00Var: Uppsala konstmuseum, VasasalenArrangör: Uppsala konstmuseumWebbsida: https://konstmuseum.uppsala.se/kalendarium/konsert-anna-jarvinen/",
-    "venue": "Uppsala Konstmuseum",
-    "url": "https://destinationuppsala.se/event/konsert-anna-jarvinen/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.209Z",
-    "latitude": 59.8532485,
-    "longitude": 17.6351548
   },
   {
     "title": "Uppsala Kammarorkester – Älskad trumpetkonsert",
@@ -497,7 +457,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/uppsala-kammarorkester-alskad-trumpetkonsert/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.210Z",
+    "fetched_at": "2026-03-14T01:09:30.842Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -507,7 +467,37 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/uppsala-kammarorkester-alskad-trumpetkonsert/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.210Z",
+    "fetched_at": "2026-03-14T01:09:30.842Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Konsert: Anna Järvinen",
+    "date": "16 april, kl. 19:00–20:00Var: Uppsala konstmuseum, VasasalenArrangör: Uppsala konstmuseumWebbsida: https://konstmuseum.uppsala.se/kalendarium/konsert-anna-jarvinen/",
+    "venue": "Uppsala Konstmuseum",
+    "url": "https://destinationuppsala.se/event/konsert-anna-jarvinen/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:30.842Z",
+    "latitude": 59.8532485,
+    "longitude": 17.6351548
+  },
+  {
+    "title": "Konsert: Anna Järvinen",
+    "date": "16 april, kl. 19:00–20:00Var: Uppsala konstmuseum, VasasalenArrangör: Uppsala konstmuseumWebbsida: https://konstmuseum.uppsala.se/kalendarium/konsert-anna-jarvinen/",
+    "venue": "Uppsala Konstmuseum",
+    "url": "https://destinationuppsala.se/event/konsert-anna-jarvinen/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:30.843Z",
+    "latitude": 59.8532485,
+    "longitude": 17.6351548
+  },
+  {
+    "title": "Enkel, vacker, öm",
+    "date": "17 april 2026 kl. 12:15 (lunchkonsert) och 19:00 (kvällskonsert)Var: UKK – Sal B, UppsalaArrangör: Uppsala Konsert & KongressWebbsida: www.ukk.se/program/enkel-vacker-om",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://destinationuppsala.se/event/enkel-vacker-om/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:30.843Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -517,17 +507,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/enkel-vacker-om/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.211Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
-  },
-  {
-    "title": "Enkel, vacker, öm",
-    "date": "17 april 2026 kl. 12:15 (lunchkonsert) och 19:00 (kvällskonsert)Var: UKK – Sal B, UppsalaArrangör: Uppsala Konsert & KongressWebbsida: www.ukk.se/program/enkel-vacker-om",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://destinationuppsala.se/event/enkel-vacker-om/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.211Z",
+    "fetched_at": "2026-03-14T01:09:30.844Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -537,7 +517,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/uppsala-kammarorkester-familjekonsert/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.212Z",
+    "fetched_at": "2026-03-14T01:09:30.844Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -547,7 +527,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/uppsala-kammarorkester-familjekonsert/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.212Z",
+    "fetched_at": "2026-03-14T01:09:30.845Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -557,7 +537,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/niklas-stromstedt-tyck-om-mig/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.213Z",
+    "fetched_at": "2026-03-14T01:09:30.845Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -567,7 +547,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/niklas-stromstedt-tyck-om-mig/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.213Z",
+    "fetched_at": "2026-03-14T01:09:30.846Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -577,7 +557,7 @@
     "venue": "Kulturoasen",
     "url": "https://destinationuppsala.se/event/livets-orkester/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.214Z",
+    "fetched_at": "2026-03-14T01:09:30.847Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
   },
@@ -587,7 +567,7 @@
     "venue": "Kulturoasen",
     "url": "https://destinationuppsala.se/event/livets-orkester/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.215Z",
+    "fetched_at": "2026-03-14T01:09:30.847Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
   },
@@ -597,7 +577,7 @@
     "venue": "Uppsala konstmuseum",
     "url": "https://destinationuppsala.se/event/renassansmusik-pa-slottet/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.216Z",
+    "fetched_at": "2026-03-14T01:09:30.848Z",
     "latitude": 59.8532485,
     "longitude": 17.6351548
   },
@@ -607,7 +587,7 @@
     "venue": "Uppsala konstmuseum",
     "url": "https://destinationuppsala.se/event/renassansmusik-pa-slottet/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.216Z",
+    "fetched_at": "2026-03-14T01:09:30.849Z",
     "latitude": 59.8532485,
     "longitude": 17.6351548
   },
@@ -617,7 +597,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/fatoumata-diawara/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.217Z",
+    "fetched_at": "2026-03-14T01:09:30.851Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -627,7 +607,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/fatoumata-diawara/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:09:57.218Z",
+    "fetched_at": "2026-03-14T01:09:30.852Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -637,7 +617,7 @@
     "venue": "Kulturoasen",
     "url": "https://destinationuppsala.se/event/fran-swing-till-chopin-the-hebbe-family/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.058Z",
+    "fetched_at": "2026-03-14T01:09:30.852Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
   },
@@ -647,37 +627,27 @@
     "venue": "Kulturoasen",
     "url": "https://destinationuppsala.se/event/fran-swing-till-chopin-the-hebbe-family/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.058Z",
+    "fetched_at": "2026-03-14T01:09:30.853Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
   },
   {
-    "title": "Poste Restante – Tillägnan",
-    "date": "26 april 2026, kl. 16:00–18:00Var: Uppsala Konsert & Kongress, Sal BArrangör: Musik i UpplandWebbsida: musikiuppland.se",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://destinationuppsala.se/event/poste-restante-tillagnan/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.059Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
-  },
-  {
-    "title": "Poste Restante – Tillägnan",
-    "date": "26 april 2026, kl. 16:00–18:00Var: Uppsala Konsert & Kongress, Sal BArrangör: Musik i UpplandWebbsida: musikiuppland.se",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://destinationuppsala.se/event/poste-restante-tillagnan/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.060Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
-  },
-  {
-    "title": "Cold Blue Steel And Sweet Fire – En hyllning till Joni Mitchell",
-    "date": "3 maj 2026, kl. 14.00Var: Kulturoasen, Hågavägen 188, 752 63 UppsalaArrangör: Kulturhjältarna i samarbete med Studiefrämjandet UppsalaWebbsida: https://www.kulturoasen.se/events/cold-blue-steel-and-sweet-fire-en-hyllning-till-joni-mitchell/",
+    "title": "Från swing till Chopin – The Hebbe Family",
+    "date": "26 april 2026, kl. 14.00Var: Kulturoasen, Hågavägen 188, 752 63 UppsalaArrangör: Kulturhjältarna i samarbete med Studiefrämjandet UppsalaWebbsida: https://www.kulturoasen.se/events/fran-swing-till-chopin-the-hebbe-family/",
     "venue": "Kulturoasen",
-    "url": "https://destinationuppsala.se/event/cold-blue-steel-and-sweet-fire-en-hyllning-till-joni-mitchell/",
+    "url": "https://destinationuppsala.se/event/fran-swing-till-chopin-the-hebbe-family/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.060Z",
+    "fetched_at": "2026-03-14T01:09:35.630Z",
+    "latitude": 59.8381131,
+    "longitude": 17.5763292
+  },
+  {
+    "title": "Från swing till Chopin – The Hebbe Family",
+    "date": "26 april 2026, kl. 14.00Var: Kulturoasen, Hågavägen 188, 752 63 UppsalaArrangör: Kulturhjältarna i samarbete med Studiefrämjandet UppsalaWebbsida: https://www.kulturoasen.se/events/fran-swing-till-chopin-the-hebbe-family/",
+    "venue": "Kulturoasen",
+    "url": "https://destinationuppsala.se/event/fran-swing-till-chopin-the-hebbe-family/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:35.631Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
   },
@@ -687,7 +657,17 @@
     "venue": "Kulturoasen",
     "url": "https://destinationuppsala.se/event/cold-blue-steel-and-sweet-fire-en-hyllning-till-joni-mitchell/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.061Z",
+    "fetched_at": "2026-03-14T01:09:35.632Z",
+    "latitude": 59.8381131,
+    "longitude": 17.5763292
+  },
+  {
+    "title": "Cold Blue Steel And Sweet Fire – En hyllning till Joni Mitchell",
+    "date": "3 maj 2026, kl. 14.00Var: Kulturoasen, Hågavägen 188, 752 63 UppsalaArrangör: Kulturhjältarna i samarbete med Studiefrämjandet UppsalaWebbsida: https://www.kulturoasen.se/events/cold-blue-steel-and-sweet-fire-en-hyllning-till-joni-mitchell/",
+    "venue": "Kulturoasen",
+    "url": "https://destinationuppsala.se/event/cold-blue-steel-and-sweet-fire-en-hyllning-till-joni-mitchell/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:35.632Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
   },
@@ -697,7 +677,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/uppsala-kammarorkester-nordisk-final/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.061Z",
+    "fetched_at": "2026-03-14T01:09:35.633Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -707,7 +687,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/uppsala-kammarorkester-nordisk-final/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.062Z",
+    "fetched_at": "2026-03-14T01:09:35.633Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -717,7 +697,7 @@
     "venue": "Slottsbiografen",
     "url": "https://destinationuppsala.se/event/stumfilm-med-levande-musik-2-2-2/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.063Z",
+    "fetched_at": "2026-03-14T01:09:35.634Z",
     "latitude": 59.8562412,
     "longitude": 17.6344116
   },
@@ -727,7 +707,7 @@
     "venue": "Slottsbiografen",
     "url": "https://destinationuppsala.se/event/stumfilm-med-levande-musik-2-2-2/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.063Z",
+    "fetched_at": "2026-03-14T01:09:35.635Z",
     "latitude": 59.8562412,
     "longitude": 17.6344116
   },
@@ -737,7 +717,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/emil-gittansson-jensen-vi-maste-halla-kontakten/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.064Z",
+    "fetched_at": "2026-03-14T01:09:35.635Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -747,7 +727,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/emil-gittansson-jensen-vi-maste-halla-kontakten/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.065Z",
+    "fetched_at": "2026-03-14T01:09:35.636Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -757,7 +737,7 @@
     "venue": "Universitetshusets Aula",
     "url": "https://destinationuppsala.se/event/allmanna-sangens-varkonsert-med-uppsala-blasarsymfoniker/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.065Z"
+    "fetched_at": "2026-03-14T01:09:35.637Z"
   },
   {
     "title": "Allmänna Sångens Vårkonsert – med Uppsala Blåsarsymfoniker",
@@ -765,7 +745,7 @@
     "venue": "Universitetshusets Aula",
     "url": "https://destinationuppsala.se/event/allmanna-sangens-varkonsert-med-uppsala-blasarsymfoniker/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.066Z"
+    "fetched_at": "2026-03-14T01:09:35.638Z"
   },
   {
     "title": "The Mad Men Band – Summer Concert",
@@ -773,7 +753,7 @@
     "venue": "Kulturoasen",
     "url": "https://destinationuppsala.se/event/the-mad-men-band-summer-concert/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.067Z",
+    "fetched_at": "2026-03-14T01:09:35.638Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
   },
@@ -783,7 +763,7 @@
     "venue": "Kulturoasen",
     "url": "https://destinationuppsala.se/event/the-mad-men-band-summer-concert/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.068Z",
+    "fetched_at": "2026-03-14T01:09:35.639Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
   },
@@ -793,7 +773,7 @@
     "venue": "Uppsala konstmuseum",
     "url": "https://destinationuppsala.se/event/schack-pa-museet-ett-spel-om-strategi-och-symboler/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.068Z",
+    "fetched_at": "2026-03-14T01:09:35.640Z",
     "latitude": 59.8532485,
     "longitude": 17.6351548
   },
@@ -803,7 +783,7 @@
     "venue": "Uppsala konstmuseum",
     "url": "https://destinationuppsala.se/event/schack-pa-museet-ett-spel-om-strategi-och-symboler/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.069Z",
+    "fetched_at": "2026-03-14T01:09:35.640Z",
     "latitude": 59.8532485,
     "longitude": 17.6351548
   },
@@ -813,7 +793,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/buika-world-tour-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.070Z",
+    "fetched_at": "2026-03-14T01:09:35.641Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -823,7 +803,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/buika-world-tour-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.070Z",
+    "fetched_at": "2026-03-14T01:09:35.642Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -833,7 +813,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/lena-willemark-ale-moller-nordan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.071Z",
+    "fetched_at": "2026-03-14T01:09:35.642Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -843,7 +823,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/lena-willemark-ale-moller-nordan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.072Z",
+    "fetched_at": "2026-03-14T01:09:35.643Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -853,7 +833,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/stonemountain-orchestra-ole-borud/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.072Z",
+    "fetched_at": "2026-03-14T01:09:35.643Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -863,7 +843,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/stonemountain-orchestra-ole-borud/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.073Z",
+    "fetched_at": "2026-03-14T01:09:35.644Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -873,7 +853,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/dina-ogon-pa-parksnackan-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.074Z",
+    "fetched_at": "2026-03-14T01:09:35.645Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -883,7 +863,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/dina-ogon-pa-parksnackan-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.074Z",
+    "fetched_at": "2026-03-14T01:09:35.646Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -893,7 +873,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/brandsta-city-slackers-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.075Z",
+    "fetched_at": "2026-03-14T01:09:35.646Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -903,7 +883,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/brandsta-city-slackers-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.076Z",
+    "fetched_at": "2026-03-14T01:09:35.647Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -913,7 +893,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/simon-superti-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.076Z",
+    "fetched_at": "2026-03-14T01:09:35.648Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -923,7 +903,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/simon-superti-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.077Z",
+    "fetched_at": "2026-03-14T01:09:35.648Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -933,7 +913,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/sangpiraterna-pa-parksnackan-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.078Z",
+    "fetched_at": "2026-03-14T01:09:35.649Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -943,7 +923,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/sangpiraterna-pa-parksnackan-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:02.078Z",
+    "fetched_at": "2026-03-14T01:09:35.650Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -953,7 +933,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/venom-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.867Z",
+    "fetched_at": "2026-03-14T01:09:35.650Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -963,7 +943,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/venom-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.867Z",
+    "fetched_at": "2026-03-14T01:09:35.651Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -973,7 +953,7 @@
     "venue": "Botaniska trädgården",
     "url": "https://destinationuppsala.se/event/magnus-uggla-i-botaniska-tradgarden/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.868Z",
+    "fetched_at": "2026-03-14T01:09:40.365Z",
     "latitude": 59.8515471,
     "longitude": 17.6272814
   },
@@ -983,37 +963,7 @@
     "venue": "Botaniska trädgården",
     "url": "https://destinationuppsala.se/event/magnus-uggla-i-botaniska-tradgarden/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.868Z",
-    "latitude": 59.8515471,
-    "longitude": 17.6272814
-  },
-  {
-    "title": "The Primitives på Parksnäckan",
-    "date": "26 juni 2026Var: Parksnäckan (Stadsträdgården)Arrangör: Kaliber LiveWebbsida: https://parksnackan.se/",
-    "venue": "Parksnäckan",
-    "url": "https://destinationuppsala.se/event/the-primitives-pa-parksnackan/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.869Z",
-    "latitude": 59.851381,
-    "longitude": 17.6444925
-  },
-  {
-    "title": "The Primitives på Parksnäckan",
-    "date": "26 juni 2026Var: Parksnäckan (Stadsträdgården)Arrangör: Kaliber LiveWebbsida: https://parksnackan.se/",
-    "venue": "Parksnäckan",
-    "url": "https://destinationuppsala.se/event/the-primitives-pa-parksnackan/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.870Z",
-    "latitude": 59.851381,
-    "longitude": 17.6444925
-  },
-  {
-    "title": "The Ark – Sommarturné 2026",
-    "date": "Fredag 26 juni 2026Var: Botaniska trädgården, UppsalaArrangör: Kaliber LiveWebbsida: https://kaliberlive.com/events/the-ark/",
-    "venue": "Botaniska trädgården",
-    "url": "https://destinationuppsala.se/event/the-ark-sommarturne-2026/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.870Z",
+    "fetched_at": "2026-03-14T01:09:40.365Z",
     "latitude": 59.8515471,
     "longitude": 17.6272814
   },
@@ -1023,7 +973,47 @@
     "venue": "Botaniska trädgården",
     "url": "https://destinationuppsala.se/event/the-ark-sommarturne-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.871Z",
+    "fetched_at": "2026-03-14T01:09:40.366Z",
+    "latitude": 59.8515471,
+    "longitude": 17.6272814
+  },
+  {
+    "title": "The Ark – Sommarturné 2026",
+    "date": "Fredag 26 juni 2026Var: Botaniska trädgården, UppsalaArrangör: Kaliber LiveWebbsida: https://kaliberlive.com/events/the-ark/",
+    "venue": "Botaniska trädgården",
+    "url": "https://destinationuppsala.se/event/the-ark-sommarturne-2026/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:40.366Z",
+    "latitude": 59.8515471,
+    "longitude": 17.6272814
+  },
+  {
+    "title": "The Primitives på Parksnäckan",
+    "date": "26 juni 2026Var: Parksnäckan (Stadsträdgården)Arrangör: Kaliber LiveWebbsida: https://parksnackan.se/",
+    "venue": "Parksnäckan",
+    "url": "https://destinationuppsala.se/event/the-primitives-pa-parksnackan/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:40.368Z",
+    "latitude": 59.851381,
+    "longitude": 17.6444925
+  },
+  {
+    "title": "The Primitives på Parksnäckan",
+    "date": "26 juni 2026Var: Parksnäckan (Stadsträdgården)Arrangör: Kaliber LiveWebbsida: https://parksnackan.se/",
+    "venue": "Parksnäckan",
+    "url": "https://destinationuppsala.se/event/the-primitives-pa-parksnackan/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:40.368Z",
+    "latitude": 59.851381,
+    "longitude": 17.6444925
+  },
+  {
+    "title": "STING 3.0",
+    "date": "27 juni 2026Var: Botaniska trädgården, Villavägen 6–8, 752 36 UppsalaArrangör: Kaliber Live & Live NationWebbsida: https://kaliberlive.com/events/sting-uk/",
+    "venue": "Botaniska trädgården",
+    "url": "https://destinationuppsala.se/event/sting-3-0/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:40.369Z",
     "latitude": 59.8515471,
     "longitude": 17.6272814
   },
@@ -1033,17 +1023,7 @@
     "venue": "Botaniska trädgården",
     "url": "https://destinationuppsala.se/event/sting-3-0/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.872Z",
-    "latitude": 59.8515471,
-    "longitude": 17.6272814
-  },
-  {
-    "title": "STING 3.0",
-    "date": "27 juni 2026Var: Botaniska trädgården, Villavägen 6–8, 752 36 UppsalaArrangör: Kaliber Live & Live NationWebbsida: https://kaliberlive.com/events/sting-uk/",
-    "venue": "Botaniska trädgården",
-    "url": "https://destinationuppsala.se/event/sting-3-0/",
-    "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.872Z",
+    "fetched_at": "2026-03-14T01:09:40.370Z",
     "latitude": 59.8515471,
     "longitude": 17.6272814
   },
@@ -1053,7 +1033,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/tricky-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.873Z",
+    "fetched_at": "2026-03-14T01:09:40.370Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1063,7 +1043,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/tricky-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.873Z",
+    "fetched_at": "2026-03-14T01:09:40.371Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1073,7 +1053,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/dave-weckl-moter-uppsala-storband/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.884Z",
+    "fetched_at": "2026-03-14T01:09:40.371Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1083,7 +1063,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/dave-weckl-moter-uppsala-storband/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.885Z",
+    "fetched_at": "2026-03-14T01:09:40.372Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1093,7 +1073,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/abba-allsang-pa-parksnackan-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.885Z",
+    "fetched_at": "2026-03-14T01:09:40.373Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1103,7 +1083,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/abba-allsang-pa-parksnackan-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.888Z",
+    "fetched_at": "2026-03-14T01:09:40.373Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1113,7 +1093,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/dismember-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.888Z",
+    "fetched_at": "2026-03-14T01:09:40.386Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1123,7 +1103,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/dismember-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.889Z",
+    "fetched_at": "2026-03-14T01:09:40.387Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1133,7 +1113,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/dismember-vomitory-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.890Z",
+    "fetched_at": "2026-03-14T01:09:40.387Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1143,7 +1123,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/dismember-vomitory-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.891Z",
+    "fetched_at": "2026-03-14T01:09:40.390Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1153,7 +1133,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/sandi-thom-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.892Z",
+    "fetched_at": "2026-03-14T01:09:40.390Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1163,7 +1143,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/sandi-thom-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.892Z",
+    "fetched_at": "2026-03-14T01:09:40.391Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1173,7 +1153,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/tommy-nilsson-dina-farger-var-bla-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.893Z",
+    "fetched_at": "2026-03-14T01:09:40.394Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1183,7 +1163,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/tommy-nilsson-dina-farger-var-bla-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.894Z",
+    "fetched_at": "2026-03-14T01:09:40.394Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1193,7 +1173,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/medina-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.894Z",
+    "fetched_at": "2026-03-14T01:09:40.395Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1203,7 +1183,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/medina-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.895Z",
+    "fetched_at": "2026-03-14T01:09:40.398Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1213,7 +1193,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/pappa-kapsyl-pa-parksnackan-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.896Z",
+    "fetched_at": "2026-03-14T01:09:40.398Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1223,7 +1203,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/pappa-kapsyl-pa-parksnackan-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.897Z",
+    "fetched_at": "2026-03-14T01:09:40.399Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1233,7 +1213,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/banna-sona-band-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.897Z",
+    "fetched_at": "2026-03-14T01:09:40.400Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1243,7 +1223,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/banna-sona-band-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.898Z",
+    "fetched_at": "2026-03-14T01:09:40.400Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1253,7 +1233,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/petra-marklund-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.899Z",
+    "fetched_at": "2026-03-14T01:09:40.401Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1263,7 +1243,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/petra-marklund-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:06.899Z",
+    "fetched_at": "2026-03-14T01:09:40.401Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1273,7 +1253,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/lilla-spoket-laban-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.670Z",
+    "fetched_at": "2026-03-14T01:09:40.401Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1283,7 +1263,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/lilla-spoket-laban-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.670Z",
+    "fetched_at": "2026-03-14T01:09:40.402Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1293,7 +1273,7 @@
     "venue": "Fyrishov",
     "url": "https://destinationuppsala.se/event/uppsala-reggae-festival-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.671Z",
+    "fetched_at": "2026-03-14T01:09:45.100Z",
     "latitude": 59.8707312,
     "longitude": 17.6223964
   },
@@ -1303,7 +1283,7 @@
     "venue": "Fyrishov",
     "url": "https://destinationuppsala.se/event/uppsala-reggae-festival-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.671Z",
+    "fetched_at": "2026-03-14T01:09:45.101Z",
     "latitude": 59.8707312,
     "longitude": 17.6223964
   },
@@ -1313,7 +1293,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/cleo-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.672Z",
+    "fetched_at": "2026-03-14T01:09:45.101Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1323,7 +1303,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/cleo-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.673Z",
+    "fetched_at": "2026-03-14T01:09:45.102Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1333,7 +1313,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/niklas-stromstedt-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.675Z",
+    "fetched_at": "2026-03-14T01:09:45.103Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1343,7 +1323,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/niklas-stromstedt-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.676Z",
+    "fetched_at": "2026-03-14T01:09:45.103Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1353,7 +1333,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/lasse-holm-en-hel-massa-lasse-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.676Z",
+    "fetched_at": "2026-03-14T01:09:45.104Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1363,7 +1343,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/lasse-holm-en-hel-massa-lasse-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.677Z",
+    "fetched_at": "2026-03-14T01:09:45.104Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1373,7 +1353,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/kaj-pa-parksnackan-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.677Z",
+    "fetched_at": "2026-03-14T01:09:45.107Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1383,7 +1363,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/kaj-pa-parksnackan-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.680Z",
+    "fetched_at": "2026-03-14T01:09:45.107Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1393,7 +1373,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/einsturzende-neubauten-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.681Z",
+    "fetched_at": "2026-03-14T01:09:45.110Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1403,7 +1383,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/einsturzende-neubauten-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.681Z",
+    "fetched_at": "2026-03-14T01:09:45.110Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1413,7 +1393,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/danny-saucedo-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.683Z",
+    "fetched_at": "2026-03-14T01:09:45.111Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1423,7 +1403,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/danny-saucedo-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.683Z",
+    "fetched_at": "2026-03-14T01:09:45.113Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1433,7 +1413,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/dolly-style-pa-parksnackan-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.684Z",
+    "fetched_at": "2026-03-14T01:09:45.113Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1443,7 +1423,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/dolly-style-pa-parksnackan-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.684Z",
+    "fetched_at": "2026-03-14T01:09:45.114Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1453,7 +1433,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/electric-banana-band-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.685Z",
+    "fetched_at": "2026-03-14T01:09:45.114Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1463,7 +1443,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/electric-banana-band-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.686Z",
+    "fetched_at": "2026-03-14T01:09:45.115Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1473,7 +1453,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/orup-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.686Z",
+    "fetched_at": "2026-03-14T01:09:45.116Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1483,7 +1463,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/orup-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.687Z",
+    "fetched_at": "2026-03-14T01:09:45.116Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1493,7 +1473,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/melody-club-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.689Z",
+    "fetched_at": "2026-03-14T01:09:45.119Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1503,7 +1483,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/melody-club-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.695Z",
+    "fetched_at": "2026-03-14T01:09:45.120Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1513,7 +1493,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/silvana-imam-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.695Z",
+    "fetched_at": "2026-03-14T01:09:45.121Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1523,7 +1503,7 @@
     "venue": "Parksnäckan",
     "url": "https://destinationuppsala.se/event/silvana-imam-pa-parksnackan/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.696Z",
+    "fetched_at": "2026-03-14T01:09:45.124Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -1533,7 +1513,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/rent-in-concert/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.697Z",
+    "fetched_at": "2026-03-14T01:09:45.124Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -1543,7 +1523,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://destinationuppsala.se/event/rent-in-concert/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.698Z",
+    "fetched_at": "2026-03-14T01:09:45.125Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -1553,7 +1533,7 @@
     "venue": "Studenternas IP",
     "url": "https://destinationuppsala.se/event/sunset-festival-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.698Z",
+    "fetched_at": "2026-03-14T01:09:45.126Z",
     "latitude": 59.8486572,
     "longitude": 17.6463313
   },
@@ -1563,7 +1543,7 @@
     "venue": "Studenternas IP",
     "url": "https://destinationuppsala.se/event/sunset-festival-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.698Z",
+    "fetched_at": "2026-03-14T01:09:45.127Z",
     "latitude": 59.8486572,
     "longitude": 17.6463313
   },
@@ -1573,7 +1553,7 @@
     "venue": "Uppsala",
     "url": "https://destinationuppsala.se/event/kulturnatten-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.699Z",
+    "fetched_at": "2026-03-14T01:09:45.128Z",
     "latitude": 59.8586126,
     "longitude": 17.6387436
   },
@@ -1583,8 +1563,28 @@
     "venue": "Uppsala",
     "url": "https://destinationuppsala.se/event/kulturnatten-2026/",
     "source": "destinationuppsala.se",
-    "fetched_at": "2026-03-13T01:10:11.699Z",
+    "fetched_at": "2026-03-14T01:09:45.129Z",
     "latitude": 59.8586126,
     "longitude": 17.6387436
+  },
+  {
+    "title": "Från Broadway till Duvemåla 2026",
+    "date": "17 september 2026, kl. 19:30Var: Uppsala Konsert & Kongress, Stora salenArrangör: Tocca Entertainment och Uppsala Konsert & KongressWebbsida: http://ukk.se/fran-broadway-till-duvemala-2026/",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://destinationuppsala.se/event/fran-broadway-till-duvemala-2026/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:45.129Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Från Broadway till Duvemåla 2026",
+    "date": "17 september 2026, kl. 19:30Var: Uppsala Konsert & Kongress, Stora salenArrangör: Tocca Entertainment och Uppsala Konsert & KongressWebbsida: http://ukk.se/fran-broadway-till-duvemala-2026/",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://destinationuppsala.se/event/fran-broadway-till-duvemala-2026/",
+    "source": "destinationuppsala.se",
+    "fetched_at": "2026-03-14T01:09:45.130Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
   }
 ]
