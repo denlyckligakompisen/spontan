@@ -318,5 +318,17 @@
   "Uppsala city, Uppsala, Sweden": {
     "lat": 59.8586126,
     "lon": 17.6387436
+  },
+  "Johannesbäckskolan, Uppsala, Sweden": {
+    "lat": 59.8621987,
+    "lon": 17.676772
+  },
+  "Löten, Uppsala, Sweden": {
+    "lat": 59.8782458,
+    "lon": 17.6503905
+  },
+  "CIK - Knivsta, Uppsala, Sweden": {
+    "lat": 59.7214292,
+    "lon": 17.7921301
   }
 }
