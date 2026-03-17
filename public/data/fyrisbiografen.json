@@ -1,29 +1,5 @@
 [
   {
-    "title": "Rental Family",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-16T17:30:00",
-    "url": "https://fyrisbiografen.se/rental-family"
-  },
-  {
-    "title": "Romería",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-16T17:40:00",
-    "url": "https://fyrisbiografen.se/romería"
-  },
-  {
-    "title": "Hamnet",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-16T19:50:00",
-    "url": "https://fyrisbiografen.se/hamnet"
-  },
-  {
-    "title": "Begynnelser",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-16T20:00:00",
-    "url": "https://fyrisbiografen.se/begynnelser"
-  },
-  {
     "title": "Sentimental Value",
     "venue": "Fyrisbiografen",
     "date": "2026-03-17T14:50:00",
@@ -154,5 +130,215 @@
     "venue": "Fyrisbiografen",
     "date": "2026-03-19T20:00:00",
     "url": "https://fyrisbiografen.se/sirat-eng-text"
+  },
+  {
+    "title": "Christy",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-20T17:50:00",
+    "url": "https://fyrisbiografen.se/christy"
+  },
+  {
+    "title": "HAIYU - Rebellsångerskan Mariem Hassan och kampen för ett fritt Västsahara",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-20T18:00:00",
+    "url": "https://fyrisbiografen.se/haiyu-rebellsangerskan-mariem-hassan-och-kampen-for-ett-fritt-vastsahara"
+  },
+  {
+    "title": "Två åklagare",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-20T19:50:00",
+    "url": "https://fyrisbiografen.se/tva-aklagare"
+  },
+  {
+    "title": "Mecenaten",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-20T20:00:00",
+    "url": "https://fyrisbiografen.se/mecenaten"
+  },
+  {
+    "title": "Hamnet",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-22T17:20:00",
+    "url": "https://fyrisbiografen.se/hamnet"
+  },
+  {
+    "title": "Celtic Utopia",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-25T19:30:00",
+    "url": "https://fyrisbiografen.se/celtic-utopia"
+  },
+  {
+    "title": "Leurs enfants après eux (And Their Children After Them)",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-26T19:30:00",
+    "url": "https://fyrisbiografen.se/leurs-enfants-après-eux-and-their-children-after-them"
+  },
+  {
+    "title": "I Swear",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-27T17:30:00",
+    "url": "https://fyrisbiografen.se/i-swear"
+  },
+  {
+    "title": "Celtic Utopia",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-27T17:45:00",
+    "url": "https://fyrisbiografen.se/celtic-utopia"
+  },
+  {
+    "title": "Franz K.",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-27T20:00:00",
+    "url": "https://fyrisbiografen.se/franz-k"
+  },
+  {
+    "title": "Operation bäver",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-28T13:00:00",
+    "url": "https://fyrisbiografen.se/operation-baver"
+  },
+  {
+    "title": "Gitarren från havet",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-28T13:10:00",
+    "url": "https://fyrisbiografen.se/gitarren-fran-havet"
+  },
+  {
+    "title": "Mary och häxans blomma (Jap. tal)",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-29T13:00:00",
+    "url": "https://fyrisbiografen.se/mary-och-haxans-blomma-jap-tal"
+  },
+  {
+    "title": "Vi passar ihop",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-29T13:10:00",
+    "url": "https://fyrisbiografen.se/vi-passar-ihop"
+  },
+  {
+    "title": "Svart katt, vit katt",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-29T17:20:00",
+    "url": "https://fyrisbiografen.se/svart-katt-vit-katt"
+  },
+  {
+    "title": "Operation bäver",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-30T13:00:00",
+    "url": "https://fyrisbiografen.se/operation-baver"
+  },
+  {
+    "title": "Gitarren från havet",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-30T13:10:00",
+    "url": "https://fyrisbiografen.se/gitarren-fran-havet"
+  },
+  {
+    "title": "En ung mumins äventyr",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-31T13:00:00",
+    "url": "https://fyrisbiografen.se/en-ung-mumins-aventyr"
+  },
+  {
+    "title": "Vi passar ihop",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-31T13:10:00",
+    "url": "https://fyrisbiografen.se/vi-passar-ihop"
+  },
+  {
+    "title": "Mecenaten",
+    "venue": "Fyrisbiografen",
+    "date": "2026-03-31T17:30:00",
+    "url": "https://fyrisbiografen.se/mecenaten"
+  },
+  {
+    "title": "Operation bäver",
+    "venue": "Fyrisbiografen",
+    "date": "2026-04-01T13:00:00",
+    "url": "https://fyrisbiografen.se/operation-baver"
+  },
+  {
+    "title": "Gitarren från havet",
+    "venue": "Fyrisbiografen",
+    "date": "2026-04-01T13:10:00",
+    "url": "https://fyrisbiografen.se/gitarren-fran-havet"
+  },
+  {
+    "title": "Mary och häxans blomma (Jap. tal)",
+    "venue": "Fyrisbiografen",
+    "date": "2026-04-02T13:00:00",
+    "url": "https://fyrisbiografen.se/mary-och-haxans-blomma-jap-tal"
+  },
+  {
+    "title": "En ung mumins äventyr",
+    "venue": "Fyrisbiografen",
+    "date": "2026-04-02T13:10:00",
+    "url": "https://fyrisbiografen.se/en-ung-mumins-aventyr"
+  },
+  {
+    "title": "Tafiti - resan genom öknen",
+    "venue": "Fyrisbiografen",
+    "date": "2026-04-03T13:00:00",
+    "url": "https://fyrisbiografen.se/tafiti-resan-genom-oknen"
+  },
+  {
+    "title": "Vi passar ihop",
+    "venue": "Fyrisbiografen",
+    "date": "2026-04-03T13:10:00",
+    "url": "https://fyrisbiografen.se/vi-passar-ihop"
+  },
+  {
+    "title": "Gitarren från havet",
+    "venue": "Fyrisbiografen",
+    "date": "2026-04-03T14:10:00",
+    "url": "https://fyrisbiografen.se/gitarren-fran-havet"
+  },
+  {
+    "title": "Kristi sista frestelse",
+    "venue": "Fyrisbiografen",
+    "date": "2026-04-03T16:50:00",
+    "url": "https://fyrisbiografen.se/kristi-sista-frestelse"
+  },
+  {
+    "title": "Mary och häxans blomma (Jap. tal)",
+    "venue": "Fyrisbiografen",
+    "date": "2026-04-04T13:00:00",
+    "url": "https://fyrisbiografen.se/mary-och-haxans-blomma-jap-tal"
+  },
+  {
+    "title": "En ung mumins äventyr",
+    "venue": "Fyrisbiografen",
+    "date": "2026-04-04T13:10:00",
+    "url": "https://fyrisbiografen.se/en-ung-mumins-aventyr"
+  },
+  {
+    "title": "Tafiti - resan genom öknen",
+    "venue": "Fyrisbiografen",
+    "date": "2026-04-05T13:00:00",
+    "url": "https://fyrisbiografen.se/tafiti-resan-genom-oknen"
+  },
+  {
+    "title": "Operation bäver",
+    "venue": "Fyrisbiografen",
+    "date": "2026-04-05T13:10:00",
+    "url": "https://fyrisbiografen.se/operation-baver"
+  },
+  {
+    "title": "Operation bäver",
+    "venue": "Fyrisbiografen",
+    "date": "2026-04-06T13:00:00",
+    "url": "https://fyrisbiografen.se/operation-baver"
+  },
+  {
+    "title": "En ung mumins äventyr",
+    "venue": "Fyrisbiografen",
+    "date": "2026-04-06T13:10:00",
+    "url": "https://fyrisbiografen.se/en-ung-mumins-aventyr"
+  },
+  {
+    "title": "Mördarens son",
+    "venue": "Fyrisbiografen",
+    "date": "2026-04-12T17:20:00",
+    "url": "https://fyrisbiografen.se/mordarens-son"
   }
 ]
