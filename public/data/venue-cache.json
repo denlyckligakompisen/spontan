@@ -334,5 +334,13 @@
   "Clarion Hotel Gillet, Uppsala, Sweden": {
     "lat": 59.8605797,
     "lon": 17.6375627
+  },
+  "Bryggeriet Ångkvarn, Uppsala, Sweden": {
+    "lat": 59.855248,
+    "lon": 17.6421062
+  },
+  "Gamla Uppsala museum, Uppsala, Sweden": {
+    "lat": 59.8977837,
+    "lon": 17.6336407
   }
 }
