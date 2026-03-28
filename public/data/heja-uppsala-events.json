@@ -5,49 +5,9 @@
     "venue": "Forumtorget",
     "url": "https://hejauppsala.com/kalender/konstmanad-forumtorget/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.282Z",
+    "fetched_at": "2026-03-28T01:18:14.998Z",
     "latitude": 59.8581032,
     "longitude": 17.6401657
-  },
-  {
-    "title": "Uppsala Vin & Deli",
-    "date": "27 mar - 28 mar",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://hejauppsala.com/kalender/uppsala-vin-deli/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.284Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
-  },
-  {
-    "title": "Bonnie & Clyde – Stadsteatern – Premiär",
-    "date": "27 mar 18.00",
-    "venue": "Uppsala Stadsteater",
-    "url": "https://hejauppsala.com/kalender/bonnie-clyde-stadsteatern-premiar/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.285Z",
-    "latitude": 59.8589349,
-    "longitude": 17.6429753
-  },
-  {
-    "title": "Kvartsfinal 3:5 Uppsala basket–Luleå",
-    "date": "27 mar 19:04",
-    "venue": "Fyrishov A",
-    "url": "https://hejauppsala.com/kalender/uppsala-basket-lulea-27-mars-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.285Z",
-    "latitude": 59.8707312,
-    "longitude": 17.6223964
-  },
-  {
-    "title": "Björn Rosenström",
-    "date": "27 mar 20.00",
-    "venue": "Katalin",
-    "url": "https://hejauppsala.com/kalender/kommande-event-bjorn-rosenstrom/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.286Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
   },
   {
     "title": "Pop-up Loppis – Övre Slottsgatan",
@@ -55,101 +15,17 @@
     "venue": "Studio Hörngren",
     "url": "https://hejauppsala.com/kalender/pop-up-loppis-ovre-slottsgatan/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.287Z"
+    "fetched_at": "2026-03-28T01:18:14.999Z"
   },
   {
-    "title": "Book Launch: ”Be UPFRONT – The English Bookshop",
-    "date": "27 mar 18.00",
-    "venue": "The English Bookshop",
-    "url": "https://hejauppsala.com/kalender/book-launch-be-upfront-the-english-bookshop/",
+    "title": "Uppsala Vin & Deli",
+    "date": "27 mar - 28 mar",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://hejauppsala.com/kalender/uppsala-vin-deli/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.288Z",
-    "latitude": 59.8609093,
-    "longitude": 17.6348697
-  },
-  {
-    "title": "Johannespassionen av Bob Chilcott med Linnékvintetten",
-    "date": "28 mar 15.00",
-    "venue": "Uppsala Missionskyrka",
-    "url": "https://hejauppsala.com/kalender/johannespassionen-av-bob-chilcott-med-linnekvintetten/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.289Z"
-  },
-  {
-    "title": "Klassisk ölprovning på Bishops Arms",
-    "date": "28 mar 17.00",
-    "venue": "The Bishops Arms",
-    "url": "https://hejauppsala.com/kalender/klassisk-olprovning-pa-bishops-arms-28-mar-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.290Z",
-    "latitude": 59.8571014,
-    "longitude": 17.6480034
-  },
-  {
-    "title": "Lördagsjazz 28 mars  – Katalin",
-    "date": "28 mar 14.30-16.30",
-    "venue": "Katalin",
-    "url": "https://hejauppsala.com/kalender/lordagsjazz-28-mars-katalin-2/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.290Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Lördagsmusik: orgelkonsert – 28 mars – Domkyrkan",
-    "date": "28 mar 11:30",
-    "venue": "Domkyrkan",
-    "url": "https://hejauppsala.com/kalender/lordagsmusik-orgelkonsert-28-mars-domkyrkan/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.291Z",
-    "latitude": 59.8992756,
-    "longitude": 17.6317491
-  },
-  {
-    "title": "FRAGMENT | SOFIE STENBERG",
-    "date": "28 mar - 12 apr 12:00 – 16:00",
-    "venue": "Uppsala Konstnärsklubb",
-    "url": "https://hejauppsala.com/kalender/fragment-sofie-stenberg/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.292Z"
-  },
-  {
-    "title": "Ellen Andersson – jazzbaren 2026",
-    "date": "28 mar 20.00",
-    "venue": "jazzbaren",
-    "url": "https://hejauppsala.com/kalender/ellen-andersson-jazzbaren-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.292Z"
-  },
-  {
-    "title": "C R U S H E D vernissage",
-    "date": "28 mar - 6 apr 12:00 – 16:00",
-    "venue": "Sysslomansgatan 5 Uppsala",
-    "url": "https://hejauppsala.com/kalender/c-r-u-s-h-e-d-vernissage/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.293Z",
-    "latitude": 59.8596479,
-    "longitude": 17.6313911
-  },
-  {
-    "title": "Buzzcocks – Katalin – 2026",
-    "date": "28 mar 20.00",
-    "venue": "Katalin",
-    "url": "https://hejauppsala.com/kalender/buzzcocks-katalin-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.294Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "The Toy Dolls – Katalin – 2026",
-    "date": "28 mar",
-    "venue": "Katalin",
-    "url": "https://hejauppsala.com/kalender/the-toy-dolls-katalin-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.294Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
+    "fetched_at": "2026-03-28T01:18:15.000Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
   },
   {
     "title": "Påsklov på Bror Hjorths Hus",
@@ -157,7 +33,7 @@
     "venue": "Bror Hjorths Hus, Norbyvägen 26",
     "url": "https://hejauppsala.com/kalender/pasklov-pa-bror-hjorths-hus/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.295Z",
+    "fetched_at": "2026-03-28T01:18:15.001Z",
     "latitude": 59.8492776,
     "longitude": 17.6198763
   },
@@ -167,9 +43,19 @@
     "venue": "Bror Hjorths Hus, Norbyvägen 26",
     "url": "https://hejauppsala.com/kalender/maria-nilsson-thore/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.295Z",
+    "fetched_at": "2026-03-28T01:18:15.004Z",
     "latitude": 59.8492776,
     "longitude": 17.6198763
+  },
+  {
+    "title": "Buzzcocks – Katalin – 2026",
+    "date": "28 mar 20.00",
+    "venue": "Katalin",
+    "url": "https://hejauppsala.com/kalender/buzzcocks-katalin-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:15.004Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
   },
   {
     "title": "Konsert vid Earth Our",
@@ -177,7 +63,7 @@
     "venue": "Domkyrkan",
     "url": "https://hejauppsala.com/kalender/konsert-vid-earth-our/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.296Z",
+    "fetched_at": "2026-03-28T01:18:15.005Z",
     "latitude": 59.8992756,
     "longitude": 17.6317491
   },
@@ -187,29 +73,83 @@
     "venue": "Fyrisbiografen",
     "url": "https://hejauppsala.com/kalender/pasklovsbio/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.296Z",
+    "fetched_at": "2026-03-28T01:18:15.006Z",
     "latitude": 59.8582271,
     "longitude": 17.6291603
   },
   {
-    "title": "Stabat Mater",
-    "date": "29 mar 18.00",
-    "venue": "Domkyrkan",
-    "url": "https://hejauppsala.com/kalender/stabat-mater-2/",
+    "title": "The Toy Dolls – Katalin – 2026",
+    "date": "28 mar",
+    "venue": "Katalin",
+    "url": "https://hejauppsala.com/kalender/the-toy-dolls-katalin-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.297Z",
+    "fetched_at": "2026-03-28T01:18:15.007Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
+  },
+  {
+    "title": "Lördagsmusik: orgelkonsert – 28 mars – Domkyrkan",
+    "date": "28 mar 11:30",
+    "venue": "Domkyrkan",
+    "url": "https://hejauppsala.com/kalender/lordagsmusik-orgelkonsert-28-mars-domkyrkan/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:15.008Z",
     "latitude": 59.8992756,
     "longitude": 17.6317491
   },
   {
-    "title": "Poste Restante – Mästerverk 2026",
-    "date": "29 mar 16.00",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://hejauppsala.com/kalender/poste-restante-masterverk-2026/",
+    "title": "Lördagsjazz 28 mars  – Katalin",
+    "date": "28 mar 14.30-16.30",
+    "venue": "Katalin",
+    "url": "https://hejauppsala.com/kalender/lordagsjazz-28-mars-katalin-2/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.297Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
+    "fetched_at": "2026-03-28T01:18:15.008Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
+  },
+  {
+    "title": "Johannespassionen av Bob Chilcott med Linnékvintetten",
+    "date": "28 mar 15.00",
+    "venue": "Uppsala Missionskyrka",
+    "url": "https://hejauppsala.com/kalender/johannespassionen-av-bob-chilcott-med-linnekvintetten/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:15.009Z"
+  },
+  {
+    "title": "Klassisk ölprovning på Bishops Arms",
+    "date": "28 mar 17.00",
+    "venue": "The Bishops Arms",
+    "url": "https://hejauppsala.com/kalender/klassisk-olprovning-pa-bishops-arms-28-mar-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:15.010Z",
+    "latitude": 59.8571014,
+    "longitude": 17.6480034
+  },
+  {
+    "title": "FRAGMENT | SOFIE STENBERG",
+    "date": "28 mar - 12 apr 12:00 – 16:00",
+    "venue": "Uppsala Konstnärsklubb",
+    "url": "https://hejauppsala.com/kalender/fragment-sofie-stenberg/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:15.010Z"
+  },
+  {
+    "title": "Ellen Andersson – jazzbaren 2026",
+    "date": "28 mar 20.00",
+    "venue": "jazzbaren",
+    "url": "https://hejauppsala.com/kalender/ellen-andersson-jazzbaren-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:15.010Z"
+  },
+  {
+    "title": "C R U S H E D vernissage",
+    "date": "28 mar - 6 apr 12:00 – 16:00",
+    "venue": "Sysslomansgatan 5 Uppsala",
+    "url": "https://hejauppsala.com/kalender/c-r-u-s-h-e-d-vernissage/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:15.011Z",
+    "latitude": 59.8596479,
+    "longitude": 17.6313911
   },
   {
     "title": "Väsen – Kulturoasen – 2026",
@@ -217,19 +157,29 @@
     "venue": "Kulturoasen",
     "url": "https://hejauppsala.com/kalender/vasen-kulturoasen-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.298Z",
+    "fetched_at": "2026-03-28T01:18:15.011Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
   },
   {
-    "title": "Påsklov i Gamla Uppsala museum",
-    "date": "30 mar - 3 apr 14.00–14.30",
-    "venue": "Gamla Uppsala museum",
-    "url": "https://hejauppsala.com/kalender/pasklov-i-gamla-uppsala-museum/",
+    "title": "Poste Restante – Mästerverk 2026",
+    "date": "29 mar 16.00",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://hejauppsala.com/kalender/poste-restante-masterverk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.298Z",
-    "latitude": 59.8977837,
-    "longitude": 17.6336407
+    "fetched_at": "2026-03-28T01:18:15.012Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Stabat Mater",
+    "date": "29 mar 18.00",
+    "venue": "Domkyrkan",
+    "url": "https://hejauppsala.com/kalender/stabat-mater-2/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:15.012Z",
+    "latitude": 59.8992756,
+    "longitude": 17.6317491
   },
   {
     "title": "Påsklov på Forumtorget",
@@ -237,9 +187,19 @@
     "venue": "Forumtorget",
     "url": "https://hejauppsala.com/kalender/pasklov-pa-forumtorget/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.299Z",
+    "fetched_at": "2026-03-28T01:18:15.013Z",
     "latitude": 59.8581032,
     "longitude": 17.6401657
+  },
+  {
+    "title": "Påsklov i Gamla Uppsala museum",
+    "date": "30 mar - 3 apr 14.00–14.30",
+    "venue": "Gamla Uppsala museum",
+    "url": "https://hejauppsala.com/kalender/pasklov-i-gamla-uppsala-museum/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:15.013Z",
+    "latitude": 59.8977837,
+    "longitude": 17.6336407
   },
   {
     "title": "Påskfirande på Vaksala torg 2026",
@@ -247,7 +207,7 @@
     "venue": "Vaksala torg, Uppsala city",
     "url": "https://hejauppsala.com/kalender/paskfirande-pa-vaksala-torg-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.300Z"
+    "fetched_at": "2026-03-28T01:18:15.014Z"
   },
   {
     "title": "Lennie Norman – Reginateatern – 2026",
@@ -255,17 +215,9 @@
     "venue": "Reginateatern",
     "url": "https://hejauppsala.com/kalender/lennie-norman-reginateatern-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.300Z",
+    "fetched_at": "2026-03-28T01:18:15.014Z",
     "latitude": 59.8569052,
     "longitude": 17.6361266
-  },
-  {
-    "title": "Jazzlunch med Dr Rulles jazzklinik 2026",
-    "date": "31 mar 11.30",
-    "venue": "Jazzbaren",
-    "url": "https://hejauppsala.com/kalender/jazzlunch-med-dr-rulles-jazzklinik-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.301Z"
   },
   {
     "title": "Påsklov på Upplandsmuseet",
@@ -273,17 +225,17 @@
     "venue": "Upplandsmuseet",
     "url": "https://hejauppsala.com/kalender/pasklov-pa-upplandsmuseet-2/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.301Z",
+    "fetched_at": "2026-03-28T01:18:15.015Z",
     "latitude": 59.8588495,
     "longitude": 17.6349743
   },
   {
-    "title": "Måla i grupp – Studio Hörngren",
-    "date": "1 apr 17.30",
-    "venue": "Studio Hörngren",
-    "url": "https://hejauppsala.com/kalender/mala-i-grupp-studio-horngren/",
+    "title": "Jazzlunch med Dr Rulles jazzklinik 2026",
+    "date": "31 mar 11.30",
+    "venue": "Jazzbaren",
+    "url": "https://hejauppsala.com/kalender/jazzlunch-med-dr-rulles-jazzklinik-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.302Z"
+    "fetched_at": "2026-03-28T01:18:15.015Z"
   },
   {
     "title": "Kirsty Armstrong – For The Girls 2026 Katalin",
@@ -291,7 +243,7 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/kirsty-armstrong-for-the-girls-2026-katalin/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.303Z",
+    "fetched_at": "2026-03-28T01:18:15.016Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -301,9 +253,27 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/jesus-christ-superstar-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.303Z",
+    "fetched_at": "2026-03-28T01:18:15.016Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
+  },
+  {
+    "title": "Måla i grupp – Studio Hörngren",
+    "date": "1 apr 17.30",
+    "venue": "Studio Hörngren",
+    "url": "https://hejauppsala.com/kalender/mala-i-grupp-studio-horngren/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:15.017Z"
+  },
+  {
+    "title": "Påskäggsorienteringen",
+    "date": "2 apr 13:00 - 16:00",
+    "venue": "Uppsala slott",
+    "url": "https://hejauppsala.com/kalender/paskaggsorienteringen/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:15.017Z",
+    "latitude": 59.8537412,
+    "longitude": 17.6354398
   },
   {
     "title": "Konstpåsk på Ulva",
@@ -311,17 +281,9 @@
     "venue": "Ulva kvarn",
     "url": "https://hejauppsala.com/kalender/konstpask-pa-ulva/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.304Z",
+    "fetched_at": "2026-03-28T01:18:15.017Z",
     "latitude": 59.913436,
     "longitude": 17.575141
-  },
-  {
-    "title": "Victor Rydström band feat. Robert Nordmark – jazzbaren",
-    "date": "4 apr 20.00",
-    "venue": "Jazzbaren",
-    "url": "https://hejauppsala.com/kalender/victor-rydstrom-trio-jazzbaren/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.304Z"
   },
   {
     "title": "Påskbrunch på Clarion Gillet",
@@ -329,7 +291,7 @@
     "venue": "Clarion Hotel® Gillet, Dragarbrunnsgatan 23 Uppsala",
     "url": "https://hejauppsala.com/kalender/paskbrunch-pa-clarion-gillet/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.305Z"
+    "fetched_at": "2026-03-28T01:18:15.018Z"
   },
   {
     "title": "Exklusiv vinprovning med middag på Miss Voon",
@@ -337,15 +299,7 @@
     "venue": "Miss Voon, Uppsala",
     "url": "https://hejauppsala.com/kalender/exklusiv-vinprovning-pa-miss-voon-4-april-2026-2/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.305Z"
-  },
-  {
-    "title": "Historisk vårmarknad",
-    "date": "4 apr - 5 apr 12:00 – 16:00",
-    "venue": "Utanför Gamla Uppsala museum",
-    "url": "https://hejauppsala.com/kalender/historisk-varmarknad/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.306Z"
+    "fetched_at": "2026-03-28T01:18:15.018Z"
   },
   {
     "title": "Lördagsjazz 4 april  – Katalin",
@@ -353,9 +307,17 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/lordagsjazz-4-april-katalin/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.306Z",
+    "fetched_at": "2026-03-28T01:18:15.019Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
+  },
+  {
+    "title": "Historisk vårmarknad",
+    "date": "4 apr - 5 apr 12:00 – 16:00",
+    "venue": "Utanför Gamla Uppsala museum",
+    "url": "https://hejauppsala.com/kalender/historisk-varmarknad/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:15.019Z"
   },
   {
     "title": "Arne Alligator & Djungeltrumman på UKK",
@@ -363,7 +325,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/arne-alligator-djungeltrumman-pa-ukk/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.307Z",
+    "fetched_at": "2026-03-28T01:18:15.019Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -373,7 +335,7 @@
     "venue": "Studenternas",
     "url": "https://hejauppsala.com/kalender/ik-uppsala-pitea-5-april-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:29.308Z",
+    "fetched_at": "2026-03-28T01:18:15.019Z",
     "latitude": 59.8486572,
     "longitude": 17.6463313
   },
@@ -383,37 +345,9 @@
     "venue": "Domkyrkan",
     "url": "https://hejauppsala.com/kalender/choral-evensong-in-english-2/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.300Z",
+    "fetched_at": "2026-03-28T01:18:15.020Z",
     "latitude": 59.8992756,
     "longitude": 17.6317491
-  },
-  {
-    "title": "Författarbesök: Martin Kragh – Stadsbiblioteket",
-    "date": "7 apr 18.00-19.00",
-    "venue": "Stadsbiblioteket",
-    "url": "https://hejauppsala.com/kalender/forfattarbesok-martin-kragh-stadsbiblioteket/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.301Z",
-    "latitude": 59.8607168,
-    "longitude": 17.6357693
-  },
-  {
-    "title": "Klubb Uffe – Joe Nolan – 2026",
-    "date": "7 apr 20.00",
-    "venue": "Jazzbaren",
-    "url": "https://hejauppsala.com/kalender/klubb-uffe-joe-nolan-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.301Z"
-  },
-  {
-    "title": "Vårsång i Uppsala city",
-    "date": "7 apr - 10 apr 16.00-16.20",
-    "venue": "Uppsala city",
-    "url": "https://hejauppsala.com/kalender/varsang-i-uppsala-city/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.301Z",
-    "latitude": 59.8586126,
-    "longitude": 17.6387436
   },
   {
     "title": "Jazzlunch med Gustavz Orchester 2026",
@@ -421,7 +355,27 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/jazzlunch-med-gustavz-orchester-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.301Z"
+    "fetched_at": "2026-03-28T01:18:15.020Z"
+  },
+  {
+    "title": "Författarbesök: Martin Kragh – Stadsbiblioteket",
+    "date": "7 apr 18.00-19.00",
+    "venue": "Stadsbiblioteket",
+    "url": "https://hejauppsala.com/kalender/forfattarbesok-martin-kragh-stadsbiblioteket/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:15.020Z",
+    "latitude": 59.8607168,
+    "longitude": 17.6357693
+  },
+  {
+    "title": "Vårsång i Uppsala city",
+    "date": "7 apr - 10 apr 16.00-16.20",
+    "venue": "Uppsala city",
+    "url": "https://hejauppsala.com/kalender/varsang-i-uppsala-city/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:15.021Z",
+    "latitude": 59.8586126,
+    "longitude": 17.6387436
   },
   {
     "title": "Midnight Sun Collective – Jazzbaren – 2026",
@@ -429,7 +383,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/midnight-sun-collective-jazzbaren-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.302Z"
+    "fetched_at": "2026-03-28T01:18:22.387Z"
   },
   {
     "title": "Stitches & Sips – 9 april 2026",
@@ -437,7 +391,7 @@
     "venue": "Clarion Hotel Gillet",
     "url": "https://hejauppsala.com/kalender/stitches-sips-9-april-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.303Z",
+    "fetched_at": "2026-03-28T01:18:22.388Z",
     "latitude": 59.8605797,
     "longitude": 17.6375627
   },
@@ -447,17 +401,9 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/kulturfrukost-9-april-ukk/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.303Z",
+    "fetched_at": "2026-03-28T01:18:22.388Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
-  },
-  {
-    "title": "Utställning",
-    "date": "9 apr - 12 apr 14:00 – 18:00",
-    "venue": "Uppsala Konstnärsklubb, Sysslomansgatan 1, Uppsala",
-    "url": "https://hejauppsala.com/kalender/utstallning-2/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.304Z"
   },
   {
     "title": "Claes Janson & Andreas Hellkvist – jazzbaren 2026",
@@ -465,7 +411,15 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/claes-janson-andreas-hellkvist-jazzbaren-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.304Z"
+    "fetched_at": "2026-03-28T01:18:22.389Z"
+  },
+  {
+    "title": "Utställning",
+    "date": "9 apr - 12 apr 14:00 – 18:00",
+    "venue": "Uppsala Konstnärsklubb, Sysslomansgatan 1, Uppsala",
+    "url": "https://hejauppsala.com/kalender/utstallning-2/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:22.389Z"
   },
   {
     "title": "Pjäsen som går åt helvete – Ukk – 2026",
@@ -473,7 +427,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/pjasen-som-gar-at-helvete-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.305Z",
+    "fetched_at": "2026-03-28T01:18:22.390Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -483,7 +437,7 @@
     "venue": "Bryggeriet Ångkvarn",
     "url": "https://hejauppsala.com/kalender/wine-and-appetizer-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.305Z",
+    "fetched_at": "2026-03-28T01:18:22.390Z",
     "latitude": 59.855248,
     "longitude": 17.6421062
   },
@@ -493,17 +447,7 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/simon-gardenfors-anton-magnusson-katalin-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.306Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Beatles Complete – Katalin 2026",
-    "date": "10 apr 20.00",
-    "venue": "Katalin",
-    "url": "https://hejauppsala.com/kalender/beatles-complete-katalin-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.306Z",
+    "fetched_at": "2026-03-28T01:18:22.391Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -513,7 +457,7 @@
     "venue": "Reginateatern",
     "url": "https://hejauppsala.com/kalender/valv1-comedy-reginateatern-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.307Z",
+    "fetched_at": "2026-03-28T01:18:22.391Z",
     "latitude": 59.8569052,
     "longitude": 17.6361266
   },
@@ -523,7 +467,7 @@
     "venue": "Saluhallen",
     "url": "https://hejauppsala.com/kalender/ost-och-vinprovning-pa-saluhallen-10-april-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.307Z",
+    "fetched_at": "2026-03-28T01:18:22.392Z",
     "latitude": 59.8591456,
     "longitude": 17.6333785
   },
@@ -533,7 +477,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/nanna-carling-jazzbaren-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.312Z"
+    "fetched_at": "2026-03-28T01:18:22.392Z"
   },
   {
     "title": "Simply Sting – Ukk – 2026",
@@ -541,7 +485,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/simply-sting-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.313Z",
+    "fetched_at": "2026-03-28T01:18:22.393Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -551,9 +495,17 @@
     "venue": "Saluhallen",
     "url": "https://hejauppsala.com/kalender/klassisk-champagneprovning-10-april-2026-2/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.313Z",
+    "fetched_at": "2026-03-28T01:18:22.393Z",
     "latitude": 59.8591456,
     "longitude": 17.6333785
+  },
+  {
+    "title": "Pralinkurs",
+    "date": "11 apr 15.30",
+    "venue": "Chokladbutik Östra Ågatan, Uppsala",
+    "url": "https://hejauppsala.com/kalender/pralinkurs-11-april-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:22.394Z"
   },
   {
     "title": "Monotypi för nyfikna",
@@ -561,7 +513,7 @@
     "venue": "Uppsala Konstnärsklubb",
     "url": "https://hejauppsala.com/kalender/monotypi-for-nyfikna/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.314Z"
+    "fetched_at": "2026-03-28T01:18:22.394Z"
   },
   {
     "title": "En Jäkla Massa Schlager – UKK – 2026",
@@ -569,17 +521,9 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/en-jakla-massa-schlager-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.315Z",
+    "fetched_at": "2026-03-28T01:18:22.395Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
-  },
-  {
-    "title": "Museum med middag",
-    "date": "11 apr 17.00",
-    "venue": "Hörnstenen & The Cube of Art",
-    "url": "https://hejauppsala.com/kalender/museum-med-middag-11-april-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.315Z"
   },
   {
     "title": "PAPERBIRD",
@@ -587,7 +531,7 @@
     "venue": "Den Lilla Teatern",
     "url": "https://hejauppsala.com/kalender/paperbird/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.316Z",
+    "fetched_at": "2026-03-28T01:18:22.395Z",
     "latitude": 59.8621467,
     "longitude": 17.6420061
   },
@@ -597,9 +541,17 @@
     "venue": "Saluhallen",
     "url": "https://hejauppsala.com/kalender/klassisk-champagneprovning-2/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.316Z",
+    "fetched_at": "2026-03-28T01:18:22.396Z",
     "latitude": 59.8591456,
     "longitude": 17.6333785
+  },
+  {
+    "title": "Museum med middag",
+    "date": "11 apr 17.00",
+    "venue": "Hörnstenen & The Cube of Art",
+    "url": "https://hejauppsala.com/kalender/museum-med-middag-11-april-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:22.396Z"
   },
   {
     "title": "Lille Store Chagall",
@@ -607,7 +559,7 @@
     "venue": "Reginateatern",
     "url": "https://hejauppsala.com/kalender/lille-store-chagall/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.317Z",
+    "fetched_at": "2026-03-28T01:18:22.396Z",
     "latitude": 59.8569052,
     "longitude": 17.6361266
   },
@@ -617,7 +569,7 @@
     "venue": "Saluhallen",
     "url": "https://hejauppsala.com/kalender/ost-och-vinprovning-pa-saluhallen-11-april-2026-2/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.317Z",
+    "fetched_at": "2026-03-28T01:18:22.397Z",
     "latitude": 59.8591456,
     "longitude": 17.6333785
   },
@@ -627,7 +579,7 @@
     "venue": "Hammarskog",
     "url": "https://hejauppsala.com/kalender/kojbygge-och-grillning-i-hammarskog-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.318Z",
+    "fetched_at": "2026-03-28T01:18:22.397Z",
     "latitude": 59.7722655,
     "longitude": 17.5703158
   },
@@ -637,15 +589,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/magic-iii-katalins-jazzbar-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.318Z"
-  },
-  {
-    "title": "Pralinkurs",
-    "date": "11 apr 15.30",
-    "venue": "Chokladbutik Östra Ågatan, Uppsala",
-    "url": "https://hejauppsala.com/kalender/pralinkurs-11-april-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.318Z"
+    "fetched_at": "2026-03-28T01:18:22.398Z"
   },
   {
     "title": "Lördagsjazz 11 april  – Katalin",
@@ -653,7 +597,7 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/lordagsjazz-11-april-katalin/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.319Z",
+    "fetched_at": "2026-03-28T01:18:22.398Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -663,7 +607,7 @@
     "venue": "Domkyrkan",
     "url": "https://hejauppsala.com/kalender/aftonsang-2/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.319Z",
+    "fetched_at": "2026-03-28T01:18:22.399Z",
     "latitude": 59.8992756,
     "longitude": 17.6317491
   },
@@ -673,7 +617,7 @@
     "venue": "Kulturoasen",
     "url": "https://hejauppsala.com/kalender/stenhagens-manskor-kulturoasen-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.320Z",
+    "fetched_at": "2026-03-28T01:18:22.399Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
   },
@@ -683,7 +627,7 @@
     "venue": "Johannesbäckskolan",
     "url": "https://hejauppsala.com/kalender/sirius-dam-slatta-12-april-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.320Z",
+    "fetched_at": "2026-03-28T01:18:22.400Z",
     "latitude": 59.8621987,
     "longitude": 17.676772
   },
@@ -693,7 +637,7 @@
     "venue": "Vaksalaskolans matsal",
     "url": "https://hejauppsala.com/kalender/folkdraktsmarknad-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.321Z"
+    "fetched_at": "2026-03-28T01:18:22.400Z"
   },
   {
     "title": "Sirius-Hammarby",
@@ -701,7 +645,7 @@
     "venue": "Studenternas",
     "url": "https://hejauppsala.com/kalender/sirius-hammarby-13-april-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.321Z",
+    "fetched_at": "2026-03-28T01:18:22.401Z",
     "latitude": 59.8486572,
     "longitude": 17.6463313
   },
@@ -711,7 +655,7 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/amanda-bergman/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.321Z",
+    "fetched_at": "2026-03-28T01:18:22.401Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -721,7 +665,7 @@
     "venue": "Musicum",
     "url": "https://hejauppsala.com/kalender/kammarmusik-pa-musicum-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.322Z",
+    "fetched_at": "2026-03-28T01:18:22.402Z",
     "latitude": 59.8582945,
     "longitude": 17.6234026
   },
@@ -731,7 +675,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/jazzlunch-med-gunnar-lidbergs-kvartett-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.322Z"
+    "fetched_at": "2026-03-28T01:18:22.402Z"
   },
   {
     "title": "Janne Davidsson Quartet 2026",
@@ -739,7 +683,17 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/janne-davidsson-quartet-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.323Z"
+    "fetched_at": "2026-03-28T01:18:22.403Z"
+  },
+  {
+    "title": "SWIMP26",
+    "date": "15 apr - 18 apr 19:00 – 21:00",
+    "venue": "Reginateatern",
+    "url": "https://hejauppsala.com/kalender/swimp26/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:22.403Z",
+    "latitude": 59.8569052,
+    "longitude": 17.6361266
   },
   {
     "title": "Henrik Nyblom – ”Kluven” 2026",
@@ -747,17 +701,7 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/henrik-nyblom-kluven-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:36.323Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Danko Jones",
-    "date": "16 apr 20.00",
-    "venue": "Katalin",
-    "url": "https://hejauppsala.com/kalender/danko-jones/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.218Z",
+    "fetched_at": "2026-03-28T01:18:22.404Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -767,7 +711,27 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/uppsala-kammarorkester-alskad-trumpetkonsert-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.218Z",
+    "fetched_at": "2026-03-28T01:18:22.404Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Danko Jones",
+    "date": "16 apr 20.00",
+    "venue": "Katalin",
+    "url": "https://hejauppsala.com/kalender/danko-jones/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:22.405Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
+  },
+  {
+    "title": "Lunchkonsert – Frida Öhrn tolkar Monika Zetterlund – UKK 2026",
+    "date": "17 apr 12.15",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://hejauppsala.com/kalender/lunchkonsert-frida-ohrn-tolkar-monika-zetterlund-ukk-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:22.405Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -777,17 +741,7 @@
     "venue": "Galleri Upsala Svartbäcksgatan 21",
     "url": "https://hejauppsala.com/kalender/akvareller-fran-dalarna/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.218Z"
-  },
-  {
-    "title": "Lunchkonsert – Frida Öhrn tolkar Monika Zetterlund – UKK 2026",
-    "date": "17 apr 12.15",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://hejauppsala.com/kalender/lunchkonsert-frida-ohrn-tolkar-monika-zetterlund-ukk-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.218Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
+    "fetched_at": "2026-03-28T01:18:22.406Z"
   },
   {
     "title": "Sång till Selma Sofia Karlsson",
@@ -795,7 +749,7 @@
     "venue": "Salsta slott",
     "url": "https://hejauppsala.com/kalender/sang-till-selma-sofia-karlsson/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.219Z",
+    "fetched_at": "2026-03-28T01:18:29.295Z",
     "latitude": 60.045366,
     "longitude": 17.7397597
   },
@@ -805,47 +759,9 @@
     "venue": "Domkyrkan",
     "url": "https://hejauppsala.com/kalender/korkonsert-i-domkyrkan/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.219Z",
+    "fetched_at": "2026-03-28T01:18:29.295Z",
     "latitude": 59.8992756,
     "longitude": 17.6317491
-  },
-  {
-    "title": "Uppsala Kammarorkester – Ludde B – 2026",
-    "date": "18 apr 13.00",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://hejauppsala.com/kalender/uppsala-kammarorkester-ludde-b-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.219Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
-  },
-  {
-    "title": "Romprovning på The Bishops Arms",
-    "date": "18 apr 17.00",
-    "venue": "The Bishops Arms",
-    "url": "https://hejauppsala.com/kalender/romprovning-pa-the-bishops-arms-18-apr-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.219Z",
-    "latitude": 59.8571014,
-    "longitude": 17.6480034
-  },
-  {
-    "title": "Lördagsjazz 18 april  – Katalin",
-    "date": "18 apr 14.30-16.30",
-    "venue": "Katalin",
-    "url": "https://hejauppsala.com/kalender/lordagsjazz-18-april-katalin/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.220Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "The blues Uppsala – Blue Benders 2026",
-    "date": "18 apr 20.00",
-    "venue": "Jazzbaren",
-    "url": "https://hejauppsala.com/kalender/the-blues-uppsala-blue-benders-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.220Z"
   },
   {
     "title": "Teymor Zarré",
@@ -853,7 +769,17 @@
     "venue": "Uppsala Konstnärsklubb, Sysslomansgatan 1 Uppsala",
     "url": "https://hejauppsala.com/kalender/teymor-zarre/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.220Z"
+    "fetched_at": "2026-03-28T01:18:29.295Z"
+  },
+  {
+    "title": "Lördagsjazz 18 april  – Katalin",
+    "date": "18 apr 14.30-16.30",
+    "venue": "Katalin",
+    "url": "https://hejauppsala.com/kalender/lordagsjazz-18-april-katalin/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:29.296Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
   },
   {
     "title": "Must & Cider SM 2026",
@@ -861,7 +787,7 @@
     "venue": "Botaniska trädgården, Uppsala",
     "url": "https://hejauppsala.com/kalender/must-cider-sm-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.220Z",
+    "fetched_at": "2026-03-28T01:18:29.296Z",
     "latitude": 59.8515471,
     "longitude": 17.6272814
   },
@@ -871,9 +797,37 @@
     "venue": "Studenternas",
     "url": "https://hejauppsala.com/kalender/sirius-vasteras-18-april-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.221Z",
+    "fetched_at": "2026-03-28T01:18:29.296Z",
     "latitude": 59.8486572,
     "longitude": 17.6463313
+  },
+  {
+    "title": "The blues Uppsala – Blue Benders 2026",
+    "date": "18 apr 20.00",
+    "venue": "Jazzbaren",
+    "url": "https://hejauppsala.com/kalender/the-blues-uppsala-blue-benders-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:29.296Z"
+  },
+  {
+    "title": "Uppsala Kammarorkester – Ludde B – 2026",
+    "date": "18 apr 13.00",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://hejauppsala.com/kalender/uppsala-kammarorkester-ludde-b-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:29.305Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Romprovning på The Bishops Arms",
+    "date": "18 apr 17.00",
+    "venue": "The Bishops Arms",
+    "url": "https://hejauppsala.com/kalender/romprovning-pa-the-bishops-arms-18-apr-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:29.305Z",
+    "latitude": 59.8571014,
+    "longitude": 17.6480034
   },
   {
     "title": "Livets Orkester – Kulturoasen – 2026",
@@ -881,29 +835,9 @@
     "venue": "Kulturoasen",
     "url": "https://hejauppsala.com/kalender/livets-orkester-kulturoasen-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.221Z",
+    "fetched_at": "2026-03-28T01:18:29.305Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
-  },
-  {
-    "title": "Choral Evensong in English",
-    "date": "19 apr",
-    "venue": "Domkyrkan",
-    "url": "https://hejauppsala.com/kalender/choral-evensong-in-english-3/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.221Z",
-    "latitude": 59.8992756,
-    "longitude": 17.6317491
-  },
-  {
-    "title": "Niklas Strömstedt – UKK – 2026",
-    "date": "19 apr 16.30",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://hejauppsala.com/kalender/niklas-stromstedt-ukk-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.221Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
   },
   {
     "title": "Shai Maestro: The Guesthouse – UKK – jazzhörnan",
@@ -911,7 +845,17 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/shai-maestro-the-guesthouse-ukk-jazzhornan/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.222Z",
+    "fetched_at": "2026-03-28T01:18:29.306Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Niklas Strömstedt – UKK – 2026",
+    "date": "19 apr 16.30",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://hejauppsala.com/kalender/niklas-stromstedt-ukk-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:29.306Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -921,9 +865,27 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/morgan-alling-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.222Z",
+    "fetched_at": "2026-03-28T01:18:29.306Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
+  },
+  {
+    "title": "Choral Evensong in English",
+    "date": "19 apr",
+    "venue": "Domkyrkan",
+    "url": "https://hejauppsala.com/kalender/choral-evensong-in-english-3/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:29.307Z",
+    "latitude": 59.8992756,
+    "longitude": 17.6317491
+  },
+  {
+    "title": "Klubb Uffe – The Mallet Brothers -2026",
+    "date": "21 apr 20.00",
+    "venue": "Jazzbaren",
+    "url": "https://hejauppsala.com/kalender/klubb-uffe-the-mallet-brothers-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:29.307Z"
   },
   {
     "title": "Steve´n´Seagulls",
@@ -931,7 +893,7 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/stevenseagulls/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.231Z",
+    "fetched_at": "2026-03-28T01:18:29.307Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -941,15 +903,25 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/jazz-musikallunch-med-ako-co-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.231Z"
+    "fetched_at": "2026-03-28T01:18:29.307Z"
   },
   {
-    "title": "Klubb Uffe – The Mallet Brothers -2026",
-    "date": "21 apr 20.00",
-    "venue": "Jazzbaren",
-    "url": "https://hejauppsala.com/kalender/klubb-uffe-the-mallet-brothers-2026/",
+    "title": "Våtmark med vattenbufflar – 2026",
+    "date": "22 apr 19.30",
+    "venue": "Väddika Gård",
+    "url": "https://hejauppsala.com/kalender/vatmark-med-vattenbufflar-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.232Z"
+    "fetched_at": "2026-03-28T01:18:29.308Z"
+  },
+  {
+    "title": "Svullo, mer än bara rolig – Reginateatern – 2026",
+    "date": "22 apr 19:00 – 20:00",
+    "venue": "Reginateatern",
+    "url": "https://hejauppsala.com/kalender/svullo-mer-an-bara-rolig-reginateatern-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:29.308Z",
+    "latitude": 59.8569052,
+    "longitude": 17.6361266
   },
   {
     "title": "Författarbesök: Lena Kihlander – Stadsbiblioteket",
@@ -957,7 +929,7 @@
     "venue": "Stadsbibliotek",
     "url": "https://hejauppsala.com/kalender/forfattarbesok-lena-kihlander-stadsbiblioteket/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.232Z",
+    "fetched_at": "2026-03-28T01:18:29.308Z",
     "latitude": 59.8607168,
     "longitude": 17.6357693
   },
@@ -967,25 +939,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/happy-birthday-to-me-jazzbaren-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.233Z"
-  },
-  {
-    "title": "Våtmark med vattenbufflar – 2026",
-    "date": "22 apr 19.30",
-    "venue": "Väddika Gård",
-    "url": "https://hejauppsala.com/kalender/vatmark-med-vattenbufflar-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.233Z"
-  },
-  {
-    "title": "Svullo, mer än bara rolig – Reginateatern – 2026",
-    "date": "22 apr 19:00 – 20:00",
-    "venue": "Reginateatern",
-    "url": "https://hejauppsala.com/kalender/svullo-mer-an-bara-rolig-reginateatern-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.233Z",
-    "latitude": 59.8569052,
-    "longitude": 17.6361266
+    "fetched_at": "2026-03-28T01:18:29.309Z"
   },
   {
     "title": "Daniel Lantz Quartet ”Plays Bond” ft Sara Englund – Jazzbaren – 2026",
@@ -993,7 +947,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/daniel-lantz-quartet-plays-bond-ft-sara-englund-jazzbaren-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.234Z"
+    "fetched_at": "2026-03-28T01:18:29.309Z"
   },
   {
     "title": "Wine tasting – Nya mot gamla världen",
@@ -1001,7 +955,7 @@
     "venue": "Bryggeriet Ångkvarn",
     "url": "https://hejauppsala.com/kalender/wine-tasting-nya-mot-gamla-varlden/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.234Z",
+    "fetched_at": "2026-03-28T01:18:29.310Z",
     "latitude": 59.855248,
     "longitude": 17.6421062
   },
@@ -1011,7 +965,7 @@
     "venue": "Stadsbibliotek",
     "url": "https://hejauppsala.com/kalender/forfattarbesok-diamant-salihu-och-amanda-hallsten-stadsbiblioteket/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.235Z",
+    "fetched_at": "2026-03-28T01:18:29.310Z",
     "latitude": 59.8607168,
     "longitude": 17.6357693
   },
@@ -1021,19 +975,9 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/solala-katalin-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.235Z",
+    "fetched_at": "2026-03-28T01:18:29.310Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
-  },
-  {
-    "title": "Klassisk whiskyprovning på The Bishops Arms",
-    "date": "24 apr 17.00",
-    "venue": "The Bishops Arms",
-    "url": "https://hejauppsala.com/kalender/whiskyprovning-pa-the-bishops-arms-24-april-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.235Z",
-    "latitude": 59.8571014,
-    "longitude": 17.6480034
   },
   {
     "title": "”Laya Trio” – Jazzbaren – 2026",
@@ -1041,7 +985,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/laya-trio-jazzbaren-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.236Z"
+    "fetched_at": "2026-03-28T01:18:29.311Z"
   },
   {
     "title": "Champagneprovning",
@@ -1049,17 +993,7 @@
     "venue": "Saluhallen",
     "url": "https://hejauppsala.com/kalender/klassisk-champagneprovning24-april-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.236Z",
-    "latitude": 59.8591456,
-    "longitude": 17.6333785
-  },
-  {
-    "title": "Ost- och ölprovning i Saluhallen",
-    "date": "24 apr",
-    "venue": "Saluhallen",
-    "url": "https://hejauppsala.com/kalender/ost-och-olprovning-i-saluhallen-24-april-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.237Z",
+    "fetched_at": "2026-03-28T01:18:29.311Z",
     "latitude": 59.8591456,
     "longitude": 17.6333785
   },
@@ -1069,9 +1003,29 @@
     "venue": "Bror Hjorths Hus, Norbyvägen 26",
     "url": "https://hejauppsala.com/kalender/orjan-englund-robert-larsson/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.237Z",
+    "fetched_at": "2026-03-28T01:18:29.312Z",
     "latitude": 59.8492776,
     "longitude": 17.6198763
+  },
+  {
+    "title": "Ost- och ölprovning i Saluhallen",
+    "date": "24 apr",
+    "venue": "Saluhallen",
+    "url": "https://hejauppsala.com/kalender/ost-och-olprovning-i-saluhallen-24-april-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:29.312Z",
+    "latitude": 59.8591456,
+    "longitude": 17.6333785
+  },
+  {
+    "title": "Klassisk whiskyprovning på The Bishops Arms",
+    "date": "24 apr 17.00",
+    "venue": "The Bishops Arms",
+    "url": "https://hejauppsala.com/kalender/whiskyprovning-pa-the-bishops-arms-24-april-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:29.313Z",
+    "latitude": 59.8571014,
+    "longitude": 17.6480034
   },
   {
     "title": "Fatoumata Diawara – Ukk – 2026",
@@ -1079,67 +1033,9 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/fatoumata-diawara-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.237Z",
+    "fetched_at": "2026-03-28T01:18:29.313Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
-  },
-  {
-    "title": "HippHipp Live! – UKK – 2026",
-    "date": "24 apr - 25 apr 19.30",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://hejauppsala.com/kalender/hipphipp-live-ukk-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.238Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
-  },
-  {
-    "title": "Lördagsjazz 25 april  – Katalin",
-    "date": "25 apr 14:30-16:30",
-    "venue": "Katalin",
-    "url": "https://hejauppsala.com/kalender/lordagsjazz-25-april-katalin/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.240Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "IK Uppsala-Rosengård",
-    "date": "25 apr 14:00",
-    "venue": "Studenternas",
-    "url": "https://hejauppsala.com/kalender/ik-uppsala-rosengard-25-april-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.241Z",
-    "latitude": 59.8486572,
-    "longitude": 17.6463313
-  },
-  {
-    "title": "Klassisk whiskyprovning på The Bishops Arms",
-    "date": "25 apr 17.00",
-    "venue": "The Bishops Arms",
-    "url": "https://hejauppsala.com/kalender/whiskyprovning-pa-the-bishops-arms-25-april-2026-2/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:43.241Z",
-    "latitude": 59.8571014,
-    "longitude": 17.6480034
-  },
-  {
-    "title": "ORLANDO! – 25 april – Gamla Uppsala Kyrka",
-    "date": "25 apr 17:00 – 18:00",
-    "venue": "Gamla Uppsala Kyrka",
-    "url": "https://hejauppsala.com/kalender/orlando-25-april-gamla-uppsala-kyrka/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.244Z",
-    "latitude": 59.8995004,
-    "longitude": 17.6319116
-  },
-  {
-    "title": "Harriet Nauer – Jazzbaren 2026",
-    "date": "25 apr 20.00",
-    "venue": "Jazzbaren",
-    "url": "https://hejauppsala.com/kalender/harriet-nauer-jazzbaren-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.245Z"
   },
   {
     "title": "FLASH – World Queen Tribute Band",
@@ -1147,19 +1043,17 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/flash-world-queen-tribute-band/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.246Z",
+    "fetched_at": "2026-03-28T01:18:29.313Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
   {
-    "title": "123 Schtunk-25 april-2026",
-    "date": "25 apr 19:00 – 20:30",
-    "venue": "Reginateatern",
-    "url": "https://hejauppsala.com/kalender/123-schtunk-25-april-2026/",
+    "title": "Harriet Nauer – Jazzbaren 2026",
+    "date": "25 apr 20.00",
+    "venue": "Jazzbaren",
+    "url": "https://hejauppsala.com/kalender/harriet-nauer-jazzbaren-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.246Z",
-    "latitude": 59.8569052,
-    "longitude": 17.6361266
+    "fetched_at": "2026-03-28T01:18:29.314Z"
   },
   {
     "title": "Sirius Dam-Lindhagen",
@@ -1167,9 +1061,19 @@
     "venue": "Löten",
     "url": "https://hejauppsala.com/kalender/sirius-dam-lindhagen-25-april-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.247Z",
+    "fetched_at": "2026-03-28T01:18:29.314Z",
     "latitude": 59.8782458,
     "longitude": 17.6503905
+  },
+  {
+    "title": "123 Schtunk-25 april-2026",
+    "date": "25 apr 19:00 – 20:30",
+    "venue": "Reginateatern",
+    "url": "https://hejauppsala.com/kalender/123-schtunk-25-april-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:29.315Z",
+    "latitude": 59.8569052,
+    "longitude": 17.6361266
   },
   {
     "title": "Vinprovning i Saluhallen",
@@ -1177,7 +1081,7 @@
     "venue": "Saluhallen",
     "url": "https://hejauppsala.com/kalender/vinprovning-pa-saluhallen-25-april-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.247Z",
+    "fetched_at": "2026-03-28T01:18:29.315Z",
     "latitude": 59.8591456,
     "longitude": 17.6333785
   },
@@ -1187,7 +1091,7 @@
     "venue": "Clarion Hotel® Gillet, Dragarbrunnsgatan 23",
     "url": "https://hejauppsala.com/kalender/drag-brunch-bingo-x-tuck-ohej/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.248Z"
+    "fetched_at": "2026-03-28T01:18:29.315Z"
   },
   {
     "title": "Choklad- och vinprovning i Saluhallen",
@@ -1195,7 +1099,7 @@
     "venue": "Saluhallen",
     "url": "https://hejauppsala.com/kalender/choklad-och-vinprovning-i-saluhallen-25-april-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.248Z",
+    "fetched_at": "2026-03-28T01:18:29.316Z",
     "latitude": 59.8591456,
     "longitude": 17.6333785
   },
@@ -1205,7 +1109,7 @@
     "venue": "Domkyrkan",
     "url": "https://hejauppsala.com/kalender/musikal-tradgardsmastaren/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.248Z",
+    "fetched_at": "2026-03-28T01:18:29.316Z",
     "latitude": 59.8992756,
     "longitude": 17.6317491
   },
@@ -1215,19 +1119,9 @@
     "venue": "Hammarskog",
     "url": "https://hejauppsala.com/kalender/fagning-i-hammarskog-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.249Z",
+    "fetched_at": "2026-03-28T01:18:29.317Z",
     "latitude": 59.7722655,
     "longitude": 17.5703158
-  },
-  {
-    "title": "The Hebbe Family – Kulturoasen – 2026",
-    "date": "26 apr 14.00",
-    "venue": "Kulturoasen",
-    "url": "https://hejauppsala.com/kalender/the-hebbe-family-kulturoasen-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.249Z",
-    "latitude": 59.8381131,
-    "longitude": 17.5763292
   },
   {
     "title": "Wellness Day – Selma City Spa",
@@ -1235,7 +1129,17 @@
     "venue": "Selma City Spa på Clarion Hotel® Gillet",
     "url": "https://hejauppsala.com/kalender/wellness-day-selma-city-spa/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.250Z"
+    "fetched_at": "2026-03-28T01:18:36.331Z"
+  },
+  {
+    "title": "The Hebbe Family – Kulturoasen – 2026",
+    "date": "26 apr 14.00",
+    "venue": "Kulturoasen",
+    "url": "https://hejauppsala.com/kalender/the-hebbe-family-kulturoasen-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:36.331Z",
+    "latitude": 59.8381131,
+    "longitude": 17.5763292
   },
   {
     "title": "123 Schtunk 26 april 2026",
@@ -1243,7 +1147,7 @@
     "venue": "Reginateatern",
     "url": "https://hejauppsala.com/kalender/123-schtunk-26-april-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.250Z",
+    "fetched_at": "2026-03-28T01:18:36.332Z",
     "latitude": 59.8569052,
     "longitude": 17.6361266
   },
@@ -1253,7 +1157,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/poste-restante-tillagnan-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.251Z",
+    "fetched_at": "2026-03-28T01:18:36.333Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -1263,7 +1167,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/klubb-uffe-mariel-buckley-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.251Z"
+    "fetched_at": "2026-03-28T01:18:36.333Z"
   },
   {
     "title": "Uppsala improklubb med Teater",
@@ -1271,19 +1175,9 @@
     "venue": "Reginateatern",
     "url": "https://hejauppsala.com/kalender/uppsala-improklubb-med-teater/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.252Z",
+    "fetched_at": "2026-03-28T01:18:36.334Z",
     "latitude": 59.8569052,
     "longitude": 17.6361266
-  },
-  {
-    "title": "Nätverksträff med Wonder Women 2026",
-    "date": "28 apr",
-    "venue": "Clarion Hotel Gillet",
-    "url": "https://hejauppsala.com/kalender/natverkstraff-med-wonder-women-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.252Z",
-    "latitude": 59.8605797,
-    "longitude": 17.6375627
   },
   {
     "title": "Jazzlunch med Bella Notte 2026",
@@ -1291,7 +1185,17 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/jazzlunch-med-bella-notte-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.252Z"
+    "fetched_at": "2026-03-28T01:18:36.334Z"
+  },
+  {
+    "title": "Nätverksträff med Wonder Women 2026",
+    "date": "28 apr",
+    "venue": "Clarion Hotel Gillet",
+    "url": "https://hejauppsala.com/kalender/natverkstraff-med-wonder-women-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:36.335Z",
+    "latitude": 59.8605797,
+    "longitude": 17.6375627
   },
   {
     "title": "Ale Möller – Jazzbaren – 2026",
@@ -1299,17 +1203,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/ale-moller-jazzbaren-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.253Z"
-  },
-  {
-    "title": "Onsdagslunch -Katalin-29 april-2026",
-    "date": "29 apr 12.00",
-    "venue": "Katalin",
-    "url": "https://hejauppsala.com/kalender/onsdagslunch-katalin-29-april-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.253Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
+    "fetched_at": "2026-03-28T01:18:36.336Z"
   },
   {
     "title": "Möt Maria Nilsson Thore",
@@ -1317,39 +1211,19 @@
     "venue": "Bror Hjorths Hus, Norbyvägen 26",
     "url": "https://hejauppsala.com/kalender/mot-maria-nilsson-thore/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.254Z",
+    "fetched_at": "2026-03-28T01:18:36.336Z",
     "latitude": 59.8492776,
     "longitude": 17.6198763
   },
   {
-    "title": "Valborg på Uppsala konstmuseum",
-    "date": "30 apr 11.00-14.30",
-    "venue": "Uppsala konstmuseum",
-    "url": "https://hejauppsala.com/kalender/valborg-pa-uppsala-konstmuseum/",
+    "title": "Onsdagslunch -Katalin-29 april-2026",
+    "date": "29 apr 12.00",
+    "venue": "Katalin",
+    "url": "https://hejauppsala.com/kalender/onsdagslunch-katalin-29-april-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.254Z",
-    "latitude": 59.8532485,
-    "longitude": 17.6351548
-  },
-  {
-    "title": "Majbrasa i Ulleråker 2026",
-    "date": "30 apr 18:00 – 23:00",
-    "venue": "Hospitalsträdgården, Ulleråker, Uppsala",
-    "url": "https://hejauppsala.com/kalender/majbrasa-i-ulleraker-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.254Z",
-    "latitude": 59.8356635,
-    "longitude": 17.6559026
-  },
-  {
-    "title": "Valborg på Forumtorget",
-    "date": "30 apr",
-    "venue": "Forumtorget",
-    "url": "https://hejauppsala.com/kalender/valborg-pa-forumtorget/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.255Z",
-    "latitude": 59.8581032,
-    "longitude": 17.6401657
+    "fetched_at": "2026-03-28T01:18:36.337Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
   },
   {
     "title": "Klassisk sillunch på UKK 2026",
@@ -1357,7 +1231,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/klassisk-sillunch-pa-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.255Z",
+    "fetched_at": "2026-03-28T01:18:36.337Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -1367,7 +1241,7 @@
     "venue": "Clarion Hotel® Gillet",
     "url": "https://hejauppsala.com/kalender/valborg-sillbrunch-pa-gillet/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.256Z",
+    "fetched_at": "2026-03-28T01:18:36.337Z",
     "latitude": 59.8605797,
     "longitude": 17.6375627
   },
@@ -1377,9 +1251,39 @@
     "venue": "Uppsala",
     "url": "https://hejauppsala.com/kalender/valborg-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.256Z",
+    "fetched_at": "2026-03-28T01:18:36.338Z",
     "latitude": 59.8586126,
     "longitude": 17.6387436
+  },
+  {
+    "title": "Valborg på Uppsala konstmuseum",
+    "date": "30 apr 11.00-14.30",
+    "venue": "Uppsala konstmuseum",
+    "url": "https://hejauppsala.com/kalender/valborg-pa-uppsala-konstmuseum/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:36.338Z",
+    "latitude": 59.8532485,
+    "longitude": 17.6351548
+  },
+  {
+    "title": "Majbrasa i Ulleråker 2026",
+    "date": "30 apr 18:00 – 23:00",
+    "venue": "Hospitalsträdgården, Ulleråker, Uppsala",
+    "url": "https://hejauppsala.com/kalender/majbrasa-i-ulleraker-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:36.338Z",
+    "latitude": 59.8356635,
+    "longitude": 17.6559026
+  },
+  {
+    "title": "Valborg på Forumtorget",
+    "date": "30 apr",
+    "venue": "Forumtorget",
+    "url": "https://hejauppsala.com/kalender/valborg-pa-forumtorget/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:36.338Z",
+    "latitude": 59.8581032,
+    "longitude": 17.6401657
   },
   {
     "title": "Lars Demian & David Tallroth – Katalin – 2026",
@@ -1387,19 +1291,9 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/lars-demian-david-tallroth-katalin-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.256Z",
+    "fetched_at": "2026-03-28T01:18:36.339Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
-  },
-  {
-    "title": "Sirius-Kalmar FF",
-    "date": "2 maj 15.00",
-    "venue": "Studenternas",
-    "url": "https://hejauppsala.com/kalender/sirius-kalmar-ff-2-maj-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.257Z",
-    "latitude": 59.8486572,
-    "longitude": 17.6463313
   },
   {
     "title": "Lördagsjazz 2 maj  – Katalin",
@@ -1407,7 +1301,7 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/lordagsjazz-2-maj-katalin/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.257Z",
+    "fetched_at": "2026-03-28T01:18:36.339Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -1417,17 +1311,9 @@
     "venue": "Hammarskogs herrgård",
     "url": "https://hejauppsala.com/kalender/13-grafiker/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.257Z",
+    "fetched_at": "2026-03-28T01:18:36.339Z",
     "latitude": 59.7694006,
     "longitude": 17.5618651
-  },
-  {
-    "title": "Exklusiv vinprovning med middag på Miss Voon",
-    "date": "2 maj 17.00",
-    "venue": "Miss Voon, Uppsala",
-    "url": "https://hejauppsala.com/kalender/exklusiv-vinprovning-pa-miss-voon-2-maj-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.258Z"
   },
   {
     "title": "Solskensorkestern jubileum",
@@ -1435,19 +1321,27 @@
     "venue": "Reginateatern",
     "url": "https://hejauppsala.com/kalender/solskensorkestern-jubileum/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.258Z",
+    "fetched_at": "2026-03-28T01:18:36.339Z",
     "latitude": 59.8569052,
     "longitude": 17.6361266
   },
   {
-    "title": "Design­marknad – ukk – 2026",
-    "date": "3 maj 11.00-16.00",
-    "venue": "UKK",
-    "url": "https://hejauppsala.com/kalender/designmarknad-ukk-2026/",
+    "title": "Exklusiv vinprovning med middag på Miss Voon",
+    "date": "2 maj 17.00",
+    "venue": "Miss Voon, Uppsala",
+    "url": "https://hejauppsala.com/kalender/exklusiv-vinprovning-pa-miss-voon-2-maj-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.259Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
+    "fetched_at": "2026-03-28T01:18:36.339Z"
+  },
+  {
+    "title": "Sirius-Kalmar FF",
+    "date": "2 maj 15.00",
+    "venue": "Studenternas",
+    "url": "https://hejauppsala.com/kalender/sirius-kalmar-ff-2-maj-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:36.340Z",
+    "latitude": 59.8486572,
+    "longitude": 17.6463313
   },
   {
     "title": "En Hyllning Till Joni Mitchell – Kulturoasen 2026",
@@ -1455,19 +1349,9 @@
     "venue": "Kulturoasen",
     "url": "https://hejauppsala.com/kalender/en-hyllning-till-joni-mitchell-kulturoasen-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.259Z",
+    "fetched_at": "2026-03-28T01:18:36.340Z",
     "latitude": 59.8381131,
     "longitude": 17.5763292
-  },
-  {
-    "title": "This is the Moment – Ukk – 2026",
-    "date": "3 maj 16.00",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://hejauppsala.com/kalender/this-is-the-moment-ukk-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.260Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
   },
   {
     "title": "Pannkakstårtan – Ukk – 2026",
@@ -1475,7 +1359,27 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/pannkakstartan-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.260Z",
+    "fetched_at": "2026-03-28T01:18:36.340Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "This is the Moment – Ukk – 2026",
+    "date": "3 maj 16.00",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://hejauppsala.com/kalender/this-is-the-moment-ukk-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:36.341Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Design­marknad – ukk – 2026",
+    "date": "3 maj 11.00-16.00",
+    "venue": "UKK",
+    "url": "https://hejauppsala.com/kalender/designmarknad-ukk-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:36.341Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -1485,7 +1389,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/pro-uppsala-lan/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.260Z",
+    "fetched_at": "2026-03-28T01:18:36.341Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -1495,7 +1399,7 @@
     "venue": "CIK - Knivsta",
     "url": "https://hejauppsala.com/kalender/shrek-jr/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:50.261Z",
+    "fetched_at": "2026-03-28T01:18:36.342Z",
     "latitude": 59.7214292,
     "longitude": 17.7921301
   },
@@ -1505,7 +1409,7 @@
     "venue": "Svandammshallarna",
     "url": "https://hejauppsala.com/kalender/veteranerna-svandammshallarna-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.031Z",
+    "fetched_at": "2026-03-28T01:18:36.342Z",
     "latitude": 59.8534915,
     "longitude": 17.6402205
   },
@@ -1515,7 +1419,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/jazzlunch-med-daniel-lantz-sings-swings-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.031Z"
+    "fetched_at": "2026-03-28T01:18:36.343Z"
   },
   {
     "title": "GRÖNT som aldrig förr – Jazzbaren – 2026",
@@ -1523,7 +1427,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/gront-som-aldrig-forr-jazzbaren-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.032Z"
+    "fetched_at": "2026-03-28T01:18:36.343Z"
   },
   {
     "title": "Det vackra vemodet",
@@ -1531,15 +1435,17 @@
     "venue": "Salsta slott, Vattholma",
     "url": "https://hejauppsala.com/kalender/det-vackra-vemodet/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.032Z"
+    "fetched_at": "2026-03-28T01:18:36.343Z"
   },
   {
-    "title": "Jonas Knutsson  – Jazzbaren – 2026",
-    "date": "7 maj 20.00",
-    "venue": "Jazzbaren",
-    "url": "https://hejauppsala.com/kalender/jonas-knutsson-jazzbaren-2026/",
+    "title": "Ato Karlsson – ”Kort sagt”",
+    "date": "7 maj 20:00 – 21:00",
+    "venue": "Katalin",
+    "url": "https://hejauppsala.com/kalender/ato-karlsson-kort-sagt/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.033Z"
+    "fetched_at": "2026-03-28T01:18:36.344Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
   },
   {
     "title": "Elite Comedy Club – maj – 2026",
@@ -1547,7 +1453,7 @@
     "venue": "The Bishops Arms",
     "url": "https://hejauppsala.com/kalender/elite-comedy-club-maj-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.033Z",
+    "fetched_at": "2026-03-28T01:18:36.344Z",
     "latitude": 59.8571014,
     "longitude": 17.6480034
   },
@@ -1557,7 +1463,7 @@
     "venue": "Stadsbibliotek",
     "url": "https://hejauppsala.com/kalender/internationellt-forfattarbesok-maja-lunde-stadsbiblioteket/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.034Z",
+    "fetched_at": "2026-03-28T01:18:43.124Z",
     "latitude": 59.8607168,
     "longitude": 17.6357693
   },
@@ -1567,7 +1473,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/kulturfrukost-7-maj-ukk/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.034Z",
+    "fetched_at": "2026-03-28T01:18:43.125Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -1577,19 +1483,9 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/uppsala-kammarorkester-nordisk-final-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.035Z",
+    "fetched_at": "2026-03-28T01:18:43.125Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
-  },
-  {
-    "title": "Ato Karlsson – ”Kort sagt”",
-    "date": "7 maj 20:00 – 21:00",
-    "venue": "Katalin",
-    "url": "https://hejauppsala.com/kalender/ato-karlsson-kort-sagt/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.035Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
   },
   {
     "title": "Johan Lindström Septett – UKK – jazzhörnan",
@@ -1597,7 +1493,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/johan-lindstrom-septett-ukk-jazzhornan/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.035Z",
+    "fetched_at": "2026-03-28T01:18:43.127Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -1607,7 +1503,7 @@
     "venue": "Johannesbäckskolan",
     "url": "https://hejauppsala.com/kalender/sirius-tierp-8-maj-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.036Z",
+    "fetched_at": "2026-03-28T01:18:43.128Z",
     "latitude": 59.8621987,
     "longitude": 17.676772
   },
@@ -1617,73 +1513,9 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/kommande-event-natural-way/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.036Z",
+    "fetched_at": "2026-03-28T01:18:43.128Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
-  },
-  {
-    "title": "Carte Blanche 9 maj – UKK",
-    "date": "9 maj 16.00",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://hejauppsala.com/kalender/carte-blanche-9-maj-ukk/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.037Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
-  },
-  {
-    "title": "Allmänna Sångens vårkonsert",
-    "date": "9 maj 15:00 – 17:00",
-    "venue": "Universitetshuset, Uppsala, Biskopsgatan 3",
-    "url": "https://hejauppsala.com/kalender/allmanna-sangens-varkonsert/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.037Z"
-  },
-  {
-    "title": "Korslagda – Katalin – 2026",
-    "date": "9 maj 20.00",
-    "venue": "Katalin",
-    "url": "https://hejauppsala.com/kalender/korslagda-katalin-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.037Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Klassisk ölprovning på Bishops Arms",
-    "date": "9 maj 17.00",
-    "venue": "The Bishops Arms",
-    "url": "https://hejauppsala.com/kalender/klassisk-olprovning-pa-bishops-arms-9-maj-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.038Z",
-    "latitude": 59.8571014,
-    "longitude": 17.6480034
-  },
-  {
-    "title": "Museum med middag",
-    "date": "9 maj 17.00",
-    "venue": "Hörnstenen & The Cube of Art",
-    "url": "https://hejauppsala.com/kalender/museum-med-middag-9-maj-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.038Z"
-  },
-  {
-    "title": "Lördagsjazz 9 maj  – Katalin",
-    "date": "9 maj 14:30-16:30",
-    "venue": "Katalin",
-    "url": "https://hejauppsala.com/kalender/lordagsjazz-9-maj-katalin/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.039Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Sjung  med Uppsalas favoritkatter",
-    "date": "9 maj 12:00 – 15:00",
-    "venue": "Stora torget, Uppsala city",
-    "url": "https://hejauppsala.com/kalender/sjung-med-uppsalas-favoritkatter/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.039Z"
   },
   {
     "title": "Emil Gittansson Jensen – Ukk – 2026",
@@ -1691,7 +1523,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/emil-gittansson-jensen-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.039Z",
+    "fetched_at": "2026-03-28T01:18:43.129Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -1701,7 +1533,81 @@
     "venue": "Chokladbutik Östra Ågatan, Uppsala",
     "url": "https://hejauppsala.com/kalender/pralinkurs-9-maj-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.040Z"
+    "fetched_at": "2026-03-28T01:18:43.129Z"
+  },
+  {
+    "title": "Allmänna Sångens vårkonsert",
+    "date": "9 maj 15:00 – 17:00",
+    "venue": "Universitetshuset, Uppsala, Biskopsgatan 3",
+    "url": "https://hejauppsala.com/kalender/allmanna-sangens-varkonsert/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:43.132Z"
+  },
+  {
+    "title": "Korslagda – Katalin – 2026",
+    "date": "9 maj 20.00",
+    "venue": "Katalin",
+    "url": "https://hejauppsala.com/kalender/korslagda-katalin-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:43.132Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
+  },
+  {
+    "title": "Carte Blanche 9 maj – UKK",
+    "date": "9 maj 16.00",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://hejauppsala.com/kalender/carte-blanche-9-maj-ukk/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:43.132Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Lördagsjazz 9 maj  – Katalin",
+    "date": "9 maj 14:30-16:30",
+    "venue": "Katalin",
+    "url": "https://hejauppsala.com/kalender/lordagsjazz-9-maj-katalin/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:43.133Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
+  },
+  {
+    "title": "Klassisk ölprovning på Bishops Arms",
+    "date": "9 maj 17.00",
+    "venue": "The Bishops Arms",
+    "url": "https://hejauppsala.com/kalender/klassisk-olprovning-pa-bishops-arms-9-maj-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:43.133Z",
+    "latitude": 59.8571014,
+    "longitude": 17.6480034
+  },
+  {
+    "title": "Museum med middag",
+    "date": "9 maj 17.00",
+    "venue": "Hörnstenen & The Cube of Art",
+    "url": "https://hejauppsala.com/kalender/museum-med-middag-9-maj-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:43.134Z"
+  },
+  {
+    "title": "Sjung  med Uppsalas favoritkatter",
+    "date": "9 maj 12:00 – 15:00",
+    "venue": "Stora torget, Uppsala city",
+    "url": "https://hejauppsala.com/kalender/sjung-med-uppsalas-favoritkatter/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:43.134Z"
+  },
+  {
+    "title": "The Mad Men Band – Kulturoasen 2026",
+    "date": "10 maj 14.00",
+    "venue": "Kulturoasen",
+    "url": "https://hejauppsala.com/kalender/the-mad-men-band-kulturoasen-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:43.134Z",
+    "latitude": 59.8381131,
+    "longitude": 17.5763292
   },
   {
     "title": "Choral Evensong in English",
@@ -1709,7 +1615,7 @@
     "venue": "Domkyrkan",
     "url": "https://hejauppsala.com/kalender/choral-evensong-in-english-5/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.040Z",
+    "fetched_at": "2026-03-28T01:18:43.135Z",
     "latitude": 59.8992756,
     "longitude": 17.6317491
   },
@@ -1719,19 +1625,9 @@
     "venue": "Studenternas",
     "url": "https://hejauppsala.com/kalender/ik-uppsala-vittsjo-10-maj-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.041Z",
+    "fetched_at": "2026-03-28T01:18:43.135Z",
     "latitude": 59.8486572,
     "longitude": 17.6463313
-  },
-  {
-    "title": "The Mad Men Band – Kulturoasen 2026",
-    "date": "10 maj 14.00",
-    "venue": "Kulturoasen",
-    "url": "https://hejauppsala.com/kalender/the-mad-men-band-kulturoasen-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.041Z",
-    "latitude": 59.8381131,
-    "longitude": 17.5763292
   },
   {
     "title": "Sirius-Örgryte",
@@ -1739,19 +1635,9 @@
     "venue": "Studenternas",
     "url": "https://hejauppsala.com/kalender/sirius-orgryte-11-maj-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.041Z",
+    "fetched_at": "2026-03-28T01:18:43.136Z",
     "latitude": 59.8486572,
     "longitude": 17.6463313
-  },
-  {
-    "title": "Kärleksbrev – En teaterföreställning om kärlek – UKK – 2026",
-    "date": "12 maj 18.00",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://hejauppsala.com/kalender/karleksbrev-en-teaterforestallning-om-karlek-ukk-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.042Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
   },
   {
     "title": "Uppsala University Jazz Orchestra – ukk – 2026",
@@ -1759,7 +1645,17 @@
     "venue": "UKK",
     "url": "https://hejauppsala.com/kalender/uppsala-university-jazz-orchestra-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.042Z",
+    "fetched_at": "2026-03-28T01:18:43.136Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Kärleksbrev – En teaterföreställning om kärlek – UKK – 2026",
+    "date": "12 maj 18.00",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://hejauppsala.com/kalender/karleksbrev-en-teaterforestallning-om-karlek-ukk-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:43.136Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -1769,7 +1665,7 @@
     "venue": "Reginateatern",
     "url": "https://hejauppsala.com/kalender/lay-him-quietly-reginateatern-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.043Z",
+    "fetched_at": "2026-03-28T01:18:43.137Z",
     "latitude": 59.8569052,
     "longitude": 17.6361266
   },
@@ -1779,7 +1675,7 @@
     "venue": "Bryggeriet Ångkvarn",
     "url": "https://hejauppsala.com/kalender/wine-tasting-alskade-rose/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.043Z",
+    "fetched_at": "2026-03-28T01:18:43.137Z",
     "latitude": 59.855248,
     "longitude": 17.6421062
   },
@@ -1789,7 +1685,7 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/oslipat-pratar-om-byrakrati-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.044Z",
+    "fetched_at": "2026-03-28T01:18:43.137Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -1799,7 +1695,7 @@
     "venue": "Ulva kvarn",
     "url": "https://hejauppsala.com/kalender/ulva-varmarknad-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.044Z",
+    "fetched_at": "2026-03-28T01:18:43.138Z",
     "latitude": 59.913436,
     "longitude": 17.575141
   },
@@ -1809,7 +1705,7 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/william-sundman-saaf-katalin-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.044Z",
+    "fetched_at": "2026-03-28T01:18:43.138Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -1819,7 +1715,27 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/evigt-edvin-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.045Z",
+    "fetched_at": "2026-03-28T01:18:43.139Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Schack på museet – Uppsala konstmuseum – 2026",
+    "date": "16 maj 11.00-17.00",
+    "venue": "Uppsala konstmuseum",
+    "url": "https://hejauppsala.com/kalender/schack-pa-museet-uppsala-konstmuseum-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:43.139Z",
+    "latitude": 59.8532485,
+    "longitude": 17.6351548
+  },
+  {
+    "title": "Buika – Ukk – 2026",
+    "date": "16 maj 20.00",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://hejauppsala.com/kalender/buika-ukk-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:43.139Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -1829,19 +1745,9 @@
     "venue": "The Bishops Arms",
     "url": "https://hejauppsala.com/kalender/romprovning-pa-the-bishops-arms-16-maj-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.045Z",
+    "fetched_at": "2026-03-28T01:18:43.140Z",
     "latitude": 59.8571014,
     "longitude": 17.6480034
-  },
-  {
-    "title": "Buika – Ukk – 2026",
-    "date": "16 maj 20.00",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://hejauppsala.com/kalender/buika-ukk-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.046Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
   },
   {
     "title": "Disco Inferno – Ukk – 2026",
@@ -1849,7 +1755,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/disco-inferno-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.046Z",
+    "fetched_at": "2026-03-28T01:18:43.140Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -1859,19 +1765,9 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/lordagsjazz-16-maj-katalin/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.046Z",
+    "fetched_at": "2026-03-28T01:18:43.141Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
-  },
-  {
-    "title": "Schack på museet – Uppsala konstmuseum – 2026",
-    "date": "16 maj 11.00-17.00",
-    "venue": "Uppsala konstmuseum",
-    "url": "https://hejauppsala.com/kalender/schack-pa-museet-uppsala-konstmuseum-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.047Z",
-    "latitude": 59.8532485,
-    "longitude": 17.6351548
   },
   {
     "title": "Guidad visning med Afternoon Tea – Queens",
@@ -1879,7 +1775,7 @@
     "venue": "Uppsala konstmuseum",
     "url": "https://hejauppsala.com/kalender/guidad-visning-med-afternoon-tea-queens-2/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:25:57.047Z",
+    "fetched_at": "2026-03-28T01:18:43.141Z",
     "latitude": 59.8532485,
     "longitude": 17.6351548
   },
@@ -1889,7 +1785,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/the-look-of-love-sounds-of-bacharach-jazzbaren-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.144Z"
+    "fetched_at": "2026-03-28T01:18:43.141Z"
   },
   {
     "title": "Jazzlunch med Hemkärt 2026",
@@ -1897,25 +1793,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/jazzlunch-med-hemkart-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.144Z"
-  },
-  {
-    "title": "John Holm – Katalin 2026",
-    "date": "21 maj 20.00",
-    "venue": "Katalin",
-    "url": "https://hejauppsala.com/kalender/john-holm-katalin-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.145Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Phontrattarnes Grand Show!",
-    "date": "21 maj - 24 maj 19:00 – 22:00",
-    "venue": "Reginateatern, Trädgårdsgatan 6, Uppsala",
-    "url": "https://hejauppsala.com/kalender/phontrattarnes-grand-show/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.145Z"
+    "fetched_at": "2026-03-28T01:18:43.142Z"
   },
   {
     "title": "Antons Orkester – Jazzbaren – 2026",
@@ -1923,7 +1801,25 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/antons-orkester-jazzbaren-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.146Z"
+    "fetched_at": "2026-03-28T01:18:43.142Z"
+  },
+  {
+    "title": "Phontrattarnes Grand Show!",
+    "date": "21 maj - 24 maj 19:00 – 22:00",
+    "venue": "Reginateatern, Trädgårdsgatan 6, Uppsala",
+    "url": "https://hejauppsala.com/kalender/phontrattarnes-grand-show/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:43.143Z"
+  },
+  {
+    "title": "John Holm – Katalin 2026",
+    "date": "21 maj 20.00",
+    "venue": "Katalin",
+    "url": "https://hejauppsala.com/kalender/john-holm-katalin-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:43.143Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
   },
   {
     "title": "Souls of Better Men",
@@ -1931,17 +1827,9 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/souls-of-better-men/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.146Z",
+    "fetched_at": "2026-03-28T01:18:43.143Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
-  },
-  {
-    "title": "Konferens om brottsoffer",
-    "date": "22 maj 09.00–17.00",
-    "venue": "Uppsala universitet, Blåsenhus",
-    "url": "https://hejauppsala.com/kalender/konferens-om-brottsoffer/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.146Z"
   },
   {
     "title": "Moviotrio möter Suranjana Ghosh – Jazzbaren – 2026",
@@ -1949,7 +1837,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/moviotrio-moter-suranjana-ghosh-jazzbaren-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.147Z"
+    "fetched_at": "2026-03-28T01:18:49.939Z"
   },
   {
     "title": "Lördagsjazz 23 maj  – Katalin",
@@ -1957,7 +1845,7 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/lordagsjazz-23-maj-katalin/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.147Z",
+    "fetched_at": "2026-03-28T01:18:49.940Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -1967,7 +1855,7 @@
     "venue": "Universitetsaulan",
     "url": "https://hejauppsala.com/kalender/akademiska-kapellet-varkonsert/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.148Z"
+    "fetched_at": "2026-03-28T01:18:49.940Z"
   },
   {
     "title": "De förbjudna melodierna – UKK – 2026",
@@ -1975,7 +1863,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/de-forbjudna-melodierna-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.148Z",
+    "fetched_at": "2026-03-28T01:18:49.940Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -1985,7 +1873,7 @@
     "venue": "Linnéträdgården",
     "url": "https://hejauppsala.com/kalender/linnes-tradgardsfest-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.148Z",
+    "fetched_at": "2026-03-28T01:18:49.941Z",
     "latitude": 59.862382,
     "longitude": 17.6341591
   },
@@ -1995,7 +1883,7 @@
     "venue": "Fyrisgården",
     "url": "https://hejauppsala.com/kalender/broloppis-pa-fyrisgarden-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.149Z",
+    "fetched_at": "2026-03-28T01:18:49.941Z",
     "latitude": 59.8679487,
     "longitude": 17.625517
   },
@@ -2005,7 +1893,7 @@
     "venue": "Studenternas",
     "url": "https://hejauppsala.com/kalender/sirius-gais-24-maj-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.149Z",
+    "fetched_at": "2026-03-28T01:18:49.941Z",
     "latitude": 59.8486572,
     "longitude": 17.6463313
   },
@@ -2015,7 +1903,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/jazzlunch-med-swinging-uppsala-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.150Z"
+    "fetched_at": "2026-03-28T01:18:49.941Z"
   },
   {
     "title": "Sirius-Danmarks IF",
@@ -2023,17 +1911,9 @@
     "venue": "Studenternas",
     "url": "https://hejauppsala.com/kalender/sirius-dam-danmarks-if-26-maj-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.150Z",
+    "fetched_at": "2026-03-28T01:18:49.942Z",
     "latitude": 59.8486572,
     "longitude": 17.6463313
-  },
-  {
-    "title": "Klubb Uffe – Cordovas – 2026",
-    "date": "26 maj 20.00",
-    "venue": "Jazzbaren",
-    "url": "https://hejauppsala.com/kalender/klubb-uffe-cordovas-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.150Z"
   },
   {
     "title": "Överraskningen",
@@ -2041,7 +1921,15 @@
     "venue": "Uppsala Konsert & Kongress i sal B Vaksala torg 1, 753 31 Uppsala",
     "url": "https://hejauppsala.com/kalender/overraskningen/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.150Z"
+    "fetched_at": "2026-03-28T01:18:49.942Z"
+  },
+  {
+    "title": "Klubb Uffe – Cordovas – 2026",
+    "date": "26 maj 20.00",
+    "venue": "Jazzbaren",
+    "url": "https://hejauppsala.com/kalender/klubb-uffe-cordovas-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:49.942Z"
   },
   {
     "title": "Onsdagslunch -Katalin-27maj-2026",
@@ -2049,7 +1937,7 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/onsdagslunch-katalin-27maj-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.151Z",
+    "fetched_at": "2026-03-28T01:18:49.942Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -2059,7 +1947,7 @@
     "venue": "Domkyrkan",
     "url": "https://hejauppsala.com/kalender/skulpturer-av-sean-henry-domkyrkan/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.151Z",
+    "fetched_at": "2026-03-28T01:18:49.943Z",
     "latitude": 59.8992756,
     "longitude": 17.6317491
   },
@@ -2069,7 +1957,7 @@
     "venue": "Övre Slotts - Event & Studios",
     "url": "https://hejauppsala.com/kalender/en-vackrare-varld-premiar/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.151Z"
+    "fetched_at": "2026-03-28T01:18:49.943Z"
   },
   {
     "title": "Krutgubbar – ”Bäst Före”  – Katalin",
@@ -2077,7 +1965,7 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/krutgubbar-bast-fore-katalin/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.151Z",
+    "fetched_at": "2026-03-28T01:18:49.943Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -2087,17 +1975,7 @@
     "venue": "The Bishops Arms",
     "url": "https://hejauppsala.com/kalender/whiskyprovning-pa-the-bishops-arms-29-maj-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.152Z",
-    "latitude": 59.8571014,
-    "longitude": 17.6480034
-  },
-  {
-    "title": "Klassisk whiskyprovning på The Bishops Arms",
-    "date": "30 maj 17.00",
-    "venue": "The Bishops Arms",
-    "url": "https://hejauppsala.com/kalender/whiskyprovning-pa-the-bishops-arms-30-maj-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.152Z",
+    "fetched_at": "2026-03-28T01:18:49.943Z",
     "latitude": 59.8571014,
     "longitude": 17.6480034
   },
@@ -2107,7 +1985,7 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/lordagsjazz-30-maj-katalin/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.152Z",
+    "fetched_at": "2026-03-28T01:18:49.943Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -2117,19 +1995,19 @@
     "venue": "Studenternas",
     "url": "https://hejauppsala.com/kalender/ik-uppsala-aik-30-maj-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.152Z",
+    "fetched_at": "2026-03-28T01:18:49.944Z",
     "latitude": 59.8486572,
     "longitude": 17.6463313
   },
   {
-    "title": "Stonemountain Orchestra & Ole Børud – Ukk – 2026",
-    "date": "30 maj 19.00",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://hejauppsala.com/kalender/stonemountain-orchestra-ole-borud-ukk-2026/",
+    "title": "Klassisk whiskyprovning på The Bishops Arms",
+    "date": "30 maj 17.00",
+    "venue": "The Bishops Arms",
+    "url": "https://hejauppsala.com/kalender/whiskyprovning-pa-the-bishops-arms-30-maj-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.153Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
+    "fetched_at": "2026-03-28T01:18:49.944Z",
+    "latitude": 59.8571014,
+    "longitude": 17.6480034
   },
   {
     "title": "Prova roddbåt i Dalbyviken – 2026",
@@ -2137,7 +2015,7 @@
     "venue": "Dalbyvikens badstrand",
     "url": "https://hejauppsala.com/kalender/prova-roddbat-i-dalbyviken-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.153Z"
+    "fetched_at": "2026-03-28T01:18:49.944Z"
   },
   {
     "title": "Sommarsläpp 2026",
@@ -2145,9 +2023,19 @@
     "venue": "Uppsala",
     "url": "https://hejauppsala.com/kalender/sommarslapp-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.154Z",
+    "fetched_at": "2026-03-28T01:18:49.944Z",
     "latitude": 59.8586126,
     "longitude": 17.6387436
+  },
+  {
+    "title": "Stonemountain Orchestra & Ole Børud – Ukk – 2026",
+    "date": "30 maj 19.00",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://hejauppsala.com/kalender/stonemountain-orchestra-ole-borud-ukk-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:49.945Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
   },
   {
     "title": "En vackrare värld – Mors dag",
@@ -2155,19 +2043,9 @@
     "venue": "Hammarskogs Herrgård",
     "url": "https://hejauppsala.com/kalender/en-vackrare-varld-mors-dag/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.154Z",
+    "fetched_at": "2026-03-28T01:18:49.945Z",
     "latitude": 59.7694006,
     "longitude": 17.5618651
-  },
-  {
-    "title": "Äldregalan 2026 Uppsala",
-    "date": "31 maj 18:00 – 21:00",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://hejauppsala.com/kalender/aldregalan-2026-uppsala/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.154Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
   },
   {
     "title": "Aftonsång",
@@ -2175,9 +2053,19 @@
     "venue": "Domkyrkan",
     "url": "https://hejauppsala.com/kalender/aftonsang-3/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.155Z",
+    "fetched_at": "2026-03-28T01:18:49.945Z",
     "latitude": 59.8992756,
     "longitude": 17.6317491
+  },
+  {
+    "title": "Äldregalan 2026 Uppsala",
+    "date": "31 maj 18:00 – 21:00",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://hejauppsala.com/kalender/aldregalan-2026-uppsala/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:49.945Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
   },
   {
     "title": "Författarbesök: Erika Bjerström – Stadsbiblioteket",
@@ -2185,7 +2073,7 @@
     "venue": "Stadsbibliotek",
     "url": "https://hejauppsala.com/kalender/forfattarbesok-erika-bjerstrom-stadsbiblioteket/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.155Z",
+    "fetched_at": "2026-03-28T01:18:49.946Z",
     "latitude": 59.8607168,
     "longitude": 17.6357693
   },
@@ -2195,7 +2083,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/sweden-spring-tour-jazzbaren-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.156Z"
+    "fetched_at": "2026-03-28T01:18:49.946Z"
   },
   {
     "title": "Dina ögon",
@@ -2203,7 +2091,7 @@
     "venue": "Parksnäckan",
     "url": "https://hejauppsala.com/kalender/dina-ogon/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.156Z",
+    "fetched_at": "2026-03-28T01:18:49.946Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -2213,7 +2101,7 @@
     "venue": "The Bishops Arms",
     "url": "https://hejauppsala.com/kalender/whiskyprovning-pa-the-bishops-arms-5-jun-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.157Z",
+    "fetched_at": "2026-03-28T01:18:49.947Z",
     "latitude": 59.8571014,
     "longitude": 17.6480034
   },
@@ -2223,9 +2111,17 @@
     "venue": "Forumtorget",
     "url": "https://hejauppsala.com/kalender/nationaldagsfirande-pa-forumtorget/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.157Z",
+    "fetched_at": "2026-03-28T01:18:49.947Z",
     "latitude": 59.8581032,
     "longitude": 17.6401657
+  },
+  {
+    "title": "Pralinkurs",
+    "date": "6 jun 15.30",
+    "venue": "Chokladbutik Östra Ågatan, Uppsala",
+    "url": "https://hejauppsala.com/kalender/pralinkurs-6-juni-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:49.948Z"
   },
   {
     "title": "Museum med middag",
@@ -2233,15 +2129,7 @@
     "venue": "Hörnstenen & The Cube of Art",
     "url": "https://hejauppsala.com/kalender/museum-med-middag-6-juni-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.157Z"
-  },
-  {
-    "title": "Exklusiv vinprovning med middag på Miss Voon",
-    "date": "6 jun 17.00",
-    "venue": "Miss Voon, Uppsala",
-    "url": "https://hejauppsala.com/kalender/exklusiv-vinprovning-pa-miss-voon-6-juni-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.158Z"
+    "fetched_at": "2026-03-28T01:18:49.948Z"
   },
   {
     "title": "Lördagsjazz 6 juni  – Katalin",
@@ -2249,9 +2137,27 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/lordagsjazz-6-juni-katalin/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:04.158Z",
+    "fetched_at": "2026-03-28T01:18:49.948Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
+  },
+  {
+    "title": "Exklusiv vinprovning med middag på Miss Voon",
+    "date": "6 jun 17.00",
+    "venue": "Miss Voon, Uppsala",
+    "url": "https://hejauppsala.com/kalender/exklusiv-vinprovning-pa-miss-voon-6-juni-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:49.949Z"
+  },
+  {
+    "title": "Klassisk whiskyprovning på The Bishops Arms",
+    "date": "6 jun 17.00",
+    "venue": "The Bishops Arms",
+    "url": "https://hejauppsala.com/kalender/whiskyprovning-pa-the-bishops-arms-6-jun-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:49.949Z",
+    "latitude": 59.8571014,
+    "longitude": 17.6480034
   },
   {
     "title": "Sirius-Östervåla",
@@ -2259,7 +2165,7 @@
     "venue": "Johannesbäckskolan",
     "url": "https://hejauppsala.com/kalender/sirius-ostervala-11-juni-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.116Z",
+    "fetched_at": "2026-03-28T01:18:49.950Z",
     "latitude": 59.8621987,
     "longitude": 17.676772
   },
@@ -2269,7 +2175,7 @@
     "venue": "Fyrishov utebadet",
     "url": "https://hejauppsala.com/kalender/buckle-up-countryfest/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.116Z"
+    "fetched_at": "2026-03-28T01:18:49.950Z"
   },
   {
     "title": "Simon Superti – Parksnäckan – 2026",
@@ -2277,7 +2183,7 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/simon-superti-parksnackan-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.117Z",
+    "fetched_at": "2026-03-28T01:18:49.950Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -2287,27 +2193,9 @@
     "venue": "Gamla Uppsala museum",
     "url": "https://hejauppsala.com/kalender/vikingatidsfestival-gamla-uppsala-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.119Z",
+    "fetched_at": "2026-03-28T01:18:49.951Z",
     "latitude": 59.8977837,
     "longitude": 17.6336407
-  },
-  {
-    "title": "Lördagsjazz 13 juni  – Katalin",
-    "date": "13 jun 14:30-16:30",
-    "venue": "Katalin",
-    "url": "https://hejauppsala.com/kalender/lordagsjazz-13-juni-katalin/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.120Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Remake Fashion – Wearable ART",
-    "date": "13 jun 13:00 – 16:00",
-    "venue": "Uppsala Konstnärsklubb, Sysslomansgatan 1, Studion",
-    "url": "https://hejauppsala.com/kalender/remake-fashion-wearable-art/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.120Z"
   },
   {
     "title": "Romprovning på The Bishops Arms",
@@ -2315,9 +2203,19 @@
     "venue": "The Bishops Arms",
     "url": "https://hejauppsala.com/kalender/romprovning-pa-the-bishops-arms-13-jun-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.121Z",
+    "fetched_at": "2026-03-28T01:18:56.729Z",
     "latitude": 59.8571014,
     "longitude": 17.6480034
+  },
+  {
+    "title": "Lördagsjazz 13 juni  – Katalin",
+    "date": "13 jun 14:30-16:30",
+    "venue": "Katalin",
+    "url": "https://hejauppsala.com/kalender/lordagsjazz-13-juni-katalin/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:56.730Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
   },
   {
     "title": "Prova på klättring vid Dalkarlskärret 2026",
@@ -2325,9 +2223,17 @@
     "venue": "Dalkarlskärret",
     "url": "https://hejauppsala.com/kalender/prova-pa-klattring-vid-dalkarlskarret-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.121Z",
+    "fetched_at": "2026-03-28T01:18:56.730Z",
     "latitude": 59.7772347,
     "longitude": 17.5835586
+  },
+  {
+    "title": "Remake Fashion – Wearable ART",
+    "date": "13 jun 13:00 – 16:00",
+    "venue": "Uppsala Konstnärsklubb, Sysslomansgatan 1, Studion",
+    "url": "https://hejauppsala.com/kalender/remake-fashion-wearable-art/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:56.733Z"
   },
   {
     "title": "Allsång med sångpiraterna",
@@ -2335,7 +2241,7 @@
     "venue": "Parksnäckan",
     "url": "https://hejauppsala.com/kalender/allsang-med-sangpiraterna/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.122Z",
+    "fetched_at": "2026-03-28T01:18:56.733Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -2345,7 +2251,7 @@
     "venue": "Johannesbäckskolan",
     "url": "https://hejauppsala.com/kalender/sirius-dam-stocksund-18-juni-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.122Z",
+    "fetched_at": "2026-03-28T01:18:56.734Z",
     "latitude": 59.8621987,
     "longitude": 17.676772
   },
@@ -2355,7 +2261,7 @@
     "venue": "Hospitalsträdgården, Ulleråker, Uppsala",
     "url": "https://hejauppsala.com/kalender/midsommarfirande-med-vigsel-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.122Z",
+    "fetched_at": "2026-03-28T01:18:56.734Z",
     "latitude": 59.8356635,
     "longitude": 17.6559026
   },
@@ -2365,7 +2271,7 @@
     "venue": "Parksnäckan",
     "url": "https://hejauppsala.com/kalender/the-high-society-parksnackan-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.123Z",
+    "fetched_at": "2026-03-28T01:18:56.735Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -2375,27 +2281,7 @@
     "venue": "Uppland",
     "url": "https://hejauppsala.com/kalender/tradgardsveckan-i-uppland-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.123Z"
-  },
-  {
-    "title": "IK Uppsala-BK Häcken",
-    "date": "26 jun 18:00",
-    "venue": "Studenternas",
-    "url": "https://hejauppsala.com/kalender/ik-uppsala-bk-hacken-26-juni-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.124Z",
-    "latitude": 59.8486572,
-    "longitude": 17.6463313
-  },
-  {
-    "title": "Jimmy Carr – Ukk – 2026",
-    "date": "26 jun - 27 jun",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://hejauppsala.com/kalender/jimmy-carr-ukk-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.124Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
+    "fetched_at": "2026-03-28T01:18:56.735Z"
   },
   {
     "title": "Camping for Dummies",
@@ -2403,7 +2289,7 @@
     "venue": "Hammarskog",
     "url": "https://hejauppsala.com/kalender/camping-for-dummies/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.125Z",
+    "fetched_at": "2026-03-28T01:18:56.735Z",
     "latitude": 59.7722655,
     "longitude": 17.5703158
   },
@@ -2413,9 +2299,29 @@
     "venue": "Botaniska trädgården",
     "url": "https://hejauppsala.com/kalender/the-ark-botaniska-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.126Z",
+    "fetched_at": "2026-03-28T01:18:56.736Z",
     "latitude": 59.8515471,
     "longitude": 17.6272814
+  },
+  {
+    "title": "IK Uppsala-BK Häcken",
+    "date": "26 jun 18:00",
+    "venue": "Studenternas",
+    "url": "https://hejauppsala.com/kalender/ik-uppsala-bk-hacken-26-juni-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:56.737Z",
+    "latitude": 59.8486572,
+    "longitude": 17.6463313
+  },
+  {
+    "title": "Jimmy Carr – Ukk – 2026",
+    "date": "26 jun - 27 jun",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://hejauppsala.com/kalender/jimmy-carr-ukk-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:56.738Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
   },
   {
     "title": "Klassisk ölprovning på Bishops Arms",
@@ -2423,7 +2329,7 @@
     "venue": "The Bishops Arms",
     "url": "https://hejauppsala.com/kalender/klassisk-olprovning-pa-bishops-arms-27-jun-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.126Z",
+    "fetched_at": "2026-03-28T01:18:56.738Z",
     "latitude": 59.8571014,
     "longitude": 17.6480034
   },
@@ -2433,15 +2339,7 @@
     "venue": "Lunda Flygfält i Alunda",
     "url": "https://hejauppsala.com/kalender/oland-visar/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.127Z"
-  },
-  {
-    "title": "Uppsala Craft Beer Festival 2026",
-    "date": "27 jun 12:00 – 21:00",
-    "venue": "Uppsala Brygghus, Märstagatan 10 Uppsala",
-    "url": "https://hejauppsala.com/kalender/uppsala-craft-beer-festival-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.127Z"
+    "fetched_at": "2026-03-28T01:18:56.738Z"
   },
   {
     "title": "Oland Visar 100år",
@@ -2449,7 +2347,15 @@
     "venue": "Olandsbygdens Golfklubb. Gärdebyn 100, 74791 Alunda",
     "url": "https://hejauppsala.com/kalender/oland-visar-100ar/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.127Z"
+    "fetched_at": "2026-03-28T01:18:56.741Z"
+  },
+  {
+    "title": "Uppsala Craft Beer Festival 2026",
+    "date": "27 jun 12:00 – 21:00",
+    "venue": "Uppsala Brygghus, Märstagatan 10 Uppsala",
+    "url": "https://hejauppsala.com/kalender/uppsala-craft-beer-festival-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:56.742Z"
   },
   {
     "title": "Sting – Botaniska – 2026",
@@ -2457,7 +2363,7 @@
     "venue": "Botaniska trädgården",
     "url": "https://hejauppsala.com/kalender/sting-botaniska-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.127Z",
+    "fetched_at": "2026-03-28T01:18:56.743Z",
     "latitude": 59.8515471,
     "longitude": 17.6272814
   },
@@ -2467,7 +2373,7 @@
     "venue": "Parksnäckan",
     "url": "https://hejauppsala.com/kalender/abba-allsang/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.128Z",
+    "fetched_at": "2026-03-28T01:18:56.743Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -2477,7 +2383,7 @@
     "venue": "Uppsala",
     "url": "https://hejauppsala.com/kalender/matmilen-uppsala-sommar-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.128Z",
+    "fetched_at": "2026-03-28T01:18:56.744Z",
     "latitude": 59.8586126,
     "longitude": 17.6387436
   },
@@ -2487,7 +2393,7 @@
     "venue": "Uppsala",
     "url": "https://hejauppsala.com/kalender/matmilen-uppsala-sommar-2026-3/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.128Z",
+    "fetched_at": "2026-03-28T01:18:56.745Z",
     "latitude": 59.8586126,
     "longitude": 17.6387436
   },
@@ -2497,7 +2403,7 @@
     "venue": "Parksnäckan",
     "url": "https://hejauppsala.com/kalender/pappa-kapsyl/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.128Z",
+    "fetched_at": "2026-03-28T01:18:56.745Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -2507,19 +2413,9 @@
     "venue": "Uppsala",
     "url": "https://hejauppsala.com/kalender/matmilen-uppsala-sommar-2026-2/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.129Z",
+    "fetched_at": "2026-03-28T01:18:56.745Z",
     "latitude": 59.8586126,
     "longitude": 17.6387436
-  },
-  {
-    "title": "SM i Friidrott",
-    "date": "24 jul - 26 jul",
-    "venue": "Uppsala friidrottsarena",
-    "url": "https://hejauppsala.com/kalender/sm-i-friidrott/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.129Z",
-    "latitude": 59.8815426,
-    "longitude": 17.6625386
   },
   {
     "title": "Banna Sona Band – Parksnäckan 2026",
@@ -2527,9 +2423,19 @@
     "venue": "Parksnäckan",
     "url": "https://hejauppsala.com/kalender/banna-sona-band-parksnackan-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.130Z",
+    "fetched_at": "2026-03-28T01:18:56.746Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
+  },
+  {
+    "title": "SM i Friidrott",
+    "date": "24 jul - 26 jul",
+    "venue": "Uppsala friidrottsarena",
+    "url": "https://hejauppsala.com/kalender/sm-i-friidrott/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:56.746Z",
+    "latitude": 59.8815426,
+    "longitude": 17.6625386
   },
   {
     "title": "Klassisk ölprovning på Bishops Arms",
@@ -2537,19 +2443,9 @@
     "venue": "The Bishops Arms",
     "url": "https://hejauppsala.com/kalender/klassisk-olprovning-pa-bishops-arms-25-jul-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.130Z",
+    "fetched_at": "2026-03-28T01:18:56.746Z",
     "latitude": 59.8571014,
     "longitude": 17.6480034
-  },
-  {
-    "title": "Sirius dam-Frej Täby",
-    "date": "1 aug 17.00",
-    "venue": "Löten",
-    "url": "https://hejauppsala.com/kalender/sirius-dam-frej-taby-1-aug-2026/",
-    "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.130Z",
-    "latitude": 59.8782458,
-    "longitude": 17.6503905
   },
   {
     "title": "Cleo – Parksnäckan",
@@ -2557,9 +2453,19 @@
     "venue": "Parksnäckan",
     "url": "https://hejauppsala.com/kalender/cleo-parksnackan/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.131Z",
+    "fetched_at": "2026-03-28T01:18:56.746Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
+  },
+  {
+    "title": "Sirius dam-Frej Täby",
+    "date": "1 aug 17.00",
+    "venue": "Löten",
+    "url": "https://hejauppsala.com/kalender/sirius-dam-frej-taby-1-aug-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:18:56.746Z",
+    "latitude": 59.8782458,
+    "longitude": 17.6503905
   },
   {
     "title": "KAJ",
@@ -2567,7 +2473,7 @@
     "venue": "Parksnäckan",
     "url": "https://hejauppsala.com/kalender/kaj/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.131Z",
+    "fetched_at": "2026-03-28T01:18:56.747Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -2577,7 +2483,7 @@
     "venue": "Parksnäckan",
     "url": "https://hejauppsala.com/kalender/danny-saucedo/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.131Z",
+    "fetched_at": "2026-03-28T01:18:56.747Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -2587,7 +2493,7 @@
     "venue": "Parksnäckan",
     "url": "https://hejauppsala.com/kalender/country-park-parksnackan-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.132Z",
+    "fetched_at": "2026-03-28T01:18:56.747Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -2597,7 +2503,7 @@
     "venue": "Fjällnora 35, 741 77 Uppsala",
     "url": "https://hejauppsala.com/kalender/6-sjoar/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.132Z",
+    "fetched_at": "2026-03-28T01:18:56.747Z",
     "latitude": 59.834183,
     "longitude": 17.912874
   },
@@ -2607,7 +2513,7 @@
     "venue": "Löten",
     "url": "https://hejauppsala.com/kalender/sirius-dam-islingby-15-aug-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.132Z",
+    "fetched_at": "2026-03-28T01:18:56.748Z",
     "latitude": 59.8782458,
     "longitude": 17.6503905
   },
@@ -2617,7 +2523,7 @@
     "venue": "Parksnäckan",
     "url": "https://hejauppsala.com/kalender/dolly-style-parksnackan/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:11.133Z",
+    "fetched_at": "2026-03-28T01:18:56.748Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -2627,7 +2533,7 @@
     "venue": "Parksnäckan",
     "url": "https://hejauppsala.com/kalender/orup-parksnackan-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.913Z",
+    "fetched_at": "2026-03-28T01:18:56.748Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -2637,7 +2543,7 @@
     "venue": "Parksnäckan",
     "url": "https://hejauppsala.com/kalender/melody-club-parksnackan/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.913Z",
+    "fetched_at": "2026-03-28T01:18:56.748Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -2647,7 +2553,7 @@
     "venue": "Parksnäckan",
     "url": "https://hejauppsala.com/kalender/silvana-imam-parksnackan-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.914Z",
+    "fetched_at": "2026-03-28T01:18:56.748Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -2657,7 +2563,7 @@
     "venue": "UKK",
     "url": "https://hejauppsala.com/kalender/rent-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.914Z",
+    "fetched_at": "2026-03-28T01:18:56.749Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -2667,7 +2573,7 @@
     "venue": "Löten",
     "url": "https://hejauppsala.com/kalender/sirius-dam-ursvik-29-aug-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.914Z",
+    "fetched_at": "2026-03-28T01:18:56.749Z",
     "latitude": 59.8782458,
     "longitude": 17.6503905
   },
@@ -2677,7 +2583,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/mandalamarra-jazzbaren-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.914Z"
+    "fetched_at": "2026-03-28T01:18:56.750Z"
   },
   {
     "title": "Sunset Festival 2026",
@@ -2685,7 +2591,7 @@
     "venue": "Studenternas",
     "url": "https://hejauppsala.com/kalender/sunset-festival-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.914Z",
+    "fetched_at": "2026-03-28T01:19:03.493Z",
     "latitude": 59.8486572,
     "longitude": 17.6463313
   },
@@ -2695,7 +2601,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/vafalls-live-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.915Z",
+    "fetched_at": "2026-03-28T01:19:03.500Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -2705,7 +2611,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/slutspelat-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.915Z",
+    "fetched_at": "2026-03-28T01:19:03.501Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -2715,7 +2621,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/kulturfrukost-10-sept-ukk/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.916Z",
+    "fetched_at": "2026-03-28T01:19:03.501Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -2725,7 +2631,7 @@
     "venue": "Löten",
     "url": "https://hejauppsala.com/kalender/sirius-dam-bele-barkarby-13-sept-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.916Z",
+    "fetched_at": "2026-03-28T01:19:03.501Z",
     "latitude": 59.8782458,
     "longitude": 17.6503905
   },
@@ -2735,7 +2641,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/fran-broadway-till-duvemala-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.916Z",
+    "fetched_at": "2026-03-28T01:19:03.501Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -2745,7 +2651,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/infinity-celebrating-the-music-of-michael-jackson/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.917Z",
+    "fetched_at": "2026-03-28T01:19:03.501Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -2755,7 +2661,7 @@
     "venue": "Studenternas",
     "url": "https://hejauppsala.com/kalender/sirius-dam-esk-24-sept-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.918Z",
+    "fetched_at": "2026-03-28T01:19:03.502Z",
     "latitude": 59.8486572,
     "longitude": 17.6463313
   },
@@ -2765,7 +2671,7 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/division-7/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.918Z",
+    "fetched_at": "2026-03-28T01:19:03.502Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -2775,7 +2681,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/uppsala-pride/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.918Z",
+    "fetched_at": "2026-03-28T01:19:03.502Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -2785,7 +2691,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/joulin-younis-jazzbaren/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.918Z"
+    "fetched_at": "2026-03-28T01:19:03.502Z"
   },
   {
     "title": "EP´s Trailer Park – Jazzbaren – 2026",
@@ -2793,7 +2699,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/eps-trailer-park-jazzbaren-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.919Z"
+    "fetched_at": "2026-03-28T01:19:03.503Z"
   },
   {
     "title": "Mårten Andersson Cvetkovic – UKK – 2026",
@@ -2801,7 +2707,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/marten-andersson-cvetkovic-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.919Z",
+    "fetched_at": "2026-03-28T01:19:03.503Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -2811,9 +2717,19 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/javla-karlar-ukk/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.919Z",
+    "fetched_at": "2026-03-28T01:19:03.503Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
+  },
+  {
+    "title": "The Plan",
+    "date": "10 okt 20.00",
+    "venue": "Katalin",
+    "url": "https://hejauppsala.com/kalender/the-plan/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:19:03.504Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
   },
   {
     "title": "A Tribute to Dire Straits – Ukk – 2026",
@@ -2821,7 +2737,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/a-tribute-to-dire-straits-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.919Z",
+    "fetched_at": "2026-03-28T01:19:03.504Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -2831,9 +2747,19 @@
     "venue": "Katalin",
     "url": "https://hejauppsala.com/kalender/the-watch-plays-genesis/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.920Z",
+    "fetched_at": "2026-03-28T01:19:03.504Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
+  },
+  {
+    "title": "Bo Kaspers Orkester",
+    "date": "18 okt 19.00",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://hejauppsala.com/kalender/bo-kaspers-orkester/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:19:03.504Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
   },
   {
     "title": "Kulturfrukost 22 okt – UKK",
@@ -2841,7 +2767,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/kulturfrukost-22-okt-ukk/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.920Z",
+    "fetched_at": "2026-03-28T01:19:03.504Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -2851,7 +2777,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/grymlings-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.920Z",
+    "fetched_at": "2026-03-28T01:19:03.505Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -2861,7 +2787,17 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/tomas-ledin-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.920Z",
+    "fetched_at": "2026-03-28T01:19:03.505Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Elton John meets Freddie Mercury – ukk",
+    "date": "30 okt 19.30",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://hejauppsala.com/kalender/elton-john-meets-freddie-mercury-ukk/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:19:03.505Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -2871,7 +2807,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/elvis-elvis-elvis-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.920Z",
+    "fetched_at": "2026-03-28T01:19:03.505Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -2881,7 +2817,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/sven-ingvars-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.921Z",
+    "fetched_at": "2026-03-28T01:19:03.505Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -2891,7 +2827,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/creedence-tribute-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.921Z",
+    "fetched_at": "2026-03-28T01:19:03.506Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -2901,7 +2837,7 @@
     "venue": "Jazzbaren",
     "url": "https://hejauppsala.com/kalender/happy-birthday-neil-young-jazzbaren-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.921Z"
+    "fetched_at": "2026-03-28T01:19:03.506Z"
   },
   {
     "title": "The Simon & Garfunkel Story – Ukk – 2026",
@@ -2909,17 +2845,17 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/the-simon-garfunkel-story-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.921Z",
+    "fetched_at": "2026-03-28T01:19:03.506Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
   {
-    "title": "Seinabo Sey – UKK – 2026",
-    "date": "3 dec 19.30",
+    "title": "Hansson de Wolfe United",
+    "date": "20 nov 19.30",
     "venue": "Uppsala Konsert & Kongress",
-    "url": "https://hejauppsala.com/kalender/seinabo-sey-ukk-2026/",
+    "url": "https://hejauppsala.com/kalender/hansson-de-wolfe-united/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.921Z",
+    "fetched_at": "2026-03-28T01:19:03.506Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -2929,7 +2865,17 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/kulturfrukost-3-dec-ukk/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.922Z",
+    "fetched_at": "2026-03-28T01:19:03.506Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Seinabo Sey – UKK – 2026",
+    "date": "3 dec 19.30",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://hejauppsala.com/kalender/seinabo-sey-ukk-2026/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:19:03.507Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -2939,7 +2885,17 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/nanne-ukk-2026/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-03-27T01:26:17.922Z",
+    "fetched_at": "2026-03-28T01:19:03.507Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "HippHipp Live! – UKK",
+    "date": "24 apr - 25 apr 19.30",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://hejauppsala.com/kalender/hipphipp-live-ukk-2027/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-03-28T01:19:03.507Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   }

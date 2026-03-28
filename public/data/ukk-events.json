@@ -1,31 +1,11 @@
 [
   {
-    "title": "Uppsala Vin & Deli 2026: Fredag",
-    "date": "2026-03-27T14:00:00.000Z",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://ukk.se/fredag-uppsala-vin-deli-2026/",
-    "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.003Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
-  },
-  {
-    "title": "Fredag: Vinprovningar – Uppsala Vin & Deli 2026",
-    "date": "2026-03-27T15:00:00.000Z",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://ukk.se/fredag-vinprovningar-uppsala-vin-deli-2026/",
-    "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.004Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
-  },
-  {
     "title": "Uppsala Vin & Deli 2026 – Lördag",
     "date": "2026-03-28T12:00:00.000Z",
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/uppsala-vin-deli-2026/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.005Z",
+    "fetched_at": "2026-03-28T01:18:10.954Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -35,7 +15,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/lordag-vinprovningar-uppsala-vin-deli-2026/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.006Z",
+    "fetched_at": "2026-03-28T01:18:10.955Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -45,7 +25,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/poste-restante-masterverk/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.007Z",
+    "fetched_at": "2026-03-28T01:18:10.955Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -55,7 +35,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/jesus-christ-superstar-2/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.007Z",
+    "fetched_at": "2026-03-28T01:18:10.956Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -65,7 +45,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/jesus-christ-superstar/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.008Z",
+    "fetched_at": "2026-03-28T01:18:10.957Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -75,7 +55,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/arne-alligator-djungeltrumman/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.009Z",
+    "fetched_at": "2026-03-28T01:18:10.957Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -85,7 +65,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/kulturfrukost-kulturen-i-stadsplaneringen/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.010Z",
+    "fetched_at": "2026-03-28T01:18:10.958Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -95,7 +75,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/pjasen-som-gar-at-helvete-2/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.011Z",
+    "fetched_at": "2026-03-28T01:18:10.958Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -105,7 +85,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/simply-sting/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.012Z",
+    "fetched_at": "2026-03-28T01:18:10.959Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -115,7 +95,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/pjasen-som-gar-at-helvete/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.015Z",
+    "fetched_at": "2026-03-28T01:18:10.959Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -125,7 +105,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/en-jakla-massa-schlager/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.016Z",
+    "fetched_at": "2026-03-28T01:18:10.960Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -135,7 +115,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/det-ideala-vilka-ar-framtidens-forebilder/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.016Z",
+    "fetched_at": "2026-03-28T01:18:10.961Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -145,7 +125,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/uppsala-kammarorkester-alskad-trumpetkonsert/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.017Z",
+    "fetched_at": "2026-03-28T01:18:10.961Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -155,7 +135,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/lunchkonsert-enkel-vacker-om/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.019Z",
+    "fetched_at": "2026-03-28T01:18:10.962Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -165,7 +145,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/kvallskonsert-enkel-vacker-om/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.020Z",
+    "fetched_at": "2026-03-28T01:18:10.962Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -175,7 +155,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/uppsala-kammarorkester-ludde-b/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.020Z",
+    "fetched_at": "2026-03-28T01:18:10.965Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -185,7 +165,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/niklas-stromstedt-tyck-om-mig/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.022Z",
+    "fetched_at": "2026-03-28T01:18:10.966Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -195,7 +175,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/morgan-alling-ingenting-forsvinner/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.022Z",
+    "fetched_at": "2026-03-28T01:18:10.966Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -205,7 +185,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/shai-maestro-the-guesthouse-jazzhornan/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.023Z",
+    "fetched_at": "2026-03-28T01:18:10.969Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -215,7 +195,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/fatoumata-diawara/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.023Z",
+    "fetched_at": "2026-03-28T01:18:10.969Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -225,7 +205,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/poste-restante-tillagnan/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.024Z",
+    "fetched_at": "2026-03-28T01:18:10.970Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -235,7 +215,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/sillunch/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.024Z",
+    "fetched_at": "2026-03-28T01:18:10.970Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -245,7 +225,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/designmarknad-pa-ukk-maj/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.024Z",
+    "fetched_at": "2026-03-28T01:18:10.970Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -255,7 +235,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/pettson-findus-pannkakstartan/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.025Z",
+    "fetched_at": "2026-03-28T01:18:10.973Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -265,7 +245,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/pettson-findus-pannkakstartan-2/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.037Z",
+    "fetched_at": "2026-03-28T01:18:10.973Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -275,7 +255,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/this-is-the-moment/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.037Z",
+    "fetched_at": "2026-03-28T01:18:10.974Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -285,7 +265,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/pettson-findus-pannkakstartan-3/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.038Z",
+    "fetched_at": "2026-03-28T01:18:10.974Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -295,7 +275,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/pro-uppsala/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.038Z",
+    "fetched_at": "2026-03-28T01:18:10.977Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -305,7 +285,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/kulturfrukost-yttrandefrihet-och-kultur/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.038Z",
+    "fetched_at": "2026-03-28T01:18:10.977Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -315,7 +295,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/uppsala-kammarorkester-nordisk-final/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.038Z",
+    "fetched_at": "2026-03-28T01:18:10.978Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -325,7 +305,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/johan-lindstrom-septett-jazzhornan/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.039Z",
+    "fetched_at": "2026-03-28T01:18:10.978Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -335,7 +315,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/carte-blanche-trio-x-med-hemliga-gaster-maj-2026/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.039Z",
+    "fetched_at": "2026-03-28T01:18:10.980Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -345,7 +325,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/emil-gittansson-jensen-vi-maste-halla-kontakten/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.039Z",
+    "fetched_at": "2026-03-28T01:18:10.980Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -355,7 +335,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/filip-fredrik-alskade-van-2026/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.039Z",
+    "fetched_at": "2026-03-28T01:18:10.980Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -365,7 +345,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/karleksbrev-en-teaterforestallning-om-karlek-2026/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.040Z",
+    "fetched_at": "2026-03-28T01:18:10.981Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -375,7 +355,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/uppsala-university-jazz-orchestra/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.040Z",
+    "fetched_at": "2026-03-28T01:18:10.981Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -385,7 +365,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/evigt-edvin-edvin-tornblom-17-30/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.040Z",
+    "fetched_at": "2026-03-28T01:18:10.988Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -395,7 +375,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/evigt-edvin-edvin-tornblom/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.040Z",
+    "fetched_at": "2026-03-28T01:18:10.989Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -405,7 +385,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/buika/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.041Z",
+    "fetched_at": "2026-03-28T01:18:10.989Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -415,7 +395,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/de-forbjudna-melodierna/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.041Z",
+    "fetched_at": "2026-03-28T01:18:10.989Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -425,7 +405,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/lena-willemark-ale-moller-nordan/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.042Z",
+    "fetched_at": "2026-03-28T01:18:10.989Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -435,7 +415,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/stonemountain-orchestra-ole-borud/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.042Z",
+    "fetched_at": "2026-03-28T01:18:10.990Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -445,7 +425,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/aldregalan-2026-uppsala/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.042Z",
+    "fetched_at": "2026-03-28T01:18:10.990Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -455,7 +435,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/jimmy-carr-laughs-funny-2/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.043Z",
+    "fetched_at": "2026-03-28T01:18:10.991Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -465,7 +445,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/jimmy-carr-laughs-funny-3/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.043Z",
+    "fetched_at": "2026-03-28T01:18:10.991Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -475,7 +455,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/jimmy-carr-laughs-funny/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.044Z",
+    "fetched_at": "2026-03-28T01:18:10.991Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -485,7 +465,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/rent-in-concert-28-aug/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.044Z",
+    "fetched_at": "2026-03-28T01:18:10.992Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -495,7 +475,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/rent-in-concert/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.044Z",
+    "fetched_at": "2026-03-28T01:18:10.992Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -505,7 +485,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/vafalls-live-med-emil-hansius-hampus-hedstrom/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.045Z",
+    "fetched_at": "2026-03-28T01:18:10.993Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -515,7 +495,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/slutspelat-ett-komiskt-sorgearbete/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.045Z",
+    "fetched_at": "2026-03-28T01:18:10.993Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -525,7 +505,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/kulturfrukost-kultur-och-naringsliv-i-samarbete/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.046Z",
+    "fetched_at": "2026-03-28T01:18:10.995Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -535,7 +515,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/fran-broadway-till-duvemala-2026/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.046Z",
+    "fetched_at": "2026-03-28T01:18:10.995Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -545,7 +525,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/disco-inferno-sveriges-storsta-discoshow/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.046Z",
+    "fetched_at": "2026-03-28T01:18:10.995Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -555,7 +535,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/uppsala-pride-pride-house/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.047Z",
+    "fetched_at": "2026-03-28T01:18:10.996Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -565,7 +545,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/babblarna-klonks-klapp-kalas/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.047Z",
+    "fetched_at": "2026-03-28T01:18:10.996Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -575,7 +555,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/babblarna-klonks-klapp-kalas-14-00/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.048Z",
+    "fetched_at": "2026-03-28T01:18:10.996Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -585,7 +565,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/javla-karlar/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.048Z",
+    "fetched_at": "2026-03-28T01:18:10.997Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -595,7 +575,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/marten-andersson-cvetkovic-osvensk/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.048Z",
+    "fetched_at": "2026-03-28T01:18:10.997Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -605,7 +585,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/a-tribute-to-dire-straits/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.049Z",
+    "fetched_at": "2026-03-28T01:18:10.997Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -615,7 +595,17 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/robert-wells-40-ar-vid-flygeln/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.049Z",
+    "fetched_at": "2026-03-28T01:18:10.998Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Bo Kaspers Orkester – Il magnifico",
+    "date": "2026-10-18T19:00:00.000Z",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://ukk.se/bo-kaspers-orkester-il-magnifico/",
+    "source": "ukk.se",
+    "fetched_at": "2026-03-28T01:18:10.998Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -625,7 +615,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/kulturfrukost-ett-kulturliv-for-alla/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.049Z",
+    "fetched_at": "2026-03-28T01:18:10.998Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -635,7 +625,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/grymlings-det-basta-for-dig/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.050Z",
+    "fetched_at": "2026-03-28T01:18:10.999Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -645,7 +635,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/tomas-ledin-symphonia-politropou/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.050Z",
+    "fetched_at": "2026-03-28T01:18:10.999Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -655,7 +645,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/elton-john-meets-freddie-mercury/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.051Z",
+    "fetched_at": "2026-03-28T01:18:10.999Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -665,7 +655,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/elvis-elvis-elvis-2026/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.051Z",
+    "fetched_at": "2026-03-28T01:18:11.000Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -675,7 +665,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/sven-ingvars-igar-idag-imorgon-70-ar/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.051Z",
+    "fetched_at": "2026-03-28T01:18:11.000Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -685,7 +675,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/creedence-tribute-best-of-ccr-john-fogerty-tour/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.051Z",
+    "fetched_at": "2026-03-28T01:18:11.000Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -695,7 +685,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/the-simon-garfunkel-story/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.052Z",
+    "fetched_at": "2026-03-28T01:18:11.000Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -705,7 +695,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/hansson-de-wolfe-united/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.052Z",
+    "fetched_at": "2026-03-28T01:18:11.001Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -715,7 +705,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/niklas-stromstedt-tyck-om-mig-nov/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.052Z",
+    "fetched_at": "2026-03-28T01:18:11.001Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -725,7 +715,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/kulturfrukost-klimatsmart-kultur-i-praktiken/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.053Z",
+    "fetched_at": "2026-03-28T01:18:11.001Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -735,7 +725,17 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/seinabo-sey/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.053Z",
+    "fetched_at": "2026-03-28T01:18:11.002Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "LABERO – A Magic Night",
+    "date": "2026-12-11T19:00:00.000Z",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://ukk.se/labero-a-magic-night/",
+    "source": "ukk.se",
+    "fetched_at": "2026-03-28T01:18:11.002Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -745,7 +745,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/djungelboken-the-musical/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.053Z",
+    "fetched_at": "2026-03-28T01:18:11.002Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -755,7 +755,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/djungelboken-the-musical-2/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.053Z",
+    "fetched_at": "2026-03-28T01:18:11.002Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -765,7 +765,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/ser-jag-tjock-ut-i-den-har/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.054Z",
+    "fetched_at": "2026-03-28T01:18:11.003Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -775,7 +775,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/nour-el-refai-glows-in-the-dark/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.054Z",
+    "fetched_at": "2026-03-28T01:18:11.003Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -785,7 +785,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/nannes-jubileumsshow/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.055Z",
+    "fetched_at": "2026-03-28T01:18:11.003Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -795,7 +795,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/hipphipp-live-24-april/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.055Z",
+    "fetched_at": "2026-03-28T01:18:11.004Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -805,7 +805,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/hipphipp-live/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.055Z",
+    "fetched_at": "2026-03-28T01:18:11.004Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -815,7 +815,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/fredrik-andersson-too-soon/",
     "source": "ukk.se",
-    "fetched_at": "2026-03-27T01:25:23.056Z",
+    "fetched_at": "2026-03-28T01:18:11.004Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   }
