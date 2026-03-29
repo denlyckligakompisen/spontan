@@ -1,53 +1,5 @@
 [
   {
-    "title": "Operation bäver",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-28T13:00:00",
-    "url": "https://fyrisbiografen.se/operation-baver"
-  },
-  {
-    "title": "Gitarren från havet",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-28T13:10:00",
-    "url": "https://fyrisbiografen.se/gitarren-fran-havet"
-  },
-  {
-    "title": "The Testament of Ann Lee",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-28T14:20:00",
-    "url": "https://fyrisbiografen.se/the-testament-of-ann-lee"
-  },
-  {
-    "title": "Amrum",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-28T15:10:00",
-    "url": "https://fyrisbiografen.se/amrum"
-  },
-  {
-    "title": "Sirât",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-28T17:10:00",
-    "url": "https://fyrisbiografen.se/sirât"
-  },
-  {
-    "title": "Hamnet",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-28T17:20:00",
-    "url": "https://fyrisbiografen.se/hamnet"
-  },
-  {
-    "title": "Två åklagare",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-28T19:40:00",
-    "url": "https://fyrisbiografen.se/tva-aklagare"
-  },
-  {
-    "title": "I Swear",
-    "venue": "Fyrisbiografen",
-    "date": "2026-03-28T20:00:00",
-    "url": "https://fyrisbiografen.se/i-swear"
-  },
-  {
     "title": "Mary och häxans blomma (Jap. tal)",
     "venue": "Fyrisbiografen",
     "date": "2026-03-29T13:00:00",
@@ -358,6 +310,12 @@
     "venue": "Fyrisbiografen",
     "date": "2026-04-06T13:10:00",
     "url": "https://fyrisbiografen.se/en-ung-mumins-aventyr"
+  },
+  {
+    "title": "Franz K. (eng. text)",
+    "venue": "Fyrisbiografen",
+    "date": "2026-04-08T19:45:00",
+    "url": "https://fyrisbiografen.se/franz-k-eng-text"
   },
   {
     "title": "It's Never Over, Jeff Buckley",
