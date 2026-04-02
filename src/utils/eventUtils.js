@@ -126,8 +126,8 @@ export const groupEvents = (filteredEvents, viewType, visibleCount = Infinity) =
 
             const timeA = dA.getTime();
             const timeB = dB.getTime();
-            const isCinemaA = ['nordiskbio', 'fyrisbiografen'].includes(a.source);
-            const isCinemaB = ['nordiskbio', 'fyrisbiografen'].includes(b.source);
+            const isCinemaA = a.source === 'nordiskbio';
+            const isCinemaB = b.source === 'nordiskbio';
 
             if (viewType === 'helg' || viewType === 'idag') {
                 if (isCinemaA !== isCinemaB) return isCinemaA ? -1 : 1;
@@ -164,12 +164,67 @@ export const groupEvents = (filteredEvents, viewType, visibleCount = Infinity) =
 
 /**
  * Process a group of events to identify contiguous cinema events that can be bundled.
+ * Special logic for 'idag' view: combines all cinemas into one bundle and deduplicates by movie title.
  */
 export const processItemsForBundling = (groupEvents, viewType) => {
+    if (viewType === 'idag') {
+        const cinemaEvents = groupEvents.filter(e => ['nordiskbio', 'fyrisbiografen'].includes(e.source));
+        const otherEvents = groupEvents.filter(e => !['nordiskbio', 'fyrisbiografen'].includes(e.source));
+        const processedItems = [];
+
+        if (cinemaEvents.length > 0) {
+            // Group by movie title
+            const movieMap = {};
+            cinemaEvents.forEach(ev => {
+                const title = (ev.name || ev.artist || '').trim();
+                if (!movieMap[title]) movieMap[title] = [];
+                movieMap[title].push(ev);
+            });
+
+            const uniqueMovies = Object.entries(movieMap).map(([title, events]) => {
+                const now = new Date();
+                // "Nearest" start time: First upcoming event, or last event if all are in the past.
+                const upcoming = events.filter(e => new Date(e.startDate) >= now)
+                                     .sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+                
+                const repEvent = upcoming.length > 0 ? upcoming[0] : events.sort((a, b) => new Date(b.startDate) - new Date(a.startDate))[0];
+                
+                return { ...repEvent };
+            }).sort((a, b) => (a.name || a.artist || '').localeCompare(b.name || b.artist || '', 'sv-SE'));
+
+            processedItems.push({
+                type: 'bundle',
+                key: 'all-movies-idag',
+                source: 'mixed',
+                venue: 'Biografer',
+                date: cinemaEvents[0].startDate,
+                events: uniqueMovies,
+                totalCount: cinemaEvents.length
+            });
+        }
+
+        otherEvents.forEach(event => {
+            processedItems.push({ type: 'single', event });
+        });
+
+        return processedItems;
+    }
+
     const processedItems = [];
     let currentBundle = null;
 
-    const isBundleable = (e) => ['nordiskbio', 'fyrisbiografen'].includes(e.source);
+    const isBundleable = (e) => e.source === 'nordiskbio';
+
+    const finalizeBundle = (bundle) => {
+        if (bundle.events.length < 5) {
+            // Unpack small bundles into individual items
+            bundle.events.forEach(event => {
+                processedItems.push({ type: 'single', event });
+            });
+        } else {
+            processedItems.push(bundle);
+        }
+    };
 
     groupEvents.forEach(event => {
         if (isBundleable(event)) {
@@ -179,7 +234,7 @@ export const processItemsForBundling = (groupEvents, viewType) => {
             if (currentBundle && currentBundle.key.startsWith(bundleKey)) {
                 currentBundle.events.push(event);
             } else {
-                if (currentBundle) processedItems.push(currentBundle);
+                if (currentBundle) finalizeBundle(currentBundle);
                 currentBundle = {
                     type: 'bundle',
                     key: `${bundleKey}-${event.id}`,
@@ -191,13 +246,13 @@ export const processItemsForBundling = (groupEvents, viewType) => {
             }
         } else {
             if (currentBundle) {
-                processedItems.push(currentBundle);
+                finalizeBundle(currentBundle);
                 currentBundle = null;
             }
             processedItems.push({ type: 'single', event });
         }
     });
 
-    if (currentBundle) processedItems.push(currentBundle);
+    if (currentBundle) finalizeBundle(currentBundle);
     return processedItems;
 };

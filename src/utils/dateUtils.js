@@ -10,7 +10,7 @@ export const formatTime = (dateInput) => {
 };
 
 /**
- * Checks if an event is currently "live" (ongoing or starting within 60 mins).
+ * Checks if an event is currently "live" (ongoing or starting within 30 mins).
  */
 export const isLive = (startDate, endDate) => {
     const now = new Date();
@@ -24,7 +24,7 @@ export const isLive = (startDate, endDate) => {
 
     const diffMs = start - now;
     const diffMins = diffMs / (1000 * 60);
-    return diffMins > 0 && diffMins < 60;
+    return diffMins > 0 && diffMins < 30;
 };
 
 /**

@@ -56,7 +56,10 @@ const EventList = ({
             <div className="event-list-venue">
                 {groups.map(group => {
                     const processedItems = processItemsForBundling(group.events, viewType);
-                    const onlyMovies = processedItems.every(item => item.type === 'bundle');
+                    const onlyMovies = processedItems.every(item => 
+                        item.type === 'bundle' || 
+                        (item.type === 'single' && ['nordiskbio', 'fyrisbiografen'].includes(item.event?.source))
+                    );
 
                     return (
                         <React.Fragment key={group.month}>

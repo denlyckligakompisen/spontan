@@ -8,7 +8,7 @@ const EventItem = ({
     isLastOfLastDay
 }) => {
     const live = isLive(event.startDate, event.endDate);
-    const shouldHideTime = viewType !== 'idag' && ['nordiskbio', 'fyrisbiografen'].includes(event.source);
+    const shouldHideTime = false;
 
     return (
         <a
@@ -20,9 +20,7 @@ const EventItem = ({
         >
             <div className="event-info-stack">
                 <span className="event-artist-venue">
-                    {(viewType === 'helg' && ['nordiskbio', 'fyrisbiografen'].includes(event.source))
-                        ? "filmvisningar"
-                        : (event.artist || event.name)}
+                    {event.artist || event.name}
                 </span>
                 <span className="event-venue-subtext">
                     {event.venue} {event.distance !== undefined && event.distance !== Infinity && (

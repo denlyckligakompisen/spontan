@@ -13,17 +13,14 @@ const EventBundle = ({
 }) => {
     const isExpanded = expandedGroups.has(item.key);
     const isCollapsed = collapsedGroups.has(item.key);
+    const isAllMovies = item.key === 'all-movies-idag';
+    const totalCount = item.totalCount || item.events.length;
     const count = item.events.length;
     const repEvent = item.events[0];
     const isIdagView = viewType === 'idag';
-    // It's expanded if: 
-    // 1. Manually expanded
-    // 2. Contains 5 or fewer items and not manually collapsed
-    // 3. (Fallback) It's only movies in the whole group and not manually collapsed
-    const effectiveIsExpanded = isExpanded || (count <= 5 && !isCollapsed) || (onlyMovies && !isCollapsed);
+    const effectiveIsExpanded = isExpanded || (count <= 5 && !isCollapsed);
 
-    const liveEvents = item.events.filter(e => isLive(e.startDate, e.endDate));
-    const otherEvents = item.events.filter(e => !isLive(e.startDate, e.endDate));
+
 
     const renderSubEvent = (subEvent, isLast) => {
         const startTime = formatTime(subEvent.startDate);
@@ -43,6 +40,11 @@ const EventBundle = ({
                     <span className="event-artist-venue" style={{ fontSize: '0.95rem' }}>
                         {subEvent.name}
                     </span>
+                    {isAllMovies && (
+                        <span className="event-venue-subtext" style={{ fontSize: '0.75rem', opacity: 0.7 }}>
+                            {subEvent.venue}
+                        </span>
+                    )}
                 </div>
                 <div className="event-meta-right">
                     <span className="event-date-text">
@@ -64,7 +66,7 @@ const EventBundle = ({
     return (
         <div className="bundle-container">
             <div
-                className={`event-row-venue stacked ${isLastOfLastDay && !effectiveIsExpanded && liveEvents.length === 0 ? 'no-border' : ''}`}
+                className={`event-row-venue stacked ${isLastOfLastDay && !effectiveIsExpanded ? 'no-border' : ''}`}
                 onClick={(e) => {
                     if (disablePreClick) return;
                     e.preventDefault();
@@ -78,12 +80,10 @@ const EventBundle = ({
             >
                 <div className="event-info-stack">
                     <span className="event-artist-venue">
-                        {count} filmvisningar
+                        {totalCount} filmvisningar
                     </span>
                     <span className="event-venue-subtext">
-                        {repEvent.venue} {repEvent.distance !== undefined && repEvent.distance !== Infinity && (
-                            `• ${repEvent.distance < 1 ? Math.round(repEvent.distance * 1000) + ' m' : repEvent.distance.toFixed(1) + ' km'}`
-                        )} {repEvent.category && `• ${repEvent.category}`}
+                        {/* No distance or category here as requested */}
                     </span>
                 </div>
 
@@ -101,11 +101,8 @@ const EventBundle = ({
             </div>
 
             <div className="bundle-content" style={{ paddingLeft: '1rem' }}>
-                {/* Always show live events */}
-                {liveEvents.map((e, i) => renderSubEvent(e, i === liveEvents.length - 1 && !effectiveIsExpanded))}
-                
-                {/* Show other events if expanded */}
-                {effectiveIsExpanded && otherEvents.map((e, i) => renderSubEvent(e, i === otherEvents.length - 1))}
+                {/* Show events if expanded */}
+                {effectiveIsExpanded && item.events.map((e, i) => renderSubEvent(e, i === item.events.length - 1))}
             </div>
         </div>
     );

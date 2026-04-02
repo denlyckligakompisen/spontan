@@ -21,15 +21,15 @@ export const assignCategory = (event) => {
     const sportKeywords = [
         'sirius', 'storvreta', 'almtuna', 'uppsala basket', 'basket', 'fotboll', 'ishockey',
         'bandy', 'innebandy', 'dalkurd', 'ifk uppsala', 'tennis', 'badminton',
-        'bois', 'skirö'
+        'bois', 'skirö', 'ik uppsala'
     ];
     if (sportKeywords.some(kw => title.includes(kw) || artist.includes(kw))) {
         return '⚽';
     }
 
     // 4. Musik
-    // Ticketmaster (fetched as music), Katalin (Jazz/Pub), KB (if exists)
-    if (source === 'ticketmaster' || source === 'katalin' || source === 'destinationuppsala') {
+    // Ticketmaster (fetched as music), Katalin (Jazz/Pub), Tickster, Destination Uppsala
+    if (source === 'ticketmaster' || source === 'katalin' || source === 'destinationuppsala' || source === 'tickster') {
         return '🎵';
     }
 
@@ -39,7 +39,7 @@ export const assignCategory = (event) => {
 
     // fallback for UKK and others if it feels like music
     const musicKeywords = ['konsert', 'jazz', 'blues', 'symfoni', 'kör', 'opera', 'låtar', 'livemusik', 'domkyrkan', 'lördagsmusik', 'rock', 'kammarorkester',
-        'pop', 'ukk', 'kören', 'stämma', 'recital', 'piano', 'violin', 'cello', 'gitarr', 'singer', 'klubb', 'orlando!', 'soul', 'rongedal', 'poste restante'
+        'pop', 'ukk', 'kören', 'stämma', 'recital', 'piano', 'violin', 'cello', 'gitarr', 'singer', 'klubb', 'orlando!', 'soul', 'rongedal', 'poste restante', 'sana duri', 'vårsång'
     ];
     const musicVenues = ['katalin', 'grand', 'kulturoasen', 'jazzbaren', 'fyrishov'];
 
