@@ -31,7 +31,7 @@ export const getFilteredEventsForView = (events, viewType, searchQuery, activeCa
         if (isNaN(eventDate.getTime())) return false;
 
         // Source exclusions
-        if ((viewType === 'kommande' || viewType === 'helg') && ['fyrisbiografen', 'nordiskbio'].includes(event.source)) {
+        if ((viewType === 'kommande' || viewType === 'helg') && ['fyrisbiografen', 'nordiskbio', 'filmstaden'].includes(event.source)) {
             return false;
         }
 
@@ -126,8 +126,8 @@ export const groupEvents = (filteredEvents, viewType, visibleCount = Infinity) =
 
             const timeA = dA.getTime();
             const timeB = dB.getTime();
-            const isCinemaA = a.source === 'nordiskbio';
-            const isCinemaB = b.source === 'nordiskbio';
+            const isCinemaA = ['nordiskbio', 'filmstaden'].includes(a.source);
+            const isCinemaB = ['nordiskbio', 'filmstaden'].includes(b.source);
 
             if (viewType === 'helg' || viewType === 'idag') {
                 if (isCinemaA !== isCinemaB) return isCinemaA ? -1 : 1;
@@ -166,10 +166,14 @@ export const groupEvents = (filteredEvents, viewType, visibleCount = Infinity) =
  * Process a group of events to identify contiguous cinema events that can be bundled.
  * Special logic for 'idag' view: combines all cinemas into one bundle and deduplicates by movie title.
  */
-export const processItemsForBundling = (groupEvents, viewType) => {
+export const processItemsForBundling = (groupEvents, viewType, activeCategory) => {
+    if (activeCategory === 'film') {
+        return groupEvents.map(event => ({ type: 'single', event }));
+    }
+
     if (viewType === 'idag') {
-        const cinemaEvents = groupEvents.filter(e => ['nordiskbio', 'fyrisbiografen'].includes(e.source));
-        const otherEvents = groupEvents.filter(e => !['nordiskbio', 'fyrisbiografen'].includes(e.source));
+        const cinemaEvents = groupEvents.filter(e => ['nordiskbio', 'fyrisbiografen', 'filmstaden'].includes(e.source));
+        const otherEvents = groupEvents.filter(e => !['nordiskbio', 'fyrisbiografen', 'filmstaden'].includes(e.source));
         const processedItems = [];
 
         if (cinemaEvents.length > 0) {
@@ -213,7 +217,7 @@ export const processItemsForBundling = (groupEvents, viewType) => {
     const processedItems = [];
     let currentBundle = null;
 
-    const isBundleable = (e) => e.source === 'nordiskbio';
+    const isBundleable = (e) => ['nordiskbio', 'filmstaden'].includes(e.source);
 
     const finalizeBundle = (bundle) => {
         if (bundle.events.length < 5) {

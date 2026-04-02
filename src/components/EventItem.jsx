@@ -5,6 +5,7 @@ const EventItem = ({
     event,
     viewType,
     highlightIds,
+    activeCategory,
     isLastOfLastDay
 }) => {
     const live = isLive(event.startDate, event.endDate);
@@ -23,9 +24,9 @@ const EventItem = ({
                     {event.artist || event.name}
                 </span>
                 <span className="event-venue-subtext">
-                    {event.venue} {event.distance !== undefined && event.distance !== Infinity && (
+                    {event.venue} {event.distance !== undefined && event.distance !== Infinity && viewType !== 'helg' && viewType !== 'kommande' && (
                         `• ${event.distance < 1 ? Math.round(event.distance * 1000) + ' m' : event.distance.toFixed(1) + ' km'}`
-                    )} {event.category && `• ${event.category}`}
+                    )} {event.category && activeCategory === 'alla' && `• ${event.category}`}
                 </span>
             </div>
 

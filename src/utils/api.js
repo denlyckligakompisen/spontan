@@ -250,5 +250,21 @@ export const fetchMeetupEvents = () =>
         url: event.url
     }));
 
+export const fetchFilmstaden = () =>
+    fetchLocalData('filmstaden-events.json', 'Filmstaden', (event, index) => ({
+        id: event.id || `fs-${event.title}-${event.startDate}-${index}`,
+        source: "filmstaden",
+        name: event.title || "Film",
+        artist: event.title,
+        venue: event.venue || "Filmstaden Luxe",
+        city: "Uppsala",
+        country: "Sweden",
+        latitude: 59.8586,
+        longitude: 17.6446,
+        startDate: event.startDate || event.startDateTime || "",
+        endDate: null,
+        url: event.url || "https://www.filmstaden.se/"
+    }));
+
 
 

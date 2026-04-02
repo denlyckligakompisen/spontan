@@ -7,6 +7,7 @@ import {
     fetchHejaUppsalaEvents,
     fetchNordiskBio,
     fetchFyrisbiografen,
+    fetchFilmstaden,
     fetchUppsalaStadsteaterEvents,
     fetchTicksterEvents,
     fetchMeetupEvents
@@ -39,6 +40,7 @@ export const useEvents = (activeCategory, searchQuery, visibleCount, now) => {
                 fetchHejaUppsalaEvents(),
                 fetchNordiskBio(),
                 fetchFyrisbiografen(),
+                fetchFilmstaden(),
                 fetchUppsalaStadsteaterEvents(),
                 fetchTicksterEvents(),
                 fetchMeetupEvents()

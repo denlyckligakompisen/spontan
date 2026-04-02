@@ -40,9 +40,9 @@ const EventBundle = ({
                     <span className="event-artist-venue" style={{ fontSize: '0.95rem' }}>
                         {subEvent.name}
                     </span>
-                    {isAllMovies && (
+                    {isIdagView && (
                         <span className="event-venue-subtext" style={{ fontSize: '0.75rem', opacity: 0.7 }}>
-                            {subEvent.venue}
+                            {subEvent.venue} {subEvent.distance !== undefined && ` • ${subEvent.distance < 1 ? Math.round(subEvent.distance * 1000) + ' m' : subEvent.distance.toFixed(1) + ' km'}`}
                         </span>
                     )}
                 </div>

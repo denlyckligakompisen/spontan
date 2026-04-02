@@ -15,6 +15,7 @@ const EventList = ({
     highlightIds,
     expandedGroups,
     collapsedGroups,
+    activeCategory,
     toggleGroup,
     toggleCollapse,
     loaderRef
@@ -55,7 +56,7 @@ const EventList = ({
         <div className="content-container">
             <div className="event-list-venue">
                 {groups.map(group => {
-                    const processedItems = processItemsForBundling(group.events, viewType);
+                    const processedItems = processItemsForBundling(group.events, viewType, activeCategory);
                     const onlyMovies = processedItems.every(item => 
                         item.type === 'bundle' || 
                         (item.type === 'single' && ['nordiskbio', 'fyrisbiografen'].includes(item.event?.source))
@@ -87,6 +88,7 @@ const EventList = ({
                                             key={`${item.event.source}-${item.event.id}`}
                                             event={item.event}
                                             viewType={viewType}
+                                            activeCategory={activeCategory}
                                             highlightIds={highlightIds}
                                             isLastOfLastDay={isLastOfLastDay}
                                         />

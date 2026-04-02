@@ -197,6 +197,7 @@ function App() {
                 highlightIds={highlightIds}
                 expandedGroups={expandedGroups}
                 collapsedGroups={collapsedGroups}
+                activeCategory={activeCategory}
                 toggleGroup={toggleGroup}
                 toggleCollapse={toggleCollapse}
               />
@@ -215,6 +216,7 @@ function App() {
                 highlightIds={highlightIds}
                 expandedGroups={expandedGroups}
                 collapsedGroups={collapsedGroups}
+                activeCategory={activeCategory}
                 toggleGroup={toggleGroup}
                 toggleCollapse={toggleCollapse}
               />
@@ -233,6 +235,7 @@ function App() {
                 highlightIds={highlightIds}
                 expandedGroups={expandedGroups}
                 collapsedGroups={collapsedGroups}
+                activeCategory={activeCategory}
                 toggleGroup={toggleGroup}
                 toggleCollapse={toggleCollapse}
                 loaderRef={loaderRefKommande}
