@@ -83,6 +83,7 @@
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://hejauppsala.com/kalender/jesus-christ-superstar-ukk-2026/",
     "source": "hejauppsala.com",
+    "category": "musik",
     "fetched_at": "2026-04-02T01:22:57.802Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
@@ -98,12 +99,49 @@
     "longitude": 17.6354398
   },
   {
-    "title": "Utställning Studio Hörngren – Övre Slottsgatan",
-    "date": "2 apr - 6 apr",
+    "title": "Utställning Studio Hörngren – Vernissage",
+    "date": "2 apr 17:00 - 19:00",
     "venue": "Studio Hörngren",
     "url": "https://hejauppsala.com/kalender/utstallning-studio-horngren-ovre-slottsgatan/",
     "source": "hejauppsala.com",
-    "fetched_at": "2026-04-02T01:22:57.803Z"
+    "latitude": 59.856172,
+    "longitude": 17.625838
+  },
+  {
+    "title": "Utställning Studio Hörngren",
+    "date": "3 apr 13:00 - 16:00",
+    "venue": "Studio Hörngren",
+    "url": "https://hejauppsala.com/kalender/utstallning-studio-horngren-ovre-slottsgatan/",
+    "source": "hejauppsala.com",
+    "latitude": 59.856172,
+    "longitude": 17.625838
+  },
+  {
+    "title": "Utställning Studio Hörngren",
+    "date": "4 apr 13:00 - 16:00",
+    "venue": "Studio Hörngren",
+    "url": "https://hejauppsala.com/kalender/utstallning-studio-horngren-ovre-slottsgatan/",
+    "source": "hejauppsala.com",
+    "latitude": 59.856172,
+    "longitude": 17.625838
+  },
+  {
+    "title": "Utställning Studio Hörngren",
+    "date": "5 apr 13:00 - 16:00",
+    "venue": "Studio Hörngren",
+    "url": "https://hejauppsala.com/kalender/utstallning-studio-horngren-ovre-slottsgatan/",
+    "source": "hejauppsala.com",
+    "latitude": 59.856172,
+    "longitude": 17.625838
+  },
+  {
+    "title": "Utställning Studio Hörngren",
+    "date": "6 apr 13:00 - 16:00",
+    "venue": "Studio Hörngren",
+    "url": "https://hejauppsala.com/kalender/utstallning-studio-horngren-ovre-slottsgatan/",
+    "source": "hejauppsala.com",
+    "latitude": 59.856172,
+    "longitude": 17.625838
   },
   {
     "title": "Konstpåsk på Ulva",

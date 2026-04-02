@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import './index.css';
 import Intro from './Intro';
 import Header from './components/Header';
@@ -33,10 +33,16 @@ function App() {
     groupsIdag,
     groupsHelg,
     groupsKommande,
+    groupsNara,
     eventsIdag,
     eventsHelg,
     eventsKommande,
-    events
+    eventsNara,
+    events,
+    unfilteredIdag,
+    unfilteredHelg,
+    unfilteredKommande,
+    unfilteredNara
   } = useEvents(activeCategory, searchQuery, visibleCount, nowTick);
 
   // Update 'now' every 60 seconds to refresh live status/pulsing dots
@@ -129,7 +135,28 @@ function App() {
     });
   };
 
-  const hasFilters = view !== 'info';
+  const availableCategories = useMemo(() => {
+    let currentViewEvents = [];
+    if (view === 'idag') currentViewEvents = unfilteredIdag;
+    else if (view === 'helg') currentViewEvents = unfilteredHelg;
+    else if (view === 'kommande') currentViewEvents = unfilteredKommande;
+    else if (view === 'nara') currentViewEvents = unfilteredNara;
+    else return ['alla', 'musik', 'sport', 'teater', 'film', 'övrigt'];
+
+    const cats = new Set(['alla']);
+    currentViewEvents.forEach(e => {
+      const catLabel = e.category === '🎵' ? 'musik' :
+        e.category === '⚽' ? 'sport' :
+        e.category === '🎭' ? 'teater' :
+        e.category === '🎬' ? 'film' : 'övrigt';
+      cats.add(catLabel);
+    });
+
+    const order = ['alla', 'musik', 'sport', 'teater', 'film', 'övrigt'];
+    return order.filter(c => cats.has(c));
+  }, [view, unfilteredIdag, unfilteredHelg, unfilteredKommande, unfilteredNara]);
+
+  const hasFilters = view !== 'info' && view !== 'nara';
   const headerScrolledHeight = hasFilters ? '110px' : '70px';
   const headerExpandedHeight = hasFilters ? '230px' : '105px';
   const stickyTop = isHeaderScrolled ? headerScrolledHeight : headerExpandedHeight;
@@ -153,6 +180,7 @@ function App() {
           setActiveCategory={setActiveCategory}
           searchQuery={searchQuery}
           setSearchQuery={setSearchQuery}
+          availableCategories={availableCategories}
         />
 
         <div className="swipe-container" ref={scrollContainerRef}>

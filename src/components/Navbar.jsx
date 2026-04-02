@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, Coffee, CalendarRange, Info } from 'lucide-react';
+import { Calendar, Coffee, CalendarRange, Info, MapPin } from 'lucide-react';
 
 const Navbar = ({ view, scrollToView }) => {
     const items = [

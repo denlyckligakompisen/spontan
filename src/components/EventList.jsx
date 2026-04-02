@@ -60,7 +60,7 @@ const EventList = ({
 
                     return (
                         <React.Fragment key={group.month}>
-                            {viewType !== 'idag' && <MonthHeader month={group.month} />}
+                            {viewType !== 'idag' && viewType !== 'nara' && <MonthHeader month={group.month} />}
                             {processedItems.map((item, index) => {
                                 const isLastOfLastDay = index === processedItems.length - 1;
 

@@ -1,6 +1,22 @@
 import { formatTime, isLive, getWeekendRange } from './dateUtils';
 
 /**
+ * Calculates the distance between two points in km using the haversine formula.
+ */
+export const calculateDistance = (lat1, lon1, lat2, lon2) => {
+    if (!lat1 || !lon1 || !lat2 || !lon2) return Infinity;
+    const R = 6371; // km
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a =
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+        Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c;
+};
+
+/**
  * Filters events based on viewType, searchQuery, and activeCategory.
  * Handles past event hiding and specific source exclusions.
  */
@@ -61,7 +77,7 @@ export const getFilteredEventsForView = (events, viewType, searchQuery, activeCa
             }
         }
 
-        if (viewType === 'idag') {
+        if (viewType === 'idag' || viewType === 'nara') {
             return eventDate >= today && eventDate < tomorrow;
         } else if (viewType === 'helg') {
             const { start, end } = getWeekendRange();
@@ -83,7 +99,7 @@ export const groupEvents = (filteredEvents, viewType, visibleCount = Infinity) =
         if (isNaN(date.getTime())) return;
 
         let groupKey;
-        if (viewType === 'idag') groupKey = 'IDAG';
+        if (viewType === 'idag' || viewType === 'nara') groupKey = 'IDAG';
         else if (viewType === 'helg') groupKey = date.toLocaleDateString('sv-SE', { weekday: 'long' });
         else groupKey = date.toLocaleDateString('sv-SE', { month: 'long', year: 'numeric' });
 
@@ -100,6 +116,10 @@ export const groupEvents = (filteredEvents, viewType, visibleCount = Infinity) =
             const dayA = new Date(dA.getFullYear(), dA.getMonth(), dA.getDate()).getTime();
             const dayB = new Date(dB.getFullYear(), dB.getMonth(), dB.getDate()).getTime();
             if (dayA !== dayB) return dayA - dayB;
+
+            if (viewType === 'nara' && a.distance !== undefined && b.distance !== undefined) {
+                if (a.distance !== b.distance) return a.distance - b.distance;
+            }
 
             const venueCompare = (a.venue || '').toLowerCase().localeCompare((b.venue || '').toLowerCase());
             if (viewType === 'kommande') return venueCompare;
@@ -153,8 +173,8 @@ export const processItemsForBundling = (groupEvents, viewType) => {
 
     groupEvents.forEach(event => {
         if (isBundleable(event)) {
-            // Unified key for all cinema sources on the same day
-            const bundleKey = `movies-${new Date(event.startDate).toDateString()}`;
+            // Unified key for the same cinema source on the same day
+            const bundleKey = `movies-${event.source}-${new Date(event.startDate).toDateString()}`;
 
             if (currentBundle && currentBundle.key.startsWith(bundleKey)) {
                 currentBundle.events.push(event);
@@ -163,8 +183,8 @@ export const processItemsForBundling = (groupEvents, viewType) => {
                 currentBundle = {
                     type: 'bundle',
                     key: `${bundleKey}-${event.id}`,
-                    source: 'cinema', // Use a generic source for the bundle
-                    venue: 'Biograf',
+                    source: event.source, // Keep original source
+                    venue: event.venue,
                     date: event.startDate,
                     events: [event]
                 };

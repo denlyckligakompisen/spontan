@@ -25,14 +25,16 @@ const EventItem = ({
                         : (event.artist || event.name)}
                 </span>
                 <span className="event-venue-subtext">
-                    {event.venue}
+                    {event.venue} {event.distance !== undefined && event.distance !== Infinity && (
+                        `• ${event.distance < 1 ? Math.round(event.distance * 1000) + ' m' : event.distance.toFixed(1) + ' km'}`
+                    )} {event.category && `• ${event.category}`}
                 </span>
             </div>
 
             <div className="event-meta-right">
                 <span className="event-date-text">
                     {(() => {
-                        if (viewType === 'idag' || viewType === 'helg') {
+                        if (viewType === 'idag' || viewType === 'helg' || viewType === 'nara') {
                             const startTime = formatTime(event.startDate);
                             const endTime = event.endDate ? formatTime(event.endDate) : null;
 

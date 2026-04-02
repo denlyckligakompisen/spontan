@@ -7,9 +7,10 @@ const Header = ({
     activeCategory,
     setActiveCategory,
     searchQuery,
-    setSearchQuery
+    setSearchQuery,
+    availableCategories = ['alla', 'musik', 'sport', 'teater', 'övrigt']
 }) => {
-    const hasFilters = view !== 'info';
+    const hasFilters = view !== 'info' && view !== 'nara';
 
     return (
         <header className={`app-header ${isHeaderScrolled ? 'scrolled' : ''}`}>
@@ -24,7 +25,7 @@ const Header = ({
             {hasFilters && (
                 <div className="filter-search-container">
                     <div className="category-filters">
-                        {['alla', 'musik', 'sport', 'teater', 'övrigt'].map(cat => (
+                        {availableCategories.map(cat => (
                             <button
                                 key={cat}
                                 className={`filter-pill ${activeCategory === cat ? 'active' : ''}`}
