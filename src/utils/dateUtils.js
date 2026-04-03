@@ -65,7 +65,8 @@ export const parseSwedishDate = (dateStr) => {
     const cleanStr = dateStr.toLowerCase().trim();
     let timeHours = 0;
     let timeMinutes = 0;
-    const timeRegex = /(?:kl\.?|kl|kl:|kl\.)?\s*(\d{1,2})[:.](\d{2})/gi;
+    // Updated regex: minutes are now optional (e.g. 12 or 12:00)
+    const timeRegex = /(?:kl\.?|kl|kl:|kl\.)?\s*(\d{1,2})(?:[:.](\d{2}))?/gi;
     const timeMatches = Array.from(cleanStr.matchAll(timeRegex));
     let endDateRange = null;
 
@@ -81,7 +82,7 @@ export const parseSwedishDate = (dateStr) => {
 
         const startMatch = timeMatches[startMatchIdx];
         timeHours = parseInt(startMatch[1], 10);
-        timeMinutes = parseInt(startMatch[2], 10);
+        timeMinutes = startMatch[2] ? parseInt(startMatch[2], 10) : 0;
 
         if (timeMatches.length > startMatchIdx + 1) {
             const endMatch = timeMatches[startMatchIdx + 1];
@@ -90,15 +91,24 @@ export const parseSwedishDate = (dateStr) => {
             const separatorText = cleanStr.substring(startPos, endPos);
 
             if (separatorText.match(/[-–—]/)) {
-                endDateRange = { h: parseInt(endMatch[1], 10), m: parseInt(endMatch[2], 10) };
+                endDateRange = { 
+                    h: parseInt(endMatch[1], 10), 
+                    m: endMatch[2] ? parseInt(endMatch[2], 10) : 0 
+                };
             }
         }
     }
 
+    const dateParts = [];
     const parts = cleanStr.split(/\s+/);
-    let dates = [];
+    // Filter out ratios/years
+    const filteredParts = parts.filter(p => !(/^\d{4}$/.test(p) || /^0[.,]\d+$/.test(p) || p === '1.33'));
     
-    // Check for "day-day month" format (e.g., "3-6 april")
+    // Look for day-month pairs
+    let tempStr = cleanStr;
+    const dates = [];
+    
+    // Day-day month range (e.g. 3-6 apr)
     const rangeMatch = cleanStr.match(/(\d{1,2})\s*[-–]\s*(\d{1,2})\s+([a-zåäö]+)/i);
     if (rangeMatch) {
         const d1 = parseInt(rangeMatch[1], 10);
@@ -107,28 +117,62 @@ export const parseSwedishDate = (dateStr) => {
         if (!isNaN(d1) && !isNaN(d2) && m !== undefined) {
             dates.push({ day: d1, month: m });
             dates.push({ day: d2, month: m });
+            // Remove the match from tempStr to avoid re-parsing days as times
+            tempStr = tempStr.replace(rangeMatch[0], ' ');
         }
     }
-
-    // Fallback: look for all "day month" pairs
+    
+    // Fallback: Day-month pairs
     if (dates.length === 0) {
-        for (let i = 0; i < parts.length - 1; i++) {
-            const d = parseInt(parts[i], 10);
-            const m = months[parts[i + 1]];
-            if (!isNaN(d) && m !== undefined) {
+        for (let i = 0; i < filteredParts.length - 1; i++) {
+            const d = parseInt(filteredParts[i], 10);
+            const m = months[filteredParts[i + 1].toLowerCase()];
+            if (!isNaN(d) && d > 0 && d <= 31 && m !== undefined) {
                 dates.push({ day: d, month: m });
+                tempStr = tempStr.replace(new RegExp(filteredParts[i] + '\\s+' + filteredParts[i+1], 'i'), ' ');
             }
         }
     }
-
+    
     if (dates.length === 0) return null;
 
-    const firstDate = dates[0];
-    const lastDate = dates[dates.length - 1];
+    // 2. Identify times in the REMAINING string
+    let startTime = { h: 18, m: 0 }; // default
+    let endTimeRange = null;
 
+    // Look for kl. XX:XX or kl XX
+    const klMatch = tempStr.match(/kl\.?\s*(\d{1,2})[:.]?(\d{2})?/i);
+    if (klMatch) {
+        startTime.h = parseInt(klMatch[1], 10);
+        startTime.m = klMatch[2] ? parseInt(klMatch[2], 10) : 0;
+    }
+
+    // Look for time range XX-YY or XX:XX-YY:YY
+    const timeRangeMatch = tempStr.match(/(\d{1,2})[:.]?(\d{2})?\s*[-–]\s*(\d{1,2})[:.]?(\d{2})?/i);
+    if (timeRangeMatch) {
+        // If it's a range like "12 – 17" or "12:00 – 17:00"
+        const h1 = parseInt(timeRangeMatch[1], 10);
+        const m1 = timeRangeMatch[2] ? parseInt(timeRangeMatch[2], 10) : 0;
+        const h2 = parseInt(timeRangeMatch[3], 10);
+        const m2 = timeRangeMatch[4] ? parseInt(timeRangeMatch[4], 10) : 0;
+        
+        // Validation: Times should be 0-23
+        if (h1 < 24 && h2 < 24) {
+            startTime = { h: h1, m: m1 };
+            endTimeRange = { h: h2, m: m2 };
+        }
+    } else if (!klMatch) {
+        // Simple XX:XX or XX.XX
+        const simpleTimeMatch = tempStr.match(/(\d{1,2})[:.](\d{2})/);
+        if (simpleTimeMatch) {
+            startTime.h = parseInt(simpleTimeMatch[1], 10);
+            startTime.m = parseInt(simpleTimeMatch[2], 10);
+        }
+    }
+
+    // 3. Assemble Date objects
     const now = new Date();
     let year = now.getFullYear();
-    
     const getFinalDate = (d, m) => {
         const dateThisYear = new Date(year, m, d);
         let finalYear = year;
@@ -138,25 +182,21 @@ export const parseSwedishDate = (dateStr) => {
         return new Date(finalYear, m, d);
     };
 
-    const startDate = getFinalDate(firstDate.day, firstDate.month);
-    startDate.setHours(timeHours, timeMinutes, 0, 0);
+    const firstDateObj = dates[0];
+    const lastDateObj = dates[dates.length - 1];
+    
+    const start = getFinalDate(firstDateObj.day, firstDateObj.month);
+    start.setHours(startTime.h, startTime.m, 0, 0);
 
-    let endDate = null;
-    if (dates.length > 1 || endDateRange) {
-        endDate = getFinalDate(lastDate.day, lastDate.month);
-        if (endDateRange) {
-            endDate.setHours(endDateRange.h, endDateRange.m, 0, 0);
+    let end = null;
+    if (dates.length > 1 || endTimeRange) {
+        end = getFinalDate(lastDateObj.day, lastDateObj.month);
+        if (endTimeRange) {
+            end.setHours(endTimeRange.h, endTimeRange.m, 0, 0);
         } else {
-            endDate.setHours(23, 59, 59, 999);
-        }
-        
-        if (endDate < startDate) {
-            // Handle ranges spanning over midnight if it's the same day, 
-            // or just ensure endDate is after startDate
-            if (dates.length === 1) endDate.setDate(endDate.getDate() + 1);
-            else endDate.setFullYear(endDate.getFullYear() + 1);
+            end.setHours(23, 59, 59, 999);
         }
     }
 
-    return { startDate, endDate };
+    return { startDate: start, endDate: end };
 };

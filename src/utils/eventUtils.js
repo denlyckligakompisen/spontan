@@ -75,6 +75,19 @@ export const getFilteredEventsForView = (events, viewType, searchQuery, activeCa
             } else {
                 return false;
             }
+        } else if (viewType === 'idag' || viewType === 'nara') {
+            // Multi-day events: hide if the daily window is over
+            const isMultiDay = start.toDateString() !== end.toDateString();
+            const hasTime = end.getHours() !== 0 || end.getMinutes() !== 0;
+            if (isMultiDay && hasTime) {
+                // Check if current time is past today's end time
+                // If it's an overnight event (e.g. 21-02), 'today's end' is tomorrow 02:00
+                const isOvernight = end.getHours() < start.getHours();
+                const dailyEnd = new Date(now.getFullYear(), now.getMonth(), now.getDate(), end.getHours(), end.getMinutes());
+                if (isOvernight) dailyEnd.setDate(dailyEnd.getDate() + 1);
+                
+                if (now > dailyEnd) return false;
+            }
         }
 
         // View logic: check if the event range [start, end] overlaps with the view's range [vStart, vEnd]
@@ -106,19 +119,46 @@ export const getFilteredEventsForView = (events, viewType, searchQuery, activeCa
  * Groups and sorts events into a structure ready for rendering.
  */
 export const groupEvents = (filteredEvents, viewType, visibleCount = Infinity) => {
+    const now = new Date();
     const groups = {};
     filteredEvents.forEach(event => {
         const date = new Date(event.startDate);
         if (isNaN(date.getTime())) return;
 
-        let groupKey;
-        if (viewType === 'idag' || viewType === 'nara') groupKey = 'IDAG';
-        else if (viewType === 'imorgon') groupKey = 'IMORGON';
-        else if (viewType === 'helg') groupKey = date.toLocaleDateString('sv-SE', { weekday: 'long' });
-        else groupKey = date.toLocaleDateString('sv-SE', { month: 'long', year: 'numeric' });
+        let groupKeys = [];
+        if (viewType === 'idag' || viewType === 'nara') groupKeys.push('IDAG');
+        else if (viewType === 'imorgon') groupKeys.push('IMORGON');
+        else if (viewType === 'helg') {
+            const { start: wStart, end: wEnd } = getWeekendRange();
+            const eventStart = new Date(event.startDate);
+            const eventEnd = event.endDate ? new Date(event.endDate) : eventStart;
+            
+            // Iterate through Friday, Saturday, Sunday
+            let current = new Date(wStart.getFullYear(), wStart.getMonth(), wStart.getDate());
+            const end = new Date(wEnd.getFullYear(), wEnd.getMonth(), wEnd.getDate());
+            
+            while (current <= end) {
+                const currentDayStart = new Date(current.getFullYear(), current.getMonth(), current.getDate()).getTime();
+                const currentDayEnd = currentDayStart + (24 * 60 * 60 * 1000) - 1;
+                
+                const s = eventStart.getTime();
+                const e = eventEnd.getTime();
+                
+                // If event overlaps with THIS specific weekend day
+                if (s <= currentDayEnd && e >= currentDayStart) {
+                    groupKeys.push(current.toLocaleDateString('sv-SE', { weekday: 'long' }));
+                }
+                
+                current.setDate(current.getDate() + 1);
+            }
+        } else {
+            groupKeys.push(date.toLocaleDateString('sv-SE', { month: 'long', year: 'numeric' }));
+        }
 
-        if (!groups[groupKey]) groups[groupKey] = [];
-        groups[groupKey].push({ ...event });
+        groupKeys.forEach(groupKey => {
+            if (!groups[groupKey]) groups[groupKey] = [];
+            groups[groupKey].push({ ...event });
+        });
     });
 
     const allGroups = Object.entries(groups).map(([groupName, events]) => ({
@@ -154,7 +194,11 @@ export const groupEvents = (filteredEvents, viewType, visibleCount = Infinity) =
             if (timeA !== timeB) return timeA - timeB;
             return venueCompare;
         })
-    })).sort((a, b) => new Date(a.events[0].startDate) - new Date(b.events[0].startDate));
+    })).sort((a, b) => {
+        if (a.month === 'PÅGÅR') return -1;
+        if (b.month === 'PÅGÅR') return 1;
+        return new Date(a.events[0].startDate) - new Date(b.events[0].startDate);
+    });
 
     if (viewType === 'kommande' && visibleCount !== Infinity) {
         let totalAdded = 0;
@@ -229,7 +273,7 @@ export const groupEvents = (filteredEvents, viewType, visibleCount = Infinity) =
                 const repEvent = upcoming.length > 0 ? upcoming[0] : events.sort((a, b) => new Date(b.startDate) - new Date(a.startDate))[0];
                 
                 return { ...repEvent };
-            }).sort((a, b) => (a.name || a.artist || '').localeCompare(b.name || b.artist || '', 'sv-SE'));
+            }).sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
 
             processedItems.push({
                 type: 'bundle',

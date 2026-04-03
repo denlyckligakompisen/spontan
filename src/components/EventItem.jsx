@@ -21,12 +21,15 @@ const EventItem = ({
         >
             <div className="event-info-stack">
                 <span className="event-artist-venue">
+                    {(live && viewType === 'idag') && <div className="live-dot" title="Pågår nu"></div>}
                     {event.artist || event.name}
                 </span>
                 <span className="event-venue-subtext">
-                    {event.venue} {event.distance !== undefined && event.distance !== Infinity && viewType !== 'helg' && viewType !== 'kommande' && (
-                        `• ${event.distance < 1 ? Math.round(event.distance * 1000) + ' m' : event.distance.toFixed(1) + ' km'}`
-                    )} {event.category && activeCategory === 'alla' && `• ${event.category}`}
+                    {event.distance !== undefined && event.distance !== Infinity && (
+                        `${event.distance.toFixed(1).replace('.', ',')} km • `
+                    )}
+                    {event.venue}
+                    {event.category && activeCategory === 'alla' && ` • ${event.category}`}
                     {event.nextTimes && ` • Kommande: ${event.nextTimes.join(', ')}`}
                 </span>
             </div>
@@ -40,7 +43,6 @@ const EventItem = ({
 
                             return (
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                                    {live && <span className="live-pulse" title="Börjar snart/Pågår"></span>}
                                     {shouldHideTime ? '' : (
                                         <div className={endTime ? "time-stacked" : ""}>
                                             <span>{startTime}</span>

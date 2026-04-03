@@ -1,13 +1,15 @@
 import React from 'react';
-import { Calendar, Coffee, CalendarRange, Info, MapPin } from 'lucide-react';
+import AccessTimeRoundedIcon from '@mui/icons-material/AccessTimeRounded';
+import LocalBarRoundedIcon from '@mui/icons-material/LocalBarRounded';
+import DateRangeRoundedIcon from '@mui/icons-material/DateRangeRounded';
+import InfoOutlineRoundedIcon from '@mui/icons-material/InfoOutlineRounded';
 
 const Navbar = ({ view, scrollToView }) => {
     const items = [
-        { id: 'idag', label: 'Idag', icon: <Calendar size={20} /> },
-        { id: 'imorgon', label: 'Imorgon', icon: <Calendar size={20} /> },
-        { id: 'helg', label: 'Nästa helg', icon: <Coffee size={20} /> },
-        { id: 'kommande', label: 'Kommande', icon: <CalendarRange size={20} /> },
-        { id: 'info', label: 'Info', icon: <Info size={20} /> }
+        { id: 'idag', label: 'Idag', icon: <AccessTimeRoundedIcon sx={{ fontSize: 22 }} /> },
+        { id: 'helg', label: 'Nästa helg', icon: <LocalBarRoundedIcon sx={{ fontSize: 22 }} /> },
+        { id: 'kommande', label: 'Kommande', icon: <DateRangeRoundedIcon sx={{ fontSize: 22 }} /> },
+        { id: 'info', label: 'Info', icon: <InfoOutlineRoundedIcon sx={{ fontSize: 22 }} /> }
     ];
 
     return (

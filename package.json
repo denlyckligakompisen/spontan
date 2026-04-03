@@ -10,6 +10,10 @@
     "crawl": "node scripts/fetchKatalinEvents.js && node scripts/fetchDestinationUppsalaEvents.js && node scripts/fetchUKKEvents.js && node scripts/fetchHejaUppsalaEvents.js && node scripts/fetchNordiskBio.js && node scripts/fetchFyrisbiografen.js && node scripts/fetchFilmstaden.js && node scripts/fetchUppsalaStadsteater.js && node scripts/fetchTicksterEvents.js && node scripts/fetchMeetupEvents.js"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.9",
+    "@mui/material": "^7.3.9",
     "jsdom": "^24.1.3",
     "lucide-react": "^0.562.0",
     "node-fetch": "^3.3.2",

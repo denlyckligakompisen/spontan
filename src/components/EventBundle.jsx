@@ -34,22 +34,23 @@ const EventBundle = ({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="event-row-venue compact"
-                style={{ borderBottom: isLast ? 'none' : '1px solid #1a1a1a', padding: '0.8rem 0' }}
+                style={{ padding: '0.6rem 0' }}
             >
                 <div className="event-info-stack">
                     <span className="event-artist-venue" style={{ fontSize: '0.95rem' }}>
+                        {(live && viewType === 'idag') && <div className="live-dot" style={{ width: '6px', height: '6px', marginRight: '6px' }}></div>}
                         {subEvent.name}
                     </span>
-                    {isIdagView && (
-                        <span className="event-venue-subtext" style={{ fontSize: '0.75rem', opacity: 0.7 }}>
-                            {subEvent.venue} {subEvent.distance !== undefined && ` • ${subEvent.distance < 1 ? Math.round(subEvent.distance * 1000) + ' m' : subEvent.distance.toFixed(1) + ' km'}`}
-                        </span>
-                    )}
+                    <span className="event-venue-subtext" style={{ fontSize: '0.75rem', opacity: 0.7 }}>
+                        {subEvent.distance !== undefined && subEvent.distance !== Infinity && (
+                            `${subEvent.distance.toFixed(1).replace('.', ',')} km • `
+                        )}
+                        {subEvent.venue}
+                    </span>
                 </div>
                 <div className="event-meta-right">
                     <span className="event-date-text">
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                            {live && <span className="live-pulse" title="Börjar snart/Pågår"></span>}
                             <div className={endTime ? "time-stacked" : ""}>
                                 <span>{startTime}</span>
                                 {endTime && <span className="event-time-end">-{endTime}</span>}
