@@ -96,35 +96,67 @@ export const parseSwedishDate = (dateStr) => {
     }
 
     const parts = cleanStr.split(/\s+/);
-    let day, month;
-    for (let i = 0; i < parts.length - 1; i++) {
-        const d = parseInt(parts[i], 10);
-        const m = months[parts[i + 1]];
-        if (!isNaN(d) && m !== undefined) {
-            day = d;
-            month = m;
-            break;
+    let dates = [];
+    
+    // Check for "day-day month" format (e.g., "3-6 april")
+    const rangeMatch = cleanStr.match(/(\d{1,2})\s*[-–]\s*(\d{1,2})\s+([a-zåäö]+)/i);
+    if (rangeMatch) {
+        const d1 = parseInt(rangeMatch[1], 10);
+        const d2 = parseInt(rangeMatch[2], 10);
+        const m = months[rangeMatch[3].toLowerCase()];
+        if (!isNaN(d1) && !isNaN(d2) && m !== undefined) {
+            dates.push({ day: d1, month: m });
+            dates.push({ day: d2, month: m });
         }
     }
 
-    if (day === undefined || month === undefined) return null;
+    // Fallback: look for all "day month" pairs
+    if (dates.length === 0) {
+        for (let i = 0; i < parts.length - 1; i++) {
+            const d = parseInt(parts[i], 10);
+            const m = months[parts[i + 1]];
+            if (!isNaN(d) && m !== undefined) {
+                dates.push({ day: d, month: m });
+            }
+        }
+    }
+
+    if (dates.length === 0) return null;
+
+    const firstDate = dates[0];
+    const lastDate = dates[dates.length - 1];
 
     const now = new Date();
     let year = now.getFullYear();
-    const dateThisYear = new Date(year, month, day);
-    if (dateThisYear < new Date(now.getFullYear(), now.getMonth() - 1, 1)) {
-        year++;
+    
+    const getFinalDate = (d, m) => {
+        const dateThisYear = new Date(year, m, d);
+        let finalYear = year;
+        if (dateThisYear < new Date(now.getFullYear(), now.getMonth() - 1, 1)) {
+            finalYear++;
+        }
+        return new Date(finalYear, m, d);
+    };
+
+    const startDate = getFinalDate(firstDate.day, firstDate.month);
+    startDate.setHours(timeHours, timeMinutes, 0, 0);
+
+    let endDate = null;
+    if (dates.length > 1 || endDateRange) {
+        endDate = getFinalDate(lastDate.day, lastDate.month);
+        if (endDateRange) {
+            endDate.setHours(endDateRange.h, endDateRange.m, 0, 0);
+        } else {
+            endDate.setHours(23, 59, 59, 999);
+        }
+        
+        if (endDate < startDate) {
+            // Handle ranges spanning over midnight if it's the same day, 
+            // or just ensure endDate is after startDate
+            if (dates.length === 1) endDate.setDate(endDate.getDate() + 1);
+            else endDate.setFullYear(endDate.getFullYear() + 1);
+        }
     }
 
-    const finalDate = new Date(year, month, day);
-    finalDate.setHours(timeHours, timeMinutes, 0, 0);
-
-    let endResult = null;
-    if (endDateRange) {
-        endResult = new Date(finalDate);
-        endResult.setHours(endDateRange.h, endDateRange.m, 0, 0);
-        if (endResult < finalDate) endResult.setDate(endResult.getDate() + 1);
-    }
-
-    return { startDate: finalDate, endDate: endResult };
+    return { startDate, endDate };
 };

@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "crawl": "node scripts/fetchKatalinEvents.js && node scripts/fetchDestinationUppsalaEvents.js && node scripts/fetchUKKEvents.js && node scripts/fetchHejaUppsalaEvents.js && node scripts/fetchNordiskBio.js && node scripts/fetchFyrisbiografen.js && node scripts/fetchFilmstaden.js"
+    "crawl": "node scripts/fetchKatalinEvents.js && node scripts/fetchDestinationUppsalaEvents.js && node scripts/fetchUKKEvents.js && node scripts/fetchHejaUppsalaEvents.js && node scripts/fetchNordiskBio.js && node scripts/fetchFyrisbiografen.js && node scripts/fetchFilmstaden.js && node scripts/fetchUppsalaStadsteater.js && node scripts/fetchTicksterEvents.js && node scripts/fetchMeetupEvents.js"
   },
   "dependencies": {
     "jsdom": "^24.1.3",

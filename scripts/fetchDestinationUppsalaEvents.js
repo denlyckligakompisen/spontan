@@ -114,6 +114,7 @@ async function run() {
             }
 
             if (title && link) {
+                if (venue.toLowerCase().includes("stadsteater")) return;
                 pageEvents.push({ title, date: dateText, venue, url: link, source: "destinationuppsala.se", fetched_at: new Date().toISOString() });
             }
         });

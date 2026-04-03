@@ -27,8 +27,11 @@ export const getFilteredEventsForView = (events, viewType, searchQuery, activeCa
     tomorrow.setDate(tomorrow.getDate() + 1);
 
     return events.filter(event => {
-        const eventDate = new Date(event.startDate);
-        if (isNaN(eventDate.getTime())) return false;
+        const start = new Date(event.startDate);
+        if (isNaN(start.getTime())) return false;
+        
+        // If no endDate, use startDate (point in time)
+        const end = event.endDate ? new Date(event.endDate) : start;
 
         // Source exclusions
         if ((viewType === 'kommande' || viewType === 'helg') && ['fyrisbiografen', 'nordiskbio', 'filmstaden'].includes(event.source)) {
@@ -64,28 +67,38 @@ export const getFilteredEventsForView = (events, viewType, searchQuery, activeCa
         }
 
         // Hide past events
-        if (event.endDate) {
-            if (new Date(event.endDate) < now) return false;
-        } else {
-            // Hide if start time has passed
-            // Special case: 00:00 usually means date-only/time unknown, keep for the whole day
-            const isTimeSpecified = eventDate.getHours() !== 0 || eventDate.getMinutes() !== 0;
-            if (isTimeSpecified) {
-                if (eventDate < now) return false;
+        if (end < now) {
+            // Point in time events (endDate === start) without hours (00:00) should stay visible for the whole day
+            const isTimeSpecified = start.getHours() !== 0 || start.getMinutes() !== 0;
+            if (!isTimeSpecified && end >= today) {
+                // Keep it
             } else {
-                if (eventDate < today) return false;
+                return false;
             }
         }
 
+        // View logic: check if the event range [start, end] overlaps with the view's range [vStart, vEnd]
+        let vStart, vEnd;
         if (viewType === 'idag' || viewType === 'nara') {
-            return eventDate >= today && eventDate < tomorrow;
+            vStart = today;
+            vEnd = tomorrow;
+        } else if (viewType === 'imorgon') {
+            vStart = tomorrow;
+            vEnd = new Date(tomorrow);
+            vEnd.setDate(tomorrow.getDate() + 1);
         } else if (viewType === 'helg') {
-            const { start, end } = getWeekendRange();
-            return eventDate >= start && eventDate <= end;
+            const { start: wStart, end: wEnd } = getWeekendRange();
+            vStart = wStart;
+            vEnd = wEnd;
         } else if (viewType === 'kommande') {
-            return eventDate >= tomorrow;
+            vStart = tomorrow;
+            vEnd = new Date(2100, 0, 1); // Way in the future
+        } else {
+            return false;
         }
-        return false;
+
+        // Overlap check: event starts before view ends AND event ends after view starts
+        return start < vEnd && end >= vStart;
     });
 };
 
@@ -100,6 +113,7 @@ export const groupEvents = (filteredEvents, viewType, visibleCount = Infinity) =
 
         let groupKey;
         if (viewType === 'idag' || viewType === 'nara') groupKey = 'IDAG';
+        else if (viewType === 'imorgon') groupKey = 'IMORGON';
         else if (viewType === 'helg') groupKey = date.toLocaleDateString('sv-SE', { weekday: 'long' });
         else groupKey = date.toLocaleDateString('sv-SE', { month: 'long', year: 'numeric' });
 
@@ -129,7 +143,7 @@ export const groupEvents = (filteredEvents, viewType, visibleCount = Infinity) =
             const isCinemaA = ['nordiskbio', 'filmstaden'].includes(a.source);
             const isCinemaB = ['nordiskbio', 'filmstaden'].includes(b.source);
 
-            if (viewType === 'helg' || viewType === 'idag') {
+            if (viewType === 'helg' || viewType === 'idag' || viewType === 'imorgon') {
                 if (isCinemaA !== isCinemaB) return isCinemaA ? -1 : 1;
                 if (isCinemaA && isCinemaB) {
                     if (timeA !== timeB) return timeA - timeB;
@@ -166,12 +180,33 @@ export const groupEvents = (filteredEvents, viewType, visibleCount = Infinity) =
  * Process a group of events to identify contiguous cinema events that can be bundled.
  * Special logic for 'idag' view: combines all cinemas into one bundle and deduplicates by movie title.
  */
-export const processItemsForBundling = (groupEvents, viewType, activeCategory) => {
+ export const processItemsForBundling = (groupEvents, viewType, activeCategory) => {
     if (activeCategory === 'film') {
-        return groupEvents.map(event => ({ type: 'single', event }));
+        const filmGroups = {};
+        groupEvents.forEach(ev => {
+            // Group by name and venue to distinguish screenings
+            const key = `${ev.name}-${ev.venue}`;
+            if (!filmGroups[key]) filmGroups[key] = [];
+            filmGroups[key].push(ev);
+        });
+
+        // Map each group to a single event with 'nextTimes' info
+        return Object.values(filmGroups).map(events => {
+            const sortedEvents = events.sort((a,b) => new Date(a.startDate) - new Date(b.startDate));
+            const mainEvent = sortedEvents[0];
+            const nextTimes = sortedEvents.slice(1).map(e => formatTime(e.startDate));
+            
+            return { 
+                type: 'single', 
+                event: { 
+                    ...mainEvent, 
+                    nextTimes: nextTimes.length > 0 ? nextTimes : null 
+                } 
+            };
+        }).sort((a, b) => new Date(a.event.startDate) - new Date(b.event.startDate));
     }
 
-    if (viewType === 'idag') {
+    if (viewType === 'idag' || viewType === 'imorgon') {
         const cinemaEvents = groupEvents.filter(e => ['nordiskbio', 'fyrisbiografen', 'filmstaden'].includes(e.source));
         const otherEvents = groupEvents.filter(e => !['nordiskbio', 'fyrisbiografen', 'filmstaden'].includes(e.source));
         const processedItems = [];

@@ -108,6 +108,9 @@ function parseEvents(html) {
         const venueItem = item.querySelector("ul.o-breadcrumbs li:last-child");
         const venue = venueItem?.textContent?.trim() || "Uppsala";
 
+        // Exclude Stadsteater to prioritize official site source
+        if (venue.toLowerCase().includes("stadsteater")) return;
+
         events.push({
             title: titleText,
             date: dateResult,

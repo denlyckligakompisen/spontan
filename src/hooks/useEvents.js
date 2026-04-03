@@ -80,14 +80,19 @@ export const useEvents = (activeCategory, searchQuery, visibleCount, now) => {
         }
 
         if ("geolocation" in navigator) {
-            navigator.geolocation.getCurrentPosition((position) => {
+            const watchId = navigator.geolocation.watchPosition((position) => {
                 setUserLocation({
                     lat: position.coords.latitude,
                     lon: position.coords.longitude
                 });
             }, (error) => {
                 console.warn("Error getting location:", error);
+            }, {
+                enableHighAccuracy: true,
+                timeout: 5000,
+                maximumAge: 0
             });
+            return () => navigator.geolocation.clearWatch(watchId);
         }
     }, []);
 
@@ -102,6 +107,10 @@ export const useEvents = (activeCategory, searchQuery, visibleCount, now) => {
     // Memoize filtered and grouped events using enriched events
     const eventsIdag = useMemo(() =>
         getFilteredEventsForView(eventsWithDistance, 'idag', searchQuery, activeCategory, now),
+        [eventsWithDistance, activeCategory, searchQuery, now]
+    );
+    const eventsImorgon = useMemo(() =>
+        getFilteredEventsForView(eventsWithDistance, 'imorgon', searchQuery, activeCategory, now),
         [eventsWithDistance, activeCategory, searchQuery, now]
     );
     const eventsHelg = useMemo(() =>
@@ -119,11 +128,13 @@ export const useEvents = (activeCategory, searchQuery, visibleCount, now) => {
 
     // Provide unfiltered lists (without activeCategory/searchQuery) to compute available categories
     const unfilteredIdag = useMemo(() => getFilteredEventsForView(eventsWithDistance, 'idag', '', 'alla', now), [eventsWithDistance, now]);
+    const unfilteredImorgon = useMemo(() => getFilteredEventsForView(eventsWithDistance, 'imorgon', '', 'alla', now), [eventsWithDistance, now]);
     const unfilteredHelg = useMemo(() => getFilteredEventsForView(eventsWithDistance, 'helg', '', 'alla', now), [eventsWithDistance, now]);
     const unfilteredKommande = useMemo(() => getFilteredEventsForView(eventsWithDistance, 'kommande', '', 'alla', now), [eventsWithDistance, now]);
     const unfilteredNara = useMemo(() => getFilteredEventsForView(eventsWithDistance, 'nara', '', 'alla', now), [eventsWithDistance, now]);
 
     const groupsIdag = useMemo(() => groupEvents(eventsIdag, 'idag'), [eventsIdag]);
+    const groupsImorgon = useMemo(() => groupEvents(eventsImorgon, 'imorgon'), [eventsImorgon]);
     const groupsHelg = useMemo(() => groupEvents(eventsHelg, 'helg'), [eventsHelg]);
     const groupsKommande = useMemo(() =>
         groupEvents(eventsKommande, 'kommande', visibleCount),
@@ -136,14 +147,17 @@ export const useEvents = (activeCategory, searchQuery, visibleCount, now) => {
         loading,
         error,
         groupsIdag,
+        groupsImorgon,
         groupsHelg,
         groupsKommande,
         groupsNara,
         eventsIdag,
+        eventsImorgon,
         eventsHelg,
         eventsKommande,
         eventsNara,
         unfilteredIdag,
+        unfilteredImorgon,
         unfilteredHelg,
         unfilteredKommande,
         unfilteredNara,

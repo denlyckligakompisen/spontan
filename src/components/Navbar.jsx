@@ -4,6 +4,7 @@ import { Calendar, Coffee, CalendarRange, Info, MapPin } from 'lucide-react';
 const Navbar = ({ view, scrollToView }) => {
     const items = [
         { id: 'idag', label: 'Idag', icon: <Calendar size={20} /> },
+        { id: 'imorgon', label: 'Imorgon', icon: <Calendar size={20} /> },
         { id: 'helg', label: 'Nästa helg', icon: <Coffee size={20} /> },
         { id: 'kommande', label: 'Kommande', icon: <CalendarRange size={20} /> },
         { id: 'info', label: 'Info', icon: <Info size={20} /> }
