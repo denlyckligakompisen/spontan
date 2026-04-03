@@ -405,6 +405,36 @@ body {
   border-bottom: none;
 }
 
+.event-thumbnail-container {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-right: 0.85rem;
+  background-color: #f1f3f5;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.event-row-venue:hover .event-thumbnail {
+  transform: scale(1.1);
+}
+
+.event-placeholder-thumb {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  user-select: none;
+}
+
 
 .event-artist-venue {
   font-size: 1.05rem;

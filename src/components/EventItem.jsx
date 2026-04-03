@@ -19,9 +19,19 @@ const EventItem = ({
             rel="noopener noreferrer"
             className={`event-row-venue stacked ${highlightIds.has(`${event.source}-${event.id}`) ? 'highlighted' : ''} ${isLastOfLastDay ? 'no-border' : ''}`}
         >
+            <div className="event-thumbnail-container">
+                {event.image ? (
+                    <img src={event.image} alt="" className="event-thumbnail" loading="lazy" />
+                ) : (
+                    <span className="event-placeholder-thumb">
+                        {event.category || '✨'}
+                    </span>
+                )}
+            </div>
+
             <div className="event-info-stack">
                 <span className="event-artist-venue">
-                    {(live && viewType === 'idag') && <div className="live-dot" title="Pågår nu"></div>}
+                    {(live && viewType === 'idag' && event.timeFound !== false) && <div className="live-dot" title="Pågår nu"></div>}
                     {event.artist || event.name}
                 </span>
                 <span className="event-venue-subtext">

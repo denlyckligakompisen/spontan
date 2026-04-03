@@ -36,6 +36,9 @@ const EventBundle = ({
                 className="event-row-venue compact"
                 style={{ padding: '0.6rem 0' }}
             >
+                <div className="event-thumbnail-container" style={{ width: '32px', height: '32px', marginRight: '0.6rem' }}>
+                    <span className="event-placeholder-thumb" style={{ fontSize: '0.9rem' }}>🎬</span>
+                </div>
                 <div className="event-info-stack">
                     <span className="event-artist-venue" style={{ fontSize: '0.95rem' }}>
                         {(live && viewType === 'idag') && <div className="live-dot" style={{ width: '6px', height: '6px', marginRight: '6px' }}></div>}

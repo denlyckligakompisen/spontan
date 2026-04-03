@@ -109,6 +109,11 @@ async function fetchMovies() {
                         href = `https://fyrisbiografen.se/${href.replace(/^\//, '')}`;
                     }
 
+                    // Skip if the title explicitly mentions another venue (e.g. "på Slottsbiografen")
+                    if (title.toLowerCase().includes(' på ') && !title.toLowerCase().includes('på fyrisbiografen')) {
+                        return;
+                    }
+
                     // Create DateTime
                     const fullDate = `${dateStr}T${time}:00`;
 
