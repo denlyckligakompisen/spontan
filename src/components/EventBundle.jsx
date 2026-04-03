@@ -40,8 +40,7 @@ const EventBundle = ({
                     <span className="event-placeholder-thumb" style={{ fontSize: '0.9rem' }}>🎬</span>
                 </div>
                 <div className="event-info-stack">
-                    <span className="event-artist-venue" style={{ fontSize: '0.95rem' }}>
-                        {(live && viewType === 'idag') && <div className="live-dot" style={{ width: '6px', height: '6px', marginRight: '6px' }}></div>}
+                    <span className={`event-artist-venue ${(live && viewType === 'idag') ? 'live-title' : ''}`} style={{ fontSize: '0.95rem' }}>
                         {subEvent.name}
                     </span>
                     <span className="event-venue-subtext" style={{ fontSize: '0.75rem', opacity: 0.7 }}>

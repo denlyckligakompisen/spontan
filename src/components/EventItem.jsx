@@ -30,8 +30,7 @@ const EventItem = ({
             </div>
 
             <div className="event-info-stack">
-                <span className="event-artist-venue">
-                    {(live && viewType === 'idag' && event.timeFound !== false) && <div className="live-dot" title="Pågår nu"></div>}
+                <span className={`event-artist-venue ${(live && viewType === 'idag' && event.timeFound !== false) ? 'live-title' : ''}`}>
                     {event.artist || event.name}
                 </span>
                 <span className="event-venue-subtext">

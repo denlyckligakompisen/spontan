@@ -1,11 +1,11 @@
-import fetch from 'node-fetch';
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import { JSDOM } from 'jsdom';
+import { chromium } from "playwright";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUTPUT_FILE = path.join(__dirname, '../public/data/fyrisbiografen.json');
+const OUTPUT_FILE = path.join(__dirname, "../public/data/fyrisbiografen.json");
+const URL = "https://fyrisbiografen.se/kalendarium";
 
 const MONTHS = {
     'januari': 0, 'februari': 1, 'mars': 2, 'april': 3, 'maj': 4, 'juni': 5,
@@ -15,22 +15,18 @@ const MONTHS = {
 
 function parseDate(dateStr) {
     if (!dateStr) return null;
-    const lower = dateStr.toLowerCase().trim().replace(/\s+/g, ' '); // Normalize spaces
+    const lower = dateStr.toLowerCase().trim().replace(/\s+/g, ' ');
 
-    // Handle "i dag" and "i morgon" (Fyris style)
     if (lower.includes('i dag') || lower.includes('idag')) {
-        const now = new Date();
-        return now.toISOString().split('T')[0];
+        return new Date().toISOString().split('T')[0];
     }
     if (lower.includes('i morgon') || lower.includes('imorgon')) {
-        const now = new Date();
-        const tomorrow = new Date(now);
-        tomorrow.setDate(now.getDate() + 1);
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
         return tomorrow.toISOString().split('T')[0];
     }
 
     const parts = lower.split(' ');
-    // remove weekday if present (e.g. "ons 21 jan")
     const dayIndex = parts.findIndex(p => !isNaN(parseInt(p)));
     if (dayIndex === -1) return null;
 
@@ -42,97 +38,83 @@ function parseDate(dateStr) {
 
     const now = new Date();
     let year = now.getFullYear();
+    if (month < now.getMonth() - 1) year++;
 
-    // Handle year rollover
-    if (month < now.getMonth() - 1) { // -1 buffer for edge cases
-        year++;
-    }
-
-    const d = new Date(Date.UTC(year, month, day));
-    return d.toISOString().split('T')[0];
+    return new Date(Date.UTC(year, month, day)).toISOString().split('T')[0];
 }
 
-async function fetchMovies() {
-    console.log('Fetching Fyrisbiografen calendar...');
-    const url = 'https://fyrisbiografen.se/kalendarium';
+async function run() {
+    console.log(`Launching browser for Fyrisbiografen...`);
+    const browser = await chromium.launch();
+    const context = await browser.newContext({
+        userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    });
+    const page = await context.newPage();
+
+    const allEvents = [];
 
     try {
-        const response = await fetch(url, {
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-            }
-        });
-        const htmlBuffer = await response.arrayBuffer();
-        const html = new TextDecoder('utf-8').decode(htmlBuffer); // Ensure UTF-8
-        const dom = new JSDOM(html);
-        const doc = dom.window.document;
+        await page.goto(URL, { waitUntil: "networkidle" });
+        
+        // Wait for calendar items
+        await page.waitForSelector('.column_calendar_large, .column_calendar_large_right');
 
-        // Select all columns that look like large calendar columns (left/right columns)
-        // This catches 'column_calendar_large' blocks
-        // The structure seems to be: 
-        // <div class="column_calendar_large">
-        //   <div class="column_calendar_day_large">i dag</div>
-        //   <div class="column_calendar_contents_large">
-        //      <div class="calendar_row_large">...</div>
-        //   </div>
-        // </div>
+        const events = await page.$$eval('div[class^="column_calendar_large"]', (columns) => {
+            const results = [];
+            columns.forEach(col => {
+                const header = col.querySelector('.column_calendar_day_large');
+                if (!header) return;
+                const dateText = header.innerText.trim();
 
-        const dayColumns = Array.from(doc.querySelectorAll('div[class^="column_calendar_large"]')).filter(el => {
-            // Ensure we don't pick up sub-elements like column_calendar_contents_large
-            return el.classList.contains('column_calendar_large') || el.classList.contains('column_calendar_large_right');
-        });
-        const allEvents = [];
-
-        dayColumns.forEach(col => {
-            // Find date header
-            const header = col.querySelector('.column_calendar_day_large');
-            if (!header) return;
-
-            const dateText = header.textContent.trim();
-            const dateStr = parseDate(dateText);
-
-            if (!dateStr) return;
-
-            // Find rows
-            const rows = col.querySelectorAll('.calendar_row_large');
-
-            rows.forEach(row => {
-                const timeEl = row.querySelector('.column_time_large strong');
-                const titleLink = row.querySelector('.calendar_media_large a');
-
-                if (timeEl && titleLink) {
-                    const time = timeEl.textContent.trim(); // "13:00"
-                    const title = titleLink.textContent.trim();
-                    let href = titleLink.getAttribute('href');
-
-                    if (href && !href.startsWith('http')) {
-                        href = `https://fyrisbiografen.se/${href.replace(/^\//, '')}`;
+                const rows = col.querySelectorAll('.calendar_row_large');
+                rows.forEach(row => {
+                    const timeEl = row.querySelector('.column_time_large strong');
+                    const titleLink = row.querySelector('.calendar_media_large a');
+                    const img = row.querySelector('.calendar_media_large img');
+                    
+                    if (timeEl && titleLink) {
+                        results.push({
+                            dateText,
+                            time: timeEl.innerText.trim(),
+                            title: titleLink.innerText.trim(),
+                            url: titleLink.href,
+                            image: img ? img.src : null
+                        });
                     }
-
-                    // Skip if the title explicitly mentions another venue (e.g. "på Slottsbiografen")
-                    if (title.toLowerCase().includes(' på ') && !title.toLowerCase().includes('på fyrisbiografen')) {
-                        return;
-                    }
-
-                    // Create DateTime
-                    const fullDate = `${dateStr}T${time}:00`;
-
-                    allEvents.push({
-                        title: title,
-                        venue: 'Fyrisbiografen',
-                        date: fullDate,
-                        url: href || 'https://fyrisbiografen.se/kalendarium'
-                    });
-                }
+                });
             });
+            return results;
         });
 
-        fs.writeFileSync(OUTPUT_FILE, JSON.stringify(allEvents, null, 2));
-        console.log(`Successfully saved ${allEvents.length} events to ${OUTPUT_FILE}`);
+        for (const ev of events) {
+            const dateISO = parseDate(ev.dateText);
+            if (!dateISO) continue;
+
+            // Strict venue check as requested
+            if (ev.title.toLowerCase().includes(' på ') && !ev.title.toLowerCase().includes('på fyrisbiografen')) {
+                continue;
+            }
+
+            allEvents.push({
+                title: ev.title,
+                venue: 'Fyrisbiografen',
+                date: `${dateISO}T${ev.time.replace('.', ':')}:00`,
+                url: ev.url,
+                image: ev.image,
+                source: 'fyrisbiografen',
+                fetched_at: new Date().toISOString()
+            });
+        }
 
     } catch (err) {
-        console.error('Error fetching/parsing Fyrisbiografen:', err);
+        console.error(`Fyris crawl error: ${err.message}`);
+    } finally {
+        await browser.close();
     }
+
+    fs.mkdirSync(path.dirname(OUTPUT_FILE), { recursive: true });
+    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(allEvents, null, 2));
+    console.log(`Saved ${allEvents.length} events from Fyrisbiografen.`);
 }
 
-fetchMovies();
+run();

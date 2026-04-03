@@ -30,45 +30,64 @@ const DATA_DIR = path.join(process.cwd(), 'public/data');
         const page = await context.newPage();
         let interceptedData = null;
 
-        // Intercept the v2 Shows API response
+        // Intercept any response that might contain show data
         page.on('response', async (response) => {
             const url = response.url();
-            if (url.includes('/api/v2/')) {
-                console.log('🔍 Intercepted API:', url);
-            }
-            if (url.includes('/api/v2/ticket/Shows')) {
-                console.log('✅ Found SHOWS data');
+            if (url.includes('Shows')) {
+                console.log('🔍 Potential Show Data API:', url);
                 try {
-                    interceptedData = await response.json();
+                    const data = await response.json();
+                    if (Array.isArray(data) && data.length > 0 && data[0].shows) {
+                        console.log('✅ Captured Show Data');
+                        interceptedData = data;
+                    }
                 } catch (e) {
-                    console.error('❌ JSON Error:', e.message);
+                    // Not JSON or other error
                 }
             }
         });
 
         // Navigate and wait for the app to init
         await page.goto(`https://www.filmstaden.se/pa-bio-nu/?city=${CITY_ID}&date=${today}`, {
-            waitUntil: 'domcontentloaded',
-            timeout: 90000
+            waitUntil: 'networkidle',
+            timeout: 60000
         });
 
-        console.log('⏳ Waiting for app initialization and API requests...');
-        await page.waitForTimeout(20000); // Wait for the SPA to hydrate and call the API
+        console.log('⏳ Waiting for app stabilization...');
+        await page.waitForTimeout(10000);
+
+        // Fallback: Scrape posters from DOM if API misses some image info
+        const domPosters = await page.evaluate(() => {
+            const posterMap = {};
+            document.querySelectorAll('article, .movie-card').forEach(card => {
+                const titleEl = card.querySelector('h2, .movie-card__title');
+                const img = card.querySelector('img');
+                if (titleEl && img && img.src) {
+                    posterMap[titleEl.innerText.trim()] = img.src;
+                }
+            });
+            return posterMap;
+        });
+        console.log(`📸 Collected ${Object.keys(domPosters).length} posters from DOM`);
 
         if (interceptedData) {
             const normalizedEvents = [];
             
-            // The API response is an array of movie objects, each containing a 'shows' array
             (interceptedData || []).forEach(movie => {
                 if (movie.shows && Array.isArray(movie.shows)) {
+                    // Enrich with DOM poster if API doesn't have it
+                    const poster = movie.posterImageUrl || movie.posterUrl || domPosters[movie.title];
+                    
                     movie.shows.forEach(show => {
                         normalizedEvents.push({
                             id: `fs-${show.remoteSystemId || Math.random()}`,
                             title: movie.title,
                             venue: show.cinemaName || "Filmstaden Uppsala",
-                            // Use timeMs if available, otherwise fallback to date+time
                             startDate: show.timeMs ? new Date(show.timeMs).toISOString() : `${show.date}T${show.time}:00`,
-                            url: `https://www.filmstaden.se/bokning/platsval/?showId=${show.remoteSystemId}`
+                            url: `https://www.filmstaden.se/bokning/platsval/?showId=${show.remoteSystemId}`,
+                            image: poster,
+                            source: 'filmstaden',
+                            fetched_at: new Date().toISOString()
                         });
                     });
                 }
