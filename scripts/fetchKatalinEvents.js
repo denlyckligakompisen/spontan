@@ -61,12 +61,16 @@ function parseEvents(html) {
         const dateSpan = contentLink?.querySelector(".info__date");
         const dateText = dateSpan?.textContent?.trim() ?? null;
 
+        const imageEl = item.querySelector("img");
+        const imageUrl = imageEl?.src ? (imageEl.src.startsWith('http') ? imageEl.src : `https://www.katalin.com${imageEl.src}`) : null;
+
         if (!title || !link) return;
 
         events.push({
             title,
             date: dateText,
             url: link.startsWith("http") ? link : `https://www.katalin.com${link}`,
+            image: imageUrl,
             source: "katalin.com",
             fetched_at: new Date().toISOString()
         });

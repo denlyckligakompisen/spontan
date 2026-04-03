@@ -91,12 +91,14 @@ async function run() {
             const title = titleLink?.textContent?.trim() ?? null;
             const link = titleLink?.href ?? null;
 
-            // Basic date from list (fallback)
             const figure = item.querySelector("figure");
             let dateText = "";
+            let imageUrl = null;
             if (figure) {
                 const parts = Array.from(figure.querySelectorAll("p, span")).map(el => el.textContent.trim());
                 dateText = parts.join(" ");
+                const img = figure.querySelector("img");
+                imageUrl = img ? (img.getAttribute("data-src") || img.getAttribute("src")) : null;
             }
 
             // Venue
@@ -115,7 +117,15 @@ async function run() {
 
             if (title && link) {
                 if (venue.toLowerCase().includes("stadsteater")) return;
-                pageEvents.push({ title, date: dateText, venue, url: link, source: "destinationuppsala.se", fetched_at: new Date().toISOString() });
+                pageEvents.push({ 
+                    title, 
+                    date: dateText, 
+                    venue, 
+                    url: link, 
+                    image: imageUrl,
+                    source: "destinationuppsala.se", 
+                    fetched_at: new Date().toISOString() 
+                });
             }
         });
 

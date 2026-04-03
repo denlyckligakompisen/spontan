@@ -62,6 +62,12 @@ function parseEvents(html) {
                     venue = apolloState[venueRef];
                 }
 
+                const photoRef = eventData.eventPhoto?.__ref || eventData.image?.__ref;
+                let imageUrl = eventData.imageUrl;
+                if (photoRef && apolloState[photoRef]) {
+                    imageUrl = apolloState[photoRef].baseUrl || apolloState[photoRef].source;
+                }
+
                 const event = {
                     title: eventData.title,
                     startDate: eventData.dateTime,
@@ -70,6 +76,7 @@ function parseEvents(html) {
                     venue: venue?.name || "Uppsala",
                     address: venue?.address || "",
                     city: venue?.city || "Uppsala",
+                    image: imageUrl,
                     fetched_at: new Date().toISOString()
                 };
 

@@ -65,6 +65,31 @@ function parseEvents(html) {
             dateISO = `${weekday} ${day} ${month} ${time}`;
         }
 
+        const imageEl = item.querySelector(".CardEvent-image img");
+        const image = imageEl ? (imageEl.getAttribute("data-src") || imageEl.getAttribute("src")) : null;
+
+        const categoryEl = item.querySelector(".CardEvent-category");
+        let category = categoryEl?.textContent?.trim()?.toLowerCase() || "";
+        
+        // Normalize categories
+        if (category.includes("musik") || category.includes("konsert") || 
+            title.toLowerCase().includes("musik") || 
+            title.toLowerCase().includes("malkovich") || 
+            title.toLowerCase().includes("jackson") ||
+            title.toLowerCase().includes("tribute") ||
+            title.toLowerCase().includes("celebrating") ||
+            title.toLowerCase().includes("wells") ||
+            title.toLowerCase().includes("flygeln")) {
+            category = "musik";
+        } else if (category.includes("humor") || category.includes("teater") || category.includes("show")) {
+            category = "scen";
+        } else if (category.includes("barn") || category.includes("familj")) {
+            category = "familj";
+        } else {
+            // Default to musik for UKK if not categorized, it usually is
+            category = "musik";
+        }
+
         if (!title || !link) {
             return;
         }
@@ -74,6 +99,8 @@ function parseEvents(html) {
             date: dateISO,
             venue: "Uppsala Konsert & Kongress",
             url: link.startsWith("http") ? link : `https://ukk.se${link}`,
+            image: image?.startsWith("http") ? image : (image ? `https://ukk.se${image}` : null),
+            category: category,
             source: "ukk.se",
             fetched_at: new Date().toISOString()
         });

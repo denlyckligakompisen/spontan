@@ -26,8 +26,9 @@ async function run() {
                 const dateRaw = node.querySelector(".ItemDate")?.innerText?.trim();
                 const venue = node.querySelector(".ItemVenue")?.innerText?.trim() || "Studenternas IP";
                 const link = node.querySelector("a")?.href;
+                const img = node.querySelector("img");
                 
-                return { title, dateRaw, venue, link };
+                return { title, dateRaw, venue, link, image: img ? img.src : null };
             });
         });
 
@@ -45,6 +46,7 @@ async function run() {
                 date: item.dateRaw,
                 venue: item.venue,
                 url: item.link,
+                image: item.image,
                 source: "siriusfotboll.se",
                 fetched_at: new Date().toISOString()
             });

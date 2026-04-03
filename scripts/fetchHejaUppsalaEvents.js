@@ -108,6 +108,9 @@ function parseEvents(html) {
         const venueItem = item.querySelector("ul.o-breadcrumbs li:last-child");
         const venue = venueItem?.textContent?.trim() || "Uppsala";
 
+        const imageEl = item.querySelector(".c-img-module img");
+        const imageUrl = imageEl ? (imageEl.getAttribute("data-src") || imageEl.getAttribute("src")) : null;
+
         // Exclude Stadsteater to prioritize official site source
         if (venue.toLowerCase().includes("stadsteater")) return;
 
@@ -116,6 +119,7 @@ function parseEvents(html) {
             date: dateResult,
             venue,
             url: link,
+            image: imageUrl,
             source: "hejauppsala.com",
             fetched_at: new Date().toISOString()
         });

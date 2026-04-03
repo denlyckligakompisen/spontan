@@ -269,5 +269,55 @@ export const fetchFilmstaden = () =>
         url: event.url || "https://www.filmstaden.se/"
     }));
 
+export const fetchFyrisComedy = () =>
+    fetchLocalData('fyris-comedy.json', 'Fyris Comedy', (event) => ({
+        id: `fc-${event.title}-${event.date}`,
+        source: "fyriscomedy",
+        name: event.title,
+        artist: event.title,
+        venue: event.venue,
+        city: "Uppsala",
+        country: "Sweden",
+        latitude: 59.8586,
+        longitude: 17.6389,
+        startDate: event.date,
+        endDate: null,
+        url: event.url,
+        image: event.image
+    }));
 
+export const fetchKaliberRoom = () => 
+    fetchLocalData('kaliber-room.json', 'Kaliber Room', (event) => ({
+        id: `kr-${event.title}-${event.date}`,
+        source: "kaliberroom",
+        name: event.title,
+        artist: event.title,
+        venue: "Kaliber Room",
+        city: "Uppsala",
+        country: "Sweden",
+        latitude: 59.8586,
+        longitude: 17.6389,
+        startDate: event.date,
+        endDate: null,
+        url: event.url,
+        image: event.image,
+        category: event.category || 'musik'
+    }));
 
+export const fetchReginateatern = () =>
+    fetchLocalData('reginateatern.json', 'Reginateatern', (event) => ({
+        id: `regina-${event.title}-${event.date}`,
+        source: "reginateatern",
+        name: event.title,
+        artist: event.title,
+        venue: "Reginateatern",
+        city: "Uppsala",
+        country: "Sweden",
+        latitude: 59.8596, // Near Trädgårdsgatan 6
+        longitude: 17.6366,
+        startDate: event.date,
+        endDate: null,
+        url: event.url,
+        image: event.image,
+        category: event.category || 'scen'
+    }));

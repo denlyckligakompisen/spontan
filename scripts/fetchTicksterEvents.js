@@ -52,6 +52,14 @@ async function fetchEventDetails(url) {
             venue = venueNameEl.textContent.trim();
         }
 
+        const imageMeta = doc.querySelector('meta[itemprop="image"], [itemprop="image"]');
+        let image = imageMeta ? (imageMeta.getAttribute('content') || imageMeta.getAttribute('src')) : null;
+
+        if (!image) {
+            const ogImage = doc.querySelector('meta[property="og:image"]');
+            if (ogImage) image = ogImage.getAttribute('content');
+        }
+
         // Strategy 2: Look for "Plats:" or "Lokal:" if not found
         if (!venue) {
             const metaItems = Array.from(doc.querySelectorAll("li, div, p, span"));
@@ -80,13 +88,14 @@ async function fetchEventDetails(url) {
 
         // Fallback for Time if not found in meta
         if (!time) {
+            const bodyText = doc.body.textContent;
             const explicitTime = bodyText.match(/(?:kl\.?|Tid:|Öppnar|Startar|Start)\s*(\d{1,2}[:.]\d{2})/i);
             if (explicitTime) {
                 time = explicitTime[1].replace('.', ':');
             }
         }
 
-        return { venue, time };
+        return { venue, time, image };
 
     } catch (err) {
         console.error(`Error fetching details ${url}:`, err.message);
@@ -179,6 +188,9 @@ async function run() {
             const details = await fetchEventDetails(event.url);
             if (details) {
                 if (details.venue) event.venue = details.venue;
+                if (details.image) {
+                    event.image = details.image.startsWith('http') ? details.image : `https://www.tickster.com${details.image.startsWith('/') ? '' : '/'}${details.image}`;
+                }
                 if (details.time) {
                     // Append time to date: YYYY-MM-DD -> YYYY-MM-DDTHH:MM:00
                     const timeClean = details.time.replace('.', ':');

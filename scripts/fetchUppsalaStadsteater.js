@@ -76,6 +76,10 @@ async function run() {
             const title = titleEl ? titleEl.textContent.trim() : "Okänd titel";
             const venue = stageEl ? `Uppsala Stadsteater (${stageEl.textContent.trim()})` : "Uppsala Stadsteater";
 
+            const imageEl = item.querySelector("img");
+            const imageUrl = imageEl ? (imageEl.getAttribute("data-src") || imageEl.getAttribute("src")) : null;
+            const fullImageUrl = imageUrl ? (imageUrl.startsWith('http') ? imageUrl : `https://www.uppsalastadsteater.se${imageUrl.startsWith('/') ? '' : '/'}${imageUrl}`) : null;
+
             // Time parsing: "18:00 \n 2 timmar..."
             let timeStr = "00:00";
             if (timeEl) {
@@ -110,6 +114,7 @@ async function run() {
                 venue,
                 date: iso, // Use this directly
                 url: link,
+                image: fullImageUrl,
                 source: "uppsalastadsteater.se",
                 fetched_at: new Date().toISOString()
             });

@@ -40,7 +40,7 @@ const EventBundle = ({
                     <span className="event-placeholder-thumb" style={{ fontSize: '0.9rem' }}>🎬</span>
                 </div>
                 <div className="event-info-stack">
-                    <span className={`event-artist-venue ${(live && viewType === 'idag') ? 'live-title' : ''}`} style={{ fontSize: '0.95rem' }}>
+                    <span className="event-artist-venue" style={{ fontSize: '0.95rem' }}>
                         {subEvent.name}
                     </span>
                     <span className="event-venue-subtext" style={{ fontSize: '0.75rem', opacity: 0.7 }}>
@@ -53,6 +53,7 @@ const EventBundle = ({
                 <div className="event-meta-right">
                     <span className="event-date-text">
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                            {(live && viewType === 'idag') && <div className="live-dot-mini" title="Pågår nu"></div>}
                             <div className={endTime ? "time-stacked" : ""}>
                                 <span>{startTime}</span>
                                 {endTime && <span className="event-time-end">-{endTime}</span>}

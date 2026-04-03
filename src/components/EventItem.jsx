@@ -30,7 +30,7 @@ const EventItem = ({
             </div>
 
             <div className="event-info-stack">
-                <span className={`event-artist-venue ${(live && viewType === 'idag' && event.timeFound !== false) ? 'live-title' : ''}`}>
+                <span className="event-artist-venue">
                     {event.artist || event.name}
                 </span>
                 <span className="event-venue-subtext">
@@ -54,6 +54,7 @@ const EventItem = ({
 
                             return (
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                                    {(live && viewType === 'idag' && event.timeFound !== false) && <div className="live-dot-mini" title="Pågår nu"></div>}
                                     <div className={endTime ? "time-stacked" : ""}>
                                         <span>{startTime}</span>
                                         {endTime && <span className="event-time-end">-{endTime}</span>}

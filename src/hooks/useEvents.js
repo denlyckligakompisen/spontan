@@ -10,7 +10,10 @@ import {
     fetchFilmstaden,
     fetchUppsalaStadsteaterEvents,
     fetchTicksterEvents,
-    fetchMeetupEvents
+    fetchMeetupEvents,
+    fetchFyrisComedy,
+    fetchKaliberRoom,
+    fetchReginateatern
 } from '../utils/api';
 import { mergeAndDedupeEvents } from '../utils/dedupe';
 import { getFilteredEventsForView, groupEvents, calculateDistance } from '../utils/eventUtils';
@@ -43,7 +46,10 @@ export const useEvents = (activeCategory, searchQuery, visibleCount, now) => {
                 fetchFilmstaden(),
                 fetchUppsalaStadsteaterEvents(),
                 fetchTicksterEvents(),
-                fetchMeetupEvents()
+                fetchMeetupEvents(),
+                fetchFyrisComedy(),
+                fetchKaliberRoom(),
+                fetchReginateatern()
             ]);
 
             const fulfilledEvents = results.map(r =>
