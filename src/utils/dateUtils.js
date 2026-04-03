@@ -140,11 +140,14 @@ export const parseSwedishDate = (dateStr) => {
     let startTime = { h: 18, m: 0 }; // default
     let endTimeRange = null;
 
+    let timeFound = false;
+
     // Look for kl. XX:XX or kl XX
     const klMatch = tempStr.match(/kl\.?\s*(\d{1,2})[:.]?(\d{2})?/i);
     if (klMatch) {
         startTime.h = parseInt(klMatch[1], 10);
         startTime.m = klMatch[2] ? parseInt(klMatch[2], 10) : 0;
+        timeFound = true;
     }
 
     // Look for time range XX-YY or XX:XX-YY:YY
@@ -160,6 +163,7 @@ export const parseSwedishDate = (dateStr) => {
         if (h1 < 24 && h2 < 24) {
             startTime = { h: h1, m: m1 };
             endTimeRange = { h: h2, m: m2 };
+            timeFound = true;
         }
     } else if (!klMatch) {
         // Simple XX:XX or XX.XX
@@ -167,6 +171,7 @@ export const parseSwedishDate = (dateStr) => {
         if (simpleTimeMatch) {
             startTime.h = parseInt(simpleTimeMatch[1], 10);
             startTime.m = parseInt(simpleTimeMatch[2], 10);
+            timeFound = true;
         }
     }
 
@@ -198,5 +203,5 @@ export const parseSwedishDate = (dateStr) => {
         }
     }
 
-    return { startDate: start, endDate: end };
+    return { startDate: start, endDate: end, timeFound };
 };

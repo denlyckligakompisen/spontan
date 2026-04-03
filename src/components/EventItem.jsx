@@ -38,17 +38,17 @@ const EventItem = ({
                 <span className="event-date-text">
                     {(() => {
                         if (viewType === 'idag' || viewType === 'helg' || viewType === 'nara') {
+                            if (shouldHideTime || event.timeFound === false) return null;
+
                             const startTime = formatTime(event.startDate);
                             const endTime = event.endDate ? formatTime(event.endDate) : null;
 
                             return (
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                                    {shouldHideTime ? '' : (
-                                        <div className={endTime ? "time-stacked" : ""}>
-                                            <span>{startTime}</span>
-                                            {endTime && <span className="event-time-end">-{endTime}</span>}
-                                        </div>
-                                    )}
+                                    <div className={endTime ? "time-stacked" : ""}>
+                                        <span>{startTime}</span>
+                                        {endTime && <span className="event-time-end">-{endTime}</span>}
+                                    </div>
                                 </div>
                             );
                         }

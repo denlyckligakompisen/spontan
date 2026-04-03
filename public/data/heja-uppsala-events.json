@@ -1,50 +1,88 @@
 [
   {
-    "source": "hejauppsala",
-    "id": "pasklov-pa-upplandsmuseet-2",
-    "name": "Påsklov på Upplandsmuseet",
-    "artist": "Påsklov på Upplandsmuseet",
-    "venue": "Upplandsmuseet",
-    "date": "31 mar - 5 apr 12:00 – 17:00",
-    "startDate": "2026-03-31T12:00:00.000Z",
-    "endDate": "2026-04-05T17:00:00.000Z",
-    "category": "Familj",
-    "url": "https://hejauppsala.com/kalender/pasklov-pa-upplandsmuseet-2/"
+    "title": "FRAGMENT | SOFIE STENBERG",
+    "date": "28 mar - 12 apr 12:00 – 16:00",
+    "venue": "Uppsala Konstnärsklubb",
+    "url": "https://hejauppsala.com/kalender/fragment-sofie-stenberg/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-04-03T15:32:10.991Z"
   },
   {
-    "source": "hejauppsala",
-    "id": "pasklov-pa-forumtorget",
-    "name": "Påsklov på Forumtorget",
-    "artist": "Påsklov på Forumtorget",
-    "venue": "Forumtorget",
-    "date": "30 mar - 3 apr 12:00 – 16:00",
-    "startDate": "2026-03-30T12:00:00.000Z",
-    "endDate": "2026-04-03T16:00:00.000Z",
-    "category": "Familj",
-    "url": "https://hejauppsala.com/kalender/pasklov-pa-forumtorget/"
+    "title": "Påsklov på Bror Hjorths Hus",
+    "date": "28 mar - 6 apr 12:00 – 16:00",
+    "venue": "Bror Hjorths Hus, Norbyvägen 26",
+    "url": "https://hejauppsala.com/kalender/pasklov-pa-bror-hjorths-hus/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-04-03T15:32:10.993Z",
+    "latitude": 59.8492776,
+    "longitude": 17.6198763
   },
   {
-    "source": "hejauppsala",
-    "id": "utstallning-studio-horngren-ovre-slottsgatan",
-    "name": "Utställning Studio Hörngren – Övre Slottsgatan",
-    "artist": "Utställning Studio Hörngren – Övre Slottsgatan",
-    "venue": "Studio Hörngren",
-    "date": "2 apr - 6 apr 13:00 – 16:00",
-    "startDate": "2026-04-02T13:00:00.000Z",
-    "endDate": "2026-04-06T16:00:00.000Z",
-    "category": "Konst",
-    "url": "https://hejauppsala.com/kalender/utstallning-studio-horngren-ovre-slottsgatan/"
-  },
-  {
-    "source": "hejauppsala",
-    "id": "maria-nilsson-thore",
-    "name": "Alla får vara med - Maria Nilsson Thore",
-    "artist": "Maria Nilsson Thore",
-    "venue": "Uppsala domkyrka",
+    "title": "Maria Nilsson Thore",
     "date": "28 mar - 31 maj 12:00 – 16:00",
-    "startDate": "2026-03-28T12:00:00.000Z",
-    "endDate": "2026-05-31T16:00:00.000Z",
-    "category": "Utställning",
-    "url": "https://hejauppsala.com/kalender/maria-nilsson-thore/"
+    "venue": "Bror Hjorths Hus, Norbyvägen 26",
+    "url": "https://hejauppsala.com/kalender/maria-nilsson-thore/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-04-03T15:32:10.994Z",
+    "latitude": 59.8492776,
+    "longitude": 17.6198763
+  },
+  {
+    "title": "C R U S H E D vernissage",
+    "date": "28 mar - 6 apr 12:00 – 16:00",
+    "venue": "Sysslomansgatan 5 Uppsala",
+    "url": "https://hejauppsala.com/kalender/c-r-u-s-h-e-d-vernissage/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-04-03T15:32:10.995Z",
+    "latitude": 59.8596479,
+    "longitude": 17.6313911
+  },
+  {
+    "title": "Påsklovsbio",
+    "date": "28 mar - 6 apr",
+    "venue": "Fyrisbiografen",
+    "url": "https://hejauppsala.com/kalender/pasklovsbio/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-04-03T15:32:10.996Z",
+    "latitude": 59.8582271,
+    "longitude": 17.6291603
+  },
+  {
+    "title": "Påsklov på Forumtorget",
+    "date": "30 mar - 3 apr 12:00 – 16:00",
+    "venue": "Forumtorget",
+    "url": "https://hejauppsala.com/kalender/pasklov-pa-forumtorget/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-04-03T15:32:10.996Z",
+    "latitude": 59.8581032,
+    "longitude": 17.6401657
+  },
+  {
+    "title": "Påsklov i Gamla Uppsala museum",
+    "date": "30 mar - 3 apr 14.00–14.30",
+    "venue": "Gamla Uppsala museum",
+    "url": "https://hejauppsala.com/kalender/pasklov-i-gamla-uppsala-museum/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-04-03T15:32:10.997Z",
+    "latitude": 59.8977837,
+    "longitude": 17.6336407
+  },
+  {
+    "title": "Påsklov på Upplandsmuseet",
+    "date": "31 mar - 5 apr 12:00 – 17:00",
+    "venue": "Upplandsmuseet",
+    "url": "https://hejauppsala.com/kalender/pasklov-pa-upplandsmuseet-2/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-04-03T15:32:10.998Z",
+    "latitude": 59.8588495,
+    "longitude": 17.6349743
+  },
+  {
+    "title": "Utställning Studio Hörngren – Övre Slottsgatan",
+    "date": "2 apr - 6 apr 13:00 – 16:00",
+    "venue": "Studio Hörngren",
+    "url": "https://hejauppsala.com/kalender/utstallning-studio-horngren-ovre-slottsgatan/",
+    "source": "hejauppsala.com",
+    "fetched_at": "2026-04-03T15:32:10.999Z"
   }
 ]

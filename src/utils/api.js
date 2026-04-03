@@ -57,7 +57,7 @@ export const fetchTicketmasterEvents = async (lat, lon) => {
 
     const roundedLat = roundTo6Decimals(lat);
     const roundedLon = roundTo6Decimals(lon);
-    const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${TICKETMASTER_API_KEY}&geoPoint=${roundedLat},${roundedLon}&radius=50&unit=km&classificationName=music&countryCode=SE&size=100&sort=date,asc`;
+    const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${TICKETMASTER_API_KEY}&geoPoint=${roundedLat},${roundedLon}&radius=50&unit=km&countryCode=SE&size=100&sort=date,asc`;
 
     try {
         const response = await fetch(url);
@@ -76,7 +76,8 @@ export const fetchTicketmasterEvents = async (lat, lon) => {
             longitude: parseFloat(event._embedded?.venues?.[0]?.location?.longitude),
             startDate: event.dates.start.dateTime || `${event.dates.start.localDate}T${event.dates.start.localTime || '00:00:00'}Z`,
             endDate: event.dates.end?.dateTime || null,
-            url: event.url
+            url: event.url,
+            classification: event.classifications?.[0]?.segment?.name
         }));
 
         setCachedData(cacheKey, events);
@@ -143,6 +144,7 @@ export const fetchDestinationUppsalaEvents = () =>
             longitude: event.longitude || 17.6389,
             startDate: parsed ? parsed.startDate.toISOString() : fallbackDate,
             endDate: parsed?.endDate ? parsed.endDate.toISOString() : null,
+            timeFound: !!parsed?.timeFound,
             url: event.url
         };
     });
@@ -163,6 +165,7 @@ export const fetchHejaUppsalaEvents = () =>
             longitude: event.longitude || 17.6389,
             startDate: parsed ? parsed.startDate.toISOString() : fallbackDate,
             endDate: parsed?.endDate ? parsed.endDate.toISOString() : null,
+            timeFound: !!parsed?.timeFound,
             url: event.url
         };
     });

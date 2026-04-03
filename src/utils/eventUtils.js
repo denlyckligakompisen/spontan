@@ -111,6 +111,9 @@ export const getFilteredEventsForView = (events, viewType, searchQuery, activeCa
         }
 
         // Overlap check: event starts before view ends AND event ends after view starts
+        if (viewType === 'kommande') {
+            return start >= vStart;
+        }
         return start < vEnd && end >= vStart;
     });
 };
@@ -226,28 +229,10 @@ export const groupEvents = (filteredEvents, viewType, visibleCount = Infinity) =
  */
  export const processItemsForBundling = (groupEvents, viewType, activeCategory) => {
     if (activeCategory === 'film') {
-        const filmGroups = {};
-        groupEvents.forEach(ev => {
-            // Group by name and venue to distinguish screenings
-            const key = `${ev.name}-${ev.venue}`;
-            if (!filmGroups[key]) filmGroups[key] = [];
-            filmGroups[key].push(ev);
-        });
-
-        // Map each group to a single event with 'nextTimes' info
-        return Object.values(filmGroups).map(events => {
-            const sortedEvents = events.sort((a,b) => new Date(a.startDate) - new Date(b.startDate));
-            const mainEvent = sortedEvents[0];
-            const nextTimes = sortedEvents.slice(1).map(e => formatTime(e.startDate));
-            
-            return { 
-                type: 'single', 
-                event: { 
-                    ...mainEvent, 
-                    nextTimes: nextTimes.length > 0 ? nextTimes : null 
-                } 
-            };
-        }).sort((a, b) => new Date(a.event.startDate) - new Date(b.event.startDate));
+        return groupEvents.map(event => ({
+            type: 'single',
+            event
+        })).sort((a, b) => new Date(a.event.startDate) - new Date(b.event.startDate));
     }
 
     if (viewType === 'idag' || viewType === 'imorgon') {
