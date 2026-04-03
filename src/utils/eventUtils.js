@@ -241,34 +241,41 @@ export const groupEvents = (filteredEvents, viewType, visibleCount = Infinity) =
         const processedItems = [];
 
         if (cinemaEvents.length > 0) {
-            // Group by movie title
-            const movieMap = {};
-            cinemaEvents.forEach(ev => {
-                const title = (ev.name || ev.artist || '').trim();
-                if (!movieMap[title]) movieMap[title] = [];
-                movieMap[title].push(ev);
-            });
+            if (cinemaEvents.length <= 10) {
+                // If 10 or fewer, just show them as regular single events
+                cinemaEvents.forEach(event => {
+                    processedItems.push({ type: 'single', event });
+                });
+            } else {
+                // Group by movie title
+                const movieMap = {};
+                cinemaEvents.forEach(ev => {
+                    const title = (ev.name || ev.artist || '').trim();
+                    if (!movieMap[title]) movieMap[title] = [];
+                    movieMap[title].push(ev);
+                });
 
-            const uniqueMovies = Object.entries(movieMap).map(([title, events]) => {
-                const now = new Date();
-                // "Nearest" start time: First upcoming event, or last event if all are in the past.
-                const upcoming = events.filter(e => new Date(e.startDate) >= now)
-                                     .sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
-                
-                const repEvent = upcoming.length > 0 ? upcoming[0] : events.sort((a, b) => new Date(b.startDate) - new Date(a.startDate))[0];
-                
-                return { ...repEvent };
-            }).sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+                const uniqueMovies = Object.entries(movieMap).map(([title, events]) => {
+                    const now = new Date();
+                    // "Nearest" start time: First upcoming event, or last event if all are in the past.
+                    const upcoming = events.filter(e => new Date(e.startDate) >= now)
+                                         .sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+                    
+                    const repEvent = upcoming.length > 0 ? upcoming[0] : events.sort((a, b) => new Date(b.startDate) - new Date(a.startDate))[0];
+                    
+                    return { ...repEvent };
+                }).sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
 
-            processedItems.push({
-                type: 'bundle',
-                key: 'all-movies-idag',
-                source: 'mixed',
-                venue: 'Biografer',
-                date: cinemaEvents[0].startDate,
-                events: uniqueMovies,
-                totalCount: cinemaEvents.length
-            });
+                processedItems.push({
+                    type: 'bundle',
+                    key: 'all-movies-idag',
+                    source: 'mixed',
+                    venue: 'Biografer',
+                    date: cinemaEvents[0].startDate,
+                    events: uniqueMovies,
+                    totalCount: cinemaEvents.length
+                });
+            }
         }
 
         otherEvents.forEach(event => {
