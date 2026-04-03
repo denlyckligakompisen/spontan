@@ -109,10 +109,7 @@ export const useEvents = (activeCategory, searchQuery, visibleCount, now) => {
         getFilteredEventsForView(eventsWithDistance, 'idag', searchQuery, activeCategory, now),
         [eventsWithDistance, activeCategory, searchQuery, now]
     );
-    const eventsImorgon = useMemo(() =>
-        getFilteredEventsForView(eventsWithDistance, 'imorgon', searchQuery, activeCategory, now),
-        [eventsWithDistance, activeCategory, searchQuery, now]
-    );
+
     const eventsHelg = useMemo(() =>
         getFilteredEventsForView(eventsWithDistance, 'helg', searchQuery, activeCategory, now),
         [eventsWithDistance, activeCategory, searchQuery, now]
@@ -128,13 +125,13 @@ export const useEvents = (activeCategory, searchQuery, visibleCount, now) => {
 
     // Provide unfiltered lists (without activeCategory/searchQuery) to compute available categories
     const unfilteredIdag = useMemo(() => getFilteredEventsForView(eventsWithDistance, 'idag', '', 'alla', now), [eventsWithDistance, now]);
-    const unfilteredImorgon = useMemo(() => getFilteredEventsForView(eventsWithDistance, 'imorgon', '', 'alla', now), [eventsWithDistance, now]);
+
     const unfilteredHelg = useMemo(() => getFilteredEventsForView(eventsWithDistance, 'helg', '', 'alla', now), [eventsWithDistance, now]);
     const unfilteredKommande = useMemo(() => getFilteredEventsForView(eventsWithDistance, 'kommande', '', 'alla', now), [eventsWithDistance, now]);
     const unfilteredNara = useMemo(() => getFilteredEventsForView(eventsWithDistance, 'nara', '', 'alla', now), [eventsWithDistance, now]);
 
     const groupsIdag = useMemo(() => groupEvents(eventsIdag, 'idag'), [eventsIdag]);
-    const groupsImorgon = useMemo(() => groupEvents(eventsImorgon, 'imorgon'), [eventsImorgon]);
+
     const groupsHelg = useMemo(() => groupEvents(eventsHelg, 'helg'), [eventsHelg]);
     const groupsKommande = useMemo(() =>
         groupEvents(eventsKommande, 'kommande', visibleCount),
@@ -147,17 +144,14 @@ export const useEvents = (activeCategory, searchQuery, visibleCount, now) => {
         loading,
         error,
         groupsIdag,
-        groupsImorgon,
         groupsHelg,
         groupsKommande,
         groupsNara,
         eventsIdag,
-        eventsImorgon,
         eventsHelg,
         eventsKommande,
         eventsNara,
         unfilteredIdag,
-        unfilteredImorgon,
         unfilteredHelg,
         unfilteredKommande,
         unfilteredNara,

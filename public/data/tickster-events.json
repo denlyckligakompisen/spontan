@@ -1,201 +1,11 @@
 [
   {
-    "title": "Kasino",
-    "date": "2026-03-06T20:00:00",
-    "venue": "Katalin and all that Jazz",
-    "url": "https://www.tickster.com/se/sv/events/3mm2l26lhc7unmu/2026-03-06/kasino",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:40.777Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Leon Falk Satchmo Tribute",
-    "date": "2026-03-07T19:30:00",
-    "venue": "Blackbird",
-    "url": "https://www.tickster.com/se/sv/events/m2pc8djjcxwe16d/2026-03-07/leon-falk-satchmo-tribute",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:40.778Z",
-    "latitude": 59.8586,
-    "longitude": 17.6389
-  },
-  {
-    "title": "Thomas Di Leva - Kärleken är kung",
-    "date": "2026-03-12T20:00:00",
-    "venue": "Katalin and all that Jazz",
-    "url": "https://www.tickster.com/se/sv/events/2brmwy8akx9kp48/2026-03-12/thomas-di-leva-karleken-ar-kung",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:40.778Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Erik Söderlind Quartet & Lars Jansson",
-    "date": "2026-03-14T19:30:00",
-    "venue": "Blackbird",
-    "url": "https://www.tickster.com/se/sv/events/bd8r9gkxe4z15e9/2026-03-14/erik-soderlind-quartet-and-lars-jansson",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:40.778Z",
-    "latitude": 59.8586,
-    "longitude": 17.6389
-  },
-  {
-    "title": "Thorbjørn Risager & The Black Tornado",
-    "date": "2026-03-14T20:00:00",
-    "venue": "Katalin and all that Jazz",
-    "url": "https://www.tickster.com/se/sv/events/1u323y5y9tuz7wk/2026-03-14/thorbj-rn-risager-and-the-black-tornado",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:40.778Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Tobias Sten",
-    "date": "2026-03-14T20:00:00",
-    "venue": "Katalin and all that Jazz",
-    "url": "https://www.tickster.com/se/sv/events/cz3074j0k03gc7l/2026-03-14/tobias-sten",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:40.779Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Mischmasch - sånger, språk och strängar",
-    "date": "2026-03-18T19:00:00",
-    "venue": "Blackbird",
-    "url": "https://www.tickster.com/se/sv/events/p30020vn5kbbddf/2026-03-18/mischmasch-sanger-sprak-och-strangar",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:40.779Z",
-    "latitude": 59.8586,
-    "longitude": 17.6389
-  },
-  {
-    "title": "LETZ ZEP",
-    "date": "2026-03-18T20:00:00",
-    "venue": "Katalin and all that Jazz",
-    "url": "https://www.tickster.com/se/sv/events/145p2jte45vlfv7/2026-03-18/letz-zep",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:40.779Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Huggorm",
-    "date": "2026-03-19T20:00:00",
-    "venue": "Katalin and all that Jazz",
-    "url": "https://www.tickster.com/se/sv/events/1tmed0g21xmznhx/2026-03-19/huggorm",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:40.779Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Ölprovning - 20 mars",
-    "date": "2026-03-20T18:00:00",
-    "venue": "Uppsala Brygghus",
-    "url": "https://www.tickster.com/se/sv/events/hhrrnzrkaxw3fme/2026-03-20/olprovning-20-mars",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:40.779Z",
-    "latitude": 59.8543878,
-    "longitude": 17.6630254
-  },
-  {
-    "title": "The Baboon Show",
-    "date": "2026-03-20T20:00:00",
-    "venue": "Katalin and all that Jazz",
-    "url": "https://www.tickster.com/se/sv/events/w5fd92bnzumlm1w/2026-03-20/the-baboon-show",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:40.779Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Mattebo/Adami Quintet",
-    "date": "2026-03-21T19:30:00",
-    "venue": "Blackbird",
-    "url": "https://www.tickster.com/se/sv/events/vx1v6jzl78zau2r/2026-03-21/mattebo-adami-quintet",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:40.779Z",
-    "latitude": 59.8586,
-    "longitude": 17.6389
-  },
-  {
-    "title": "Hannes Aitman",
-    "date": "2026-03-21T20:00:00",
-    "venue": "Katalin and all that Jazz",
-    "url": "https://www.tickster.com/se/sv/events/ve42bmkx5f2269c/2026-03-21/hannes-aitman",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:40.779Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "VÅRSTARTEN NEON PÅ FLUSTRET 26/3 2026",
-    "date": "2026-03-26T18:30:00",
-    "venue": "Flustret",
-    "url": "https://www.tickster.com/se/sv/events/g9y060exkmf21tv/2026-03-26/varstarten-neon-pa-flustret-26-3-2026",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:40.779Z",
-    "latitude": 59.853961,
-    "longitude": 17.6410724
-  },
-  {
-    "title": "Uppsala storband med Clas Yngström & Pierre Swärd",
-    "date": "2026-03-26T20:00:00",
-    "venue": "Katalin",
-    "url": "https://www.tickster.com/se/sv/events/81bpzr5hbdncdex/2026-03-26/uppsala-storband-med-clas-yngstrom-and-pierre-sward",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:40.779Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Björn Rosenström - Katalin Uppsala",
-    "date": "2026-03-27T20:00:00",
-    "venue": "Katalin",
-    "url": "https://www.tickster.com/se/sv/events/e3a10rfdh76n0ek/2026-03-27/bjorn-rosenstrom-katalin-uppsala",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:40.779Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Lönnkrogen",
-    "date": "2026-03-28T19:30:00",
-    "venue": "Blackbird",
-    "url": "https://www.tickster.com/se/sv/events/m8f7abecbkgkzr7/2026-03-28/lonnkrogen",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:42.351Z",
-    "latitude": 59.8586,
-    "longitude": 17.6389
-  },
-  {
-    "title": "Buzzcocks (UK) & Soda Kill",
-    "date": "2026-03-28T20:00:00",
-    "venue": "Katalin and all that Jazz",
-    "url": "https://www.tickster.com/se/sv/events/jwgmzawl77ga8mf/2026-03-28/buzzcocks-uk-and-soda-kill",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:42.351Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
-    "title": "Bullet & S.O.R.M.",
-    "date": "2026-04-02T20:00:00",
-    "venue": "Katalin and all that Jazz",
-    "url": "https://www.tickster.com/se/sv/events/bkh3a5z9erjrx45/2026-04-02/bullet-and-s-o-r-m",
-    "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:42.351Z",
-    "latitude": 59.8598666,
-    "longitude": 17.6457607
-  },
-  {
     "title": "Backlura & Isabella Lundgren",
     "date": "2026-04-04T19:30:00",
     "venue": "Blackbird",
     "url": "https://www.tickster.com/se/sv/events/zgmju1puxud0zp2/2026-04-04/backlura-and-isabella-lundgren",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:42.352Z",
+    "fetched_at": "2026-04-03T14:09:03.304Z",
     "latitude": 59.8586,
     "longitude": 17.6389
   },
@@ -205,7 +15,7 @@
     "venue": "Blackbird",
     "url": "https://www.tickster.com/se/sv/events/h822m8ndg416udv/2026-04-10/h-self",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:42.352Z",
+    "fetched_at": "2026-04-03T14:09:03.304Z",
     "latitude": 59.8586,
     "longitude": 17.6389
   },
@@ -215,7 +25,7 @@
     "venue": "Blackbird",
     "url": "https://www.tickster.com/se/sv/events/5745gl6xftz5dwp/2026-04-11/viktoria-tolstoy",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:42.352Z",
+    "fetched_at": "2026-04-03T14:09:03.304Z",
     "latitude": 59.8586,
     "longitude": 17.6389
   },
@@ -225,7 +35,7 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/nxkpacz7cldweh2/2026-04-14/amanda-bergman",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:42.352Z",
+    "fetched_at": "2026-04-03T14:09:03.304Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -235,7 +45,7 @@
     "venue": "Katalin",
     "url": "https://www.tickster.com/se/sv/events/fe2x8wl2k971kgj/2026-04-15/henrik-nyblom-kluven",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:42.352Z",
+    "fetched_at": "2026-04-03T14:09:03.305Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -245,9 +55,19 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/d7nj7l6lg54v4t1/2026-04-16/danko-jones",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:42.352Z",
+    "fetched_at": "2026-04-03T14:09:03.305Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
+  },
+  {
+    "title": "Ölprovning - 17 april",
+    "date": "2026-04-17T18:00:00",
+    "venue": "Uppsala Brygghus",
+    "url": "https://www.tickster.com/se/sv/events/57v12z1gwjph9p4/2026-04-17/olprovning-17-april",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:03.305Z",
+    "latitude": 59.8543878,
+    "longitude": 17.6630254
   },
   {
     "title": "Valter Nilsson",
@@ -255,7 +75,7 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/gdhzapln72ku66w/2026-04-17/valter-nilsson",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:42.352Z",
+    "fetched_at": "2026-04-03T14:09:03.305Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -265,7 +85,7 @@
     "venue": "Blackbird",
     "url": "https://www.tickster.com/se/sv/events/h3rg8kxg4973x05/2026-04-18/lindborg-septet-plays-gullin-and-riedel",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:42.352Z",
+    "fetched_at": "2026-04-03T14:09:03.305Z",
     "latitude": 59.8586,
     "longitude": 17.6389
   },
@@ -275,9 +95,19 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/7wgupxv66yek2aa/2026-04-21/steve-n-seagulls-fin",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:42.352Z",
+    "fetched_at": "2026-04-03T14:09:03.305Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
+  },
+  {
+    "title": "Mösspåtagningen 2026 - Josefina",
+    "date": "2026-04-24T11:00:00",
+    "venue": "Josefina",
+    "url": "https://www.tickster.com/se/sv/events/ykdgjc5x62fe6nx/2026-04-24/mosspatagningen-2026-josefina",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:03.305Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
   },
   {
     "title": "Tennessee Tears - Ashes & Embers",
@@ -285,7 +115,7 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/znp8j0j6e8gptf4/2026-04-24/tennessee-tears-ashes-and-embers",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:42.352Z",
+    "fetched_at": "2026-04-03T14:09:03.305Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -295,7 +125,7 @@
     "venue": "Katalin",
     "url": "https://www.tickster.com/se/sv/events/vdjh5pgbrxn84tw/2026-04-25/harriet-nauer-uppsala",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:42.352Z",
+    "fetched_at": "2026-04-03T14:09:03.305Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -305,7 +135,7 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/3lugzhzfmjknmrx/2026-04-29/tribulation",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:42.353Z",
+    "fetched_at": "2026-04-03T14:09:03.305Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -315,7 +145,7 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/hjkurcvkn1uy0w6/2026-05-01/lars-demian-and-david-tallroth",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:42.353Z",
+    "fetched_at": "2026-04-03T14:09:03.305Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -325,7 +155,7 @@
     "venue": "Blackbird",
     "url": "https://www.tickster.com/se/sv/events/c0puwmw0rw5f5cb/2026-05-02/jon-henriksson-shapeshifter-quintet",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:44.306Z",
+    "fetched_at": "2026-04-03T14:09:03.305Z",
     "latitude": 59.8586,
     "longitude": 17.6389
   },
@@ -335,9 +165,49 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/5mwh5pg8jfdp4lk/2026-05-02/the-toy-dolls-and-mimikry",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:44.306Z",
+    "fetched_at": "2026-04-03T14:09:04.957Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
+  },
+  {
+    "title": "Underground ART by Proscenium THU 16:00",
+    "date": "2026-05-07T16:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/vgnc9yap7jh7b25/2026-05-07/underground-art-by-proscenium-thu-16-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:04.957Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
+  },
+  {
+    "title": "Underground ART by Proscenium THU 17:00",
+    "date": "2026-05-07T17:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/xvw2n7nbav5zzdt/2026-05-07/underground-art-by-proscenium-thu-17-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:04.957Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
+  },
+  {
+    "title": "Underground ART by Proscenium THU 18:00",
+    "date": "2026-05-07T18:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/cmkt06wkwwgb0uz/2026-05-07/underground-art-by-proscenium-thu-18-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:04.957Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
+  },
+  {
+    "title": "Underground ART by Proscenium THU 19:00",
+    "date": "2026-05-07T19:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/yvkkuwmalb6nnyf/2026-05-07/underground-art-by-proscenium-thu-19-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:04.957Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
   },
   {
     "title": "Ato Karlsson - Kort sagt",
@@ -345,7 +215,7 @@
     "venue": "Katalin",
     "url": "https://www.tickster.com/se/sv/events/kt9jt0dzn8rehze/2026-05-07/ato-karlsson-kort-sagt",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:44.307Z",
+    "fetched_at": "2026-04-03T14:09:04.957Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -355,9 +225,49 @@
     "venue": "Flustret",
     "url": "https://www.tickster.com/se/sv/events/9e5jg3vdam4kflk/2026-05-07/forsta-skivan-7-5-rosendal-and-celsius",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:44.307Z",
+    "fetched_at": "2026-04-03T14:09:04.958Z",
     "latitude": 59.853961,
     "longitude": 17.6410724
+  },
+  {
+    "title": "Underground ART by Proscenium FRI 16:00",
+    "date": "2026-05-08T16:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/malxncetmuga78l/2026-05-08/underground-art-by-proscenium-fri-16-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:04.958Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
+  },
+  {
+    "title": "Underground ART by Proscenium FRI 17:00",
+    "date": "2026-05-08T17:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/c6zkrdyjyg8cufk/2026-05-08/underground-art-by-proscenium-fri-17-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:04.958Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
+  },
+  {
+    "title": "Underground ART by Proscenium FRI 18:00",
+    "date": "2026-05-08T18:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/88za3tf8zexcbbc/2026-05-08/underground-art-by-proscenium-fri-18-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:04.958Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
+  },
+  {
+    "title": "Underground ART by Proscenium FRI 19:00",
+    "date": "2026-05-08T19:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/fzwar24np2jrzbh/2026-05-08/underground-art-by-proscenium-fri-19-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:04.958Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
   },
   {
     "title": "Natural Way",
@@ -365,9 +275,49 @@
     "venue": "Katalin",
     "url": "https://www.tickster.com/se/sv/events/yr92hxy89lxwwz8/2026-05-08/natural-way",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:44.307Z",
+    "fetched_at": "2026-04-03T14:09:04.958Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
+  },
+  {
+    "title": "Underground ART by Proscenium SAT 11:00",
+    "date": "2026-05-09T11:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/nzu1bkcaxjvn3yf/2026-05-09/underground-art-by-proscenium-sat-11-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:04.958Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
+  },
+  {
+    "title": "Underground ART by Proscenium SAT 12:00",
+    "date": "2026-05-09T12:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/h7h6aw000wf0y1w/2026-05-09/underground-art-by-proscenium-sat-12-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:04.958Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
+  },
+  {
+    "title": "Underground ART by Proscenium SAT 13:00",
+    "date": "2026-05-09T13:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/e4wud2nrjff4yvj/2026-05-09/underground-art-by-proscenium-sat-13-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:04.958Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
+  },
+  {
+    "title": "Underground ART by Proscenium SAT 14:00",
+    "date": "2026-05-09T14:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/4bbu3l28vdd6hj6/2026-05-09/underground-art-by-proscenium-sat-14-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:04.958Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
   },
   {
     "title": "Allmänna Sångens Vårkonsert",
@@ -375,7 +325,27 @@
     "venue": "Uppsala universitets aula",
     "url": "https://www.tickster.com/se/sv/events/6tx7bke4dcxjp14/2026-05-09/allmanna-sangens-varkonsert",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:44.307Z",
+    "fetched_at": "2026-04-03T14:09:06.363Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
+  },
+  {
+    "title": "Underground ART by Proscenium SAT 15:00",
+    "date": "2026-05-09T15:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/9fl4n0ux794aykt/2026-05-09/underground-art-by-proscenium-sat-15-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:06.363Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
+  },
+  {
+    "title": "Underground ART by Proscenium SAT 16:00",
+    "date": "2026-05-09T16:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/v988vy1k2nu6k1b/2026-05-09/underground-art-by-proscenium-sat-16-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:06.363Z",
     "latitude": 59.8586,
     "longitude": 17.6389
   },
@@ -385,7 +355,7 @@
     "venue": "Blackbird",
     "url": "https://www.tickster.com/se/sv/events/1xgb3vfyzg0ppm2/2026-05-09/lina-lovstrand",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:44.307Z",
+    "fetched_at": "2026-04-03T14:09:06.363Z",
     "latitude": 59.8586,
     "longitude": 17.6389
   },
@@ -395,7 +365,7 @@
     "venue": "Slottsbiografen",
     "url": "https://www.tickster.com/se/sv/events/dc2245tppmf59cm/2026-05-09/trummor-and-orgel-uppsala",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:44.307Z",
+    "fetched_at": "2026-04-03T14:09:06.363Z",
     "latitude": 59.8562412,
     "longitude": 17.6344116
   },
@@ -405,7 +375,7 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/dhx5tyv6n5j1ga0/2026-05-09/korslagda",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:44.307Z",
+    "fetched_at": "2026-04-03T14:09:06.363Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -415,9 +385,69 @@
     "venue": "Flustret",
     "url": "https://www.tickster.com/se/sv/events/yu2r7wepz6bxamv/2026-05-09/flustret-studentskiva-lundelska-9maj",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:44.307Z",
+    "fetched_at": "2026-04-03T14:09:06.363Z",
     "latitude": 59.853961,
     "longitude": 17.6410724
+  },
+  {
+    "title": "Underground ART by Proscenium SUN  11:00",
+    "date": "2026-05-10T11:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/718c72g0g5yxu3j/2026-05-10/underground-art-by-proscenium-sun-11-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:06.363Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
+  },
+  {
+    "title": "Underground ART by Proscenium SUN  12:00",
+    "date": "2026-05-10T12:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/44031x40j38an65/2026-05-10/underground-art-by-proscenium-sun-12-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:06.363Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
+  },
+  {
+    "title": "Underground ART by Proscenium SUN  13:00",
+    "date": "2026-05-10T13:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/kam08vfzun3e32x/2026-05-10/underground-art-by-proscenium-sun-13-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:06.363Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
+  },
+  {
+    "title": "Underground ART by Proscenium SUN  14:00",
+    "date": "2026-05-10T14:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/8wt2uze0d5gp0ak/2026-05-10/underground-art-by-proscenium-sun-14-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:06.363Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
+  },
+  {
+    "title": "Underground ART by Proscenium SUN  15:00",
+    "date": "2026-05-10T15:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/zdn4r4prl0lkw6j/2026-05-10/underground-art-by-proscenium-sun-15-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:06.363Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
+  },
+  {
+    "title": "Underground ART by Proscenium SUN 16:00",
+    "date": "2026-05-10T16:00:00",
+    "venue": "Vasaborgen Uppsala slott",
+    "url": "https://www.tickster.com/se/sv/events/f01ljvpjj2dr5jt/2026-05-10/underground-art-by-proscenium-sun-16-00",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:06.364Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
   },
   {
     "title": "FLUSTRET - STUDENTSKIVA ROSENDAL 13MAJ",
@@ -425,7 +455,7 @@
     "venue": "Flustret",
     "url": "https://www.tickster.com/se/sv/events/68k37b7ugfpvuuc/2026-05-13/flustret-studentskiva-rosendal-13maj",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:44.307Z",
+    "fetched_at": "2026-04-03T14:09:06.364Z",
     "latitude": 59.853961,
     "longitude": 17.6410724
   },
@@ -435,7 +465,7 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/58avzk3h07artex/2026-05-14/william-sundman-saaf",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:44.307Z",
+    "fetched_at": "2026-04-03T14:09:06.364Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -445,7 +475,7 @@
     "venue": "Flustret",
     "url": "https://www.tickster.com/se/sv/events/8djnpruy1e7bj9t/2026-05-15/flustret-studentskiva-celsius-15maj",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:44.307Z",
+    "fetched_at": "2026-04-03T14:09:06.364Z",
     "latitude": 59.853961,
     "longitude": 17.6410724
   },
@@ -455,7 +485,7 @@
     "venue": "Flustret",
     "url": "https://www.tickster.com/se/sv/events/5g907364xl9wrgh/2026-05-16/dagsfest-mosspatagningen-skumparty-flustret",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:44.307Z",
+    "fetched_at": "2026-04-03T14:09:07.940Z",
     "latitude": 59.853961,
     "longitude": 17.6410724
   },
@@ -465,7 +495,7 @@
     "venue": "Blackbird",
     "url": "https://www.tickster.com/se/sv/events/vfd1mm200rdghpc/2026-05-16/pw-nilsson-trio",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:44.308Z",
+    "fetched_at": "2026-04-03T14:09:07.941Z",
     "latitude": 59.8586,
     "longitude": 17.6389
   },
@@ -475,9 +505,19 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/lue6xaxc4jr0c0u/2026-05-16/cherrie",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:44.308Z",
+    "fetched_at": "2026-04-03T14:09:07.941Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
+  },
+  {
+    "title": "Ebbot Lundberg",
+    "date": "2026-05-20T19:30:00",
+    "venue": "Blackbird",
+    "url": "https://www.tickster.com/se/sv/events/xt1vzg40hxwp7t6/2026-05-20/ebbot-lundberg",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:07.941Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
   },
   {
     "title": "FLUSTRET - STUDENTSKIVA CELSIUS+ ROSEN 20MAJ",
@@ -485,7 +525,7 @@
     "venue": "Flustret",
     "url": "https://www.tickster.com/se/sv/events/h8znlm5yfd70dk5/2026-05-20/flustret-studentskiva-celsius-rosen-20maj",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:45.774Z",
+    "fetched_at": "2026-04-03T14:09:07.941Z",
     "latitude": 59.853961,
     "longitude": 17.6410724
   },
@@ -495,7 +535,7 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/9e5lkx2hf3xt9kj/2026-05-21/john-holm-det-finns-sa-manga-landsvagar",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:45.774Z",
+    "fetched_at": "2026-04-03T14:09:07.941Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -505,7 +545,7 @@
     "venue": "Flustret Uppsala",
     "url": "https://www.tickster.com/se/sv/events/86tt35zb7c1wv6y/2026-05-23/brunch-club-bubblande-tjejfest-i-uppsala",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:45.774Z",
+    "fetched_at": "2026-04-03T14:09:07.941Z",
     "latitude": 59.853961,
     "longitude": 17.6410724
   },
@@ -515,7 +555,7 @@
     "venue": "Blackbird",
     "url": "https://www.tickster.com/se/sv/events/cryzkb8tgac3lv7/2026-05-23/ekdahl-bagge-big-band",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:45.774Z",
+    "fetched_at": "2026-04-03T14:09:07.941Z",
     "latitude": 59.8586,
     "longitude": 17.6389
   },
@@ -525,7 +565,7 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/w76tnbceye7572u/2026-05-23/dead-by-april",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:45.774Z",
+    "fetched_at": "2026-04-03T14:09:07.941Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -535,7 +575,7 @@
     "venue": "Flustret Uppsala",
     "url": "https://www.tickster.com/se/sv/events/ger1ey62wezvjnc/2026-05-23/love-50-party-uppsala",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:45.774Z",
+    "fetched_at": "2026-04-03T14:09:07.941Z",
     "latitude": 59.853961,
     "longitude": 17.6410724
   },
@@ -545,7 +585,7 @@
     "venue": "Flustret",
     "url": "https://www.tickster.com/se/sv/events/e7mwtg1f3rph4hr/2026-05-26/flustret-studentskiva-katte-26maj",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:45.774Z",
+    "fetched_at": "2026-04-03T14:09:07.941Z",
     "latitude": 59.853961,
     "longitude": 17.6410724
   },
@@ -555,7 +595,7 @@
     "venue": "Flustret",
     "url": "https://www.tickster.com/se/sv/events/kp2tx3lg7844evb/2026-05-27/flustret-studentskiva-skrapan-27maj",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:45.774Z",
+    "fetched_at": "2026-04-03T14:09:07.941Z",
     "latitude": 59.853961,
     "longitude": 17.6410724
   },
@@ -565,7 +605,7 @@
     "venue": "Flustret",
     "url": "https://www.tickster.com/se/sv/events/5e36y77ukhy774b/2026-05-28/flustret-studentskiva-lundelska-28-maj",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:45.774Z",
+    "fetched_at": "2026-04-03T14:09:07.941Z",
     "latitude": 59.853961,
     "longitude": 17.6410724
   },
@@ -575,7 +615,7 @@
     "venue": "Katalin",
     "url": "https://www.tickster.com/se/sv/events/axabb4wdudngk0x/2026-05-29/krutgubbar-bast-fore",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:45.774Z",
+    "fetched_at": "2026-04-03T14:09:07.941Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -585,7 +625,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/8f0jgrj11gj8l96/2026-06-05/dina-ogon",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:45.774Z",
+    "fetched_at": "2026-04-03T14:09:07.941Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -595,7 +635,7 @@
     "venue": "Flustret",
     "url": "https://www.tickster.com/se/sv/events/g4fc020tctnyykr/2026-06-05/stora-studentfesten-2026-flustret",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:45.774Z",
+    "fetched_at": "2026-04-03T14:09:07.941Z",
     "latitude": 59.853961,
     "longitude": 17.6410724
   },
@@ -605,7 +645,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/6lr5ftnaej2wgfx/2026-06-07/bransta-city-slackers",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:45.774Z",
+    "fetched_at": "2026-04-03T14:09:09.358Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -615,7 +655,7 @@
     "venue": "Flustret",
     "url": "https://www.tickster.com/se/sv/events/ymbc9l195evmrjn/2026-06-11/stora-hogstadiefesten-flustret-11-juni",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:45.774Z",
+    "fetched_at": "2026-04-03T14:09:09.358Z",
     "latitude": 59.853961,
     "longitude": 17.6410724
   },
@@ -625,7 +665,17 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/ap54mukfhjpaxtt/2026-06-12/simon-superti",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:45.775Z",
+    "fetched_at": "2026-04-03T14:09:09.358Z",
+    "latitude": 59.851381,
+    "longitude": 17.6444925
+  },
+  {
+    "title": "The Poodles & The Night Flight Orchestra",
+    "date": "2026-06-13T19:00:00",
+    "venue": "Parksnäckan",
+    "url": "https://www.tickster.com/se/sv/events/cnk3m8h1dv2xakt/2026-06-13/the-poodles-and-the-night-flight-orchestra",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:09.358Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -635,7 +685,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/uju304897d5hfwz/2026-06-14/allsang-med-sangpiraterna",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:45.775Z",
+    "fetched_at": "2026-04-03T14:09:09.358Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -645,7 +695,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/46mk4pl5570egzv/2026-06-20/satyricon-black-metal-midsummer",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:47.650Z",
+    "fetched_at": "2026-04-03T14:09:09.358Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -655,7 +705,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/j7fh4lnvuytpkxx/2026-06-21/jecko",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:47.650Z",
+    "fetched_at": "2026-04-03T14:09:09.358Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -665,7 +715,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/9cwc7dt1g3lbl7x/2026-06-22/the-high-society-a-rat-pack-celebration",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:47.650Z",
+    "fetched_at": "2026-04-03T14:09:09.358Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -675,7 +725,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/4dkdc09k0bede0x/2026-06-23/venom-welcome-to-hell",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:47.650Z",
+    "fetched_at": "2026-04-03T14:09:09.358Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -685,7 +735,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/14n6pkj64wl5zc6/2026-06-27/tricky-uk",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:47.650Z",
+    "fetched_at": "2026-04-03T14:09:09.358Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -695,7 +745,7 @@
     "venue": "Botaniska trädgården",
     "url": "https://www.tickster.com/se/sv/events/eclvfe3vezklgyu/2026-06-27/sting",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:47.650Z",
+    "fetched_at": "2026-04-03T14:09:09.359Z",
     "latitude": 59.8515471,
     "longitude": 17.6272814
   },
@@ -705,7 +755,17 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/fk5af3u4r2ezdh4/2026-06-28/dave-weckl-us-moter-uppsala-storband",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:47.650Z",
+    "fetched_at": "2026-04-03T14:09:09.359Z",
+    "latitude": 59.851381,
+    "longitude": 17.6444925
+  },
+  {
+    "title": "Sanna Nielsen",
+    "date": "2026-07-01T19:00:00",
+    "venue": "Parksnäckan",
+    "url": "https://www.tickster.com/se/sv/events/p6kdwf1dcptyfwa/2026-07-01/sanna-nielsen",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:09.359Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -715,7 +775,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/4c7x72rxdxnffc7/2026-07-02/abba-allsang",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:47.650Z",
+    "fetched_at": "2026-04-03T14:09:09.359Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -725,17 +785,47 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/4ndgk4vl692fgcu/2026-07-03/dismember-and-vomitory",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:47.650Z",
+    "fetched_at": "2026-04-03T14:09:09.359Z",
+    "latitude": 59.851381,
+    "longitude": 17.6444925
+  },
+  {
+    "title": "Uppsala Rumble",
+    "date": "2026-07-04T16:30:00",
+    "venue": "Parksnäckan",
+    "url": "https://www.tickster.com/se/sv/events/pyfplaerktd0faf/2026-07-04/uppsala-rumble",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:09.359Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
   {
     "title": "Sandi Thom (SCT)",
-    "date": "2026-07-04T19:00:00",
+    "date": "2026-07-05T19:00:00",
     "venue": "Parksnäckan",
-    "url": "https://www.tickster.com/se/sv/events/60c2hm6tamn4c63/2026-07-04/sandi-thom-sct",
+    "url": "https://www.tickster.com/se/sv/events/60c2hm6tamn4c63/2026-07-05/sandi-thom-sct",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:47.650Z",
+    "fetched_at": "2026-04-03T14:09:11.527Z",
+    "latitude": 59.851381,
+    "longitude": 17.6444925
+  },
+  {
+    "title": "Uno Svenningsson",
+    "date": "2026-07-08T19:00:00",
+    "venue": "Parksnäckan",
+    "url": "https://www.tickster.com/se/sv/events/ym5367fmk32had0/2026-07-08/uno-svenningsson",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:11.527Z",
+    "latitude": 59.851381,
+    "longitude": 17.6444925
+  },
+  {
+    "title": "Wilmer X",
+    "date": "2026-07-09T19:00:00",
+    "venue": "Parksnäckan",
+    "url": "https://www.tickster.com/se/sv/events/zy9e7k88564bhy5/2026-07-09/wilmer-x",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:11.527Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -745,7 +835,17 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/1r2w7v62zfcwakp/2026-07-10/tommy-nilsson-dina-farger-var-bla",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:47.650Z",
+    "fetched_at": "2026-04-03T14:09:11.527Z",
+    "latitude": 59.851381,
+    "longitude": 17.6444925
+  },
+  {
+    "title": "Bamse & Sjörövarskatten",
+    "date": "2026-07-11T14:00:00",
+    "venue": "Parksnäckan",
+    "url": "https://www.tickster.com/se/sv/events/p8dd5yv6nb82wp2/2026-07-11/bamse-and-sjorovarskatten",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:11.527Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -755,7 +855,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/v5ef4rygf2rmmh2/2026-07-12/medina",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:47.650Z",
+    "fetched_at": "2026-04-03T14:09:11.527Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -765,7 +865,17 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/mt1twc9p8nb3lxu/2026-07-19/pappa-kapsyl",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:47.650Z",
+    "fetched_at": "2026-04-03T14:09:11.528Z",
+    "latitude": 59.851381,
+    "longitude": 17.6444925
+  },
+  {
+    "title": "Terra",
+    "date": "2026-07-22T19:00:00",
+    "venue": "Parksnäckan",
+    "url": "https://www.tickster.com/se/sv/events/324tpyrhemr1w06/2026-07-22/terra",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:11.528Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -775,7 +885,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/d0kd2gjpjzmynp6/2026-07-23/arja-saijonmaa",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:47.650Z",
+    "fetched_at": "2026-04-03T14:09:11.528Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -785,7 +895,7 @@
     "venue": "Uppsala Friidrottsarena",
     "url": "https://www.tickster.com/se/sv/events/xnfn7g8t4zpf62h/2026-07-24/friidrotts-sm",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:47.650Z",
+    "fetched_at": "2026-04-03T14:09:11.528Z",
     "latitude": 59.8815426,
     "longitude": 17.6625386
   },
@@ -795,7 +905,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/jcc9pd0871thuud/2026-07-24/banna-sona-band",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:47.650Z",
+    "fetched_at": "2026-04-03T14:09:11.528Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -805,7 +915,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/fg62x37zuh49jv6/2026-07-25/petra-marklund",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:48.970Z",
+    "fetched_at": "2026-04-03T14:09:11.528Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -815,7 +925,17 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/w4ajxgp6kt1jclc/2026-07-26/lilla-spoket-laban",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:48.970Z",
+    "fetched_at": "2026-04-03T14:09:11.528Z",
+    "latitude": 59.851381,
+    "longitude": 17.6444925
+  },
+  {
+    "title": "Lilla Spöket Laban - Extraföreställning",
+    "date": "2026-07-26T18:00:00",
+    "venue": "Parksnäckan",
+    "url": "https://www.tickster.com/se/sv/events/gmyl7uktxvucjr0/2026-07-26/lilla-spoket-laban-extraforestallning",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:11.528Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -825,7 +945,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/125zevn3klzppng/2026-08-01/cleo",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:48.970Z",
+    "fetched_at": "2026-04-03T14:09:11.528Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -835,7 +955,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/ggb9c0y09e71hu8/2026-08-02/niklas-stromstedt",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:48.970Z",
+    "fetched_at": "2026-04-03T14:09:11.528Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -845,7 +965,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/5941j5pf94fb2xb/2026-08-03/varldens-band",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:48.970Z",
+    "fetched_at": "2026-04-03T14:09:13.342Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -855,7 +975,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/cmcvwdg8g325d34/2026-08-08/lasse-holm-en-hel-massa-lasse",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:48.970Z",
+    "fetched_at": "2026-04-03T14:09:13.342Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -865,7 +985,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/31tfxjb54d5a670/2026-08-09/kaj",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:48.970Z",
+    "fetched_at": "2026-04-03T14:09:13.342Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -875,7 +995,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/jb04718wa8yzp6t/2026-08-11/einsturzende-neubauten",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:48.970Z",
+    "fetched_at": "2026-04-03T14:09:13.342Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -885,7 +1005,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/eb2e5cr687bvv40/2026-08-13/danny",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:48.970Z",
+    "fetched_at": "2026-04-03T14:09:13.342Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -895,7 +1015,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/4bky0t82l8vynrn/2026-08-14/chris-klafford-robin-winther-and-ingrid",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:48.970Z",
+    "fetched_at": "2026-04-03T14:09:13.343Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -905,7 +1025,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/dwt28xraktuvaer/2026-08-16/dolly-style",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:48.970Z",
+    "fetched_at": "2026-04-03T14:09:13.343Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -915,7 +1035,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/pg8abdcx5fxa706/2026-08-18/electric-banana-band",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:48.970Z",
+    "fetched_at": "2026-04-03T14:09:13.343Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -925,7 +1045,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/hyzpdt42x7cju8t/2026-08-19/papi-santana",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:48.970Z",
+    "fetched_at": "2026-04-03T14:09:13.343Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -935,7 +1055,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/gn4y9x52jdjt2bk/2026-08-20/korslagda",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:48.970Z",
+    "fetched_at": "2026-04-03T14:09:13.343Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -945,7 +1065,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/7yj854zcp06e5mk/2026-08-21/orup",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:48.970Z",
+    "fetched_at": "2026-04-03T14:09:13.343Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -955,7 +1075,7 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/ty4cuab72yapk0a/2026-08-22/melody-club",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:48.970Z",
+    "fetched_at": "2026-04-03T14:09:13.343Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
   },
@@ -965,9 +1085,29 @@
     "venue": "Parksnäckan",
     "url": "https://www.tickster.com/se/sv/events/lb9jujdx4zlyc9h/2026-08-28/silvana-imam",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:50.382Z",
+    "fetched_at": "2026-04-03T14:09:13.343Z",
     "latitude": 59.851381,
     "longitude": 17.6444925
+  },
+  {
+    "title": "Björn & Järv",
+    "date": "2026-09-04T19:00:00",
+    "venue": "Parksnäckan",
+    "url": "https://www.tickster.com/se/sv/events/h1l0a435686v2y1/2026-09-04/bjorn-and-jarv",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:13.343Z",
+    "latitude": 59.851381,
+    "longitude": 17.6444925
+  },
+  {
+    "title": "David Urwitz - Jazzbaren",
+    "date": "2026-09-05T20:00:00",
+    "venue": "Katalin and all that Jazz",
+    "url": "https://www.tickster.com/se/sv/events/2dfaca0cfj1xrtb/2026-09-05/david-urwitz-jazzbaren",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:13.343Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
   },
   {
     "title": "SANA DURI - THE NEW BEGINNING - SATURDAY SEP 12th",
@@ -975,7 +1115,7 @@
     "venue": "Studenternas IP",
     "url": "https://www.tickster.com/se/sv/events/e7x7yk9wmbuv0x9/2026-09-12/sana-duri-the-new-beginning-saturday-sep-12th",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:50.382Z",
+    "fetched_at": "2026-04-03T14:09:13.343Z",
     "latitude": 59.8486572,
     "longitude": 17.6463313
   },
@@ -985,7 +1125,7 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/jrbk28llzhgacp5/2026-09-18/eddie-and-the-hot-rods-uk",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:50.382Z",
+    "fetched_at": "2026-04-03T14:09:14.856Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -995,7 +1135,7 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/97hf034d5vac340/2026-09-24/the-undertones-50th-anniversary-tour",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:50.382Z",
+    "fetched_at": "2026-04-03T14:09:14.856Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -1005,7 +1145,17 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/h4vu7w09xdvjcmg/2026-09-25/division-7",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:50.382Z",
+    "fetched_at": "2026-04-03T14:09:14.856Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
+  },
+  {
+    "title": "The Plan",
+    "date": "2026-10-10T20:00:00",
+    "venue": "Katalin and all that Jazz",
+    "url": "https://www.tickster.com/se/sv/events/ypzhmyrp2lk94n3/2026-10-10/the-plan",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:14.856Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -1015,7 +1165,7 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/740u4e3nnk159k2/2026-10-17/the-watch-plays-genesis",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:50.383Z",
+    "fetched_at": "2026-04-03T14:09:14.856Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -1025,9 +1175,29 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/fc5nge7c565wkby/2026-10-31/marky-ramone-s-blitzkrieg",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:50.383Z",
+    "fetched_at": "2026-04-03T14:09:14.856Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
+  },
+  {
+    "title": "Yttling Jazz - Jazzbaren",
+    "date": "2026-11-04T20:00:00",
+    "venue": "Katalin and all that Jazz",
+    "url": "https://www.tickster.com/se/sv/events/h3hznumbfldp6vm/2026-11-04/yttling-jazz-jazzbaren",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:14.856Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
+  },
+  {
+    "title": "Mats/Morgan/Henrik",
+    "date": "2026-11-13T19:30:00",
+    "venue": "Blackbird",
+    "url": "https://www.tickster.com/se/sv/events/3jxaj917cyx9759/2026-11-13/mats-morgan-henrik",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:14.856Z",
+    "latitude": 59.8586,
+    "longitude": 17.6389
   },
   {
     "title": "Hardline",
@@ -1035,7 +1205,27 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/vtd7m1f2dbkb92e/2026-11-20/hardline",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:50.383Z",
+    "fetched_at": "2026-04-03T14:09:14.856Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
+  },
+  {
+    "title": "Maggie Reilly & Cutting Crew Trio",
+    "date": "2026-11-28T20:00:00",
+    "venue": "Katalin and all that Jazz",
+    "url": "https://www.tickster.com/se/sv/events/zj9z073x7lux5jm/2026-11-28/maggie-reilly-and-cutting-crew-trio",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:14.856Z",
+    "latitude": 59.8598666,
+    "longitude": 17.6457607
+  },
+  {
+    "title": "The Fantastic Four - A Motown Christmas - Uppsala",
+    "date": "2026-12-04T20:00:00",
+    "venue": "Katalin",
+    "url": "https://www.tickster.com/se/sv/events/hr4k0nrulzxhhd7/2026-12-04/the-fantastic-four-a-motown-christmas-uppsala",
+    "source": "tickster",
+    "fetched_at": "2026-04-03T14:09:14.856Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   },
@@ -1045,7 +1235,7 @@
     "venue": "Katalin and all that Jazz",
     "url": "https://www.tickster.com/se/sv/events/72ypaj48u516nlj/2026-12-17/the-crown",
     "source": "tickster",
-    "fetched_at": "2026-03-05T20:15:50.383Z",
+    "fetched_at": "2026-04-03T14:09:14.857Z",
     "latitude": 59.8598666,
     "longitude": 17.6457607
   }

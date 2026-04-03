@@ -7,7 +7,7 @@ import EventList from './components/EventList';
 import Footer from './components/Footer';
 import { useEvents } from './hooks/useEvents';
 
-const VIEWS = ['idag', 'imorgon', 'helg', 'kommande', 'info'];
+const VIEWS = ['idag', 'helg', 'kommande', 'info'];
 
 function App() {
   const [view, setView] = useState('idag');
@@ -141,7 +141,6 @@ function App() {
   const availableCategories = useMemo(() => {
     let currentViewEvents = [];
     if (view === 'idag') currentViewEvents = unfilteredIdag;
-    else if (view === 'imorgon') currentViewEvents = unfilteredImorgon;
     else if (view === 'helg') currentViewEvents = unfilteredHelg;
     else if (view === 'kommande') currentViewEvents = unfilteredKommande;
     else if (view === 'nara') currentViewEvents = unfilteredNara;
@@ -211,26 +210,6 @@ function App() {
           <section className="view-section" ref={el => viewRefs.current[1] = el}>
             <div className="scroll-content">
               <EventList
-                groups={groupsImorgon}
-                viewType="imorgon"
-                eventsList={eventsImorgon}
-                loading={loading}
-                error={error}
-                emptyMessage="här var det tomt för imorgon! testa välj ett annat filter :)"
-                searchQuery={searchQuery}
-                highlightIds={highlightIds}
-                expandedGroups={expandedGroups}
-                collapsedGroups={collapsedGroups}
-                activeCategory={activeCategory}
-                toggleGroup={toggleGroup}
-                toggleCollapse={toggleCollapse}
-              />
-            </div>
-          </section>
-
-          <section className="view-section" ref={el => viewRefs.current[2] = el}>
-            <div className="scroll-content">
-              <EventList
                 groups={groupsHelg}
                 viewType="helg"
                 eventsList={eventsHelg}
@@ -247,7 +226,7 @@ function App() {
             </div>
           </section>
 
-          <section className="view-section" ref={el => viewRefs.current[3] = el}>
+          <section className="view-section" ref={el => viewRefs.current[2] = el}>
             <div className="scroll-content">
               <EventList
                 groups={groupsKommande}
@@ -267,7 +246,7 @@ function App() {
             </div>
           </section>
 
-          <section className="view-section" ref={el => viewRefs.current[4] = el}>
+          <section className="view-section" ref={el => viewRefs.current[3] = el}>
             <div className="scroll-content">
               <Footer events={events} />
             </div>
