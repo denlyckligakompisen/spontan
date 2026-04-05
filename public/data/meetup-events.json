@@ -1,39 +1,5 @@
 [
   {
-    "title": "Art Café - 11:00 - 15:00 (free)",
-    "startDate": "2026-04-04T11:00:00+02:00",
-    "url": "https://www.meetup.com/mindful-art-class/events/313617242/",
-    "source": "meetup.com",
-    "venue": "Inner Art Ateljé",
-    "address": "Ulleråkersvägen 34",
-    "city": "Uppsala",
-    "fetched_at": "2026-04-04T01:48:05.817Z"
-  },
-  {
-    "title": "Svenskasamtal",
-    "startDate": "2026-04-04T12:00:00+02:00",
-    "url": "https://www.meetup.com/intercambio2/events/313648027/",
-    "source": "meetup.com",
-    "venue": "Konditori Fågelsången",
-    "address": "Munkgatan 3",
-    "city": "Uppsala",
-    "fetched_at": "2026-04-04T01:48:05.817Z",
-    "latitude": 59.8546305,
-    "longitude": 17.6394577
-  },
-  {
-    "title": "French Conversation",
-    "startDate": "2026-04-04T13:30:00+02:00",
-    "url": "https://www.meetup.com/intercambio2/events/313240413/",
-    "source": "meetup.com",
-    "venue": "Konditori Fågelsången",
-    "address": "Munkgatan 3",
-    "city": "Uppsala",
-    "fetched_at": "2026-04-04T01:48:05.817Z",
-    "latitude": 59.8546305,
-    "longitude": 17.6394577
-  },
-  {
     "title": "Diary writing  (English language)",
     "startDate": "2026-04-07T17:00:00+02:00",
     "url": "https://www.meetup.com/diary-writing-and-accelerating-your-personal-growth/events/314043950/",
@@ -41,7 +7,7 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-04T01:48:05.817Z",
+    "fetched_at": "2026-04-05T01:57:28.095Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
   },
@@ -53,21 +19,9 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-04T01:48:05.817Z",
+    "fetched_at": "2026-04-05T01:57:28.095Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
-  },
-  {
-    "title": "English Conversation",
-    "startDate": "2026-04-12T12:00:00+02:00",
-    "url": "https://www.meetup.com/intercambio2/events/313908176/",
-    "source": "meetup.com",
-    "venue": "Konditori Fågelsången",
-    "address": "Munkgatan 3",
-    "city": "Uppsala",
-    "fetched_at": "2026-04-04T01:48:05.817Z",
-    "latitude": 59.8546305,
-    "longitude": 17.6394577
   },
   {
     "title": "Sunday Coffee",
@@ -77,7 +31,7 @@
     "venue": "Konditori Fågelsången",
     "address": "Munkgatan 3, C",
     "city": "Uppsala",
-    "fetched_at": "2026-04-04T01:48:05.817Z"
+    "fetched_at": "2026-04-05T01:57:28.095Z"
   },
   {
     "title": "Mindful Art Class - Charcoal drawing (with guest teacher!)! 🎨🌿✨",
@@ -87,7 +41,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-04T01:48:05.817Z"
+    "fetched_at": "2026-04-05T01:57:28.095Z"
   },
   {
     "title": "Co-Working dag 👨🏼‍💻👩🏽‍💻",
@@ -97,7 +51,7 @@
     "venue": "IT-HUSET Uppsala",
     "address": "Vaksalagatan 3",
     "city": "Uppsala",
-    "fetched_at": "2026-04-04T01:48:05.817Z"
+    "fetched_at": "2026-04-05T01:57:28.095Z"
   },
   {
     "title": "Padel&Buziness",
@@ -107,7 +61,7 @@
     "venue": "Padel Uppsala - UTK Hallen",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-04T01:48:05.817Z",
+    "fetched_at": "2026-04-05T01:57:28.095Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
   },
@@ -119,6 +73,28 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-04T01:48:05.817Z"
+    "fetched_at": "2026-04-05T01:57:28.095Z"
+  },
+  {
+    "title": "Mindful Art Class - Sculpt your own Paint Palette! (with guest teacher!)! 🎨🌿✨",
+    "startDate": "2026-04-22T16:30:00+02:00",
+    "url": "https://www.meetup.com/mindful-art-class/events/314055097/",
+    "source": "meetup.com",
+    "venue": "Inner Art Ateljé",
+    "address": "Ulleråkersvägen 34",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-05T01:57:28.095Z"
+  },
+  {
+    "title": "Svenskasamtal",
+    "startDate": "2026-05-02T12:00:00+02:00",
+    "url": "https://www.meetup.com/intercambio2/events/313648030/",
+    "source": "meetup.com",
+    "venue": "Konditori Fågelsången",
+    "address": "Munkgatan 3",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-05T01:57:28.095Z",
+    "latitude": 59.8546305,
+    "longitude": 17.6394577
   }
 ]
