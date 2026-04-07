@@ -7,7 +7,7 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-06T01:59:07.999Z",
+    "fetched_at": "2026-04-07T01:54:41.035Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
   },
@@ -19,7 +19,7 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-06T01:59:07.999Z",
+    "fetched_at": "2026-04-07T01:54:41.035Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
   },
@@ -31,7 +31,21 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-06T01:59:07.999Z"
+    "fetched_at": "2026-04-07T01:54:41.035Z",
+    "latitude": 59.8282548,
+    "longitude": 17.6463868
+  },
+  {
+    "title": "Sunday Badminton",
+    "startDate": "2026-04-12T16:00:00+02:00",
+    "url": "https://www.meetup.com/uppsala-social/events/313911321/",
+    "source": "meetup.com",
+    "venue": "Fyrisfjädern Badmintonklubb",
+    "address": "Badmintonstigen 1",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-07T01:54:41.035Z",
+    "latitude": 59.8721729,
+    "longitude": 17.6208429
   },
   {
     "title": "Co-Working dag 👨🏼‍💻👩🏽‍💻",
@@ -41,7 +55,9 @@
     "venue": "IT-HUSET Uppsala",
     "address": "Vaksalagatan 3",
     "city": "Uppsala",
-    "fetched_at": "2026-04-06T01:59:07.999Z"
+    "fetched_at": "2026-04-07T01:54:41.035Z",
+    "latitude": 59.868543,
+    "longitude": 17.6604173
   },
   {
     "title": "Padel&Buziness",
@@ -51,7 +67,7 @@
     "venue": "Padel Uppsala - UTK Hallen",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-06T01:59:07.999Z",
+    "fetched_at": "2026-04-07T01:54:41.035Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
   },
@@ -63,7 +79,9 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-06T01:59:07.999Z"
+    "fetched_at": "2026-04-07T01:54:41.035Z",
+    "latitude": 59.8282548,
+    "longitude": 17.6463868
   },
   {
     "title": "Mindful Art Class - Sculpt your own Paint Palette! (with guest teacher!)! 🎨🌿✨",
@@ -73,19 +91,9 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-06T01:59:07.999Z"
-  },
-  {
-    "title": "Svenskasamtal",
-    "startDate": "2026-05-16T12:00:00+02:00",
-    "url": "https://www.meetup.com/intercambio2/events/313648030/",
-    "source": "meetup.com",
-    "venue": "Konditori Fågelsången",
-    "address": "Munkgatan 3",
-    "city": "Uppsala",
-    "fetched_at": "2026-04-06T01:59:07.999Z",
-    "latitude": 59.8546305,
-    "longitude": 17.6394577
+    "fetched_at": "2026-04-07T01:54:41.035Z",
+    "latitude": 59.8282548,
+    "longitude": 17.6463868
   },
   {
     "title": "#46 Urban Sketching - Bror Hjorths Hus",
@@ -95,8 +103,20 @@
     "venue": "Bror Hjorths Hus",
     "address": "Norbyvägen 26",
     "city": "Uppsala",
-    "fetched_at": "2026-04-06T01:59:07.999Z",
+    "fetched_at": "2026-04-07T01:54:41.035Z",
     "latitude": 59.8492776,
     "longitude": 17.6198763
+  },
+  {
+    "title": "Drivhuset Breakfast Club",
+    "startDate": "2026-05-06T08:15:00+02:00",
+    "url": "https://www.meetup.com/drivhuset-uppsala-entrepreneurship/events/314026547/",
+    "source": "meetup.com",
+    "venue": "Sidenvävargatan 17",
+    "address": "Sidenvävargatan 17",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-07T01:54:41.035Z",
+    "latitude": 59.8565705,
+    "longitude": 17.6495256
   }
 ]

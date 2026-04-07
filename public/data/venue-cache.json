@@ -374,5 +374,25 @@
   "Köttinspektionen, Uppsala, Sweden": {
     "lat": 59.8534888,
     "lon": 17.6495536
+  },
+  "Vasaborgen Uppsala slott, Uppsala, Sweden": {
+    "lat": 59.8530164,
+    "lon": 17.6347822
+  },
+  "Ulleråkersvägen 34, Uppsala, Sweden": {
+    "lat": 59.8282548,
+    "lon": 17.6463868
+  },
+  "Badmintonstigen 1, Uppsala, Sweden": {
+    "lat": 59.8721729,
+    "lon": 17.6208429
+  },
+  "Vaksalagatan 3, Uppsala, Sweden": {
+    "lat": 59.868543,
+    "lon": 17.6604173
+  },
+  "Sidenvävargatan 17, Uppsala, Sweden": {
+    "lat": 59.8565705,
+    "lon": 17.6495256
   }
 }
