@@ -394,5 +394,17 @@
   "Sidenvävargatan 17, Uppsala, Sweden": {
     "lat": 59.8565705,
     "lon": 17.6495256
+  },
+  "Kappa Bar, Uppsala, Sweden": {
+    "lat": 59.8622585,
+    "lon": 17.6323449
+  },
+  "Missionskyrkan Uppsala, Uppsala, Sweden": {
+    "lat": 59.8616796,
+    "lon": 17.6362656
+  },
+  "Islandsfallet, Uppsala, Sweden": {
+    "lat": 59.8548274,
+    "lon": 17.6416873
   }
 }
