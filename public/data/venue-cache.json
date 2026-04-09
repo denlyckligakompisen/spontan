@@ -406,5 +406,13 @@
   "Islandsfallet, Uppsala, Sweden": {
     "lat": 59.8548274,
     "lon": 17.6416873
+  },
+  "Uppsala Centralstation, Uppsala, Sweden": {
+    "lat": 59.8582098,
+    "lon": 17.6465835
+  },
+  "Kungsängsgatan 14, Uppsala, Sweden": {
+    "lat": 59.8571282,
+    "lon": 17.6417146
   }
 }

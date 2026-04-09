@@ -7,9 +7,21 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-08T02:01:33.792Z",
+    "fetched_at": "2026-04-09T01:47:19.461Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
+  },
+  {
+    "title": "#44 Urban Sketching -  Day Trip to Salsta Slott",
+    "startDate": "2026-04-12T09:45:00+02:00",
+    "url": "https://www.meetup.com/uppsala-social/events/313522453/",
+    "source": "meetup.com",
+    "venue": "Uppsala Centralstation",
+    "address": "Uppsala Centralstation, läge C4",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-09T01:47:19.461Z",
+    "latitude": 59.8582098,
+    "longitude": 17.6465835
   },
   {
     "title": "Mindful Art Class - Charcoal drawing (with guest teacher!)! 🎨🌿✨",
@@ -19,7 +31,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-08T02:01:33.792Z",
+    "fetched_at": "2026-04-09T01:47:19.461Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -31,7 +43,7 @@
     "venue": "Fyrisfjädern Badmintonklubb",
     "address": "Badmintonstigen 1",
     "city": "Uppsala",
-    "fetched_at": "2026-04-08T02:01:33.792Z",
+    "fetched_at": "2026-04-09T01:47:19.461Z",
     "latitude": 59.8721729,
     "longitude": 17.6208429
   },
@@ -43,7 +55,7 @@
     "venue": "IT-HUSET Uppsala",
     "address": "Vaksalagatan 3",
     "city": "Uppsala",
-    "fetched_at": "2026-04-08T02:01:33.792Z",
+    "fetched_at": "2026-04-09T01:47:19.461Z",
     "latitude": 59.868543,
     "longitude": 17.6604173
   },
@@ -55,7 +67,7 @@
     "venue": "Padel Uppsala - UTK Hallen",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-08T02:01:33.792Z",
+    "fetched_at": "2026-04-09T01:47:19.461Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
   },
@@ -67,7 +79,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-08T02:01:33.792Z",
+    "fetched_at": "2026-04-09T01:47:19.461Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -79,7 +91,7 @@
     "venue": "UTK - Uppsala Tennis Klubb",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-08T02:01:33.792Z",
+    "fetched_at": "2026-04-09T01:47:19.461Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
   },
@@ -91,7 +103,9 @@
     "venue": "Omegapoint",
     "address": "Kungsängsgatan 14",
     "city": "Uppsala",
-    "fetched_at": "2026-04-08T02:01:33.792Z"
+    "fetched_at": "2026-04-09T01:47:19.461Z",
+    "latitude": 59.8571282,
+    "longitude": 17.6417146
   },
   {
     "title": "Mindful Art Class - Sculpt your own Paint Palette! (with guest teacher!)! 🎨🌿✨",
@@ -101,20 +115,20 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-08T02:01:33.792Z",
+    "fetched_at": "2026-04-09T01:47:19.461Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
   {
-    "title": "#46 Urban Sketching - Bror Hjorths Hus",
-    "startDate": "2026-05-02T13:00:00+02:00",
-    "url": "https://www.meetup.com/uppsala-social/events/314085398/",
+    "title": "Mobility training & Tennis🎾",
+    "startDate": "2026-04-24T18:30:00+02:00",
+    "url": "https://www.meetup.com/uppsala-tennis-mobility-trainings-group/events/314159561/",
     "source": "meetup.com",
-    "venue": "Bror Hjorths Hus",
-    "address": "Norbyvägen 26",
+    "venue": "UTK - Uppsala Tennis Klubb",
+    "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-08T02:01:33.792Z",
-    "latitude": 59.8492776,
-    "longitude": 17.6198763
+    "fetched_at": "2026-04-09T01:47:19.461Z",
+    "latitude": 59.8836959,
+    "longitude": 17.663896
   }
 ]
