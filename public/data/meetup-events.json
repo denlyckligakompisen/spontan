@@ -1,17 +1,5 @@
 [
   {
-    "title": "Socratic Cafe @ Kafferummet Storken",
-    "startDate": "2026-04-09T18:00:00+02:00",
-    "url": "https://www.meetup.com/uppsala-socratic-sessions/events/313776497/",
-    "source": "meetup.com",
-    "venue": "Kafferummet Storken",
-    "address": "Stora Torget 3, 75320 Uppsala",
-    "city": "Uppsala",
-    "fetched_at": "2026-04-09T01:47:19.461Z",
-    "latitude": 59.8582004,
-    "longitude": 17.6389802
-  },
-  {
     "title": "#44 Urban Sketching -  Day Trip to Salsta Slott",
     "startDate": "2026-04-12T09:45:00+02:00",
     "url": "https://www.meetup.com/uppsala-social/events/313522453/",
@@ -19,7 +7,7 @@
     "venue": "Uppsala Centralstation",
     "address": "Uppsala Centralstation, läge C4",
     "city": "Uppsala",
-    "fetched_at": "2026-04-09T01:47:19.461Z",
+    "fetched_at": "2026-04-10T01:59:15.020Z",
     "latitude": 59.8582098,
     "longitude": 17.6465835
   },
@@ -31,7 +19,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-09T01:47:19.461Z",
+    "fetched_at": "2026-04-10T01:59:15.020Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -43,7 +31,7 @@
     "venue": "Fyrisfjädern Badmintonklubb",
     "address": "Badmintonstigen 1",
     "city": "Uppsala",
-    "fetched_at": "2026-04-09T01:47:19.461Z",
+    "fetched_at": "2026-04-10T01:59:15.020Z",
     "latitude": 59.8721729,
     "longitude": 17.6208429
   },
@@ -55,7 +43,7 @@
     "venue": "IT-HUSET Uppsala",
     "address": "Vaksalagatan 3",
     "city": "Uppsala",
-    "fetched_at": "2026-04-09T01:47:19.461Z",
+    "fetched_at": "2026-04-10T01:59:15.020Z",
     "latitude": 59.868543,
     "longitude": 17.6604173
   },
@@ -67,7 +55,7 @@
     "venue": "Padel Uppsala - UTK Hallen",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-09T01:47:19.461Z",
+    "fetched_at": "2026-04-10T01:59:15.020Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
   },
@@ -79,7 +67,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-09T01:47:19.461Z",
+    "fetched_at": "2026-04-10T01:59:15.020Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -91,9 +79,21 @@
     "venue": "UTK - Uppsala Tennis Klubb",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-09T01:47:19.461Z",
+    "fetched_at": "2026-04-10T01:59:15.020Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
+  },
+  {
+    "title": "Diary writing  (English language)",
+    "startDate": "2026-04-21T17:00:00+02:00",
+    "url": "https://www.meetup.com/diary-writing-and-accelerating-your-personal-growth/events/314179331/",
+    "source": "meetup.com",
+    "venue": "Kafferummet Storken",
+    "address": "Stora Torget 3, 75320 Uppsala",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-10T01:59:15.020Z",
+    "latitude": 59.8582004,
+    "longitude": 17.6389802
   },
   {
     "title": "Agents: From ideas to Deployment",
@@ -103,7 +103,7 @@
     "venue": "Omegapoint",
     "address": "Kungsängsgatan 14",
     "city": "Uppsala",
-    "fetched_at": "2026-04-09T01:47:19.461Z",
+    "fetched_at": "2026-04-10T01:59:15.020Z",
     "latitude": 59.8571282,
     "longitude": 17.6417146
   },
@@ -115,7 +115,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-09T01:47:19.461Z",
+    "fetched_at": "2026-04-10T01:59:15.020Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -127,7 +127,7 @@
     "venue": "UTK - Uppsala Tennis Klubb",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-09T01:47:19.461Z",
+    "fetched_at": "2026-04-10T01:59:15.020Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
   }

@@ -414,5 +414,9 @@
   "Kungsängsgatan 14, Uppsala, Sweden": {
     "lat": 59.8571282,
     "lon": 17.6417146
+  },
+  "Vasaborgen, Uppsala, Sweden": {
+    "lat": 59.8530164,
+    "lon": 17.6347822
   }
 }
