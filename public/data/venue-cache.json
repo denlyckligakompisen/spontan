@@ -418,5 +418,21 @@
   "Vasaborgen, Uppsala, Sweden": {
     "lat": 59.8530164,
     "lon": 17.6347822
+  },
+  "Galleri Upsala, Uppsala, Sweden": {
+    "lat": 59.861012,
+    "lon": 17.6346144
+  },
+  "Hargshamns Folkets Hus, Uppsala, Sweden": {
+    "lat": 60.1680011,
+    "lon": 18.4640097
+  },
+  "CIK,  Knivsta, Uppsala, Sweden": {
+    "lat": 59.7214292,
+    "lon": 17.7921301
+  },
+  "Västerledskyrkan, Uppsala, Sweden": {
+    "lat": 59.6438155,
+    "lon": 17.0652927
   }
 }

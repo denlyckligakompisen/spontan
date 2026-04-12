@@ -1,39 +1,12 @@
 [
   {
-    "title": "Bonnie & Clyde",
-    "venue": "Uppsala Stadsteater (Stora scenen)",
-    "date": "2026-04-11T15:00:00",
-    "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
-    "image": null,
-    "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.821Z"
-  },
-  {
-    "title": "Vi är Orlando",
-    "venue": "Uppsala Stadsteater (Lilla scenen)",
-    "date": "2026-04-11T18:00:00",
-    "url": "https://www.uppsalastadsteater.se/forestallningar/vi-ar-orlando/",
-    "image": null,
-    "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.822Z"
-  },
-  {
-    "title": "Pappa är död",
-    "venue": "Uppsala Stadsteater (Ettan)",
-    "date": "2026-04-11T18:00:00",
-    "url": "https://www.uppsalastadsteater.se/forestallningar/pappa-ar-dod/",
-    "image": null,
-    "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.823Z"
-  },
-  {
     "title": "Macbeth",
     "venue": "Uppsala Stadsteater (Stora scenen)",
     "date": "2026-04-14T18:00:00",
     "url": "https://www.uppsalastadsteater.se/forestallningar/macbeth/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.824Z"
+    "fetched_at": "2026-04-12T02:01:28.299Z"
   },
   {
     "title": "Macbeth",
@@ -42,7 +15,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/macbeth/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.824Z"
+    "fetched_at": "2026-04-12T02:01:28.301Z"
   },
   {
     "title": "Pappa är död",
@@ -51,7 +24,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/pappa-ar-dod/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.825Z"
+    "fetched_at": "2026-04-12T02:01:28.302Z"
   },
   {
     "title": "Vi är Orlando",
@@ -60,7 +33,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/vi-ar-orlando/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.826Z"
+    "fetched_at": "2026-04-12T02:01:28.303Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -69,7 +42,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.827Z"
+    "fetched_at": "2026-04-12T02:01:28.303Z"
   },
   {
     "title": "Pappa är död",
@@ -78,7 +51,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/pappa-ar-dod/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.828Z"
+    "fetched_at": "2026-04-12T02:01:28.304Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -87,7 +60,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.828Z"
+    "fetched_at": "2026-04-12T02:01:28.305Z"
   },
   {
     "title": "Vi är Orlando",
@@ -96,7 +69,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/vi-ar-orlando/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.829Z"
+    "fetched_at": "2026-04-12T02:01:28.306Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -105,7 +78,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.836Z"
+    "fetched_at": "2026-04-12T02:01:28.307Z"
   },
   {
     "title": "Vi är Orlando",
@@ -114,7 +87,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/vi-ar-orlando/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.837Z"
+    "fetched_at": "2026-04-12T02:01:28.307Z"
   },
   {
     "title": "Pappa är död",
@@ -123,7 +96,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/pappa-ar-dod/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.839Z"
+    "fetched_at": "2026-04-12T02:01:28.308Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -132,7 +105,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.840Z"
+    "fetched_at": "2026-04-12T02:01:28.309Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -141,7 +114,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.840Z"
+    "fetched_at": "2026-04-12T02:01:28.310Z"
   },
   {
     "title": "Vi är Orlando",
@@ -150,7 +123,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/vi-ar-orlando/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.841Z"
+    "fetched_at": "2026-04-12T02:01:28.311Z"
   },
   {
     "title": "Vi är Orlando",
@@ -159,7 +132,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/vi-ar-orlando/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.841Z"
+    "fetched_at": "2026-04-12T02:01:28.312Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -168,7 +141,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.841Z"
+    "fetched_at": "2026-04-12T02:01:28.312Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -177,7 +150,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.848Z"
+    "fetched_at": "2026-04-12T02:01:28.313Z"
   },
   {
     "title": "Vi är Orlando",
@@ -186,7 +159,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/vi-ar-orlando/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.849Z"
+    "fetched_at": "2026-04-12T02:01:28.314Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -195,7 +168,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.850Z"
+    "fetched_at": "2026-04-12T02:01:28.314Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -204,7 +177,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.850Z"
+    "fetched_at": "2026-04-12T02:01:28.315Z"
   },
   {
     "title": "Vi är Orlando",
@@ -213,7 +186,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/vi-ar-orlando/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.851Z"
+    "fetched_at": "2026-04-12T02:01:28.316Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -222,7 +195,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.851Z"
+    "fetched_at": "2026-04-12T02:01:28.317Z"
   },
   {
     "title": "Vi är Orlando",
@@ -231,7 +204,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/vi-ar-orlando/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.852Z"
+    "fetched_at": "2026-04-12T02:01:28.317Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -240,7 +213,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.852Z"
+    "fetched_at": "2026-04-12T02:01:28.318Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -249,7 +222,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.853Z"
+    "fetched_at": "2026-04-12T02:01:28.319Z"
   },
   {
     "title": "Macbeth",
@@ -258,16 +231,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/macbeth/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.853Z"
-  },
-  {
-    "title": "Vi är Orlando",
-    "venue": "Uppsala Stadsteater (Lilla scenen)",
-    "date": "2026-05-08T19:00:00",
-    "url": "https://www.uppsalastadsteater.se/forestallningar/vi-ar-orlando/",
-    "image": null,
-    "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.854Z"
+    "fetched_at": "2026-04-12T02:01:28.320Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -276,7 +240,16 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.854Z"
+    "fetched_at": "2026-04-12T02:01:28.321Z"
+  },
+  {
+    "title": "Vi är Orlando",
+    "venue": "Uppsala Stadsteater (Lilla scenen)",
+    "date": "2026-05-08T19:00:00",
+    "url": "https://www.uppsalastadsteater.se/forestallningar/vi-ar-orlando/",
+    "image": null,
+    "source": "uppsalastadsteater.se",
+    "fetched_at": "2026-04-12T02:01:28.321Z"
   },
   {
     "title": "Vi är Orlando",
@@ -285,7 +258,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/vi-ar-orlando/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.855Z"
+    "fetched_at": "2026-04-12T02:01:28.322Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -294,7 +267,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.855Z"
+    "fetched_at": "2026-04-12T02:01:28.322Z"
   },
   {
     "title": "Röster",
@@ -303,7 +276,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/roster/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.855Z"
+    "fetched_at": "2026-04-12T02:01:28.323Z"
   },
   {
     "title": "Röster",
@@ -312,7 +285,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/roster/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.856Z"
+    "fetched_at": "2026-04-12T02:01:28.324Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -321,7 +294,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.856Z"
+    "fetched_at": "2026-04-12T02:01:28.324Z"
   },
   {
     "title": "Röster",
@@ -330,7 +303,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/roster/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.856Z"
+    "fetched_at": "2026-04-12T02:01:28.325Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -339,7 +312,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.857Z"
+    "fetched_at": "2026-04-12T02:01:28.326Z"
   },
   {
     "title": "Röster",
@@ -348,7 +321,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/roster/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.857Z"
+    "fetched_at": "2026-04-12T02:01:28.326Z"
   },
   {
     "title": "Röster",
@@ -357,7 +330,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/roster/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.857Z"
+    "fetched_at": "2026-04-12T02:01:28.327Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -366,7 +339,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.857Z"
+    "fetched_at": "2026-04-12T02:01:28.328Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -375,7 +348,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.858Z"
+    "fetched_at": "2026-04-12T02:01:28.328Z"
   },
   {
     "title": "Röster",
@@ -384,7 +357,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/roster/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.858Z"
+    "fetched_at": "2026-04-12T02:01:28.329Z"
   },
   {
     "title": "Röster",
@@ -393,7 +366,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/roster/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.858Z"
+    "fetched_at": "2026-04-12T02:01:28.329Z"
   },
   {
     "title": "Röster",
@@ -402,7 +375,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/roster/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.859Z"
+    "fetched_at": "2026-04-12T02:01:28.330Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -411,7 +384,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.859Z"
+    "fetched_at": "2026-04-12T02:01:28.331Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -420,7 +393,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.860Z"
+    "fetched_at": "2026-04-12T02:01:28.332Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -429,7 +402,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.861Z"
+    "fetched_at": "2026-04-12T02:01:28.332Z"
   },
   {
     "title": "Studie i mänskligt beteende",
@@ -438,7 +411,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/studie-i-manskligt-beteende/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.861Z"
+    "fetched_at": "2026-04-12T02:01:28.333Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -447,7 +420,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.861Z"
+    "fetched_at": "2026-04-12T02:01:28.334Z"
   },
   {
     "title": "Studie i mänskligt beteende",
@@ -456,7 +429,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/studie-i-manskligt-beteende/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.862Z"
+    "fetched_at": "2026-04-12T02:01:28.334Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -465,7 +438,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.863Z"
+    "fetched_at": "2026-04-12T02:01:28.335Z"
   },
   {
     "title": "Studie i mänskligt beteende",
@@ -474,7 +447,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/studie-i-manskligt-beteende/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.863Z"
+    "fetched_at": "2026-04-12T02:01:28.336Z"
   },
   {
     "title": "Studie i mänskligt beteende",
@@ -483,7 +456,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/studie-i-manskligt-beteende/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.864Z"
+    "fetched_at": "2026-04-12T02:01:28.342Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -492,7 +465,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.864Z"
+    "fetched_at": "2026-04-12T02:01:28.343Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -501,7 +474,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.865Z"
+    "fetched_at": "2026-04-12T02:01:28.344Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -510,7 +483,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.866Z"
+    "fetched_at": "2026-04-12T02:01:28.344Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -519,7 +492,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.866Z"
+    "fetched_at": "2026-04-12T02:01:28.345Z"
   },
   {
     "title": "Bonnie & Clyde",
@@ -528,7 +501,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bonnie-clyde/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.867Z"
+    "fetched_at": "2026-04-12T02:01:28.346Z"
   },
   {
     "title": "Bara två stjärnor",
@@ -537,7 +510,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bara-tva-stjarnor/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.867Z"
+    "fetched_at": "2026-04-12T02:01:28.346Z"
   },
   {
     "title": "Bara två stjärnor",
@@ -546,7 +519,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bara-tva-stjarnor/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.868Z"
+    "fetched_at": "2026-04-12T02:01:28.347Z"
   },
   {
     "title": "Bara två stjärnor",
@@ -555,7 +528,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bara-tva-stjarnor/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.869Z"
+    "fetched_at": "2026-04-12T02:01:28.347Z"
   },
   {
     "title": "Bara två stjärnor",
@@ -564,7 +537,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bara-tva-stjarnor/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.869Z"
+    "fetched_at": "2026-04-12T02:01:28.348Z"
   },
   {
     "title": "Bara två stjärnor",
@@ -573,7 +546,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bara-tva-stjarnor/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.870Z"
+    "fetched_at": "2026-04-12T02:01:28.349Z"
   },
   {
     "title": "Bara två stjärnor",
@@ -582,7 +555,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bara-tva-stjarnor/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.870Z"
+    "fetched_at": "2026-04-12T02:01:28.349Z"
   },
   {
     "title": "Bara två stjärnor",
@@ -591,7 +564,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bara-tva-stjarnor/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.871Z"
+    "fetched_at": "2026-04-12T02:01:28.350Z"
   },
   {
     "title": "Bara två stjärnor",
@@ -600,7 +573,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bara-tva-stjarnor/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.872Z"
+    "fetched_at": "2026-04-12T02:01:28.350Z"
   },
   {
     "title": "Bara två stjärnor",
@@ -609,7 +582,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bara-tva-stjarnor/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.872Z"
+    "fetched_at": "2026-04-12T02:01:28.351Z"
   },
   {
     "title": "Bara två stjärnor",
@@ -618,7 +591,7 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bara-tva-stjarnor/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.873Z"
+    "fetched_at": "2026-04-12T02:01:28.352Z"
   },
   {
     "title": "Bara två stjärnor",
@@ -627,6 +600,6 @@
     "url": "https://www.uppsalastadsteater.se/forestallningar/bara-tva-stjarnor/",
     "image": null,
     "source": "uppsalastadsteater.se",
-    "fetched_at": "2026-04-11T01:52:43.873Z"
+    "fetched_at": "2026-04-12T02:01:28.352Z"
   }
 ]
