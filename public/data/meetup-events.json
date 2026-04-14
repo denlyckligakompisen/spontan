@@ -7,7 +7,7 @@
     "venue": "IT-HUSET Uppsala",
     "address": "Vaksalagatan 3",
     "city": "Uppsala",
-    "fetched_at": "2026-04-13T02:04:39.119Z",
+    "fetched_at": "2026-04-14T02:01:00.406Z",
     "latitude": 59.868543,
     "longitude": 17.6604173
   },
@@ -19,7 +19,7 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-13T02:04:39.119Z",
+    "fetched_at": "2026-04-14T02:01:00.406Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
   },
@@ -31,9 +31,21 @@
     "venue": "Padel Uppsala - UTK Hallen",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-13T02:04:39.119Z",
+    "fetched_at": "2026-04-14T02:01:00.406Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
+  },
+  {
+    "title": "Friday afterwork at O'Neill's Irish pub",
+    "startDate": "2026-04-17T19:00:00+02:00",
+    "url": "https://www.meetup.com/uppsala-social/events/314233508/",
+    "source": "meetup.com",
+    "venue": "O'Neill's",
+    "address": "Dragarbrunnsgatan 53,",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-14T02:01:00.406Z",
+    "latitude": 59.8572528,
+    "longitude": 17.6435434
   },
   {
     "title": "Mindful Art Class - Soft Pastel Dreamy Landscape ",
@@ -43,7 +55,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-13T02:04:39.119Z",
+    "fetched_at": "2026-04-14T02:01:00.406Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -55,7 +67,7 @@
     "venue": "UTK - Uppsala Tennis Klubb",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-13T02:04:39.119Z",
+    "fetched_at": "2026-04-14T02:01:00.406Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
   },
@@ -67,7 +79,7 @@
     "venue": "Fyrisfjädern Badmintonklubb",
     "address": "Badmintonstigen 1",
     "city": "Uppsala",
-    "fetched_at": "2026-04-13T02:04:39.119Z",
+    "fetched_at": "2026-04-14T02:01:00.406Z",
     "latitude": 59.8721729,
     "longitude": 17.6208429
   },
@@ -79,7 +91,7 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-13T02:04:39.119Z",
+    "fetched_at": "2026-04-14T02:01:00.406Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
   },
@@ -91,7 +103,7 @@
     "venue": "Omegapoint",
     "address": "Kungsängsgatan 14",
     "city": "Uppsala",
-    "fetched_at": "2026-04-13T02:04:39.119Z",
+    "fetched_at": "2026-04-14T02:01:00.406Z",
     "latitude": 59.8571282,
     "longitude": 17.6417146
   },
@@ -103,7 +115,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-13T02:04:39.119Z",
+    "fetched_at": "2026-04-14T02:01:00.406Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -115,7 +127,7 @@
     "venue": "UTK - Uppsala Tennis Klubb",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-13T02:04:39.119Z",
+    "fetched_at": "2026-04-14T02:01:00.406Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
   }
