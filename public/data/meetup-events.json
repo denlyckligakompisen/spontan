@@ -1,17 +1,5 @@
 [
   {
-    "title": "Co-Working dag 👨🏼‍💻👩🏽‍💻",
-    "startDate": "2026-04-14T09:00:00+02:00",
-    "url": "https://www.meetup.com/friends-of-46elks-uppsala/events/313941833/",
-    "source": "meetup.com",
-    "venue": "IT-HUSET Uppsala",
-    "address": "Vaksalagatan 3",
-    "city": "Uppsala",
-    "fetched_at": "2026-04-14T02:01:00.406Z",
-    "latitude": 59.868543,
-    "longitude": 17.6604173
-  },
-  {
     "title": "Socrates Cafe @ Kafferumet Storken",
     "startDate": "2026-04-16T18:00:00+02:00",
     "url": "https://www.meetup.com/uppsala-socratic-sessions/events/314217198/",
@@ -19,7 +7,7 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-14T02:01:00.406Z",
+    "fetched_at": "2026-04-15T02:07:05.335Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
   },
@@ -31,7 +19,7 @@
     "venue": "Padel Uppsala - UTK Hallen",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-14T02:01:00.406Z",
+    "fetched_at": "2026-04-15T02:07:05.335Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
   },
@@ -43,7 +31,7 @@
     "venue": "O'Neill's",
     "address": "Dragarbrunnsgatan 53,",
     "city": "Uppsala",
-    "fetched_at": "2026-04-14T02:01:00.406Z",
+    "fetched_at": "2026-04-15T02:07:05.335Z",
     "latitude": 59.8572528,
     "longitude": 17.6435434
   },
@@ -55,7 +43,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-14T02:01:00.406Z",
+    "fetched_at": "2026-04-15T02:07:05.335Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -67,9 +55,19 @@
     "venue": "UTK - Uppsala Tennis Klubb",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-14T02:01:00.406Z",
+    "fetched_at": "2026-04-15T02:07:05.335Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
+  },
+  {
+    "title": "Sunday Chicken Wings",
+    "startDate": "2026-04-19T14:00:00+02:00",
+    "url": "https://www.meetup.com/1-immigrants-society/events/314264727/",
+    "source": "meetup.com",
+    "venue": "Pitchers",
+    "address": "Påvel Snickares gränd 1, 753 20 Uppsala",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-15T02:07:05.335Z"
   },
   {
     "title": "Sunday Badminton",
@@ -79,7 +77,7 @@
     "venue": "Fyrisfjädern Badmintonklubb",
     "address": "Badmintonstigen 1",
     "city": "Uppsala",
-    "fetched_at": "2026-04-14T02:01:00.406Z",
+    "fetched_at": "2026-04-15T02:07:05.335Z",
     "latitude": 59.8721729,
     "longitude": 17.6208429
   },
@@ -91,7 +89,7 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-14T02:01:00.406Z",
+    "fetched_at": "2026-04-15T02:07:05.335Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
   },
@@ -103,7 +101,7 @@
     "venue": "Omegapoint",
     "address": "Kungsängsgatan 14",
     "city": "Uppsala",
-    "fetched_at": "2026-04-14T02:01:00.406Z",
+    "fetched_at": "2026-04-15T02:07:05.335Z",
     "latitude": 59.8571282,
     "longitude": 17.6417146
   },
@@ -115,7 +113,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-14T02:01:00.406Z",
+    "fetched_at": "2026-04-15T02:07:05.335Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -127,7 +125,7 @@
     "venue": "UTK - Uppsala Tennis Klubb",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-14T02:01:00.406Z",
+    "fetched_at": "2026-04-15T02:07:05.335Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
   }
