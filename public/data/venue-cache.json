@@ -438,5 +438,9 @@
   "Uppsala Östra Station, Uppsala, Sweden": {
     "lat": 59.8578214,
     "lon": 17.6494714
+  },
+  "CIK , Knivsta, Uppsala, Sweden": {
+    "lat": 59.7214292,
+    "lon": 17.7921301
   }
 }
