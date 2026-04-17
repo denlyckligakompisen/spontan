@@ -1,17 +1,5 @@
 [
   {
-    "title": "Socrates Cafe @ Kafferumet Storken",
-    "startDate": "2026-04-16T18:00:00+02:00",
-    "url": "https://www.meetup.com/uppsala-socratic-sessions/events/314217198/",
-    "source": "meetup.com",
-    "venue": "Kafferummet Storken",
-    "address": "Stora Torget 3, 75320 Uppsala",
-    "city": "Uppsala",
-    "fetched_at": "2026-04-16T02:14:48.756Z",
-    "latitude": 59.8582004,
-    "longitude": 17.6389802
-  },
-  {
     "title": "Padel&Buziness",
     "startDate": "2026-04-17T07:00:00+02:00",
     "url": "https://www.meetup.com/friends-of-46elks-uppsala/events/313080284/",
@@ -19,21 +7,9 @@
     "venue": "Padel Uppsala - UTK Hallen",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-16T02:14:48.756Z",
+    "fetched_at": "2026-04-17T02:03:43.367Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
-  },
-  {
-    "title": "Friday afterwork at O'Neill's Irish pub",
-    "startDate": "2026-04-17T19:00:00+02:00",
-    "url": "https://www.meetup.com/uppsala-social/events/314233508/",
-    "source": "meetup.com",
-    "venue": "O'Neill's",
-    "address": "Dragarbrunnsgatan 53,",
-    "city": "Uppsala",
-    "fetched_at": "2026-04-16T02:14:48.757Z",
-    "latitude": 59.8572528,
-    "longitude": 17.6435434
   },
   {
     "title": "Mindful Art Class - Soft Pastel Dreamy Landscape ",
@@ -43,7 +19,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-16T02:14:48.757Z",
+    "fetched_at": "2026-04-17T02:03:43.367Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -55,7 +31,7 @@
     "venue": "UTK - Uppsala Tennis Klubb",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-16T02:14:48.757Z",
+    "fetched_at": "2026-04-17T02:03:43.367Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
   },
@@ -67,7 +43,7 @@
     "venue": "Gamla Uppsala kyrka",
     "address": "Disavägen 8, 754 40",
     "city": "Uppsala",
-    "fetched_at": "2026-04-16T02:14:48.757Z"
+    "fetched_at": "2026-04-17T02:03:43.367Z"
   },
   {
     "title": "Sunday Chicken Wings",
@@ -77,7 +53,7 @@
     "venue": "Pitchers",
     "address": "Påvel Snickares gränd 1, 753 20 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-16T02:14:48.757Z"
+    "fetched_at": "2026-04-17T02:03:43.367Z"
   },
   {
     "title": "Sunday Badminton",
@@ -87,7 +63,7 @@
     "venue": "Fyrisfjädern Badmintonklubb",
     "address": "Badmintonstigen 1",
     "city": "Uppsala",
-    "fetched_at": "2026-04-16T02:14:48.757Z",
+    "fetched_at": "2026-04-17T02:03:43.367Z",
     "latitude": 59.8721729,
     "longitude": 17.6208429
   },
@@ -99,7 +75,7 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-16T02:14:48.757Z",
+    "fetched_at": "2026-04-17T02:03:43.367Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
   },
@@ -111,7 +87,7 @@
     "venue": "Omegapoint",
     "address": "Kungsängsgatan 14",
     "city": "Uppsala",
-    "fetched_at": "2026-04-16T02:14:48.757Z",
+    "fetched_at": "2026-04-17T02:03:43.367Z",
     "latitude": 59.8571282,
     "longitude": 17.6417146
   },
@@ -123,7 +99,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-16T02:14:48.757Z",
+    "fetched_at": "2026-04-17T02:03:43.367Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -135,8 +111,18 @@
     "venue": "UTK - Uppsala Tennis Klubb",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-16T02:14:48.757Z",
+    "fetched_at": "2026-04-17T02:03:43.367Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
+  },
+  {
+    "title": "UPPSALA - Paint & Sip | Sans Studio x Grandpa",
+    "startDate": "2026-04-24T19:30:00+02:00",
+    "url": "https://www.meetup.com/sans-studio-paint-and-sip/events/314278448/",
+    "source": "meetup.com",
+    "venue": "Grandpa Uppsala",
+    "address": "Svartbäcksgatan 1B",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-17T02:03:43.367Z"
   }
 ]
