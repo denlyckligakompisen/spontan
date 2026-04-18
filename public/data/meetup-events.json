@@ -1,17 +1,5 @@
 [
   {
-    "title": "Padel&Buziness",
-    "startDate": "2026-04-17T07:00:00+02:00",
-    "url": "https://www.meetup.com/friends-of-46elks-uppsala/events/313080284/",
-    "source": "meetup.com",
-    "venue": "Padel Uppsala - UTK Hallen",
-    "address": "Edith Södergrans gata 7",
-    "city": "Uppsala",
-    "fetched_at": "2026-04-17T02:03:43.367Z",
-    "latitude": 59.8836959,
-    "longitude": 17.663896
-  },
-  {
     "title": "Mindful Art Class - Soft Pastel Dreamy Landscape ",
     "startDate": "2026-04-18T13:00:00+02:00",
     "url": "https://www.meetup.com/mindful-art-class/events/314055843/",
@@ -19,7 +7,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-17T02:03:43.367Z",
+    "fetched_at": "2026-04-18T01:59:56.319Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -31,7 +19,7 @@
     "venue": "UTK - Uppsala Tennis Klubb",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-17T02:03:43.367Z",
+    "fetched_at": "2026-04-18T01:59:56.319Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
   },
@@ -43,7 +31,7 @@
     "venue": "Gamla Uppsala kyrka",
     "address": "Disavägen 8, 754 40",
     "city": "Uppsala",
-    "fetched_at": "2026-04-17T02:03:43.367Z"
+    "fetched_at": "2026-04-18T01:59:56.319Z"
   },
   {
     "title": "Sunday Chicken Wings",
@@ -53,7 +41,7 @@
     "venue": "Pitchers",
     "address": "Påvel Snickares gränd 1, 753 20 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-17T02:03:43.367Z"
+    "fetched_at": "2026-04-18T01:59:56.319Z"
   },
   {
     "title": "Sunday Badminton",
@@ -63,7 +51,7 @@
     "venue": "Fyrisfjädern Badmintonklubb",
     "address": "Badmintonstigen 1",
     "city": "Uppsala",
-    "fetched_at": "2026-04-17T02:03:43.367Z",
+    "fetched_at": "2026-04-18T01:59:56.319Z",
     "latitude": 59.8721729,
     "longitude": 17.6208429
   },
@@ -75,7 +63,7 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-17T02:03:43.367Z",
+    "fetched_at": "2026-04-18T01:59:56.319Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
   },
@@ -87,7 +75,7 @@
     "venue": "Omegapoint",
     "address": "Kungsängsgatan 14",
     "city": "Uppsala",
-    "fetched_at": "2026-04-17T02:03:43.367Z",
+    "fetched_at": "2026-04-18T01:59:56.319Z",
     "latitude": 59.8571282,
     "longitude": 17.6417146
   },
@@ -99,9 +87,21 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-17T02:03:43.367Z",
+    "fetched_at": "2026-04-18T01:59:56.319Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
+  },
+  {
+    "title": "Socratic Cafe @ Kafferummet Storken",
+    "startDate": "2026-04-23T18:00:00+02:00",
+    "url": "https://www.meetup.com/uppsala-socratic-sessions/events/314313287/",
+    "source": "meetup.com",
+    "venue": "Kafferummet Storken",
+    "address": "Stora Torget 3, 75320 Uppsala",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-18T01:59:56.319Z",
+    "latitude": 59.8582004,
+    "longitude": 17.6389802
   },
   {
     "title": "Mobility training & Tennis🎾",
@@ -111,7 +111,7 @@
     "venue": "UTK - Uppsala Tennis Klubb",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-17T02:03:43.367Z",
+    "fetched_at": "2026-04-18T01:59:56.319Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
   },
@@ -123,6 +123,16 @@
     "venue": "Grandpa Uppsala",
     "address": "Svartbäcksgatan 1B",
     "city": "Uppsala",
-    "fetched_at": "2026-04-17T02:03:43.367Z"
+    "fetched_at": "2026-04-18T01:59:56.319Z"
+  },
+  {
+    "title": "Uppsala.js #44 - Daily Agent Coding",
+    "startDate": "2026-04-28T17:30:00+02:00",
+    "url": "https://www.meetup.com/uppsalajs/events/314210222/",
+    "source": "meetup.com",
+    "venue": "Codevum",
+    "address": "Torgny Segerstedts Allé 87",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-18T01:59:56.319Z"
   }
 ]
