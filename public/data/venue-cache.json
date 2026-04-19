@@ -442,5 +442,25 @@
   "CIK , Knivsta, Uppsala, Sweden": {
     "lat": 59.7214292,
     "lon": 17.7921301
+  },
+  "Disagården, Uppsala, Sweden": {
+    "lat": 59.900614,
+    "lon": 17.6288856
+  },
+  "Gamla Uppsala kyrka, Uppsala, Sweden": {
+    "lat": 59.8995004,
+    "lon": 17.6319116
+  },
+  "Påvel Snickares gränd 1, 753 20 Uppsala, Uppsala, Sweden": {
+    "lat": 59.8594,
+    "lon": 17.6392584
+  },
+  "Svartbäcksgatan 1B, Uppsala, Sweden": {
+    "lat": 59.8591065,
+    "lon": 17.6383471
+  },
+  "Torgny Segerstedts Allé 87, Uppsala, Sweden": {
+    "lat": 59.8345247,
+    "lon": 17.6338718
   }
 }

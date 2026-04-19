@@ -1,93 +1,12 @@
 [
   {
-    "title": "Gitarren från havet",
-    "venue": "Fyrisbiografen",
-    "date": "2026-04-18T13:00:00",
-    "url": "https://fyrisbiografen.se/gitarren-fran-havet",
-    "image": null,
-    "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
-  },
-  {
-    "title": "När Mumbo Jumbo blev jättestor",
-    "venue": "Fyrisbiografen",
-    "date": "2026-04-18T13:10:00",
-    "url": "https://fyrisbiografen.se/nar-mumbo-jumbo-blev-jattestor",
-    "image": null,
-    "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
-  },
-  {
-    "title": "Celtic Utopia",
-    "venue": "Fyrisbiografen",
-    "date": "2026-04-18T14:10:00",
-    "url": "https://fyrisbiografen.se/celtic-utopia",
-    "image": null,
-    "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
-  },
-  {
-    "title": "Hamnet",
-    "venue": "Fyrisbiografen",
-    "date": "2026-04-18T15:00:00",
-    "url": "https://fyrisbiografen.se/hamnet",
-    "image": null,
-    "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
-  },
-  {
-    "title": "Nyårsfesten",
-    "venue": "Fyrisbiografen",
-    "date": "2026-04-18T16:00:00",
-    "url": "https://fyrisbiografen.se/nyarsfesten",
-    "image": null,
-    "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
-  },
-  {
-    "title": "Je m'appelle Agneta",
-    "venue": "Fyrisbiografen",
-    "date": "2026-04-18T17:40:00",
-    "url": "https://fyrisbiografen.se/je-mappelle-agneta",
-    "image": null,
-    "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
-  },
-  {
-    "title": "Father Mother Sister Brother",
-    "venue": "Fyrisbiografen",
-    "date": "2026-04-18T18:00:00",
-    "url": "https://fyrisbiografen.se/father-mother-sister-brother",
-    "image": null,
-    "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
-  },
-  {
-    "title": "The Drama",
-    "venue": "Fyrisbiografen",
-    "date": "2026-04-18T20:10:00",
-    "url": "https://fyrisbiografen.se/the-drama",
-    "image": null,
-    "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
-  },
-  {
-    "title": "If I Had Legs I'd Kick You",
-    "venue": "Fyrisbiografen",
-    "date": "2026-04-18T20:20:00",
-    "url": "https://fyrisbiografen.se/if-i-had-legs-id-kick-you",
-    "image": null,
-    "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
-  },
-  {
     "title": "Operation bäver",
     "venue": "Fyrisbiografen",
     "date": "2026-04-19T13:00:00",
     "url": "https://fyrisbiografen.se/operation-baver",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "När Mumbo Jumbo blev jättestor",
@@ -96,7 +15,7 @@
     "url": "https://fyrisbiografen.se/nar-mumbo-jumbo-blev-jattestor",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Biodlaren",
@@ -105,7 +24,7 @@
     "url": "https://fyrisbiografen.se/biodlaren",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "En poet",
@@ -114,7 +33,7 @@
     "url": "https://fyrisbiografen.se/en-poet",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "I Swear",
@@ -123,7 +42,7 @@
     "url": "https://fyrisbiografen.se/i-swear",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Diktatorns tårta",
@@ -132,7 +51,7 @@
     "url": "https://fyrisbiografen.se/diktatorns-tarta",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Josef Mengeles försvinnande",
@@ -141,7 +60,7 @@
     "url": "https://fyrisbiografen.se/josef-mengeles-forsvinnande",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "The Drama",
@@ -150,7 +69,7 @@
     "url": "https://fyrisbiografen.se/the-drama",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "I Swear",
@@ -159,7 +78,7 @@
     "url": "https://fyrisbiografen.se/i-swear",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Urchin",
@@ -168,7 +87,7 @@
     "url": "https://fyrisbiografen.se/urchin",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Franz K.",
@@ -177,7 +96,7 @@
     "url": "https://fyrisbiografen.se/franz-k",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Hamnet",
@@ -186,7 +105,7 @@
     "url": "https://fyrisbiografen.se/hamnet",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Josef Mengeles försvinnande",
@@ -195,7 +114,7 @@
     "url": "https://fyrisbiografen.se/josef-mengeles-forsvinnande",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Diktatorns tårta",
@@ -204,7 +123,7 @@
     "url": "https://fyrisbiografen.se/diktatorns-tarta",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Je m'appelle Agneta",
@@ -213,7 +132,7 @@
     "url": "https://fyrisbiografen.se/je-mappelle-agneta",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "En poet",
@@ -222,7 +141,7 @@
     "url": "https://fyrisbiografen.se/en-poet",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Father Mother Sister Brother",
@@ -231,7 +150,7 @@
     "url": "https://fyrisbiografen.se/father-mother-sister-brother",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "If I Had Legs I'd Kick You",
@@ -240,7 +159,7 @@
     "url": "https://fyrisbiografen.se/if-i-had-legs-id-kick-you",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "If I Had Legs I'd Kick You",
@@ -249,7 +168,7 @@
     "url": "https://fyrisbiografen.se/if-i-had-legs-id-kick-you",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Nyårsfesten",
@@ -258,7 +177,7 @@
     "url": "https://fyrisbiografen.se/nyarsfesten",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "I Swear",
@@ -267,7 +186,7 @@
     "url": "https://fyrisbiografen.se/i-swear",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Father Mother Sister Brother",
@@ -276,7 +195,7 @@
     "url": "https://fyrisbiografen.se/father-mother-sister-brother",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Peak Everything",
@@ -285,7 +204,7 @@
     "url": "https://fyrisbiografen.se/peak-everything",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Biodlaren",
@@ -294,7 +213,7 @@
     "url": "https://fyrisbiografen.se/biodlaren",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Två åklagare",
@@ -303,7 +222,7 @@
     "url": "https://fyrisbiografen.se/tva-aklagare",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "En poet",
@@ -312,7 +231,7 @@
     "url": "https://fyrisbiografen.se/en-poet",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Biodlaren",
@@ -321,7 +240,7 @@
     "url": "https://fyrisbiografen.se/biodlaren",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Franz K.",
@@ -330,7 +249,7 @@
     "url": "https://fyrisbiografen.se/franz-k",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Hamnet",
@@ -339,7 +258,7 @@
     "url": "https://fyrisbiografen.se/hamnet",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Urchin",
@@ -348,7 +267,7 @@
     "url": "https://fyrisbiografen.se/urchin",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Je m'appelle Agneta",
@@ -357,7 +276,7 @@
     "url": "https://fyrisbiografen.se/je-mappelle-agneta",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Nyårsfesten",
@@ -366,7 +285,7 @@
     "url": "https://fyrisbiografen.se/nyarsfesten",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.793Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Diktatorns tårta",
@@ -375,7 +294,7 @@
     "url": "https://fyrisbiografen.se/diktatorns-tarta",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.794Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "The Drama",
@@ -384,7 +303,7 @@
     "url": "https://fyrisbiografen.se/the-drama",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.794Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "La Belle Année - det vackra året",
@@ -393,7 +312,7 @@
     "url": "https://fyrisbiografen.se/la-belle-annee-det-vackra-aret",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.794Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Broken Flowers",
@@ -402,7 +321,7 @@
     "url": "https://fyrisbiografen.se/broken-flowers",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.794Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "En poet (eng. text)",
@@ -411,7 +330,7 @@
     "url": "https://fyrisbiografen.se/en-poet-eng-text",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.794Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Konsten att skrika",
@@ -420,7 +339,7 @@
     "url": "https://fyrisbiografen.se/konsten-att-skrika",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.794Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Ådalen 31",
@@ -429,7 +348,7 @@
     "url": "https://fyrisbiografen.se/adalen-31",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.794Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Kill the Jockey",
@@ -438,7 +357,7 @@
     "url": "https://fyrisbiografen.se/kill-the-jockey",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.794Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Kortfilmer från Region Uppsala folkhögskola 2026",
@@ -447,7 +366,7 @@
     "url": "https://fyrisbiografen.se/kortfilmer-fran-region-uppsala-folkhogskola-2026",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.794Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   },
   {
     "title": "Kortfilmer från Region Uppsala folkhögskola 2026",
@@ -456,6 +375,6 @@
     "url": "https://fyrisbiografen.se/kortfilmer-fran-region-uppsala-folkhogskola-2026",
     "image": null,
     "source": "fyrisbiografen",
-    "fetched_at": "2026-04-18T01:58:13.794Z"
+    "fetched_at": "2026-04-19T02:05:42.442Z"
   }
 ]
