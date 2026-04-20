@@ -1,29 +1,5 @@
 [
   {
-    "title": "#45 Urban Sketching -  Gamla Uppsala kyrka",
-    "startDate": "2026-04-19T10:00:00+02:00",
-    "url": "https://www.meetup.com/uppsala-social/events/313727158/",
-    "source": "meetup.com",
-    "venue": "Gamla Uppsala kyrka",
-    "address": "Disavägen 8, 754 40",
-    "city": "Uppsala",
-    "fetched_at": "2026-04-19T02:07:26.223Z",
-    "latitude": 59.8995004,
-    "longitude": 17.6319116
-  },
-  {
-    "title": "Sunday Chicken Wings",
-    "startDate": "2026-04-19T14:00:00+02:00",
-    "url": "https://www.meetup.com/1-immigrants-society/events/314264727/",
-    "source": "meetup.com",
-    "venue": "Pitchers",
-    "address": "Påvel Snickares gränd 1, 753 20 Uppsala",
-    "city": "Uppsala",
-    "fetched_at": "2026-04-19T02:07:26.223Z",
-    "latitude": 59.8594,
-    "longitude": 17.6392584
-  },
-  {
     "title": "Diary writing  (English language)",
     "startDate": "2026-04-21T17:00:00+02:00",
     "url": "https://www.meetup.com/diary-writing-and-accelerating-your-personal-growth/events/314179331/",
@@ -31,7 +7,7 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-19T02:07:26.223Z",
+    "fetched_at": "2026-04-20T02:07:25.195Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
   },
@@ -43,7 +19,7 @@
     "venue": "Omegapoint",
     "address": "Kungsängsgatan 14",
     "city": "Uppsala",
-    "fetched_at": "2026-04-19T02:07:26.223Z",
+    "fetched_at": "2026-04-20T02:07:25.195Z",
     "latitude": 59.8571282,
     "longitude": 17.6417146
   },
@@ -55,7 +31,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-19T02:07:26.223Z",
+    "fetched_at": "2026-04-20T02:07:25.195Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -67,9 +43,21 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-19T02:07:26.223Z",
+    "fetched_at": "2026-04-20T02:07:25.195Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
+  },
+  {
+    "title": "Meet recruiters at Swedish companies hiring international professionals",
+    "startDate": "2026-04-23T18:00:00+02:00",
+    "url": "https://www.meetup.com/international-professionals-jobs-in-sweden/events/314336724/",
+    "source": "meetup.com",
+    "venue": "Uppsala Castle",
+    "address": "Uppsala",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-20T02:07:25.195Z",
+    "latitude": 59.8586126,
+    "longitude": 17.6387436
   },
   {
     "title": "Mobility training & Tennis🎾",
@@ -79,9 +67,21 @@
     "venue": "UTK - Uppsala Tennis Klubb",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-19T02:07:26.223Z",
+    "fetched_at": "2026-04-20T02:07:25.195Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
+  },
+  {
+    "title": "Friday afterwork at O'Neill's Irish pub",
+    "startDate": "2026-04-24T19:00:00+02:00",
+    "url": "https://www.meetup.com/uppsala-social/events/314352758/",
+    "source": "meetup.com",
+    "venue": "O'Neill's",
+    "address": "Dragarbrunnsgatan 53,",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-20T02:07:25.195Z",
+    "latitude": 59.8572528,
+    "longitude": 17.6435434
   },
   {
     "title": "UPPSALA - Paint & Sip | Sans Studio x Grandpa",
@@ -91,7 +91,7 @@
     "venue": "Grandpa Uppsala",
     "address": "Svartbäcksgatan 1B",
     "city": "Uppsala",
-    "fetched_at": "2026-04-19T02:07:26.223Z",
+    "fetched_at": "2026-04-20T02:07:25.195Z",
     "latitude": 59.8591065,
     "longitude": 17.6383471
   },
@@ -103,7 +103,7 @@
     "venue": "Codevum",
     "address": "Torgny Segerstedts Allé 87",
     "city": "Uppsala",
-    "fetched_at": "2026-04-19T02:07:26.223Z",
+    "fetched_at": "2026-04-20T02:07:25.195Z",
     "latitude": 59.8345247,
     "longitude": 17.6338718
   },
@@ -115,8 +115,20 @@
     "venue": "Bror Hjorths Hus",
     "address": "Norbyvägen 26",
     "city": "Uppsala",
-    "fetched_at": "2026-04-19T02:07:26.223Z",
+    "fetched_at": "2026-04-20T02:07:25.195Z",
     "latitude": 59.8492776,
     "longitude": 17.6198763
+  },
+  {
+    "title": "Drivhuset Breakfast Club",
+    "startDate": "2026-05-06T08:15:00+02:00",
+    "url": "https://www.meetup.com/drivhuset-uppsala-entrepreneurship/events/314026547/",
+    "source": "meetup.com",
+    "venue": "Sidenvävargatan 17",
+    "address": "Sidenvävargatan 17",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-20T02:07:25.195Z",
+    "latitude": 59.8565705,
+    "longitude": 17.6495256
   }
 ]

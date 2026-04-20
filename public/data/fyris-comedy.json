@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "title": "Uppsalas roligaste 2026",
+    "venue": "Reginateatern",
+    "date": "2026-04-20T02:07:51.136Z",
+    "url": "https://www.fyriscomedy.com/biljetter",
+    "category": "scen",
+    "source": "fyriscomedy.com",
+    "fetched_at": "2026-04-20T02:07:51.136Z"
+  },
+  {
+    "title": "Stand up med Nour El Refai + support på Kaliber Room",
+    "venue": "The Kaliber Room",
+    "date": "2026-04-28T19:00:00",
+    "url": "https://www.fyriscomedy.com/biljetter",
+    "category": "scen",
+    "source": "fyriscomedy.com",
+    "fetched_at": "2026-04-20T02:07:51.136Z"
+  },
+  {
+    "title": "Stand up - Open Mic på Kaliber Room",
+    "venue": "Kaliber Room",
+    "date": "2026-05-12T19:00:00",
+    "url": "https://www.fyriscomedy.com/biljetter",
+    "category": "scen",
+    "source": "fyriscomedy.com",
+    "fetched_at": "2026-04-20T02:07:51.136Z"
+  }
+]
