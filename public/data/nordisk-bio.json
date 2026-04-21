@@ -1,1272 +1,2482 @@
 [
   {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T13:00:00",
-    "url": "https://www.nfbio.se/screening/4/a810e13a-5028-4cf2-8ab7-74950a567a2d",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-1300-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T14:50:00",
-    "url": "https://www.nfbio.se/screening/4/cabee05a-2ca1-4c78-b460-8ded017b5ba8",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-1450-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T15:15:00",
-    "url": "https://www.nfbio.se/screening/4/8d36a025-1785-4290-b1a8-891efe87ab64",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-1515-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:00:00",
-    "url": "https://www.nfbio.se/screening/4/d34bc66e-a5a6-4074-937d-b03f05c9fe50",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-1800-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:15:00",
-    "url": "https://www.nfbio.se/screening/4/f9bbab06-c794-4702-a52f-273bd6d30673",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-1815-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:00:00",
-    "url": "https://www.nfbio.se/screening/4/1607b968-323b-4b81-b224-aff183bfddf0",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-2100-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:15:00",
-    "url": "https://www.nfbio.se/screening/4/51e625d3-b68c-442c-8614-733deade6f64",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-2115-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T13:00:00",
-    "url": "https://www.nfbio.se/screening/4/9190f204-56ad-4a1b-834e-6d7488eb5948",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-1300-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T14:50:00",
-    "url": "https://www.nfbio.se/screening/4/95a8d664-edba-42ad-ae77-ff52ea25e439",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-1450-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T15:15:00",
-    "url": "https://www.nfbio.se/screening/4/0a2958cc-0b06-4de5-9d2e-1fb1ead97488",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-1515-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:00:00",
-    "url": "https://www.nfbio.se/screening/4/b8212321-7596-47cd-b5d2-7c335881f036",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-1800-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:15:00",
-    "url": "https://www.nfbio.se/screening/4/eb5a0edf-5557-4ad4-aa87-0571f91155de",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-1815-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:00:00",
-    "url": "https://www.nfbio.se/screening/4/7abf8229-4d1b-44b7-9e95-f07fecab127e",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-2100-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:15:00",
-    "url": "https://www.nfbio.se/screening/4/cbf2aa07-3832-4f3b-b1ed-822bf236a5b9",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-2115-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T14:50:00",
-    "url": "https://www.nfbio.se/screening/4/84d2bce9-8159-4610-b025-ed339026f532",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-1450-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T15:15:00",
-    "url": "https://www.nfbio.se/screening/4/9c167546-40eb-4440-94d6-739e47d45cb2",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-1515-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:00:00",
-    "url": "https://www.nfbio.se/screening/4/d8904075-f02b-448d-94f1-107ba845a761",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-1800-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:15:00",
-    "url": "https://www.nfbio.se/screening/4/77d89697-8849-49f4-a32a-e5eaca5ad66f",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-1815-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:00:00",
-    "url": "https://www.nfbio.se/screening/4/9ebb442d-f270-442f-bce2-16725ff4afb9",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-2100-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:15:00",
-    "url": "https://www.nfbio.se/screening/4/b974588a-fbb2-4dec-9d58-606abe1f3f39",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-2115-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:00:00",
-    "url": "https://www.nfbio.se/screening/4/415ec1d8-b375-4875-b580-5e45f7b895c7",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-1800-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:15:00",
-    "url": "https://www.nfbio.se/screening/4/b9d03d6c-8bec-46c4-a200-bae3990f1c7f",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-1815-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:00:00",
-    "url": "https://www.nfbio.se/screening/4/8f2423b9-86b7-485d-af08-8c3e2b57317c",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-2100-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:15:00",
-    "url": "https://www.nfbio.se/screening/4/3b29c610-da7d-43b2-8ebd-bc8cdeb411f5",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-2115-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:00:00",
-    "url": "https://www.nfbio.se/screening/4/70736c91-8867-456c-9b50-b786b4c58657",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-1800-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:15:00",
-    "url": "https://www.nfbio.se/screening/4/74a6a2a3-dfc8-4528-babf-2b53d0d88c4e",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-1815-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:00:00",
-    "url": "https://www.nfbio.se/screening/4/4539e802-2ebe-4796-918b-b01dc8fbedd2",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-2100-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mandalorian and Grogu",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:15:00",
-    "url": "https://www.nfbio.se/screening/4/20791404-6a29-4b58-a30f-7b601fc0c594",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
-    "id": "nfb-2026-04-20-2115-TheMandal",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
     "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T13:00:00",
-    "url": "https://www.nfbio.se/screening/4/5a33a40b-191e-41ce-af54-64123ff73dd7",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-1300-SuperMari",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "Super Mario Galaxy Filmen",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T15:20:00",
-    "url": "https://www.nfbio.se/screening/4/92d11e27-1ff6-44c5-9187-067a2b3940be",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-1520-SuperMari",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "Super Mario Galaxy Filmen",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T15:50:00",
-    "url": "https://www.nfbio.se/screening/4/c451c7e2-5d7b-41fd-857e-d91ba55e8e60",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-1550-SuperMari",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "Super Mario Galaxy Filmen",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:30:00",
-    "url": "https://www.nfbio.se/screening/4/008daa69-2972-4b8c-8005-7611269d956c",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-1830-SuperMari",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "Super Mario Galaxy Filmen",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T20:50:00",
-    "url": "https://www.nfbio.se/screening/4/178a1cbe-ee7c-4f66-b4da-e7a6b87ee452",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-2050-SuperMari",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "Super Mario Galaxy Filmen",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T11:00:00",
+    "date": "2026-04-21T11:00:00",
     "url": "https://www.nfbio.se/screening/4/7042f98c-cce2-4057-b88e-b4f85372d19f",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-1100-SuperMari",
+    "id": "nfb-2026-04-21-1100-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.403Z"
   },
   {
     "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T13:15:00",
+    "date": "2026-04-21T13:15:00",
     "url": "https://www.nfbio.se/screening/4/babd0a11-0daf-4020-be10-923cbe1680c3",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-1315-SuperMari",
+    "id": "nfb-2026-04-21-1315-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.403Z"
   },
   {
     "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T13:30:00",
+    "date": "2026-04-21T13:30:00",
     "url": "https://www.nfbio.se/screening/4/b379f248-83ab-48b0-9d99-b5af3f5f5c23",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-1330-SuperMari",
+    "id": "nfb-2026-04-21-1330-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.403Z"
   },
   {
     "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T15:45:00",
+    "date": "2026-04-21T15:45:00",
     "url": "https://www.nfbio.se/screening/4/932410f8-0a32-4203-af52-e099ca9d373d",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-1545-SuperMari",
+    "id": "nfb-2026-04-21-1545-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.403Z"
   },
   {
     "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T16:10:00",
+    "date": "2026-04-21T16:10:00",
     "url": "https://www.nfbio.se/screening/4/e2d5b94a-ef35-44f5-a998-877e4539ea1a",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-1610-SuperMari",
+    "id": "nfb-2026-04-21-1610-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.403Z"
   },
   {
     "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:10:00",
+    "date": "2026-04-21T18:10:00",
     "url": "https://www.nfbio.se/screening/4/4925223f-d225-4bfa-8471-cfbbc1e46bf7",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-1810-SuperMari",
+    "id": "nfb-2026-04-21-1810-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.403Z"
   },
   {
     "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:30:00",
+    "date": "2026-04-21T18:30:00",
     "url": "https://www.nfbio.se/screening/4/fe6037e3-2d61-41e5-a54d-cc5245347875",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-1830-SuperMari",
+    "id": "nfb-2026-04-21-1830-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.403Z"
   },
   {
     "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T20:45:00",
+    "date": "2026-04-21T20:45:00",
     "url": "https://www.nfbio.se/screening/4/3c622478-3d7b-4070-aa5c-0089a9be1e17",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-2045-SuperMari",
+    "id": "nfb-2026-04-21-2045-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.403Z"
   },
   {
     "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T13:00:00",
+    "date": "2026-04-21T13:00:00",
     "url": "https://www.nfbio.se/screening/4/f8d3e88c-60ca-4d02-8136-0f4fecb54d51",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-1300-SuperMari",
+    "id": "nfb-2026-04-21-1300-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.403Z"
   },
   {
     "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T15:20:00",
+    "date": "2026-04-21T15:20:00",
     "url": "https://www.nfbio.se/screening/4/7e8856b4-89c0-4e6f-9f37-91cb7c75ee22",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-1520-SuperMari",
+    "id": "nfb-2026-04-21-1520-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:00:00",
+    "date": "2026-04-21T18:00:00",
     "url": "https://www.nfbio.se/screening/4/f9d4ef78-3565-43d4-ba3c-4b129c79f18a",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-1800-SuperMari",
+    "id": "nfb-2026-04-21-1800-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:15:00",
+    "date": "2026-04-21T21:15:00",
     "url": "https://www.nfbio.se/screening/4/314fc72d-74da-44af-bc91-60d0b1684c6b",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-2115-SuperMari",
+    "id": "nfb-2026-04-21-2115-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T12:40:00",
+    "date": "2026-04-21T12:40:00",
     "url": "https://www.nfbio.se/screening/4/07a569f9-dbb9-4c15-821a-f8c90089000c",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-1240-SuperMari",
+    "id": "nfb-2026-04-21-1240-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T13:00:00",
+    "date": "2026-04-21T13:00:00",
     "url": "https://www.nfbio.se/screening/4/5683a6ab-ce7e-493f-8daf-ad3ea71cd4e6",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-1300-SuperMari",
+    "id": "nfb-2026-04-21-1300-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T15:20:00",
+    "date": "2026-04-21T15:20:00",
     "url": "https://www.nfbio.se/screening/4/a7f09260-27d4-48a2-bd15-b432053a4072",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-1520-SuperMari",
+    "id": "nfb-2026-04-21-1520-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:00:00",
+    "date": "2026-04-21T18:00:00",
     "url": "https://www.nfbio.se/screening/4/c08decd9-8be9-4859-8bef-910b8b8e099d",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-1800-SuperMari",
+    "id": "nfb-2026-04-21-1800-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:10:00",
+    "date": "2026-04-21T21:10:00",
     "url": "https://www.nfbio.se/screening/4/b7119619-a142-4356-abd7-2c9ccc9f23b4",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
-    "id": "nfb-2026-04-20-2110-SuperMari",
+    "id": "nfb-2026-04-21-2110-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Project Hail Mary",
+    "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T15:10:00",
-    "url": "https://www.nfbio.se/screening/4/25caa6d9-4141-4407-a1de-1dd81879c3e6",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
-    "id": "nfb-2026-04-20-1510-ProjectHa",
+    "date": "2026-04-21T13:00:00",
+    "url": "https://www.nfbio.se/screening/4/cbaeebb0-1fc8-4c53-9eaf-e432997e4986",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1300-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Project Hail Mary",
+    "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T17:45:00",
-    "url": "https://www.nfbio.se/screening/4/4bb42fd5-2bbf-4c3b-89ca-32fdeaa27185",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
-    "id": "nfb-2026-04-20-1745-ProjectHa",
+    "date": "2026-04-21T15:20:00",
+    "url": "https://www.nfbio.se/screening/4/c8924fe3-8c5c-46f3-9ebb-e555f8410c39",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1520-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Project Hail Mary",
+    "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T17:45:00",
-    "url": "https://www.nfbio.se/screening/4/22cd6859-d77e-4652-8618-f5343514c354",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
-    "id": "nfb-2026-04-20-1745-ProjectHa",
+    "date": "2026-04-21T16:00:00",
+    "url": "https://www.nfbio.se/screening/4/dd551f24-46c2-40fc-adb5-ef0bb421c694",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1600-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Project Hail Mary",
+    "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T20:30:00",
-    "url": "https://www.nfbio.se/screening/4/beffe2a4-8e38-43d9-85b4-9ac7c3080546",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
-    "id": "nfb-2026-04-20-2030-ProjectHa",
+    "date": "2026-04-21T10:30:00",
+    "url": "https://www.nfbio.se/screening/4/0319da0d-ac17-4f28-8f9c-e5bc95630861",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1030-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Project Hail Mary",
+    "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T11:00:00",
-    "url": "https://www.nfbio.se/screening/4/e037321a-73d9-4a33-ab64-c9a164c74a5b",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
-    "id": "nfb-2026-04-20-1100-ProjectHa",
+    "date": "2026-04-21T10:40:00",
+    "url": "https://www.nfbio.se/screening/4/e4a97168-8081-4d77-badf-e935faa0ab5b",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1040-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Project Hail Mary",
+    "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T14:30:00",
-    "url": "https://www.nfbio.se/screening/4/ca2c8413-6ec3-43d7-9436-cf73274ab16c",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
-    "id": "nfb-2026-04-20-1430-ProjectHa",
+    "date": "2026-04-21T12:50:00",
+    "url": "https://www.nfbio.se/screening/4/caca2331-5211-45f2-8707-b8fe737f2972",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1250-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Project Hail Mary",
+    "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T17:45:00",
-    "url": "https://www.nfbio.se/screening/4/b75ae5a8-1832-471f-994f-10f8165c1f3c",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
-    "id": "nfb-2026-04-20-1745-ProjectHa",
+    "date": "2026-04-21T13:00:00",
+    "url": "https://www.nfbio.se/screening/4/7191bbc2-8567-436c-a5a0-e98301cde720",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1300-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Project Hail Mary",
+    "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T20:30:00",
-    "url": "https://www.nfbio.se/screening/4/036c6aee-b0fc-4302-bb05-bb68124c1bb3",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
-    "id": "nfb-2026-04-20-2030-ProjectHa",
+    "date": "2026-04-21T15:10:00",
+    "url": "https://www.nfbio.se/screening/4/573dcd5c-3dba-4ace-9050-d103ee9974f0",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1510-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Project Hail Mary",
+    "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T14:00:00",
-    "url": "https://www.nfbio.se/screening/4/6542110a-9b63-4810-8a19-6c832951a85b",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
-    "id": "nfb-2026-04-20-1400-ProjectHa",
+    "date": "2026-04-21T15:30:00",
+    "url": "https://www.nfbio.se/screening/4/4fbc97a8-277e-4041-b80d-f506b1dd60fc",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1530-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Project Hail Mary",
+    "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T17:45:00",
-    "url": "https://www.nfbio.se/screening/4/c8e92ac8-d2bb-4ac0-baf6-63b1e9409ac6",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
-    "id": "nfb-2026-04-20-1745-ProjectHa",
+    "date": "2026-04-21T15:50:00",
+    "url": "https://www.nfbio.se/screening/4/51268a5e-030b-4500-9a48-da5fb05dc35f",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1550-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Project Hail Mary",
+    "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T20:30:00",
-    "url": "https://www.nfbio.se/screening/4/9183105c-fdfb-449d-9981-803bc32c2707",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
-    "id": "nfb-2026-04-20-2030-ProjectHa",
+    "date": "2026-04-21T18:15:00",
+    "url": "https://www.nfbio.se/screening/4/2aff1456-e766-4228-8138-0476febc5c7f",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1815-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Project Hail Mary",
+    "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T14:20:00",
-    "url": "https://www.nfbio.se/screening/4/00cdc3be-7b55-4bf1-b0bb-61cf9b3f66e9",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
-    "id": "nfb-2026-04-20-1420-ProjectHa",
+    "date": "2026-04-21T08:20:00",
+    "url": "https://www.nfbio.se/screening/4/548c7d98-9716-4d4f-a5c2-8832b72a5069",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-0820-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Project Hail Mary",
+    "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T17:45:00",
-    "url": "https://www.nfbio.se/screening/4/e745fe24-2866-4b4d-b358-53b1303d1a64",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
-    "id": "nfb-2026-04-20-1745-ProjectHa",
+    "date": "2026-04-21T09:00:00",
+    "url": "https://www.nfbio.se/screening/4/f33878d6-43f2-4fa9-9c3f-68034216d083",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-0900-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Project Hail Mary",
+    "title": "Super Mario Galaxy Filmen",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T20:30:00",
-    "url": "https://www.nfbio.se/screening/4/84c9b41e-9455-4b88-a7c5-7bffe1745451",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
-    "id": "nfb-2026-04-20-2030-ProjectHa",
+    "date": "2026-04-21T10:45:00",
+    "url": "https://www.nfbio.se/screening/4/6493eb46-bd9e-4ada-b8d9-057d351b7d3e",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1045-SuperMari",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Super Mario Galaxy Filmen",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T11:20:00",
+    "url": "https://www.nfbio.se/screening/4/00917bc7-ee52-4b8c-9669-7cd5ddf00cad",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1120-SuperMari",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Super Mario Galaxy Filmen",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T13:10:00",
+    "url": "https://www.nfbio.se/screening/4/b6fa4024-4158-4fdb-b6e7-c34ba1e7163b",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1310-SuperMari",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Super Mario Galaxy Filmen",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T13:40:00",
+    "url": "https://www.nfbio.se/screening/4/462bda78-f668-47f8-9d64-4b4b7f691c2b",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1340-SuperMari",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Super Mario Galaxy Filmen",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:30:00",
+    "url": "https://www.nfbio.se/screening/4/0fca0735-9891-48fd-867c-5eda57ff8324",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1530-SuperMari",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Super Mario Galaxy Filmen",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T16:00:00",
+    "url": "https://www.nfbio.se/screening/4/f7ccb7fb-5e48-4e66-b383-2f26d40969c1",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1600-SuperMari",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Super Mario Galaxy Filmen",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T13:10:00",
+    "url": "https://www.nfbio.se/screening/4/34af8473-6826-4cb9-823d-341d747aed63",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1310-SuperMari",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Super Mario Galaxy Filmen",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:50:00",
+    "url": "https://www.nfbio.se/screening/4/7fd8b032-e213-425e-a812-5528a6af3259",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1550-SuperMari",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Super Mario Galaxy Filmen",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T12:40:00",
+    "url": "https://www.nfbio.se/screening/4/ed21438a-2263-4e57-8272-bc50600b3854",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1240-SuperMari",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Super Mario Galaxy Filmen",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:50:00",
+    "url": "https://www.nfbio.se/screening/4/585f2f9a-738b-4a1e-af39-ccbd18b08667",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1550-SuperMari",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Super Mario Galaxy Filmen",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T13:00:00",
+    "url": "https://www.nfbio.se/screening/4/bd101300-a6a0-45ae-a068-10b698d6541a",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1300-SuperMari",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Super Mario Galaxy Filmen",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:30:00",
+    "url": "https://www.nfbio.se/screening/4/55d94c5b-30c9-4da7-a58a-b34fcbf330a7",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1530-SuperMari",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Super Mario Galaxy Filmen",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T10:30:00",
+    "url": "https://www.nfbio.se/screening/4/4e627cfd-e486-40e2-b0f3-aaddb99ad20e",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1030-SuperMari",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Super Mario Galaxy Filmen",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T10:50:00",
+    "url": "https://www.nfbio.se/screening/4/f75095a5-4fc3-455c-84f4-2c058555f57d",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1050-SuperMari",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Super Mario Galaxy Filmen",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T12:50:00",
+    "url": "https://www.nfbio.se/screening/4/a1612227-fe37-4f59-abda-79461bc7de12",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1250-SuperMari",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Super Mario Galaxy Filmen",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T13:10:00",
+    "url": "https://www.nfbio.se/screening/4/2269df95-53da-426d-bd52-0029e25a9530",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1310-SuperMari",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Super Mario Galaxy Filmen",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:15:00",
+    "url": "https://www.nfbio.se/screening/4/522340db-f7f0-46ab-920d-011705e01f31",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-db8408954f-22042-vst-69afea9bd8eb7.jpeg?itok=W5DpiXMJ",
+    "id": "nfb-2026-04-21-1515-SuperMari",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T12:45:00",
+    "date": "2026-04-21T12:45:00",
     "url": "https://www.nfbio.se/screening/4/d7f4cf35-930e-43fe-be6b-802baa38bd86",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
-    "id": "nfb-2026-04-20-1245-Michael",
+    "id": "nfb-2026-04-21-1245-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T14:45:00",
+    "date": "2026-04-21T14:45:00",
     "url": "https://www.nfbio.se/screening/4/d542ff1a-a597-4608-90e7-423a6bcbfb0f",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
-    "id": "nfb-2026-04-20-1445-Michael",
+    "id": "nfb-2026-04-21-1445-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T17:45:00",
+    "date": "2026-04-21T17:45:00",
     "url": "https://www.nfbio.se/screening/4/2b61d207-69a5-4489-b984-74f0b399eb0f",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
-    "id": "nfb-2026-04-20-1745-Michael",
+    "id": "nfb-2026-04-21-1745-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:00:00",
+    "date": "2026-04-21T18:00:00",
     "url": "https://www.nfbio.se/screening/4/619b4379-0c48-4b3c-bb8a-b3b67e54e8fd",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
-    "id": "nfb-2026-04-20-1800-Michael",
+    "id": "nfb-2026-04-21-1800-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T20:45:00",
+    "date": "2026-04-21T20:45:00",
     "url": "https://www.nfbio.se/screening/4/481fac4d-7c5c-4dc4-91fe-aaff67eaaa34",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
-    "id": "nfb-2026-04-20-2045-Michael",
+    "id": "nfb-2026-04-21-2045-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T12:30:00",
+    "date": "2026-04-21T12:30:00",
     "url": "https://www.nfbio.se/screening/4/77481100-1cac-48e8-bdba-e4b5b4e9d10b",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
-    "id": "nfb-2026-04-20-1230-Michael",
+    "id": "nfb-2026-04-21-1230-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T15:00:00",
+    "date": "2026-04-21T15:00:00",
     "url": "https://www.nfbio.se/screening/4/68447198-21ff-4e50-b502-0b60d901a1dc",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
-    "id": "nfb-2026-04-20-1500-Michael",
+    "id": "nfb-2026-04-21-1500-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T17:45:00",
+    "date": "2026-04-21T17:45:00",
     "url": "https://www.nfbio.se/screening/4/714e62b9-08e5-4df9-aba6-25391934d4fc",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
-    "id": "nfb-2026-04-20-1745-Michael",
+    "id": "nfb-2026-04-21-1745-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:00:00",
+    "date": "2026-04-21T18:00:00",
     "url": "https://www.nfbio.se/screening/4/03ae7971-41f9-4d7a-b436-8aa2827ccb88",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
-    "id": "nfb-2026-04-20-1800-Michael",
+    "id": "nfb-2026-04-21-1800-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T20:45:00",
+    "date": "2026-04-21T20:45:00",
     "url": "https://www.nfbio.se/screening/4/c359758f-0823-4733-bf62-728ee8503633",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
-    "id": "nfb-2026-04-20-2045-Michael",
+    "id": "nfb-2026-04-21-2045-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:00:00",
+    "date": "2026-04-21T13:00:00",
+    "url": "https://www.nfbio.se/screening/4/86477d1b-be9d-4663-887d-71d51cbc9169",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1300-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:00:00",
+    "url": "https://www.nfbio.se/screening/4/4fafbb1e-6df0-430d-bdb3-3b1dec22844b",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1500-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T17:50:00",
+    "url": "https://www.nfbio.se/screening/4/cb82e9a1-f417-40c3-b177-4c213e4cd1fd",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1750-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:00:00",
     "url": "https://www.nfbio.se/screening/4/2e09b87b-b4ad-4c53-a402-da384751ac8c",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
-    "id": "nfb-2026-04-20-1800-Michael",
+    "id": "nfb-2026-04-21-1800-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:00:00",
+    "date": "2026-04-21T21:00:00",
+    "url": "https://www.nfbio.se/screening/4/f1fc64a3-7463-4d78-95e8-418fd335591b",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-2100-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T13:00:00",
+    "url": "https://www.nfbio.se/screening/4/c529b3bb-61c2-41ab-982b-611c1b49d3e5",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1300-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:10:00",
+    "url": "https://www.nfbio.se/screening/4/373abc01-cea7-4a92-acb1-7b48e3634070",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1510-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:00:00",
     "url": "https://www.nfbio.se/screening/4/77719917-f94e-4aff-a268-7990d2219bf5",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
-    "id": "nfb-2026-04-20-1800-Michael",
+    "id": "nfb-2026-04-21-1800-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Djävulen bär Prada 2",
+    "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:30:00",
-    "url": "https://www.nfbio.se/screening/4/f6029a25-c75f-4247-bc0f-07f239494756",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-2c177d295f-22042-vst-69bbbcb4e0338.jpeg?itok=8fi5QQZu",
-    "id": "nfb-2026-04-20-1830-Djvulenb",
+    "date": "2026-04-21T21:00:00",
+    "url": "https://www.nfbio.se/screening/4/53b98b13-2092-41b7-b2bd-145a218190f0",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-2100-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Djävulen bär Prada 2",
+    "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T15:30:00",
-    "url": "https://www.nfbio.se/screening/4/7fd2cc38-cfcd-4676-b32f-e326ede2e038",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-2c177d295f-22042-vst-69bbbcb4e0338.jpeg?itok=8fi5QQZu",
-    "id": "nfb-2026-04-20-1530-Djvulenb",
+    "date": "2026-04-21T18:00:00",
+    "url": "https://www.nfbio.se/screening/4/42835901-b2c6-4832-a298-1012c4dc58ad",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1800-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Djävulen bär Prada 2",
+    "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:00:00",
-    "url": "https://www.nfbio.se/screening/4/2fcb4ccf-53a2-4391-aa04-f0b620c19152",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-2c177d295f-22042-vst-69bbbcb4e0338.jpeg?itok=8fi5QQZu",
-    "id": "nfb-2026-04-20-1800-Djvulenb",
+    "date": "2026-04-21T18:30:00",
+    "url": "https://www.nfbio.se/screening/4/93f2dcc3-fa32-4c8b-8be0-78c668b94602",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1830-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Djävulen bär Prada 2",
+    "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:00:00",
-    "url": "https://www.nfbio.se/screening/4/f2cdc65e-2154-4166-af36-4f3f2d89e831",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-2c177d295f-22042-vst-69bbbcb4e0338.jpeg?itok=8fi5QQZu",
-    "id": "nfb-2026-04-20-2100-Djvulenb",
+    "date": "2026-04-21T20:45:00",
+    "url": "https://www.nfbio.se/screening/4/59f7a3c4-b361-4675-add8-294a58aca6c9",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-2045-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Djävulen bär Prada 2",
+    "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:00:00",
-    "url": "https://www.nfbio.se/screening/4/290171ff-6033-4fbf-ba41-e8d13c57710d",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-2c177d295f-22042-vst-69bbbcb4e0338.jpeg?itok=8fi5QQZu",
-    "id": "nfb-2026-04-20-1800-Djvulenb",
+    "date": "2026-04-21T12:50:00",
+    "url": "https://www.nfbio.se/screening/4/d15e37d7-c3c1-4044-bdfa-b33feed406b8",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1250-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Djävulen bär Prada 2",
+    "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:00:00",
-    "url": "https://www.nfbio.se/screening/4/e96b66e7-038d-4767-a0cf-fc5155afe428",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-2c177d295f-22042-vst-69bbbcb4e0338.jpeg?itok=8fi5QQZu",
-    "id": "nfb-2026-04-20-2100-Djvulenb",
+    "date": "2026-04-21T13:00:00",
+    "url": "https://www.nfbio.se/screening/4/c338ec2c-f08a-4ebb-9241-266aef00baf1",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1300-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Djävulen bär Prada 2",
+    "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:00:00",
-    "url": "https://www.nfbio.se/screening/4/7e79ca02-7afb-4725-ab1d-faf2ea7e2f17",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-2c177d295f-22042-vst-69bbbcb4e0338.jpeg?itok=8fi5QQZu",
-    "id": "nfb-2026-04-20-1800-Djvulenb",
+    "date": "2026-04-21T15:00:00",
+    "url": "https://www.nfbio.se/screening/4/e1819f0a-c895-44fe-bb4f-4c56b9976b9c",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1500-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Djävulen bär Prada 2",
+    "title": "Michael",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:00:00",
-    "url": "https://www.nfbio.se/screening/4/740b5ce7-ddbe-4111-9b20-239686b9b690",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-2c177d295f-22042-vst-69bbbcb4e0338.jpeg?itok=8fi5QQZu",
-    "id": "nfb-2026-04-20-2100-Djvulenb",
+    "date": "2026-04-21T18:15:00",
+    "url": "https://www.nfbio.se/screening/4/2889e9c1-d1c5-438e-83f3-9ac28c8ab6bf",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1815-Michael",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T20:45:00",
+    "url": "https://www.nfbio.se/screening/4/35ad5967-48a4-4aa9-8d7a-c1aa8d70fb3e",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-2045-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T12:50:00",
+    "url": "https://www.nfbio.se/screening/4/a3e68e15-7591-4276-a565-4d51a4aa0dcd",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1250-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:00:00",
+    "url": "https://www.nfbio.se/screening/4/e7514224-1a77-4659-b78a-0b1afe96fd3d",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1500-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:30:00",
+    "url": "https://www.nfbio.se/screening/4/545c428e-d37e-40f9-9ac5-ae4f3e9c978d",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1530-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:10:00",
+    "url": "https://www.nfbio.se/screening/4/cc3f8fc4-e2fc-42ec-ae5b-cb8ad14ecd14",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1810-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:10:00",
+    "url": "https://www.nfbio.se/screening/4/07a94052-e0ea-4091-b9e4-931b7419bfe0",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-2110-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T13:00:00",
+    "url": "https://www.nfbio.se/screening/4/4b874c95-2b0b-4190-811b-e75308621c2c",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1300-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:10:00",
+    "url": "https://www.nfbio.se/screening/4/e2e00f2c-8398-400b-9b2b-4f70f022028e",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1510-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T17:50:00",
+    "url": "https://www.nfbio.se/screening/4/3cf5fc84-3a0c-439a-bd3a-2427abcf01e2",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1750-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T10:30:00",
+    "url": "https://www.nfbio.se/screening/4/1d985d4f-4ac0-40a9-84fe-35da21eadf81",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1030-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T12:10:00",
+    "url": "https://www.nfbio.se/screening/4/7185dd2b-c95a-476f-83b6-733770a49e9e",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1210-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:10:00",
+    "url": "https://www.nfbio.se/screening/4/0123527c-3cc2-4931-a1f5-8f8192da08f1",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1510-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Michael",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:30:00",
+    "url": "https://www.nfbio.se/screening/4/f6d1f980-d50c-44f5-9370-1a264aa7a69a",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-caa01d6d2d-22042-vst-6981f9d568bd8.jpeg?itok=GakHWHyt",
+    "id": "nfb-2026-04-21-1530-Michael",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T13:00:00",
+    "url": "https://www.nfbio.se/screening/4/a810e13a-5028-4cf2-8ab7-74950a567a2d",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-1300-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T14:50:00",
+    "url": "https://www.nfbio.se/screening/4/cabee05a-2ca1-4c78-b460-8ded017b5ba8",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-1450-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:15:00",
+    "url": "https://www.nfbio.se/screening/4/8d36a025-1785-4290-b1a8-891efe87ab64",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-1515-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:00:00",
+    "url": "https://www.nfbio.se/screening/4/d34bc66e-a5a6-4074-937d-b03f05c9fe50",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-1800-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:15:00",
+    "url": "https://www.nfbio.se/screening/4/f9bbab06-c794-4702-a52f-273bd6d30673",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-1815-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:00:00",
+    "url": "https://www.nfbio.se/screening/4/1607b968-323b-4b81-b224-aff183bfddf0",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-2100-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:15:00",
+    "url": "https://www.nfbio.se/screening/4/51e625d3-b68c-442c-8614-733deade6f64",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-2115-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T13:00:00",
+    "url": "https://www.nfbio.se/screening/4/9190f204-56ad-4a1b-834e-6d7488eb5948",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-1300-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T14:50:00",
+    "url": "https://www.nfbio.se/screening/4/95a8d664-edba-42ad-ae77-ff52ea25e439",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-1450-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:15:00",
+    "url": "https://www.nfbio.se/screening/4/0a2958cc-0b06-4de5-9d2e-1fb1ead97488",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-1515-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:00:00",
+    "url": "https://www.nfbio.se/screening/4/b8212321-7596-47cd-b5d2-7c335881f036",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-1800-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:15:00",
+    "url": "https://www.nfbio.se/screening/4/eb5a0edf-5557-4ad4-aa87-0571f91155de",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-1815-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:00:00",
+    "url": "https://www.nfbio.se/screening/4/7abf8229-4d1b-44b7-9e95-f07fecab127e",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-2100-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:15:00",
+    "url": "https://www.nfbio.se/screening/4/cbf2aa07-3832-4f3b-b1ed-822bf236a5b9",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-2115-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T14:50:00",
+    "url": "https://www.nfbio.se/screening/4/84d2bce9-8159-4610-b025-ed339026f532",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-1450-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:15:00",
+    "url": "https://www.nfbio.se/screening/4/9c167546-40eb-4440-94d6-739e47d45cb2",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-1515-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:00:00",
+    "url": "https://www.nfbio.se/screening/4/d8904075-f02b-448d-94f1-107ba845a761",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-1800-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:15:00",
+    "url": "https://www.nfbio.se/screening/4/77d89697-8849-49f4-a32a-e5eaca5ad66f",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-1815-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:00:00",
+    "url": "https://www.nfbio.se/screening/4/9ebb442d-f270-442f-bce2-16725ff4afb9",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-2100-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:15:00",
+    "url": "https://www.nfbio.se/screening/4/b974588a-fbb2-4dec-9d58-606abe1f3f39",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-2115-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:00:00",
+    "url": "https://www.nfbio.se/screening/4/415ec1d8-b375-4875-b580-5e45f7b895c7",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-1800-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:15:00",
+    "url": "https://www.nfbio.se/screening/4/b9d03d6c-8bec-46c4-a200-bae3990f1c7f",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-1815-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:00:00",
+    "url": "https://www.nfbio.se/screening/4/8f2423b9-86b7-485d-af08-8c3e2b57317c",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-2100-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:15:00",
+    "url": "https://www.nfbio.se/screening/4/3b29c610-da7d-43b2-8ebd-bc8cdeb411f5",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-2115-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:00:00",
+    "url": "https://www.nfbio.se/screening/4/70736c91-8867-456c-9b50-b786b4c58657",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-1800-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:15:00",
+    "url": "https://www.nfbio.se/screening/4/74a6a2a3-dfc8-4528-babf-2b53d0d88c4e",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-1815-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:00:00",
+    "url": "https://www.nfbio.se/screening/4/4539e802-2ebe-4796-918b-b01dc8fbedd2",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-2100-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mandalorian and Grogu",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:15:00",
+    "url": "https://www.nfbio.se/screening/4/20791404-6a29-4b58-a30f-7b601fc0c594",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-93fa1fcc57-56361-vst-69e22b615d453.jpeg?itok=d2b-dh9Y",
+    "id": "nfb-2026-04-21-2115-TheMandal",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T11:00:00",
+    "url": "https://www.nfbio.se/screening/4/e037321a-73d9-4a33-ab64-c9a164c74a5b",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-1100-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T14:30:00",
+    "url": "https://www.nfbio.se/screening/4/ca2c8413-6ec3-43d7-9436-cf73274ab16c",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-1430-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T17:45:00",
+    "url": "https://www.nfbio.se/screening/4/b75ae5a8-1832-471f-994f-10f8165c1f3c",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-1745-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T20:30:00",
+    "url": "https://www.nfbio.se/screening/4/036c6aee-b0fc-4302-bb05-bb68124c1bb3",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-2030-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T14:00:00",
+    "url": "https://www.nfbio.se/screening/4/6542110a-9b63-4810-8a19-6c832951a85b",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-1400-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T17:45:00",
+    "url": "https://www.nfbio.se/screening/4/c8e92ac8-d2bb-4ac0-baf6-63b1e9409ac6",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-1745-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T20:30:00",
+    "url": "https://www.nfbio.se/screening/4/9183105c-fdfb-449d-9981-803bc32c2707",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-2030-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T14:20:00",
+    "url": "https://www.nfbio.se/screening/4/00cdc3be-7b55-4bf1-b0bb-61cf9b3f66e9",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-1420-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T17:45:00",
+    "url": "https://www.nfbio.se/screening/4/e745fe24-2866-4b4d-b358-53b1303d1a64",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-1745-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T20:30:00",
+    "url": "https://www.nfbio.se/screening/4/84c9b41e-9455-4b88-a7c5-7bffe1745451",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-2030-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T17:45:00",
+    "url": "https://www.nfbio.se/screening/4/6a988b9c-d6f1-41a6-8e8c-17ff8cb738c7",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-1745-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T20:45:00",
+    "url": "https://www.nfbio.se/screening/4/50b5b751-e902-49b9-9f8c-351a78cb4e2f",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-2045-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T17:30:00",
+    "url": "https://www.nfbio.se/screening/4/7f3f5b76-3f90-464d-9a87-5d8255c0c949",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-1730-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:00:00",
+    "url": "https://www.nfbio.se/screening/4/b0174d14-4ad7-421e-b327-35eabfcbb672",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-1800-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T20:45:00",
+    "url": "https://www.nfbio.se/screening/4/777bc0a9-a6e2-4942-b623-45c9687512c4",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-2045-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T17:45:00",
+    "url": "https://www.nfbio.se/screening/4/87cfba69-a5cc-4a9f-ba23-7ac1195f5ff6",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-1745-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T20:15:00",
+    "url": "https://www.nfbio.se/screening/4/bdbcdfdc-8d2d-41e3-8e61-edababec41bc",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-2015-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T14:50:00",
+    "url": "https://www.nfbio.se/screening/4/54eb0eb6-e9eb-4e44-b3b4-5fa830006f6c",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-1450-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:00:00",
+    "url": "https://www.nfbio.se/screening/4/68ed4977-6c4d-4242-b85b-e69fdf4d8539",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-1800-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T20:30:00",
+    "url": "https://www.nfbio.se/screening/4/ad0cbc94-e5cb-4061-b4da-b245fab4d87d",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-2030-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:00:00",
+    "url": "https://www.nfbio.se/screening/4/1a140a7f-5366-4470-9900-8ba04d742571",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-1800-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T20:15:00",
+    "url": "https://www.nfbio.se/screening/4/f09f5748-c6cf-44a6-bc40-bd064c286084",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-2015-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Project Hail Mary",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T14:30:00",
+    "url": "https://www.nfbio.se/screening/4/7c58537a-f3f1-4b2a-83bd-c4d783c9d48f",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-785108c1dd-22042-vst-69baa483cbed9.jpeg?itok=U6YA_bML",
+    "id": "nfb-2026-04-21-1430-ProjectHa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "The Mummy",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:20:00",
-    "url": "https://www.nfbio.se/screening/4/a8a39a49-c5ee-4b6c-abf8-94a604abb7ab",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-bc5d0046b0-22042-vst-69a1beea10950.jpeg?itok=5M5ixvgx",
-    "id": "nfb-2026-04-20-1820-TheMummy",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mummy",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:10:00",
-    "url": "https://www.nfbio.se/screening/4/b1566372-4031-43f1-9946-1bb87ff2c007",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-bc5d0046b0-22042-vst-69a1beea10950.jpeg?itok=5M5ixvgx",
-    "id": "nfb-2026-04-20-2110-TheMummy",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Mummy",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:05:00",
+    "date": "2026-04-21T18:05:00",
     "url": "https://www.nfbio.se/screening/4/80a208a5-a159-4c0d-8a4f-3a9c7782574e",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-bc5d0046b0-22042-vst-69a1beea10950.jpeg?itok=5M5ixvgx",
-    "id": "nfb-2026-04-20-1805-TheMummy",
+    "id": "nfb-2026-04-21-1805-TheMummy",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "The Mummy",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:10:00",
+    "date": "2026-04-21T21:10:00",
     "url": "https://www.nfbio.se/screening/4/588ecf69-d33e-4b6a-9a8a-85896c6858af",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-bc5d0046b0-22042-vst-69a1beea10950.jpeg?itok=5M5ixvgx",
-    "id": "nfb-2026-04-20-2110-TheMummy",
+    "id": "nfb-2026-04-21-2110-TheMummy",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "The Mummy",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:20:00",
+    "date": "2026-04-21T18:20:00",
     "url": "https://www.nfbio.se/screening/4/f7215396-4c8d-4711-b5e5-aa3f759d8176",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-bc5d0046b0-22042-vst-69a1beea10950.jpeg?itok=5M5ixvgx",
-    "id": "nfb-2026-04-20-1820-TheMummy",
+    "id": "nfb-2026-04-21-1820-TheMummy",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "The Mummy",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:10:00",
+    "date": "2026-04-21T21:10:00",
     "url": "https://www.nfbio.se/screening/4/f87adde9-b36c-431b-b637-3d2834f01076",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-bc5d0046b0-22042-vst-69a1beea10950.jpeg?itok=5M5ixvgx",
-    "id": "nfb-2026-04-20-2110-TheMummy",
+    "id": "nfb-2026-04-21-2110-TheMummy",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "The Mummy",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:10:00",
+    "date": "2026-04-21T21:10:00",
     "url": "https://www.nfbio.se/screening/4/0d89edbf-6ceb-4d2d-9e53-d16a31561b9f",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-bc5d0046b0-22042-vst-69a1beea10950.jpeg?itok=5M5ixvgx",
-    "id": "nfb-2026-04-20-2110-TheMummy",
+    "id": "nfb-2026-04-21-2110-TheMummy",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mummy",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:20:00",
+    "url": "https://www.nfbio.se/screening/4/486dba3e-8797-4db0-9b4d-acee391f51f8",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-bc5d0046b0-22042-vst-69a1beea10950.jpeg?itok=5M5ixvgx",
+    "id": "nfb-2026-04-21-1820-TheMummy",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mummy",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:10:00",
+    "url": "https://www.nfbio.se/screening/4/c59d2fd2-4263-481e-9da0-f8f23c24c6c3",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-bc5d0046b0-22042-vst-69a1beea10950.jpeg?itok=5M5ixvgx",
+    "id": "nfb-2026-04-21-2110-TheMummy",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mummy",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:30:00",
+    "url": "https://www.nfbio.se/screening/4/11bd65ec-cc8e-45ba-85f6-4e2bee49a957",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-bc5d0046b0-22042-vst-69a1beea10950.jpeg?itok=5M5ixvgx",
+    "id": "nfb-2026-04-21-1830-TheMummy",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mummy",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:10:00",
+    "url": "https://www.nfbio.se/screening/4/6e5a529c-bead-4e1f-9213-7e83475f6a06",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-bc5d0046b0-22042-vst-69a1beea10950.jpeg?itok=5M5ixvgx",
+    "id": "nfb-2026-04-21-2110-TheMummy",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mummy",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:30:00",
+    "url": "https://www.nfbio.se/screening/4/fcc655a7-e260-4d0e-9419-93536574beb0",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-bc5d0046b0-22042-vst-69a1beea10950.jpeg?itok=5M5ixvgx",
+    "id": "nfb-2026-04-21-1830-TheMummy",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mummy",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:00:00",
+    "url": "https://www.nfbio.se/screening/4/9e518cb9-5c6d-4f76-81a1-2d92cc96ee62",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-bc5d0046b0-22042-vst-69a1beea10950.jpeg?itok=5M5ixvgx",
+    "id": "nfb-2026-04-21-2100-TheMummy",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mummy",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:10:00",
+    "url": "https://www.nfbio.se/screening/4/b4e67bd5-d423-423d-b424-1d33ce764fcb",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-bc5d0046b0-22042-vst-69a1beea10950.jpeg?itok=5M5ixvgx",
+    "id": "nfb-2026-04-21-2110-TheMummy",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mummy",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:10:00",
+    "url": "https://www.nfbio.se/screening/4/5d62e4b5-b9e4-4290-aa39-e97ce3e6c06b",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-bc5d0046b0-22042-vst-69a1beea10950.jpeg?itok=5M5ixvgx",
+    "id": "nfb-2026-04-21-1810-TheMummy",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mummy",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:15:00",
+    "url": "https://www.nfbio.se/screening/4/fc33b31c-eb9e-4a42-abd6-a7c53ebe6ebc",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-bc5d0046b0-22042-vst-69a1beea10950.jpeg?itok=5M5ixvgx",
+    "id": "nfb-2026-04-21-2115-TheMummy",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "The Mummy",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:00:00",
+    "url": "https://www.nfbio.se/screening/4/8a1a60b5-a915-4859-ae5f-d5e744f514e6",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-bc5d0046b0-22042-vst-69a1beea10950.jpeg?itok=5M5ixvgx",
+    "id": "nfb-2026-04-21-2100-TheMummy",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Dead Man's Wire",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:30:00",
+    "url": "https://www.nfbio.se/screening/4/79c1d446-758b-4e22-9394-41771cdf0d20",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-7b5f15b9bb-22042-vst-69c51bc1af1bf.jpeg?itok=EQdmrJDc",
+    "id": "nfb-2026-04-21-1830-DeadMans",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Dead Man's Wire",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:00:00",
+    "url": "https://www.nfbio.se/screening/4/31009eab-a734-4575-af50-2a288e9aca3e",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-7b5f15b9bb-22042-vst-69c51bc1af1bf.jpeg?itok=EQdmrJDc",
+    "id": "nfb-2026-04-21-2100-DeadMans",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Dead Man's Wire",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:30:00",
+    "url": "https://www.nfbio.se/screening/4/07429ad3-543d-4127-8805-3118a76bf8ab",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-7b5f15b9bb-22042-vst-69c51bc1af1bf.jpeg?itok=EQdmrJDc",
+    "id": "nfb-2026-04-21-2130-DeadMans",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Dead Man's Wire",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:10:00",
+    "url": "https://www.nfbio.se/screening/4/299037f0-6303-450d-928b-5cb48f8e9622",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-7b5f15b9bb-22042-vst-69c51bc1af1bf.jpeg?itok=EQdmrJDc",
+    "id": "nfb-2026-04-21-1810-DeadMans",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Dead Man's Wire",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:30:00",
+    "url": "https://www.nfbio.se/screening/4/d043622b-6e4c-46a6-b340-2648ab47ec16",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-7b5f15b9bb-22042-vst-69c51bc1af1bf.jpeg?itok=EQdmrJDc",
+    "id": "nfb-2026-04-21-2130-DeadMans",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Dead Man's Wire",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T13:15:00",
+    "url": "https://www.nfbio.se/screening/4/c1f3c03b-03cd-4ec9-a5b0-34bfa2aa57a0",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-7b5f15b9bb-22042-vst-69c51bc1af1bf.jpeg?itok=EQdmrJDc",
+    "id": "nfb-2026-04-21-1315-DeadMans",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Dead Man's Wire",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:20:00",
+    "url": "https://www.nfbio.se/screening/4/b5da6a5e-ba3e-47ea-baa9-25c92021705a",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-7b5f15b9bb-22042-vst-69c51bc1af1bf.jpeg?itok=EQdmrJDc",
+    "id": "nfb-2026-04-21-1820-DeadMans",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Dead Man's Wire",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:20:00",
+    "url": "https://www.nfbio.se/screening/4/52412b82-1e49-4531-86ea-e6fbce1d37a5",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-7b5f15b9bb-22042-vst-69c51bc1af1bf.jpeg?itok=EQdmrJDc",
+    "id": "nfb-2026-04-21-2120-DeadMans",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Dead Man's Wire",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:30:00",
+    "url": "https://www.nfbio.se/screening/4/6904de35-efdd-4996-a1dd-ce694a969ee9",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-7b5f15b9bb-22042-vst-69c51bc1af1bf.jpeg?itok=EQdmrJDc",
+    "id": "nfb-2026-04-21-1830-DeadMans",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Dead Man's Wire",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:00:00",
+    "url": "https://www.nfbio.se/screening/4/a8a312d0-7f37-47f3-a24c-be2055102289",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-7b5f15b9bb-22042-vst-69c51bc1af1bf.jpeg?itok=EQdmrJDc",
+    "id": "nfb-2026-04-21-2100-DeadMans",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Dead Man's Wire",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:30:00",
+    "url": "https://www.nfbio.se/screening/4/b7837013-1ea9-4fbb-aee4-546b315ad6ba",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-7b5f15b9bb-22042-vst-69c51bc1af1bf.jpeg?itok=EQdmrJDc",
+    "id": "nfb-2026-04-21-1530-DeadMans",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Dead Man's Wire",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:20:00",
+    "url": "https://www.nfbio.se/screening/4/34ad6a98-31fb-4a72-9972-70fa579bbbd1",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-7b5f15b9bb-22042-vst-69c51bc1af1bf.jpeg?itok=EQdmrJDc",
+    "id": "nfb-2026-04-21-2120-DeadMans",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Dead Man's Wire",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:50:00",
+    "url": "https://www.nfbio.se/screening/4/f60a64a0-213e-4069-a689-f479f74c9373",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-7b5f15b9bb-22042-vst-69c51bc1af1bf.jpeg?itok=EQdmrJDc",
+    "id": "nfb-2026-04-21-1550-DeadMans",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "The Drama",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T13:20:00",
-    "url": "https://www.nfbio.se/screening/4/25cc0172-d89c-4464-b3d2-eb1eaa74e8b8",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-c1d06a8d09-22042-vst-698c8e0ba439a.jpeg?itok=VvyrqoY6",
-    "id": "nfb-2026-04-20-1320-TheDrama",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Drama",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:00:00",
-    "url": "https://www.nfbio.se/screening/4/57937106-4db2-42eb-8681-cf6c710e619f",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-c1d06a8d09-22042-vst-698c8e0ba439a.jpeg?itok=VvyrqoY6",
-    "id": "nfb-2026-04-20-1800-TheDrama",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Drama",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:10:00",
-    "url": "https://www.nfbio.se/screening/4/32c66fa2-3d10-4266-a4c2-2bc8720affe0",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-c1d06a8d09-22042-vst-698c8e0ba439a.jpeg?itok=VvyrqoY6",
-    "id": "nfb-2026-04-20-2110-TheDrama",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "The Drama",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T11:00:00",
+    "date": "2026-04-21T11:00:00",
     "url": "https://www.nfbio.se/screening/4/3889e589-1b93-4b3c-aa30-9c5ad727a5a8",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-c1d06a8d09-22042-vst-698c8e0ba439a.jpeg?itok=VvyrqoY6",
-    "id": "nfb-2026-04-20-1100-TheDrama",
+    "id": "nfb-2026-04-21-1100-TheDrama",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "The Drama",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T15:30:00",
+    "date": "2026-04-21T15:30:00",
     "url": "https://www.nfbio.se/screening/4/eb649e7d-d049-4062-b847-6bb4b28aaed3",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-c1d06a8d09-22042-vst-698c8e0ba439a.jpeg?itok=VvyrqoY6",
-    "id": "nfb-2026-04-20-1530-TheDrama",
+    "id": "nfb-2026-04-21-1530-TheDrama",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "The Drama",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T15:20:00",
+    "date": "2026-04-21T15:20:00",
     "url": "https://www.nfbio.se/screening/4/26adaf5d-da4e-4a60-bd56-a4fa9c2b7580",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-c1d06a8d09-22042-vst-698c8e0ba439a.jpeg?itok=VvyrqoY6",
-    "id": "nfb-2026-04-20-1520-TheDrama",
+    "id": "nfb-2026-04-21-1520-TheDrama",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
+    "title": "The Drama",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:30:00",
-    "url": "https://www.nfbio.se/screening/4/788b7db7-66a0-4891-b82c-6c0377d36041",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-ba75b75da3-22042-vst-69bbbd1b1063f.jpeg?itok=xh0sAWwj",
-    "id": "nfb-2026-04-20-1830-BillieEil",
+    "date": "2026-04-21T15:45:00",
+    "url": "https://www.nfbio.se/screening/4/6efc1e76-3f86-41fb-a81a-474356e6ee2c",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-c1d06a8d09-22042-vst-698c8e0ba439a.jpeg?itok=VvyrqoY6",
+    "id": "nfb-2026-04-21-1545-TheDrama",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
+    "title": "The Drama",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:10:00",
-    "url": "https://www.nfbio.se/screening/4/bb804814-04cf-41e1-913b-bed29bb6869e",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-ba75b75da3-22042-vst-69bbbd1b1063f.jpeg?itok=xh0sAWwj",
-    "id": "nfb-2026-04-20-2110-BillieEil",
+    "date": "2026-04-21T21:20:00",
+    "url": "https://www.nfbio.se/screening/4/4b025f0a-d926-45c0-a681-a1405ace8735",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-c1d06a8d09-22042-vst-698c8e0ba439a.jpeg?itok=VvyrqoY6",
+    "id": "nfb-2026-04-21-2120-TheDrama",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
+    "title": "The Drama",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:30:00",
-    "url": "https://www.nfbio.se/screening/4/e00dbf4b-291d-4311-adc4-d3b698e887e3",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-ba75b75da3-22042-vst-69bbbd1b1063f.jpeg?itok=xh0sAWwj",
-    "id": "nfb-2026-04-20-1830-BillieEil",
+    "date": "2026-04-21T21:30:00",
+    "url": "https://www.nfbio.se/screening/4/e7c4b35f-a6b5-4c15-86a8-f67f818d16f3",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-c1d06a8d09-22042-vst-698c8e0ba439a.jpeg?itok=VvyrqoY6",
+    "id": "nfb-2026-04-21-2130-TheDrama",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
+    "title": "The Drama",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:10:00",
-    "url": "https://www.nfbio.se/screening/4/5d116488-eeb0-4ba0-b93b-3716eadab6e8",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-ba75b75da3-22042-vst-69bbbd1b1063f.jpeg?itok=xh0sAWwj",
-    "id": "nfb-2026-04-20-2110-BillieEil",
+    "date": "2026-04-21T21:10:00",
+    "url": "https://www.nfbio.se/screening/4/7ac79994-6e5d-429e-9c5c-4da1bb4c5436",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-c1d06a8d09-22042-vst-698c8e0ba439a.jpeg?itok=VvyrqoY6",
+    "id": "nfb-2026-04-21-2110-TheDrama",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
+    "title": "The Drama",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:30:00",
-    "url": "https://www.nfbio.se/screening/4/0c94a62e-d4fd-4914-bafc-5d26d1ef1d5e",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-ba75b75da3-22042-vst-69bbbd1b1063f.jpeg?itok=xh0sAWwj",
-    "id": "nfb-2026-04-20-1830-BillieEil",
+    "date": "2026-04-21T15:45:00",
+    "url": "https://www.nfbio.se/screening/4/12dd5614-b45a-4cf3-a53b-050fab8e4aec",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-c1d06a8d09-22042-vst-698c8e0ba439a.jpeg?itok=VvyrqoY6",
+    "id": "nfb-2026-04-21-1545-TheDrama",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "När Mumbo Jumbo blev jättestor",
+    "title": "The Drama",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T13:10:00",
-    "url": "https://www.nfbio.se/screening/4/8133896d-477c-4061-b033-75453fe94cdb",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-fbb340787a-22042-vst-69b802083ebb2.jpeg?itok=vAKHjTZL",
-    "id": "nfb-2026-04-20-1310-NrMumbo",
+    "date": "2026-04-21T21:00:00",
+    "url": "https://www.nfbio.se/screening/4/e3a0063a-111b-40a9-b0f6-89dc029a8b4f",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-c1d06a8d09-22042-vst-698c8e0ba439a.jpeg?itok=VvyrqoY6",
+    "id": "nfb-2026-04-21-2100-TheDrama",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "När Mumbo Jumbo blev jättestor",
+    "title": "The Drama",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T15:50:00",
-    "url": "https://www.nfbio.se/screening/4/2f95c101-ae17-4d5d-9ffe-698d72f229ef",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-fbb340787a-22042-vst-69b802083ebb2.jpeg?itok=vAKHjTZL",
-    "id": "nfb-2026-04-20-1550-NrMumbo",
+    "date": "2026-04-21T17:50:00",
+    "url": "https://www.nfbio.se/screening/4/991f0a6d-e7e0-4960-aa97-e2ef0d49ad65",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-c1d06a8d09-22042-vst-698c8e0ba439a.jpeg?itok=VvyrqoY6",
+    "id": "nfb-2026-04-21-1750-TheDrama",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "När Mumbo Jumbo blev jättestor",
+    "title": "The Drama",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T16:00:00",
-    "url": "https://www.nfbio.se/screening/4/cc39676c-d9d3-40ed-94c6-a3ee5183fe29",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-fbb340787a-22042-vst-69b802083ebb2.jpeg?itok=vAKHjTZL",
-    "id": "nfb-2026-04-20-1600-NrMumbo",
+    "date": "2026-04-21T17:45:00",
+    "url": "https://www.nfbio.se/screening/4/89e9e34a-3256-45ea-9dc8-7a280bd70d4b",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-c1d06a8d09-22042-vst-698c8e0ba439a.jpeg?itok=VvyrqoY6",
+    "id": "nfb-2026-04-21-1745-TheDrama",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "När Mumbo Jumbo blev jättestor",
+    "title": "The Drama",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T12:50:00",
-    "url": "https://www.nfbio.se/screening/4/6c53279c-1d31-4cdd-af9a-54eed1c230d4",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-fbb340787a-22042-vst-69b802083ebb2.jpeg?itok=vAKHjTZL",
-    "id": "nfb-2026-04-20-1250-NrMumbo",
+    "date": "2026-04-21T21:10:00",
+    "url": "https://www.nfbio.se/screening/4/00b8ff6b-3388-42d6-96de-a3b800ed6dde",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-c1d06a8d09-22042-vst-698c8e0ba439a.jpeg?itok=VvyrqoY6",
+    "id": "nfb-2026-04-21-2110-TheDrama",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "När Mumbo Jumbo blev jättestor",
+    "title": "Djävulen bär Prada 2",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T12:30:00",
-    "url": "https://www.nfbio.se/screening/4/b1f005ec-1737-4cfb-96f9-2ddb99e84235",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-fbb340787a-22042-vst-69b802083ebb2.jpeg?itok=vAKHjTZL",
-    "id": "nfb-2026-04-20-1230-NrMumbo",
+    "date": "2026-04-21T18:30:00",
+    "url": "https://www.nfbio.se/screening/4/f6029a25-c75f-4247-bc0f-07f239494756",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-2c177d295f-22042-vst-69bbbcb4e0338.jpeg?itok=8fi5QQZu",
+    "id": "nfb-2026-04-21-1830-Djvulenb",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Djävulen bär Prada 2",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:30:00",
+    "url": "https://www.nfbio.se/screening/4/7fd2cc38-cfcd-4676-b32f-e326ede2e038",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-2c177d295f-22042-vst-69bbbcb4e0338.jpeg?itok=8fi5QQZu",
+    "id": "nfb-2026-04-21-1530-Djvulenb",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Djävulen bär Prada 2",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:00:00",
+    "url": "https://www.nfbio.se/screening/4/2fcb4ccf-53a2-4391-aa04-f0b620c19152",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-2c177d295f-22042-vst-69bbbcb4e0338.jpeg?itok=8fi5QQZu",
+    "id": "nfb-2026-04-21-1800-Djvulenb",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Djävulen bär Prada 2",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:00:00",
+    "url": "https://www.nfbio.se/screening/4/f2cdc65e-2154-4166-af36-4f3f2d89e831",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-2c177d295f-22042-vst-69bbbcb4e0338.jpeg?itok=8fi5QQZu",
+    "id": "nfb-2026-04-21-2100-Djvulenb",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Djävulen bär Prada 2",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:00:00",
+    "url": "https://www.nfbio.se/screening/4/290171ff-6033-4fbf-ba41-e8d13c57710d",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-2c177d295f-22042-vst-69bbbcb4e0338.jpeg?itok=8fi5QQZu",
+    "id": "nfb-2026-04-21-1800-Djvulenb",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Djävulen bär Prada 2",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:00:00",
+    "url": "https://www.nfbio.se/screening/4/e96b66e7-038d-4767-a0cf-fc5155afe428",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-2c177d295f-22042-vst-69bbbcb4e0338.jpeg?itok=8fi5QQZu",
+    "id": "nfb-2026-04-21-2100-Djvulenb",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Djävulen bär Prada 2",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:00:00",
+    "url": "https://www.nfbio.se/screening/4/7e79ca02-7afb-4725-ab1d-faf2ea7e2f17",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-2c177d295f-22042-vst-69bbbcb4e0338.jpeg?itok=8fi5QQZu",
+    "id": "nfb-2026-04-21-1800-Djvulenb",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Djävulen bär Prada 2",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:00:00",
+    "url": "https://www.nfbio.se/screening/4/740b5ce7-ddbe-4111-9b20-239686b9b690",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-2c177d295f-22042-vst-69bbbcb4e0338.jpeg?itok=8fi5QQZu",
+    "id": "nfb-2026-04-21-2100-Djvulenb",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "I Swear",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T13:00:00",
-    "url": "https://www.nfbio.se/screening/4/f52e39de-4ea1-4bad-b0a8-c519ce22d692",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-d3f7f3d74f-22042-vst-6968d0dbc8ad6.jpeg?itok=1UGHSMnI",
-    "id": "nfb-2026-04-20-1300-ISwear",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "I Swear",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T15:20:00",
-    "url": "https://www.nfbio.se/screening/4/3b482ee2-8647-4fa4-9fe1-686fd18947f0",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-d3f7f3d74f-22042-vst-6968d0dbc8ad6.jpeg?itok=1UGHSMnI",
-    "id": "nfb-2026-04-20-1520-ISwear",
-    "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
-  },
-  {
-    "title": "I Swear",
-    "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T13:20:00",
+    "date": "2026-04-21T13:20:00",
     "url": "https://www.nfbio.se/screening/4/f4ac7be2-4f86-435e-8f06-07697d19ec57",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-d3f7f3d74f-22042-vst-6968d0dbc8ad6.jpeg?itok=1UGHSMnI",
-    "id": "nfb-2026-04-20-1320-ISwear",
+    "id": "nfb-2026-04-21-1320-ISwear",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "I Swear",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T12:50:00",
+    "date": "2026-04-21T12:50:00",
     "url": "https://www.nfbio.se/screening/4/0ded0930-8e48-4649-a62b-1881a48e1557",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-d3f7f3d74f-22042-vst-6968d0dbc8ad6.jpeg?itok=1UGHSMnI",
-    "id": "nfb-2026-04-20-1250-ISwear",
+    "id": "nfb-2026-04-21-1250-ISwear",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "I Swear",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T12:45:00",
+    "date": "2026-04-21T12:45:00",
     "url": "https://www.nfbio.se/screening/4/08937158-e280-4a8d-a03f-7635888dd247",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-d3f7f3d74f-22042-vst-6968d0dbc8ad6.jpeg?itok=1UGHSMnI",
-    "id": "nfb-2026-04-20-1245-ISwear",
+    "id": "nfb-2026-04-21-1245-ISwear",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Father Mother Sister Brother",
+    "title": "I Swear",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T15:10:00",
-    "url": "https://www.nfbio.se/screening/4/71959a38-900d-40fa-bcd5-4d9ee22ecce1",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-5212e055ad-22042-vst-69c162b184fb1.jpeg?itok=CjjHPAVg",
-    "id": "nfb-2026-04-20-1510-FatherMot",
+    "date": "2026-04-21T15:00:00",
+    "url": "https://www.nfbio.se/screening/4/ecdad384-0f65-48e2-b245-7664fe44ac17",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-d3f7f3d74f-22042-vst-6968d0dbc8ad6.jpeg?itok=1UGHSMnI",
+    "id": "nfb-2026-04-21-1500-ISwear",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Father Mother Sister Brother",
+    "title": "I Swear",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T15:45:00",
-    "url": "https://www.nfbio.se/screening/4/f3306509-8931-44f5-9e4f-df0b54b0eebb",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-5212e055ad-22042-vst-69c162b184fb1.jpeg?itok=CjjHPAVg",
-    "id": "nfb-2026-04-20-1545-FatherMot",
+    "date": "2026-04-21T15:45:00",
+    "url": "https://www.nfbio.se/screening/4/312db2ff-f50f-40d6-a6e4-91a463efa892",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-d3f7f3d74f-22042-vst-6968d0dbc8ad6.jpeg?itok=1UGHSMnI",
+    "id": "nfb-2026-04-21-1545-ISwear",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Father Mother Sister Brother",
+    "title": "I Swear",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T15:30:00",
-    "url": "https://www.nfbio.se/screening/4/091cdbca-abac-4e3b-a927-cd57083b30ba",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-5212e055ad-22042-vst-69c162b184fb1.jpeg?itok=CjjHPAVg",
-    "id": "nfb-2026-04-20-1530-FatherMot",
+    "date": "2026-04-21T12:45:00",
+    "url": "https://www.nfbio.se/screening/4/75d17b74-41f3-4203-80d5-535b42701b19",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-d3f7f3d74f-22042-vst-6968d0dbc8ad6.jpeg?itok=1UGHSMnI",
+    "id": "nfb-2026-04-21-1245-ISwear",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Iron Maiden: Burning Ambition",
+    "title": "I Swear",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:00:00",
-    "url": "https://www.nfbio.se/screening/4/4155952f-7671-4a38-9bed-22c0d8ed451a",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-d96dd06992-22042-vst-699ecc273e3bf.jpeg?itok=wkCVRK0T",
-    "id": "nfb-2026-04-20-1800-IronMaide",
+    "date": "2026-04-21T13:00:00",
+    "url": "https://www.nfbio.se/screening/4/2a877683-ad15-4272-99a5-b6012f537854",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-d3f7f3d74f-22042-vst-6968d0dbc8ad6.jpeg?itok=1UGHSMnI",
+    "id": "nfb-2026-04-21-1300-ISwear",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Iron Maiden: Burning Ambition",
+    "title": "I Swear",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:20:00",
-    "url": "https://www.nfbio.se/screening/4/ed82391f-8726-49ed-8685-952ad228c089",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-d96dd06992-22042-vst-699ecc273e3bf.jpeg?itok=wkCVRK0T",
-    "id": "nfb-2026-04-20-2120-IronMaide",
+    "date": "2026-04-21T14:50:00",
+    "url": "https://www.nfbio.se/screening/4/4fb5fb67-da1f-4846-aca2-700481c12dc8",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-d3f7f3d74f-22042-vst-6968d0dbc8ad6.jpeg?itok=1UGHSMnI",
+    "id": "nfb-2026-04-21-1450-ISwear",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Whistle",
+    "title": "När Mumbo Jumbo blev jättestor",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:10:00",
-    "url": "https://www.nfbio.se/screening/4/40acee9d-8034-47a1-a487-4ef2557bdd9c",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-b0dc90971e-22042-vst-698f0af73e8bd.jpeg?itok=VhA2qkIL",
-    "id": "nfb-2026-04-20-2110-Whistle",
+    "date": "2026-04-21T16:00:00",
+    "url": "https://www.nfbio.se/screening/4/cc39676c-d9d3-40ed-94c6-a3ee5183fe29",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-fbb340787a-22042-vst-69b802083ebb2.jpeg?itok=vAKHjTZL",
+    "id": "nfb-2026-04-21-1600-NrMumbo",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Whistle",
+    "title": "När Mumbo Jumbo blev jättestor",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:30:00",
-    "url": "https://www.nfbio.se/screening/4/ca50e9b5-de69-4df9-aa90-491b87a4ee5e",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-b0dc90971e-22042-vst-698f0af73e8bd.jpeg?itok=VhA2qkIL",
-    "id": "nfb-2026-04-20-2130-Whistle",
+    "date": "2026-04-21T12:50:00",
+    "url": "https://www.nfbio.se/screening/4/6c53279c-1d31-4cdd-af9a-54eed1c230d4",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-fbb340787a-22042-vst-69b802083ebb2.jpeg?itok=vAKHjTZL",
+    "id": "nfb-2026-04-21-1250-NrMumbo",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Ready or Not 2: Here I Come",
+    "title": "När Mumbo Jumbo blev jättestor",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:20:00",
-    "url": "https://www.nfbio.se/screening/4/703edc46-78ba-40e8-8a60-280f60aaa784",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-886495fd9c-22042-vst-698c8e5824bcd.jpeg?itok=ejaAtnyt",
-    "id": "nfb-2026-04-20-2120-ReadyorN",
+    "date": "2026-04-21T12:30:00",
+    "url": "https://www.nfbio.se/screening/4/b1f005ec-1737-4cfb-96f9-2ddb99e84235",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-fbb340787a-22042-vst-69b802083ebb2.jpeg?itok=vAKHjTZL",
+    "id": "nfb-2026-04-21-1230-NrMumbo",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Ready or Not 2: Here I Come",
+    "title": "När Mumbo Jumbo blev jättestor",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:15:00",
-    "url": "https://www.nfbio.se/screening/4/66e7fab0-fff9-4adf-ba56-b35edf376d5c",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-886495fd9c-22042-vst-698c8e5824bcd.jpeg?itok=ejaAtnyt",
-    "id": "nfb-2026-04-20-2115-ReadyorN",
+    "date": "2026-04-21T13:00:00",
+    "url": "https://www.nfbio.se/screening/4/01ff4ed9-949d-4e8f-ae36-1202ff2c54ab",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-fbb340787a-22042-vst-69b802083ebb2.jpeg?itok=vAKHjTZL",
+    "id": "nfb-2026-04-21-1300-NrMumbo",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "They will kill you",
+    "title": "När Mumbo Jumbo blev jättestor",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T21:10:00",
-    "url": "https://www.nfbio.se/screening/4/2bf6770f-2c26-49fa-8b52-2863fb3a07aa",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-77bd1bae84-22042-vst-69722dcc33c03.jpeg?itok=SsBRHUKO",
-    "id": "nfb-2026-04-20-2110-Theywill",
+    "date": "2026-04-21T10:50:00",
+    "url": "https://www.nfbio.se/screening/4/12337404-80aa-4902-9320-3e6eddc6c5d8",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-fbb340787a-22042-vst-69b802083ebb2.jpeg?itok=vAKHjTZL",
+    "id": "nfb-2026-04-21-1050-NrMumbo",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
-    "title": "Grannfejden",
+    "title": "När Mumbo Jumbo blev jättestor",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T12:45:00",
-    "url": "https://www.nfbio.se/screening/4/617a26b3-0c51-43d8-a4ab-c78662f7c8ac",
-    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-6036e4fcc3-22042-vst-695bcea05bc93.jpeg?itok=tozyhB0a",
-    "id": "nfb-2026-04-20-1245-Grannfejde",
+    "date": "2026-04-21T15:50:00",
+    "url": "https://www.nfbio.se/screening/4/7ab05762-3f1c-443a-991f-cfc66741b2b8",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-fbb340787a-22042-vst-69b802083ebb2.jpeg?itok=vAKHjTZL",
+    "id": "nfb-2026-04-21-1550-NrMumbo",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "När Mumbo Jumbo blev jättestor",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T12:50:00",
+    "url": "https://www.nfbio.se/screening/4/7b719a22-362b-40cb-a532-895d2278b245",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-fbb340787a-22042-vst-69b802083ebb2.jpeg?itok=vAKHjTZL",
+    "id": "nfb-2026-04-21-1250-NrMumbo",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Operation bäver",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T12:30:00",
+    "url": "https://www.nfbio.se/screening/4/266ee7dc-62e7-478e-865b-2e8529daf307",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-786e5931ac-22042-vst-695bd53fa64c1.jpeg?itok=cqpnHcRZ",
+    "id": "nfb-2026-04-21-1230-Operation",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Operation bäver",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T16:00:00",
+    "url": "https://www.nfbio.se/screening/4/b8c1c393-d731-49b4-922f-5bf1e26f8614",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-786e5931ac-22042-vst-695bd53fa64c1.jpeg?itok=cqpnHcRZ",
+    "id": "nfb-2026-04-21-1600-Operation",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Operation bäver",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T08:20:00",
+    "url": "https://www.nfbio.se/screening/4/b4e3b376-71d8-45d3-8363-af0be26b9a8e",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-786e5931ac-22042-vst-695bd53fa64c1.jpeg?itok=cqpnHcRZ",
+    "id": "nfb-2026-04-21-0820-Operation",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Operation bäver",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T12:50:00",
+    "url": "https://www.nfbio.se/screening/4/d494d5cb-1dda-4ace-bc0b-3d48476e55c7",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-786e5931ac-22042-vst-695bd53fa64c1.jpeg?itok=cqpnHcRZ",
+    "id": "nfb-2026-04-21-1250-Operation",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Operation bäver",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:20:00",
+    "url": "https://www.nfbio.se/screening/4/d5706445-c489-4509-8256-4e76dbf2beb3",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-786e5931ac-22042-vst-695bd53fa64c1.jpeg?itok=cqpnHcRZ",
+    "id": "nfb-2026-04-21-1520-Operation",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Operation bäver",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T12:00:00",
+    "url": "https://www.nfbio.se/screening/4/89de9ca0-3a03-43f3-ae3c-1d7411f5ea25",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-786e5931ac-22042-vst-695bd53fa64c1.jpeg?itok=cqpnHcRZ",
+    "id": "nfb-2026-04-21-1200-Operation",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Operation bäver",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T13:20:00",
+    "url": "https://www.nfbio.se/screening/4/58ebfdaf-995e-4572-b787-6d08de2063ef",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-786e5931ac-22042-vst-695bd53fa64c1.jpeg?itok=cqpnHcRZ",
+    "id": "nfb-2026-04-21-1320-Operation",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Bamse och havets hemlighet",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T13:30:00",
+    "date": "2026-04-21T13:30:00",
     "url": "https://www.nfbio.se/screening/4/03b77ec3-89d3-40d8-9994-eb0cf6618612",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2025-08/gmnt-4c7ad1bbd2-22042-vst-68a47839b039f.jpeg?itok=leGUN2Y7",
-    "id": "nfb-2026-04-20-1330-Bamseoch",
+    "id": "nfb-2026-04-21-1330-Bamseoch",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Bamse och havets hemlighet",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T10:40:00",
+    "url": "https://www.nfbio.se/screening/4/cbe654f0-ab15-4560-8b08-c806d9c39d46",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2025-08/gmnt-4c7ad1bbd2-22042-vst-68a47839b039f.jpeg?itok=leGUN2Y7",
+    "id": "nfb-2026-04-21-1040-Bamseoch",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Bamse och havets hemlighet",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T08:20:00",
+    "url": "https://www.nfbio.se/screening/4/aaa3b806-3c83-4847-9b32-fc8d3cf9b988",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2025-08/gmnt-4c7ad1bbd2-22042-vst-68a47839b039f.jpeg?itok=leGUN2Y7",
+    "id": "nfb-2026-04-21-0820-Bamseoch",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Bamse och havets hemlighet",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T13:15:00",
+    "url": "https://www.nfbio.se/screening/4/24f14ff3-f68b-46eb-9b6f-998e749f4bcc",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2025-08/gmnt-4c7ad1bbd2-22042-vst-68a47839b039f.jpeg?itok=leGUN2Y7",
+    "id": "nfb-2026-04-21-1315-Bamseoch",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Bamse och havets hemlighet",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T13:00:00",
+    "url": "https://www.nfbio.se/screening/4/d8b33dc3-a0e5-4bb0-8506-2aa229911af3",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2025-08/gmnt-4c7ad1bbd2-22042-vst-68a47839b039f.jpeg?itok=leGUN2Y7",
+    "id": "nfb-2026-04-21-1300-Bamseoch",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Bamse och havets hemlighet",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T16:00:00",
+    "url": "https://www.nfbio.se/screening/4/d0268b1b-8d2f-4609-8340-45d4d62aaf68",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2025-08/gmnt-4c7ad1bbd2-22042-vst-68a47839b039f.jpeg?itok=leGUN2Y7",
+    "id": "nfb-2026-04-21-1600-Bamseoch",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Bamse och havets hemlighet",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T10:30:00",
+    "url": "https://www.nfbio.se/screening/4/0c58a78f-3940-4d35-a3a7-6556c917f59e",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2025-08/gmnt-4c7ad1bbd2-22042-vst-68a47839b039f.jpeg?itok=leGUN2Y7",
+    "id": "nfb-2026-04-21-1030-Bamseoch",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:30:00",
+    "url": "https://www.nfbio.se/screening/4/788b7db7-66a0-4891-b82c-6c0377d36041",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-ba75b75da3-22042-vst-69bbbd1b1063f.jpeg?itok=xh0sAWwj",
+    "id": "nfb-2026-04-21-1830-BillieEil",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:10:00",
+    "url": "https://www.nfbio.se/screening/4/bb804814-04cf-41e1-913b-bed29bb6869e",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-ba75b75da3-22042-vst-69bbbd1b1063f.jpeg?itok=xh0sAWwj",
+    "id": "nfb-2026-04-21-2110-BillieEil",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:30:00",
+    "url": "https://www.nfbio.se/screening/4/e00dbf4b-291d-4311-adc4-d3b698e887e3",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-ba75b75da3-22042-vst-69bbbd1b1063f.jpeg?itok=xh0sAWwj",
+    "id": "nfb-2026-04-21-1830-BillieEil",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:10:00",
+    "url": "https://www.nfbio.se/screening/4/5d116488-eeb0-4ba0-b93b-3716eadab6e8",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-ba75b75da3-22042-vst-69bbbd1b1063f.jpeg?itok=xh0sAWwj",
+    "id": "nfb-2026-04-21-2110-BillieEil",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:30:00",
+    "url": "https://www.nfbio.se/screening/4/0c94a62e-d4fd-4914-bafc-5d26d1ef1d5e",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-ba75b75da3-22042-vst-69bbbd1b1063f.jpeg?itok=xh0sAWwj",
+    "id": "nfb-2026-04-21-1830-BillieEil",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Father Mother Sister Brother",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:10:00",
+    "url": "https://www.nfbio.se/screening/4/71959a38-900d-40fa-bcd5-4d9ee22ecce1",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-5212e055ad-22042-vst-69c162b184fb1.jpeg?itok=CjjHPAVg",
+    "id": "nfb-2026-04-21-1510-FatherMot",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Father Mother Sister Brother",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:45:00",
+    "url": "https://www.nfbio.se/screening/4/f3306509-8931-44f5-9e4f-df0b54b0eebb",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-5212e055ad-22042-vst-69c162b184fb1.jpeg?itok=CjjHPAVg",
+    "id": "nfb-2026-04-21-1545-FatherMot",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Father Mother Sister Brother",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:30:00",
+    "url": "https://www.nfbio.se/screening/4/091cdbca-abac-4e3b-a927-cd57083b30ba",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-5212e055ad-22042-vst-69c162b184fb1.jpeg?itok=CjjHPAVg",
+    "id": "nfb-2026-04-21-1530-FatherMot",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Father Mother Sister Brother",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T13:10:00",
+    "url": "https://www.nfbio.se/screening/4/b5b7f71b-0468-40d6-a543-8342c69d8e42",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-5212e055ad-22042-vst-69c162b184fb1.jpeg?itok=CjjHPAVg",
+    "id": "nfb-2026-04-21-1310-FatherMot",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Father Mother Sister Brother",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T12:50:00",
+    "url": "https://www.nfbio.se/screening/4/6053eb65-363e-4bfc-80a2-f8c742d10e1c",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-5212e055ad-22042-vst-69c162b184fb1.jpeg?itok=CjjHPAVg",
+    "id": "nfb-2026-04-21-1250-FatherMot",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Flåklypa - Rally från Paris till pyramiderna",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T12:50:00",
+    "url": "https://www.nfbio.se/screening/4/bc2d186e-7e45-4344-a2e9-ab96e69369d9",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-98fe941c28-22042-vst-69b156e577444.jpeg?itok=5mLiUK6Z",
+    "id": "nfb-2026-04-21-1250-Flklypa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Flåklypa - Rally från Paris till pyramiderna",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T09:00:00",
+    "url": "https://www.nfbio.se/screening/4/745c4424-cb6d-4456-a7de-95afdb329c1e",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-98fe941c28-22042-vst-69b156e577444.jpeg?itok=5mLiUK6Z",
+    "id": "nfb-2026-04-21-0900-Flklypa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Flåklypa - Rally från Paris till pyramiderna",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:50:00",
+    "url": "https://www.nfbio.se/screening/4/42c368da-3426-4662-a52a-ba334b8ef548",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-98fe941c28-22042-vst-69b156e577444.jpeg?itok=5mLiUK6Z",
+    "id": "nfb-2026-04-21-1550-Flklypa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Flåklypa - Rally från Paris till pyramiderna",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T13:00:00",
+    "url": "https://www.nfbio.se/screening/4/f499ee42-ed1d-4b8c-8527-715ddbc64ff5",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-98fe941c28-22042-vst-69b156e577444.jpeg?itok=5mLiUK6Z",
+    "id": "nfb-2026-04-21-1300-Flklypa",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Whistle",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:10:00",
+    "url": "https://www.nfbio.se/screening/4/40acee9d-8034-47a1-a487-4ef2557bdd9c",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-b0dc90971e-22042-vst-698f0af73e8bd.jpeg?itok=VhA2qkIL",
+    "id": "nfb-2026-04-21-2110-Whistle",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Whistle",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:30:00",
+    "url": "https://www.nfbio.se/screening/4/ca50e9b5-de69-4df9-aa90-491b87a4ee5e",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-b0dc90971e-22042-vst-698f0af73e8bd.jpeg?itok=VhA2qkIL",
+    "id": "nfb-2026-04-21-2130-Whistle",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Whistle",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:30:00",
+    "url": "https://www.nfbio.se/screening/4/0515e24a-6ad4-41cc-8a2e-3b96107a389a",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-b0dc90971e-22042-vst-698f0af73e8bd.jpeg?itok=VhA2qkIL",
+    "id": "nfb-2026-04-21-2130-Whistle",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Whistle",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:20:00",
+    "url": "https://www.nfbio.se/screening/4/1ad2c327-d675-4e8f-a678-2ebea801f56b",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-b0dc90971e-22042-vst-698f0af73e8bd.jpeg?itok=VhA2qkIL",
+    "id": "nfb-2026-04-21-2120-Whistle",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Iron Maiden: Burning Ambition",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T18:00:00",
+    "url": "https://www.nfbio.se/screening/4/4155952f-7671-4a38-9bed-22c0d8ed451a",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-d96dd06992-22042-vst-699ecc273e3bf.jpeg?itok=wkCVRK0T",
+    "id": "nfb-2026-04-21-1800-IronMaide",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Iron Maiden: Burning Ambition",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:20:00",
+    "url": "https://www.nfbio.se/screening/4/ed82391f-8726-49ed-8685-952ad228c089",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-d96dd06992-22042-vst-699ecc273e3bf.jpeg?itok=wkCVRK0T",
+    "id": "nfb-2026-04-21-2120-IronMaide",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Fårdetektiverna",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T12:30:00",
+    "url": "https://www.nfbio.se/screening/4/c96073f4-9ec1-49ce-b5c4-2460f6632ac3",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-b80086d951-22042-vst-69c66dd464d03.jpeg?itok=mxyVH4zd",
+    "id": "nfb-2026-04-21-1230-Frdetekti",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Fårdetektiverna",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:50:00",
+    "url": "https://www.nfbio.se/screening/4/b026c73c-356e-4d5e-9570-39c1c74f192a",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-b80086d951-22042-vst-69c66dd464d03.jpeg?itok=mxyVH4zd",
+    "id": "nfb-2026-04-21-1550-Frdetekti",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Ready or Not 2: Here I Come",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:15:00",
+    "url": "https://www.nfbio.se/screening/4/66e7fab0-fff9-4adf-ba56-b35edf376d5c",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-886495fd9c-22042-vst-698c8e5824bcd.jpeg?itok=ejaAtnyt",
+    "id": "nfb-2026-04-21-2115-ReadyorN",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Ready or Not 2: Here I Come",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:10:00",
+    "url": "https://www.nfbio.se/screening/4/d91662d1-8b9c-4136-b99a-3dd8f62dcb9a",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-886495fd9c-22042-vst-698c8e5824bcd.jpeg?itok=ejaAtnyt",
+    "id": "nfb-2026-04-21-2110-ReadyorN",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Goat - bäst i världen",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T10:00:00",
+    "url": "https://www.nfbio.se/screening/4/0f2278c8-3886-451f-9945-5105684df86c",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-9ad20e92c0-22042-vst-698c96b32c88d.jpeg?itok=mM2riODl",
+    "id": "nfb-2026-04-21-1000-Goatbs",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Goat - bäst i världen",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T13:25:00",
+    "url": "https://www.nfbio.se/screening/4/784e52da-186a-42b7-ba2c-0c17a87fc2f4",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-9ad20e92c0-22042-vst-698c96b32c88d.jpeg?itok=mM2riODl",
+    "id": "nfb-2026-04-21-1325-Goatbs",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Skurkarnas skurk",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T13:20:00",
+    "url": "https://www.nfbio.se/screening/4/20409458-d8c0-421f-a246-9f3dcf75b0a5",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-130a6c841b-56361-vst-6989cfcf4eb88.jpeg?itok=1XnWBvH4",
+    "id": "nfb-2026-04-21-1320-Skurkarnas",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Skurkarnas skurk",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T15:10:00",
+    "url": "https://www.nfbio.se/screening/4/f039a646-6367-49a0-a3a6-488cfa8f40b5",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-02/gmnt-130a6c841b-56361-vst-6989cfcf4eb88.jpeg?itok=1XnWBvH4",
+    "id": "nfb-2026-04-21-1510-Skurkarnas",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "En natt i djurparken",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T11:10:00",
+    "url": "https://www.nfbio.se/screening/4/ef9f66b6-a8c4-4e75-b421-09d12e3cdba3",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-04/gmnt-6a209ad92d-22042-vst-69d62c5de8b3c.jpeg?itok=esnf-jIk",
+    "id": "nfb-2026-04-21-1110-Ennatti",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "They will kill you",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T21:10:00",
+    "url": "https://www.nfbio.se/screening/4/2bf6770f-2c26-49fa-8b52-2863fb3a07aa",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-77bd1bae84-22042-vst-69722dcc33c03.jpeg?itok=SsBRHUKO",
+    "id": "nfb-2026-04-21-2110-Theywill",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
+  },
+  {
+    "title": "Lek med Alfons Åberg",
+    "venue": "Nordisk Film Bio",
+    "date": "2026-04-21T10:40:00",
+    "url": "https://www.nfbio.se/screening/4/e6d199d4-77ca-4e23-a9c5-834d614c2905",
+    "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2025-11/gmnt-22cbc51d0f-22042-vst-690b612ab7bb4.JPG?itok=BAcxIQKo",
+    "id": "nfb-2026-04-21-1040-LekmedAl",
+    "source": "nordiskbio",
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Sagan om Ringen-Maraton, Extended Version",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T11:00:00",
+    "date": "2026-04-21T11:00:00",
     "url": "https://www.nfbio.se/screening/4/ef594d05-630b-42af-9cac-103a334cebda",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2025-04/gmnt-203cd8bf92-22042-vst-6808942e9d6b3.jpeg?itok=STLUMLm8",
-    "id": "nfb-2026-04-20-1100-SaganomR",
+    "id": "nfb-2026-04-21-1100-SaganomR",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Casablanca",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:00:00",
+    "date": "2026-04-21T18:00:00",
     "url": "https://www.nfbio.se/screening/4/a3ea453f-6aba-480f-b6b8-b81da7ad8b61",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-03/gmnt-e565168f61-22042-vst-69a6d9001d90b.jpeg?itok=xEWwon9J",
-    "id": "nfb-2026-04-20-1800-Casablanca",
+    "id": "nfb-2026-04-21-1800-Casablanca",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   },
   {
     "title": "Dunkirk",
     "venue": "Nordisk Film Bio",
-    "date": "2026-04-20T18:00:00",
+    "date": "2026-04-21T18:00:00",
     "url": "https://www.nfbio.se/screening/4/2a72845c-221c-4a08-aa9d-982924557a6f",
     "image": "https://www.nfbio.se/sites/nfbio.se/files/styles/movie_poster_teaser/public/media-images/2026-01/gmnt-eea8848701-22042-vst-6970f6270b696.jpeg?itok=UjTtdbML",
-    "id": "nfb-2026-04-20-1800-Dunkirk",
+    "id": "nfb-2026-04-21-1800-Dunkirk",
     "source": "nordiskbio",
-    "fetched_at": "2026-04-20T02:05:31.900Z"
+    "fetched_at": "2026-04-21T02:04:27.404Z"
   }
 ]

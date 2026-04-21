@@ -7,7 +7,7 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-20T02:07:25.195Z",
+    "fetched_at": "2026-04-21T02:11:11.128Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
   },
@@ -19,7 +19,7 @@
     "venue": "Omegapoint",
     "address": "Kungsängsgatan 14",
     "city": "Uppsala",
-    "fetched_at": "2026-04-20T02:07:25.195Z",
+    "fetched_at": "2026-04-21T02:11:11.129Z",
     "latitude": 59.8571282,
     "longitude": 17.6417146
   },
@@ -31,7 +31,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-20T02:07:25.195Z",
+    "fetched_at": "2026-04-21T02:11:11.129Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -43,7 +43,7 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-20T02:07:25.195Z",
+    "fetched_at": "2026-04-21T02:11:11.129Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
   },
@@ -55,7 +55,7 @@
     "venue": "Uppsala Castle",
     "address": "Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-20T02:07:25.195Z",
+    "fetched_at": "2026-04-21T02:11:11.129Z",
     "latitude": 59.8586126,
     "longitude": 17.6387436
   },
@@ -67,21 +67,9 @@
     "venue": "UTK - Uppsala Tennis Klubb",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-20T02:07:25.195Z",
+    "fetched_at": "2026-04-21T02:11:11.129Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
-  },
-  {
-    "title": "Friday afterwork at O'Neill's Irish pub",
-    "startDate": "2026-04-24T19:00:00+02:00",
-    "url": "https://www.meetup.com/uppsala-social/events/314352758/",
-    "source": "meetup.com",
-    "venue": "O'Neill's",
-    "address": "Dragarbrunnsgatan 53,",
-    "city": "Uppsala",
-    "fetched_at": "2026-04-20T02:07:25.195Z",
-    "latitude": 59.8572528,
-    "longitude": 17.6435434
   },
   {
     "title": "UPPSALA - Paint & Sip | Sans Studio x Grandpa",
@@ -91,9 +79,21 @@
     "venue": "Grandpa Uppsala",
     "address": "Svartbäcksgatan 1B",
     "city": "Uppsala",
-    "fetched_at": "2026-04-20T02:07:25.195Z",
+    "fetched_at": "2026-04-21T02:11:11.129Z",
     "latitude": 59.8591065,
     "longitude": 17.6383471
+  },
+  {
+    "title": "Sunday Badminton",
+    "startDate": "2026-04-26T16:00:00+02:00",
+    "url": "https://www.meetup.com/uppsala-social/events/314147671/",
+    "source": "meetup.com",
+    "venue": "Fyrisfjädern Badmintonklubb",
+    "address": "Badmintonstigen 1",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-21T02:11:11.129Z",
+    "latitude": 59.8721729,
+    "longitude": 17.6208429
   },
   {
     "title": "Uppsala.js #44 - Daily Agent Coding",
@@ -103,7 +103,7 @@
     "venue": "Codevum",
     "address": "Torgny Segerstedts Allé 87",
     "city": "Uppsala",
-    "fetched_at": "2026-04-20T02:07:25.195Z",
+    "fetched_at": "2026-04-21T02:11:11.129Z",
     "latitude": 59.8345247,
     "longitude": 17.6338718
   },
@@ -115,7 +115,7 @@
     "venue": "Bror Hjorths Hus",
     "address": "Norbyvägen 26",
     "city": "Uppsala",
-    "fetched_at": "2026-04-20T02:07:25.195Z",
+    "fetched_at": "2026-04-21T02:11:11.129Z",
     "latitude": 59.8492776,
     "longitude": 17.6198763
   },
@@ -127,7 +127,7 @@
     "venue": "Sidenvävargatan 17",
     "address": "Sidenvävargatan 17",
     "city": "Uppsala",
-    "fetched_at": "2026-04-20T02:07:25.195Z",
+    "fetched_at": "2026-04-21T02:11:11.129Z",
     "latitude": 59.8565705,
     "longitude": 17.6495256
   }
