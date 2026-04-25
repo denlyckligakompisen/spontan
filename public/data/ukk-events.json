@@ -1,17 +1,5 @@
 [
   {
-    "title": "Fatoumata Diawara – Världsstjärnan från Mali",
-    "date": "2026-04-24T20:00:00.000Z",
-    "venue": "Uppsala Konsert & Kongress",
-    "url": "https://ukk.se/fatoumata-diawara/",
-    "image": null,
-    "category": "musik",
-    "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.143Z",
-    "latitude": 59.8611757,
-    "longitude": 17.6459599
-  },
-  {
     "title": "Poste Restante – Tillägnan",
     "date": "2026-04-26T16:00:00.000Z",
     "venue": "Uppsala Konsert & Kongress",
@@ -19,7 +7,19 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.144Z",
+    "fetched_at": "2026-04-25T07:41:19.990Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Focus Dance – Close up-samtal med Henrik Lillsjö",
+    "date": "2026-04-29T16:15:00.000Z",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://ukk.se/focus-dance-close-up-samtal-med-henrik-lillsjo/",
+    "image": null,
+    "category": "musik",
+    "source": "ukk.se",
+    "fetched_at": "2026-04-25T07:41:19.991Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -31,7 +31,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.145Z",
+    "fetched_at": "2026-04-25T07:41:19.991Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -43,7 +43,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.146Z",
+    "fetched_at": "2026-04-25T07:41:19.992Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -55,7 +55,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.147Z",
+    "fetched_at": "2026-04-25T07:41:19.993Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -67,7 +67,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.148Z",
+    "fetched_at": "2026-04-25T07:41:19.993Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -79,7 +79,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.148Z",
+    "fetched_at": "2026-04-25T07:41:19.994Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -91,7 +91,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.149Z",
+    "fetched_at": "2026-04-25T07:41:19.995Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -103,7 +103,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.150Z",
+    "fetched_at": "2026-04-25T07:41:19.996Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -115,7 +115,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.151Z",
+    "fetched_at": "2026-04-25T07:41:19.996Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -127,7 +127,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.152Z",
+    "fetched_at": "2026-04-25T07:41:19.997Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -139,7 +139,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.152Z",
+    "fetched_at": "2026-04-25T07:41:19.997Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -151,7 +151,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.153Z",
+    "fetched_at": "2026-04-25T07:41:19.998Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -163,7 +163,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.154Z",
+    "fetched_at": "2026-04-25T07:41:19.998Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -175,7 +175,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.155Z",
+    "fetched_at": "2026-04-25T07:41:19.999Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -187,7 +187,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.155Z",
+    "fetched_at": "2026-04-25T07:41:19.999Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -199,7 +199,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.156Z",
+    "fetched_at": "2026-04-25T07:41:19.999Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -211,7 +211,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.157Z",
+    "fetched_at": "2026-04-25T07:41:20.000Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -223,7 +223,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.158Z",
+    "fetched_at": "2026-04-25T07:41:20.000Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -235,7 +235,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.158Z",
+    "fetched_at": "2026-04-25T07:41:20.001Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -247,7 +247,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.159Z",
+    "fetched_at": "2026-04-25T07:41:20.001Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -259,7 +259,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.160Z",
+    "fetched_at": "2026-04-25T07:41:20.001Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -271,7 +271,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.160Z",
+    "fetched_at": "2026-04-25T07:41:20.002Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -283,7 +283,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.161Z",
+    "fetched_at": "2026-04-25T07:41:20.002Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -295,7 +295,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.162Z",
+    "fetched_at": "2026-04-25T07:41:20.003Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -307,7 +307,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.162Z",
+    "fetched_at": "2026-04-25T07:41:20.003Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -319,7 +319,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.163Z",
+    "fetched_at": "2026-04-25T07:41:20.003Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -331,7 +331,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.164Z",
+    "fetched_at": "2026-04-25T07:41:20.004Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -343,7 +343,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.164Z",
+    "fetched_at": "2026-04-25T07:41:20.004Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -355,7 +355,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.165Z",
+    "fetched_at": "2026-04-25T07:41:20.005Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -367,7 +367,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.166Z",
+    "fetched_at": "2026-04-25T07:41:20.005Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -379,7 +379,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.166Z",
+    "fetched_at": "2026-04-25T07:41:20.005Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -391,7 +391,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.177Z",
+    "fetched_at": "2026-04-25T07:41:20.006Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -403,7 +403,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.178Z",
+    "fetched_at": "2026-04-25T07:41:20.006Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -415,7 +415,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.178Z",
+    "fetched_at": "2026-04-25T07:41:20.006Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -427,7 +427,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.179Z",
+    "fetched_at": "2026-04-25T07:41:20.007Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -439,7 +439,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.180Z",
+    "fetched_at": "2026-04-25T07:41:20.007Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -451,7 +451,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.180Z",
+    "fetched_at": "2026-04-25T07:41:20.007Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -463,7 +463,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.181Z",
+    "fetched_at": "2026-04-25T07:41:20.008Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -475,7 +475,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.182Z",
+    "fetched_at": "2026-04-25T07:41:20.008Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -487,7 +487,19 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.182Z",
+    "fetched_at": "2026-04-25T07:41:20.009Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Slutspelat – Ett komiskt sorgearbete",
+    "date": "2026-09-06T19:00:00.000Z",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://ukk.se/slutspelat-ett-komiskt-sorgearbete-19-00/",
+    "image": null,
+    "category": "musik",
+    "source": "ukk.se",
+    "fetched_at": "2026-04-25T07:41:20.010Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -499,7 +511,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.183Z",
+    "fetched_at": "2026-04-25T07:41:20.010Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -511,7 +523,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.184Z",
+    "fetched_at": "2026-04-25T07:41:20.011Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -523,7 +535,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.185Z",
+    "fetched_at": "2026-04-25T07:41:20.012Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -535,7 +547,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.185Z",
+    "fetched_at": "2026-04-25T07:41:20.012Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -547,7 +559,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.186Z",
+    "fetched_at": "2026-04-25T07:41:20.013Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -559,7 +571,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.186Z",
+    "fetched_at": "2026-04-25T07:41:20.013Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -571,7 +583,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.187Z",
+    "fetched_at": "2026-04-25T07:41:20.014Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -583,7 +595,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.188Z",
+    "fetched_at": "2026-04-25T07:41:20.014Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -595,7 +607,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.188Z",
+    "fetched_at": "2026-04-25T07:41:20.015Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -607,7 +619,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.189Z",
+    "fetched_at": "2026-04-25T07:41:20.015Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -619,7 +631,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.190Z",
+    "fetched_at": "2026-04-25T07:41:20.015Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -631,7 +643,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.190Z",
+    "fetched_at": "2026-04-25T07:41:20.016Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -643,7 +655,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.191Z",
+    "fetched_at": "2026-04-25T07:41:20.016Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -655,7 +667,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.191Z",
+    "fetched_at": "2026-04-25T07:41:20.016Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -667,7 +679,19 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.192Z",
+    "fetched_at": "2026-04-25T07:41:20.017Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Lisa Nilsson möter Bohuslän Big Band",
+    "date": "2026-10-20T19:30:00.000Z",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://ukk.se/lisa-nilsson-bohuslan-big-band/",
+    "image": null,
+    "category": "musik",
+    "source": "ukk.se",
+    "fetched_at": "2026-04-25T07:41:20.017Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -679,7 +703,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.192Z",
+    "fetched_at": "2026-04-25T07:41:20.018Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -691,7 +715,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.193Z",
+    "fetched_at": "2026-04-25T07:41:20.018Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -703,7 +727,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.194Z",
+    "fetched_at": "2026-04-25T07:41:20.019Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -715,7 +739,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.194Z",
+    "fetched_at": "2026-04-25T07:41:20.019Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -727,19 +751,19 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.195Z",
+    "fetched_at": "2026-04-25T07:41:20.019Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
   {
-    "title": "Elvis, Elvis, Elvis! 2026",
+    "title": "Elvis, Elvis, Elvis!",
     "date": "2026-11-01T18:00:00.000Z",
     "venue": "Uppsala Konsert & Kongress",
     "url": "https://ukk.se/elvis-elvis-elvis-2026/",
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.196Z",
+    "fetched_at": "2026-04-25T07:41:20.020Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -751,7 +775,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.196Z",
+    "fetched_at": "2026-04-25T07:41:20.020Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -763,7 +787,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.197Z",
+    "fetched_at": "2026-04-25T07:41:20.021Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -775,7 +799,19 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.197Z",
+    "fetched_at": "2026-04-25T07:41:20.021Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Christoffer Nyqvist – Lejonet från Norden",
+    "date": "2026-11-13T19:30:00.000Z",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://ukk.se/christoffer-nyqvist-lejonet-fran-norden/",
+    "image": null,
+    "category": "musik",
+    "source": "ukk.se",
+    "fetched_at": "2026-04-25T07:41:20.022Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -787,7 +823,19 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.198Z",
+    "fetched_at": "2026-04-25T07:41:20.022Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Per Andersson – Kardborreshowen",
+    "date": "2026-11-21T19:30:00.000Z",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://ukk.se/per-andersson-kardborreshowen-2026/",
+    "image": null,
+    "category": "musik",
+    "source": "ukk.se",
+    "fetched_at": "2026-04-25T07:41:20.023Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -799,7 +847,19 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.199Z",
+    "fetched_at": "2026-04-25T07:41:20.023Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Christmas in Ireland",
+    "date": "2026-11-30T19:00:00.000Z",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://ukk.se/christmas-in-ireland/",
+    "image": null,
+    "category": "musik",
+    "source": "ukk.se",
+    "fetched_at": "2026-04-25T07:41:20.023Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -811,7 +871,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.199Z",
+    "fetched_at": "2026-04-25T07:41:20.024Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -823,7 +883,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.200Z",
+    "fetched_at": "2026-04-25T07:41:20.024Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -835,7 +895,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.200Z",
+    "fetched_at": "2026-04-25T07:41:20.024Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -847,7 +907,19 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.201Z",
+    "fetched_at": "2026-04-25T07:41:20.025Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Arvingarna – Klart det ska bli jul, igen!",
+    "date": "2026-12-13T19:30:00.000Z",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://ukk.se/arvingarna-klart-det-ska-bli-jul-igen/",
+    "image": null,
+    "category": "musik",
+    "source": "ukk.se",
+    "fetched_at": "2026-04-25T07:41:20.025Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -859,7 +931,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.201Z",
+    "fetched_at": "2026-04-25T07:41:20.025Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -871,7 +943,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.202Z",
+    "fetched_at": "2026-04-25T07:41:20.026Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -883,7 +955,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.202Z",
+    "fetched_at": "2026-04-25T07:41:20.026Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -895,7 +967,19 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.203Z",
+    "fetched_at": "2026-04-25T07:41:20.026Z",
+    "latitude": 59.8611757,
+    "longitude": 17.6459599
+  },
+  {
+    "title": "Molly Hammar – Livsvittne",
+    "date": "2027-02-11T19:00:00.000Z",
+    "venue": "Uppsala Konsert & Kongress",
+    "url": "https://ukk.se/molly-hammar/",
+    "image": null,
+    "category": "musik",
+    "source": "ukk.se",
+    "fetched_at": "2026-04-25T07:41:20.026Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -907,7 +991,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.204Z",
+    "fetched_at": "2026-04-25T07:41:20.027Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -919,7 +1003,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.204Z",
+    "fetched_at": "2026-04-25T07:41:20.027Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -931,7 +1015,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.205Z",
+    "fetched_at": "2026-04-25T07:41:20.027Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -943,7 +1027,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.205Z",
+    "fetched_at": "2026-04-25T07:41:20.028Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -955,7 +1039,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.206Z",
+    "fetched_at": "2026-04-25T07:41:20.028Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   },
@@ -967,7 +1051,7 @@
     "image": null,
     "category": "musik",
     "source": "ukk.se",
-    "fetched_at": "2026-04-21T01:34:41.206Z",
+    "fetched_at": "2026-04-25T07:41:20.029Z",
     "latitude": 59.8611757,
     "longitude": 17.6459599
   }

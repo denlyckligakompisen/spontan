@@ -470,5 +470,13 @@
   "S. Lars (katolska) kyrka, Uppsala, Sweden": {
     "lat": 59.8562367,
     "lon": 17.6390795
+  },
+  "Celsiustorget, Uppsala, Sweden": {
+    "lat": 59.8596455,
+    "lon": 17.6371495
+  },
+  "Uppsala Östra, Uppsala, Sweden": {
+    "lat": 59.8578368,
+    "lon": 17.6492476
   }
 }
