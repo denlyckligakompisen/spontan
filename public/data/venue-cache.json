@@ -478,5 +478,25 @@
   "Uppsala Östra, Uppsala, Sweden": {
     "lat": 59.8578368,
     "lon": 17.6492476
+  },
+  "Gula Villan, Uppsala, Sweden": {
+    "lat": 59.7341605,
+    "lon": 17.3099898
+  },
+  "Botaniska Trädgården, Uppsala, Sweden": {
+    "lat": 59.8515471,
+    "lon": 17.6272814
+  },
+  "Uppland, Uppsala, Sweden": {
+    "lat": 59.707798,
+    "lon": 17.1976469
+  },
+  "Hospitalsträdgården, Uppsala, Sweden": {
+    "lat": 59.8356636,
+    "lon": 17.6559026
+  },
+  "Etage Bar, Uppsala, Sweden": {
+    "lat": 59.858984,
+    "lon": 17.6405754
   }
 }

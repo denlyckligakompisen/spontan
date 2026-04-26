@@ -7,19 +7,9 @@
     "venue": "Hospitalsträdgårdens dagvattenpark",
     "address": "Hospitalsträdgården",
     "city": "Uppsala",
-    "fetched_at": "2026-04-25T08:12:05.058Z"
-  },
-  {
-    "title": "Sunday Badminton",
-    "startDate": "2026-04-26T16:00:00+02:00",
-    "url": "https://www.meetup.com/uppsala-social/events/314147671/",
-    "source": "meetup.com",
-    "venue": "Fyrisfjädern Badmintonklubb",
-    "address": "Badmintonstigen 1",
-    "city": "Uppsala",
-    "fetched_at": "2026-04-25T08:12:05.058Z",
-    "latitude": 59.8721729,
-    "longitude": 17.6208429
+    "fetched_at": "2026-04-26T02:08:48.692Z",
+    "latitude": 59.8356636,
+    "longitude": 17.6559026
   },
   {
     "title": "Build with 46elks",
@@ -29,7 +19,7 @@
     "venue": "Magasin X",
     "address": "Sidenvävargatan 17",
     "city": "Uppsala",
-    "fetched_at": "2026-04-25T08:12:05.058Z",
+    "fetched_at": "2026-04-26T02:08:48.692Z",
     "latitude": 59.8487686,
     "longitude": 17.6524889
   },
@@ -41,7 +31,7 @@
     "venue": "Codevum",
     "address": "Torgny Segerstedts Allé 87",
     "city": "Uppsala",
-    "fetched_at": "2026-04-25T08:12:05.058Z",
+    "fetched_at": "2026-04-26T02:08:48.692Z",
     "latitude": 59.8345247,
     "longitude": 17.6338718
   },
@@ -53,7 +43,9 @@
     "venue": "Etage Bar",
     "address": "Dragarbrunnsgatan 39, 753 20 Uppsala, Sweden",
     "city": "Uppsala",
-    "fetched_at": "2026-04-25T08:12:05.058Z"
+    "fetched_at": "2026-04-26T02:08:48.692Z",
+    "latitude": 59.858984,
+    "longitude": 17.6405754
   },
   {
     "title": "#46 Urban Sketching - Bror Hjorths Hus",
@@ -63,7 +55,7 @@
     "venue": "Bror Hjorths Hus",
     "address": "Norbyvägen 26",
     "city": "Uppsala",
-    "fetched_at": "2026-04-25T08:12:05.058Z",
+    "fetched_at": "2026-04-26T02:08:48.693Z",
     "latitude": 59.8492776,
     "longitude": 17.6198763
   },
@@ -75,7 +67,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-25T08:12:05.058Z",
+    "fetched_at": "2026-04-26T02:08:48.693Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -87,7 +79,7 @@
     "venue": "Sidenvävargatan 17",
     "address": "Sidenvävargatan 17",
     "city": "Uppsala",
-    "fetched_at": "2026-04-25T08:12:05.058Z",
+    "fetched_at": "2026-04-26T02:08:48.693Z",
     "latitude": 59.8565705,
     "longitude": 17.6495256
   },
@@ -99,7 +91,7 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-25T08:12:05.058Z",
+    "fetched_at": "2026-04-26T02:08:48.693Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
   },
@@ -111,7 +103,7 @@
     "venue": "Padel Uppsala - UTK Hallen",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-25T08:12:05.058Z",
+    "fetched_at": "2026-04-26T02:08:48.693Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
   },
@@ -123,7 +115,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-25T08:12:05.058Z",
+    "fetched_at": "2026-04-26T02:08:48.693Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -135,7 +127,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-25T08:12:05.058Z",
+    "fetched_at": "2026-04-26T02:08:48.693Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   }
