@@ -1,17 +1,5 @@
 [
   {
-    "title": "Paint & Potluck in Hospitalträdgården Water Reserve",
-    "startDate": "2026-04-26T14:00:00+02:00",
-    "url": "https://www.meetup.com/uppsala-socratic-sessions/events/314458623/",
-    "source": "meetup.com",
-    "venue": "Hospitalsträdgårdens dagvattenpark",
-    "address": "Hospitalsträdgården",
-    "city": "Uppsala",
-    "fetched_at": "2026-04-26T02:08:48.692Z",
-    "latitude": 59.8356636,
-    "longitude": 17.6559026
-  },
-  {
     "title": "Build with 46elks",
     "startDate": "2026-04-27T17:30:00+02:00",
     "url": "https://www.meetup.com/friends-of-46elks-uppsala/events/314398066/",
@@ -19,7 +7,7 @@
     "venue": "Magasin X",
     "address": "Sidenvävargatan 17",
     "city": "Uppsala",
-    "fetched_at": "2026-04-26T02:08:48.692Z",
+    "fetched_at": "2026-04-27T02:08:25.052Z",
     "latitude": 59.8487686,
     "longitude": 17.6524889
   },
@@ -31,9 +19,21 @@
     "venue": "Codevum",
     "address": "Torgny Segerstedts Allé 87",
     "city": "Uppsala",
-    "fetched_at": "2026-04-26T02:08:48.692Z",
+    "fetched_at": "2026-04-27T02:08:25.052Z",
     "latitude": 59.8345247,
     "longitude": 17.6338718
+  },
+  {
+    "title": "Friday afterwork at O'Neill's Irish pub",
+    "startDate": "2026-05-01T19:00:00+02:00",
+    "url": "https://www.meetup.com/uppsala-social/events/314350589/",
+    "source": "meetup.com",
+    "venue": "O'Neill's",
+    "address": "Dragarbrunnsgatan 53,",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-27T02:08:25.052Z",
+    "latitude": 59.8572528,
+    "longitude": 17.6435434
   },
   {
     "title": "So you think you can Karaoke",
@@ -43,7 +43,7 @@
     "venue": "Etage Bar",
     "address": "Dragarbrunnsgatan 39, 753 20 Uppsala, Sweden",
     "city": "Uppsala",
-    "fetched_at": "2026-04-26T02:08:48.692Z",
+    "fetched_at": "2026-04-27T02:08:25.052Z",
     "latitude": 59.858984,
     "longitude": 17.6405754
   },
@@ -55,7 +55,7 @@
     "venue": "Bror Hjorths Hus",
     "address": "Norbyvägen 26",
     "city": "Uppsala",
-    "fetched_at": "2026-04-26T02:08:48.693Z",
+    "fetched_at": "2026-04-27T02:08:25.053Z",
     "latitude": 59.8492776,
     "longitude": 17.6198763
   },
@@ -67,7 +67,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-26T02:08:48.693Z",
+    "fetched_at": "2026-04-27T02:08:25.053Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -79,7 +79,7 @@
     "venue": "Sidenvävargatan 17",
     "address": "Sidenvävargatan 17",
     "city": "Uppsala",
-    "fetched_at": "2026-04-26T02:08:48.693Z",
+    "fetched_at": "2026-04-27T02:08:25.053Z",
     "latitude": 59.8565705,
     "longitude": 17.6495256
   },
@@ -91,7 +91,7 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-26T02:08:48.693Z",
+    "fetched_at": "2026-04-27T02:08:25.053Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
   },
@@ -103,7 +103,7 @@
     "venue": "Padel Uppsala - UTK Hallen",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-26T02:08:48.693Z",
+    "fetched_at": "2026-04-27T02:08:25.053Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
   },
@@ -115,7 +115,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-26T02:08:48.693Z",
+    "fetched_at": "2026-04-27T02:08:25.053Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -127,8 +127,20 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-26T02:08:48.693Z",
+    "fetched_at": "2026-04-27T02:08:25.053Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
+  },
+  {
+    "title": "#47 Urban Sketching -  Day Trip to Krusenberg Herrgård",
+    "startDate": "2026-05-16T11:00:00+02:00",
+    "url": "https://www.meetup.com/uppsala-social/events/314088329/",
+    "source": "meetup.com",
+    "venue": "Uppsala Centralstation",
+    "address": "Uppsala Centralstation, läge C4",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-27T02:08:25.053Z",
+    "latitude": 59.8582098,
+    "longitude": 17.6465835
   }
 ]
