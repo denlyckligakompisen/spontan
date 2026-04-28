@@ -1,17 +1,5 @@
 [
   {
-    "title": "Build with 46elks",
-    "startDate": "2026-04-27T17:30:00+02:00",
-    "url": "https://www.meetup.com/friends-of-46elks-uppsala/events/314398066/",
-    "source": "meetup.com",
-    "venue": "Magasin X",
-    "address": "Sidenvävargatan 17",
-    "city": "Uppsala",
-    "fetched_at": "2026-04-27T02:08:25.052Z",
-    "latitude": 59.8487686,
-    "longitude": 17.6524889
-  },
-  {
     "title": "Uppsala.js #44 - Daily Agent Coding",
     "startDate": "2026-04-28T17:30:00+02:00",
     "url": "https://www.meetup.com/uppsalajs/events/314210222/",
@@ -19,7 +7,7 @@
     "venue": "Codevum",
     "address": "Torgny Segerstedts Allé 87",
     "city": "Uppsala",
-    "fetched_at": "2026-04-27T02:08:25.052Z",
+    "fetched_at": "2026-04-28T02:27:52.133Z",
     "latitude": 59.8345247,
     "longitude": 17.6338718
   },
@@ -31,7 +19,7 @@
     "venue": "O'Neill's",
     "address": "Dragarbrunnsgatan 53,",
     "city": "Uppsala",
-    "fetched_at": "2026-04-27T02:08:25.052Z",
+    "fetched_at": "2026-04-28T02:27:52.133Z",
     "latitude": 59.8572528,
     "longitude": 17.6435434
   },
@@ -43,7 +31,7 @@
     "venue": "Etage Bar",
     "address": "Dragarbrunnsgatan 39, 753 20 Uppsala, Sweden",
     "city": "Uppsala",
-    "fetched_at": "2026-04-27T02:08:25.052Z",
+    "fetched_at": "2026-04-28T02:27:52.133Z",
     "latitude": 59.858984,
     "longitude": 17.6405754
   },
@@ -55,7 +43,7 @@
     "venue": "Bror Hjorths Hus",
     "address": "Norbyvägen 26",
     "city": "Uppsala",
-    "fetched_at": "2026-04-27T02:08:25.053Z",
+    "fetched_at": "2026-04-28T02:27:52.133Z",
     "latitude": 59.8492776,
     "longitude": 17.6198763
   },
@@ -67,7 +55,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-27T02:08:25.053Z",
+    "fetched_at": "2026-04-28T02:27:52.133Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -79,7 +67,7 @@
     "venue": "Sidenvävargatan 17",
     "address": "Sidenvävargatan 17",
     "city": "Uppsala",
-    "fetched_at": "2026-04-27T02:08:25.053Z",
+    "fetched_at": "2026-04-28T02:27:52.133Z",
     "latitude": 59.8565705,
     "longitude": 17.6495256
   },
@@ -91,7 +79,7 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-27T02:08:25.053Z",
+    "fetched_at": "2026-04-28T02:27:52.133Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
   },
@@ -103,7 +91,7 @@
     "venue": "Padel Uppsala - UTK Hallen",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-27T02:08:25.053Z",
+    "fetched_at": "2026-04-28T02:27:52.133Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
   },
@@ -115,7 +103,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-27T02:08:25.053Z",
+    "fetched_at": "2026-04-28T02:27:52.133Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -127,7 +115,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-27T02:08:25.053Z",
+    "fetched_at": "2026-04-28T02:27:52.133Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -139,8 +127,20 @@
     "venue": "Uppsala Centralstation",
     "address": "Uppsala Centralstation, läge C4",
     "city": "Uppsala",
-    "fetched_at": "2026-04-27T02:08:25.053Z",
+    "fetched_at": "2026-04-28T02:27:52.133Z",
     "latitude": 59.8582098,
     "longitude": 17.6465835
+  },
+  {
+    "title": "Svenskasamtal",
+    "startDate": "2026-05-16T12:00:00+02:00",
+    "url": "https://www.meetup.com/intercambio2/events/313648030/",
+    "source": "meetup.com",
+    "venue": "Konditori Fågelsången",
+    "address": "Munkgatan 3",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-28T02:27:52.133Z",
+    "latitude": 59.8546305,
+    "longitude": 17.6394577
   }
 ]
