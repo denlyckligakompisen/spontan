@@ -1,29 +1,5 @@
 [
   {
-    "title": "Uppsala.js #44 - Daily Agent Coding",
-    "startDate": "2026-04-28T17:30:00+02:00",
-    "url": "https://www.meetup.com/uppsalajs/events/314210222/",
-    "source": "meetup.com",
-    "venue": "Codevum",
-    "address": "Torgny Segerstedts Allé 87",
-    "city": "Uppsala",
-    "fetched_at": "2026-04-28T02:27:52.133Z",
-    "latitude": 59.8345247,
-    "longitude": 17.6338718
-  },
-  {
-    "title": "Friday afterwork at O'Neill's Irish pub",
-    "startDate": "2026-05-01T19:00:00+02:00",
-    "url": "https://www.meetup.com/uppsala-social/events/314350589/",
-    "source": "meetup.com",
-    "venue": "O'Neill's",
-    "address": "Dragarbrunnsgatan 53,",
-    "city": "Uppsala",
-    "fetched_at": "2026-04-28T02:27:52.133Z",
-    "latitude": 59.8572528,
-    "longitude": 17.6435434
-  },
-  {
     "title": "So you think you can Karaoke",
     "startDate": "2026-05-01T21:00:00+02:00",
     "url": "https://www.meetup.com/1-immigrants-society/events/314368662/",
@@ -31,7 +7,7 @@
     "venue": "Etage Bar",
     "address": "Dragarbrunnsgatan 39, 753 20 Uppsala, Sweden",
     "city": "Uppsala",
-    "fetched_at": "2026-04-28T02:27:52.133Z",
+    "fetched_at": "2026-04-29T02:38:25.970Z",
     "latitude": 59.858984,
     "longitude": 17.6405754
   },
@@ -43,7 +19,7 @@
     "venue": "Bror Hjorths Hus",
     "address": "Norbyvägen 26",
     "city": "Uppsala",
-    "fetched_at": "2026-04-28T02:27:52.133Z",
+    "fetched_at": "2026-04-29T02:38:25.970Z",
     "latitude": 59.8492776,
     "longitude": 17.6198763
   },
@@ -55,9 +31,21 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-28T02:27:52.133Z",
+    "fetched_at": "2026-04-29T02:38:25.970Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
+  },
+  {
+    "title": "Sunday Badminton",
+    "startDate": "2026-05-03T16:00:00+02:00",
+    "url": "https://www.meetup.com/uppsala-social/events/314262650/",
+    "source": "meetup.com",
+    "venue": "Fyrisfjädern Badmintonklubb",
+    "address": "Badmintonstigen 1",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-29T02:38:25.970Z",
+    "latitude": 59.8721729,
+    "longitude": 17.6208429
   },
   {
     "title": "Drivhuset Breakfast Club",
@@ -67,7 +55,7 @@
     "venue": "Sidenvävargatan 17",
     "address": "Sidenvävargatan 17",
     "city": "Uppsala",
-    "fetched_at": "2026-04-28T02:27:52.133Z",
+    "fetched_at": "2026-04-29T02:38:25.970Z",
     "latitude": 59.8565705,
     "longitude": 17.6495256
   },
@@ -79,7 +67,7 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-04-28T02:27:52.133Z",
+    "fetched_at": "2026-04-29T02:38:25.970Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
   },
@@ -91,7 +79,7 @@
     "venue": "Padel Uppsala - UTK Hallen",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-04-28T02:27:52.133Z",
+    "fetched_at": "2026-04-29T02:38:25.970Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
   },
@@ -103,7 +91,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-28T02:27:52.133Z",
+    "fetched_at": "2026-04-29T02:38:25.970Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -115,7 +103,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-04-28T02:27:52.133Z",
+    "fetched_at": "2026-04-29T02:38:25.970Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -127,7 +115,7 @@
     "venue": "Uppsala Centralstation",
     "address": "Uppsala Centralstation, läge C4",
     "city": "Uppsala",
-    "fetched_at": "2026-04-28T02:27:52.133Z",
+    "fetched_at": "2026-04-29T02:38:25.970Z",
     "latitude": 59.8582098,
     "longitude": 17.6465835
   },
@@ -139,7 +127,19 @@
     "venue": "Konditori Fågelsången",
     "address": "Munkgatan 3",
     "city": "Uppsala",
-    "fetched_at": "2026-04-28T02:27:52.133Z",
+    "fetched_at": "2026-04-29T02:38:25.970Z",
+    "latitude": 59.8546305,
+    "longitude": 17.6394577
+  },
+  {
+    "title": "French Conversation",
+    "startDate": "2026-05-16T13:30:00+02:00",
+    "url": "https://www.meetup.com/intercambio2/events/314137735/",
+    "source": "meetup.com",
+    "venue": "Konditori Fågelsången",
+    "address": "Munkgatan 3",
+    "city": "Uppsala",
+    "fetched_at": "2026-04-29T02:38:25.970Z",
     "latitude": 59.8546305,
     "longitude": 17.6394577
   }
