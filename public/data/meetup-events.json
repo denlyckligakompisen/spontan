@@ -1,41 +1,5 @@
 [
   {
-    "title": "#46 Urban Sketching - Bror Hjorths Hus",
-    "startDate": "2026-05-02T13:00:00+02:00",
-    "url": "https://www.meetup.com/uppsala-social/events/314085398/",
-    "source": "meetup.com",
-    "venue": "Bror Hjorths Hus",
-    "address": "Norbyvägen 26",
-    "city": "Uppsala",
-    "fetched_at": "2026-05-02T02:19:46.490Z",
-    "latitude": 59.8492776,
-    "longitude": 17.6198763
-  },
-  {
-    "title": "Mindful Art Class - Watercolour birds",
-    "startDate": "2026-05-03T01:00:00+02:00",
-    "url": "https://www.meetup.com/mindful-art-class/events/314397531/",
-    "source": "meetup.com",
-    "venue": "Inner Art Ateljé",
-    "address": "Ulleråkersvägen 34",
-    "city": "Uppsala",
-    "fetched_at": "2026-05-02T02:19:46.490Z",
-    "latitude": 59.8282548,
-    "longitude": 17.6463868
-  },
-  {
-    "title": "Sunday Badminton",
-    "startDate": "2026-05-03T16:00:00+02:00",
-    "url": "https://www.meetup.com/uppsala-social/events/314262650/",
-    "source": "meetup.com",
-    "venue": "Fyrisfjädern Badmintonklubb",
-    "address": "Badmintonstigen 1",
-    "city": "Uppsala",
-    "fetched_at": "2026-05-02T02:19:46.490Z",
-    "latitude": 59.8721729,
-    "longitude": 17.6208429
-  },
-  {
     "title": "Drivhuset Breakfast Club",
     "startDate": "2026-05-06T08:15:00+02:00",
     "url": "https://www.meetup.com/drivhuset-uppsala-entrepreneurship/events/314026547/",
@@ -43,7 +7,7 @@
     "venue": "Sidenvävargatan 17",
     "address": "Sidenvävargatan 17",
     "city": "Uppsala",
-    "fetched_at": "2026-05-02T02:19:46.490Z",
+    "fetched_at": "2026-05-03T02:22:10.893Z",
     "latitude": 59.8565705,
     "longitude": 17.6495256
   },
@@ -55,7 +19,7 @@
     "venue": "Kafferummet Storken",
     "address": "Stora Torget 3, 75320 Uppsala",
     "city": "Uppsala",
-    "fetched_at": "2026-05-02T02:19:46.490Z",
+    "fetched_at": "2026-05-03T02:22:10.893Z",
     "latitude": 59.8582004,
     "longitude": 17.6389802
   },
@@ -67,7 +31,7 @@
     "venue": "Padel Uppsala - UTK Hallen",
     "address": "Edith Södergrans gata 7",
     "city": "Uppsala",
-    "fetched_at": "2026-05-02T02:19:46.491Z",
+    "fetched_at": "2026-05-03T02:22:10.893Z",
     "latitude": 59.8836959,
     "longitude": 17.663896
   },
@@ -79,7 +43,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-05-02T02:19:46.491Z",
+    "fetched_at": "2026-05-03T02:22:10.893Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -91,7 +55,7 @@
     "venue": "Inner Art Ateljé",
     "address": "Ulleråkersvägen 34",
     "city": "Uppsala",
-    "fetched_at": "2026-05-02T02:19:46.491Z",
+    "fetched_at": "2026-05-03T02:22:10.893Z",
     "latitude": 59.8282548,
     "longitude": 17.6463868
   },
@@ -103,7 +67,7 @@
     "venue": "Uppsala Centralstation",
     "address": "Uppsala Centralstation, läge C4",
     "city": "Uppsala",
-    "fetched_at": "2026-05-02T02:19:46.491Z",
+    "fetched_at": "2026-05-03T02:22:10.893Z",
     "latitude": 59.8582098,
     "longitude": 17.6465835
   },
@@ -115,7 +79,7 @@
     "venue": "Konditori Fågelsången",
     "address": "Munkgatan 3",
     "city": "Uppsala",
-    "fetched_at": "2026-05-02T02:19:46.491Z",
+    "fetched_at": "2026-05-03T02:22:10.893Z",
     "latitude": 59.8546305,
     "longitude": 17.6394577
   },
@@ -127,7 +91,19 @@
     "venue": "Konditori Fågelsången",
     "address": "Munkgatan 3",
     "city": "Uppsala",
-    "fetched_at": "2026-05-02T02:19:46.491Z",
+    "fetched_at": "2026-05-03T02:22:10.893Z",
+    "latitude": 59.8546305,
+    "longitude": 17.6394577
+  },
+  {
+    "title": "Sunday Coffee",
+    "startDate": "2026-05-17T12:00:00+02:00",
+    "url": "https://www.meetup.com/uppsala-social/events/314137749/",
+    "source": "meetup.com",
+    "venue": "Konditori Fågelsången",
+    "address": "Munkgatan 3, C",
+    "city": "Uppsala",
+    "fetched_at": "2026-05-03T02:22:10.893Z",
     "latitude": 59.8546305,
     "longitude": 17.6394577
   },
@@ -139,7 +115,7 @@
     "venue": "Konditori Fågelsången",
     "address": "Munkgatan 3",
     "city": "Uppsala",
-    "fetched_at": "2026-05-02T02:19:46.491Z",
+    "fetched_at": "2026-05-03T02:22:10.893Z",
     "latitude": 59.8546305,
     "longitude": 17.6394577
   }
